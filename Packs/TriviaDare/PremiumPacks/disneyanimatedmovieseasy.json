@@ -1,0 +1,3304 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_1",
+      "Question Text": "In 101 Dalmatians, How Many Puppies Did Perdita And Pongo Adopt?",
+      "Option A": 76,
+      "Option B": 92,
+      "Option C": 84,
+      "Option D": 88,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_2",
+      "Question Text": "In Disney's '101 Dalmatians', How Many Pups Does Perdita Give Birth to?",
+      "Option A": "12",
+      "Option B": "10",
+      "Option C": "13",
+      "Option D": "15",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_3",
+      "Question Text": "Which Disney Dog's Puppies Were Stolen by Cruella De Vil?",
+      "Option A": "Lady",
+      "Option B": "Perdita",
+      "Option C": "Pongo",
+      "Option D": "Nana",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_4",
+      "Question Text": "In Disney's '101 Dalmatians', Who Does Cruella De Vil Hire to Help Her Steal the Puppies?",
+      "Option A": "Jasper and Edgar",
+      "Option B": "Edgar and James",
+      "Option C": "Horace and Jasper",
+      "Option D": "Lawrence and Horace",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_5",
+      "Question Text": "Which Disney Villain Hires Horace and Jasper as Henchmen?",
+      "Option A": "Maleficent",
+      "Option B": "Mother Gothel",
+      "Option C": "Cruella De Vil",
+      "Option D": "Lady Tremaine",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_6",
+      "Question Text": "In Disney's Aladdin, How Many Years Does the Genie Say He Has Been Trapped in the Lamp?",
+      "Option A": "5000",
+      "Option B": "8000",
+      "Option C": "10000",
+      "Option D": "12000",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_7",
+      "Question Text": "Which Disney Character Was Trapped in Their Lamp for 10,000 Years?",
+      "Option A": "Genie",
+      "Option B": "Carpet",
+      "Option C": "Jafar",
+      "Option D": "Eden",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_8",
+      "Question Text": "In Disney's Aladdin, What Is Jasmine's Pet Tiger's Name?",
+      "Option A": "Sultan",
+      "Option B": "Rajah",
+      "Option C": "Raja",
+      "Option D": "Khan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_9",
+      "Question Text": "Which Disney Princess Has a Pet Tiger Named Rajah?",
+      "Option A": "Mulan",
+      "Option B": "Aurora",
+      "Option C": "Jasmine",
+      "Option D": "Pocahontas",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_10",
+      "Question Text": "In Disney's Aladdin, What Item Does Jasmine Steal from the Marketplace?",
+      "Option A": "A Necklace",
+      "Option B": "Some Bread",
+      "Option C": "An Apple",
+      "Option D": "A Bracelet",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_11",
+      "Question Text": "Which Disney Princess Steals an Apple from the Marketplace?",
+      "Option A": "Jasmine",
+      "Option B": "Snow White",
+      "Option C": "Belle",
+      "Option D": "Aurora",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_12",
+      "Question Text": "In Disney's Aladdin, What Is Jafar's First Wish When He Takes the Lamp?",
+      "Option A": "Become Sultan",
+      "Option B": "Ultimate Power",
+      "Option C": "Rule Agrabah",
+      "Option D": "Infinite Wishes",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_13",
+      "Question Text": "Which Disney Villain's First Wish Was to Become Sultan?",
+      "Option A": "Ursula",
+      "Option B": "Maleficent",
+      "Option C": "Gaston",
+      "Option D": "Jafar",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_14",
+      "Question Text": "In Disney's Aladdin, What Color Is the Magic Carpet's Tassels?",
+      "Option A": "Gold",
+      "Option B": "Purple",
+      "Option C": "Blue",
+      "Option D": "Red",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_15",
+      "Question Text": "In Disney's Aladdin, How Many Wishes Does Aladdin Use Before Freeing Genie?",
+      "Option A": "0",
+      "Option B": "1",
+      "Option C": "3",
+      "Option D": "2",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_16",
+      "Question Text": "In Disney's Aladdin, What Is the Sultan's Favorite Toy?",
+      "Option A": "Blocks",
+      "Option B": "Dolls",
+      "Option C": "Puzzles",
+      "Option D": "Wind-up Animals",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_17",
+      "Question Text": "In Disney's Aladdin, What Is Iago's Favorite Cracker?",
+      "Option A": "Crackers",
+      "Option B": "Biscuits",
+      "Option C": "Cookies",
+      "Option D": "Wafers",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_18",
+      "Question Text": "In Disney's Aladdin, What Does Abu Try to Steal from the Cave of Wonders?",
+      "Option A": "The Lamp",
+      "Option B": "The Gold",
+      "Option C": "The Giant Ruby",
+      "Option D": "The Jewels",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_19",
+      "Question Text": "In Disney's Alice in Wonderland, What Time Is Shown on the White Rabbit's Pocket Watch?",
+      "Option A": "12:00",
+      "Option B": "12:15",
+      "Option C": "12:25",
+      "Option D": "12:30",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_20",
+      "Question Text": "Which Disney Rabbit's Pocket Watch Shows 12:25?",
+      "Option A": "The White Rabbit",
+      "Option B": "March Hare",
+      "Option C": "Peter Rabbit",
+      "Option D": "Thumper",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_21",
+      "Question Text": "In Disney's Alice in Wonderland, Which Game Does the Queen of Hearts Play with Alice?",
+      "Option A": "Chess",
+      "Option B": "Checkers",
+      "Option C": "Croquet",
+      "Option D": "Cards",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_22",
+      "Question Text": "Which Disney Queen Plays Croquet with Alice?",
+      "Option A": "Red Queen",
+      "Option B": "White Queen",
+      "Option C": "Evil Queen",
+      "Option D": "The Queen of Hearts",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_23",
+      "Question Text": "In Disney's Alice in Wonderland, What Color Are the Roses Being Painted?",
+      "Option A": "White",
+      "Option B": "Pink",
+      "Option C": "Red",
+      "Option D": "Gold",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_24",
+      "Question Text": "In Atlantis: The Lost Empire, What Was The First Obstacle The Explorers Faced?",
+      "Option A": "Storm",
+      "Option B": "The Leviathan",
+      "Option C": "Ice Berg",
+      "Option D": "Sea Monster",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_25",
+      "Question Text": "In Atlantis: The Lost Empire, Who Does Milo Befriend In Atlantis?",
+      "Option A": "Helga",
+      "Option B": "Kida",
+      "Option C": "Audrey",
+      "Option D": "Sweet",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_26",
+      "Question Text": "In Atlantis: The Lost Empire, Off Which Country's Coast Was The Shepherd's Journal?",
+      "Option A": "Norway",
+      "Option B": "Iceland",
+      "Option C": "Greenland",
+      "Option D": "Finland",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_27",
+      "Question Text": "In Atlantis: The Lost Empire, What Was The Name Of Their Submarine?",
+      "Option A": "Ulysses",
+      "Option B": "Neptune",
+      "Option C": "Poseidon",
+      "Option D": "Triton",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_28",
+      "Question Text": "In Atlantis: The Lost Empire, What Were The Explorers Really After?",
+      "Option A": "Gold",
+      "Option B": "Crystal",
+      "Option C": "Heart of Atlantis",
+      "Option D": "Power Source",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_29",
+      "Question Text": "In Disney's Bambi, What Is the Name of the Rival Deer That Challenges Bambi?",
+      "Option A": "Stag",
+      "Option B": "Buck",
+      "Option C": "Ronno",
+      "Option D": "Forest Prince",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_30",
+      "Question Text": "In Bambi, What Is The Name Of Bambi's Skunk Friend?",
+      "Option A": "Thumper",
+      "Option B": "Skippy",
+      "Option C": "Flower",
+      "Option D": "Blossom",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_31",
+      "Question Text": "In Bambi, Who Is Bambi's First Friend?",
+      "Option A": "Thumper",
+      "Option B": "Flower",
+      "Option C": "Owl",
+      "Option D": "Faline",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_32",
+      "Question Text": "In Bambi, What Do The Animals Call Ice?",
+      "Option A": "Stiff Water",
+      "Option B": "Hard Water",
+      "Option C": "Frozen Water",
+      "Option D": "Solid Water",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_33",
+      "Question Text": "In Bambi, What Animals Was Flower Scared Of?",
+      "Option A": "Birds",
+      "Option B": "Rabbits",
+      "Option C": "Deer",
+      "Option D": "Turtles",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_34",
+      "Question Text": "In Disney's Beauty and the Beast, How Many Dozens of Eggs Does Gaston Eat for Breakfast?",
+      "Option A": "2 Dozen",
+      "Option B": "3 Dozen",
+      "Option C": "4 Dozen",
+      "Option D": "5 Dozen",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_35",
+      "Question Text": "Which Disney Character Eats 5 Dozen Eggs for Breakfast?",
+      "Option A": "LeFou",
+      "Option B": "Gaston",
+      "Option C": "Beast",
+      "Option D": "Maurice",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_36",
+      "Question Text": "In Disney's Beauty and the Beast, What Does Gaston Say He's Especially Good at?",
+      "Option A": "Fighting",
+      "Option B": "Hunting",
+      "Option C": "Dancing",
+      "Option D": "Expectorating",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_37",
+      "Question Text": "In Disney's Beauty and the Beast, What Is Belle's Father's Name?",
+      "Option A": "Martin",
+      "Option B": "Maurice",
+      "Option C": "Michel",
+      "Option D": "Marcel",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_38",
+      "Question Text": "In Disney's Beauty and the Beast, What Is the Name of the Bookshop Owner?",
+      "Option A": "Monsieur Books",
+      "Option B": "Monsieur Pierre",
+      "Option C": "Pere Robert",
+      "Option D": "Pere Jacques",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_39",
+      "Question Text": "In Disney's Beauty and the Beast, Which Room in the Castle Is Belle Forbidden to Enter?",
+      "Option A": "East Wing",
+      "Option B": "West Wing",
+      "Option C": "North Tower",
+      "Option D": "South Wing",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_40",
+      "Question Text": "Which Disney Prince Must Break His Curse Before Turning 21?",
+      "Option A": "Prince Eric",
+      "Option B": "The Beast",
+      "Option C": "Prince Philip",
+      "Option D": "Prince Adam",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_41",
+      "Question Text": "In Disney's Beauty and the Beast, What Is the Name of the Town Belle Lives In?",
+      "Option A": "Villeneuve",
+      "Option B": "Beaumont",
+      "Option C": "Saint-Marie",
+      "Option D": "Petit-Village",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_42",
+      "Question Text": "In Disney's Beauty and the Beast, What Is Chip's Mother's Name?",
+      "Option A": "Mrs. Potts",
+      "Option B": "Mrs. Cups",
+      "Option C": "Mrs. Tea",
+      "Option D": "Mrs. Kettle",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_43",
+      "Question Text": "In Disney's Big Hero 6, What University Does Hiro Attend?",
+      "Option A": "Tokyo Tech",
+      "Option B": "San Francisco Tech",
+      "Option C": "Bay Area Institute",
+      "Option D": "San Fransokyo Institute of Technology",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_44",
+      "Question Text": "In Big Hero 6, In Which Fictional City Does The Movie Take Place?",
+      "Option A": "Neo Tokyo",
+      "Option B": "San Fransokyo",
+      "Option C": "New San Francisco",
+      "Option D": "Tokyo Bay",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_45",
+      "Question Text": "In Big Hero 6, What Illegal Activity Was Hiro Doing At The Start?",
+      "Option A": "Street Racing",
+      "Option B": "Gambling",
+      "Option C": "Robot Fighting",
+      "Option D": "Hacking",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_46",
+      "Question Text": "In Big Hero 6, What Was Baymax's Official Title?",
+      "Option A": "Personal Healthcare Companion",
+      "Option B": "Medical Assistant Robot",
+      "Option C": "Health Care Bot",
+      "Option D": "Nursing Android",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_47",
+      "Question Text": "In Big Hero 6, What Was The Name Of The Teleportation Project?",
+      "Option A": "Project Zero",
+      "Option B": "Project Silent Sparrow",
+      "Option C": "Project Gateway",
+      "Option D": "Project Portal",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_48",
+      "Question Text": "In Big Hero 6, What Is The Name Of Aunt Cass's Cat?",
+      "Option A": "Hairy Baby",
+      "Option B": "Lucky",
+      "Option C": "Whiskers",
+      "Option D": "Mochi",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_49",
+      "Question Text": "In Disney's Bolt, What Is the Name of Penny's Agent?",
+      "Option A": "Martin",
+      "Option B": "Mindy",
+      "Option C": "Mark",
+      "Option D": "Michael",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_50",
+      "Question Text": "In Bolt, What Did Bolt Think Was His Weakness?",
+      "Option A": "Styrofoam Peanuts",
+      "Option B": "Green Foam",
+      "Option C": "Bubble Wrap",
+      "Option D": "Plastic Bags",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_51",
+      "Question Text": "In Bolt, Where Were Bolt, Mittens, And Rhino Going?",
+      "Option A": "New York",
+      "Option B": "Las Vegas",
+      "Option C": "Hollywood",
+      "Option D": "San Francisco",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_52",
+      "Question Text": "In Bolt, What Did Rhino Like To Eat For Breakfast?",
+      "Option A": "Danger",
+      "Option B": "Cereal",
+      "Option C": "Seeds",
+      "Option D": "Carrots",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_53",
+      "Question Text": "In Bolt, What Was The Name Of Bolt's Master?",
+      "Option A": "Sarah",
+      "Option B": "Jenny",
+      "Option C": "Penny",
+      "Option D": "Emily",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_54",
+      "Question Text": "In Bolt, What Kind Of Animal Was Rhino?",
+      "Option A": "Guinea Pig",
+      "Option B": "Hamster",
+      "Option C": "Gerbil",
+      "Option D": "Mouse",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_55",
+      "Question Text": "In Disney's Brother Bear, What Is Kenai's Totem?",
+      "Option A": "The Bear of Wisdom",
+      "Option B": "The Bear of Courage",
+      "Option C": "The Bear of Love",
+      "Option D": "The Bear of Strength",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_56",
+      "Question Text": "In Brother Bear, What Animals Are Rutt And Tuke?",
+      "Option A": "Bears",
+      "Option B": "Caribou",
+      "Option C": "Elk",
+      "Option D": "Moose",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_57",
+      "Question Text": "In Brother Bear, Which Animal Is Sitka Transformed Into?",
+      "Option A": "Eagle",
+      "Option B": "Wolf",
+      "Option C": "Bear",
+      "Option D": "Hawk",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_58",
+      "Question Text": "In Brother Bear, Where Did Koda Want Kenai To Take Him?",
+      "Option A": "The Berry Patch",
+      "Option B": "The Salmon Run",
+      "Option C": "The Mountains",
+      "Option D": "The Forest",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_59",
+      "Question Text": "In Brother Bear, What Trees Does Koda First Mention Climbing?",
+      "Option A": "Oak Trees",
+      "Option B": "Maple Trees",
+      "Option C": "Pine Trees",
+      "Option D": "Birch Trees",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_60",
+      "Question Text": "In Chicken Little, What Was The Name Of The Town?",
+      "Option A": "Maple Valley",
+      "Option B": "Oakey Oaks",
+      "Option C": "Pine Grove",
+      "Option D": "Cedar Hills",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_61",
+      "Question Text": "In Chicken Little, Besides A Pig And Duck, What Other Animal Was His Friend?",
+      "Option A": "Dog",
+      "Option B": "Cat",
+      "Option C": "Bird",
+      "Option D": "Fish",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_62",
+      "Question Text": "In Chicken Little, What Did Buck Think Hit His Son's Head?",
+      "Option A": "Rock",
+      "Option B": "Acorn",
+      "Option C": "Nut",
+      "Option D": "Leaf",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_63",
+      "Question Text": "In Chicken Little, What Sport Did Buck Play In High School?",
+      "Option A": "Football",
+      "Option B": "Basketball",
+      "Option C": "Baseball",
+      "Option D": "Soccer",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_64",
+      "Question Text": "In Chicken Little, Which Disney Movie Opening Does The Narrator Almost Use?",
+      "Option A": "Beauty and the Beast",
+      "Option B": "The Lion King",
+      "Option C": "Aladdin",
+      "Option D": "Sleeping Beauty",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_65",
+      "Question Text": "In Disney's Cinderella, What Is Gus Gus's Full Name?",
+      "Option A": "Octavius",
+      "Option B": "Augustus",
+      "Option C": "Gustavus",
+      "Option D": "Maximus",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_66",
+      "Question Text": "Which Disney Mouse Has a real first name of Octavius?",
+      "Option A": "Jacques",
+      "Option B": "Timothy",
+      "Option C": "Gus Gus",
+      "Option D": "Jaq",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_67",
+      "Question Text": "In Disney's Cinderella, What Color Is Cinderella's Original Ball Gown Before It's Destroyed?",
+      "Option A": "Blue",
+      "Option B": "White",
+      "Option C": "Yellow",
+      "Option D": "Pink",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_68",
+      "Question Text": "In Disney's Cinderella, What Time Must Cinderella Return from the Ball?",
+      "Option A": "10:00 PM",
+      "Option B": "11:00 PM",
+      "Option C": "11:59 PM",
+      "Option D": "Midnight",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_69",
+      "Question Text": "In Disney's Cinderella, What Is the Name of the King's Grand Duke?",
+      "Option A": "Reginald",
+      "Option B": "Unknown",
+      "Option C": "Charles",
+      "Option D": "Frederick",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_70",
+      "Question Text": "In Disney's Cinderella, What Time Does the Royal Ball Begin?",
+      "Option A": "1899-12-31T00:00:00.000Z",
+      "Option B": "1899-12-31T01:00:00.000Z",
+      "Option C": "1899-12-31T02:00:00.000Z",
+      "Option D": "1899-12-31T01:30:00.000Z",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_71",
+      "Question Text": "In Dinosaur, What Does Baylene Say After Zini's Dive?",
+      "Option A": "Bravo!",
+      "Option B": "Amateur!",
+      "Option C": "Wonderful!",
+      "Option D": "Splendid!",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_72",
+      "Question Text": "In Dinosaur, Who Is Killed By The Carnotaur?",
+      "Option A": "Bruton",
+      "Option B": "Eema",
+      "Option C": "Kron",
+      "Option D": "Neera",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_73",
+      "Question Text": "In Dinosaur, Who Is The Leader Of The Herd Aladar Joins?",
+      "Option A": "Kron",
+      "Option B": "Bruton",
+      "Option C": "Neera",
+      "Option D": "Eema",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_74",
+      "Question Text": "In Dinosaur, What Animals Occupied The Island Where The Egg Landed?",
+      "Option A": "Monkeys",
+      "Option B": "Birds",
+      "Option C": "Apes",
+      "Option D": "Lemurs",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_75",
+      "Question Text": "In Dinosaur, What Does Aladar Find That Saves The Caravan?",
+      "Option A": "Food",
+      "Option B": "Shelter",
+      "Option C": "Path",
+      "Option D": "Water",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_76",
+      "Question Text": "In Disney's Dumbo, What Is the Name of Dumbo's Mother?",
+      "Option A": "Mama Elephant",
+      "Option B": "Mother Jumbo",
+      "Option C": "Mrs. Jumbo",
+      "Option D": "Lady Jumbo",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_77",
+      "Question Text": "Which Disney Character Is the Only Non-Speaking Title Character?",
+      "Option A": "Bambi",
+      "Option B": "Dumbo",
+      "Option C": "Pascal",
+      "Option D": "Abu",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_78",
+      "Question Text": "In Dumbo, Who Delivered Dumbo To Mrs. Jumbo?",
+      "Option A": "The Pelican",
+      "Option B": "Mr. Stork",
+      "Option C": "The Crane",
+      "Option D": "The Heron",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_79",
+      "Question Text": "In Dumbo, What Is The Name Of Dumbo's Mouse Friend?",
+      "Option A": "Timothy",
+      "Option B": "Jim",
+      "Option C": "Jerry",
+      "Option D": "Jack",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_80",
+      "Question Text": "In Dumbo, What Type Of Birds Found Dumbo In The Tree?",
+      "Option A": "Crows",
+      "Option B": "Bluebirds",
+      "Option C": "Sparrows",
+      "Option D": "Robins",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_81",
+      "Question Text": "In Dumbo, What Is The Name Of The Circus Train?",
+      "Option A": "Circus Express",
+      "Option B": "Wonder Express",
+      "Option C": "Casey Jr.",
+      "Option D": "Royal Express",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_82",
+      "Question Text": "In Encanto, What Is The Family's Name?",
+      "Option A": "Madrigal",
+      "Option B": "Garcia",
+      "Option C": "Hernandez",
+      "Option D": "Flores",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_83",
+      "Question Text": "In Encanto, What Created The Magical House?",
+      "Option A": "The Magic Door",
+      "Option B": "The Sacred River",
+      "Option C": "The Miracle Candle",
+      "Option D": "The Golden Sun",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_84",
+      "Question Text": "In Encanto, What Is Isabela's Power?",
+      "Option A": "Control The Weather",
+      "Option B": "Control The Plants",
+      "Option C": "Create Light",
+      "Option D": "Heal Others",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_85",
+      "Question Text": "In Encanto, What Insect Does Mirabel See In Bruno's Vision?",
+      "Option A": "A Moth",
+      "Option B": "A Beetle",
+      "Option C": "A Butterfly",
+      "Option D": "A Dragonfly",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_86",
+      "Question Text": "In Encanto, What Instrument Must Luisa Bring To The Party?",
+      "Option A": "A Guitar",
+      "Option B": "A Drum",
+      "Option C": "An Accordion",
+      "Option D": "A Piano",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_87",
+      "Question Text": "In Disney's Fantasia, What Is the Name of the Demon Featured in the Night on Bald Mountain Segment?",
+      "Option A": "Moloch",
+      "Option B": "Beelzebub",
+      "Option C": "Mephistopheles",
+      "Option D": "Chernabog",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_88",
+      "Question Text": "In Disney's Fantasia, How Many Segments Are in the Film?",
+      "Option A": "6",
+      "Option B": "7",
+      "Option C": "8",
+      "Option D": "9",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_89",
+      "Question Text": "In Fantasia, Who Is The Master Of Ceremonies?",
+      "Option A": "Deems Taylor",
+      "Option B": "Leopold Stokowski",
+      "Option C": "Walt Disney",
+      "Option D": "James MacDonald",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_90",
+      "Question Text": "In Fantasia, Which Disney Character Stars In The Sorcerer's Apprentice?",
+      "Option A": "Donald Duck",
+      "Option B": "Goofy",
+      "Option C": "Mickey Mouse",
+      "Option D": "Pluto",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_91",
+      "Question Text": "In Fantasia, What Year Did The Original Film Debut?",
+      "Option A": 1940,
+      "Option B": 1941,
+      "Option C": 1942,
+      "Option D": 1939,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_92",
+      "Question Text": "In Disney's Fox and the Hound, What Is the Name of The Woman Who Raised Todd??",
+      "Option A": "Big Mama",
+      "Option B": "Mother Owl",
+      "Option C": "Widow Tweed",
+      "Option D": "Miss Maple",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_93",
+      "Question Text": "In Disney's Frozen, What Is Hans the Prince Of?",
+      "Option A": "Southern Isles",
+      "Option B": "Northern Islands",
+      "Option C": "Western Shores",
+      "Option D": "Eastern Kingdom",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_94",
+      "Question Text": "In Disney's Frozen, What Is the Name of Kristoff's Reindeer?",
+      "Option A": "Sven",
+      "Option B": "Klaus",
+      "Option C": "Rudolf",
+      "Option D": "Boris",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_95",
+      "Question Text": "In Disney's Frozen, What Is the Name of the Trading Post Owner?",
+      "Option A": "Oaken",
+      "Option B": "Bjorn",
+      "Option C": "Lars",
+      "Option D": "Magnus",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_96",
+      "Question Text": "In Disney's Frozen, What Are the Names of Anna and Elsa's Parents?",
+      "Option A": "King Agnarr and Queen Iduna",
+      "Option B": "King Magnus and Queen Helena",
+      "Option C": "King Fredrik and Queen Astrid",
+      "Option D": "King Erik and Queen Helga",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_97",
+      "Question Text": "Which Disney Princess Has Ice Powers?",
+      "Option A": "Elsa",
+      "Option B": "Anna",
+      "Option C": "Rapunzel",
+      "Option D": "Merida",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_98",
+      "Question Text": "In Disney's Frozen, What Is Olaf's Favorite Season?",
+      "Option A": "Winter",
+      "Option B": "Spring",
+      "Option C": "Fall",
+      "Option D": "Summer",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_99",
+      "Question Text": "In Disney's Frozen, What Is the Name of Kristoff's Business?",
+      "Option A": "Snow Removal",
+      "Option B": "Ice Harvesting",
+      "Option C": "Sleigh Rides",
+      "Option D": "Winter Trading",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_100",
+      "Question Text": "In Frozen 2, Who Is Trapped In The Enchanted Forest?",
+      "Option A": "King Runeard",
+      "Option B": "Queen Iduna",
+      "Option C": "Lieutenant Mattias",
+      "Option D": "General Magnus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_101",
+      "Question Text": "In Frozen 2, What Is Elsa And Anna's Father's Name?",
+      "Option A": "King Runeard",
+      "Option B": "King Magnus",
+      "Option C": "King Fredrik",
+      "Option D": "King Agnarr",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_102",
+      "Question Text": "In Frozen 2, What Is The Name Of The Sea Elsa Must Face?",
+      "Option A": "The Wild Sea",
+      "Option B": "The Dark Sea",
+      "Option C": "The Storm Sea",
+      "Option D": "The Black Sea",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_103",
+      "Question Text": "In Frozen 2, What Is The Name Of The Water Spirit?",
+      "Option A": "Wave",
+      "Option B": "Aqua",
+      "Option C": "Nokk",
+      "Option D": "Hydros",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_104",
+      "Question Text": "In Frozen 2, What Is The Name Of The Wind Spirit?",
+      "Option A": "Breeze",
+      "Option B": "Zephyr",
+      "Option C": "Aero",
+      "Option D": "Gale",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_105",
+      "Question Text": "In Disney's A Goofy Movie, Who Is Max's Favorite Singer?",
+      "Option A": "Michael Jackson",
+      "Option B": "Powerline",
+      "Option C": "Bobby Brown",
+      "Option D": "MC Hammer",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_106",
+      "Question Text": "In Disney's A Goofy Movie, What Dance Move Does Max Perform at the School Assembly?",
+      "Option A": "The Moonwalk",
+      "Option B": "The Robot",
+      "Option C": "The Spin",
+      "Option D": "The Perfect Cast",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_107",
+      "Question Text": "In Disney's Hercules, What Is the Name of the Mortal Couple That Adopts Hercules?",
+      "Option A": "Alcestis and Admetus",
+      "Option B": "Perseus and Andromeda",
+      "Option C": "Jason and Medea",
+      "Option D": "Orpheus and Eurydice",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_108",
+      "Question Text": "In Disney's Hercules, How Many Tasks Must Hercules Complete to Become a True Hero?",
+      "Option A": "7",
+      "Option B": "9",
+      "Option C": "10",
+      "Option D": "12",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_109",
+      "Question Text": "In Disney's Hercules, What Is the Name of Hercules' Evil Uncle?",
+      "Option A": "Zeus",
+      "Option B": "Poseidon",
+      "Option C": "Ares",
+      "Option D": "Hades",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_110",
+      "Question Text": "Which Disney Villain Rules the Underworld?",
+      "Option A": "Hades",
+      "Option B": "Chernabog",
+      "Option C": "Maleficent",
+      "Option D": "Dr. Facilier",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_111",
+      "Question Text": "In Disney's Hercules, What Is the Name of Hercules' Flying Horse?",
+      "Option A": "Atlas",
+      "Option B": "Bellerophon",
+      "Option C": "Pegasus",
+      "Option D": "Chiron",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_112",
+      "Question Text": "In Disney's Hercules, Who Trains Heroes at Phil's Island?",
+      "Option A": "Chiron",
+      "Option B": "Atlas",
+      "Option C": "Perseus",
+      "Option D": "Phil",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_113",
+      "Question Text": "In Disney's Hercules, What Color Is Megara's Dress?",
+      "Option A": "Purple",
+      "Option B": "Blue",
+      "Option C": "Pink",
+      "Option D": "Red",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_114",
+      "Question Text": "In Disney's Home on the Range, What Is the Name of the Yodeling Cattle Rustler?",
+      "Option A": "Rico Rustler",
+      "Option B": "Alameda Slim",
+      "Option C": "Buck Bronco",
+      "Option D": "Wild Bill",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_115",
+      "Question Text": "In Home On The Range, What Animal Guarded Echo Mine?",
+      "Option A": "Wolf",
+      "Option B": "Bear",
+      "Option C": "Mountain Lion",
+      "Option D": "Buffalo",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_116",
+      "Question Text": "In Home On The Range, What Was The Sheriff's Horse's Name?",
+      "Option A": "Spirit",
+      "Option B": "Buck",
+      "Option C": "Thunder",
+      "Option D": "Lightning",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_117",
+      "Question Text": "In Home On The Range, How Does Alameda Slim Lure Cattle?",
+      "Option A": "Whistling",
+      "Option B": "Dancing",
+      "Option C": "Yodelling",
+      "Option D": "Singing",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_118",
+      "Question Text": "In Home On The Range, How Do They Get Back To Stop The Auction?",
+      "Option A": "Horse",
+      "Option B": "Car",
+      "Option C": "Wagon",
+      "Option D": "Train",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_119",
+      "Question Text": "In Home On The Range, What Happens To Patch Of Heaven?",
+      "Option A": "It's Sold",
+      "Option B": "Pearl Keeps It",
+      "Option C": "Bank Takes It",
+      "Option D": "Government Buys It",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_120",
+      "Question Text": "In The Adventures Of Ichabod And Mr. Toad, What Was Mr. Toad Obsessed With?",
+      "Option A": "A House",
+      "Option B": "A Boat",
+      "Option C": "A Plane",
+      "Option D": "A Motorcar",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_121",
+      "Question Text": "In The Adventures Of Ichabod And Mr. Toad, What Was Ichabod's Profession?",
+      "Option A": "Doctor",
+      "Option B": "Lawyer",
+      "Option C": "Teacher",
+      "Option D": "Merchant",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_122",
+      "Question Text": "In The Adventures Of Ichabod And Mr. Toad, Who Was Katrina's Other Suitor?",
+      "Option A": "Hans Van Ripper",
+      "Option B": "Brom Bones",
+      "Option C": "Baltus Van Tassel",
+      "Option D": "Abraham Van Brunt",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_123",
+      "Question Text": "In The Adventures Of Ichabod And Mr. Toad, Who Had The Red Motor Car?",
+      "Option A": "The Badgers",
+      "Option B": "The Weasels",
+      "Option C": "The Rabbits",
+      "Option D": "The Foxes",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_124",
+      "Question Text": "In The Adventures Of Ichabod And Mr. Toad, What Does Mr. Toad Steal To Escape?",
+      "Option A": "A Train",
+      "Option B": "A Car",
+      "Option C": "A Horse",
+      "Option D": "A Boat",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_125",
+      "Question Text": "In Disney's Lady and the Tramp, What Are the Names of the Two Siamese Cats?",
+      "Option A": "Si & Am",
+      "Option B": "Yin & Yang",
+      "Option C": "Ming & Ling",
+      "Option D": "Thai & Chi",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_126",
+      "Question Text": "In Disney's Lady and the Tramp, What Restaurant Do Lady and Tramp Visit?",
+      "Option A": "Luigi's Place",
+      "Option B": "Tony's Restaurant",
+      "Option C": "Joe's Diner",
+      "Option D": "Bella Notte",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_127",
+      "Question Text": "In Lady And The Tramp, What Holiday Opens And Closes The Movie?",
+      "Option A": "Christmas",
+      "Option B": "Easter",
+      "Option C": "Thanksgiving",
+      "Option D": "New Year's",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_128",
+      "Question Text": "In Lady And The Tramp, Why Were Jim And Darling Acting Strangely?",
+      "Option A": "Darling Is Pregnant",
+      "Option B": "Moving House",
+      "Option C": "New Pet Coming",
+      "Option D": "New Job",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_129",
+      "Question Text": "In Lady And The Tramp, How Old Was Lady When She Got Her License?",
+      "Option A": "Three Months",
+      "Option B": "Six Months",
+      "Option C": "Nine Months",
+      "Option D": "One Year",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_130",
+      "Question Text": "In Lady And The Tramp, Who Watches Lady While Jim And Darling Are Away?",
+      "Option A": "Jim's Mother",
+      "Option B": "Jim's Sister",
+      "Option C": "Jim's Aunt",
+      "Option D": "Jim's Cousin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_131",
+      "Question Text": "In Disney's Lilo & Stitch, What Is Stitch's Experiment Number?",
+      "Option A": "626",
+      "Option B": "625",
+      "Option C": "627",
+      "Option D": "624",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_132",
+      "Question Text": "In Lilo & Stitch, Who Created Experiment 626?",
+      "Option A": "Dr. Hamsterviel",
+      "Option B": "Dr. Jacques",
+      "Option C": "Jumba",
+      "Option D": "Pleakley",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_133",
+      "Question Text": "In Lilo & Stitch, What Does Lilo Put In Stitch's Bottle?",
+      "Option A": "Milk",
+      "Option B": "Water",
+      "Option C": "Coffee",
+      "Option D": "Juice",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_134",
+      "Question Text": "In Lilo & Stitch, What City Does Stitch Build And Destroy?",
+      "Option A": "Los Angeles",
+      "Option B": "New York",
+      "Option C": "Seattle",
+      "Option D": "San Francisco",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_135",
+      "Question Text": "In Lilo & Stitch, What Title Was Jumba Branded With?",
+      "Option A": "Mad Scientist",
+      "Option B": "Idiot Scientist",
+      "Option C": "Evil Genius",
+      "Option D": "Crazy Doctor",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_136",
+      "Question Text": "In Lilo & Stitch, Why Was Jumba Put In Jail?",
+      "Option A": "Stealing Research",
+      "Option B": "Breaking Laws",
+      "Option C": "Evil Experimenting",
+      "Option D": "Creating Monsters",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_137",
+      "Question Text": "In Disney's Meet the Robinsons, What Is the Name of Lewis's Robot?",
+      "Option A": "Bob",
+      "Option B": "Tim",
+      "Option C": "Carl",
+      "Option D": "Max",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_138",
+      "Question Text": "In Meet The Robinsons, What Did Mrs. Krunklehorn Invent?",
+      "Option A": "Energy Drinks",
+      "Option B": "Caffeine Patches",
+      "Option C": "Sleep Pills",
+      "Option D": "Power Bars",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_139",
+      "Question Text": "In Meet The Robinsons, What Was Lizzy's Science Project?",
+      "Option A": "Honey Bees",
+      "Option B": "Fire Ants",
+      "Option C": "Butterflies",
+      "Option D": "Spiders",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_140",
+      "Question Text": "In Meet The Robinsons, Who Was Lewis Scared Of?",
+      "Option A": "The Cook",
+      "Option B": "The Butler",
+      "Option C": "The Maid",
+      "Option D": "The Gardner",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_141",
+      "Question Text": "In Meet The Robinsons, What Was Mr. Harrington Allergic To?",
+      "Option A": "Eggs",
+      "Option B": "Milk",
+      "Option C": "Shellfish",
+      "Option D": "Peanuts",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_142",
+      "Question Text": "In Meet The Robinsons, What Was Uncle Art's Job?",
+      "Option A": "Mail Carrier",
+      "Option B": "Pizza Delivery Guy",
+      "Option C": "Newspaper Boy",
+      "Option D": "Package Handler",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_143",
+      "Question Text": "In Disney's Moana, What Is the Name of the Ocean's Gift to Moana?",
+      "Option A": "Heart of Te Fiti",
+      "Option B": "Stone of the Sea",
+      "Option C": "Ocean Pearl",
+      "Option D": "Spirit Gem",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_144",
+      "Question Text": "In Disney's Moana, What Is the Name of the Demigod Who Stole Te Fiti's Heart?",
+      "Option A": "Te Ka",
+      "Option B": "Tamatoa",
+      "Option C": "Maui",
+      "Option D": "Tui",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_145",
+      "Question Text": "In Disney's Moana, What Is the Name of Moana's Pet Pig?",
+      "Option A": "Heihei",
+      "Option B": "Pua",
+      "Option C": "Tala",
+      "Option D": "Sina",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_146",
+      "Question Text": "In Disney's Moana, What Is the Name of the Villainous Coconut Pirates?",
+      "Option A": "Kakamora",
+      "Option B": "Lalotai",
+      "Option C": "Tamatoa",
+      "Option D": "Te Ka",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_147",
+      "Question Text": "Which Disney Princess Is the Daughter of a Chief?",
+      "Option A": "Moana",
+      "Option B": "Pocahontas",
+      "Option C": "Mulan",
+      "Option D": "Jasmine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_148",
+      "Question Text": "In Disney's Moana, What Is the Name of Her Island?",
+      "Option A": "Lalotai",
+      "Option B": "Motunui",
+      "Option C": "Te Fiti",
+      "Option D": "Maui",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_149",
+      "Question Text": "In Disney's Mulan, What Is Shan Yu's Falcon's Name?",
+      "Option A": "Hayabusa",
+      "Option B": "Khan",
+      "Option C": "Cri-Kee",
+      "Option D": "Mushu",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_150",
+      "Question Text": "In Disney's Mulan, What Is the Name of Mulan's Horse?",
+      "Option A": "Shadow",
+      "Option B": "Khan",
+      "Option C": "Storm",
+      "Option D": "Thunder",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_151",
+      "Question Text": "Which Disney Princess Has No Royal Heritage?",
+      "Option A": "Tiana",
+      "Option B": "Mulan",
+      "Option C": "Belle",
+      "Option D": "Cinderella",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_152",
+      "Question Text": "In Disney's Mulan, What Is the Name of the Emperor's Palace City?",
+      "Option A": "Forbidden City",
+      "Option B": "Imperial City",
+      "Option C": "Royal City",
+      "Option D": "Dragon City",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_153",
+      "Question Text": "In Disney's Mulan, What Is the Name of the Training Camp?",
+      "Option A": "Wu-Shang",
+      "Option B": "Yi-Shang",
+      "Option C": "Moo-Shung",
+      "Option D": "Wu-Ling",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_154",
+      "Question Text": "Which Actor Voiced Baloo, Thomas O'Malley, and Little John?",
+      "Option A": "Jim Cummings",
+      "Option B": "Peter Ustinov",
+      "Option C": "Phil Harris",
+      "Option D": "Sebastian Cabot",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_155",
+      "Question Text": "Which Two Disney Characters Transform into Dragons During Their Final Battles?",
+      "Option A": "Maleficent and Madam Mim",
+      "Option B": "Jafar and Maleficent",
+      "Option C": "The Emperor and Mushu",
+      "Option D": "The Beast and Ursula",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_156",
+      "Question Text": "In Disney's Oliver & Company, What Type of Dog Is Dodger?",
+      "Option A": "Bulldog",
+      "Option B": "Jack Russell Terrier",
+      "Option C": "German Shepherd",
+      "Option D": "Mutt",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_157",
+      "Question Text": "In Oliver & Company, What Food Do Oliver And Dodger First Steal Together?",
+      "Option A": "Pizza",
+      "Option B": "Sausages",
+      "Option C": "Hotdogs",
+      "Option D": "Hamburgers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_158",
+      "Question Text": "In Oliver & Company, How Many Dogs Does Fagin Own?",
+      "Option A": "Three",
+      "Option B": "Four",
+      "Option C": "Six",
+      "Option D": "Five",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_159",
+      "Question Text": "In Oliver & Company, In Which City Does The Film Take Place?",
+      "Option A": "Chicago",
+      "Option B": "Boston",
+      "Option C": "New York",
+      "Option D": "Los Angeles",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_160",
+      "Question Text": "In Oliver & Company, What Is The Name Of The Girl Who Adopts Oliver?",
+      "Option A": "Jenny",
+      "Option B": "Alice",
+      "Option C": "Sarah",
+      "Option D": "Emily",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_161",
+      "Question Text": "In Disney's Peter Pan, What Is Captain Hook's Pirate Ship Named?",
+      "Option A": "The Black Pearl",
+      "Option B": "The Flying Dutchman",
+      "Option C": "The Sea Wold",
+      "Option D": "The Jolly Roger",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_162",
+      "Question Text": "In Disney's Peter Pan, What Is Wendy's Full Name?",
+      "Option A": "Wendy Margaret Rose Darling",
+      "Option B": "Wendy Elizabeth Mary Darling",
+      "Option C": "Wendy Victoria Grace Darling",
+      "Option D": "Wendy Moira Angela Darling",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_163",
+      "Question Text": "In Disney's Peter Pan, What Color Is Tinker Bell's Dress?",
+      "Option A": "Green",
+      "Option B": "Yellow",
+      "Option C": "Blue",
+      "Option D": "White",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_164",
+      "Question Text": "In Disney's Peter Pan, What Is Captain Hook's First Name?",
+      "Option A": "Jonathan",
+      "Option B": "William",
+      "Option C": "James",
+      "Option D": "Peter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_165",
+      "Question Text": "In Disney's Peter Pan, What Is Mr. Smee's Job on the Jolly Roger?",
+      "Option A": "Cook",
+      "Option B": "First Mate",
+      "Option C": "Boatswain",
+      "Option D": "Navigator",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_166",
+      "Question Text": "In Disney's Pinocchio, What Is the Name of the Island Where Children Turn into Donkeys?",
+      "Option A": "Paradise Island",
+      "Option B": "Happy Island",
+      "Option C": "Fantasy Island",
+      "Option D": "Pleasure Island",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_167",
+      "Question Text": "In Pinocchio, What Color Was The Fairy Who Granted Geppetto's Wish?",
+      "Option A": "Gold",
+      "Option B": "White",
+      "Option C": "Pink",
+      "Option D": "Blue",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_168",
+      "Question Text": "In Pinocchio, What Is The Name Of Geppetto's Pet Fish?",
+      "Option A": "Coral",
+      "Option B": "Cleo",
+      "Option C": "Nemo",
+      "Option D": "Finn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_169",
+      "Question Text": "In Pinocchio, What Is The Name Of The Whale That Swallows Geppetto?",
+      "Option A": "Goliath",
+      "Option B": "Neptune",
+      "Option C": "Titan",
+      "Option D": "Monstro",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_170",
+      "Question Text": "In Pinocchio, Who Locks Pinocchio In A Birdcage?",
+      "Option A": "The Coachman",
+      "Option B": "Honest John",
+      "Option C": "Gideon",
+      "Option D": "Stromboli",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_171",
+      "Question Text": "In Disney's Pocahontas, What Is John Smith's Ship Called?",
+      "Option A": "The Mayflower",
+      "Option B": "The Discovery",
+      "Option C": "The Susan Constant",
+      "Option D": "The Virginia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_172",
+      "Question Text": "In Disney's Pocahontas, What Is the Name of Pocahontas's Best Friend?",
+      "Option A": "Kocoum",
+      "Option B": "Nakoma",
+      "Option C": "Meeko",
+      "Option D": "Flit",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_173",
+      "Question Text": "In Pocahontas, What Is The Name Of Pocahontas's Father?",
+      "Option A": "Chief Powhatan",
+      "Option B": "Chief Wahunsenacawh",
+      "Option C": "Chief Tomoco",
+      "Option D": "Chief Openchancanough",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_174",
+      "Question Text": "In Pocahontas, What Are The English Settlers Digging For?",
+      "Option A": "Silver",
+      "Option B": "Diamonds",
+      "Option C": "Copper",
+      "Option D": "Gold",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_175",
+      "Question Text": "In Pocahontas, Who Orders Ratcliff To Be Tied And Gagged?",
+      "Option A": "John Smith",
+      "Option B": "Ben",
+      "Option C": "Thomas",
+      "Option D": "Lon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_176",
+      "Question Text": "In Pocahontas, Who Places The Paw Prints On Kocoum's Chest?",
+      "Option A": "The Medicine Man",
+      "Option B": "Kekata",
+      "Option C": "Chief Powhatan",
+      "Option D": "The Shaman",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_177",
+      "Question Text": "In Ralph Breaks The Internet, What Game Did They Get Stuck In At Tappers?",
+      "Option A": "Tron",
+      "Option B": "Pac-Man",
+      "Option C": "Street Fighter",
+      "Option D": "Space Invaders",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_178",
+      "Question Text": "In Ralph Breaks The Internet, Which Princess Did Vanellope Struggle To Understand?",
+      "Option A": "Anna",
+      "Option B": "Moana",
+      "Option C": "Tiana",
+      "Option D": "Merida",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_179",
+      "Question Text": "In Ralph Breaks The Internet, What Game Were They Playing In The Power Cord?",
+      "Option A": "Hide and Seek",
+      "Option B": "Tag",
+      "Option C": "I Spy",
+      "Option D": "Simon Says",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_180",
+      "Question Text": "In Ralph Breaks The Internet, On What Site Was The Steering Wheel?",
+      "Option A": "Amazon",
+      "Option B": "Ebay",
+      "Option C": "Craigslist",
+      "Option D": "Etsy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_181",
+      "Question Text": "In Ralph Breaks The Internet, What Animal Explodes From Too Many Pancakes?",
+      "Option A": "Kitten",
+      "Option B": "Puppy",
+      "Option C": "Hamster",
+      "Option D": "Rabbit",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_182",
+      "Question Text": "In Raya And The Last Dragon, What Task Has Raya's Family Had For 500 Years?",
+      "Option A": "Protectors Of The Temple",
+      "Option B": "Keepers Of The Scrolls",
+      "Option C": "Warriors Of The Land",
+      "Option D": "Guardians Of The Dragon Orb",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_183",
+      "Question Text": "In Raya And The Last Dragon, Who Was The Common Enemy 500 Years Ago?",
+      "Option A": "The Shadow Army",
+      "Option B": "The Druun",
+      "Option C": "The Dark Forces",
+      "Option D": "The Ancient Evil",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_184",
+      "Question Text": "In Raya And The Last Dragon, How Long Have They Guarded The Orb?",
+      "Option A": "100 Years",
+      "Option B": "300 Years",
+      "Option C": "500 Years",
+      "Option D": "1000 Years",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_185",
+      "Question Text": "In Raya And The Last Dragon, Where Does The Movie Take Place?",
+      "Option A": "Avalor",
+      "Option B": "Agrabah",
+      "Option C": "Kumandra",
+      "Option D": "Arendelle",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_186",
+      "Question Text": "In Raya And The Last Dragon, How Many Tribes Are In Kumandra?",
+      "Option A": "3 Tribes",
+      "Option B": "4 Tribes",
+      "Option C": "5 Tribes",
+      "Option D": "6 Tribes",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_187",
+      "Question Text": "In Disney's Robin Hood, What Animal Is Robin Hood?",
+      "Option A": "Wolf",
+      "Option B": "Deer",
+      "Option C": "Raccoon",
+      "Option D": "Fox",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_188",
+      "Question Text": "In Disney's Robin Hood, What Animal Is Little John?",
+      "Option A": "Wolf",
+      "Option B": "Lion",
+      "Option C": "Tiger",
+      "Option D": "Bear",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_189",
+      "Question Text": "In Disney's Robin Hood, What Animal Is Friar Tuck?",
+      "Option A": "Badger",
+      "Option B": "Rabbit",
+      "Option C": "Mouse",
+      "Option D": "Owl",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_190",
+      "Question Text": "In Robin Hood, Who Does Robin Hood Break Into Prison To Save?",
+      "Option A": "The Villagers",
+      "Option B": "Friar Tuck",
+      "Option C": "Little John",
+      "Option D": "Maid Marian",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_191",
+      "Question Text": "In Robin Hood, What Does Robin Hood Disguise Himself As At The Archery Tournament?",
+      "Option A": "A Stork",
+      "Option B": "A Beggar",
+      "Option C": "A Knight",
+      "Option D": "A Merchant",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_192",
+      "Question Text": "In Disney's Sleeping Beauty, What Are the Three Good Fairies' Names?",
+      "Option A": "Rose Lily and Violet",
+      "Option B": "Flora Fiona and Fairy",
+      "Option C": "Flora Fauna and Merryweather",
+      "Option D": "Faith Hope and Charity",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_193",
+      "Question Text": "Which Disney Villain Owns a Pet Raven Named Diablo?",
+      "Option A": "Evil Queen",
+      "Option B": "Jafar",
+      "Option C": "Maleficent",
+      "Option D": "Ursula",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_194",
+      "Question Text": "In Disney's Sleeping Beauty, What Is the Original Name of Princess Aurora?",
+      "Option A": "Briar Rose",
+      "Option B": "Rose Red",
+      "Option C": "Morning Glory",
+      "Option D": "Dawn",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_195",
+      "Question Text": "In Sleeping Beauty, What Is Aurora's Father's Name?",
+      "Option A": "King Henry",
+      "Option B": "King Richard",
+      "Option C": "King Stephan",
+      "Option D": "King Philip",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_196",
+      "Question Text": "In Sleeping Beauty, How Many Years Did Aurora Live With The Fairies?",
+      "Option A": 15,
+      "Option B": 16,
+      "Option C": 17,
+      "Option D": 18,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_197",
+      "Question Text": "In Sleeping Beauty, What Object Did Flora Want To Turn Aurora Into?",
+      "Option A": "Bird",
+      "Option B": "Tree",
+      "Option C": "Flower",
+      "Option D": "Rock",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_198",
+      "Question Text": "In Sleeping Beauty, How Long Did Maleficent Say Philip Would Be Imprisoned?",
+      "Option A": "50 Years",
+      "Option B": "100 Years",
+      "Option C": "150 Years",
+      "Option D": "200 Years",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_199",
+      "Question Text": "In Snow White, What Job Did The Evil Queen Make Snow White Perform?",
+      "Option A": "Kitchen Maid",
+      "Option B": "Chamber Maid",
+      "Option C": "Servant Girl",
+      "Option D": "Scullery Maid",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_200",
+      "Question Text": "In Snow White, How Did The Mirror Describe Snow White's Hair?",
+      "Option A": "Dark As Night",
+      "Option B": "Black As Ebony",
+      "Option C": "Black As Coal",
+      "Option D": "Dark As Midnight",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_201",
+      "Question Text": "In Snow White, What Do The Dwarfs Mine Besides Diamonds?",
+      "Option A": "Emeralds",
+      "Option B": "Rubies",
+      "Option C": "Sapphires",
+      "Option D": "Gold",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_202",
+      "Question Text": "In Snow White, What Animal's Heart Did The Queen Think She Had?",
+      "Option A": "Deer's Heart",
+      "Option B": "Bear's Heart",
+      "Option C": "Boar's Heart",
+      "Option D": "Pig's Heart",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_203",
+      "Question Text": "In Snow White, What Does Dopey Use As A Pillow?",
+      "Option A": "Blanket",
+      "Option B": "Feather",
+      "Option C": "Hay",
+      "Option D": "Cloth",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_204",
+      "Question Text": "Which Disney Princess is Only 14 Years Old?",
+      "Option A": "Snow White",
+      "Option B": "Aurora",
+      "Option C": "Ariel",
+      "Option D": "Jasmine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_205",
+      "Question Text": "In Strange World, What Nickname Is Given To Searcher?",
+      "Option A": "The Hero",
+      "Option B": "The Founder Of Pando",
+      "Option C": "The Explorer",
+      "Option D": "The Pioneer",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_206",
+      "Question Text": "In Strange World, What Vehicle Does Meridian Operate?",
+      "Option A": "Helicopter",
+      "Option B": "Plane",
+      "Option C": "Glider",
+      "Option D": "Cropduster",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_207",
+      "Question Text": "In Strange World, What Weapon Does Jaeger Use Against Monsters?",
+      "Option A": "Sword",
+      "Option B": "Spear",
+      "Option C": "Gun",
+      "Option D": "Flamethrower",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_208",
+      "Question Text": "In Strange World, What Is The Name Of Avalonia's President?",
+      "Option A": "Mendoza",
+      "Option B": "Rivera",
+      "Option C": "Callisto",
+      "Option D": "Santiago",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_209",
+      "Question Text": "In Strange World, What Is Unique About Legend The Dog?",
+      "Option A": "He Has No Tail",
+      "Option B": "He Has Two Colors",
+      "Option C": "He Has Big Ears",
+      "Option D": "He Has Three Legs",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_210",
+      "Question Text": "In Disney's Tangled, What Is the Name of the Kingdom Where Rapunzel Is Princess?",
+      "Option A": "Arendelle",
+      "Option B": "DunBroch",
+      "Option C": "Corona",
+      "Option D": "Valencia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_211",
+      "Question Text": "Which Disney Kingdom Celebrates for an Entire Week?",
+      "Option A": "Corona (After Finding Rapunzel)",
+      "Option B": "Arendelle (During Summer)",
+      "Option C": "DunBroch (After Games)",
+      "Option D": "Agrabah (After Jafar)",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_212",
+      "Question Text": "In Disney's Tangled, What Is the Name of Mother Gothel's Knife?",
+      "Option A": "The Blade of Night",
+      "Option B": "The Shadow Blade",
+      "Option C": "The Dagger of Death",
+      "Option D": "The Dark Knife",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_213",
+      "Question Text": "In Disney's Tangled, What Is the Name of the Pub Where Flynn and Rapunzel Meet the Thugs?",
+      "Option A": "The Snuggly Duckling",
+      "Option B": "The Prancing Pony",
+      "Option C": "The Ugly Duckling",
+      "Option D": "The Dancing Duck",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_214",
+      "Question Text": "Which Disney Princess Has Magical Healing Hair?",
+      "Option A": "Aurora",
+      "Option B": "Ariel",
+      "Option C": "Cinderella",
+      "Option D": "Rapunzel",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_215",
+      "Question Text": "In Disney's Tangled, What Is Flynn Rider's Real Name?",
+      "Option A": "Edward Fitzroy",
+      "Option B": "George Fitzgerald",
+      "Option C": "Eugene Fitzherbert",
+      "Option D": "Edmund Fitzgerald",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_216",
+      "Question Text": "In Disney's Tangled, What Is Maximus's Job Before Meeting Flynn?",
+      "Option A": "Royal Steed",
+      "Option B": "Castle Guard",
+      "Option C": "Captain's Horse",
+      "Option D": "Palace Guard Horse",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_217",
+      "Question Text": "In Disney's Tarzan, What Is the Name of Tarzan's Gorilla Mother?",
+      "Option A": "Kala",
+      "Option B": "Terk",
+      "Option C": "Kerchak",
+      "Option D": "Neema",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_218",
+      "Question Text": "Which Disney Villain Dies by Hanging?",
+      "Option A": "Gaston",
+      "Option B": "Frollo",
+      "Option C": "Scar",
+      "Option D": "Clayton",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_219",
+      "Question Text": "In Tarzan, What Animal Killed Tarzan's Parents?",
+      "Option A": "Tiger",
+      "Option B": "Leopard",
+      "Option C": "Lion",
+      "Option D": "Jaguar",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_220",
+      "Question Text": "In Tarzan, What Does Tantor Think Tarzan Is While Swimming?",
+      "Option A": "Shark",
+      "Option B": "Piranha",
+      "Option C": "Crocodile",
+      "Option D": "Snake",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_221",
+      "Question Text": "In Tarzan, What Is Jane's Father's Full Name?",
+      "Option A": "Archimedis Q. Porter",
+      "Option B": "Archimedes P. Porter",
+      "Option C": "Alexander Q. Porter",
+      "Option D": "Augustus P. Porter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_222",
+      "Question Text": "In Tarzan, What Animal Did Clayton Teach 'God Save The Queen'?",
+      "Option A": "Monkey",
+      "Option B": "Parrot",
+      "Option C": "Elephant",
+      "Option D": "Gorilla",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_223",
+      "Question Text": "In Disney's The Aristocats, What Is the Butler's Full Name?",
+      "Option A": "Edgar Worthington",
+      "Option B": "Edgar Pembroke",
+      "Option C": "Edgar Balthazar",
+      "Option D": "Edgar Montgomery",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_224",
+      "Question Text": "In Disney's The Aristocats, What Is the Name of the English Cat That Helps Duchess?",
+      "Option A": "Abraham DeLacey",
+      "Option B": "Giuseppe Casey",
+      "Option C": "Thomas O'Malley",
+      "Option D": "Scat Cat",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_225",
+      "Question Text": "In Disney's The Aristocats, What Is the Name of the Mouse That Helps the Cats?",
+      "Option A": "Jacques",
+      "Option B": "Roquefort",
+      "Option C": "Pierre",
+      "Option D": "Bernard",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_226",
+      "Question Text": "In The Aristocats, What Does The Siamese Cat Say About Fortune Cookies?",
+      "Option A": "They're Too Sweet",
+      "Option B": "They're Bad Luck",
+      "Option C": "They're Always Wrong",
+      "Option D": "They're Too Hard",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_227",
+      "Question Text": "In The Aristocats, Which Dog Is The Leader?",
+      "Option A": "Lafayette",
+      "Option B": "Frou-Frou",
+      "Option C": "Napoleon",
+      "Option D": "Francis",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_228",
+      "Question Text": "In The Aristocats, What Does O'Malley Compare Duchess' Eyes To?",
+      "Option A": "Emeralds",
+      "Option B": "Diamonds",
+      "Option C": "Pearls",
+      "Option D": "Sapphires",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_229",
+      "Question Text": "In Disney's The Black Cauldron, Who Is the Male Protagonist?",
+      "Option A": "Gurgi",
+      "Option B": "Fflewddur",
+      "Option C": "Dallben",
+      "Option D": "Taran",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_230",
+      "Question Text": "In Disney's The Black Cauldron, What Is Taran's Occupation?",
+      "Option A": "Stable Boy",
+      "Option B": "Assistant Pig Keeper",
+      "Option C": "Shepherd",
+      "Option D": "Farmer",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_231",
+      "Question Text": "In The Black Cauldron, What Is The Name Of The Horned King's Sidekick?",
+      "Option A": "Goblin",
+      "Option B": "Runt",
+      "Option C": "Creeper",
+      "Option D": "Minion",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_232",
+      "Question Text": "In The Black Cauldron, What Is The Princess's Name?",
+      "Option A": "Princess Elena",
+      "Option B": "Princess Kida",
+      "Option C": "Princess Eilonwy",
+      "Option D": "Princess Aurora",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_233",
+      "Question Text": "In The Black Cauldron, Where Does Taran Live?",
+      "Option A": "Prydain Castle",
+      "Option B": "Dark Forest",
+      "Option C": "Green Valley",
+      "Option D": "Caer Dallben",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_234",
+      "Question Text": "In Disney's The Emperor's New Groove, What Animal Does Yzma Turn Kronk Into?",
+      "Option A": "Horse",
+      "Option B": "Cow",
+      "Option C": "Llama",
+      "Option D": "Sheep",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_235",
+      "Question Text": "Which Disney Villain Gets Transformed into a Kitten?",
+      "Option A": "Yzma",
+      "Option B": "Maleficent",
+      "Option C": "Mother Gothel",
+      "Option D": "Lady Tremaine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_236",
+      "Question Text": "In The Emperor's New Groove, What Is The Name Of Pacha's Llama?",
+      "Option A": "Fluffy",
+      "Option B": "Misty",
+      "Option C": "Wooley",
+      "Option D": "Cloudy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_237",
+      "Question Text": "In The Emperor's New Groove, What Is Kronk's Specialty Dish?",
+      "Option A": "Spinach Puffs",
+      "Option B": "Cheese Rolls",
+      "Option C": "Meat Pies",
+      "Option D": "Bread Sticks",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_238",
+      "Question Text": "In The Emperor's New Groove, Why Doesn't Yzma Use Her First Plan?",
+      "Option A": "Too Expensive",
+      "Option B": "Too Complex",
+      "Option C": "To Save On Postage",
+      "Option D": "Too Time-Consuming",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_239",
+      "Question Text": "In The Emperor's New Groove, Why Does Kuzco Want Pacha's Land?",
+      "Option A": "For A Palace",
+      "Option B": "To Build Kuzcotopia",
+      "Option C": "For A Garden",
+      "Option D": "For A Pool",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_240",
+      "Question Text": "In The Fox And The Hound, What Is Chief Chasing In His Dreams?",
+      "Option A": "Badger",
+      "Option B": "Fox",
+      "Option C": "Rabbit",
+      "Option D": "Deer",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_241",
+      "Question Text": "In The Fox And The Hound, What Number Does Copper Reach Before Tod Stops Him?",
+      "Option A": "One",
+      "Option B": "Two",
+      "Option C": "Three",
+      "Option D": "Four",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_242",
+      "Question Text": "In The Fox And The Hound, What Makes The 'Awful Noise' Tod Refers To?",
+      "Option A": "Bird Calls",
+      "Option B": "Thunder",
+      "Option C": "Chief's Snoring",
+      "Option D": "Train Whistle",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_243",
+      "Question Text": "In The Fox And The Hound, Who Is Copper's Mentor?",
+      "Option A": "Tod",
+      "Option B": "Amos",
+      "Option C": "Chief",
+      "Option D": "Big Mama",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_244",
+      "Question Text": "In The Great Mouse Detective, What Is The Name Of Ratigan's Bat Henchman?",
+      "Option A": "Fangs",
+      "Option B": "Fidgit",
+      "Option C": "Batty",
+      "Option D": "Wings",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_245",
+      "Question Text": "In The Great Mouse Detective, Where Does Olivia Get Kidnapped?",
+      "Option A": "The Park",
+      "Option B": "A Toy Store",
+      "Option C": "The Street",
+      "Option D": "The Market",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_246",
+      "Question Text": "In The Great Mouse Detective, What Animal Performs At The Waterfront Pub?",
+      "Option A": "Octopus",
+      "Option B": "Salamander",
+      "Option C": "Frog",
+      "Option D": "Fish",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_247",
+      "Question Text": "In The Great Mouse Detective, Where Is Olivia Hidden During Robot Construction?",
+      "Option A": "In A Box",
+      "Option B": "In A Chest",
+      "Option C": "In A Barrel",
+      "Option D": "In A Wine Bottle",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_248",
+      "Question Text": "In The Great Mouse Detective, What Does Olivia Feed To Toby?",
+      "Option A": "A Biscuit",
+      "Option B": "A Cookie",
+      "Option C": "A Crumpet",
+      "Option D": "A Scone",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_249",
+      "Question Text": "In Disney's The Hunchback of Notre Dame, What Is the Name of the Festival Quasimodo Attends?",
+      "Option A": "Feast of Saints",
+      "Option B": "Festival of Fools",
+      "Option C": "Carnival of Paris",
+      "Option D": "Festival of Lights",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_250",
+      "Question Text": "In The Hunchback Of Notre Dame, What Is The Name Of The Gypsy Leader?",
+      "Option A": "Clopin",
+      "Option B": "Pierre",
+      "Option C": "Marcel",
+      "Option D": "Jacques",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_251",
+      "Question Text": "In The Hunchback Of Notre Dame, What Is The Third Gargoyle's Name?",
+      "Option A": "Victor",
+      "Option B": "Laverne",
+      "Option C": "Charles",
+      "Option D": "Hugo",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_252",
+      "Question Text": "In The Hunchback Of Notre Dame, What Festival Do The Gargoyles Want Quasi To Attend?",
+      "Option A": "Carnival",
+      "Option B": "Saints",
+      "Option C": "Lights",
+      "Option D": "Fools",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_253",
+      "Question Text": "In The Hunchback Of Notre Dame, What Is The Name Of Esmeralda's Goat?",
+      "Option A": "Djali",
+      "Option B": "Pierre",
+      "Option C": "Felix",
+      "Option D": "Claude",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_254",
+      "Question Text": "In The Hunchback Of Notre Dame, Why Does Frollo Sentence Phoebus To Death?",
+      "Option A": "Treason",
+      "Option B": "Theft",
+      "Option C": "Insubordination",
+      "Option D": "Heresy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_255",
+      "Question Text": "In Disney's The Jungle Book, What Did King Louie Ask Mowgli to Teach Him?",
+      "Option A": "How to Dance",
+      "Option B": "How to Sing",
+      "Option C": "How to Make Fire",
+      "Option D": "How to Build",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_256",
+      "Question Text": "In Disney's The Jungle Book, What Type of Snake Is Kaa?",
+      "Option A": "Cobra",
+      "Option B": "Anaconda",
+      "Option C": "Indian Python",
+      "Option D": "Boa Constrictor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_257",
+      "Question Text": "In The Jungle Book, Who Did Bagheera Give The Baby To?",
+      "Option A": "The Village",
+      "Option B": "A Pack Of Wolves",
+      "Option C": "The Elephants",
+      "Option D": "The Bears",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_258",
+      "Question Text": "In The Jungle Book, What Is The Name Of The Man's Son?",
+      "Option A": "Mowgli",
+      "Option B": "Baloo",
+      "Option C": "Shanti",
+      "Option D": "Ranjan",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_259",
+      "Question Text": "In The Jungle Book, What Does Mowgli Say The Village Is All About?",
+      "Option A": "Laws And Order",
+      "Option B": "Rules And Work",
+      "Option C": "Duties And Tasks",
+      "Option D": "Structure And Time",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_260",
+      "Question Text": "In Disney's The Lion King, What Is Simba's Mother's Name?",
+      "Option A": "Nala",
+      "Option B": "Sarafina",
+      "Option C": "Zira",
+      "Option D": "Sarabi",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_261",
+      "Question Text": "In Disney's The Lion King, Name Scar's Three Main Hyenas?",
+      "Option A": "Bonnie Clyde and Buck",
+      "Option B": "Shenzi Banzai and Ed",
+      "Option C": "Spot Spike and Scar",
+      "Option D": "Razor Claw and Fang",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_262",
+      "Question Text": "Which Disney Movie Features the Song 'Hakuna Matata'?",
+      "Option A": "The Lion King",
+      "Option B": "Tarzan",
+      "Option C": "Aladdin",
+      "Option D": "Mulan",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_263",
+      "Question Text": "In Disney's The Lion King, What Type of Animal Is Zazu?",
+      "Option A": "Red-Billed Hornbill",
+      "Option B": "Parrot",
+      "Option C": "Toucan",
+      "Option D": "Macaw",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_264",
+      "Question Text": "In Disney's The Lion King, What Does 'Rafiki' Mean in Swahili?",
+      "Option A": "Wise One",
+      "Option B": "Teacher",
+      "Option C": "Friend",
+      "Option D": "Guide",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_265",
+      "Question Text": "In Disney's The Little Mermaid, How Many Sisters Does Ariel Have?",
+      "Option A": "4",
+      "Option B": "5",
+      "Option C": "7",
+      "Option D": "6",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_266",
+      "Question Text": "Which Disney Princess Has 6 Sisters?",
+      "Option A": "Aurora",
+      "Option B": "Cinderella",
+      "Option C": "Ariel",
+      "Option D": "Belle",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_267",
+      "Question Text": "In Disney's The Little Mermaid, What Is the Name of Ariel's Oldest Sister?",
+      "Option A": "Aquata",
+      "Option B": "Andrina",
+      "Option C": "Attina",
+      "Option D": "Alana",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_268",
+      "Question Text": "In Disney's The Little Mermaid, What Object Does Ariel Use to Comb Her Hair?",
+      "Option A": "Dinglehopper",
+      "Option B": "Snarfblat",
+      "Option C": "Thingamabob",
+      "Option D": "Whatchamacallit",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_269",
+      "Question Text": "In Disney's The Little Mermaid, What Is the Name of Sebastian's Musical Number?",
+      "Option A": "Part of Your World",
+      "Option B": "Kiss the Girl",
+      "Option C": "Poor Unfortunate Souls",
+      "Option D": "Under the Sea",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_270",
+      "Question Text": "In Disney's The Little Mermaid, What Is the Name of Ursula's Garden?",
+      "Option A": "Garden of Despair",
+      "Option B": "Garden of Lost Souls",
+      "Option C": "Garden of Misery",
+      "Option D": "Garden of Darkness",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_271",
+      "Question Text": "In Disney's The Princess and the Frog, What Is the Name of Charlotte's Cat?",
+      "Option A": "Marcel",
+      "Option B": "Felix",
+      "Option C": "Lucifer",
+      "Option D": "Thomas",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_272",
+      "Question Text": "Which Disney Prince Comes from Maldonia?",
+      "Option A": "Eric",
+      "Option B": "Naveen",
+      "Option C": "Adam",
+      "Option D": "Philip",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_273",
+      "Question Text": "In Disney's The Princess and the Frog, What Is the Name of Tiana's Restaurant?",
+      "Option A": "Tiana's Palace",
+      "Option B": "Tiana's Place",
+      "Option C": "Tiana's Kitchen",
+      "Option D": "Tiana's Dream",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_274",
+      "Question Text": "In Disney's The Princess and the Frog, What Is Dr. Facilier's Nickname?",
+      "Option A": "The Voodoo King",
+      "Option B": "The Magic Man",
+      "Option C": "The Shadow Man",
+      "Option D": "The Dark One",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_275",
+      "Question Text": "In Disney's The Princess and the Frog, What Is Charlotte's Nickname for Tiana?",
+      "Option A": "Ti",
+      "Option B": "Ana",
+      "Option C": "Titi",
+      "Option D": "Tia",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_276",
+      "Question Text": "Which Disney Princess Works as a Waitress?",
+      "Option A": "Snow White",
+      "Option B": "Tiana",
+      "Option C": "Cinderella",
+      "Option D": "Aurora",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_277",
+      "Question Text": "In Disney's The Princess and the Frog, What Is the Name of the Jazz-Playing Alligator?",
+      "Option A": "Ray",
+      "Option B": "Louis",
+      "Option C": "Prince",
+      "Option D": "Jacques",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_278",
+      "Question Text": "In Disney's The Princess and the Frog, What Is Ray's Love Interest's Name?",
+      "Option A": "Stella",
+      "Option B": "Luna",
+      "Option C": "Evangeline",
+      "Option D": "Diana",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_279",
+      "Question Text": "In Disney's The Rescuers, Where Is the Rescue Aid Society Headquarters Located?",
+      "Option A": "White House",
+      "Option B": "Parliament Building",
+      "Option C": "World Trade Center",
+      "Option D": "United Nations Building",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_280",
+      "Question Text": "In Disney's The Rescuers, What Is the Name of the Orphan Girl?",
+      "Option A": "Jenny",
+      "Option B": "Annie",
+      "Option C": "Mary",
+      "Option D": "Penny",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_281",
+      "Question Text": "In The Rescuers, What Diamond Are Medusa And Mr. Snoops Looking For?",
+      "Option A": "The Queen's Eye",
+      "Option B": "The Dragon's Eye",
+      "Option C": "The Snake's Eye",
+      "Option D": "The Devil's Eye",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_282",
+      "Question Text": "In The Rescuers, Where Are The Villains Hiding Out?",
+      "Option A": "Crocodile Creek",
+      "Option B": "Snake River",
+      "Option C": "Devil's Bayou",
+      "Option D": "Gator Swamp",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_283",
+      "Question Text": "In The Rescuers Down Under, When Does Cody Promise To Be Home?",
+      "Option A": "Lunch",
+      "Option B": "Supper",
+      "Option C": "Dinner",
+      "Option D": "Breakfast",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_284",
+      "Question Text": "In The Rescuers Down Under, Who Does Cody Save From The Poacher's Trap?",
+      "Option A": "Marahute",
+      "Option B": "Jake",
+      "Option C": "Bernard",
+      "Option D": "Wilbur",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_285",
+      "Question Text": "In The Rescuers Down Under, What Does The Doctor Call A Chain Saw?",
+      "Option A": "Epidermal Tissue Disruptor",
+      "Option B": "Medical Cutting Device",
+      "Option C": "Surgical Steel Implement",
+      "Option D": "Precision Cutting Tool",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_286",
+      "Question Text": "In The Rescuers Down Under, What Does Bernard Ask Bianca?",
+      "Option A": "Marry Him",
+      "Option B": "Move In",
+      "Option C": "Date Him",
+      "Option D": "Kiss Him",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_287",
+      "Question Text": "In The Rescuers Down Under, What Are Joanna's Favorite Snacks?",
+      "Option A": "Meat",
+      "Option B": "Eggs",
+      "Option C": "Fish",
+      "Option D": "Berries",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_288",
+      "Question Text": "In Disney's The Sword in the Stone, What Does Merlin Turn Arthur Into First?",
+      "Option A": "Fish",
+      "Option B": "Bird",
+      "Option C": "Squirrel",
+      "Option D": "Rabbit",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_289",
+      "Question Text": "In Disney's The Sword in the Stone, What Is Arthur's Nickname?",
+      "Option A": "Art",
+      "Option B": "Wart",
+      "Option C": "Kid",
+      "Option D": "Boy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_290",
+      "Question Text": "In Disney's The Sword in the Stone, What Animal Does Merlin Turn Arthur Into Last?",
+      "Option A": "Fish",
+      "Option B": "Bird",
+      "Option C": "Snake",
+      "Option D": "Squirrel",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_291",
+      "Question Text": "In The Sword In The Stone, Where Did Merlin Go On Vacation?",
+      "Option A": "Hawaii",
+      "Option B": "Florida",
+      "Option C": "Bahamas",
+      "Option D": "Bermuda",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_292",
+      "Question Text": "In The Sword In The Stone, What Didn't The Owl Want To Be?",
+      "Option A": "A Human",
+      "Option B": "A Bird",
+      "Option C": "A Fish",
+      "Option D": "A Squirrel",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_293",
+      "Question Text": "In The Sword In The Stone, What Was Merlin's Owl's Name?",
+      "Option A": "Artemis",
+      "Option B": "Apollo",
+      "Option C": "Atlas",
+      "Option D": "Archimedes",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_294",
+      "Question Text": "In The Sword In The Stone, What Was The Name Of The Witch Merlin Dueled?",
+      "Option A": "Madame Mim",
+      "Option B": "Madame Medusa",
+      "Option C": "Madame Mina",
+      "Option D": "Madame Merle",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_295",
+      "Question Text": "In The Three Caballeros, What Was The Prize In The Gaucho Race?",
+      "Option A": "1000 Pesos",
+      "Option B": "2000 Pesos",
+      "Option C": "500 Pesos",
+      "Option D": "5000 Pesos",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_296",
+      "Question Text": "In The Three Caballeros, What Was Donald Duck's Birthday?",
+      "Option A": "Monday The 13th",
+      "Option B": "Friday The 13th",
+      "Option C": "Sunday The 13th",
+      "Option D": "Tuesday The 13th",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_297",
+      "Question Text": "In The Three Caballeros, What Kind Of Animal Was Pablo?",
+      "Option A": "Duck",
+      "Option B": "Penguin",
+      "Option C": "Parrot",
+      "Option D": "Toucan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_298",
+      "Question Text": "In The Three Caballeros, What Does The Title Mean In English?",
+      "Option A": "Strange Birds",
+      "Option B": "Three Friends",
+      "Option C": "Dancing Birds",
+      "Option D": "Happy Birds",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_299",
+      "Question Text": "In The Three Caballeros, Who Helps The Penguin Cross The Equator?",
+      "Option A": "Poseidon",
+      "Option B": "King Neptune",
+      "Option C": "Atlas",
+      "Option D": "Zeus",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_300",
+      "Question Text": "In Treasure Planet, What Is The Main Character's Name?",
+      "Option A": "John Silver",
+      "Option B": "Ben Gunn",
+      "Option C": "Jim Hawkins",
+      "Option D": "Billy Bones",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_301",
+      "Question Text": "In Treasure Planet, What Does B.E.N. Stand For?",
+      "Option A": "Basic Electronic Navigator",
+      "Option B": "Binary Electronic Navigator",
+      "Option C": "Bio Electronic Navigator",
+      "Option D": "Basic Electronic Network",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_302",
+      "Question Text": "In Treasure Planet, What Was The Name Of Their Ship?",
+      "Option A": "HMS Legacy",
+      "Option B": "SS Legacy",
+      "Option C": "RLS Legacy",
+      "Option D": "HMS Discovery",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_303",
+      "Question Text": "In Treasure Planet, Who Hid The Loot Of A Thousand Worlds?",
+      "Option A": "Captain Silver",
+      "Option B": "Captain Nathaniel Flint",
+      "Option C": "Captain Bones",
+      "Option D": "Captain Arrow",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_304",
+      "Question Text": "In Treasure Planet, What Is Doctor Doppler's Profession?",
+      "Option A": "Astronomer",
+      "Option B": "Astrophysicist",
+      "Option C": "Scientist",
+      "Option D": "Professor",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_305",
+      "Question Text": "In Winnie The Pooh, What Is Eeyore Stuffed With?",
+      "Option A": "Sawdust",
+      "Option B": "Cotton",
+      "Option C": "Straw",
+      "Option D": "Fluff",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_306",
+      "Question Text": "In Winnie The Pooh, How Does Pooh Spell 'Honey' On His Pots?",
+      "Option A": "Honey",
+      "Option B": "Hunny",
+      "Option C": "Huny",
+      "Option D": "Hunee",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_307",
+      "Question Text": "In Winnie The Pooh, What Name Is On The Sign Over Pooh's Door?",
+      "Option A": "Mr. Brown",
+      "Option B": "Mr. Bear",
+      "Option C": "Mr. Sanders",
+      "Option D": "Mr. Smith",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_308",
+      "Question Text": "In Winnie The Pooh, What Flowers Do Kanga And Roo Give To Stuck Pooh?",
+      "Option A": "Daisies",
+      "Option B": "Roses",
+      "Option C": "Huneysuckle",
+      "Option D": "Violets",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_309",
+      "Question Text": "In Winnie The Pooh, What Creature Do They Mistake Tigger For In The Tree?",
+      "Option A": "Heffalump",
+      "Option B": "Woozle",
+      "Option C": "Lion",
+      "Option D": "Jagular",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_310",
+      "Question Text": "In Winnie The Pooh (2011), What Did Owl Think Happened To Christopher Robin?",
+      "Option A": "He Had Been Kidnapped",
+      "Option B": "He Was Lost",
+      "Option C": "He Ran Away",
+      "Option D": "He Was Sick",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_311",
+      "Question Text": "In Winnie The Pooh (2011), What Was Pooh Dreaming About?",
+      "Option A": "Honey",
+      "Option B": "Friends",
+      "Option C": "Adventure",
+      "Option D": "Playing",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_312",
+      "Question Text": "In Winnie The Pooh (2011), What Did They Try To Replace Eeyore's Tail With?",
+      "Option A": "Balloon",
+      "Option B": "Scarf",
+      "Option C": "Cuckoo Clock",
+      "Option D": "String",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_313",
+      "Question Text": "In Winnie The Pooh (2011), What Was Missing From Eeyore's Body?",
+      "Option A": "Head",
+      "Option B": "Ear",
+      "Option C": "Leg",
+      "Option D": "Tail",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_314",
+      "Question Text": "In Winnie The Pooh (2011), What Color Balloon Did Tigger Attack?",
+      "Option A": "Red",
+      "Option B": "Blue",
+      "Option C": "Yellow",
+      "Option D": "Green",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_315",
+      "Question Text": "In Wish, What Is The Name Of The Kingdom?",
+      "Option A": "Rosas",
+      "Option B": "Corona",
+      "Option C": "Arendelle",
+      "Option D": "Avalor",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_316",
+      "Question Text": "In Wish, What Kind Of Animal Is Valentino?",
+      "Option A": "Dog",
+      "Option B": "Rabbit",
+      "Option C": "Goat",
+      "Option D": "Cat",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_317",
+      "Question Text": "In Wish, What Is Asha About To Become To King Magnifico?",
+      "Option A": "His Student",
+      "Option B": "His Assistant",
+      "Option C": "His Apprentice",
+      "Option D": "His Helper",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_318",
+      "Question Text": "In Wish, What Gives Valentino The Ability To Speak?",
+      "Option A": "Magic Potion",
+      "Option B": "Wish Power",
+      "Option C": "The Fallen Star",
+      "Option D": "Royal Magic",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_319",
+      "Question Text": "In Wish, What Does King Magnifico Create To Control Everyone?",
+      "Option A": "A Crown",
+      "Option B": "A Staff",
+      "Option C": "A Ring",
+      "Option D": "A Necklace",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_320",
+      "Question Text": "In Wreck-It Ralph, In Which Game Does Ralph Get The Medal?",
+      "Option A": "Sugar Rush",
+      "Option B": "Fix-It Felix Jr.",
+      "Option C": "Hero's Duty",
+      "Option D": "Tapper",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_321",
+      "Question Text": "In Wreck-It Ralph, What Game Has The Root Beer Serving Bartender?",
+      "Option A": "BurgerTime",
+      "Option B": "Fix-It Felix Jr.",
+      "Option C": "Tapper",
+      "Option D": "Sugar Rush",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_322",
+      "Question Text": "In Wreck-It Ralph, Where Is Vanellope's Home In Sugar Rush?",
+      "Option A": "Candy Castle",
+      "Option B": "Sugar Mountain",
+      "Option C": "Sweet Valley",
+      "Option D": "Diet Cola Mountain",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_323",
+      "Question Text": "In Wreck-It Ralph, What Is The Name Of Fix-It Felix Jr's Land?",
+      "Option A": "Felixville",
+      "Option B": "Niceland",
+      "Option C": "Fixitopia",
+      "Option D": "Repairland",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_324",
+      "Question Text": "In Wreck-It Ralph, What Animal Does King Candy Call Ralph?",
+      "Option A": "Warthog",
+      "Option B": "Gorilla",
+      "Option C": "Beast",
+      "Option D": "Monster",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_325",
+      "Question Text": "In Disney's Zootopia, What Is Nick Wilde's Tax Evasion Scheme?",
+      "Option A": "Ice Cream Sales",
+      "Option B": "Street Vending",
+      "Option C": "Pawpsicle Business",
+      "Option D": "Food Truck",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_326",
+      "Question Text": "In Zootopia, What Do Judy's Parents Do For A Living?",
+      "Option A": "Carrot Farming",
+      "Option B": "Vegetable Store",
+      "Option C": "Grocery Shop",
+      "Option D": "Market Stand",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_327",
+      "Question Text": "In Zootopia, What Is Nick Doing When Judy First Meets Him?",
+      "Option A": "Trying To Buy A Giant Ice Lolly",
+      "Option B": "Walking Down Street",
+      "Option C": "Selling Pawpsicles",
+      "Option D": "Talking To Finnick",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_328",
+      "Question Text": "In Zootopia, What Species Work At The DMV?",
+      "Option A": "Pandas",
+      "Option B": "Sloths",
+      "Option C": "Koalas",
+      "Option D": "Turtles",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_329",
+      "Question Text": "In Zootopia, Who Is Behind The Animals Going Savage?",
+      "Option A": "Chief Bogo",
+      "Option B": "Dawn Bellwether",
+      "Option C": "Mayor Lionheart",
+      "Option D": "Doug Ramses",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "DISNEYANIMATEDMOVIES_330",
+      "Question Text": "In Zootopia, Where Is Judy Hopps From?",
+      "Option A": "Zootopia",
+      "Option B": "Tundratown",
+      "Option C": "Sahara Square",
+      "Option D": "Bunnyburrow",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    }
+  ]
+}

@@ -1,0 +1,2514 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "MUSIC_1",
+      "Question Text": "In 2006, which artist released the number 1 single 'Welcome To The Black Parade'?",
+      "Option A": "Fall Out Boy",
+      "Option B": "My Chemical Romance",
+      "Option C": "Panic! at the Disco",
+      "Option D": "The Used",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_2",
+      "Question Text": "In 2004, which artist released the number 1 single 'Wonderful'?",
+      "Option A": "50 Cent feat R Kelly",
+      "Option B": "Ja Rule feat R Kelly & Ashanti",
+      "Option C": "Nelly",
+      "Option D": "Usher",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_3",
+      "Question Text": "In 2005, which artist reached number 1 with 'The Importance Of Being Idle'?",
+      "Option A": "Blur",
+      "Option B": "Coldplay",
+      "Option C": "Oasis",
+      "Option D": "Kasabian",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_4",
+      "Question Text": "In 2005, which artist had a number 1 single with 'You're Beautiful'?",
+      "Option A": "James Blunt",
+      "Option B": "Damien Rice",
+      "Option C": "Daniel Powter",
+      "Option D": "David Gray",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_5",
+      "Question Text": "In what song does Alicia Keys sing about New York streets inspiring you?",
+      "Option A": "New York State of Mind",
+      "Option B": "Concrete Jungle",
+      "Option C": "Empire State of Mind",
+      "Option D": "Big Apple",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_6",
+      "Question Text": "In what song does Sugarland sing 'one thing you should know'?",
+      "Option A": "Leave",
+      "Option B": "Stay",
+      "Option C": "Breathe",
+      "Option D": "Want To",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_7",
+      "Question Text": "In 2006, which artist released the number 1 single 'Sorry'?",
+      "Option A": "Britney Spears",
+      "Option B": "Christina Aguilera",
+      "Option C": "Madonna",
+      "Option D": "Pink",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_8",
+      "Question Text": "In 2006, which artist released 'Thunder In My Heart Again'?",
+      "Option A": "Leo Sayer",
+      "Option B": "Meck feat Leo Sayer",
+      "Option C": "Rick Astley",
+      "Option D": "Gary Puckett",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_9",
+      "Question Text": "In 2007, which artist released the number 1 single 'Ruby'?",
+      "Option A": "Arctic Monkeys",
+      "Option B": "Kaiser Chiefs",
+      "Option C": "Kasabian",
+      "Option D": "The Fratellis",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_10",
+      "Question Text": "In 2007, which artists released the number 1 single 'Beautiful Liar'?",
+      "Option A": "Beyoncé & Rihanna",
+      "Option B": "Beyoncé & Shakira",
+      "Option C": "Rihanna & Shakira",
+      "Option D": "Pink & Beyoncé",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_11",
+      "Question Text": "In 2007, which artist released the number 1 single 'Shine'?",
+      "Option A": "Take That",
+      "Option B": "Westlife",
+      "Option C": "Blue",
+      "Option D": "Boyzone",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_12",
+      "Question Text": "In 2007, which artist released the number 1 single 'Give It To Me'?",
+      "Option A": "Justin Timberlake",
+      "Option B": "Timbaland",
+      "Option C": "Nelly Furtado",
+      "Option D": "Pharrell",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_13",
+      "Question Text": "In 2007, which artist released the number 1 single 'Baby's Coming Back'?",
+      "Option A": "Busted",
+      "Option B": "McFly",
+      "Option C": "Westlife",
+      "Option D": "Boyzone",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_14",
+      "Question Text": "In 2005, which artist reached number 1 with the single 'Dare'?",
+      "Option A": "The Gorillaz",
+      "Option B": "Blur",
+      "Option C": "Kaiser Chiefs",
+      "Option D": "Arctic Monkeys",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_15",
+      "Question Text": "In 2006, which artist had a number 1 single with 'Maneater'?",
+      "Option A": "Beyoncé",
+      "Option B": "Rihanna",
+      "Option C": "Nelly Furtado",
+      "Option D": "Christina Aguilera",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_16",
+      "Question Text": "In 2006, which artist released the number 1 single 'Welcome To The Black Parade'?",
+      "Option A": "Fall Out Boy",
+      "Option B": "My Chemical Romance",
+      "Option C": "Panic! at the Disco",
+      "Option D": "The Used",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_17",
+      "Question Text": "In what year did the Baha Men release 'Who Let The Dogs Out'?",
+      "Option A": 1999,
+      "Option B": 2000,
+      "Option C": 2001,
+      "Option D": 2002,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_18",
+      "Question Text": "In 2005, which artist reached number 1 with the single 'Hung up'?",
+      "Option A": "Britney Spears",
+      "Option B": "Pink",
+      "Option C": "Madonna",
+      "Option D": "Christina Aguilera",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_19",
+      "Question Text": "In 2004, which artist released the single 'Five colors In Her Hair'?",
+      "Option A": "McFly",
+      "Option B": "Busted",
+      "Option C": "Westlife",
+      "Option D": "Boyzone",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_20",
+      "Question Text": "In 2011, Drake appeared as himself in an animated series based on which NBA star?",
+      "Option A": "Kobe Bryant",
+      "Option B": "Michael Jordan",
+      "Option C": "LeBron James",
+      "Option D": "Dwyane Wade",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_21",
+      "Question Text": "In 2005, which artist had a number 1 single with 'Stickwitu'?",
+      "Option A": "Sugababes",
+      "Option B": "All Saints",
+      "Option C": "Pussycat Dolls",
+      "Option D": "Girls Aloud",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_22",
+      "Question Text": "In 2005, which artist had a number 1 single with 'Push The Button'?",
+      "Option A": "Girls Aloud",
+      "Option B": "All Saints",
+      "Option C": "Sugababes",
+      "Option D": "Pussycat Dolls",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_23",
+      "Question Text": "In 2005, which group had the number 1 single 'Dakota'?",
+      "Option A": "Oasis",
+      "Option B": "Stereophonics",
+      "Option C": "Arctic Monkeys",
+      "Option D": "Kaiser Chiefs",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_24",
+      "Question Text": "In 2005, which artist reached number 1 with 'That's My Goal'?",
+      "Option A": "Will Young",
+      "Option B": "Gareth Gates",
+      "Option C": "Shayne Ward",
+      "Option D": "Joe McElderry",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_25",
+      "Question Text": "In 2005, which artist had a number 1 single with 'Lyla'?",
+      "Option A": "Blur",
+      "Option B": "Coldplay",
+      "Option C": "Oasis",
+      "Option D": "Kasabian",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_26",
+      "Question Text": "In 2005, which artist reached number 1 with 'Don't Cha'?",
+      "Option A": "Sugababes",
+      "Option B": "Girls Aloud",
+      "Option C": "Pussycat Dolls",
+      "Option D": "All Saints",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_27",
+      "Question Text": "In what year did Rihanna and David Guetta team up to release 'We Found Love'?",
+      "Option A": 2010,
+      "Option B": 2011,
+      "Option C": 2012,
+      "Option D": 2013,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_28",
+      "Question Text": "In what year did the Pussycat Dolls release 'Don't Cha'?",
+      "Option A": 2004,
+      "Option B": 2005,
+      "Option C": 2006,
+      "Option D": 2007,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_29",
+      "Question Text": "In what year did Kelly Clarkson win American Idol?",
+      "Option A": 2001,
+      "Option B": 2002,
+      "Option C": 2003,
+      "Option D": 2004,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_30",
+      "Question Text": "In what year did Beyonce perform at the Super Bowl?",
+      "Option A": 2012,
+      "Option B": 2013,
+      "Option C": 2014,
+      "Option D": 2015,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_31",
+      "Question Text": "In what year did Simon & Garfunkel officially split?",
+      "Option A": 1969,
+      "Option B": 1970,
+      "Option C": 1971,
+      "Option D": 1972,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_32",
+      "Question Text": "In what year did Diana Ross leave 'The Supremes'?",
+      "Option A": 1969,
+      "Option B": 1970,
+      "Option C": 1971,
+      "Option D": 1972,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_33",
+      "Question Text": "In what year did Madonna first reach Number 1 with Vogue?",
+      "Option A": 1989,
+      "Option B": 1990,
+      "Option C": 1991,
+      "Option D": 1992,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_34",
+      "Question Text": "In what year did Cowell leave American Idol?",
+      "Option A": 2009,
+      "Option B": 2010,
+      "Option C": 2011,
+      "Option D": 2012,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_35",
+      "Question Text": "In what year did Jay Z team up with Alicia Keys to release Empire State of Mind?",
+      "Option A": 2008,
+      "Option B": 2009,
+      "Option C": 2010,
+      "Option D": 2011,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_36",
+      "Question Text": "In what year did The Killers release their second album Sam's Town?",
+      "Option A": 2005,
+      "Option B": 2006,
+      "Option C": 2007,
+      "Option D": 2008,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_37",
+      "Question Text": "In what year did Blur release There's No Other Way?",
+      "Option A": 1990,
+      "Option B": 1991,
+      "Option C": 1992,
+      "Option D": 1993,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_38",
+      "Question Text": "In what year did Gabrielle release her UK number 1 single 'Rise'?",
+      "Option A": 1999,
+      "Option B": 2000,
+      "Option C": 2001,
+      "Option D": 2002,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_39",
+      "Question Text": "In what year did Fergie reach No.1 with 'Big Girls Don't Cry'?",
+      "Option A": 2006,
+      "Option B": 2007,
+      "Option C": 2008,
+      "Option D": 2009,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_40",
+      "Question Text": "In what year did Madonna release the number 1 single 'Sorry'?",
+      "Option A": 2005,
+      "Option B": 2006,
+      "Option C": 2007,
+      "Option D": 2008,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_41",
+      "Question Text": "In what year did Alicia Keys first chart with 'Try Sleeping with a Broken Heart'?",
+      "Option A": 2009,
+      "Option B": 2010,
+      "Option C": 2011,
+      "Option D": 2012,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_42",
+      "Question Text": "In 2007 Pink sang about 'U and UR.....'?",
+      "Option A": "Heart",
+      "Option B": "Hand",
+      "Option C": "Smile",
+      "Option D": "Love",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_43",
+      "Question Text": "Is a marimba a wind, string, percussion, or keyboard instrument?",
+      "Option A": "Wind",
+      "Option B": "String",
+      "Option C": "Percussion",
+      "Option D": "Keyboard",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_44",
+      "Question Text": "Is a tambourine a wind, string, percussion, or keyboard instrument?",
+      "Option A": "Wind",
+      "Option B": "String",
+      "Option C": "Percussion",
+      "Option D": "Keyboard",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_45",
+      "Question Text": "Is a gong a wind, string, percussion, or keyboard instrument?",
+      "Option A": "Wind",
+      "Option B": "String",
+      "Option C": "Percussion",
+      "Option D": "Keyboard",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_46",
+      "Question Text": "Is a xylophone a wind, string, percussion, or keyboard instrument?",
+      "Option A": "Wind",
+      "Option B": "String",
+      "Option C": "Percussion",
+      "Option D": "Keyboard",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_47",
+      "Question Text": "In what year did Avril Lavigne reach No.1 with Girlfriend?",
+      "Option A": 2006,
+      "Option B": 2007,
+      "Option C": 2008,
+      "Option D": 2009,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_48",
+      "Question Text": "In what year did Nickelback hit the top of the charts with How You Remind Me?",
+      "Option A": 2001,
+      "Option B": 2002,
+      "Option C": 2003,
+      "Option D": 2004,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_49",
+      "Question Text": "In what year did Hanson release the 'Underneath' album?",
+      "Option A": 2003,
+      "Option B": 2004,
+      "Option C": 2005,
+      "Option D": 2006,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_50",
+      "Question Text": "In what year did The Fray release 'How to Save a Life'?",
+      "Option A": 2005,
+      "Option B": 2006,
+      "Option C": 2007,
+      "Option D": 2008,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_51",
+      "Question Text": "In what year did One Direction release their debut single 'What Makes You Beautiful'?",
+      "Option A": 2010,
+      "Option B": 2011,
+      "Option C": 2012,
+      "Option D": 2013,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_52",
+      "Question Text": "In what decade were Bach and Handel born?",
+      "Option A": "1540s",
+      "Option B": "1630s",
+      "Option C": "1680s",
+      "Option D": "1710s",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_53",
+      "Question Text": "In what year did Apple introduce the iTunes Music Store?",
+      "Option A": 2001,
+      "Option B": 2002,
+      "Option C": 2003,
+      "Option D": 2004,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_54",
+      "Question Text": "Is a fiddle a wind, string, percussion, or keyboard instrument?",
+      "Option A": "Wind",
+      "Option B": "String",
+      "Option C": "Percussion",
+      "Option D": "Keyboard",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_55",
+      "Question Text": "In music, which major key signature has 3 flats?",
+      "Option A": "D flat major",
+      "Option B": "C flat major",
+      "Option C": "E flat major",
+      "Option D": "A flat major",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_56",
+      "Question Text": "Ironman was the solo debut album of which Wu-Tang member?",
+      "Option A": "Method Man",
+      "Option B": "Raekwon",
+      "Option C": "Ghostface Killah",
+      "Option D": "RZA",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_57",
+      "Question Text": "In music, which minor key has the same key signature as A major?",
+      "Option A": "D minor",
+      "Option B": "F sharp minor",
+      "Option C": "B minor",
+      "Option D": "C sharp minor",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_58",
+      "Question Text": "In what country was composer Tchaikovsky born?",
+      "Option A": "Ukraine",
+      "Option B": "Poland",
+      "Option C": "Russia",
+      "Option D": "Belarus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_59",
+      "Question Text": "In country music, when was the name 'Grand Ole Opry' first used?",
+      "Option A": 1920,
+      "Option B": 1925,
+      "Option C": 1927,
+      "Option D": 1930,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_60",
+      "Question Text": "In the song from 'The Music Man', how many trombones led the big parade?",
+      "Option A": 56,
+      "Option B": 66,
+      "Option C": 76,
+      "Option D": 86,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_61",
+      "Question Text": "In the orchestra, which brass instrument is the smallest?",
+      "Option A": "Trombone",
+      "Option B": "French Horn",
+      "Option C": "Trumpet",
+      "Option D": "Cornet",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_62",
+      "Question Text": "What was the first video played on MTV on Aug. 1, 1981?",
+      "Option A": "Money for Nothing",
+      "Option B": "Video Killed the Radio Star",
+      "Option C": "Take On Me",
+      "Option D": "Sweet Dreams",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_63",
+      "Question Text": "Which '80s superstar portrayed Dr. Noah Drake on 'General Hospital'?",
+      "Option A": "Rick Springfield",
+      "Option B": "Michael Bolton",
+      "Option C": "Richard Marx",
+      "Option D": "John Mellencamp",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_64",
+      "Question Text": "Which rock guitarist played on Michael Jackson's 'Beat It'?",
+      "Option A": "Jimmy Page",
+      "Option B": "Eddie Van Halen",
+      "Option C": "Steve Vai",
+      "Option D": "Eric Clapton",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_65",
+      "Question Text": "In what '80s movie did Madonna portray a nightclub singer?",
+      "Option A": "Desperately Seeking Susan",
+      "Option B": "Vision Quest",
+      "Option C": "Who's That Girl",
+      "Option D": "Shanghai Surprise",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_66",
+      "Question Text": "What was Paula Abdul's first Top 40 hit?",
+      "Option A": "Forever Your Girl",
+      "Option B": "Straight Up",
+      "Option C": "Cold Hearted",
+      "Option D": "Rush Rush",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_67",
+      "Question Text": "Which song did Tiffany cover in 1987?",
+      "Option A": "I Think We're Alone Now",
+      "Option B": "Mony Mony",
+      "Option C": "Sweet Dreams",
+      "Option D": "Mickey",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_68",
+      "Question Text": "Who is the other half of Eurythmics besides Annie Lennox?",
+      "Option A": "Dave Stewart",
+      "Option B": "Tom Petty",
+      "Option C": "David Byrne",
+      "Option D": "Andy Taylor",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_69",
+      "Question Text": "What band was known as the 'Fab Five' in the 1980s?",
+      "Option A": "New Kids on the Block",
+      "Option B": "Duran Duran",
+      "Option C": "The Police",
+      "Option D": "Tears for Fears",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_70",
+      "Question Text": "What actor appeared in Paul Simon's 'You Can Call Me Al' video?",
+      "Option A": "Dan Aykroyd",
+      "Option B": "Bill Murray",
+      "Option C": "Chevy Chase",
+      "Option D": "Steve Martin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_71",
+      "Question Text": "What 1984 Tina Turner song became her biopic's title?",
+      "Option A": "Private Dancer",
+      "Option B": "Better Be Good to Me",
+      "Option C": "What's Love Got to Do with It",
+      "Option D": "We Don't Need Another Hero",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_72",
+      "Question Text": "What platinum REO Speedwagon album spawned four Top 40 hits in 1981?",
+      "Option A": "Hi Infidelity",
+      "Option B": "Good Trouble",
+      "Option C": "Wheels Are Turnin'",
+      "Option D": "Life as We Know It",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_73",
+      "Question Text": "What chart-topping album did Janet Jackson release in 1986?",
+      "Option A": "Dream Street",
+      "Option B": "Control",
+      "Option C": "Rhythm Nation",
+      "Option D": "Janet",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_74",
+      "Question Text": "Which '80s band covered 'Where Did Our Love Go'?",
+      "Option A": "Soft Cell",
+      "Option B": "Depeche Mode",
+      "Option C": "Pet Shop Boys",
+      "Option D": "New Order",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_75",
+      "Question Text": "Which band released the hit 'Too Shy'?",
+      "Option A": "A Flock of Seagulls",
+      "Option B": "Kajagoogoo",
+      "Option C": "Thompson Twins",
+      "Option D": "Tears for Fears",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_76",
+      "Question Text": "Which red-headed British singer released 'Never Gonna Give You Up'?",
+      "Option A": "Mick Hucknall",
+      "Option B": "Rick Astley",
+      "Option C": "Dave Evans",
+      "Option D": "Jimmy Somerville",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_77",
+      "Question Text": "What was Eddie Murphy's 1985 hit song?",
+      "Option A": "Party All the Time",
+      "Option B": "Girl I Love You",
+      "Option C": "Put Your Mouth on Me",
+      "Option D": "All I Do",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_78",
+      "Question Text": "What was John Mellencamp's original stage name?",
+      "Option A": "Johnny Cougar",
+      "Option B": "John Cougar",
+      "Option C": "Jack Cougar",
+      "Option D": "Jim Cougar",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_79",
+      "Question Text": "What was U2's first Billboard 100 charting song in 1983?",
+      "Option A": "Sunday Bloody Sunday",
+      "Option B": "New Year's Day",
+      "Option C": "Pride",
+      "Option D": "Two Hearts Beat as One",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_80",
+      "Question Text": "Which Norwegian band recorded 'Take On Me'?",
+      "Option A": "A-ha",
+      "Option B": "Europe",
+      "Option C": "Roxette",
+      "Option D": "Ace of Base",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_81",
+      "Question Text": "Which musician performed at both U.S. and London Live Aid concerts?",
+      "Option A": "David Bowie",
+      "Option B": "Phil Collins",
+      "Option C": "Elton John",
+      "Option D": "Paul McCartney",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_82",
+      "Question Text": "Which 'General Hospital' actor sang 'All I Need' in 1984?",
+      "Option A": "Rick Springfield",
+      "Option B": "Jack Wagner",
+      "Option C": "John Stamos",
+      "Option D": "Michael Damian",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_83",
+      "Question Text": "Which band recorded 'Red Red Wine'?",
+      "Option A": "The Police",
+      "Option B": "UB40",
+      "Option C": "Culture Club",
+      "Option D": "Madness",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_84",
+      "Question Text": "What was Billy Idol's 1987 #1 hit?",
+      "Option A": "White Wedding",
+      "Option B": "Rebel Yell",
+      "Option C": "Mony Mony",
+      "Option D": "Dancing with Myself",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_85",
+      "Question Text": "What 1983 song launched Cyndi Lauper's career?",
+      "Option A": "Time After Time",
+      "Option B": "Girls Just Want to Have Fun",
+      "Option C": "She Bop",
+      "Option D": "True Colors",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_86",
+      "Question Text": "Which 'Friends' actor appeared in Springsteen's 'Dancing in the Dark' video?",
+      "Option A": "Jennifer Aniston",
+      "Option B": "Lisa Kudrow",
+      "Option C": "Courteney Cox",
+      "Option D": "Matt LeBlanc",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_87",
+      "Question Text": "What do the letters in TLC stand for?",
+      "Option A": "The Love Connection",
+      "Option B": "The Lady Crew",
+      "Option C": "Tender Loving Care",
+      "Option D": "T-Boz, Left Eye, and Chilli",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_88",
+      "Question Text": "What was The Spice Girls' #1 hit in 1997?",
+      "Option A": "Say You'll Be There",
+      "Option B": "Wannabe",
+      "Option C": "2 Become 1",
+      "Option D": "Stop",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_89",
+      "Question Text": "Which Lauryn Hill album won Album of the Year in 1999?",
+      "Option A": "The Score",
+      "Option B": "The Miseducation of Lauryn Hill",
+      "Option C": "MTV Unplugged",
+      "Option D": "Sister Act 2",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_90",
+      "Question Text": "Which Australian soap star had a hit with 'Torn'?",
+      "Option A": "Kylie Minogue",
+      "Option B": "Natalie Imbruglia",
+      "Option C": "Delta Goodrem",
+      "Option D": "Holly Valance",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_91",
+      "Question Text": "Which No Doubt album features 'Don't Speak'?",
+      "Option A": "No Doubt",
+      "Option B": "Return of Saturn",
+      "Option C": "Tragic Kingdom",
+      "Option D": "Rock Steady",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_92",
+      "Question Text": "Which Celine Dion song won the 1998 Oscar?",
+      "Option A": "Because You Loved Me",
+      "Option B": "My Heart Will Go On",
+      "Option C": "The Power of Love",
+      "Option D": "All By Myself",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_93",
+      "Question Text": "What was Jennifer Lopez's first Billboard hit in 1999?",
+      "Option A": "If You Had My Love",
+      "Option B": "Waiting for Tonight",
+      "Option C": "Let's Get Loud",
+      "Option D": "No Me Ames",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_94",
+      "Question Text": "Which Swedish band recorded 'The Sign'?",
+      "Option A": "ABBA",
+      "Option B": "Roxette",
+      "Option C": "Ace of Base",
+      "Option D": "The Cardigans",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_95",
+      "Question Text": "Which band were Carnie and Wendy Wilson's father in?",
+      "Option A": "The Beatles",
+      "Option B": "The Beach Boys",
+      "Option C": "The Monkees",
+      "Option D": "The Byrds",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_96",
+      "Question Text": "What song is Radiohead's 'I wish I was special' lyric from?",
+      "Option A": "Karma Police",
+      "Option B": "Creep",
+      "Option C": "High and Dry",
+      "Option D": "Fake Plastic Trees",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_97",
+      "Question Text": "What Disney show featured young Christina Aguilera?",
+      "Option A": "The Mickey Mouse Club",
+      "Option B": "Kids Incorporated",
+      "Option C": "The All-New Mickey Mouse Club",
+      "Option D": "Disney Channel",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_98",
+      "Question Text": "Which Irish band recorded 'Linger'?",
+      "Option A": "U2",
+      "Option B": "The Cranberries",
+      "Option C": "The Corrs",
+      "Option D": "Snow Patrol",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_99",
+      "Question Text": "Which Backstreet Boys video references 'Thriller'?",
+      "Option A": "Quit Playing Games",
+      "Option B": "Everybody (Backstreet's Back)",
+      "Option C": "I Want It That Way",
+      "Option D": "Larger Than Life",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_100",
+      "Question Text": "Which group recorded 'End of the Road'?",
+      "Option A": "All-4-One",
+      "Option B": "Boyz II Men",
+      "Option C": "Blackstreet",
+      "Option D": "Color Me Badd",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_101",
+      "Question Text": "Which '90s group featured Dawn Robinson and Terry Ellis?",
+      "Option A": "TLC",
+      "Option B": "SWV",
+      "Option C": "En Vogue",
+      "Option D": "Xscape",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_102",
+      "Question Text": "Which brothers had a hit with 'MMMBop'?",
+      "Option A": "Jonas Brothers",
+      "Option B": "Hanson",
+      "Option C": "Nelson",
+      "Option D": "The Moffatts",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_103",
+      "Question Text": "Who recorded 'Wonderwall'?",
+      "Option A": "Blur",
+      "Option B": "Oasis",
+      "Option C": "Pulp",
+      "Option D": "Suede",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_104",
+      "Question Text": "Which B-52's singer joined R.E.M. on 'Shiny Happy People'?",
+      "Option A": "Kate Pierson",
+      "Option B": "Cindy Wilson",
+      "Option C": "Fred Schneider",
+      "Option D": "Belinda Carlisle",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_105",
+      "Question Text": "Which song did Brandy and Monica collaborate on?",
+      "Option A": "The Boy Is Mine",
+      "Option B": "Have You Ever",
+      "Option C": "Angel of Mine",
+      "Option D": "Missing You",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_106",
+      "Question Text": "What John Michael Montgomery song did All-4-One cover?",
+      "Option A": "I Swear",
+      "Option B": "I Can Love You Like That",
+      "Option C": "Be My Baby Tonight",
+      "Option D": "Sold",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_107",
+      "Question Text": "Who is the bass guitarist for Red Hot Chili Peppers?",
+      "Option A": "John Frusciante",
+      "Option B": "Chad Smith",
+      "Option C": "Flea",
+      "Option D": "Josh Klinghoffer",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_108",
+      "Question Text": "Which Stevie Nicks song is sampled in 'Bootylicious'?",
+      "Option A": "Edge of Seventeen",
+      "Option B": "Stand Back",
+      "Option C": "Stop Draggin' My Heart Around",
+      "Option D": "Leather and Lace",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_109",
+      "Question Text": "What semi-autobiographical movie starred Eminem?",
+      "Option A": "Get Rich or Die Tryin'",
+      "Option B": "8 Mile",
+      "Option C": "Hustle & Flow",
+      "Option D": "Notorious",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_110",
+      "Question Text": "Which Nickelodeon star was in 'School of Rock'?",
+      "Option A": "Victoria Justice",
+      "Option B": "Miranda Cosgrove",
+      "Option C": "Jamie Lynn Spears",
+      "Option D": "Emma Roberts",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_111",
+      "Question Text": "Which band released 'Apologize'?",
+      "Option A": "OneRepublic",
+      "Option B": "The Script",
+      "Option C": "The Fray",
+      "Option D": "Timbaland",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_112",
+      "Question Text": "Who are the principal musicians in The White Stripes?",
+      "Option A": "Jack and Meg White",
+      "Option B": "Jack and Diane",
+      "Option C": "Jack and Jane",
+      "Option D": "Jack and Mary",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_113",
+      "Question Text": "What 2004 hit song was by Evanescence?",
+      "Option A": "Bring Me to Life",
+      "Option B": "My Immortal",
+      "Option C": "Going Under",
+      "Option D": "Call Me When You're Sober",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_114",
+      "Question Text": "What was Britney Spears' 2008 Billboard #1 hit?",
+      "Option A": "Gimme More",
+      "Option B": "Piece of Me",
+      "Option C": "Womanizer",
+      "Option D": "Circus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_115",
+      "Question Text": "At which 2010 event did Lady Gaga wear a meat dress?",
+      "Option A": "Grammy Awards",
+      "Option B": "MTV Video Music Awards",
+      "Option C": "American Music Awards",
+      "Option D": "Billboard Awards",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_116",
+      "Question Text": "Which artists covered 'Lady Marmalade' in 2001?",
+      "Option A": "Christina, Pink, Mya, Lil' Kim",
+      "Option B": "Britney, Christina, Pink, Beyoncé",
+      "Option C": "Pink, Christina, Beyoncé, Alicia",
+      "Option D": "Christina, Pink, Shakira, Beyoncé",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_117",
+      "Question Text": "Which journalist inspired 'Almost Famous'?",
+      "Option A": "Hunter S. Thompson",
+      "Option B": "Cameron Crowe",
+      "Option C": "Lester Bangs",
+      "Option D": "Ben Fong-Torres",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_118",
+      "Question Text": "Which band recorded 'Who Let the Dogs Out'?",
+      "Option A": "Inner Circle",
+      "Option B": "Baha Men",
+      "Option C": "Shaggy",
+      "Option D": "Mr. Vegas",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_119",
+      "Question Text": "Which girl group was Fergie in before Black Eyed Peas?",
+      "Option A": "Wild Orchid",
+      "Option B": "Eden's Crush",
+      "Option C": "Dream",
+      "Option D": "Play",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_120",
+      "Question Text": "What was Justin Timberlake's 2002 debut solo album?",
+      "Option A": "FutureSex/LoveSounds",
+      "Option B": "Justified",
+      "Option C": "20/20 Experience",
+      "Option D": "Man of the Woods",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_121",
+      "Question Text": "Which musical is about Frankie Valli and the Four Seasons?",
+      "Option A": "Beautiful",
+      "Option B": "Jersey Boys",
+      "Option C": "Motown",
+      "Option D": "Dreamgirls",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_122",
+      "Question Text": "What is Eminem's real name?",
+      "Option A": "Marshall Mathers",
+      "Option B": "Marshall Bruce",
+      "Option C": "Michael Mathers",
+      "Option D": "Marcus Matthews",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_123",
+      "Question Text": "What 2005 Gorillaz song became a hit?",
+      "Option A": "Clint Eastwood",
+      "Option B": "Feel Good Inc.",
+      "Option C": "DARE",
+      "Option D": "19-2000",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_124",
+      "Question Text": "What was Avril Lavigne's only Billboard Hot 100 #1 hit?",
+      "Option A": "Complicated",
+      "Option B": "Sk8er Boi",
+      "Option C": "Girlfriend",
+      "Option D": "When You're Gone",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_125",
+      "Question Text": "Where did Harry Styles work before fame?",
+      "Option A": "Restaurant",
+      "Option B": "Bakery",
+      "Option C": "Retail Store",
+      "Option D": "Movie Theater",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_126",
+      "Question Text": "Who wrote 'I Will Always Love You'?",
+      "Option A": "Whitney Houston",
+      "Option B": "Dolly Parton",
+      "Option C": "Carole King",
+      "Option D": "Linda Ronstadt",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_127",
+      "Question Text": "Where did Johnny Cash perform his famous 1968 concert?",
+      "Option A": "San Quentin",
+      "Option B": "Folsom Prison",
+      "Option C": "Alcatraz",
+      "Option D": "Rikers Island",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_128",
+      "Question Text": "What Post Malone song opens 'Spider-Verse'?",
+      "Option A": "Circles",
+      "Option B": "Sunflower",
+      "Option C": "Rockstar",
+      "Option D": "Wow",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_129",
+      "Question Text": "In which movie does Aretha Franklin sing 'Think'?",
+      "Option A": "The Blues Brothers",
+      "Option B": "Sister Act",
+      "Option C": "Fame",
+      "Option D": "Purple Rain",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_130",
+      "Question Text": "Who founded No Doubt?",
+      "Option A": "Gwen Stefani",
+      "Option B": "Tony Kanal",
+      "Option C": "Eric Stefani",
+      "Option D": "Tom Dumont",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_131",
+      "Question Text": "What is Billie Eilish's brother's name?",
+      "Option A": "Finneas",
+      "Option B": "Francis",
+      "Option C": "Flynn",
+      "Option D": "Felix",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_132",
+      "Question Text": "Which Green Day song played in the Seinfeld finale?",
+      "Option A": "Time of Your Life",
+      "Option B": "Boulevard of Broken Dreams",
+      "Option C": "Wake Me Up When September Ends",
+      "Option D": "American Idiot",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_133",
+      "Question Text": "Who sings backup on 'You're So Vain'?",
+      "Option A": "David Bowie",
+      "Option B": "Paul McCartney",
+      "Option C": "Mick Jagger",
+      "Option D": "Rod Stewart",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_134",
+      "Question Text": "Which singer fled SNL after a track malfunction?",
+      "Option A": "Christina Aguilera",
+      "Option B": "Ashlee Simpson",
+      "Option C": "Pink",
+      "Option D": "Britney Spears",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_135",
+      "Question Text": "Who performed at the 2021 Super Bowl halftime show?",
+      "Option A": "The Weeknd",
+      "Option B": "Lady Gaga",
+      "Option C": "Jennifer Lopez",
+      "Option D": "Shakira",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_136",
+      "Question Text": "What country is Rihanna from?",
+      "Option A": "Trinidad",
+      "Option B": "Jamaica",
+      "Option C": "Barbados",
+      "Option D": "Bahamas",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_137",
+      "Question Text": "What is Rihanna's cosmetic line called?",
+      "Option A": "Rihanna Beauty",
+      "Option B": "Fenty Beauty",
+      "Option C": "RiRi Beauty",
+      "Option D": "Savage Beauty",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_138",
+      "Question Text": "Name the other two members of Destiny's Child with Beyoncé.",
+      "Option A": "LeToya and LaTavia",
+      "Option B": "Kelly and Michelle",
+      "Option C": "Kelly and LaToya",
+      "Option D": "Michelle and Monica",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_139",
+      "Question Text": "What talent show did 12-year-old Beyoncé perform on?",
+      "Option A": "American Idol",
+      "Option B": "Star Search",
+      "Option C": "The Voice",
+      "Option D": "America's Got Talent",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_140",
+      "Question Text": "What is Elton John's real name?",
+      "Option A": "Reginald Kenneth Dwight",
+      "Option B": "John Elton Kenneth",
+      "Option C": "Elton Reginald John",
+      "Option D": "Kenneth John Elton",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_141",
+      "Question Text": "Who did Ringo Starr replace in The Beatles?",
+      "Option A": "Stuart Sutcliffe",
+      "Option B": "Pete Best",
+      "Option C": "George Best",
+      "Option D": "Billy Preston",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_142",
+      "Question Text": "Where did Elvis cut his first single?",
+      "Option A": "RCA Studios",
+      "Option B": "Sun Studio",
+      "Option C": "Stax Records",
+      "Option D": "Chess Records",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_143",
+      "Question Text": "Paul Westerberg was lead singer of which '80s alternative band?",
+      "Option A": "The Replacements",
+      "Option B": "Hüsker Dü",
+      "Option C": "The Pixies",
+      "Option D": "Sonic Youth",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_144",
+      "Question Text": "Who had a #1 hit with 'My Ding-a-Ling' in 1972?",
+      "Option A": "Little Richard",
+      "Option B": "Chuck Berry",
+      "Option C": "Jerry Lee Lewis",
+      "Option D": "Fats Domino",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_145",
+      "Question Text": "What was Michael Jackson's first solo #1 hit?",
+      "Option A": "Got to Be There",
+      "Option B": "Ben",
+      "Option C": "Off the Wall",
+      "Option D": "Rock with You",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_146",
+      "Question Text": "Which 2012 Adele song won an Oscar, Golden Globe and Grammy?",
+      "Option A": "Rolling in the Deep",
+      "Option B": "Skyfall",
+      "Option C": "Someone Like You",
+      "Option D": "Set Fire to the Rain",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_147",
+      "Question Text": "What is Taylor Swift's middle name?",
+      "Option A": "Marie",
+      "Option B": "Elizabeth",
+      "Option C": "Alison",
+      "Option D": "Rose",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_148",
+      "Question Text": "Taylor Swift's first single was named after which country singer?",
+      "Option A": "Kenny Chesney",
+      "Option B": "Tim McGraw",
+      "Option C": "Keith Urban",
+      "Option D": "Blake Shelton",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_149",
+      "Question Text": "Who was Mariah Carey's first husband?",
+      "Option A": "Tommy Mottola",
+      "Option B": "Nick Cannon",
+      "Option C": "Luis Miguel",
+      "Option D": "Derek Jeter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_150",
+      "Question Text": "Which Jay-Z and Beyoncé song spent eight weeks at #1 in 2003?",
+      "Option A": "Crazy in Love",
+      "Option B": "03 Bonnie & Clyde",
+      "Option C": "Déjà Vu",
+      "Option D": "Upgrade U",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_151",
+      "Question Text": "What is Bob Dylan's real last name?",
+      "Option A": "Roberts",
+      "Option B": "Zimmerman",
+      "Option C": "Allen",
+      "Option D": "Thompson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_152",
+      "Question Text": "What is John Denver's real name?",
+      "Option A": "John Deutschman",
+      "Option B": "Henry John Deutschendorf",
+      "Option C": "John Henry Denver",
+      "Option D": "Henry Denver Johnson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_153",
+      "Question Text": "Which band was Ozzy Osbourne originally in?",
+      "Option A": "Black Sabbath",
+      "Option B": "Deep Purple",
+      "Option C": "Led Zeppelin",
+      "Option D": "Iron Maiden",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_154",
+      "Question Text": "What is Axl Rose's given first name?",
+      "Option A": "Alexander",
+      "Option B": "William",
+      "Option C": "Robert",
+      "Option D": "James",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_155",
+      "Question Text": "Which 3 Doors Down song references Superman?",
+      "Option A": "Kryptonite",
+      "Option B": "Here Without You",
+      "Option C": "When I'm Gone",
+      "Option D": "Let Me Go",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_156",
+      "Question Text": "Who taught Mick Jagger his signature dance moves?",
+      "Option A": "James Brown",
+      "Option B": "Tina Turner",
+      "Option C": "Chuck Berry",
+      "Option D": "Little Richard",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_157",
+      "Question Text": "Who was Coldplay's Chris Martin married to for 13 years?",
+      "Option A": "Kate Hudson",
+      "Option B": "Gwyneth Paltrow",
+      "Option C": "Cameron Diaz",
+      "Option D": "Jennifer Lawrence",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_158",
+      "Question Text": "Angus Young is lead guitarist for which Australian band?",
+      "Option A": "INXS",
+      "Option B": "AC/DC",
+      "Option C": "Midnight Oil",
+      "Option D": "Men at Work",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_159",
+      "Question Text": "Patrick Stump is lead singer of which band?",
+      "Option A": "Panic! At The Disco",
+      "Option B": "Fall Out Boy",
+      "Option C": "My Chemical Romance",
+      "Option D": "Paramore",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_160",
+      "Question Text": "Which band covered 'Crimson and Clover' in 1982?",
+      "Option A": "The Runaways",
+      "Option B": "Joan Jett & the Blackhearts",
+      "Option C": "The Go-Go's",
+      "Option D": "The Bangles",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_161",
+      "Question Text": "Which Pink Floyd album inspired a movie of the same name?",
+      "Option A": "Dark Side of the Moon",
+      "Option B": "The Wall",
+      "Option C": "Wish You Were Here",
+      "Option D": "Animals",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_162",
+      "Question Text": "Which supergroup did George Harrison co-found after The Beatles?",
+      "Option A": "The Traveling Wilburys",
+      "Option B": "Cream",
+      "Option C": "Blind Faith",
+      "Option D": "Bad Company",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_163",
+      "Question Text": "Bruce Springsteen is from which state?",
+      "Option A": "New York",
+      "Option B": "Pennsylvania",
+      "Option C": "New Jersey",
+      "Option D": "Massachusetts",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_164",
+      "Question Text": "What Kinks song mentions champagne like cherry cola?",
+      "Option A": "You Really Got Me",
+      "Option B": "Lola",
+      "Option C": "Waterloo Sunset",
+      "Option D": "All Day and All of the Night",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_165",
+      "Question Text": "Which CCR song was in 'American Werewolf in London'?",
+      "Option A": "Bad Moon Rising",
+      "Option B": "Fortunate Son",
+      "Option C": "Have You Ever Seen the Rain",
+      "Option D": "Born on the Bayou",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_166",
+      "Question Text": "Which Christmas song did David Bowie sing with Bing Crosby?",
+      "Option A": "White Christmas",
+      "Option B": "Little Drummer Boy/Peace on Earth",
+      "Option C": "Silent Night",
+      "Option D": "The First Noel",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_167",
+      "Question Text": "Which The Who album features 'Pinball Wizard'?",
+      "Option A": "Who's Next",
+      "Option B": "Tommy",
+      "Option C": "Quadrophenia",
+      "Option D": "Who Are You",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_168",
+      "Question Text": "Which '90s band was Dave Grohl in before Foo Fighters?",
+      "Option A": "Soundgarden",
+      "Option B": "Pearl Jam",
+      "Option C": "Nirvana",
+      "Option D": "Alice in Chains",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_169",
+      "Question Text": "Which Good Charlotte member is married to Cameron Diaz?",
+      "Option A": "Joel Madden",
+      "Option B": "Benji Madden",
+      "Option C": "Billy Martin",
+      "Option D": "Paul Thomas",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_170",
+      "Question Text": "Which 2000 Creed song about welcoming a baby hit #1?",
+      "Option A": "Higher",
+      "Option B": "With Arms Wide Open",
+      "Option C": "My Sacrifice",
+      "Option D": "One Last Breath",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_171",
+      "Question Text": "Jimmy Page was lead guitarist for which band?",
+      "Option A": "The Who",
+      "Option B": "Led Zeppelin",
+      "Option C": "Pink Floyd",
+      "Option D": "The Rolling Stones",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_172",
+      "Question Text": "The Eagles first performed backing which singer-songwriter?",
+      "Option A": "Linda Ronstadt",
+      "Option B": "Joni Mitchell",
+      "Option C": "Carole King",
+      "Option D": "Carly Simon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_173",
+      "Question Text": "Which Van Halen song from '1984' won MTV awards?",
+      "Option A": "Jump",
+      "Option B": "Panama",
+      "Option C": "Hot for Teacher",
+      "Option D": "I'll Wait",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_174",
+      "Question Text": "Which Blink-182 member had his own MTV show in 2005?",
+      "Option A": "Mark Hoppus",
+      "Option B": "Tom DeLonge",
+      "Option C": "Travis Barker",
+      "Option D": "Matt Skiba",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_175",
+      "Question Text": "Which 1975 Willie Nelson album went multi-platinum?",
+      "Option A": "Red Headed Stranger",
+      "Option B": "Stardust",
+      "Option C": "Wanted! The Outlaws",
+      "Option D": "The Sound in Your Mind",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_176",
+      "Question Text": "Who is the best-selling female country artist of all time?",
+      "Option A": "Dolly Parton",
+      "Option B": "Reba McEntire",
+      "Option C": "Shania Twain",
+      "Option D": "Taylor Swift",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_177",
+      "Question Text": "Which country singer's life story is 'Coal Miner's Daughter'?",
+      "Option A": "Patsy Cline",
+      "Option B": "Loretta Lynn",
+      "Option C": "Tammy Wynette",
+      "Option D": "June Carter Cash",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_178",
+      "Question Text": "Who had a hit with 'Rhinestone Cowboy'?",
+      "Option A": "Kenny Rogers",
+      "Option B": "Glen Campbell",
+      "Option C": "John Denver",
+      "Option D": "Charlie Rich",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_179",
+      "Question Text": "Gary LeVox is lead singer of which country band?",
+      "Option A": "Lonestar",
+      "Option B": "Rascal Flatts",
+      "Option C": "Diamond Rio",
+      "Option D": "Alabama",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_180",
+      "Question Text": "What Texas town does Waylon Jennings sing about visiting?",
+      "Option A": "Austin",
+      "Option B": "Luckenbach",
+      "Option C": "Dallas",
+      "Option D": "Houston",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_181",
+      "Question Text": "What is Dolly Parton's husband's name?",
+      "Option A": "Carl Dean",
+      "Option B": "Larry Gates",
+      "Option C": "Robert Smith",
+      "Option D": "David Johnson",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_182",
+      "Question Text": "Which female country singer won Best New Artist Grammy in 2007?",
+      "Option A": "Taylor Swift",
+      "Option B": "Carrie Underwood",
+      "Option C": "Miranda Lambert",
+      "Option D": "Kellie Pickler",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_183",
+      "Question Text": "Where did Johnny Cash and Elvis Presley start their careers?",
+      "Option A": "RCA Studios",
+      "Option B": "Sun Records",
+      "Option C": "Columbia Records",
+      "Option D": "Capitol Records",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_184",
+      "Question Text": "Chris Gaines was the alter ego of which country star?",
+      "Option A": "Garth Brooks",
+      "Option B": "Tim McGraw",
+      "Option C": "Kenny Chesney",
+      "Option D": "Toby Keith",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_185",
+      "Question Text": "Which 1970s variety show featured Roy Clark and Buck Owens?",
+      "Option A": "The Porter Wagoner Show",
+      "Option B": "Hee Haw",
+      "Option C": "The Glen Campbell Goodtime Hour",
+      "Option D": "The Johnny Cash Show",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_186",
+      "Question Text": "Which country star had hits with both 'New Year's Day' and 'Look What You Made Me Do'?",
+      "Option A": "Carrie Underwood",
+      "Option B": "Miranda Lambert",
+      "Option C": "Taylor Swift",
+      "Option D": "Kelsea Ballerini",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_187",
+      "Question Text": "Who wrote and recorded 'Drivin' My Life Away'?",
+      "Option A": "Eddie Rabbitt",
+      "Option B": "Ronnie Milsap",
+      "Option C": "Kenny Rogers",
+      "Option D": "Conway Twitty",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_188",
+      "Question Text": "Which 1987 George Michael song was banned by the BBC?",
+      "Option A": "Faith",
+      "Option B": "I Want Your Sex",
+      "Option C": "Father Figure",
+      "Option D": "One More Try",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_189",
+      "Question Text": "Which song did Jody Watley sing 'Hasta la vista, baby' in?",
+      "Option A": "Looking for a New Love",
+      "Option B": "Real Love",
+      "Option C": "Don't You Want Me",
+      "Option D": "Friends",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_190",
+      "Question Text": "What band released the hits 'The Sign' and 'All That She Wants'?",
+      "Option A": "Roxette",
+      "Option B": "Ace of Base",
+      "Option C": "ABBA",
+      "Option D": "A-ha",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_191",
+      "Question Text": "Which Disney musical features Troy Bolton and Gabriella Montez?",
+      "Option A": "Camp Rock",
+      "Option B": "High School Musical",
+      "Option C": "Teen Beach Movie",
+      "Option D": "Descendants",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_192",
+      "Question Text": "During which Aerosmith song does Steven Tyler use a sugar packet as a maraca?",
+      "Option A": "Dream On",
+      "Option B": "Sweet Emotion",
+      "Option C": "Walk This Way",
+      "Option D": "Love in an Elevator",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_193",
+      "Question Text": "Who founded the band No Doubt?",
+      "Option A": "Gwen Stefani",
+      "Option B": "Tom Dumont",
+      "Option C": "Tony Kanal",
+      "Option D": "Eric Stefani",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_194",
+      "Question Text": "What was The Killers' song containing 'Breaking my back just to know your name'?",
+      "Option A": "Mr. Brightside",
+      "Option B": "Somebody Told Me",
+      "Option C": "When You Were Young",
+      "Option D": "Human",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_195",
+      "Question Text": "What did Sinéad O'Connor do during her controversial 1992 SNL performance?",
+      "Option A": "Walked off stage",
+      "Option B": "Burned flag",
+      "Option C": "Ripped picture of Pope",
+      "Option D": "Changed lyrics",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_196",
+      "Question Text": "Which NSYNC member appeared on 'Hannah Montana' as Joey Vitolo?",
+      "Option A": "Justin Timberlake",
+      "Option B": "JC Chasez",
+      "Option C": "Lance Bass",
+      "Option D": "Joey Fatone",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_197",
+      "Question Text": "What is the title of Kenny Rogers' famous gambling song?",
+      "Option A": "The Gambler",
+      "Option B": "Ace of Spades",
+      "Option C": "Poker Face",
+      "Option D": "Lucky Man",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_198",
+      "Question Text": "Who does Carly Simon reference in 'You're So Vain'?",
+      "Option A": "Warren Beatty",
+      "Option B": "Mick Jagger",
+      "Option C": "James Taylor",
+      "Option D": "Cat Stevens",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_199",
+      "Question Text": "What metal legend was previously in Rainbow and Black Sabbath?",
+      "Option A": "Ronnie James Dio",
+      "Option B": "Rob Halford",
+      "Option C": "Bruce Dickinson",
+      "Option D": "James Hetfield",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_200",
+      "Question Text": "Which rock band included both Meg and Jack White?",
+      "Option A": "The Raconteurs",
+      "Option B": "The Dead Weather",
+      "Option C": "The White Stripes",
+      "Option D": "The Kills",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_201",
+      "Question Text": "What was George Michael's birth name?",
+      "Option A": "Georgios Panayiotou",
+      "Option B": "George Mitchell",
+      "Option C": "George Martin",
+      "Option D": "Giorgio Moroder",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_202",
+      "Question Text": "Which Beatles album was the last they recorded together?",
+      "Option A": "Let It Be",
+      "Option B": "Abbey Road",
+      "Option C": "The White Album",
+      "Option D": "Yellow Submarine",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_203",
+      "Question Text": "What was David Bowie's first #1 hit in America?",
+      "Option A": "Space Oddity",
+      "Option B": "Fame",
+      "Option C": "Let's Dance",
+      "Option D": "Changes",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_204",
+      "Question Text": "Which rock legend was known as 'The King of the Delta Blues'?",
+      "Option A": "Muddy Waters",
+      "Option B": "Robert Johnson",
+      "Option C": "B.B. King",
+      "Option D": "John Lee Hooker",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_205",
+      "Question Text": "What was Elvis Presley's first #1 hit on Billboard's country chart?",
+      "Option A": "That's All Right",
+      "Option B": "Heartbreak Hotel",
+      "Option C": "Blue Moon",
+      "Option D": "Mystery Train",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_206",
+      "Question Text": "Which member of The Eagles had a hit with 'The Heat Is On'?",
+      "Option A": "Don Henley",
+      "Option B": "Glenn Frey",
+      "Option C": "Joe Walsh",
+      "Option D": "Timothy B. Schmit",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_207",
+      "Question Text": "What was Madonna's first #1 hit on the Billboard Hot 100?",
+      "Option A": "Holiday",
+      "Option B": "Like a Virgin",
+      "Option C": "Crazy for You",
+      "Option D": "Live to Tell",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_208",
+      "Question Text": "Which rock band performed at Woodstock wearing Native American attire?",
+      "Option A": "The Who",
+      "Option B": "Redbone",
+      "Option C": "Crosby Stills & Nash",
+      "Option D": "Ten Years After",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_209",
+      "Question Text": "What was Michael Jackson's last #1 hit during his lifetime?",
+      "Option A": "Black or White",
+      "Option B": "You Are Not Alone",
+      "Option C": "Earth Song",
+      "Option D": "You Rock My World",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_210",
+      "Question Text": "Which rock star was known as 'The Lizard King'?",
+      "Option A": "Jim Morrison",
+      "Option B": "Iggy Pop",
+      "Option C": "David Bowie",
+      "Option D": "Robert Plant",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_211",
+      "Question Text": "What was Whitney Houston's debut single?",
+      "Option A": "You Give Good Love",
+      "Option B": "Saving All My Love for You",
+      "Option C": "How Will I Know",
+      "Option D": "Greatest Love of All",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_212",
+      "Question Text": "Which band released 'Sweet Home Alabama' in response to Neil Young?",
+      "Option A": "Molly Hatchet",
+      "Option B": "Lynyrd Skynyrd",
+      "Option C": "The Allman Brothers",
+      "Option D": "38 Special",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_213",
+      "Question Text": "What was Bruce Springsteen's first Top 10 hit?",
+      "Option A": "Born to Run",
+      "Option B": "Hungry Heart",
+      "Option C": "Dancing in the Dark",
+      "Option D": "Glory Days",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_214",
+      "Question Text": "Which rock band featured Stevie Nicks and Lindsay Buckingham?",
+      "Option A": "Heart",
+      "Option B": "Jefferson Airplane",
+      "Option C": "Fleetwood Mac",
+      "Option D": "The Pretenders",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_215",
+      "Question Text": "What was Prince's first #1 hit on the Billboard Hot 100?",
+      "Option A": "Little Red Corvette",
+      "Option B": "When Doves Cry",
+      "Option C": "Purple Rain",
+      "Option D": "Let's Go Crazy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_216",
+      "Question Text": "Which rock legend wrote 'Purple Haze'?",
+      "Option A": "Jimi Hendrix",
+      "Option B": "Eric Clapton",
+      "Option C": "Jimmy Page",
+      "Option D": "Jeff Beck",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_217",
+      "Question Text": "What was the original name of Bon Jovi's band?",
+      "Option A": "Atlantic City Express",
+      "Option B": "Jersey Boys",
+      "Option C": "The Rest",
+      "Option D": "Wild Horses",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_218",
+      "Question Text": "Which rock star was known as 'The Boss'?",
+      "Option A": "Elvis Presley",
+      "Option B": "Bruce Springsteen",
+      "Option C": "Mick Jagger",
+      "Option D": "Bob Dylan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_219",
+      "Question Text": "What was Led Zeppelin's only Top 10 hit in America?",
+      "Option A": "Stairway to Heaven",
+      "Option B": "Whole Lotta Love",
+      "Option C": "Black Dog",
+      "Option D": "Rock and Roll",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_220",
+      "Question Text": "Which rock band was originally called 'Mookie Blaylock'?",
+      "Option A": "Pearl Jam",
+      "Option B": "Soundgarden",
+      "Option C": "Alice in Chains",
+      "Option D": "Stone Temple Pilots",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_221",
+      "Question Text": "What was Tina Turner's birth name?",
+      "Option A": "Anna Mae Bullock",
+      "Option B": "Christina Turner",
+      "Option C": "Tina Brown",
+      "Option D": "Annie Mae Turner",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_222",
+      "Question Text": "Which rock band featured Roger Waters and David Gilmour?",
+      "Option A": "The Who",
+      "Option B": "Pink Floyd",
+      "Option C": "Genesis",
+      "Option D": "Yes",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_223",
+      "Question Text": "What was Queen's first Top 10 hit in America?",
+      "Option A": "We Will Rock You",
+      "Option B": "Bohemian Rhapsody",
+      "Option C": "Killer Queen",
+      "Option D": "You're My Best Friend",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_224",
+      "Question Text": "Which rock legend was known as 'The Man in Black'?",
+      "Option A": "Roy Orbison",
+      "Option B": "Johnny Cash",
+      "Option C": "Waylon Jennings",
+      "Option D": "Willie Nelson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_225",
+      "Question Text": "What was the original name of The Grateful Dead?",
+      "Option A": "The Warlocks",
+      "Option B": "The Dead",
+      "Option C": "Grateful Company",
+      "Option D": "Jerry's Kids",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_226",
+      "Question Text": "Which rock band featured Don Henley and Glenn Frey?",
+      "Option A": "The Eagles",
+      "Option B": "Poco",
+      "Option C": "Flying Burrito Brothers",
+      "Option D": "Pure Prairie League",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_227",
+      "Question Text": "What was Elton John's first Top 10 hit in America?",
+      "Option A": "Your Song",
+      "Option B": "Crocodile Rock",
+      "Option C": "Daniel",
+      "Option D": "Goodbye Yellow Brick Road",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_228",
+      "Question Text": "Which rock star was known as 'The Godfather of Soul'?",
+      "Option A": "James Brown",
+      "Option B": "Ray Charles",
+      "Option C": "Sam Cooke",
+      "Option D": "Wilson Pickett",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_229",
+      "Question Text": "What was The Beach Boys' first #1 hit?",
+      "Option A": "Surfin' USA",
+      "Option B": "I Get Around",
+      "Option C": "Help Me Rhonda",
+      "Option D": "Good Vibrations",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_230",
+      "Question Text": "Which rock band featured Robert Plant and Jimmy Page?",
+      "Option A": "Deep Purple",
+      "Option B": "Black Sabbath",
+      "Option C": "Led Zeppelin",
+      "Option D": "The Yardbirds",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_231",
+      "Question Text": "What was Bob Dylan's first Top 10 hit as a songwriter?",
+      "Option A": "Blowin' in the Wind",
+      "Option B": "Mr. Tambourine Man",
+      "Option C": "Like a Rolling Stone",
+      "Option D": "All Along the Watchtower",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_232",
+      "Question Text": "Which rock star was known as 'The King of Rock and Roll'?",
+      "Option A": "Chuck Berry",
+      "Option B": "Little Richard",
+      "Option C": "Elvis Presley",
+      "Option D": "Jerry Lee Lewis",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_233",
+      "Question Text": "What was The Rolling Stones' first #1 hit in America?",
+      "Option A": "Satisfaction",
+      "Option B": "Paint It Black",
+      "Option C": "Ruby Tuesday",
+      "Option D": "(I Can't Get No) Satisfaction",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_234",
+      "Question Text": "Which rock band featured Pete Townshend and Roger Daltrey?",
+      "Option A": "The Kinks",
+      "Option B": "The Who",
+      "Option C": "The Animals",
+      "Option D": "The Small Faces",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_235",
+      "Question Text": "What was The Beatles' first #1 hit in America?",
+      "Option A": "Love Me Do",
+      "Option B": "Please Please Me",
+      "Option C": "I Want to Hold Your Hand",
+      "Option D": "She Loves You",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_236",
+      "Question Text": "Which rock star was known as 'The Duke of Earl'?",
+      "Option A": "Gene Chandler",
+      "Option B": "Ben E. King",
+      "Option C": "Solomon Burke",
+      "Option D": "Jackie Wilson",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_237",
+      "Question Text": "What was Rod Stewart's first solo Top 10 hit?",
+      "Option A": "Maggie May",
+      "Option B": "You Wear It Well",
+      "Option C": "Tonight's the Night",
+      "Option D": "Hot Legs",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_238",
+      "Question Text": "Which rock band featured Brian Wilson and Mike Love?",
+      "Option A": "The Beach Boys",
+      "Option B": "Jan and Dean",
+      "Option C": "The Ventures",
+      "Option D": "The Surfaris",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_239",
+      "Question Text": "What was Stevie Wonder's first #1 hit as a solo artist?",
+      "Option A": "Fingertips Pt. 2",
+      "Option B": "I Was Made to Love Her",
+      "Option C": "For Once in My Life",
+      "Option D": "Signed, Sealed, Delivered",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_240",
+      "Question Text": "Which rock star was known as 'The Killer'?",
+      "Option A": "Jerry Lee Lewis",
+      "Option B": "Little Richard",
+      "Option C": "Chuck Berry",
+      "Option D": "Fats Domino",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_241",
+      "Question Text": "What was CCR's highest-charting single?",
+      "Option A": "Proud Mary",
+      "Option B": "Bad Moon Rising",
+      "Option C": "Green River",
+      "Option D": "Lookin' Out My Back Door",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_242",
+      "Question Text": "Which rock band featured Ray and Dave Davies?",
+      "Option A": "The Who",
+      "Option B": "The Kinks",
+      "Option C": "The Troggs",
+      "Option D": "The Zombies",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_243",
+      "Question Text": "What was Diana Ross's first solo #1 hit?",
+      "Option A": "Ain't No Mountain High Enough",
+      "Option B": "Touch Me in the Morning",
+      "Option C": "Theme from Mahogany",
+      "Option D": "Love Hangover",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_244",
+      "Question Text": "Which rock star was known as 'The Queen of Soul'?",
+      "Option A": "Aretha Franklin",
+      "Option B": "Tina Turner",
+      "Option C": "Diana Ross",
+      "Option D": "Gladys Knight",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_245",
+      "Question Text": "What was The Supremes' first #1 hit?",
+      "Option A": "Where Did Our Love Go",
+      "Option B": "Baby Love",
+      "Option C": "Come See About Me",
+      "Option D": "Stop! In the Name of Love",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_246",
+      "Question Text": "Which rock band featured John Fogerty?",
+      "Option A": "Buffalo Springfield",
+      "Option B": "Creedence Clearwater Revival",
+      "Option C": "The Byrds",
+      "Option D": "The Lovin' Spoonful",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_247",
+      "Question Text": "What was Marvin Gaye's first solo #1 hit?",
+      "Option A": "I Heard It Through the Grapevine",
+      "Option B": "Let's Get It On",
+      "Option C": "What's Going On",
+      "Option D": "Sexual Healing",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_248",
+      "Question Text": "Which rock star was known as 'The Genius'?",
+      "Option A": "Ray Charles",
+      "Option B": "Sam Cooke",
+      "Option C": "James Brown",
+      "Option D": "Little Richard",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_249",
+      "Question Text": "What was Simon & Garfunkel's first #1 hit?",
+      "Option A": "The Sound of Silence",
+      "Option B": "Mrs. Robinson",
+      "Option C": "Bridge Over Troubled Water",
+      "Option D": "The Boxer",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_250",
+      "Question Text": "Which rock band featured Grace Slick?",
+      "Option A": "Big Brother and the Holding Company",
+      "Option B": "Jefferson Airplane",
+      "Option C": "Grateful Dead",
+      "Option D": "The Doors",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MUSIC_251",
+      "Question Text": "What was The Doors' only #1 hit?",
+      "Option A": "Light My Fire",
+      "Option B": "Hello, I Love You",
+      "Option C": "Touch Me",
+      "Option D": "Riders on the Storm",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    }
+  ]
+}

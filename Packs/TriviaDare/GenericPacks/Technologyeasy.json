@@ -1,0 +1,1424 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "TECHNOLOGY_1",
+      "Question Text": "What is the consensus algorithm used by Ethereum?",
+      "Option A": "Proof-of-Stake",
+      "Option B": "Proof-of-Work",
+      "Option C": "Delegated Proof-of-Stake",
+      "Option D": "Proof-of-Authority",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_2",
+      "Question Text": "Who is the co-founder of Apple Inc. alongside Steve Jobs?",
+      "Option A": "Mike Markkula",
+      "Option B": "Steve Wozniak",
+      "Option C": "John Sculley",
+      "Option D": "Ronald Wayne",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_3",
+      "Question Text": "What was the first decentralized cryptocurrency?",
+      "Option A": "Ethereum",
+      "Option B": "Litecoin",
+      "Option C": "Bitcoin",
+      "Option D": "Dogecoin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_4",
+      "Question Text": "Who is credited with creating Bitcoin?",
+      "Option A": "Vitalik Buterin",
+      "Option B": "Craig Wright",
+      "Option C": "Satoshi Nakamoto",
+      "Option D": "Nick Szabo",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_5",
+      "Question Text": "What is the maximum supply limit of Bitcoin?",
+      "Option A": "20 million",
+      "Option B": "21 million",
+      "Option C": "22 million",
+      "Option D": "19 million",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_6",
+      "Question Text": "What is the process of verifying and recording transactions on the Bitcoin network called?",
+      "Option A": "Tracking",
+      "Option B": "Verifying",
+      "Option C": "Mining",
+      "Option D": "Logging",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_7",
+      "Question Text": "What is the term for the public ledger where all Bitcoin transactions are recorded?",
+      "Option A": "Ledger",
+      "Option B": "Database",
+      "Option C": "Blockchain",
+      "Option D": "Record",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_8",
+      "Question Text": "Which cryptocurrency is known for its fast transaction confirmation times and low fees?",
+      "Option A": "Ethereum",
+      "Option B": "Bitcoin",
+      "Option C": "Litecoin",
+      "Option D": "Ripple",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_9",
+      "Question Text": "What is the name of the blockchain platform that introduced smart contracts?",
+      "Option A": "Bitcoin",
+      "Option B": "Ethereum",
+      "Option C": "Cardano",
+      "Option D": "Polkadot",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_10",
+      "Question Text": "Which cryptocurrency was created as a joke but gained significant popularity?",
+      "Option A": "Shiba Inu",
+      "Option B": "Dogecoin",
+      "Option C": "Monero",
+      "Option D": "Ripple",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_11",
+      "Question Text": "What is the name of the second-largest cryptocurrency by market capitalization?",
+      "Option A": "Ripple",
+      "Option B": "Litecoin",
+      "Option C": "Dogecoin",
+      "Option D": "Ethereum",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_12",
+      "Question Text": "What is the consensus algorithm used by Ethereum?",
+      "Option A": "Proof-of-Stake",
+      "Option B": "Proof-of-Work",
+      "Option C": "Delegated Proof-of-Stake",
+      "Option D": "Proof-of-Authority",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_13",
+      "Question Text": "Apple's facial recognition is called what?",
+      "Option A": "Face Lock",
+      "Option B": "Face Scan",
+      "Option C": "Face ID",
+      "Option D": "Face Pass",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_14",
+      "Question Text": "Apple took which company to court over using a GUI similar to their Lisa product?",
+      "Option A": "Dell",
+      "Option B": "HP",
+      "Option C": "Microsoft",
+      "Option D": "IBM",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_15",
+      "Question Text": "A URL which is easy to type and remember is described in which way?",
+      "Option A": "Short",
+      "Option B": "Easy",
+      "Option C": "Friendly",
+      "Option D": "Simple",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_16",
+      "Question Text": "All blogs online and their interconnections is known as what?",
+      "Option A": "Blog Network",
+      "Option B": "Web Blog",
+      "Option C": "Blogosphere",
+      "Option D": "Blog World",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_17",
+      "Question Text": "After releasing confidential documents on the internet, Edward Snowden fled to which country?",
+      "Option A": "China",
+      "Option B": "United States",
+      "Option C": "Russia",
+      "Option D": "Venezuela",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_18",
+      "Question Text": "A type of computer virus shares its name with which insect?",
+      "Option A": "Spider",
+      "Option B": "Ant",
+      "Option C": "Worm",
+      "Option D": "Beetle",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_19",
+      "Question Text": "An end tag in HTML design has which other name?",
+      "Option A": "Stop Tag",
+      "Option B": "End Tag",
+      "Option C": "Closing Tag",
+      "Option D": "Final Tag",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_20",
+      "Question Text": "ASCII text is alternatively known as which sort of text?",
+      "Option A": "Raw",
+      "Option B": "Basic",
+      "Option C": "Plain",
+      "Option D": "Simple",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_21",
+      "Question Text": "B2B is shorthand for which term?",
+      "Option A": "Back to Back",
+      "Option B": "Business to Business",
+      "Option C": "Basic to Basic",
+      "Option D": "Buy to Buy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_22",
+      "Question Text": "As of 2019, what was the second most popular search engine?",
+      "Option A": "Yahoo",
+      "Option B": "DuckDuckGo",
+      "Option C": "Bing",
+      "Option D": "Ask.com",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_23",
+      "Question Text": "Avast is a popular brand of which free software?",
+      "Option A": "Firewall",
+      "Option B": "Anti-Virus",
+      "Option C": "Security",
+      "Option D": "Encryption",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_24",
+      "Question Text": "Active Desktop was an operating feature introduced by which company in 1997?",
+      "Option A": "Apple",
+      "Option B": "Google",
+      "Option C": "Microsoft",
+      "Option D": "Dell",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_25",
+      "Question Text": "Adding a picture or other file to an email is known as sending a what?",
+      "Option A": "Link",
+      "Option B": "Share",
+      "Option C": "Attachment",
+      "Option D": "Transfer",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_26",
+      "Question Text": "Ctrl plus C does what in Windows application?",
+      "Option A": "Cut",
+      "Option B": "Paste",
+      "Option C": "Copy",
+      "Option D": "Select",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_27",
+      "Question Text": "Apple opened its first European store in which capital city?",
+      "Option A": "Paris",
+      "Option B": "Berlin",
+      "Option C": "London",
+      "Option D": "Rome",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_28",
+      "Question Text": "A topic which is generating a lot of traffic on Twitter has which name?",
+      "Option A": "Popular",
+      "Option B": "Hot",
+      "Option C": "Trending",
+      "Option D": "Viral",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_29",
+      "Question Text": "ANSI is the standards institute from which country?",
+      "Option A": "Canada",
+      "Option B": "United Kingdom",
+      "Option C": "United States",
+      "Option D": "Australia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_30",
+      "Question Text": "A url ending with .mx tells you the site is located in which country?",
+      "Option A": "Spain",
+      "Option B": "Argentina",
+      "Option C": "Mexico",
+      "Option D": "Chile",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_31",
+      "Question Text": "An air fryer cooks food without using which item?",
+      "Option A": "Water",
+      "Option B": "Electricity",
+      "Option C": "Oil",
+      "Option D": "Steam",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_32",
+      "Question Text": "Allo was an instant messaging app made by which company?",
+      "Option A": "Facebook",
+      "Option B": "Apple",
+      "Option C": "Google",
+      "Option D": "Microsoft",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_33",
+      "Question Text": "A hardware device that connects a computer to a broadband network has which name?",
+      "Option A": "Router",
+      "Option B": "Hub",
+      "Option C": "Switch",
+      "Option D": "Modem",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_34",
+      "Question Text": "A computer designed to stay in a static location has which name?",
+      "Option A": "Static",
+      "Option B": "Stationary",
+      "Option C": "Desktop",
+      "Option D": "Fixed",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_35",
+      "Question Text": "A device added to a computer that performs an additional function has which name?",
+      "Option A": "Add-on",
+      "Option B": "Extra",
+      "Option C": "Accessory",
+      "Option D": "Attachment",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_36",
+      "Question Text": "An older phone which doesn't offer smartphone features has which name?",
+      "Option A": "Simple",
+      "Option B": "Basic",
+      "Option C": "Dumb",
+      "Option D": "Classic",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_37",
+      "Question Text": "An engineer from which company made the first cellphone call?",
+      "Option A": "Nokia",
+      "Option B": "Samsung",
+      "Option C": "Motorola",
+      "Option D": "Ericsson",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_38",
+      "Question Text": ".bmp and .gif are file extensions for which content?",
+      "Option A": "Sound",
+      "Option B": "Video",
+      "Option C": "Pictures",
+      "Option D": "Documents",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_39",
+      "Question Text": ".wav and .mp3 are file extensions for which content?",
+      "Option A": "Video",
+      "Option B": "Pictures",
+      "Option C": "Sound",
+      "Option D": "Documents",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_40",
+      "Question Text": "A list of references at the end of a text document has which name?",
+      "Option A": "References",
+      "Option B": "Index",
+      "Option C": "Bibliography",
+      "Option D": "Citations",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_41",
+      "Question Text": "A file labeled as .ppt has been made with which package?",
+      "Option A": "Microsoft Word",
+      "Option B": "Google Slides",
+      "Option C": "PowerPoint",
+      "Option D": "Keynote",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_42",
+      "Question Text": "A file labeled as .zip indicates what has been done to it?",
+      "Option A": "Encoded",
+      "Option B": "Secured",
+      "Option C": "Compressed",
+      "Option D": "Archived",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_43",
+      "Question Text": "A nickname for a user on a website has which other name?",
+      "Option A": "Username",
+      "Option B": "Pseudonym",
+      "Option C": "Alias",
+      "Option D": "Handle",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_44",
+      "Question Text": "A business which specializes in answering or making phone calls has which name?",
+      "Option A": "Call Center",
+      "Option B": "Phone Hub",
+      "Option C": "Contact Station",
+      "Option D": "Communication Hub",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_45",
+      "Question Text": "A call which wasn't answered shows up on your phone as what?",
+      "Option A": "Unanswered",
+      "Option B": "Missed",
+      "Option C": "Skipped",
+      "Option D": "Bypassed",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_46",
+      "Question Text": "A number given to each computer connected to the internet has which name?",
+      "Option A": "Web Address",
+      "Option B": "Internet Number",
+      "Option C": "IP Address",
+      "Option D": "Network Code",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_47",
+      "Question Text": "55% of websites on the internet are in which language?",
+      "Option A": "Spanish",
+      "Option B": "Chinese",
+      "Option C": "English",
+      "Option D": "French",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_48",
+      "Question Text": "Ctrl+A does what?",
+      "Option A": "Copy",
+      "Option B": "Paste",
+      "Option C": "Select All",
+      "Option D": "Cut",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_49",
+      "Question Text": "A picture capturing what is being displayed on your computer has which name?",
+      "Option A": "Screen Picture",
+      "Option B": "Display Capture",
+      "Option C": "Image Capture",
+      "Option D": "Screenshot",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_50",
+      "Question Text": "A large computer where files are stored centrally has which name?",
+      "Option A": "Center",
+      "Option B": "Hub",
+      "Option C": "Server",
+      "Option D": "Storage",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_51",
+      "Question Text": "Core' is a brand made by which technology company?",
+      "Option A": "AMD",
+      "Option B": "Apple",
+      "Option C": "Intel",
+      "Option D": "Microsoft",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_52",
+      "Question Text": "A central computer with lots of processing power has which name?",
+      "Option A": "Super Computer",
+      "Option B": "Mega Computer",
+      "Option C": "Mainframe",
+      "Option D": "Power Computer",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_53",
+      "Question Text": "A .xls file contains which content?",
+      "Option A": "Document",
+      "Option B": "Presentation",
+      "Option C": "Spreadsheet",
+      "Option D": "Database",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_54",
+      "Question Text": "Computer Space was the first example of which item, released in 1970?",
+      "Option A": "Video Game",
+      "Option B": "Arcade Game",
+      "Option C": "Computer",
+      "Option D": "Console",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_55",
+      "Question Text": "Computer software with lots of added extras might be said to have all the what?",
+      "Option A": "Whistles and Bells",
+      "Option B": "Bells and Whistles",
+      "Option C": "Features and Add-ons",
+      "Option D": "Extras and Plugins",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_56",
+      "Question Text": "BSoD is short for which color of error screen?",
+      "Option A": "Black",
+      "Option B": "Red",
+      "Option C": "Green",
+      "Option D": "Blue",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_57",
+      "Question Text": "A computer program that runs within a page on the internet has which name?",
+      "Option A": "Widget",
+      "Option B": "Plugin",
+      "Option C": "Applet",
+      "Option D": "Extension",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_58",
+      "Question Text": "A person making sure that rules are followed in a chat room or forum has which name?",
+      "Option A": "Manager",
+      "Option B": "Administrator",
+      "Option C": "Moderator",
+      "Option D": "Supervisor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_59",
+      "Question Text": "A computer which has crashed might also have been said to have done what?",
+      "Option A": "Collapsed",
+      "Option B": "Broken",
+      "Option C": "Fallen Over",
+      "Option D": "Shut Down",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_60",
+      "Question Text": "A malicious program which replicates itself to spread to other computers has which name?",
+      "Option A": "Virus",
+      "Option B": "Trojan",
+      "Option C": "Worm",
+      "Option D": "Malware",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_61",
+      "Question Text": "An error which causes the computer to shut down has which name?",
+      "Option A": "Critical",
+      "Option B": "Severe",
+      "Option C": "Fatal",
+      "Option D": "Deadly",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_62",
+      "Question Text": "A 2012 report found that 83% users of which social media channel were women?",
+      "Option A": "Facebook",
+      "Option B": "Twitter",
+      "Option C": "Pinterest",
+      "Option D": "Instagram",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_63",
+      "Question Text": "A network of computers limited to one company has which name?",
+      "Option A": "Private Network",
+      "Option B": "Company Network",
+      "Option C": "Intranet",
+      "Option D": "Local Network",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_64",
+      "Question Text": "A collection of computers, printers, servers, and other devices all connected together has which name?",
+      "Option A": "System",
+      "Option B": "Connection",
+      "Option C": "Web",
+      "Option D": "Network",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_65",
+      "Question Text": "90.3% of the people living on which continent have access to the internet in 2020?",
+      "Option A": "South America",
+      "Option B": "Europe",
+      "Option C": "North America",
+      "Option D": "Asia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_66",
+      "Question Text": "Reels', designed to compete with TikTok, was launched on which social media site in August 2020?",
+      "Option A": "Facebook",
+      "Option B": "Twitter",
+      "Option C": "Instagram",
+      "Option D": "Snapchat",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_67",
+      "Question Text": "Orange Is the New Black' was one of the first series by which streaming company?",
+      "Option A": "Hulu",
+      "Option B": "Amazon Prime",
+      "Option C": "Netflix",
+      "Option D": "Disney+",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_68",
+      "Question Text": "A program used to access pages online has which name?",
+      "Option A": "Searcher",
+      "Option B": "Navigator",
+      "Option C": "Browser",
+      "Option D": "Explorer",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_69",
+      "Question Text": "A barrier between your computer and the rest of the internet has which name?",
+      "Option A": "Blockade",
+      "Option B": "Shield",
+      "Option C": "Firewall",
+      "Option D": "Protection",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_70",
+      "Question Text": "A company which allows you to store website information on their server is offering which service?",
+      "Option A": "Storage",
+      "Option B": "Saving",
+      "Option C": "Hosting",
+      "Option D": "Keeping",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_71",
+      "Question Text": "A list of options available on a website has which name?",
+      "Option A": "List",
+      "Option B": "Options",
+      "Option C": "Menu",
+      "Option D": "Selections",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_72",
+      "Question Text": "A location where many people can all talk at the same time online has which name?",
+      "Option A": "Group",
+      "Option B": "Forum",
+      "Option C": "Chat Room",
+      "Option D": "Discussion",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_73",
+      "Question Text": "A single press of a key on a keyboard has which name?",
+      "Option A": "Keypress",
+      "Option B": "Keystroke",
+      "Option C": "Keytouch",
+      "Option D": "Keyclick",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_74",
+      "Question Text": "Amazon was founded in which US state?",
+      "Option A": "Oregon",
+      "Option B": "California",
+      "Option C": "Washington",
+      "Option D": "Nevada",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_75",
+      "Question Text": "A wire covered in plastic for transmitting data has which name?",
+      "Option A": "Wire",
+      "Option B": "Cord",
+      "Option C": "Cable",
+      "Option D": "Line",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_76",
+      "Question Text": "An early online phenomenon was about 6 degrees of which actor?",
+      "Option A": "Tom Hanks",
+      "Option B": "Kevin Bacon",
+      "Option C": "Brad Pitt",
+      "Option D": "George Clooney",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_77",
+      "Question Text": "An installation point for a hardware card to be connected is known as which slot?",
+      "Option A": "Insert",
+      "Option B": "Connection",
+      "Option C": "Expansion",
+      "Option D": "Port",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_78",
+      "Question Text": "Americans use 'busy' when referring to a phone line, what is the equivalent term in the UK?",
+      "Option A": "Occupied",
+      "Option B": "Blocked",
+      "Option C": "Engaged",
+      "Option D": "Reserved",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_79",
+      "Question Text": "A material which can repair damage to itself has which name?",
+      "Option A": "Auto-Repair",
+      "Option B": "Self-Fixing",
+      "Option C": "Self-Healing",
+      "Option D": "Auto-Mend",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_80",
+      "Question Text": "A MRI machine would be found in which building?",
+      "Option A": "Clinic",
+      "Option B": "Hospital",
+      "Option C": "Laboratory",
+      "Option D": "Medical Center",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_81",
+      "Question Text": "A location for storing files on your computer has which name?",
+      "Option A": "Folder",
+      "Option B": "Archive",
+      "Option C": "Directory",
+      "Option D": "Storage",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_82",
+      "Question Text": "A choreographed dance sequence at any random space, filmed for online use, is which mob?",
+      "Option A": "Dance",
+      "Option B": "Street",
+      "Option C": "Flash",
+      "Option D": "Random",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_83",
+      "Question Text": "Life's Good' is the slogan of which tech company?",
+      "Option A": "Samsung",
+      "Option B": "Sony",
+      "Option C": "LG",
+      "Option D": "Panasonic",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_84",
+      "Question Text": "Brin and Page founded Google while PhD students in which US state?",
+      "Option A": "Washington",
+      "Option B": "California",
+      "Option C": "Oregon",
+      "Option D": "Texas",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_85",
+      "Question Text": "BBC was the first national TV broadcaster of which country, established in 1928?",
+      "Option A": "England",
+      "Option B": "United Kingdom",
+      "Option C": "Scotland",
+      "Option D": "Wales",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_86",
+      "Question Text": "Biofilter technology is used to process what?",
+      "Option A": "Air",
+      "Option B": "Water",
+      "Option C": "Waste",
+      "Option D": "Soil",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_87",
+      "Question Text": "A cellphone which doesn't have to be used with a particular SIM is known as what?",
+      "Option A": "Free",
+      "Option B": "Open",
+      "Option C": "Unlocked",
+      "Option D": "Flexible",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_88",
+      "Question Text": "Think Different' was the tagline of which tech brand from 1997 to 2002?",
+      "Option A": "Microsoft",
+      "Option B": "Dell",
+      "Option C": "Apple",
+      "Option D": "IBM",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_89",
+      "Question Text": "A phone which can be opened and closed with a hinge has which name?",
+      "Option A": "Flip",
+      "Option B": "Clamshell",
+      "Option C": "Fold",
+      "Option D": "Twist",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_90",
+      "Question Text": "A file ending .au features which content?",
+      "Option A": "Video",
+      "Option B": "Text",
+      "Option C": "Audio",
+      "Option D": "Image",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_91",
+      "Question Text": "An American scientist was the first to use which climate change phrase in 1975?",
+      "Option A": "Climate Crisis",
+      "Option B": "Global Warming",
+      "Option C": "Greenhouse Effect",
+      "Option D": "Climate Change",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_92",
+      "Question Text": "After Effects is visual effects software made by which company?",
+      "Option A": "Microsoft",
+      "Option B": "Adobe",
+      "Option C": "Apple",
+      "Option D": "Autodesk",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_93",
+      "Question Text": "What was the most downloaded app of the 2010s?",
+      "Option A": "Facebook",
+      "Option B": "Instagram",
+      "Option C": "WhatsApp",
+      "Option D": "Snapchat",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_94",
+      "Question Text": "Which programming language is named after coffee?",
+      "Option A": "Python",
+      "Option B": "Java",
+      "Option C": "Ruby",
+      "Option D": "Swift",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_95",
+      "Question Text": "How many megabytes are in one gigabyte?",
+      "Option A": 100,
+      "Option B": 500,
+      "Option C": 1000,
+      "Option D": 2000,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_96",
+      "Question Text": "What year was eBay founded?",
+      "Option A": 1993,
+      "Option B": 1994,
+      "Option C": 1996,
+      "Option D": 1995,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_97",
+      "Question Text": "What does GUI stand for?",
+      "Option A": "Graphical User Interface",
+      "Option B": "General User Input",
+      "Option C": "Global Usage Index",
+      "Option D": "Graphics Utility Installation",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_98",
+      "Question Text": "What does a blue wavy line indicate in Microsoft Word?",
+      "Option A": "Grammar",
+      "Option B": "Formatting",
+      "Option C": "Spelling",
+      "Option D": "Style",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_99",
+      "Question Text": "What type of virus replicates itself and uses up processing space?",
+      "Option A": "Trojan",
+      "Option B": "Malware",
+      "Option C": "Worm",
+      "Option D": "Spyware",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_100",
+      "Question Text": "Which app features a green owl mascot?",
+      "Option A": "Babbel",
+      "Option B": "Rosetta Stone",
+      "Option C": "Memrise",
+      "Option D": "Duolingo",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_101",
+      "Question Text": "What does HTTP stand for?",
+      "Option A": "HyperText Transfer Protocol",
+      "Option B": "High Tech Transfer Process",
+      "Option C": "Hybrid Text Transfer Port",
+      "Option D": "Home Tech Transfer Program",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_102",
+      "Question Text": "How many bytes are in one kilobyte?",
+      "Option A": 512,
+      "Option B": 1024,
+      "Option C": 2048,
+      "Option D": 4096,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_103",
+      "Question Text": "What was Google's retired social media platform?",
+      "Option A": "Google Wave",
+      "Option B": "Google Buzz",
+      "Option C": "Google+",
+      "Option D": "Google Circle",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_104",
+      "Question Text": "What company makes the iPhone?",
+      "Option A": "Samsung",
+      "Option B": "Microsoft",
+      "Option C": "Google",
+      "Option D": "Apple",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_105",
+      "Question Text": "What does RAM stand for?",
+      "Option A": "Random Access Memory",
+      "Option B": "Remote Access Module",
+      "Option C": "Rapid Application Manager",
+      "Option D": "Runtime Access Mode",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_106",
+      "Question Text": "Which company owns WhatsApp?",
+      "Option A": "Google",
+      "Option B": "Meta (Facebook)",
+      "Option C": "Microsoft",
+      "Option D": "Twitter",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_107",
+      "Question Text": "What year was the first iPhone released?",
+      "Option A": 2006,
+      "Option B": 2008,
+      "Option C": 2007,
+      "Option D": 2009,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_108",
+      "Question Text": "What popular game features building and mining blocks?",
+      "Option A": "Roblox",
+      "Option B": "Terraria",
+      "Option C": "Portal",
+      "Option D": "Minecraft",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_109",
+      "Question Text": "Which company owns YouTube?",
+      "Option A": "Google",
+      "Option B": "Microsoft",
+      "Option C": "Apple",
+      "Option D": "Amazon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_110",
+      "Question Text": "What 'bird' is Twitter's logo?",
+      "Option A": "Robin",
+      "Option B": "Blue Jay",
+      "Option C": "Sparrow",
+      "Option D": "Eagle",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_111",
+      "Question Text": "What does CPU stand for?",
+      "Option A": "Computer Power Unit",
+      "Option B": "Central Program Utility",
+      "Option C": "Central Processing Unit",
+      "Option D": "Computing Process Unit",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_112",
+      "Question Text": "Which operating system is Linux based on?",
+      "Option A": "Windows",
+      "Option B": "MacOS",
+      "Option C": "iOS",
+      "Option D": "Unix",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_113",
+      "Question Text": "What does USB stand for?",
+      "Option A": "Universal Serial Bus",
+      "Option B": "Unity System Base",
+      "Option C": "Unified Serial Box",
+      "Option D": "User System Board",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_114",
+      "Question Text": "Which company makes Windows?",
+      "Option A": "Apple",
+      "Option B": "Microsoft",
+      "Option C": "Google",
+      "Option D": "Intel",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_115",
+      "Question Text": "What type of computer storage is an SSD?",
+      "Option A": "System Storage Drive",
+      "Option B": "Serial Storage Disk",
+      "Option C": "Solid State Drive",
+      "Option D": "System State Device",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_116",
+      "Question Text": "Which video game console came first?",
+      "Option A": "PlayStation",
+      "Option B": "Xbox",
+      "Option C": "Nintendo 64",
+      "Option D": "Atari",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_117",
+      "Question Text": "What does PDF stand for?",
+      "Option A": "Portable Document Format",
+      "Option B": "Personal Data File",
+      "Option C": "Program Document File",
+      "Option D": "Public Domain Format",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_118",
+      "Question Text": "What does WiFi stand for?",
+      "Option A": "Wireless Fidelity",
+      "Option B": "Wide Function",
+      "Option C": "Web Filter",
+      "Option D": "Wave Format",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_119",
+      "Question Text": "Which tech company has an apple as its logo?",
+      "Option A": "Microsoft",
+      "Option B": "Apple",
+      "Option C": "Samsung",
+      "Option D": "Dell",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_120",
+      "Question Text": "What is the main function of a firewall?",
+      "Option A": "Speed up internet",
+      "Option B": "Block viruses",
+      "Option C": "Protect network",
+      "Option D": "Save files",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_121",
+      "Question Text": "What social media platform uses a ghost logo?",
+      "Option A": "Instagram",
+      "Option B": "TikTok",
+      "Option C": "Twitter",
+      "Option D": "Snapchat",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_122",
+      "Question Text": "What does URL mean?",
+      "Option A": "Uniform Resource Locator",
+      "Option B": "Universal Record Link",
+      "Option C": "User Reference List",
+      "Option D": "Unity Resource Line",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_123",
+      "Question Text": "Which company owns Instagram?",
+      "Option A": "Twitter",
+      "Option B": "Meta (Facebook)",
+      "Option C": "Google",
+      "Option D": "Microsoft",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_124",
+      "Question Text": "What's the main purpose of an antivirus program?",
+      "Option A": "Speed up PC",
+      "Option B": "Save power",
+      "Option C": "Protect from viruses",
+      "Option D": "Store files",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_125",
+      "Question Text": "What type of device is a mouse?",
+      "Option A": "Output",
+      "Option B": "Storage",
+      "Option C": "Processing",
+      "Option D": "Input",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_126",
+      "Question Text": "What does Email stand for?",
+      "Option A": "Electronic Mail",
+      "Option B": "Easy Message",
+      "Option C": "External Mail",
+      "Option D": "Express Message",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_127",
+      "Question Text": "Which website is known for video sharing?",
+      "Option A": "Facebook",
+      "Option B": "YouTube",
+      "Option C": "Twitter",
+      "Option D": "LinkedIn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_128",
+      "Question Text": "What do we call a computer's brain?",
+      "Option A": "Hard Drive",
+      "Option B": "Memory",
+      "Option C": "CPU",
+      "Option D": "Monitor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_129",
+      "Question Text": "Which of these is a web browser?",
+      "Option A": "Word",
+      "Option B": "Excel",
+      "Option C": "PowerPoint",
+      "Option D": "Chrome",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_130",
+      "Question Text": "What does LAN stand for?",
+      "Option A": "Local Area Network",
+      "Option B": "Large Array Network",
+      "Option C": "Linked Access Node",
+      "Option D": "Live Action Network",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_131",
+      "Question Text": "Which company makes PlayStation?",
+      "Option A": "Nintendo",
+      "Option B": "Sony",
+      "Option C": "Microsoft",
+      "Option D": "Sega",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_132",
+      "Question Text": "What type of file is .jpg?",
+      "Option A": "Text",
+      "Option B": "Audio",
+      "Option C": "Image",
+      "Option D": "Video",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_133",
+      "Question Text": "What powers a laptop?",
+      "Option A": "Solar",
+      "Option B": "Wind",
+      "Option C": "Gas",
+      "Option D": "Battery",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_134",
+      "Question Text": "What is a desktop's main box called?",
+      "Option A": "System Unit",
+      "Option B": "Hard Drive",
+      "Option C": "Memory Box",
+      "Option D": "Processor",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_135",
+      "Question Text": "Which of these is a search engine?",
+      "Option A": "Facebook",
+      "Option B": "Google",
+      "Option C": "Instagram",
+      "Option D": "Twitter",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_136",
+      "Question Text": "What type of connection is Bluetooth?",
+      "Option A": "Wired",
+      "Option B": "Cable",
+      "Option C": "Wireless",
+      "Option D": "Fiber",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_137",
+      "Question Text": "What device converts digital to analog signals?",
+      "Option A": "Router",
+      "Option B": "Switch",
+      "Option C": "Hub",
+      "Option D": "Modem",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_138",
+      "Question Text": "What does SMS stand for?",
+      "Option A": "Short Message Service",
+      "Option B": "System Message Send",
+      "Option C": "Simple Mail Service",
+      "Option D": "Standard Message System",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_139",
+      "Question Text": "Which company makes Xbox?",
+      "Option A": "Sony",
+      "Option B": "Microsoft",
+      "Option C": "Nintendo",
+      "Option D": "Sega",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_140",
+      "Question Text": "What's stored in a computer's RAM?",
+      "Option A": "Files",
+      "Option B": "Programs",
+      "Option C": "Running Programs",
+      "Option D": "Pictures",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_141",
+      "Question Text": "What type of port is typically blue on a PC?",
+      "Option A": "HDMI",
+      "Option B": "Power",
+      "Option C": "USB 2.0",
+      "Option D": "USB 3.0",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "TECHNOLOGY_142",
+      "Question Text": "What does HTML create?",
+      "Option A": "Web Pages",
+      "Option B": "Programs",
+      "Option C": "Apps",
+      "Option D": "Games",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    }
+  ]
+}

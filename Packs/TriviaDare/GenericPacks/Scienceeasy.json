@@ -1,0 +1,1314 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "SCIENCE_1",
+      "Question Text": "Who made the first spacewalk ever?",
+      "Option A": "Yuri Gagarin",
+      "Option B": "Valentina Tereshkova",
+      "Option C": "Alexei Leonov",
+      "Option D": "Gherman Titov",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_2",
+      "Question Text": "Sedimentary rocks like limestone and chalk are largely composed of which element?",
+      "Option A": "Magnesium",
+      "Option B": "Sodium",
+      "Option C": "Calcium",
+      "Option D": "Potassium",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_3",
+      "Question Text": "What is the name given to the outer layer of the earth?",
+      "Option A": "Mantle",
+      "Option B": "Core",
+      "Option C": "Crust",
+      "Option D": "Lithosphere",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_4",
+      "Question Text": "Electrolysis is the process of getting hydrogen and oxygen from which substance?",
+      "Option A": "Air",
+      "Option B": "Salt Water",
+      "Option C": "Water",
+      "Option D": "Hydrogen Peroxide",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_5",
+      "Question Text": "The Cerberus Fossae is found on which planet?",
+      "Option A": "Venus",
+      "Option B": "Earth",
+      "Option C": "Mars",
+      "Option D": "Jupiter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_6",
+      "Question Text": "Noachis Terra is a period of which planet's history?",
+      "Option A": "Venus",
+      "Option B": "Earth",
+      "Option C": "Mars",
+      "Option D": "Jupiter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_7",
+      "Question Text": "The Borealis Basin can be found on which planet?",
+      "Option A": "Venus",
+      "Option B": "Earth",
+      "Option C": "Mars",
+      "Option D": "Jupiter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_8",
+      "Question Text": "Which theory says that the most simplest explanation is properly the right one?",
+      "Option A": "Ockham's Razor",
+      "Option B": "Occam's Razor",
+      "Option C": "Einstein's Principle",
+      "Option D": "Newton's Simplification",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_9",
+      "Question Text": "Thermal decomposition means breaking down using what?",
+      "Option A": "Pressure",
+      "Option B": "Cold",
+      "Option C": "Heat",
+      "Option D": "Electricity",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_10",
+      "Question Text": "What word means the relative reactivity of an element?",
+      "Option A": "Valence",
+      "Option B": "Valency",
+      "Option C": "Activity",
+      "Option D": "Reactivity",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_11",
+      "Question Text": "What is mass multiplied by acceleration?",
+      "Option A": "Velocity",
+      "Option B": "Energy",
+      "Option C": "Force",
+      "Option D": "Momentum",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_12",
+      "Question Text": "What was the surname of the British scientist who developed the laws of electrolysis?",
+      "Option A": "Faraday",
+      "Option B": "Maxwell",
+      "Option C": "Kelvin",
+      "Option D": "Newton",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_13",
+      "Question Text": "Johann Schroter spotted 20km Mountains on which planet in 1800?",
+      "Option A": "Venus",
+      "Option B": "Mars",
+      "Option C": "Mercury",
+      "Option D": "Jupiter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_14",
+      "Question Text": "Galileo first observed the rings of which planet in 1610?",
+      "Option A": "Jupiter",
+      "Option B": "Mars",
+      "Option C": "Saturn",
+      "Option D": "Uranus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_15",
+      "Question Text": "Kepler came up with his three laws of planetary motion in which century?",
+      "Option A": "16th",
+      "Option B": "17th",
+      "Option C": "18th",
+      "Option D": "19th",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_16",
+      "Question Text": "What is somnology the study of?",
+      "Option A": "Dreams",
+      "Option B": "Stress",
+      "Option C": "Breathing",
+      "Option D": "Sleep",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_17",
+      "Question Text": "How many pairs of chromosomes do most people have?",
+      "Option A": 22,
+      "Option B": 23,
+      "Option C": 24,
+      "Option D": 25,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_18",
+      "Question Text": "Which living creature is the constellation Aquila named after?",
+      "Option A": "Hawk",
+      "Option B": "Eagle",
+      "Option C": "Falcon",
+      "Option D": "Owl",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_19",
+      "Question Text": "What is the name of the sugar stored in the body for energy?",
+      "Option A": "Fructose",
+      "Option B": "Sucrose",
+      "Option C": "Glucose",
+      "Option D": "Lactose",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_20",
+      "Question Text": "Which organ is located at the top of the neck?",
+      "Option A": "Thyroid",
+      "Option B": "Larynx",
+      "Option C": "Pharynx",
+      "Option D": "Trachea",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_21",
+      "Question Text": "What is the side of the triangle opposite the right angle, according to Pythagoras?",
+      "Option A": "Adjacent",
+      "Option B": "Opposite",
+      "Option C": "Hypotenuse",
+      "Option D": "Base",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_22",
+      "Question Text": "In 1693 Giovanni Zupi observed that which planet actually orbited the Sun?",
+      "Option A": "Venus",
+      "Option B": "Mercury",
+      "Option C": "Mars",
+      "Option D": "Earth",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_23",
+      "Question Text": "Atlas is a moon of which planet?",
+      "Option A": "Jupiter",
+      "Option B": "Mars",
+      "Option C": "Saturn",
+      "Option D": "Neptune",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_24",
+      "Question Text": "Callisto and Io are moons that orbit which planet?",
+      "Option A": "Saturn",
+      "Option B": "Neptune",
+      "Option C": "Jupiter",
+      "Option D": "Mars",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_25",
+      "Question Text": "Ganymede is a moon which orbits which planet?",
+      "Option A": "Mars",
+      "Option B": "Saturn",
+      "Option C": "Jupiter",
+      "Option D": "Neptune",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_26",
+      "Question Text": "Which planet boasts the largest moon in the solar system?",
+      "Option A": "Mars",
+      "Option B": "Saturn",
+      "Option C": "Earth",
+      "Option D": "Jupiter",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_27",
+      "Question Text": "Triton orbits which planet?",
+      "Option A": "Saturn",
+      "Option B": "Mars",
+      "Option C": "Neptune",
+      "Option D": "Uranus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_28",
+      "Question Text": "Which planet is best known for its rings?",
+      "Option A": "Jupiter",
+      "Option B": "Mars",
+      "Option C": "Saturn",
+      "Option D": "Uranus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_29",
+      "Question Text": "Which planet is referred to as being Cronian?",
+      "Option A": "Jupiter",
+      "Option B": "Mars",
+      "Option C": "Saturn",
+      "Option D": "Neptune",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_30",
+      "Question Text": "Which planet takes around 668 days to orbit the Sun?",
+      "Option A": "Venus",
+      "Option B": "Mars",
+      "Option C": "Jupiter",
+      "Option D": "Saturn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_31",
+      "Question Text": "Which planet is the second largest planet in the Solar System?",
+      "Option A": "Jupiter",
+      "Option B": "Neptune",
+      "Option C": "Saturn",
+      "Option D": "Uranus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_32",
+      "Question Text": "Which planet shares its name with a popular chocolate bar?",
+      "Option A": "Venus",
+      "Option B": "Earth",
+      "Option C": "Mars",
+      "Option D": "Mercury",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_33",
+      "Question Text": "Which planet is named after the Roman God of the Sea?",
+      "Option A": "Mars",
+      "Option B": "Jupiter",
+      "Option C": "Neptune",
+      "Option D": "Uranus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_34",
+      "Question Text": "Which planet in our solar system takes about 225 days to orbit the sun?",
+      "Option A": "Mercury",
+      "Option B": "Venus",
+      "Option C": "Earth",
+      "Option D": "Mars",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_35",
+      "Question Text": "Which of these is known as the Red Planet?",
+      "Option A": "Venus",
+      "Option B": "Jupiter",
+      "Option C": "Mars",
+      "Option D": "Saturn",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_36",
+      "Question Text": "What is the name of the largest mountain on Mars?",
+      "Option A": "Mount Sharp",
+      "Option B": "Olympus Mons",
+      "Option C": "Aeolis Mons",
+      "Option D": "Elysium Mons",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_37",
+      "Question Text": "Which name is given to the collection of Jupiter's 4 largest moons?",
+      "Option A": "Galilean Moons",
+      "Option B": "Jovian Moons",
+      "Option C": "Jupiter Moons",
+      "Option D": "Major Moons",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_38",
+      "Question Text": "Which space probe landed on Mars in June 1999?",
+      "Option A": "Mars Pathfinder",
+      "Option B": "Spirit",
+      "Option C": "Opportunity",
+      "Option D": "Curiosity",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_39",
+      "Question Text": "The Rover Spirit was sent to which planet?",
+      "Option A": "Venus",
+      "Option B": "Earth",
+      "Option C": "Mars",
+      "Option D": "Jupiter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_40",
+      "Question Text": "What was the first artificial satellite to be launched into space by the USSR?",
+      "Option A": "Sputnik 2",
+      "Option B": "Explorer 1",
+      "Option C": "Sputnik 1",
+      "Option D": "Vanguard 1",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_41",
+      "Question Text": "Who made the first spacewalk ever?",
+      "Option A": "Yuri Gagarin",
+      "Option B": "Valentina Tereshkova",
+      "Option C": "Alexei Leonov",
+      "Option D": "Gherman Titov",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_42",
+      "Question Text": "In which year did man last land on the moon?",
+      "Option A": 1969,
+      "Option B": 1970,
+      "Option C": 1971,
+      "Option D": 1972,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_43",
+      "Question Text": "What is the name of the yellow-green digestive fluid produced by your liver?",
+      "Option A": "Bile",
+      "Option B": "Saliva",
+      "Option C": "Mucus",
+      "Option D": "Plasma",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_44",
+      "Question Text": "Which animal has the longest gestation period?",
+      "Option A": "Whale",
+      "Option B": "Rhinoceros",
+      "Option C": "Elephant",
+      "Option D": "Giraffe",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_45",
+      "Question Text": "What word means the wearing away of land by water or wind?",
+      "Option A": "Weathering",
+      "Option B": "Erosion",
+      "Option C": "Abrasion",
+      "Option D": "Corrosion",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_46",
+      "Question Text": "What type of rock is formed under huge amounts of heat or pressure?",
+      "Option A": "Igneous",
+      "Option B": "Sedimentary",
+      "Option C": "Metamorphic",
+      "Option D": "Volcanic",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_47",
+      "Question Text": "Where in the body would you find alveoli?",
+      "Option A": "Heart",
+      "Option B": "Brain",
+      "Option C": "Lungs",
+      "Option D": "Liver",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_48",
+      "Question Text": "Which science term means the rate of change of velocity?",
+      "Option A": "Speed",
+      "Option B": "Velocity",
+      "Option C": "Momentum",
+      "Option D": "Acceleration",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_49",
+      "Question Text": "What is haematology the study of?",
+      "Option A": "Bones",
+      "Option B": "Blood",
+      "Option C": "Heart",
+      "Option D": "Muscles",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_50",
+      "Question Text": "Which term in math means without end or limits?",
+      "Option A": "Eternal",
+      "Option B": "Unlimited",
+      "Option C": "Endless",
+      "Option D": "Infinity",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_51",
+      "Question Text": "What is the name for the product of a combustion reaction?",
+      "Option A": "Carbonate",
+      "Option B": "Oxide",
+      "Option C": "Sulfate",
+      "Option D": "Nitrate",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_52",
+      "Question Text": "How is hydropower generated?",
+      "Option A": "Wind",
+      "Option B": "Water",
+      "Option C": "Steam",
+      "Option D": "Solar",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_53",
+      "Question Text": "What is measured with a Geiger counter?",
+      "Option A": "Magnetism",
+      "Option B": "Radioactivity",
+      "Option C": "Sound",
+      "Option D": "Light",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_54",
+      "Question Text": "Which word means how heavy something is, given its volume?",
+      "Option A": "Weight",
+      "Option B": "Mass",
+      "Option C": "Density",
+      "Option D": "Gravity",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_55",
+      "Question Text": "What type of energy is possessed by a body in motion?",
+      "Option A": "Potential",
+      "Option B": "Static",
+      "Option C": "Kinetic",
+      "Option D": "Thermal",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_56",
+      "Question Text": "Capillary action refers to the movement of which substance?",
+      "Option A": "Gases",
+      "Option B": "Solids",
+      "Option C": "Liquids",
+      "Option D": "Plasma",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_57",
+      "Question Text": "What does the P stand for in the chemical PVC?",
+      "Option A": "Poly",
+      "Option B": "Potassium",
+      "Option C": "Phosphorus",
+      "Option D": "Porous",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_58",
+      "Question Text": "How many officially recognized constellations are there?",
+      "Option A": 86,
+      "Option B": 87,
+      "Option C": 88,
+      "Option D": 89,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_59",
+      "Question Text": "Lobate Scarps are a feature of which planet?",
+      "Option A": "Venus",
+      "Option B": "Mars",
+      "Option C": "Mercury",
+      "Option D": "Jupiter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_60",
+      "Question Text": "How many years is it said to take Jupiter to orbit the Sun?",
+      "Option A": 9,
+      "Option B": 10,
+      "Option C": 11,
+      "Option D": 12,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_61",
+      "Question Text": "The Cassini-Huygens probe was sent to visit which planet?",
+      "Option A": "Jupiter",
+      "Option B": "Mars",
+      "Option C": "Saturn",
+      "Option D": "Neptune",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_62",
+      "Question Text": "Who wrote the science law 'for every action there is an equal and opposite reaction'?",
+      "Option A": "Galileo",
+      "Option B": "Einstein",
+      "Option C": "Newton",
+      "Option D": "Hawking",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_63",
+      "Question Text": "Which mathematician first said the world wasn't flat, but a sphere?",
+      "Option A": "Aristotle",
+      "Option B": "Euclid",
+      "Option C": "Archimedes",
+      "Option D": "Pythagoras",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_64",
+      "Question Text": "What is the name for a pivot on which a lever turns?",
+      "Option A": "Axis",
+      "Option B": "Fulcrum",
+      "Option C": "Pivot",
+      "Option D": "Hinge",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_65",
+      "Question Text": "What is the name of the change of state from solid to liquid?",
+      "Option A": "Freezing",
+      "Option B": "Boiling",
+      "Option C": "Melting",
+      "Option D": "Condensing",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_66",
+      "Question Text": "Which science term means an observation which differs from expectations?",
+      "Option A": "Variance",
+      "Option B": "Anomaly",
+      "Option C": "Deviation",
+      "Option D": "Difference",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_67",
+      "Question Text": "What is the name of the fundamental unit of temperature?",
+      "Option A": "Celsius",
+      "Option B": "Fahrenheit",
+      "Option C": "Kelvin",
+      "Option D": "Rankine",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_68",
+      "Question Text": "What is the name for the bones which make up the spine?",
+      "Option A": "Cranium",
+      "Option B": "Ribs",
+      "Option C": "Vertebrae",
+      "Option D": "Pelvis",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_69",
+      "Question Text": "Which biological term means without a spine?",
+      "Option A": "Boneless",
+      "Option B": "Spineless",
+      "Option C": "Invertebrate",
+      "Option D": "Soft-bodied",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_70",
+      "Question Text": "What does the Beaufort Scale measure?",
+      "Option A": "Water Depth",
+      "Option B": "Wind Speed",
+      "Option C": "Air Pressure",
+      "Option D": "Cloud Cover",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_71",
+      "Question Text": "How many Laws of Thermodynamics are there?",
+      "Option A": 2,
+      "Option B": 3,
+      "Option C": 4,
+      "Option D": 5,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_72",
+      "Question Text": "Which is the lightest of all the metallic elements?",
+      "Option A": "Sodium",
+      "Option B": "Potassium",
+      "Option C": "Lithium",
+      "Option D": "Beryllium",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_73",
+      "Question Text": "What is the chemical symbol Na, from the Latin Natrium, for which element?",
+      "Option A": "Nickel",
+      "Option B": "Nitrogen",
+      "Option C": "Neon",
+      "Option D": "Sodium",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_74",
+      "Question Text": "Aqua Regia is used to dissolve which metal?",
+      "Option A": "Silver",
+      "Option B": "Copper",
+      "Option C": "Platinum",
+      "Option D": "Gold",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_75",
+      "Question Text": "Which element is also known as quicksilver?",
+      "Option A": "Platinum",
+      "Option B": "Silver",
+      "Option C": "Mercury",
+      "Option D": "Lead",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_76",
+      "Question Text": "What is the addictive chemical in tobacco?",
+      "Option A": "Caffeine",
+      "Option B": "Nicotine",
+      "Option C": "Tar",
+      "Option D": "Carbon Monoxide",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_77",
+      "Question Text": "What substance are nails made from?",
+      "Option A": "Collagen",
+      "Option B": "Keratin",
+      "Option C": "Elastin",
+      "Option D": "Chitin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_78",
+      "Question Text": "Waxing Gibbous refers to which celestial body?",
+      "Option A": "Sun",
+      "Option B": "Mars",
+      "Option C": "Moon",
+      "Option D": "Jupiter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_79",
+      "Question Text": "How many fundamental states of matter are there?",
+      "Option A": 3,
+      "Option B": 4,
+      "Option C": 5,
+      "Option D": 6,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_80",
+      "Question Text": "Isaac Newton was born in which century?",
+      "Option A": "16th",
+      "Option B": "17th",
+      "Option C": "18th",
+      "Option D": "19th",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_81",
+      "Question Text": "Which layer of the earth is under the crust but above the core?",
+      "Option A": "Outer Core",
+      "Option B": "Inner Core",
+      "Option C": "Mantle",
+      "Option D": "Lithosphere",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_82",
+      "Question Text": "At what temperature are Celsius and Fahrenheit equal?",
+      "Option A": "-40 degrees",
+      "Option B": "-32 degrees",
+      "Option C": "-45 degrees",
+      "Option D": "-37 degrees",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_83",
+      "Question Text": "How long does sunlight take to reach Earth?",
+      "Option A": "6 minutes",
+      "Option B": "8 minutes",
+      "Option C": "10 minutes",
+      "Option D": "12 minutes",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_84",
+      "Question Text": "What are the four states of matter?",
+      "Option A": "Liquid, Gas, Plasma, Solid",
+      "Option B": "Gas, Liquid, Ice, Steam",
+      "Option C": "Solid, Liquid, Gas, Plasma",
+      "Option D": "Matter, Energy, Mass, Volume",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_85",
+      "Question Text": "What metal is liquid at room temperature?",
+      "Option A": "Gallium",
+      "Option B": "Lead",
+      "Option C": "Zinc",
+      "Option D": "Mercury",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_86",
+      "Question Text": "What does a Geiger counter measure?",
+      "Option A": "Radiation",
+      "Option B": "Temperature",
+      "Option C": "Pressure",
+      "Option D": "Humidity",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_87",
+      "Question Text": "What's the largest desert on Earth?",
+      "Option A": "Sahara",
+      "Option B": "Antarctica",
+      "Option C": "Arabian",
+      "Option D": "Gobi",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_88",
+      "Question Text": "Who was the first human in space?",
+      "Option A": "Neil Armstrong",
+      "Option B": "John Glenn",
+      "Option C": "Yuri Gagarin",
+      "Option D": "Alan Shepard",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_89",
+      "Question Text": "What two elements make bronze?",
+      "Option A": "Iron and Carbon",
+      "Option B": "Gold and Silver",
+      "Option C": "Zinc and Copper",
+      "Option D": "Copper and Tin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_90",
+      "Question Text": "What is the tallest type of grass?",
+      "Option A": "Bamboo",
+      "Option B": "Wheat",
+      "Option C": "Corn",
+      "Option D": "Sugarcane",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_91",
+      "Question Text": "How many bones do sharks have?",
+      "Option A": 206,
+      "Option B": "Zero",
+      "Option C": 100,
+      "Option D": 150,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_92",
+      "Question Text": "What is the largest mammal in the world?",
+      "Option A": "African Elephant",
+      "Option B": "Sperm Whale",
+      "Option C": "Blue Whale",
+      "Option D": "Humpback Whale",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_93",
+      "Question Text": "Which ocean is Earth's largest?",
+      "Option A": "Atlantic",
+      "Option B": "Indian",
+      "Option C": "Southern",
+      "Option D": "Pacific",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_94",
+      "Question Text": "Which fruit is associated with gravity and Newton?",
+      "Option A": "Apple",
+      "Option B": "Pear",
+      "Option C": "Orange",
+      "Option D": "Fig",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_95",
+      "Question Text": "What's the hardest natural substance on Earth?",
+      "Option A": "Titanium",
+      "Option B": "Diamond",
+      "Option C": "Steel",
+      "Option D": "Tungsten",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_96",
+      "Question Text": "What gas do plants absorb from the air?",
+      "Option A": "Oxygen",
+      "Option B": "Nitrogen",
+      "Option C": "Carbon Dioxide",
+      "Option D": "Hydrogen",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_97",
+      "Question Text": "What is the process of liquid becoming gas called?",
+      "Option A": "Condensation",
+      "Option B": "Sublimation",
+      "Option C": "Freezing",
+      "Option D": "Evaporation",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_98",
+      "Question Text": "What is the center of an atom called?",
+      "Option A": "Nucleus",
+      "Option B": "Core",
+      "Option C": "Proton",
+      "Option D": "Electron",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_99",
+      "Question Text": "What's the largest land animal?",
+      "Option A": "Giraffe",
+      "Option B": "African Elephant",
+      "Option C": "Hippopotamus",
+      "Option D": "White Rhinoceros",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_100",
+      "Question Text": "What do you call a baby frog?",
+      "Option A": "Pollywog",
+      "Option B": "Froglet",
+      "Option C": "Tadpole",
+      "Option D": "Spawn",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_101",
+      "Question Text": "What do bees collect from flowers?",
+      "Option A": "Pollen",
+      "Option B": "Honey",
+      "Option C": "Wax",
+      "Option D": "Nectar",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_102",
+      "Question Text": "What process turns solid directly to gas?",
+      "Option A": "Sublimation",
+      "Option B": "Evaporation",
+      "Option C": "Condensation",
+      "Option D": "Crystallization",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_103",
+      "Question Text": "Which enzyme unwinds DNA during replication?",
+      "Option A": "Polymerase",
+      "Option B": "Helicase",
+      "Option C": "Ligase",
+      "Option D": "Topoisomerase",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_104",
+      "Question Text": "What protein carries oxygen in blood?",
+      "Option A": "Albumin",
+      "Option B": "Fibrinogen",
+      "Option C": "Hemoglobin",
+      "Option D": "Globulin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_105",
+      "Question Text": "What's the chemical name for rust?",
+      "Option A": "Ferric Chloride",
+      "Option B": "Ferrous Oxide",
+      "Option C": "Ferric Sulfate",
+      "Option D": "Iron Oxide",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_106",
+      "Question Text": "What's the most electronegative element?",
+      "Option A": "Fluorine",
+      "Option B": "Chlorine",
+      "Option C": "Oxygen",
+      "Option D": "Nitrogen",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_107",
+      "Question Text": "What cloud type brings thunderstorms?",
+      "Option A": "Cumulonimbus",
+      "Option B": "Stratus",
+      "Option C": "Cirrus",
+      "Option D": "Nimbostratus",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_108",
+      "Question Text": "What's the boundary between tectonic plates called?",
+      "Option A": "Ridge",
+      "Option B": "Fault Line",
+      "Option C": "Trench",
+      "Option D": "Rift",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_109",
+      "Question Text": "Which animal has the longest pregnancy?",
+      "Option A": "Giraffe",
+      "Option B": "Whale",
+      "Option C": "African Elephant",
+      "Option D": "Rhinoceros",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_110",
+      "Question Text": "What's the largest species of bear?",
+      "Option A": "Grizzly Bear",
+      "Option B": "Kodiak Bear",
+      "Option C": "Brown Bear",
+      "Option D": "Polar Bear",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_111",
+      "Question Text": "What color is a polar bear's skin?",
+      "Option A": "Black",
+      "Option B": "Pink",
+      "Option C": "White",
+      "Option D": "Grey",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_112",
+      "Question Text": "How many legs do lobsters have?",
+      "Option A": 8,
+      "Option B": 10,
+      "Option C": 12,
+      "Option D": 14,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_113",
+      "Question Text": "What's the only big cat that doesn't roar?",
+      "Option A": "Lynx",
+      "Option B": "Ocelot",
+      "Option C": "Cheetah",
+      "Option D": "Bobcat",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_114",
+      "Question Text": "Which mammal has the thickest fur?",
+      "Option A": "Arctic Fox",
+      "Option B": "Polar Bear",
+      "Option C": "Arctic Wolf",
+      "Option D": "Sea Otter",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_115",
+      "Question Text": "What's the fastest bird?",
+      "Option A": "Peregrine Falcon",
+      "Option B": "Golden Eagle",
+      "Option C": "Swift",
+      "Option D": "Hawk",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_116",
+      "Question Text": "What process breaks down rocks by wind and water?",
+      "Option A": "Weathering",
+      "Option B": "Erosion",
+      "Option C": "Deposition",
+      "Option D": "Sedimentation",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_117",
+      "Question Text": "What's the study of fungi called?",
+      "Option A": "Botany",
+      "Option B": "Biology",
+      "Option C": "Mycology",
+      "Option D": "Ecology",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_118",
+      "Question Text": "How many bones are in a giraffe's neck?",
+      "Option A": 5,
+      "Option B": 6,
+      "Option C": 8,
+      "Option D": 7,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_119",
+      "Question Text": "What's the smallest mammal in the world?",
+      "Option A": "Bumblebee Bat",
+      "Option B": "Pygmy Shrew",
+      "Option C": "Mouse Lemur",
+      "Option D": "Harvest Mouse",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_120",
+      "Question Text": "What's the deadliest animal to humans?",
+      "Option A": "Snake",
+      "Option B": "Mosquito",
+      "Option C": "Spider",
+      "Option D": "Shark",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_121",
+      "Question Text": "What's the rarest blood type?",
+      "Option A": "O-",
+      "Option B": "B-",
+      "Option C": "AB-",
+      "Option D": "A-",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_122",
+      "Question Text": "How many pairs of ribs does a human have?",
+      "Option A": 10,
+      "Option B": 11,
+      "Option C": 13,
+      "Option D": 12,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_123",
+      "Question Text": "What's the largest artery in the body?",
+      "Option A": "Aorta",
+      "Option B": "Carotid",
+      "Option C": "Femoral",
+      "Option D": "Pulmonary",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_124",
+      "Question Text": "What are hair and nails made of?",
+      "Option A": "Collagen",
+      "Option B": "Keratin",
+      "Option C": "Elastin",
+      "Option D": "Chitin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_125",
+      "Question Text": "How many vertebrae are in the human spine?",
+      "Option A": 31,
+      "Option B": 32,
+      "Option C": 33,
+      "Option D": 34,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_126",
+      "Question Text": "What's the largest muscle in the human body?",
+      "Option A": "Quadriceps",
+      "Option B": "Latissimus Dorsi",
+      "Option C": "Pectoralis Major",
+      "Option D": "Gluteus Maximus",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_127",
+      "Question Text": "What's the sun primarily made of?",
+      "Option A": "Hydrogen",
+      "Option B": "Helium",
+      "Option C": "Nitrogen",
+      "Option D": "Oxygen",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_128",
+      "Question Text": "What makes the moon shine?",
+      "Option A": "Internal Heat",
+      "Option B": "Reflected Sunlight",
+      "Option C": "Chemical Reactions",
+      "Option D": "Nuclear Fusion",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_129",
+      "Question Text": "Which planet rotates on its side?",
+      "Option A": "Neptune",
+      "Option B": "Saturn",
+      "Option C": "Uranus",
+      "Option D": "Mars",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_130",
+      "Question Text": "What's the nearest star system to ours?",
+      "Option A": "Sirius",
+      "Option B": "Proxima Centauri",
+      "Option C": "Betelgeuse",
+      "Option D": "Alpha Centauri",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "SCIENCE_131",
+      "Question Text": "What's the most abundant gas in Earth's atmosphere?",
+      "Option A": "Nitrogen",
+      "Option B": "Oxygen",
+      "Option C": "Carbon Dioxide",
+      "Option D": "Argon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    }
+  ]
+}

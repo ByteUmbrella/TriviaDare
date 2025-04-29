@@ -1,0 +1,4094 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "PIXAR_1",
+      "Question Text": "In Pixar's A Bug's Life, What Is the Name of Hopper's Aggressive Pet Grasshopper?",
+      "Option A": "Jumper",
+      "Option B": "Thumper",
+      "Option C": "Hopper Jr.",
+      "Option D": "Chomper",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_2",
+      "Question Text": "Which Pixar Villain Has a Pet Named Thumper?",
+      "Option A": "Hopper",
+      "Option B": "Molt",
+      "Option C": "Thorny",
+      "Option D": "Axel",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_3",
+      "Question Text": "In Pixar's A Bug's Life, What Is P.T. Flea's Full Name?",
+      "Option A": "P.T. Flick",
+      "Option B": "P.T. Flutter",
+      "Option C": "P.T. Fly",
+      "Option D": "P.T. Pulga",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_4",
+      "Question Text": "In Pixar's A Bug's Life, What Type of Act Do Slim and Francis Perform?",
+      "Option A": "Comedy",
+      "Option B": "Magic",
+      "Option C": "Dance",
+      "Option D": "Circus",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_5",
+      "Question Text": "Which Pixar Circus Performs with a Group of Misfit Bugs?",
+      "Option A": "Bug Circus",
+      "Option B": "Insect Show",
+      "Option C": "Tiny Circus",
+      "Option D": "P.T. Flea's Circus",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_6",
+      "Question Text": "In Pixar's A Bug's Life, What Large Invention Does Flik Create at The End Of The Movie?",
+      "Option A": "Ant Cannon",
+      "Option B": "Flying Machine",
+      "Option C": "Bird Decoy",
+      "Option D": "Seed Launcher",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_7",
+      "Question Text": "Which Pixar Character Invents a Seed Harvesting Machine?",
+      "Option A": "Flik",
+      "Option B": "Dot",
+      "Option C": "Atta",
+      "Option D": "Molt",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_8",
+      "Question Text": "In Pixar's A Bug's Life, What Does Princess Atta Initially Think of Flik?",
+      "Option A": "He's Smart",
+      "Option B": "He's a Nuisance",
+      "Option C": "He's Helpful",
+      "Option D": "He's Brave",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_9",
+      "Question Text": "In Pixar's A Bug's Life, What Circus Act Do Slim and Francis Perform?",
+      "Option A": "Comedy",
+      "Option B": "Dance",
+      "Option C": "Magic",
+      "Option D": "Acrobatics",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_10",
+      "Question Text": "In Pixar's A Bug's Life, What Is the Name of the Bird That Attacks the Grasshoppers?",
+      "Option A": "Blue",
+      "Option B": "Ruby",
+      "Option C": "Rosy",
+      "Option D": "Birdy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_11",
+      "Question Text": "In Pixar's Brave, What Type of Cake Contains the Witch's Spell?",
+      "Option A": "Magic Cake",
+      "Option B": "Spell Cake",
+      "Option C": "Enchanted Cake",
+      "Option D": "Bear Cake",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_12",
+      "Question Text": "Which Pixar Princess's Mother Turns into a Bear?",
+      "Option A": "Elinor",
+      "Option B": "Merida",
+      "Option C": "Eleanor",
+      "Option D": "Moira",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_13",
+      "Question Text": "In Pixar's Brave, What Is the Name of Merida's Horse?",
+      "Option A": "Magnus",
+      "Option B": "Fergus",
+      "Option C": "Angus",
+      "Option D": "Harris",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_14",
+      "Question Text": "In Pixar's Brave, What Sport Is Merida Exceptionally Skilled At?",
+      "Option A": "Sword Fighting",
+      "Option B": "Horse Riding",
+      "Option C": "Archery",
+      "Option D": "Climbing",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_15",
+      "Question Text": "Which Pixar Princess Wins Her Own Hand in Marriage Through an Archery Contest?",
+      "Option A": "Elinor",
+      "Option B": "Merida",
+      "Option C": "Eleanor",
+      "Option D": "Moira",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_16",
+      "Question Text": "In Pixar's Brave, What Is the Name of Merida's Mother?",
+      "Option A": "Elinor",
+      "Option B": "Eleanor",
+      "Option C": "Ellen",
+      "Option D": "Elaine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_17",
+      "Question Text": "Which Pixar Character Has Three Younger Brothers Who Are Triplets?",
+      "Option A": "Moira",
+      "Option B": "Merida",
+      "Option C": "Maude",
+      "Option D": "Mary",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_18",
+      "Question Text": "In Pixar's Brave, What Are the Names of Merida's Brothers?",
+      "Option A": "Hugh Hamish and Harold",
+      "Option B": "Harris Hubert and Hamish",
+      "Option C": "Harold Hugo and Henry",
+      "Option D": "Hugh Herbert and Harry",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_19",
+      "Question Text": "In Pixar's Brave, What Does Merida's Name Mean?",
+      "Option A": "Brave",
+      "Option B": "Strong",
+      "Option C": "Noble",
+      "Option D": "Honorable",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_20",
+      "Question Text": "In Pixar's Brave, What Type of Cake Does the Witch Give Merida?",
+      "Option A": "Magic Cake",
+      "Option B": "Spell Cake",
+      "Option C": "Forest Cake",
+      "Option D": "Bear Cake",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_21",
+      "Question Text": "Which Pixar Princess Changes Her Mother Into a Bear?",
+      "Option A": "Eleanor",
+      "Option B": "Merida",
+      "Option C": "Moira",
+      "Option D": "Elinor",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_22",
+      "Question Text": "In Pixar's Brave, What Is the Name of the Ancient Kingdom?",
+      "Option A": "Highland",
+      "Option B": "Scotia",
+      "Option C": "DunBroch",
+      "Option D": "Caledonia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_23",
+      "Question Text": "In Pixar's Brave, What Trophy Does Merida Win in the Archery Contest?",
+      "Option A": "A Crown",
+      "Option B": "A Medal",
+      "Option C": "Freedom",
+      "Option D": "Her Own Hand",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_24",
+      "Question Text": "In Pixar's Brave, What Does Merida's Father Give Her on Her Birthday?",
+      "Option A": "Sword",
+      "Option B": "Horse",
+      "Option C": "Crown",
+      "Option D": "Bow and Arrow",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_25",
+      "Question Text": "In Pixar's Cars, What Type of Car Is Lightning McQueen?",
+      "Option A": "Race Car",
+      "Option B": "Stock Car",
+      "Option C": "Sports Car",
+      "Option D": "Formula One",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_26",
+      "Question Text": "In Pixar's Cars, What Number Does Lightning McQueen Race As?",
+      "Option A": "86",
+      "Option B": "95",
+      "Option C": "43",
+      "Option D": "99",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_27",
+      "Question Text": "Which Pixar Race Car Bears the Number 95?",
+      "Option A": "Lightning McQueen",
+      "Option B": "Doc Hudson",
+      "Option C": "The King",
+      "Option D": "Chick Hicks",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_28",
+      "Question Text": "In Pixar's Cars, What Is the Name of the Small Town McQueen Gets Stranded In?",
+      "Option A": "Motor City",
+      "Option B": "Car Town",
+      "Option C": "Radiator Springs",
+      "Option D": "Engine Valley",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_29",
+      "Question Text": "In Pixar's Cars, What Was Doc Hudson's Racing Nickname?",
+      "Option A": "The Fabulous Hudson Hornet",
+      "Option B": "The Hudson Hurricane",
+      "Option C": "The Hornet",
+      "Option D": "The Racing Doctor",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_30",
+      "Question Text": "In Pixar's Cars, What Is Doc Hudson's Medical Specialty?",
+      "Option A": "General Medicine",
+      "Option B": "Car Repair",
+      "Option C": "Race Car Medicine",
+      "Option D": "Engine Repair",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_31",
+      "Question Text": "Which Pixar Character Owns the Cozy Cone Motel?",
+      "Option A": "Sally",
+      "Option B": "Flo",
+      "Option C": "Lizzie",
+      "Option D": "Louise",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_32",
+      "Question Text": "In Pixar's Cars, What Is the Name of the Racing Series?",
+      "Option A": "Piston Cup",
+      "Option B": "Motor Cup",
+      "Option C": "Racing Cup",
+      "Option D": "Speed Cup",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_33",
+      "Question Text": "In Pixar's Cars, What Is Mater's Full Name?",
+      "Option A": "Tom Mater",
+      "Option B": "Tow Mater",
+      "Option C": "Towing Mater",
+      "Option D": "The Mater",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_34",
+      "Question Text": "In Pixar's Cars, What Is Lightning McQueen's Catchphrase?",
+      "Option A": "Zoom-zoom!",
+      "Option B": "Ka-chow!",
+      "Option C": "Vroom-vroom!",
+      "Option D": "Speed-speed!",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_35",
+      "Question Text": "In Pixar's Cars, What Is Lightning McQueen's Sponsor?",
+      "Option A": "Dinoco",
+      "Option B": "Chick's",
+      "Option C": "Speed Co.",
+      "Option D": "Rust-eze",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_36",
+      "Question Text": "Which Pixar Car Was Built for Speed, Not Comfort?",
+      "Option A": "Doc Hudson",
+      "Option B": "The King",
+      "Option C": "Chick Hicks",
+      "Option D": "Lightning McQueen",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_37",
+      "Question Text": "In Pixar's Cars, What Is the Population of Radiator Springs?",
+      "Option A": "Large",
+      "Option B": "Medium",
+      "Option C": "Growing",
+      "Option D": "Small",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_38",
+      "Question Text": "In Pixar's Cars, What Is Luigi's Profession?",
+      "Option A": "Mechanic",
+      "Option B": "Gas Station Owner",
+      "Option C": "Car Dealer",
+      "Option D": "Tire Salesman",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_39",
+      "Question Text": "In Pixar's Cars, What Is the Name of Doc Hudson's Racing Academy?",
+      "Option A": "Hudson School",
+      "Option B": "Racing Academy",
+      "Option C": "Speed School",
+      "Option D": "Hornet Academy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_40",
+      "Question Text": "In Pixar's Cars, What Is Doc Hudson's Racing Number?",
+      "Option A": 43,
+      "Option B": 51,
+      "Option C": 86,
+      "Option D": 95,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_41",
+      "Question Text": "Which Pixar Car Was a Famous Racing Champion?",
+      "Option A": "The King",
+      "Option B": "Chick Hicks",
+      "Option C": "Doc Hudson",
+      "Option D": "Strip Weathers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_42",
+      "Question Text": "In Pixar's Cars, What Is the Name of Radiator Springs' Police Car?",
+      "Option A": "Deputy",
+      "Option B": "Officer",
+      "Option C": "Sheriff",
+      "Option D": "Chief",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_43",
+      "Question Text": "In Pixar's Cars, What Is Written on the Rusteze Racing Center?",
+      "Option A": "Training Center",
+      "Option B": "Speed Center",
+      "Option C": "Racing Headquarters",
+      "Option D": "Race School",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_44",
+      "Question Text": "In Pixar's Cars, What Is Luigi's Favorite Type of Car?",
+      "Option A": "Ferrari",
+      "Option B": "Maserati",
+      "Option C": "Lamborghini",
+      "Option D": "Alfa Romeo",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_45",
+      "Question Text": "In Pixar's  Cars 2, Which Japanese City Does Lightning McQueen First Arrive In From The Available Flight List?",
+      "Option A": "Osaka",
+      "Option B": "Kyoto",
+      "Option C": "Nagoya",
+      "Option D": "Tokyo",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_46",
+      "Question Text": "In Pixar's  Cars 2, What Happens When Mater Mistakenly Enters The Left Restroom In Tokyo?",
+      "Option A": "Wrong Bathroom",
+      "Option B": "Gets Lost",
+      "Option C": "Meets Spy",
+      "Option D": "Finds Clue",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_47",
+      "Question Text": "In Pixar's  Cars 2, Which Formula One Car Defeats Lightning McQueen After Mater's Bad Advice In The First Race?",
+      "Option A": "Francesco Bernoulli",
+      "Option B": "Lewis Hamilton",
+      "Option C": "Jeff Gorvette",
+      "Option D": "Max Schnell",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_48",
+      "Question Text": "In Pixar's Cars 2, In Which Famous London Landmark Does Mater Awaken Just Before The Gears Nearly Crush Him?",
+      "Option A": "Tower Bridge",
+      "Option B": "London Eye",
+      "Option C": "Parliament",
+      "Option D": "Big Bentley",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_49",
+      "Question Text": "In Pixar's Cars 2, What Two Words Does Mater Say That Accidentally Starts The Five-Minute Bomb Countdown?",
+      "Option A": "Start Timer",
+      "Option B": "Begin Now",
+      "Option C": "Time Start",
+      "Option D": "Voice Activate",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_50",
+      "Question Text": "In Pixar's Cars 2, What Orange Equipment Does Mater Deploy To Transport Lightning McQueen Across London's Buildings And Trees?",
+      "Option A": "Jet Pack",
+      "Option B": "Parachute",
+      "Option C": "Rocket",
+      "Option D": "Wings",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_51",
+      "Question Text": "In Pixar's Cars 2, Which British Intelligence Agent, Voiced By Michael Caine, Mistakes Mater For A Spy?",
+      "Option A": "Rod Redline",
+      "Option B": "Holley Shiftwell",
+      "Option C": "Finn McMissile",
+      "Option D": "Siddeley",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_52",
+      "Question Text": "In Pixar's Cars 2, What Body Imperfection Does Mater Refuse To Let Holly Fix Because It Holds Valuable Memories?",
+      "Option A": "Scratch",
+      "Option B": "Rust",
+      "Option C": "Dent",
+      "Option D": "Paint",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_53",
+      "Question Text": "In Pixar's Cars 2, Who Is The German Car Initially Suspected As The Lemons' Leader Until The Bomb Test?",
+      "Option A": "Professor Z",
+      "Option B": "Miles Axlerod",
+      "Option C": "Grem",
+      "Option D": "Acer",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_54",
+      "Question Text": "In Pixar's Cars 2, Which Real NASCAR Driver Makes A Cameo As Jeff Gorvette During The Tokyo Party?",
+      "Option A": "Dale Jr.",
+      "Option B": "Kyle Busch",
+      "Option C": "Jeff Gordon",
+      "Option D": "Jimmie Johnson",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_55",
+      "Question Text": "In Pixar's Cars 2, What Is The Name Of The Special Agent Jet That Serves As A Vital Member Of Finn's Team?",
+      "Option A": "Skyler",
+      "Option B": "Jetson",
+      "Option C": "Wings",
+      "Option D": "Siddeley",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_56",
+      "Question Text": "In Pixar's Cars 3, Who Becomes Lightning McQueen's Trainer?",
+      "Option A": "Sterling",
+      "Option B": "Cruz",
+      "Option C": "Smokey",
+      "Option D": "Storm",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_57",
+      "Question Text": "Which Pixar Car Starts as a Trainer and Becomes a Racer?",
+      "Option A": "Cruz Ramirez",
+      "Option B": "Sterling",
+      "Option C": "Storm",
+      "Option D": "Hamilton",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_58",
+      "Question Text": "In Pixar's Cars 3, What Is Sterling's Business?",
+      "Option A": "Car Dealer",
+      "Option B": "Training Facility",
+      "Option C": "Speed Shop",
+      "Option D": "Racing Center",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_59",
+      "Question Text": "In Pixar's Cars 3, What Track Does McQueen Crash On?",
+      "Option A": "Daytona",
+      "Option B": "Motor Speedway",
+      "Option C": "Bristol",
+      "Option D": "Los Angeles International Speedway",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_60",
+      "Question Text": "In Pixar's Cars 3, What Is Cruz's Racing Number?",
+      "Option A": 95,
+      "Option B": 43,
+      "Option C": 51,
+      "Option D": 86,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_61",
+      "Question Text": "In Pixar's Cars 3, Which Faster, Sleeker Rookie Forces Many Older Cars Into Retirement?",
+      "Option A": "Danny Swift",
+      "Option B": "Chase Racelott",
+      "Option C": "Jackson Storm",
+      "Option D": "Ryan Laney",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_62",
+      "Question Text": "In Pixar's Cars 3, What Devastating Event Sends McQueen Back To Radiator Springs For Two Weeks?",
+      "Option A": "Breakdown",
+      "Option B": "Accident",
+      "Option C": "Injury",
+      "Option D": "Crashed",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_63",
+      "Question Text": "In Pixar's Cars 3, What Automotive Accessory Made Rusty Sell McQueen To The Stirling Racing Company?",
+      "Option A": "Tires",
+      "Option B": "Lights",
+      "Option C": "Spoiler",
+      "Option D": "Mudflaps",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_64",
+      "Question Text": "In Pixar's Cars 3, Which Merchandising Item Is Not Featured In Sterling's Marketing Plans For McQueen?",
+      "Option A": "Billboard Ads",
+      "Option B": "Bus Logos",
+      "Option C": "TV Commercials",
+      "Option D": "Magazine Covers",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_65",
+      "Question Text": "In Pixar's Cars 3, Who Trains Lightning McQueen Both At The Racing Center And On The Beach?",
+      "Option A": "Smokey",
+      "Option B": "Sterling",
+      "Option C": "Storm",
+      "Option D": "Cruz",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_66",
+      "Question Text": "In Pixar's Cars 3, What Natural Substance Does McQueen Use To Conceal His Identity At Thunder Hollow?",
+      "Option A": "Paint",
+      "Option B": "Dirt",
+      "Option C": "Mud",
+      "Option D": "Dust",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_67",
+      "Question Text": "In Pixar's Cars 3, In Which Historic Racing Town Does Doc Hudson's Mentor Smokey Reside?",
+      "Option A": "Radiator Springs",
+      "Option B": "Motor City",
+      "Option C": "Racing Ridge",
+      "Option D": "Thomasville",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_68",
+      "Question Text": "In Pixar's Cars 3, Which Company Sponsors Cruz After Cal Weathers' Retirement At Lightning's Request?",
+      "Option A": "Dinoco",
+      "Option B": "Rust-eze",
+      "Option C": "Vitoline",
+      "Option D": "Tank Coat",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_69",
+      "Question Text": "In Pixar's Cars 3, Which Blue-Painted Racing Legend, Paying Homage To Doc Hudson, Becomes Cruz's Crew Chief?",
+      "Option A": "Doc",
+      "Option B": "Smokey",
+      "Option C": "The King",
+      "Option D": "McQueen",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_70",
+      "Question Text": "In Pixar's Coco, What Is the Name of Miguel's Dog?",
+      "Option A": "Pepita",
+      "Option B": "Cheech",
+      "Option C": "Rico",
+      "Option D": "Dante",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_71",
+      "Question Text": "Which Pixar Dog Transforms into an Alebrije?",
+      "Option A": "Pepita",
+      "Option B": "Rico",
+      "Option C": "Dante",
+      "Option D": "Chihuahua",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_72",
+      "Question Text": "In Pixar's Coco, What Instrument Does Miguel Play?",
+      "Option A": "Violin",
+      "Option B": "Piano",
+      "Option C": "Guitar",
+      "Option D": "Drums",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_73",
+      "Question Text": "In Pixar's Coco, What Is the Name of Ernesto de la Cruz's Most Famous Song?",
+      "Option A": "Un Poco Loco",
+      "Option B": "Remember Me",
+      "Option C": "La Llorona",
+      "Option D": "The World Es Mi Familia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_74",
+      "Question Text": "In Pixar's Coco, What Is the Bridge Made of That Connects the Land of the Living to the Land of the Dead?",
+      "Option A": "Light",
+      "Option B": "Gold",
+      "Option C": "Flowers",
+      "Option D": "Marigold Petals",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_75",
+      "Question Text": "In Pixar's Coco, What Does Miguel Need to Return to the Land of the Living?",
+      "Option A": "Guitar",
+      "Option B": "Family Blessing",
+      "Option C": "Song",
+      "Option D": "Photo",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_76",
+      "Question Text": "Which Pixar Character Steals a Guitar from a Tomb?",
+      "Option A": "Héctor",
+      "Option B": "Ernesto",
+      "Option C": "Miguel",
+      "Option D": "Chicharrón",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_77",
+      "Question Text": "In Pixar's Coco, What Is the Name of Miguel's Dog?",
+      "Option A": "Dante",
+      "Option B": "Pepita",
+      "Option C": "Rico",
+      "Option D": "Cheech",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_78",
+      "Question Text": "In Pixar's Coco, What Is Héctor's Talent Competition Disguise?",
+      "Option A": "Mariachi",
+      "Option B": "Dancer",
+      "Option C": "Frida",
+      "Option D": "Artist",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_79",
+      "Question Text": "In Pixar's Coco, What Does De la Cruz Steal from Héctor?",
+      "Option A": "Guitar",
+      "Option B": "Song Book",
+      "Option C": "Letters",
+      "Option D": "Music",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_80",
+      "Question Text": "In Pixar's Coco, What Is the Name of the Bridge to the Land of the Dead?",
+      "Option A": "Flower Bridge",
+      "Option B": "Petal Bridge",
+      "Option C": "Spirit Bridge",
+      "Option D": "Marigold Bridge",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_81",
+      "Question Text": "Which Pixar Character Must Get Their Family's Blessing Before Sunrise?",
+      "Option A": "Héctor",
+      "Option B": "Ernesto",
+      "Option C": "Dante",
+      "Option D": "Miguel",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_82",
+      "Question Text": "In Pixar's Coco, What Does Héctor Need to Cross the Bridge?",
+      "Option A": "Blessing",
+      "Option B": "Guitar",
+      "Option C": "Song",
+      "Option D": "Photo on an Ofrenda",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_83",
+      "Question Text": "In Pixar's Coco, What Is the Name of Miguel's Great-Great-Grandmother?",
+      "Option A": "Mamá Imelda",
+      "Option B": "Mamá Coco",
+      "Option C": "Mamá Elena",
+      "Option D": "Mamá Victoria",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_84",
+      "Question Text": "In Pixar's Coco, What Instrument Is Banned in Miguel's Family?",
+      "Option A": "Piano",
+      "Option B": "Guitar",
+      "Option C": "Violin",
+      "Option D": "Drums",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_85",
+      "Question Text": "In Pixar's Elemental, What Is Wade's Job?",
+      "Option A": "Plumber",
+      "Option B": "Inspector",
+      "Option C": "Engineer",
+      "Option D": "Officer",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_86",
+      "Question Text": "Which Pixar Character Lives in Firetown?",
+      "Option A": "Wade",
+      "Option B": "Clod",
+      "Option C": "Brook",
+      "Option D": "Ember",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_87",
+      "Question Text": "In Pixar's Elemental, What Is the Name of Ember's Father's Shop?",
+      "Option A": "Fire Shop",
+      "Option B": "Flame Store",
+      "Option C": "The Fireplace",
+      "Option D": "Heat Market",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_88",
+      "Question Text": "In Pixar's Elemental, What Does Wade's Father Do?",
+      "Option A": "Works Office",
+      "Option B": "Runs a Flower Shop",
+      "Option C": "City Worker",
+      "Option D": "Store Owner",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_89",
+      "Question Text": "In Pixar's Elemental, What Is the Name of the City Where the Story Takes Place?",
+      "Option A": "Fire City",
+      "Option B": "Water Town",
+      "Option C": "Elements Plaza",
+      "Option D": "Element City",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_90",
+      "Question Text": "In Pixar's Elemental, What Element Are Bernie And Cinder Lumen?",
+      "Option A": "Water",
+      "Option B": "Air",
+      "Option C": "Fire",
+      "Option D": "Earth",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_91",
+      "Question Text": "In Pixar's Elemental, What Do Bernie And Cinder Name Their Daughter?",
+      "Option A": "Flame",
+      "Option B": "Spark",
+      "Option C": "Blaze",
+      "Option D": "Ember",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_92",
+      "Question Text": "In Pixar's Elemental, What Event Was Happening When The Pipes Burst?",
+      "Option A": "Red Dot Sale",
+      "Option B": "Blue Tag Sale",
+      "Option C": "Green Day Sale",
+      "Option D": "Yellow Spot Sale",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_93",
+      "Question Text": "In Pixar's Elemental, What's The Name Of Gale Cumulus's Favorite Airball Team?",
+      "Option A": "Windbreakers",
+      "Option B": "Stormchasers",
+      "Option C": "Cloudrunners",
+      "Option D": "Airstrikers",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_94",
+      "Question Text": "In Pixar's Elemental, What Movie Do Wade And Ember Watch On Their Date?",
+      "Option A": "Wave Notes",
+      "Option B": "Water World",
+      "Option C": "Tide & Prejudice",
+      "Option D": "Ocean's Heart",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_95",
+      "Question Text": "In Pixar's Elemental, What Is Wade Deathly Afraid Of According To His Family?",
+      "Option A": "Sponges",
+      "Option B": "Towels",
+      "Option C": "Mops",
+      "Option D": "Rags",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_101",
+      "Question Text": "In Pixar's  Finding Dory, Who Was Dory's Childhood Friend That She Talked To Through Pipes?",
+      "Option A": "Bailey",
+      "Option B": "Hank",
+      "Option C": "Charlie",
+      "Option D": "Destiny",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_102",
+      "Question Text": "In Pixar's  Finding Dory, Who Was The Persistent Sea Lion Trying To Get On The Rock?",
+      "Option A": "Fluke",
+      "Option B": "Gerald",
+      "Option C": "Rudder",
+      "Option D": "Charlie",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_103",
+      "Question Text": "In Pixar's  Finding Dory, What Made Hank The Octopus Unique?",
+      "Option A": "Color Change",
+      "Option B": "Camouflage",
+      "Option C": "Seven Tentacles",
+      "Option D": "Intelligence",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_104",
+      "Question Text": "In Pixar's  Finding Dory, Which City Was The Truck Taking Marlin And Nemo To?",
+      "Option A": "Cleveland",
+      "Option B": "Chicago",
+      "Option C": "Detroit",
+      "Option D": "Boston",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_105",
+      "Question Text": "In Pixar's  Finding Dory, What Did Dory's Parents Use To Create A Path Home?",
+      "Option A": "Rocks",
+      "Option B": "Coral",
+      "Option C": "Sand",
+      "Option D": "Seashells",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_106",
+      "Question Text": "In Pixar's  Finding Dory, In Which State Did Dory Remember Living As A Child?",
+      "Option A": "Florida",
+      "Option B": "Oregon",
+      "Option C": "California",
+      "Option D": "Hawaii",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_96",
+      "Question Text": "In Pixar's Finding Dory, What Is Written on the Tag of Dory's Fin?",
+      "Option A": "Transport Tag",
+      "Option B": "Fish ID",
+      "Option C": "Marine Life Institute",
+      "Option D": "Ocean Tag",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_97",
+      "Question Text": "Which Pixar Octopus Helps Find Dory's Parents?",
+      "Option A": "Bailey",
+      "Option B": "Destiny",
+      "Option C": "Fluke",
+      "Option D": "Hank",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_98",
+      "Question Text": "In Pixar's Finding Dory, What Is the Name of Dory's Parents?",
+      "Option A": "Bob and Barbara",
+      "Option B": "Tom and Terry",
+      "Option C": "Bill and Betty",
+      "Option D": "Jenny and Charlie",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_99",
+      "Question Text": "In Pixar's Finding Dory, What Does Hank Want from Dory?",
+      "Option A": "Transportation Tag",
+      "Option B": "Freedom",
+      "Option C": "Escape",
+      "Option D": "Help",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_100",
+      "Question Text": "In Pixar's Finding Dory, What Is the Name of the Near-Sighted Whale Shark?",
+      "Option A": "Bailey",
+      "Option B": "Destiny",
+      "Option C": "Pearl",
+      "Option D": "Deb",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_107",
+      "Question Text": "In Pixar's Finding Nemo, What Is the Name of the Dentist?",
+      "Option A": "Dr. Sherman",
+      "Option B": "Dr. Smith",
+      "Option C": "Dr. Stevens",
+      "Option D": "Dr. Sanders",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_108",
+      "Question Text": "In Pixar's Finding Nemo, What Is the Tank Gang's Name for the Ocean?",
+      "Option A": "The Deep Blue",
+      "Option B": "The Big Blue",
+      "Option C": "The Great Blue",
+      "Option D": "The Wide Blue",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_109",
+      "Question Text": "Which Pixar Fish Suffers from Short-Term Memory Loss?",
+      "Option A": "Dory",
+      "Option B": "Nemo",
+      "Option C": "Marlin",
+      "Option D": "Coral",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_110",
+      "Question Text": "In Pixar's Finding Nemo, What Type of Fish Is Gill?",
+      "Option A": "Angelfish",
+      "Option B": "Moorish Idol",
+      "Option C": "Butterflyfish",
+      "Option D": "Surgeonfish",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_111",
+      "Question Text": "In Pixar's Finding Nemo, What Does P. Sherman Do with Fish That Die in His Tank?",
+      "Option A": "Bury Them",
+      "Option B": "Feed Them",
+      "Option C": "Flush Them Down the Toilet",
+      "Option D": "Throw Them Away",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_112",
+      "Question Text": "In Pixar's Finding Nemo, What Street Is P. Sherman's Office On?",
+      "Option A": "Sydney Way",
+      "Option B": "Harbor Way",
+      "Option C": "Wallaby Way",
+      "Option D": "Ocean Way",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_113",
+      "Question Text": "Which Pixar Fish Can Speak Whale?",
+      "Option A": "Marlin",
+      "Option B": "Dory",
+      "Option C": "Crush",
+      "Option D": "Pearl",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_114",
+      "Question Text": "In Pixar's Finding Nemo, What Is the Name of the Dentist's Niece?",
+      "Option A": "Darla",
+      "Option B": "Dana",
+      "Option C": "Dora",
+      "Option D": "Dawn",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_115",
+      "Question Text": "In Pixar's Finding Nemo, What Is the Ring Leader of the Tank Gang?",
+      "Option A": "Gill",
+      "Option B": "Bloat",
+      "Option C": "Bubbles",
+      "Option D": "Jacques",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_116",
+      "Question Text": "In Pixar's Finding Nemo, What Is the Name of the Pelican?",
+      "Option A": "Gerald",
+      "Option B": "Bruce",
+      "Option C": "Nigel",
+      "Option D": "Pearl",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_117",
+      "Question Text": "In Pixar's Finding Nemo, What Is the Name of the Dentist's Practice?",
+      "Option A": "Sherman Dental",
+      "Option B": "Ocean View Dentistry",
+      "Option C": "P. Sherman Dentistry",
+      "Option D": "Sydney Dental",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_118",
+      "Question Text": "Which Pixar Fish Has a Lucky Fin?",
+      "Option A": "Marlin",
+      "Option B": "Dory",
+      "Option C": "Coral",
+      "Option D": "Nemo",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_119",
+      "Question Text": "In Pixar's Finding Nemo, What Are the Names of the Fish in the Tank Gang?",
+      "Option A": "Gill Bubbles Deb",
+      "Option B": "Jacques Peach Bloat",
+      "Option C": "Deb Bubbles Gurgle",
+      "Option D": "Bloat Bubbles Deb Gurgle Jacques Peach",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_120",
+      "Question Text": "In Pixar's Finding Nemo, What Is the Ring Leader of the Tank Gang's Escape Plan Called?",
+      "Option A": "The Escape",
+      "Option B": "The Plan",
+      "Option C": "The Break",
+      "Option D": "The Exit",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_121",
+      "Question Text": "In Pixar's Finding Nemo, What Is Written on the Scuba Goggles?",
+      "Option A": "D. Sherman",
+      "Option B": "P. Sherman",
+      "Option C": "S. Sherman",
+      "Option D": "R. Sherman",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_122",
+      "Question Text": "In Pixar's Finding Nemo, What Is the Name of the Fishing Boat?",
+      "Option A": "The USS Marina",
+      "Option B": "The SS Fisher",
+      "Option C": "The MV Pacific",
+      "Option D": "The FEV Catalina",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_123",
+      "Question Text": "Which Pixar Fish Can Read the Word 'Escape'?",
+      "Option A": "Gill",
+      "Option B": "Dory",
+      "Option C": "Nemo",
+      "Option D": "Bloat",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_124",
+      "Question Text": "In Pixar's Finding Nemo, What Street Number Is the Dentist's Office?",
+      "Option A": 42,
+      "Option B": 44,
+      "Option C": 46,
+      "Option D": 48,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_125",
+      "Question Text": "In Pixar's Finding Nemo, What Is the Name of the Dentist's Niece?",
+      "Option A": "Darla",
+      "Option B": "Dorothy",
+      "Option C": "Dana",
+      "Option D": "Donna",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_126",
+      "Question Text": "In Pixar's Finding Nemo, What Does Crush Call Marlin?",
+      "Option A": "Dude",
+      "Option B": "Jellyman",
+      "Option C": "Fish Man",
+      "Option D": "Orange",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_127",
+      "Question Text": "In Pixar's Inside Out, What Color Is Joy?",
+      "Option A": "Yellow",
+      "Option B": "Blue",
+      "Option C": "Green",
+      "Option D": "Pink",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_128",
+      "Question Text": "In Pixar's Inside Out, What Are the Names of All Five Main Emotions?",
+      "Option A": "Joy Fear Anger",
+      "Option B": "Sadness Joy Fear",
+      "Option C": "Joy Fear Disgust",
+      "Option D": "Joy Sadness Fear Disgust Anger",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_129",
+      "Question Text": "Which Pixar Character Works as a Train of Thought Conductor?",
+      "Option A": "Bobby",
+      "Option B": "George",
+      "Option C": "Fritz",
+      "Option D": "Frank",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_130",
+      "Question Text": "In Pixar's Inside Out, What Is the Name of Riley's Imaginary Friend?",
+      "Option A": "Bing Bong",
+      "Option B": "Ring Wong",
+      "Option C": "Sing Song",
+      "Option D": "King Kong",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_131",
+      "Question Text": "In Pixar's Inside Out, What Is Bing Bong Made Of?",
+      "Option A": "Sugar",
+      "Option B": "Candy",
+      "Option C": "Clouds",
+      "Option D": "Cotton Candy",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_132",
+      "Question Text": "In Pixar's Inside Out, What Are the Names of the Islands of Personality?",
+      "Option A": "Joy Love Peace Fun Love",
+      "Option B": "Family Friendship Hockey Honesty Goofball",
+      "Option C": "Love Fun Joy Peace Hope",
+      "Option D": "Happy Fun Joy Peace Love",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_133",
+      "Question Text": "Which Pixar Emotion Accidentally Makes Core Memories Sad?",
+      "Option A": "Sadness",
+      "Option B": "Joy",
+      "Option C": "Fear",
+      "Option D": "Disgust",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_134",
+      "Question Text": "In Pixar's Inside Out, What Is the Name of the Place Where Memories Are Stored?",
+      "Option A": "Memory Bank",
+      "Option B": "Memory Center",
+      "Option C": "Memory Storage",
+      "Option D": "Long Term Memory",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_135",
+      "Question Text": "In Pixar's Inside Out, What Is the Job of the Mind Workers?",
+      "Option A": "Sending Up Random Facts",
+      "Option B": "Sorting Memories",
+      "Option C": "Filing Thoughts",
+      "Option D": "Managing Dreams",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_136",
+      "Question Text": "In Pixar's Inside Out, What Is Bing Bong's Song?",
+      "Option A": "The Happy Song",
+      "Option B": "The Memory Song",
+      "Option C": "The Friend Song",
+      "Option D": "The Bing Bong Song",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_137",
+      "Question Text": "In Pixar's Inside Out, What Is the Name of Riley's Imaginary Boyfriend?",
+      "Option A": "Jordan",
+      "Option B": "Justin",
+      "Option C": "Jason",
+      "Option D": "Jack",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_138",
+      "Question Text": "Which Pixar Memory Worker Sings the Advertising Jingle?",
+      "Option A": "Mind Worker",
+      "Option B": "Brain Worker",
+      "Option C": "Memory Keeper",
+      "Option D": "Thought Worker",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_139",
+      "Question Text": "In Pixar's Inside Out, What Color Are Sadness's Glasses?",
+      "Option A": "Green",
+      "Option B": "Red",
+      "Option C": "Yellow",
+      "Option D": "Blue",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_140",
+      "Question Text": "In Pixar's Inside Out, What Game Does Riley Play with Her Parents?",
+      "Option A": "Soccer",
+      "Option B": "Baseball",
+      "Option C": "Basketball",
+      "Option D": "Hockey",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_141",
+      "Question Text": "In Pixar's Inside Out, What Is the Name of the Memory Dump?",
+      "Option A": "The Pit",
+      "Option B": "Memory Dump",
+      "Option C": "The Void",
+      "Option D": "The Abyss",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_142",
+      "Question Text": "In Pixar's Inside Out, What Powers the Train of Thought?",
+      "Option A": "Memories",
+      "Option B": "Dreams",
+      "Option C": "Light Bulbs",
+      "Option D": "Energy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_143",
+      "Question Text": "Which Pixar Character Works in Long-Term Memory Storage?",
+      "Option A": "Paula",
+      "Option B": "Mary",
+      "Option C": "Susan",
+      "Option D": "Jane",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_144",
+      "Question Text": "In Pixar's Inside Out, What Is the Name of Riley's Favorite Hockey Team?",
+      "Option A": "Wild Dogs",
+      "Option B": "Ice Dogs",
+      "Option C": "Snow Dogs",
+      "Option D": "Prairie Dogs",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_145",
+      "Question Text": "In Pixar's Inside Out, What Does Bing Bong's Rocket Run On?",
+      "Option A": "Fuel",
+      "Option B": "Energy",
+      "Option C": "Magic",
+      "Option D": "Song Power",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_146",
+      "Question Text": "In Pixar's Inside Out, What Is the First Core Memory Joy Creates?",
+      "Option A": "Family Memory",
+      "Option B": "Hockey Memory",
+      "Option C": "School Memory",
+      "Option D": "Friend Memory",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_147",
+      "Question Text": "In Pixar's Inside Out, What Game Makes Riley Cry During the Hockey Tryouts?",
+      "Option A": "Hockey",
+      "Option B": "Soccer",
+      "Option C": "Basketball",
+      "Option D": "Baseball",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_148",
+      "Question Text": "Which Pixar Character Has Islands of Personality?",
+      "Option A": "Joy",
+      "Option B": "Sadness",
+      "Option C": "Riley",
+      "Option D": "Bing Bong",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_149",
+      "Question Text": "In Pixar's Inside Out, What Is the Name of the Forgotten Imaginary Friend?",
+      "Option A": "Rainbow Horse",
+      "Option B": "Happy Elephant",
+      "Option C": "Joy Bear",
+      "Option D": "Bing Bong",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_150",
+      "Question Text": "In Pixar's Inside Out, What Is Riley's Favorite Memory?",
+      "Option A": "Family Dinner",
+      "Option B": "School Day",
+      "Option C": "Hockey with Parents",
+      "Option D": "Birthday Party",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_151",
+      "Question Text": "In Pixar's Inside Out, What Is the Color of Fear?",
+      "Option A": "Green",
+      "Option B": "Red",
+      "Option C": "Blue",
+      "Option D": "Purple",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_152",
+      "Question Text": "In Pixar's Inside Out 2, Which Character Tries To Help The Emotions Escape The Jar?",
+      "Option A": "Anxiety",
+      "Option B": "Bloofy",
+      "Option C": "Joy",
+      "Option D": "Sadness",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_153",
+      "Question Text": "In Pixar's Inside Out 2, What Vegetable Do The Emotions Ride In The Stream Of Consciousness?",
+      "Option A": "Carrot",
+      "Option B": "Broccoli",
+      "Option C": "Lettuce",
+      "Option D": "Celery",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_154",
+      "Question Text": "In Pixar's Inside Out 2, Which New Emotion Is Told To Come Back In Ten Years?",
+      "Option A": "Envy",
+      "Option B": "Nostalgia",
+      "Option C": "Pride",
+      "Option D": "Hope",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_155",
+      "Question Text": "In Pixar's Inside Out 2, Which Emotion Appears When Riley's Puberty Button Beeps?",
+      "Option A": "Anxiety",
+      "Option B": "Fear",
+      "Option C": "Stress",
+      "Option D": "Worry",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_156",
+      "Question Text": "In Pixar's Inside Out 2, Which Emotion Is Sent To Regain Control From Anxiety?",
+      "Option A": "Sadness",
+      "Option B": "Joy",
+      "Option C": "Fear",
+      "Option D": "Anger",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_157",
+      "Question Text": "In Pixar's Inside Out 2, Which Friend Reveals They're Going To Different Schools?",
+      "Option A": "Sarah",
+      "Option B": "Emma",
+      "Option C": "Katie",
+      "Option D": "Grace",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_158",
+      "Question Text": "In Pixar's Inside Out 2, What Team Does Coach Roberts Want Riley To Try Out For?",
+      "Option A": "Eagles",
+      "Option B": "Hawks",
+      "Option C": "Firehawks",
+      "Option D": "Falcons",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_159",
+      "Question Text": "In Pixar's Inside Out 2, What Does Riley Learn From Coach's Red Notebook?",
+      "Option A": "She Was Too Slow",
+      "Option B": "She Was Too Young",
+      "Option C": "She Was Not Ready",
+      "Option D": "She Was Too Small",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_160",
+      "Question Text": "In Pixar's Inside Out 2, How Many Years After The Original Does The Sequel Take Place?",
+      "Option A": "One Year",
+      "Option B": "Three Years",
+      "Option C": "Two Years",
+      "Option D": "Four Years",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_161",
+      "Question Text": "In Pixar's Inside Out 2, What Is Riley's Deep Dark Secret About?",
+      "Option A": "Burned Rug Hole",
+      "Option B": "Broken Window",
+      "Option C": "Lost Key",
+      "Option D": "Stolen Money",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_162",
+      "Question Text": "In Pixar's Inside Out 2, What Wrong Secret Does Joy Guess About The Pool?",
+      "Option A": "Running",
+      "Option B": "Splashing",
+      "Option C": "Peeing In Pool",
+      "Option D": "Pushing",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_163",
+      "Question Text": "In Pixar's Inside Out 2, Which Emotion Is First Seen As Riley Prepares For Hockey?",
+      "Option A": "Fear",
+      "Option B": "Joy",
+      "Option C": "Sadness",
+      "Option D": "Anger",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_164",
+      "Question Text": "In Pixar's Inside Out 2, Which Island Is Larger Than Riley's Family Island?",
+      "Option A": "Friendship Island",
+      "Option B": "Hockey Island",
+      "Option C": "School Island",
+      "Option D": "Fun Island",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_165",
+      "Question Text": "In Pixar's Inside Out 2, What Causes The Emotions To Break Free From The Jar?",
+      "Option A": "Anger",
+      "Option B": "Fear",
+      "Option C": "Deep Dark Secret",
+      "Option D": "Joy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_166",
+      "Question Text": "In Pixar's Lightyear, What Is the Name of Buzz's Robot Companion?",
+      "Option A": "Box",
+      "Option B": "Fox",
+      "Option C": "Sox",
+      "Option D": "Rox",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_167",
+      "Question Text": "Which Pixar Character Tries to Perfect Test Flight 0819?",
+      "Option A": "Commander Hawthorne",
+      "Option B": "Izzy",
+      "Option C": "Sox",
+      "Option D": "Buzz Lightyear",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_168",
+      "Question Text": "In Pixar's Lightyear, What Is the Name of the Planet They're Stranded On?",
+      "Option A": "Nova Prime",
+      "Option B": "Alpha Prime",
+      "Option C": "Beta Prime",
+      "Option D": "T'Kani Prime",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_169",
+      "Question Text": "In Pixar's Lightyear, What Does Sox Help Buzz Calculate?",
+      "Option A": "Crystallic Fusion",
+      "Option B": "Space Travel",
+      "Option C": "Flight Path",
+      "Option D": "Energy Level",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_170",
+      "Question Text": "In Pixar's Lightyear, Who Is Buzz's Best Friend at the Beginning?",
+      "Option A": "Commander",
+      "Option B": "Izzy",
+      "Option C": "Alisha",
+      "Option D": "Mo",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_171",
+      "Question Text": "In Pixar's Lightyear, What Root Vegetable Nickname Does Buzz Give The Spaceship?",
+      "Option A": "The Turnip",
+      "Option B": "The Carrot",
+      "Option C": "The Radish",
+      "Option D": "The Beet",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_172",
+      "Question Text": "In Pixar's Lightyear, What Is The Rookie's Full Name That Buzz Simplifies?",
+      "Option A": "Weatheringhamston",
+      "Option B": "Leatheringhamstan",
+      "Option C": "Heatheringhamstan",
+      "Option D": "Featheringhamstan",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_173",
+      "Question Text": "In Pixar's Lightyear, What Flight Feature Does Buzz Dislike Using?",
+      "Option A": "Autopilot",
+      "Option B": "Manual Control",
+      "Option C": "AI Assistant",
+      "Option D": "Computer Aid",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_174",
+      "Question Text": "In Pixar's Lightyear, What Velocity Must Buzz Reach To Leave T'Kani Prime?",
+      "Option A": "Light Speed",
+      "Option B": "Warp Speed",
+      "Option C": "Hyperspeed",
+      "Option D": "Maximum Speed",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_175",
+      "Question Text": "In Pixar's Lightyear, How Does Zurg Control T'Kani Prime's Inhabitants?",
+      "Option A": "Mind Control",
+      "Option B": "AI Systems",
+      "Option C": "Robot Soldiers",
+      "Option D": "Force Field",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_176",
+      "Question Text": "In Pixar's Lightyear, What Suit Feature Helps Them Pass The Aggressive Insects?",
+      "Option A": "Invisibility",
+      "Option B": "Shield Mode",
+      "Option C": "Stealth Mode",
+      "Option D": "Cloaking Device",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_177",
+      "Question Text": "In Pixar's Lightyear, What Fear Does Buzz Say Izzy Has Of Space?",
+      "Option A": "Spaceophobia",
+      "Option B": "Cosmophobia",
+      "Option C": "Astrophobia",
+      "Option D": "Stellaphobia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_178",
+      "Question Text": "In Pixar's Lightyear, What Does Zurg Plan To Do With The Fuel Cell Crystals?",
+      "Option A": "Go Back In Time",
+      "Option B": "Control Space",
+      "Option C": "Rule Galaxy",
+      "Option D": "Power Weapons",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_179",
+      "Question Text": "In Pixar's Luca, What Type of Fish Is Luca's Family?",
+      "Option A": "Merfolk",
+      "Option B": "Ocean Folk",
+      "Option C": "Water People",
+      "Option D": "Sea Monster",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_180",
+      "Question Text": "Which Pixar Character Dreams of Owning a Vespa?",
+      "Option A": "Luca",
+      "Option B": "Alberto",
+      "Option C": "Giulia",
+      "Option D": "Ercole",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_181",
+      "Question Text": "In Pixar's Luca, What Is the Name of the Town Where the Story Takes Place?",
+      "Option A": "Porto Verde",
+      "Option B": "Porto Rosso",
+      "Option C": "Porto Azzurro",
+      "Option D": "Porto Bianco",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_182",
+      "Question Text": "In Pixar's Luca, What Sport Do Luca and Alberto Train For?",
+      "Option A": "Triathlon",
+      "Option B": "Marathon",
+      "Option C": "Race",
+      "Option D": "Competition",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_183",
+      "Question Text": "In Pixar's Luca, What Is Alberto's Favorite Phrase?",
+      "Option A": "Andiamo",
+      "Option B": "Silenzio Bruno!",
+      "Option C": "Mama Mia",
+      "Option D": "Ciao Bella",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_184",
+      "Question Text": "In Pixar's Luca, What Does Giulia's Father Do for a Living?",
+      "Option A": "Chef",
+      "Option B": "Merchant",
+      "Option C": "Fisherman",
+      "Option D": "Baker",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_185",
+      "Question Text": "Which Pixar Character Lives Alone in an Abandoned Tower?",
+      "Option A": "Alberto",
+      "Option B": "Luca",
+      "Option C": "Giulia",
+      "Option D": "Ercole",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_186",
+      "Question Text": "In Pixar's Luca, What Food Do the Boys Love Most?",
+      "Option A": "Pasta",
+      "Option B": "Pizza",
+      "Option C": "Gelato",
+      "Option D": "Bread",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_187",
+      "Question Text": "In Pixar's Luca, What Is the Prize for Winning the Portorosso Cup?",
+      "Option A": "Trophy",
+      "Option B": "Medal",
+      "Option C": "Vespa",
+      "Option D": "Money",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_188",
+      "Question Text": "In Pixar's Luca, What Does Luca's Family Farm?",
+      "Option A": "Seaweed",
+      "Option B": "Fish",
+      "Option C": "Coral",
+      "Option D": "Sea Cucumbers",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_189",
+      "Question Text": "In Pixar's Monsters Inc., What Type of Monster Is Sulley?",
+      "Option A": "Blue-furred with Purple Spots",
+      "Option B": "Green with One Eye",
+      "Option C": "Purple with Tentacles",
+      "Option D": "Red with Horns",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_190",
+      "Question Text": "Which Pixar Character Holds the All-Time Scare Record?",
+      "Option A": "Mike Wazowski",
+      "Option B": "Randall Boggs",
+      "Option C": "George Sanderson",
+      "Option D": "James P. Sullivan",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_191",
+      "Question Text": "In Pixar's Monsters Inc., What Does Mike Give Sulley for His Birthday?",
+      "Option A": "New Hat",
+      "Option B": "New Slippers",
+      "Option C": "New Badge",
+      "Option D": "A Little Paperwork",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_192",
+      "Question Text": "In Pixar's Monsters Inc., What Does CDA Stand For?",
+      "Option A": "Children Defense Agency",
+      "Option B": "Child Detection Authority",
+      "Option C": "Child Defense Association",
+      "Option D": "Child Detection Agency",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_193",
+      "Question Text": "In Pixar's Monsters Inc., What Is the Name of the Restaurant Where Mike Takes Celia?",
+      "Option A": "Monster Diner",
+      "Option B": "Scare Cafe",
+      "Option C": "Monsters Bistro",
+      "Option D": "Harryhausen's",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_194",
+      "Question Text": "In Pixar's Monsters Inc., What Door Does Boo Originally Come Through?",
+      "Option A": "Red Door with Stars",
+      "Option B": "White Door with Flowers",
+      "Option C": "Blue Door with Clouds",
+      "Option D": "Green Door with Trees",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_195",
+      "Question Text": "Which Pixar Monster Holds the All-Time Scare Record?",
+      "Option A": "Randall",
+      "Option B": "Mike",
+      "Option C": "Waternoose",
+      "Option D": "Sullivan",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_196",
+      "Question Text": "In Pixar's Monsters Inc., What Is the Name of the Restaurant Where Mike Takes Celia?",
+      "Option A": "Monster Cafe",
+      "Option B": "Scare Diner",
+      "Option C": "Harryhausen's",
+      "Option D": "The Scream Room",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_197",
+      "Question Text": "In Pixar's Monsters Inc., What Is the Color of Boo's Door When Active?",
+      "Option A": "White",
+      "Option B": "Blue",
+      "Option C": "Pink",
+      "Option D": "Green",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_198",
+      "Question Text": "In Pixar's Monsters Inc., What Is Written on Mike's Hat When Training?",
+      "Option A": "OK",
+      "Option B": "MI",
+      "Option C": "Fear U",
+      "Option D": "MU",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_199",
+      "Question Text": "In Pixar's Monsters University, What Is the Name of the Scare Games Event?",
+      "Option A": "Scare Games",
+      "Option B": "Monster Games",
+      "Option C": "University Games",
+      "Option D": "Fear Games",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_200",
+      "Question Text": "Which Pixar Character Gets Expelled from the Scare Program?",
+      "Option A": "Sulley",
+      "Option B": "Randall",
+      "Option C": "Don",
+      "Option D": "Mike Wazowski",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_201",
+      "Question Text": "In Pixar's Monsters University, What Is the Name of the Top Fraternity?",
+      "Option A": "Theta Pi Theta",
+      "Option B": "Jaws Theta Chi",
+      "Option C": "Roar Omega Roar",
+      "Option D": "Omega Howl Howl",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_202",
+      "Question Text": "In Pixar's Monsters University, Who Is the Dean of the School?",
+      "Option A": "Dean Abigail",
+      "Option B": "Dean Hardscrabble",
+      "Option C": "Dean Monster",
+      "Option D": "Dean Scream",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_203",
+      "Question Text": "In Pixar's Monsters University, What Is the Name of the First Scare Games Event?",
+      "Option A": "Fear Challenge",
+      "Option B": "Toxicity Challenge",
+      "Option C": "Stealth Challenge",
+      "Option D": "Scream Challenge",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_204",
+      "Question Text": "In Pixar's Monsters University, What Is Mike's Roommate's Name?",
+      "Option A": "Randall",
+      "Option B": "Art",
+      "Option C": "Don",
+      "Option D": "Terry",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_205",
+      "Question Text": "Which Pixar Character Starts College Wanting to Be a Scarer?",
+      "Option A": "Randall",
+      "Option B": "Art",
+      "Option C": "Squishy",
+      "Option D": "Mike Wazowski",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_206",
+      "Question Text": "In Pixar's Monsters University, What Subject Does Mike Excel At?",
+      "Option A": "Scream History",
+      "Option B": "Scaring Theory",
+      "Option C": "Monster Science",
+      "Option D": "Fear Studies",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_207",
+      "Question Text": "In Pixar's Monsters University, What Is the Name of the Scare Simulator?",
+      "Option A": "Fear Room",
+      "Option B": "Scream Room",
+      "Option C": "Scare Floor",
+      "Option D": "Monster Lab",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_208",
+      "Question Text": "In Pixar's Monsters University, What Job Do Mike and Sulley Get at Monsters Inc?",
+      "Option A": "Mail Sorters",
+      "Option B": "Janitors",
+      "Option C": "Security Guards",
+      "Option D": "Cafeteria Workers",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_209",
+      "Question Text": "In Pixar's Onward, What Is the Name of the Magical Staff?",
+      "Option A": "Phoenix Gem Staff",
+      "Option B": "Dragon Staff",
+      "Option C": "Wizard Staff",
+      "Option D": "Magic Staff",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_210",
+      "Question Text": "Which Pixar Characters Use a Spell to Bring Back Their Father for One Day?",
+      "Option A": "Tom and Jerry",
+      "Option B": "Ian and Barley",
+      "Option C": "Will and Bill",
+      "Option D": "Dan and Stan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_211",
+      "Question Text": "In Pixar's Onward, What Is the Name of Barley's Van?",
+      "Option A": "Excalibur",
+      "Option B": "Merlin",
+      "Option C": "Arthur",
+      "Option D": "Guinevere",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_212",
+      "Question Text": "In Pixar's Onward, What Game Is Barley Obsessed With?",
+      "Option A": "Knights of Legend",
+      "Option B": "Dungeons & Dragons",
+      "Option C": "Quests of Yore",
+      "Option D": "Magic & Might",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_213",
+      "Question Text": "In Pixar's Onward, What Is the Name of Ian's High School?",
+      "Option A": "Mushroomton High",
+      "Option B": "New Mushroomton High",
+      "Option C": "Magic High",
+      "Option D": "Wizard High",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_214",
+      "Question Text": "In Pixar's Onward, What Creature Runs the Tavern?",
+      "Option A": "Dragon",
+      "Option B": "Griffin",
+      "Option C": "Phoenix",
+      "Option D": "Manticore",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_215",
+      "Question Text": "Which Pixar Character Learns Magic on His 16th Birthday?",
+      "Option A": "Barley",
+      "Option B": "Tom",
+      "Option C": "Will",
+      "Option D": "Ian",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_216",
+      "Question Text": "In Pixar's Onward, What Is the Name of Ian and Barley's Mother?",
+      "Option A": "Laura",
+      "Option B": "Linda",
+      "Option C": "Lucy",
+      "Option D": "Laurel",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_217",
+      "Question Text": "In Pixar's Onward, What Is Ian's Father's Name?",
+      "Option A": "Wilden",
+      "Option B": "William",
+      "Option C": "Walter",
+      "Option D": "Warren",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_218",
+      "Question Text": "In Pixar's Onward, What Modern Invention Replaced Magic in Their World?",
+      "Option A": "Technology",
+      "Option B": "Science",
+      "Option C": "Electricity",
+      "Option D": "Machines",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_219",
+      "Question Text": "In Pixar's Ratatouille, What Is the Name of the Restaurant Where Remy Cooks?",
+      "Option A": "Le Petit Chef",
+      "Option B": "La Ratatouille",
+      "Option C": "Le Grand Paris",
+      "Option D": "Gusteau's",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_220",
+      "Question Text": "Which Pixar Rat Dreams of Becoming a Chef?",
+      "Option A": "Django",
+      "Option B": "Emile",
+      "Option C": "Git",
+      "Option D": "Remy",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_221",
+      "Question Text": "In Pixar's Ratatouille, What Is Gusteau's Famous Saying?",
+      "Option A": "Anyone Can Cook",
+      "Option B": "Everyone Can Chef",
+      "Option C": "Cooking Is Life",
+      "Option D": "Food Is Love",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_222",
+      "Question Text": "In Pixar's Ratatouille, What Is the Name of the Food Critic?",
+      "Option A": "August Ego",
+      "Option B": "Anton Ego",
+      "Option C": "Arthur Ego",
+      "Option D": "Andre Ego",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_223",
+      "Question Text": "In Pixar's Ratatouille, What Dish Makes Anton Ego Remember His Childhood?",
+      "Option A": "Soup",
+      "Option B": "Ratatouille",
+      "Option C": "Beef Stew",
+      "Option D": "Pasta",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_224",
+      "Question Text": "In Pixar's Ratatouille, What Is Linguini's Full Name?",
+      "Option A": "Antonio Linguini",
+      "Option B": "Alberto Linguini",
+      "Option C": "Angelo Linguini",
+      "Option D": "Alfredo Linguini",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_225",
+      "Question Text": "Which Pixar Character Inherits a Famous Restaurant?",
+      "Option A": "Linguini",
+      "Option B": "Colette",
+      "Option C": "Horst",
+      "Option D": "Chef Skinner",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_226",
+      "Question Text": "In Pixar's Ratatouille, What Is the Name of Remy's Brother?",
+      "Option A": "Emile",
+      "Option B": "Django",
+      "Option C": "Git",
+      "Option D": "Emil",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_227",
+      "Question Text": "In Pixar's Ratatouille, What Position Does Colette Work As?",
+      "Option A": "Head Chef",
+      "Option B": "Sous Chef",
+      "Option C": "Line Cook",
+      "Option D": "Pastry Chef",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_228",
+      "Question Text": "In Pixar's Ratatouille, What Does Ego Write in His Review?",
+      "Option A": "Great Food",
+      "Option B": "Perfect Meal",
+      "Option C": "Best Restaurant",
+      "Option D": "Anyone Can Cook",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_229",
+      "Question Text": "In Pixar's Ratatouille, What Does Remy's Colony Steal Food From?",
+      "Option A": "Farm",
+      "Option B": "Market",
+      "Option C": "Restaurant",
+      "Option D": "Store",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_230",
+      "Question Text": "Which Pixar Character Can Control Someone by Pulling Their Hair?",
+      "Option A": "Linguini",
+      "Option B": "Colette",
+      "Option C": "Remy",
+      "Option D": "Skinner",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_231",
+      "Question Text": "In Pixar's Ratatouille, What Is the Name of the Food Critic's Column?",
+      "Option A": "The Food Judge",
+      "Option B": "The Taste Master",
+      "Option C": "The Critical Bite",
+      "Option D": "The Grim Eater",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_232",
+      "Question Text": "In Pixar's Ratatouille, What Is Linguini's Mother's Name?",
+      "Option A": "Rosetta",
+      "Option B": "Regina",
+      "Option C": "Rebecca",
+      "Option D": "Renata",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_233",
+      "Question Text": "In Pixar's Ratatouille, What Does Colette Say Is the Most Important Rule in the Kitchen?",
+      "Option A": "Keep Clean",
+      "Option B": "Stay Sharp",
+      "Option C": "Anyone Can Cook",
+      "Option D": "Work Fast",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_234",
+      "Question Text": "In Pixar's Ratatouille, What Does Auguste Gusteau Die From?",
+      "Option A": "Illness",
+      "Option B": "Broken Heart",
+      "Option C": "Old Age",
+      "Option D": "Accident",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_235",
+      "Question Text": "Which Pixar Character Can Control Others by Pulling Their Hair?",
+      "Option A": "Linguini",
+      "Option B": "Colette",
+      "Option C": "Skinner",
+      "Option D": "Remy",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_236",
+      "Question Text": "In Pixar's Ratatouille, What Is the Name of Linguini's Mother?",
+      "Option A": "Rosa",
+      "Option B": "Rebecca",
+      "Option C": "Renata",
+      "Option D": "Rachel",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_237",
+      "Question Text": "In Pixar's Ratatouille, What Is Chef Skinner's First Name?",
+      "Option A": "Anton",
+      "Option B": "Albert",
+      "Option C": "Arthur",
+      "Option D": "Auguste",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_238",
+      "Question Text": "In Pixar's Ratatouille, What Is Written on Gusteau's Restaurant?",
+      "Option A": "Anyone Can Cook",
+      "Option B": "Good Food Here",
+      "Option C": "Best in Paris",
+      "Option D": "French Cuisine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_239",
+      "Question Text": "In Pixar's Soul, What Instrument Does Joe Gardner Play?",
+      "Option A": "Guitar",
+      "Option B": "Saxophone",
+      "Option C": "Drums",
+      "Option D": "Piano",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_240",
+      "Question Text": "Which Pixar Character Gets Their Dream Job Right Before Falling Down a Manhole?",
+      "Option A": "Joe Gardner",
+      "Option B": "Terry",
+      "Option C": "22",
+      "Option D": "Moonwind",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_241",
+      "Question Text": "In Pixar's Soul, What Is 22's Mentor Before Joe?",
+      "Option A": "Mother Teresa",
+      "Option B": "Gandhi",
+      "Option C": "Lincoln",
+      "Option D": "Einstein",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_242",
+      "Question Text": "In Pixar's Soul, What Is the Name of the Zone Where Lost Souls Go?",
+      "Option A": "The Lost Zone",
+      "Option B": "The Dark Zone",
+      "Option C": "The Empty Zone",
+      "Option D": "The Shadow Zone",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_243",
+      "Question Text": "In Pixar's Soul, What Does Joe Teach at the Middle School?",
+      "Option A": "Music Class",
+      "Option B": "Art Class",
+      "Option C": "Band Class",
+      "Option D": "Piano Class",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_244",
+      "Question Text": "In Pixar's Soul, What Club Does Joe Play at Before His Accident?",
+      "Option A": "Blue Note Club",
+      "Option B": "Half Note Club",
+      "Option C": "Jazz Club",
+      "Option D": "Music Club",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_245",
+      "Question Text": "Which Pixar Character Becomes a Mentor in The Great Before?",
+      "Option A": "Terry",
+      "Option B": "Joe Gardner",
+      "Option C": "Jerry",
+      "Option D": "Moonwind",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_246",
+      "Question Text": "In Pixar's Soul, What Is 22's Problem?",
+      "Option A": "Can't Leave Earth",
+      "Option B": "Won't Go to Earth",
+      "Option C": "Hates Earth",
+      "Option D": "Can't Find Their Spark",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_247",
+      "Question Text": "In Pixar's Soul, What Is the Name of Joe's Barber?",
+      "Option A": "Dan",
+      "Option B": "Dave",
+      "Option C": "Don",
+      "Option D": "Dez",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_248",
+      "Question Text": "In Pixar's Soul, What Instrument Does Joe's Student Connie Play?",
+      "Option A": "Trombone",
+      "Option B": "Trumpet",
+      "Option C": "Saxophone",
+      "Option D": "Drums",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_249",
+      "Question Text": "In Pixar's Soul, Who Is Dorothea Williams?",
+      "Option A": "Piano Teacher",
+      "Option B": "Music Teacher",
+      "Option C": "Club Owner",
+      "Option D": "Jazz Band Leader",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_250",
+      "Question Text": "Which Pixar Character Gets Stuck in a Cat While Their Body Is in a Hospital?",
+      "Option A": "Joe Gardner",
+      "Option B": "22",
+      "Option C": "Terry",
+      "Option D": "Moonwind",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_251",
+      "Question Text": "In Pixar's Soul, What Is the Name of the Zone Where Musicians Get Lost?",
+      "Option A": "The Zone",
+      "Option B": "The Flow",
+      "Option C": "The Space",
+      "Option D": "The Groove",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_252",
+      "Question Text": "In Pixar's Soul, What Does Joe's Mother Want Him to Do for a Career?",
+      "Option A": "Full-time Teaching",
+      "Option B": "Music Store",
+      "Option C": "Piano Tuner",
+      "Option D": "Band Director",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_253",
+      "Question Text": "In Pixar's Soul, What Is the Name of the Cat Joe's Soul Enters?",
+      "Option A": "Mr. Whiskers",
+      "Option B": "Mr. Mittens",
+      "Option C": "Mr. Paws",
+      "Option D": "Mr. Felix",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_254",
+      "Question Text": "In Pixar's The Good Dinosaur, What Is Arlo's Father's Name?",
+      "Option A": "Henry",
+      "Option B": "Harold",
+      "Option C": "Harry",
+      "Option D": "Howard",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_255",
+      "Question Text": "Which Pixar Dinosaur Must 'Make His Mark' to Earn His Place?",
+      "Option A": "Buck",
+      "Option B": "Libby",
+      "Option C": "Nash",
+      "Option D": "Arlo",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_256",
+      "Question Text": "In Pixar's The Good Dinosaur, What Kind of Dinosaur Is Arlo?",
+      "Option A": "Brontosaurus",
+      "Option B": "Apatosaurus",
+      "Option C": "Diplodocus",
+      "Option D": "Brachiosaurus",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_257",
+      "Question Text": "In Pixar's The Good Dinosaur, What Does Arlo's Family Farm?",
+      "Option A": "Wheat",
+      "Option B": "Rice",
+      "Option C": "Barley",
+      "Option D": "Corn",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_258",
+      "Question Text": "In Pixar's The Good Dinosaur, What Is the Name of the T-Rex Family?",
+      "Option A": "The Ranchers",
+      "Option B": "The Farmers",
+      "Option C": "The Herders",
+      "Option D": "The Cowboys",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_259",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Type Of Farmers Are Arlo's Parents?",
+      "Option A": "Brontosaurus",
+      "Option B": "Diplodocus",
+      "Option C": "Apatosaurus",
+      "Option D": "Brachiosaurus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_260",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Must Each Sibling Do To The Corn Silo To Show Their Achievement?",
+      "Option A": "Paint It",
+      "Option B": "Sign It",
+      "Option C": "Make Their Mark",
+      "Option D": "Leave Footprint",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_261",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Natural Disaster Causes Henry's Death?",
+      "Option A": "Storm",
+      "Option B": "Flash Flood",
+      "Option C": "Landslide",
+      "Option D": "Earthquake",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_262",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Name Does Arlo Give The Caveboy During The Naming Competition?",
+      "Option A": "Kid",
+      "Option B": "Boy",
+      "Option C": "Human",
+      "Option D": "Spot",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_263",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Species Is The Eccentric Dinosaur Named Forrest Woodbush?",
+      "Option A": "Styracosaurus",
+      "Option B": "Triceratops",
+      "Option C": "Ankylosaurus",
+      "Option D": "Stegosaurus",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_264",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Animals Did The T-Rex Family Lose In The South?",
+      "Option A": "Cattle",
+      "Option B": "Longhorns",
+      "Option C": "Bison",
+      "Option D": "Bulls",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_265",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Species Were The Cattle Rustlers?",
+      "Option A": "Raptors",
+      "Option B": "Allosaurs",
+      "Option C": "Carnotaurus",
+      "Option D": "Velociraptors",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_266",
+      "Question Text": "In Pixar's  The Good Dinosaur, Which Predatory Flying Creatures Try To Eat Spot?",
+      "Option A": "Eagles",
+      "Option B": "Vultures",
+      "Option C": "Pterodactyls",
+      "Option D": "Hawks",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_267",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Does Arlo See That Shows He's Near Home?",
+      "Option A": "River",
+      "Option B": "Trees",
+      "Option C": "Clouds",
+      "Option D": "Mountain Peaks",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_268",
+      "Question Text": "In Pixar's  The Good Dinosaur, Where Does Arlo Finally Make His Mark?",
+      "Option A": "On Door",
+      "Option B": "On Wall",
+      "Option C": "Between Parents' Marks",
+      "Option D": "On Floor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_269",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Are The Names Of Arlo's Two Siblings?",
+      "Option A": "Billy and Beth",
+      "Option B": "Buck and Betty",
+      "Option C": "Libby and Buck",
+      "Option D": "Bobby and Lucy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_270",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Type Of Tree Does Spot Lead Arlo To For Food?",
+      "Option A": "Berry Tree",
+      "Option B": "Apple Tree",
+      "Option C": "Fruit Tree",
+      "Option D": "Pine Tree",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_271",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Is The Name Of The Female T-Rex Who Helps Arlo?",
+      "Option A": "Ruby",
+      "Option B": "Randy",
+      "Option C": "Ramsey",
+      "Option D": "Riley",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_272",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Dangerous Animal Does Spot Save Arlo From Near The Berry Tree?",
+      "Option A": "Spider",
+      "Option B": "Scorpion",
+      "Option C": "Snake",
+      "Option D": "Centipede",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_273",
+      "Question Text": "In Pixar's The Good Dinosaur, What Does Arlo Use To Track His Way Home Initially?",
+      "Option A": "Mountains",
+      "Option B": "Riverbank",
+      "Option C": "Stars",
+      "Option D": "Sun",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_274",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Traps Arlo's Leg After Being Swept Downstream?",
+      "Option A": "Log",
+      "Option B": "Boulder",
+      "Option C": "Rock",
+      "Option D": "Tree",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_275",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Does Spot Do To Help Free Arlo's Trapped Leg?",
+      "Option A": "Pulls",
+      "Option B": "Pushes",
+      "Option C": "Lifts",
+      "Option D": "Digs Underneath",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_276",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Does Arlo Have A Vision Of During The Final Storm?",
+      "Option A": "His Father",
+      "Option B": "His Mother",
+      "Option C": "His Siblings",
+      "Option D": "His Home",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_277",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Happens To Spot At The End Of The Movie?",
+      "Option A": "Stays with Arlo",
+      "Option B": "Returns Home",
+      "Option C": "Dies",
+      "Option D": "Joins Cave Family",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_278",
+      "Question Text": "In Pixar's  The Good Dinosaur, What Historical Event Never Happened In This Timeline?",
+      "Option A": "Ice Age",
+      "Option B": "Meteor Strike",
+      "Option C": "Dinosaur Extinction",
+      "Option D": "Great Flood",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_279",
+      "Question Text": "In Pixar's The Incredibles, What Power Does Jack-Jack First Display?",
+      "Option A": "Fire",
+      "Option B": "Teleportation",
+      "Option C": "Shapeshifting",
+      "Option D": "Levitation",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_280",
+      "Question Text": "Which Pixar Baby Has 17 Different Super Powers?",
+      "Option A": "Jack-Jack Parr",
+      "Option B": "Dash Parr",
+      "Option C": "Violet Parr",
+      "Option D": "Baby Parr",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_281",
+      "Question Text": "In Pixar's The Incredibles, What Is Elastigirl's Real Name?",
+      "Option A": "Helen Parr",
+      "Option B": "Helen Richards",
+      "Option C": "Helen Powers",
+      "Option D": "Helen Strong",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_282",
+      "Question Text": "In Pixar's The Incredibles, What Is the Name of Syndrome's Island?",
+      "Option A": "Secret Island",
+      "Option B": "Nomanisan Island",
+      "Option C": "Villain Island",
+      "Option D": "Evil Island",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_283",
+      "Question Text": "In Pixar's The Incredibles, What Is the Maximum Speed Dash Can Run?",
+      "Option A": "170 mph",
+      "Option B": "180 mph",
+      "Option C": "190 mph",
+      "Option D": "200 mph",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_284",
+      "Question Text": "In Pixar's The Incredibles, What Is Frozone's Real Name?",
+      "Option A": "Louis Best",
+      "Option B": "Larry Best",
+      "Option C": "Luke Best",
+      "Option D": "Lucius Best",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_285",
+      "Question Text": "Which Pixar Superhero Can Create Ice?",
+      "Option A": "Dash",
+      "Option B": "Frozone",
+      "Option C": "Mr. Incredible",
+      "Option D": "Elastigirl",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_286",
+      "Question Text": "In Pixar's The Incredibles, What Is the Name of Syndrome's Island Base?",
+      "Option A": "Nomanisan Island",
+      "Option B": "Evil Island",
+      "Option C": "Secret Base",
+      "Option D": "Villain Lair",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_287",
+      "Question Text": "In Pixar's The Incredibles, What Does NSA Stand For?",
+      "Option A": "National Security Agency",
+      "Option B": "National Super Authority",
+      "Option C": "National Supers Agency",
+      "Option D": "National Safety Agency",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_288",
+      "Question Text": "In Pixar's The Incredibles, What Is Bob's Cover Job?",
+      "Option A": "Accountant",
+      "Option B": "Bank Teller",
+      "Option C": "Insurance Claims Agent",
+      "Option D": "Office Worker",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_289",
+      "Question Text": "In Pixar's  Incredibles 2, Who Is The Underground Villain At The Start Of The Film?",
+      "Option A": "Screenslaver",
+      "Option B": "Syndrome",
+      "Option C": "Digger",
+      "Option D": "Underminer",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_290",
+      "Question Text": "In Pixar's  Incredibles 2, From Whose Mind Did Mr. Dicker Have To Erase Memories Of Violet?",
+      "Option A": "Jack",
+      "Option B": "Tony Rydinger",
+      "Option C": "Bob",
+      "Option D": "Rick",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_291",
+      "Question Text": "In Pixar's  Incredibles 2, What Is The Name Of Winston Deavor's Gadget-Designing Sister?",
+      "Option A": "Ellen",
+      "Option B": "Emily",
+      "Option C": "Evelyn",
+      "Option D": "Emma",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_292",
+      "Question Text": "In Pixar's  Incredibles 2, Does The Parr Family's New Home Have A Pool?",
+      "Option A": "Yes",
+      "Option B": "No",
+      "Option C": "Maybe",
+      "Option D": "Unknown",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_293",
+      "Question Text": "In Pixar's  Incredibles 2, Which School Subject Does Dash Need Help With From His Dad?",
+      "Option A": "English",
+      "Option B": "Science",
+      "Option C": "Math",
+      "Option D": "History",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_294",
+      "Question Text": "In Pixar's  Incredibles 2, Who Does Elastigirl Discover Caused The Monorail Incident?",
+      "Option A": "Ambassador",
+      "Option B": "Evelyn",
+      "Option C": "Winston",
+      "Option D": "Screenslaver",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_295",
+      "Question Text": "In Pixar's  Incredibles 2, How Many Times Does Jack-Jack Escape His Crib After Bedtime?",
+      "Option A": "One",
+      "Option B": "Two",
+      "Option C": "Three",
+      "Option D": "Four",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_296",
+      "Question Text": "In Pixar's  Incredibles 2, What Animal Does Jack-Jack See Through The Glass Door?",
+      "Option A": "Squirrel",
+      "Option B": "Cat",
+      "Option C": "Raccoon",
+      "Option D": "Dog",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_297",
+      "Question Text": "In Pixar's  Incredibles 2, Why Does Jack-Jack Attack The Raccoon?",
+      "Option A": "Resembles Movie Robber",
+      "Option B": "Stole Food",
+      "Option C": "Made Noise",
+      "Option D": "Broke Window",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_298",
+      "Question Text": "In Pixar's  Incredibles 2, What Is Jack-Jack's First Power Used To Leave The House?",
+      "Option A": "Teleportation",
+      "Option B": "Flying",
+      "Option C": "Phasing Through Glass",
+      "Option D": "Invisibility",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_299",
+      "Question Text": "In Pixar's  Incredibles 2, What Is The Fake Screenslaver's Real Job?",
+      "Option A": "Pizza Delivery Driver",
+      "Option B": "Mail Carrier",
+      "Option C": "Bus Driver",
+      "Option D": "Taxi Driver",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_300",
+      "Question Text": "In Pixar's  Incredibles 2, What Is Void's Real First Name?",
+      "Option A": "Kelly",
+      "Option B": "Kathy",
+      "Option C": "Kim",
+      "Option D": "Karen",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_301",
+      "Question Text": "In Pixar's  Incredibles 2, Where Does Bob Take The Kids To See Violet's Crush?",
+      "Option A": "Happy Platter",
+      "Option B": "Burger Place",
+      "Option C": "Diner",
+      "Option D": "Fast Food Joint",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_302",
+      "Question Text": "In Pixar's  Incredibles 2, Who Does Elastigirl Discover Is The Real Screenslaver?",
+      "Option A": "Winston",
+      "Option B": "Ambassador",
+      "Option C": "Pizza Guy",
+      "Option D": "Evelyn Deavor",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_303",
+      "Question Text": "In Pixar's  Incredibles 2, What Stops The Family From Watching 'Dementia 113' With Tony?",
+      "Option A": "Emergency",
+      "Option B": "Fire",
+      "Option C": "Crime",
+      "Option D": "Police Chase",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_304",
+      "Question Text": "In Pixar's The Incredibles 2, What Company Wants to Make Supers Legal Again?",
+      "Option A": "Super Corp",
+      "Option B": "DevTech",
+      "Option C": "Hero Inc",
+      "Option D": "Power Co",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_305",
+      "Question Text": "Which Pixar Superhero Gets Chosen for a Secret Mission Instead of Her Husband?",
+      "Option A": "Violet",
+      "Option B": "Elastigirl",
+      "Option C": "Voyd",
+      "Option D": "Screech",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_306",
+      "Question Text": "In Pixar's The Incredibles 2, What Is the Name of the Screenslaver's Mask?",
+      "Option A": "Hypno-goggles",
+      "Option B": "Mind Mask",
+      "Option C": "Control Visor",
+      "Option D": "Brain Mask",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_307",
+      "Question Text": "In Pixar's The Incredibles 2, What New Power Does Jack-Jack Show First?",
+      "Option A": "Teleportation",
+      "Option B": "Fire",
+      "Option C": "Laser",
+      "Option D": "Monster",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_308",
+      "Question Text": "In Pixar's The Incredibles 2, What Is Winston Deavor's Sister's Name?",
+      "Option A": "Eleanor",
+      "Option B": "Elizabeth",
+      "Option C": "Evelyn",
+      "Option D": "Emma",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_309",
+      "Question Text": "In Pixar's Toy Story, What Is Written on the Bottom of Woody's Boot?",
+      "Option A": "Name",
+      "Option B": "Owner",
+      "Option C": "Andy",
+      "Option D": "Toy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_310",
+      "Question Text": "Which Pixar Toy Has the Words 'Andy' Written on Their Boot?",
+      "Option A": "Woody",
+      "Option B": "Buzz",
+      "Option C": "Rex",
+      "Option D": "Slinky",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_311",
+      "Question Text": "In Pixar's Toy Story, What Is the Name of Sid's Sister?",
+      "Option A": "Holly",
+      "Option B": "Hannah",
+      "Option C": "Heather",
+      "Option D": "Helen",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_312",
+      "Question Text": "In Pixar's Toy Story, What Is the Pizza Planet Delivery Truck's License Plate Number?",
+      "Option A": "RES1234",
+      "Option B": "RES1536",
+      "Option C": "RES1789",
+      "Option D": "RES2048",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_313",
+      "Question Text": "In Pixar's Toy Story, What Game Do the Aliens in the Claw Machine Worship?",
+      "Option A": "The Claw",
+      "Option B": "The Game",
+      "Option C": "The Machine",
+      "Option D": "The Prize",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_314",
+      "Question Text": "In Pixar's Toy Story, What Toy Company Makes Mr. Potato Head?",
+      "Option A": "Mattel",
+      "Option B": "Hasbro",
+      "Option C": "Fisher-Price",
+      "Option D": "Playskool",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_315",
+      "Question Text": "In Pixar's Toy Story, What Is The Only Thing That Could Drag Sid Away From Torturing Woody?",
+      "Option A": "Pop Tarts",
+      "Option B": "Ice Cream",
+      "Option C": "TV Show",
+      "Option D": "Video Game",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_316",
+      "Question Text": "In Pixar's Toy Story, What Is Mr. Potato Head Called During Andy's Opening Play Scene?",
+      "Option A": "Bad Guy",
+      "Option B": "One-Eyed Bart",
+      "Option C": "Evil Spud",
+      "Option D": "Dr. Potato",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_317",
+      "Question Text": "In Pixar's Toy Story, What Real Estate Company Tries To Sell Andy's Mom's House?",
+      "Option A": "Home Sales",
+      "Option B": "Virtual Realty",
+      "Option C": "Real Estate Co",
+      "Option D": "House Sellers",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_318",
+      "Question Text": "In Pixar's Toy Story, Which Sector Was Buzz Headed To Before Landing In Andy's Room?",
+      "Option A": "Sector 10",
+      "Option B": "Sector 11",
+      "Option C": "Sector 12",
+      "Option D": "Sector 13",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_319",
+      "Question Text": "In Pixar's  Toy Story, Zurg Is The Sworn Enemy Of The What Alliance?",
+      "Option A": "Space Alliance",
+      "Option B": "Galactic Alliance",
+      "Option C": "Star Alliance",
+      "Option D": "Universe Alliance",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_320",
+      "Question Text": "In Pixar's  Toy Story, What Is Snake And Robot's Job During The Staff Meeting?",
+      "Option A": "Podium Duty",
+      "Option B": "Security",
+      "Option C": "Reception",
+      "Option D": "Attendance",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_321",
+      "Question Text": "In Pixar's  Toy Story, What Is The Name Of The Large Toy Soldier That Sid Blows Up?",
+      "Option A": "Sergeant Sam",
+      "Option B": "Major Mike",
+      "Option C": "Captain Carl",
+      "Option D": "Combat Carl",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_322",
+      "Question Text": "In Pixar's  Toy Story, In Which Country Is The Buzz Lightyear Toy Made?",
+      "Option A": "China",
+      "Option B": "Taiwan",
+      "Option C": "Japan",
+      "Option D": "Korea",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_323",
+      "Question Text": "In Pixar's  Toy Story, Who Held A Meeting About Plastic Corrosion Awareness?",
+      "Option A": "Mr. Spell",
+      "Option B": "Mr. Mike",
+      "Option C": "Mr. Snake",
+      "Option D": "Mr. Robot",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_324",
+      "Question Text": "In Pixar's  Toy Story, Who Is Ducky's Partner In The Escape From Sid's House?",
+      "Option A": "Hand",
+      "Option B": "Legs",
+      "Option C": "Arms",
+      "Option D": "Head",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_325",
+      "Question Text": "In Pixar's Toy Story 2, What Store Steals Woody?",
+      "Option A": "Toy Store",
+      "Option B": "Thrift Store",
+      "Option C": "Al's Toy Barn",
+      "Option D": "Antique Shop",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_326",
+      "Question Text": "Which Pixar Toy Discovers They're Part of a Valuable Collectible Set?",
+      "Option A": "Buzz",
+      "Option B": "Jessie",
+      "Option C": "Woody",
+      "Option D": "Bullseye",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_327",
+      "Question Text": "In Pixar's Toy Story 2, What Is the Name of the Horse in Woody's Roundup?",
+      "Option A": "Bullseye",
+      "Option B": "Thunder",
+      "Option C": "Lightning",
+      "Option D": "Scout",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_328",
+      "Question Text": "In Pixar's Toy Story 2, Who Is the Prospector?",
+      "Option A": "Pete",
+      "Option B": "Stinky Pete",
+      "Option C": "Dusty Pete",
+      "Option D": "Old Pete",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_329",
+      "Question Text": "In Pixar's Toy Story 2, What Does Al's Commercial Nickname Him?",
+      "Option A": "The Bird Man",
+      "Option B": "The Chicken Man",
+      "Option C": "The Toy Man",
+      "Option D": "The Sales Man",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_330",
+      "Question Text": "In Pixar's Toy Story 2, What Japanese Company Wants to Buy Woody?",
+      "Option A": "Tokyo Toys",
+      "Option B": "Nippon Toys",
+      "Option C": "Konishi Toy Museum",
+      "Option D": "Japan Collectibles",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_331",
+      "Question Text": "Which Pixar Toy Repairs Woody's Torn Arm?",
+      "Option A": "Stinky Pete",
+      "Option B": "Bullseye",
+      "Option C": "The Cleaner",
+      "Option D": "Jessie",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_332",
+      "Question Text": "In Pixar's Toy Story 2, What Is the Name of Al's Apartment Complex?",
+      "Option A": "Rotunda Apartments",
+      "Option B": "Sunset Apartments",
+      "Option C": "Vista Apartments",
+      "Option D": "Highland Apartments",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_333",
+      "Question Text": "In Pixar's Toy Story 2, What Airport Terminal Do the Toys End Up At?",
+      "Option A": "Terminal A",
+      "Option B": "Terminal B",
+      "Option C": "Terminal C",
+      "Option D": "Terminal D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_334",
+      "Question Text": "In Pixar's Toy Story 2, What Cleaning Tool Does the Old Man Use on Woody?",
+      "Option A": "Cotton Swab",
+      "Option B": "Cloth",
+      "Option C": "Paint Brush",
+      "Option D": "Sponge",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_335",
+      "Question Text": "Which Pixar Toy Becomes the Leader of Sunnyside Daycare?",
+      "Option A": "Lotso",
+      "Option B": "Big Baby",
+      "Option C": "Ken",
+      "Option D": "Barbie",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_336",
+      "Question Text": "In Pixar's Toy Story 3, What Is the Name of the Daycare's Baby Room?",
+      "Option A": "Caterpillar Room",
+      "Option B": "Butterfly Room",
+      "Option C": "Ladybug Room",
+      "Option D": "Cricket Room",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_337",
+      "Question Text": "In Pixar's Toy Story 3, What Does Big Baby Have Under Its Right Eye?",
+      "Option A": "Purple Tear",
+      "Option B": "Blue Tear",
+      "Option C": "Red Tear",
+      "Option D": "Black Tear",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_338",
+      "Question Text": "In Pixar's  Toy Story 3, What Was The Name Of The Daycare Where The Toys Ended Up?",
+      "Option A": "Happy Days",
+      "Option B": "Playtime",
+      "Option C": "Rainbow",
+      "Option D": "Sunnyside",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_339",
+      "Question Text": "IIn Pixar's Toy Story 3, How Did Lotso Get Buzz To Join His Side?",
+      "Option A": "Mind Control",
+      "Option B": "He Switched Him To Demo Mode",
+      "Option C": "Reprogrammed Him",
+      "Option D": "Reset Button",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_340",
+      "Question Text": "In Pixar's  Toy Story 3, What Kind Of Animal Toy Watched The Televisions In The Security Room?",
+      "Option A": "Bear",
+      "Option B": "Dog",
+      "Option C": "Monkey",
+      "Option D": "Cat",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_341",
+      "Question Text": "In Pixar's  Toy Story 3, Which Of Andy's Toys Stayed Behind At The Daycare After The Dumpster Scene?",
+      "Option A": "Ken",
+      "Option B": "Barbie",
+      "Option C": "Big Baby",
+      "Option D": "Stretch",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_342",
+      "Question Text": "In Pixar's  Toy Story 3, What Object Fell On Buzz That Helped Him Regain His Memory?",
+      "Option A": "Box",
+      "Option B": "Book",
+      "Option C": "Radio",
+      "Option D": "A Small Television",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_343",
+      "Question Text": "In Pixar's  Toy Story 3, Which Toy Did Lotso Send To The Sandbox For Being Mouthy?",
+      "Option A": "Rex",
+      "Option B": "Hamm",
+      "Option C": "Slinky",
+      "Option D": "Mr. Potato Head",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_344",
+      "Question Text": "In Pixar's  Toy Story 3, What Was The First Toy Andy Showed Bonnie From The Box?",
+      "Option A": "Woody",
+      "Option B": "Buzz",
+      "Option C": "Jessie",
+      "Option D": "Rex",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_345",
+      "Question Text": "In Pixar's  Toy Story 3, Which Toy Had Their Own Dream House?",
+      "Option A": "Barbie",
+      "Option B": "Ken",
+      "Option C": "Big Baby",
+      "Option D": "Stretch",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_346",
+      "Question Text": "In Pixar's  Toy Story 3, Which Toy Complained About Losing A Part On The First Day At Daycare?",
+      "Option A": "Rex",
+      "Option B": "Hamm",
+      "Option C": "Slinky",
+      "Option D": "Mr. Potato Head",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_347",
+      "Question Text": "In Pixar's  Toy Story 3, Which Toy Told Woody The Story About How Lotso Became Mean?",
+      "Option A": "Chuckles",
+      "Option B": "Big Baby",
+      "Option C": "Ken",
+      "Option D": "Stretch",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_348",
+      "Question Text": "Which Pixar Toy Is Made from a Spork?",
+      "Option A": "Sporky",
+      "Option B": "Utensil",
+      "Option C": "Spoony",
+      "Option D": "Forky",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_349",
+      "Question Text": "In Pixar's Toy Story 4, What Is the Name of the Antique Store?",
+      "Option A": "First Chance Antiques",
+      "Option B": "Old Time Antiques",
+      "Option C": "Second Chance Antiques",
+      "Option D": "New Hope Antiques",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_350",
+      "Question Text": "In Pixar's Toy Story 4, Who Is Gabby Gabby's Assistant?",
+      "Option A": "Vincent",
+      "Option B": "Bernard",
+      "Option C": "Benson",
+      "Option D": "Benjamin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_351",
+      "Question Text": "In Pixar's Toy Story 4, What Carnival Game Does Buzz Get Stuck In?",
+      "Option A": "Space Race",
+      "Option B": "Rocket Race",
+      "Option C": "Star Race",
+      "Option D": "Moon Race",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_352",
+      "Question Text": "In Pixar's  Toy Story 4, What Toy Were They Trying To Rescue From The Rain At The Start?",
+      "Option A": "Action Figure",
+      "Option B": "Race Car",
+      "Option C": "Doll",
+      "Option D": "Robot",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_353",
+      "Question Text": "In Pixar's  Toy Story 4, Where Did Woody First See Bo Peep Again After Nine Years?",
+      "Option A": "Park",
+      "Option B": "Store",
+      "Option C": "Carnival",
+      "Option D": "Street",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_354",
+      "Question Text": "In Pixar's  Toy Story 4, What Was The Name Of The Doll With The Broken Voice Box?",
+      "Option A": "Baby-Baby",
+      "Option B": "Gabby-Gabby",
+      "Option C": "Lucy-Lucy",
+      "Option D": "Sally-Sally",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_355",
+      "Question Text": "In Pixar's  Toy Story 4, What Object Did Bonnie Use To Create Her New Toy?",
+      "Option A": "Plastic Fork",
+      "Option B": "Plastic Knife",
+      "Option C": "Plastic Spoon",
+      "Option D": "Plastic Spork",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_356",
+      "Question Text": "In Pixar's  Toy Story 4, What Two Stuffed Animals Did Buzz Meet At The Carnival Game?",
+      "Option A": "Cat and Dog",
+      "Option B": "Lion and Tiger",
+      "Option C": "Bear and Wolf",
+      "Option D": "Bunny and Duck",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_357",
+      "Question Text": "In Pixar's  Toy Story 4, Which Toy Stayed With Bo Peep At The Carnival?",
+      "Option A": "Woody",
+      "Option B": "Buzz",
+      "Option C": "Jessie",
+      "Option D": "Forky",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_358",
+      "Question Text": "In Pixar's  Toy Story 4, How Did Jessie Keep Bonnie's Parents From Leaving Grand Basin?",
+      "Option A": "Flat Tire",
+      "Option B": "Dead Battery",
+      "Option C": "Jessie Punctured A Tire On The RV",
+      "Option D": "Engine Problem",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_359",
+      "Question Text": "In Pixar's Turning Red, What Animal Does Mei Turn Into?",
+      "Option A": "Red Panda",
+      "Option B": "Giant Panda",
+      "Option C": "Brown Bear",
+      "Option D": "Fox",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_360",
+      "Question Text": "Which Pixar Character Turns Into a Red Panda When Excited?",
+      "Option A": "Ming",
+      "Option B": "Mei Lee",
+      "Option C": "Miriam",
+      "Option D": "Abby",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_361",
+      "Question Text": "In Pixar's Turning Red, What Is the Name of Mei's Boy Band Obsession?",
+      "Option A": "3*Town",
+      "Option B": "4*Town",
+      "Option C": "5*Town",
+      "Option D": "6*Town",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_362",
+      "Question Text": "In Pixar's Turning Red, What Is the Name of Mei's Temple?",
+      "Option A": "Moon Temple",
+      "Option B": "Star Temple",
+      "Option C": "Sun Yee Temple",
+      "Option D": "Sky Temple",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_363",
+      "Question Text": "In Pixar's Turning Red, What Year Does the Movie Take Place?",
+      "Option A": "1999",
+      "Option B": "2000",
+      "Option C": "2001",
+      "Option D": "2002",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_364",
+      "Question Text": "In Pixar's Turning Red, What Is Mei's Mother's Job?",
+      "Option A": "Tour Guide",
+      "Option B": "Gift Shop Owner",
+      "Option C": "Temple Keeper",
+      "Option D": "Cleaner",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_365",
+      "Question Text": "Which Pixar Character Sells Red Panda Merchandise at School?",
+      "Option A": "Ming",
+      "Option B": "Miriam",
+      "Option C": "Abby",
+      "Option D": "Mei Lee",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_366",
+      "Question Text": "In Pixar's Turning Red, What Is the Name of Mei's Friend Group?",
+      "Option A": "Girl Squad",
+      "Option B": "Best Friends",
+      "Option C": "Panda Club",
+      "Option D": "4*Town",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_367",
+      "Question Text": "In Pixar's Turning Red, What City Does the Story Take Place In?",
+      "Option A": "Vancouver",
+      "Option B": "Montreal",
+      "Option C": "Ottawa",
+      "Option D": "Toronto",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_368",
+      "Question Text": "In Pixar's Turning Red, What Grade Is Mei In?",
+      "Option A": "5th Grade",
+      "Option B": "6th Grade",
+      "Option C": "7th Grade",
+      "Option D": "8th Grade",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_369",
+      "Question Text": "In Pixar's Turning Red, What Is Mei's Mother's Job at the Temple?",
+      "Option A": "Tour Guide",
+      "Option B": "Caretaker",
+      "Option C": "Administrator",
+      "Option D": "Temple Keeper",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_370",
+      "Question Text": "Which Pixar Character Sells Red Panda Merchandise?",
+      "Option A": "Mei Lee",
+      "Option B": "Ming",
+      "Option C": "Miriam",
+      "Option D": "Abby",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_371",
+      "Question Text": "In Pixar's Turning Red, What Song Does 4*Town Perform at the Concert?",
+      "Option A": "U and Me",
+      "Option B": "1 True Love",
+      "Option C": "My Number One",
+      "Option D": "Nobody Like U",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_372",
+      "Question Text": "In Pixar's Turning Red, What Is the Name of Mei's Grandmother?",
+      "Option A": "Lee",
+      "Option B": "Ming",
+      "Option C": "Sun",
+      "Option D": "Wu",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_373",
+      "Question Text": "In Pixar's Turning Red, What Is the Name of Mei's Red Panda Merchandise Business?",
+      "Option A": "Panda Sales",
+      "Option B": "Red Business",
+      "Option C": "4*Town Fundraising",
+      "Option D": "Mei's Shop",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_374",
+      "Question Text": "In Pixar's Up, What Badge Does Russell Need to Become a Senior Wilderness Explorer?",
+      "Option A": "Assisting the Elderly",
+      "Option B": "Camping",
+      "Option C": "Hiking",
+      "Option D": "Animal Care",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_375",
+      "Question Text": "Which Pixar Character's House Flies Away Using Balloons?",
+      "Option A": "Russell",
+      "Option B": "Charles",
+      "Option C": "Ellie",
+      "Option D": "Carl",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_376",
+      "Question Text": "In Pixar's Up, What Is the Name of Charles Muntz's Dirigible?",
+      "Option A": "Spirit of Adventure",
+      "Option B": "Spirit of Discovery",
+      "Option C": "Spirit of Exploration",
+      "Option D": "Spirit of Flight",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_377",
+      "Question Text": "In Pixar's Up, What Is Written on Ellie's Adventure Book?",
+      "Option A": "Adventures Book",
+      "Option B": "Our Adventure Book",
+      "Option C": "The Adventure Book",
+      "Option D": "My Adventure Book",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_378",
+      "Question Text": "In Pixar's Up, What Is the Name of Kevin's Species?",
+      "Option A": "Rare Bird",
+      "Option B": "Giant Bird",
+      "Option C": "Paradise Bird",
+      "Option D": "Exotic Bird",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_379",
+      "Question Text": "Which Pixar Character Collects Bottle Caps?",
+      "Option A": "Carl",
+      "Option B": "Charles",
+      "Option C": "Kevin",
+      "Option D": "Russell",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_380",
+      "Question Text": "In Pixar's Up, What Is the Name of Russell's Wilderness Explorer Troop?",
+      "Option A": "Troop 52",
+      "Option B": "Troop 54",
+      "Option C": "Troop 56",
+      "Option D": "Troop 58",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_381",
+      "Question Text": "In Pixar's Up, What Is Carl's Profession Before Retiring?",
+      "Option A": "Balloon Salesman",
+      "Option B": "Toy Seller",
+      "Option C": "Shop Owner",
+      "Option D": "Store Clerk",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_382",
+      "Question Text": "In Pixar's Up, What Is Written in Ellie's Adventure Book?",
+      "Option A": "Go Have Fun",
+      "Option B": "Thanks for the Adventure - Now Go Have a New One",
+      "Option C": "Keep Exploring",
+      "Option D": "Never Stop Dreaming",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_383",
+      "Question Text": "In Pixar's Up, What Badge Is Russell Missing to Become a Senior Wilderness Explorer?",
+      "Option A": "Bird Study",
+      "Option B": "First Aid",
+      "Option C": "Camping",
+      "Option D": "Assisting the Elderly",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_384",
+      "Question Text": "Which Pixar Character's Name Is Written on a Grape Soda Badge?",
+      "Option A": "Ellie",
+      "Option B": "Carl",
+      "Option C": "Russell",
+      "Option D": "Charles",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_385",
+      "Question Text": "In Pixar's Up, What Ice Cream Flavor Does Carl eat at Fentons Creamery?",
+      "Option A": "Chocolate",
+      "Option B": "Vanilla",
+      "Option C": "Rocky Road",
+      "Option D": "Butter Brickle",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_386",
+      "Question Text": "In Pixar's Up, What Kind of Bird Is Kevin?",
+      "Option A": "Paradise Falls Bird",
+      "Option B": "Mountain Bird",
+      "Option C": "Species Unknown",
+      "Option D": "Tropical Bird",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_387",
+      "Question Text": "Which Pixar Character Uses Tennis Balls on Their Walker?",
+      "Option A": "Russell",
+      "Option B": "Charles",
+      "Option C": "Ellie",
+      "Option D": "Carl",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_388",
+      "Question Text": "In Pixar's Up, What Is the Name of the Explorer That Carl Admired as a Child?",
+      "Option A": "Charles Muntz",
+      "Option B": "Charles Darwin",
+      "Option C": "Charles Wilson",
+      "Option D": "Charles Baker",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_389",
+      "Question Text": "In Pixar's Up, What Badge Does Russell Need to Complete His Collection?",
+      "Option A": "Assisting the Elderly",
+      "Option B": "Animal Care",
+      "Option C": "First Aid",
+      "Option D": "Navigation",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_390",
+      "Question Text": "In Pixar's Up, What Is Written in Ellie's Adventure Book?",
+      "Option A": "Keep Exploring",
+      "Option B": "Thanks for the Adventure",
+      "Option C": "Never Give Up",
+      "Option D": "Always Dream",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_391",
+      "Question Text": "Which Pixar Robot Collects Hello Dolly Memorabilia?",
+      "Option A": "EVE",
+      "Option B": "M-O",
+      "Option C": "AUTO",
+      "Option D": "Wall-E",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_392",
+      "Question Text": "In Pixar's Wall-E, What Does EVE Stand For?",
+      "Option A": "Earth Vegetation Explorer",
+      "Option B": "Environmental Vehicle Expert",
+      "Option C": "Electronic Vessel Entity",
+      "Option D": "Extraterrestrial Vegetation Evaluator",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_393",
+      "Question Text": "In Pixar's Wall-E, What Is the Name of the Ship Where Humans Live?",
+      "Option A": "Atlas",
+      "Option B": "Aurora",
+      "Option C": "Atlantis",
+      "Option D": "Axiom",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_394",
+      "Question Text": "In Pixar's Wall-E, What Plant Does EVE Find on Earth?",
+      "Option A": "Flower",
+      "Option B": "Small Green Plant",
+      "Option C": "Tree",
+      "Option D": "Grass",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_395",
+      "Question Text": "In Pixar's WALL-E, What Song Does WALL-E Play from Hello, Dolly?",
+      "Option A": "Dancing Time",
+      "Option B": "Let's Go Out",
+      "Option C": "Sunday Best",
+      "Option D": "Put on Your Sunday Clothes",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_396",
+      "Question Text": "Which Pixar Robot Can Create Force Fields?",
+      "Option A": "WALL-E",
+      "Option B": "M-O",
+      "Option C": "EVE",
+      "Option D": "AUTO",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_397",
+      "Question Text": "In Pixar's WALL-E, What Is the Name of the Captain?",
+      "Option A": "Captain A. McCrea",
+      "Option B": "Captain B. McCrea",
+      "Option C": "Captain C. McCrea",
+      "Option D": "Captain D. McCrea",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_398",
+      "Question Text": "In Pixar's WALL-E, What Does AUTO Try to Prevent?",
+      "Option A": "Return to Earth",
+      "Option B": "Plant Growth",
+      "Option C": "Human Freedom",
+      "Option D": "Ship Landing",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_399",
+      "Question Text": "In Pixar's WALL-E, What Is the Directive Given to EVE?",
+      "Option A": "Find Signs of Life",
+      "Option B": "Clean Earth",
+      "Option C": "Collect Data",
+      "Option D": "Study Humans",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_400",
+      "Question Text": "In Pixar's Wall-E, What Does Eve's Plant Scanner Look Like?",
+      "Option A": "Red Light",
+      "Option B": "Green Light",
+      "Option C": "Blue Light",
+      "Option D": "White Light",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_401",
+      "Question Text": "Which Pixar Robot Keeps a Cockroach as a Pet?",
+      "Option A": "EVE",
+      "Option B": "M-O",
+      "Option C": "Wall-E",
+      "Option D": "AUTO",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_402",
+      "Question Text": "In Pixar's Wall-E, What Game Does Wall-E Play with His Trash?",
+      "Option A": "Baseball",
+      "Option B": "Soccer",
+      "Option C": "Bowling with Hubcaps",
+      "Option D": "Basketball",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_403",
+      "Question Text": "In Pixar's Wall-E, What Is the Name of the Ship's Computer?",
+      "Option A": "System",
+      "Option B": "Control",
+      "Option C": "Navigator",
+      "Option D": "Auto",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_404",
+      "Question Text": "In Pixar's Wall-E, What Does M-O Stand For?",
+      "Option A": "Machine Operator",
+      "Option B": "Mechanical Officer",
+      "Option C": "Maintenance Order",
+      "Option D": "Microbe Obliterator",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_405",
+      "Question Text": "In Pixar's WALL-E, What Does WALL-E Collect in His Home?",
+      "Option A": "Machine Parts",
+      "Option B": "Robot Parts",
+      "Option C": "Earth Items",
+      "Option D": "Human Artifacts",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_406",
+      "Question Text": "Which Pixar Robot Has a Cockroach Friend Named Hal?",
+      "Option A": "EVE",
+      "Option B": "M-O",
+      "Option C": "AUTO",
+      "Option D": "WALL-E",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_407",
+      "Question Text": "In Pixar's WALL-E, What Is the Name of the Luxury Starliner?",
+      "Option A": "Atlas",
+      "Option B": "Aurora",
+      "Option C": "Axiom",
+      "Option D": "Astro",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_408",
+      "Question Text": "In Pixar's WALL-E, What Company Controls Everything in the Future?",
+      "Option A": "Buy n Large",
+      "Option B": "Mega Corp",
+      "Option C": "World Co",
+      "Option D": "Global Inc",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "PIXAR_409",
+      "Question Text": "In Pixar's WALL-E, What Does EVE Search For on Earth?",
+      "Option A": "Animal Life",
+      "Option B": "Water",
+      "Option C": "Air",
+      "Option D": "Living Plants",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    }
+  ]
+}

@@ -1,0 +1,1724 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "ART_1",
+      "Question Text": "For how many whirlwind years did Van Gogh relentlessly create art?",
+      "Option A": 5,
+      "Option B": 10,
+      "Option C": 15,
+      "Option D": 20,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_2",
+      "Question Text": "Which Hollywood icon was immortalized by Andy Warhol?",
+      "Option A": "Elizabeth Taylor",
+      "Option B": "Marilyn Monroe",
+      "Option C": "Grace Kelly",
+      "Option D": "Audrey Hepburn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_3",
+      "Question Text": "Jasper Johns' 1955 work 'Flag' reinterprets the patriotic emblem of which country?",
+      "Option A": "Canada",
+      "Option B": "United Kingdom",
+      "Option C": "United States",
+      "Option D": "Australia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_4",
+      "Question Text": "Which Russian abstract genius painted the stirring work 'Cossacks'?",
+      "Option A": "Chagall",
+      "Option B": "Kandinsky",
+      "Option C": "Malevich",
+      "Option D": "Popova",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_5",
+      "Question Text": "In which US state was Andy Warhol born?",
+      "Option A": "New York",
+      "Option B": "California",
+      "Option C": "Pennsylvania",
+      "Option D": "Ohio",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_6",
+      "Question Text": "In a Van Gogh painting, people are seen eating which humble vegetable?",
+      "Option A": "Corn",
+      "Option B": "Tomatoes",
+      "Option C": "Potatoes",
+      "Option D": "Carrots",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_7",
+      "Question Text": "Which vibrant city is home to the Zeitz Museum of Contemporary Art Africa?",
+      "Option A": "Johannesburg",
+      "Option B": "Cape Town",
+      "Option C": "Nairobi",
+      "Option D": "Lagos",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_8",
+      "Question Text": "Which Dutch artist is famed for his abstract cubes and stark lines?",
+      "Option A": "Van Gogh",
+      "Option B": "Rembrandt",
+      "Option C": "Mondrian",
+      "Option D": "Vermeer",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_9",
+      "Question Text": "What's the first name of the British sculptor known for her sturdy creations?",
+      "Option A": "Rachel",
+      "Option B": "Helen",
+      "Option C": "Barbara",
+      "Option D": "Margaret",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_10",
+      "Question Text": "Which sea sets the dramatic stage in a famous Rembrandt painting?",
+      "Option A": "Mediterranean",
+      "Option B": "Atlantic",
+      "Option C": "Galilee",
+      "Option D": "Baltic",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_11",
+      "Question Text": "Contemporary provocateur Ai Weiwei hails from which country?",
+      "Option A": "Japan",
+      "Option B": "South Korea",
+      "Option C": "China",
+      "Option D": "Taiwan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_12",
+      "Question Text": "Gustav Klimt, with his golden and sumptuous style, painted masterpieces in which European country?",
+      "Option A": "Germany",
+      "Option B": "Austria",
+      "Option C": "Switzerland",
+      "Option D": "Netherlands",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_13",
+      "Question Text": "In which lively European capital can you wander through the historic Pergamon Museum?",
+      "Option A": "Vienna",
+      "Option B": "Munich",
+      "Option C": "Berlin",
+      "Option D": "Hamburg",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_14",
+      "Question Text": "For how many whirlwind years did Van Gogh relentlessly create art?",
+      "Option A": 5,
+      "Option B": 10,
+      "Option C": 15,
+      "Option D": 20,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_15",
+      "Question Text": "Which 20th century art legend cycled through a Blue Period and a Rose Period?",
+      "Option A": "Monet",
+      "Option B": "Matisse",
+      "Option C": "Picasso",
+      "Option D": "Braque",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_16",
+      "Question Text": "What was the surname of Renaissance prodigy Raphael?",
+      "Option A": "Santi",
+      "Option B": "Della Rovere",
+      "Option C": "Medici",
+      "Option D": "Borgia",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_17",
+      "Question Text": "Before art, what humble role did LS Lowry spend most of his life fulfilling?",
+      "Option A": "Teacher",
+      "Option B": "Rent Collector",
+      "Option C": "Postman",
+      "Option D": "Clerk",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_18",
+      "Question Text": "Which rugged material did Michelangelo use to carve David?",
+      "Option A": "Granite",
+      "Option B": "Limestone",
+      "Option C": "Marble",
+      "Option D": "Sandstone",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_19",
+      "Question Text": "In what year did Andy Warhol first exhibit his iconic soup can paintings?",
+      "Option A": 1960,
+      "Option B": 1962,
+      "Option C": 1964,
+      "Option D": 1966,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_20",
+      "Question Text": "Which eccentric 20th century surrealist had a wife and muse named Gala?",
+      "Option A": "Magritte",
+      "Option B": "Picasso",
+      "Option C": "Salvador Dali",
+      "Option D": "Max Ernst",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_21",
+      "Question Text": "Albert Namatjira is celebrated as a famous artist from which country?",
+      "Option A": "New Zealand",
+      "Option B": "Australia",
+      "Option C": "Papua New Guinea",
+      "Option D": "Indonesia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_22",
+      "Question Text": "In 'The Birth of Venus,' upon what does the goddess gracefully stand?",
+      "Option A": "Rock",
+      "Option B": "Cloud",
+      "Option C": "Shell",
+      "Option D": "Wave",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_23",
+      "Question Text": "Which buzzing US city was the dynamic playground for graffiti legend Jean-Michel Basquiat?",
+      "Option A": "Chicago",
+      "Option B": "Los Angeles",
+      "Option C": "New York",
+      "Option D": "San Francisco",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_24",
+      "Question Text": "What's the first name of the British pop art icon Mr. Hockney?",
+      "Option A": "Peter",
+      "Option B": "John",
+      "Option C": "David",
+      "Option D": "Michael",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_25",
+      "Question Text": "In which county would you wander through 'Constable Country'?",
+      "Option A": "Devon",
+      "Option B": "Cornwall",
+      "Option C": "Suffolk",
+      "Option D": "Kent",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_26",
+      "Question Text": "Which French artist stirred up a brilliant feast of color in 'The Dessert: Harmony in Red'?",
+      "Option A": "Monet",
+      "Option B": "Matisse",
+      "Option C": "Cézanne",
+      "Option D": "Renoir",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_27",
+      "Question Text": "In which vibrant UK city is the Kelvingrove Art Gallery located?",
+      "Option A": "Edinburgh",
+      "Option B": "Manchester",
+      "Option C": "Glasgow",
+      "Option D": "Liverpool",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_28",
+      "Question Text": "Which childhood illness did Frida Kahlo bravely battle?",
+      "Option A": "Tuberculosis",
+      "Option B": "Polio",
+      "Option C": "Meningitis",
+      "Option D": "Scarlet Fever",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_29",
+      "Question Text": "Which football team did the legendary painter LS Lowry cheer for?",
+      "Option A": "Manchester United",
+      "Option B": "Liverpool",
+      "Option C": "Manchester City",
+      "Option D": "Arsenal",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_30",
+      "Question Text": "Which Dutch genius, born in 1632, was famous for depicting domestic life in Delft?",
+      "Option A": "Rembrandt",
+      "Option B": "Frans Hals",
+      "Option C": "Vermeer",
+      "Option D": "Jan Steen",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_31",
+      "Question Text": "Which starry-eyed artist painted 'The Starry Night Over The Rhone' in 1888?",
+      "Option A": "Gauguin",
+      "Option B": "Monet",
+      "Option C": "Van Gogh",
+      "Option D": "Cézanne",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_32",
+      "Question Text": "Which pointillism pioneer dotted together the iconic 'A Sunday on La Grande Jatte'?",
+      "Option A": "Pissarro",
+      "Option B": "Signac",
+      "Option C": "Seurat",
+      "Option D": "Monet",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_33",
+      "Question Text": "Which country is the birthplace of Wassily Kandinsky?",
+      "Option A": "Germany",
+      "Option B": "Russia",
+      "Option C": "France",
+      "Option D": "Austria",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_34",
+      "Question Text": "In 'American Gothic,' how many figures stand before the farmhouse?",
+      "Option A": 1,
+      "Option B": 2,
+      "Option C": 3,
+      "Option D": 4,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_35",
+      "Question Text": "Who's the genius behind 'Salvator Mundi,' which fetched $407 million at auction?",
+      "Option A": "Michelangelo",
+      "Option B": "Rafael",
+      "Option C": "Leonardo da Vinci",
+      "Option D": "Caravaggio",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_36",
+      "Question Text": "What's the first name of the French painter Cezanne?",
+      "Option A": "Pierre",
+      "Option B": "Paul",
+      "Option C": "Jean",
+      "Option D": "Claude",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_37",
+      "Question Text": "Finish this Rembrandt title: 'The Night ___'",
+      "Option A": "Watch",
+      "Option B": "Guard",
+      "Option C": "Shift",
+      "Option D": "Patrol",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_38",
+      "Question Text": "Which revolutionary artist shook up 1907 with 'Les Demoiselles d'Avignon'?",
+      "Option A": "Matisse",
+      "Option B": "Braque",
+      "Option C": "Picasso",
+      "Option D": "Modigliani",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_39",
+      "Question Text": "In Aussie aboriginal art, what fiery pigment brings a bold splash of tradition to life?",
+      "Option A": "Yellow",
+      "Option B": "Red",
+      "Option C": "Orange",
+      "Option D": "Brown",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_40",
+      "Question Text": "What's the first name of the French maestro who practically invented impressionism?",
+      "Option A": "Pierre",
+      "Option B": "Claude",
+      "Option C": "Jean",
+      "Option D": "Henri",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_41",
+      "Question Text": "In which charming French city is the Musee D'Orsay located?",
+      "Option A": "Lyon",
+      "Option B": "Marseille",
+      "Option C": "Paris",
+      "Option D": "Nice",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_42",
+      "Question Text": "Which art movement had Renoir leading the charge with sun-dappled scenes?",
+      "Option A": "Post-Impressionism",
+      "Option B": "Expressionism",
+      "Option C": "Impressionism",
+      "Option D": "Fauvism",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_43",
+      "Question Text": "In which decade did the mysterious Banksy start turning urban walls into art statements?",
+      "Option A": "1980s",
+      "Option B": "1990s",
+      "Option C": "2000s",
+      "Option D": "2010s",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_44",
+      "Question Text": "Which country proudly birthed Georgia O'Keeffe in the 20th century?",
+      "Option A": "Canada",
+      "Option B": "United States",
+      "Option C": "Mexico",
+      "Option D": "Brazil",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_45",
+      "Question Text": "Name the crooner who turned Van Gogh's starry saga into a 70s hit song",
+      "Option A": "Bob Dylan",
+      "Option B": "Neil Young",
+      "Option C": "Don McLean",
+      "Option D": "James Taylor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_46",
+      "Question Text": "Who's the Spanish maestro behind 'Old Woman Frying Eggs'?",
+      "Option A": "El Greco",
+      "Option B": "Velasquez",
+      "Option C": "Zurbarán",
+      "Option D": "Murillo",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_47",
+      "Question Text": "What's the first name of the bold British modern maverick Ms. Emin?",
+      "Option A": "Sarah",
+      "Option B": "Rachel",
+      "Option C": "Tracey",
+      "Option D": "Emma",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_48",
+      "Question Text": "Which first name pairs with the famous Norwegian artist of 'The Scream'?",
+      "Option A": "Erik",
+      "Option B": "Edvard",
+      "Option C": "Hans",
+      "Option D": "Bjorn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_49",
+      "Question Text": "In 'The Last Supper', what color accessory is Jesus sporting?",
+      "Option A": "Red",
+      "Option B": "Green",
+      "Option C": "Blue",
+      "Option D": "Purple",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_50",
+      "Question Text": "Which legendary Dutch artist, whose full name is a tongue-twister, went by a name synonymous with brilliance?",
+      "Option A": "Rembrandt",
+      "Option B": "Vermeer",
+      "Option C": "Frans Hals",
+      "Option D": "Jan Steen",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_51",
+      "Question Text": "Name the iconic masterpiece by Hans Holbein the Younger featuring two diplomats",
+      "Option A": "The Ambassadors",
+      "Option B": "The Merchants",
+      "Option C": "The Nobles",
+      "Option D": "The Scholars",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_52",
+      "Question Text": "In which Spanish capital does 'Las Meninas' capture royal court life?",
+      "Option A": "Seville",
+      "Option B": "Barcelona",
+      "Option C": "Madrid",
+      "Option D": "Valencia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_53",
+      "Question Text": "During which century did Rembrandt cast his dramatic chiaroscuro spell?",
+      "Option A": "16th",
+      "Option B": "17th",
+      "Option C": "18th",
+      "Option D": "19th",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_54",
+      "Question Text": "Which adventurous French artist set sail for Tahiti in 1891?",
+      "Option A": "Monet",
+      "Option B": "Cézanne",
+      "Option C": "Gauguin",
+      "Option D": "Renoir",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_55",
+      "Question Text": "In which city is the Met—the ultimate treasure trove of art and culture—located?",
+      "Option A": "Boston",
+      "Option B": "Washington D.C.",
+      "Option C": "Chicago",
+      "Option D": "New York",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_56",
+      "Question Text": "This 18th century virtuoso, Canaletto, painted dreamy vistas. From which country did he hail?",
+      "Option A": "France",
+      "Option B": "Italy",
+      "Option C": "Spain",
+      "Option D": "Netherlands",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_57",
+      "Question Text": "Which British brush-wielding genius captured countryside charm in the painting 'The Hay Wain'?",
+      "Option A": "Turner",
+      "Option B": "Constable",
+      "Option C": "Gainsborough",
+      "Option D": "Reynolds",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_58",
+      "Question Text": "Which modern sculptor gifted us the towering 'Angel of the North'?",
+      "Option A": "Kapoor",
+      "Option B": "Moore",
+      "Option C": "Gormley",
+      "Option D": "Hepworth",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_59",
+      "Question Text": "Who's the Italian master behind the dramatic 'Beheading of St John the Baptist'?",
+      "Option A": "Raphael",
+      "Option B": "Caravaggio",
+      "Option C": "Titian",
+      "Option D": "Bellini",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_60",
+      "Question Text": "Which Renaissance maestro known for his intricate prints hailed from Germany?",
+      "Option A": "Dürer",
+      "Option B": "Holbein",
+      "Option C": "Cranach",
+      "Option D": "Altdorfer",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_61",
+      "Question Text": "This modern art maestro, Gerhard Richter, hails from which country?",
+      "Option A": "France",
+      "Option B": "Italy",
+      "Option C": "Germany",
+      "Option D": "Netherlands",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_62",
+      "Question Text": "In which stylish European city did Picasso sign his very first art contract?",
+      "Option A": "London",
+      "Option B": "Madrid",
+      "Option C": "Paris",
+      "Option D": "Rome",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_63",
+      "Question Text": "Which British artist made waves with 'The Splash' and 'A Bigger Splash'?",
+      "Option A": "Freud",
+      "Option B": "Bacon",
+      "Option C": "Hockney",
+      "Option D": "Riley",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_64",
+      "Question Text": "Which revolutionary icon was immortalized in Andy Warhol's pop art?",
+      "Option A": "Che Guevara",
+      "Option B": "Fidel Castro",
+      "Option C": "Nelson Mandela",
+      "Option D": "Martin Luther King Jr.",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_65",
+      "Question Text": "Which 20th century Mexican artist battled polio as a child but still painted her pain into power?",
+      "Option A": "Frida Kahlo",
+      "Option B": "Diego Rivera",
+      "Option C": "Remedios Varo",
+      "Option D": "María Izquierdo",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_66",
+      "Question Text": "In which buzzing US city does the Solomon R. Guggenheim Museum call home?",
+      "Option A": "Los Angeles",
+      "Option B": "Chicago",
+      "Option C": "New York",
+      "Option D": "San Francisco",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_67",
+      "Question Text": "Which floaty water bloom transformed Claude Monet's canvases into a dreamscape wonderland?",
+      "Option A": "Roses",
+      "Option B": "Water Lilies",
+      "Option C": "Sunflowers",
+      "Option D": "Daisies",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_68",
+      "Question Text": "During which century did early Dutch maestro Jan van Eyck dazzle us with his art skills?",
+      "Option A": "14th",
+      "Option B": "15th",
+      "Option C": "16th",
+      "Option D": "17th",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_69",
+      "Question Text": "Which Italian Renaissance rockstar of the 16th century took on dragons with his brush in 'St George and the Dragon'?",
+      "Option A": "Leonardo da Vinci",
+      "Option B": "Raphael",
+      "Option C": "Tintoretto",
+      "Option D": "Michelangelo",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_70",
+      "Question Text": "Fill in the blank: Leonardo da Vinci's epic 'The Last ___' featured a meal so legendary it might've ruined any dinner party?",
+      "Option A": "Feast",
+      "Option B": "Supper",
+      "Option C": "Dinner",
+      "Option D": "Meal",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_71",
+      "Question Text": "Which surreal, eccentric artist once claimed he was the reincarnation of his dead brother?",
+      "Option A": "Picasso",
+      "Option B": "Magritte",
+      "Option C": "Salvador Dali",
+      "Option D": "René Magritte",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_72",
+      "Question Text": "Guess which bizarre creature went up in flames in Salvador Dali's masterpiece 'The Burning ___'?",
+      "Option A": "Horse",
+      "Option B": "Elephant",
+      "Option C": "Giraffe",
+      "Option D": "Lion",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_73",
+      "Question Text": "Which quirky Spanish painter churned out masterpieces like 'The Tilled Field' and 'The Farm'?",
+      "Option A": "Picasso",
+      "Option B": "Joan Miró",
+      "Option C": "Salvador Dali",
+      "Option D": "Juan Gris",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_74",
+      "Question Text": "Peter Paul, a German artist born in 1577, had a surname as bold as his brushstrokes. What is it?",
+      "Option A": "Van Dyck",
+      "Option B": "Dürer",
+      "Option C": "Holbein",
+      "Option D": "Rubens",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_75",
+      "Question Text": "Which biblical dude doubled as the name of Michelangelo's legendary marble masterpiece?",
+      "Option A": "Moses",
+      "Option B": "Solomon",
+      "Option C": "David",
+      "Option D": "Samson",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_76",
+      "Question Text": "In what year did Claude Monet make his grand entrance into the world?",
+      "Option A": 1830,
+      "Option B": 1840,
+      "Option C": 1850,
+      "Option D": 1860,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_77",
+      "Question Text": "Van Gogh's art life was as turbulent as his hair, but how many paintings did he manage to sell in his lifetime?",
+      "Option A": 0,
+      "Option B": 1,
+      "Option C": 2,
+      "Option D": 3,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_78",
+      "Question Text": "In which turbulent decade did Picasso paint 'Guernica'?",
+      "Option A": "1920s",
+      "Option B": "1930s",
+      "Option C": "1940s",
+      "Option D": "1950s",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_79",
+      "Question Text": "Channeling timeless vibes, what color outfit is the iconic lady rocking in 'Whistler's Mother'?",
+      "Option A": "White",
+      "Option B": "Brown",
+      "Option C": "Black",
+      "Option D": "Gray",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_80",
+      "Question Text": "What's the first name of the British pop art icon Mr. Hockney?",
+      "Option A": "Peter",
+      "Option B": "John",
+      "Option C": "David",
+      "Option D": "Michael",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_81",
+      "Question Text": "In 'American Gothic,' how many figures stand before the farmhouse?",
+      "Option A": 1,
+      "Option B": 2,
+      "Option C": 3,
+      "Option D": 4,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_82",
+      "Question Text": "Which country proudly birthed Georgia O'Keeffe in the 20th century?",
+      "Option A": "Canada",
+      "Option B": "United States",
+      "Option C": "Mexico",
+      "Option D": "Brazil",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_83",
+      "Question Text": "Which adventurous French artist set sail for Tahiti in 1891?",
+      "Option A": "Monet",
+      "Option B": "Cézanne",
+      "Option C": "Gauguin",
+      "Option D": "Renoir",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_84",
+      "Question Text": "Which revolutionary icon was immortalized in Andy Warhol's pop art?",
+      "Option A": "Che Guevara",
+      "Option B": "Fidel Castro",
+      "Option C": "Nelson Mandela",
+      "Option D": "Martin Luther King Jr.",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_85",
+      "Question Text": "Channeling timeless vibes, what color outfit is the iconic lady rocking in 'Whistler's Mother'?",
+      "Option A": "White",
+      "Option B": "Brown",
+      "Option C": "Black",
+      "Option D": "Gray",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_86",
+      "Question Text": "Who painted The Mona Lisa?",
+      "Option A": "Michelangelo",
+      "Option B": "Leonardo Da Vinci",
+      "Option C": "Raphael",
+      "Option D": "Botticelli",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_87",
+      "Question Text": "Which famous artist cut off his own ear?",
+      "Option A": "Paul Gauguin",
+      "Option B": "Vincent Van Gogh",
+      "Option C": "Claude Monet",
+      "Option D": "Edgar Degas",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_88",
+      "Question Text": "What art movement is associated with Pablo Picasso?",
+      "Option A": "Impressionism",
+      "Option B": "Surrealism",
+      "Option C": "Cubism",
+      "Option D": "Realism",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_89",
+      "Question Text": "In which city is the Louvre Museum located?",
+      "Option A": "Rome",
+      "Option B": "London",
+      "Option C": "Paris",
+      "Option D": "Madrid",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_90",
+      "Question Text": "Who painted the ceiling of the Sistine Chapel?",
+      "Option A": "Leonardo Da Vinci",
+      "Option B": "Michelangelo",
+      "Option C": "Raphael",
+      "Option D": "Donatello",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_91",
+      "Question Text": "Who painted 'The Persistence of Memory'?",
+      "Option A": "Pablo Picasso",
+      "Option B": "Salvador Dalí",
+      "Option C": "René Magritte",
+      "Option D": "Joan Miró",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_92",
+      "Question Text": "Which Dutch artist is known for 'The Night Watch'?",
+      "Option A": "Johannes Vermeer",
+      "Option B": "Rembrandt",
+      "Option C": "Vincent van Gogh",
+      "Option D": "Frans Hals",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_93",
+      "Question Text": "What is the primary characteristic of Impressionism?",
+      "Option A": "Geometric Shapes",
+      "Option B": "Dark Colors",
+      "Option C": "Emphasis on Light and Color",
+      "Option D": "Religious Themes",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_94",
+      "Question Text": "Which artist is known for the mural 'Guernica'?",
+      "Option A": "Salvador Dalí",
+      "Option B": "Pablo Picasso",
+      "Option C": "Joan Miró",
+      "Option D": "Francisco Goya",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_95",
+      "Question Text": "Which American artist is known for Western depictions?",
+      "Option A": "Norman Rockwell",
+      "Option B": "Frederic Remington",
+      "Option C": "Edward Hopper",
+      "Option D": "Andrew Wyeth",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_96",
+      "Question Text": "What style is Jackson Pollock known for?",
+      "Option A": "Pop Art",
+      "Option B": "Abstract Expressionism",
+      "Option C": "Minimalism",
+      "Option D": "Realism",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_97",
+      "Question Text": "Who is known for paintings with melting clocks?",
+      "Option A": "René Magritte",
+      "Option B": "Salvador Dalí",
+      "Option C": "Max Ernst",
+      "Option D": "André Breton",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_98",
+      "Question Text": "Who created the sculpture 'David'?",
+      "Option A": "Donatello",
+      "Option B": "Michelangelo",
+      "Option C": "Bernini",
+      "Option D": "Rodin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_99",
+      "Question Text": "Who painted 'The Birth of Venus'?",
+      "Option A": "Leonardo da Vinci",
+      "Option B": "Sandro Botticelli",
+      "Option C": "Raphael",
+      "Option D": "Titian",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_100",
+      "Question Text": "Which female artist is known for Mexican self-portraits?",
+      "Option A": "Georgia O'Keeffe",
+      "Option B": "Frida Kahlo",
+      "Option C": "Mary Cassatt",
+      "Option D": "Louise Bourgeois",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_101",
+      "Question Text": "What art movement is Claude Monet associated with?",
+      "Option A": "Cubism",
+      "Option B": "Surrealism",
+      "Option C": "Impressionism",
+      "Option D": "Expressionism",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_102",
+      "Question Text": "Who created the 'Campbell's Soup Cans' artwork?",
+      "Option A": "Roy Lichtenstein",
+      "Option B": "Andy Warhol",
+      "Option C": "Keith Haring",
+      "Option D": "Robert Rauschenberg",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_103",
+      "Question Text": "Who painted 'Girl with a Pearl Earring'?",
+      "Option A": "Rembrandt",
+      "Option B": "Johannes Vermeer",
+      "Option C": "Frans Hals",
+      "Option D": "Jan van Eyck",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_104",
+      "Question Text": "What is a painting done on wet plaster called?",
+      "Option A": "Tempera",
+      "Option B": "Fresco",
+      "Option C": "Gouache",
+      "Option D": "Encaustic",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_105",
+      "Question Text": "Who painted 'The Last Supper'?",
+      "Option A": "Michelangelo",
+      "Option B": "Leonardo Da Vinci",
+      "Option C": "Raphael",
+      "Option D": "Botticelli",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_106",
+      "Question Text": "Who created 'The Thinker' sculpture?",
+      "Option A": "Auguste Rodin",
+      "Option B": "Constantin Brâncuși",
+      "Option C": "Alberto Giacometti",
+      "Option D": "Henry Moore",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_107",
+      "Question Text": "What is the primary focus of Surrealism?",
+      "Option A": "Nature",
+      "Option B": "Reality",
+      "Option C": "The Unconscious Mind",
+      "Option D": "Religious Themes",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_108",
+      "Question Text": "Who painted 'American Gothic'?",
+      "Option A": "Edward Hopper",
+      "Option B": "Grant Wood",
+      "Option C": "Norman Rockwell",
+      "Option D": "Andrew Wyeth",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_109",
+      "Question Text": "Which artist had Blue and Rose periods?",
+      "Option A": "Vincent van Gogh",
+      "Option B": "Pablo Picasso",
+      "Option C": "Henri Matisse",
+      "Option D": "Paul Gauguin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_110",
+      "Question Text": "What art movement is Wassily Kandinsky associated with?",
+      "Option A": "Impressionism",
+      "Option B": "Cubism",
+      "Option C": "Abstract Art",
+      "Option D": "Realism",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_111",
+      "Question Text": "Who is famous for Water Lilies paintings?",
+      "Option A": "Vincent van Gogh",
+      "Option B": "Claude Monet",
+      "Option C": "Pierre-Auguste Renoir",
+      "Option D": "Camille Pissarro",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_112",
+      "Question Text": "Who painted 'The Scream'?",
+      "Option A": "Gustav Klimt",
+      "Option B": "Edvard Munch",
+      "Option C": "Egon Schiele",
+      "Option D": "Ernst Ludwig Kirchner",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_113",
+      "Question Text": "Who painted 'The School of Athens'?",
+      "Option A": "Leonardo da Vinci",
+      "Option B": "Michelangelo",
+      "Option C": "Raphael",
+      "Option D": "Botticelli",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_114",
+      "Question Text": "What technique did Georges Seurat develop?",
+      "Option A": "Impasto",
+      "Option B": "Sfumato",
+      "Option C": "Pointillism",
+      "Option D": "Chiaroscuro",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_115",
+      "Question Text": "Who is famous for paintings of ballerinas?",
+      "Option A": "Auguste Renoir",
+      "Option B": "Edgar Degas",
+      "Option C": "Claude Monet",
+      "Option D": "Édouard Manet",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_116",
+      "Question Text": "What are the famous prehistoric cave paintings in France?",
+      "Option A": "Altamira",
+      "Option B": "Lascaux",
+      "Option C": "Chauvet",
+      "Option D": "Font-de-Gaume",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_117",
+      "Question Text": "Who painted 'The Garden of Earthly Delights'?",
+      "Option A": "Albrecht Dürer",
+      "Option B": "Hieronymus Bosch",
+      "Option C": "Pieter Bruegel",
+      "Option D": "Jan van Eyck",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_118",
+      "Question Text": "Who is known for large-scale flower paintings?",
+      "Option A": "Mary Cassatt",
+      "Option B": "Georgia O'Keeffe",
+      "Option C": "Frida Kahlo",
+      "Option D": "Berthe Morisot",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_119",
+      "Question Text": "What is the main subject of 'Christina's World'?",
+      "Option A": "A Woman in a Field",
+      "Option B": "A Farm House",
+      "Option C": "A Landscape",
+      "Option D": "A Portrait",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_120",
+      "Question Text": "Who is known as father of modern art criticism?",
+      "Option A": "John Ruskin",
+      "Option B": "Charles Baudelaire",
+      "Option C": "Roger Fry",
+      "Option D": "Clement Greenberg",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_121",
+      "Question Text": "Who painted 'The Hay Wain'?",
+      "Option A": "William Turner",
+      "Option B": "John Constable",
+      "Option C": "Thomas Gainsborough",
+      "Option D": "George Stubbs",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_122",
+      "Question Text": "What technique creates texture with thick paint?",
+      "Option A": "Impasto",
+      "Option B": "Glazing",
+      "Option C": "Scumbling",
+      "Option D": "Stippling",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_123",
+      "Question Text": "Who created the mobile sculpture?",
+      "Option A": "Henry Moore",
+      "Option B": "Alexander Calder",
+      "Option C": "Constantin Brâncuși",
+      "Option D": "Alberto Giacometti",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_124",
+      "Question Text": "Who painted 'Liberty Leading the People'?",
+      "Option A": "Jacques-Louis David",
+      "Option B": "Eugène Delacroix",
+      "Option C": "Jean-Auguste-Dominique Ingres",
+      "Option D": "Théodore Géricault",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_125",
+      "Question Text": "Who painted 'The Kiss'?",
+      "Option A": "Edvard Munch",
+      "Option B": "Gustav Klimt",
+      "Option C": "Auguste Rodin",
+      "Option D": "Constantin Brâncuși",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_126",
+      "Question Text": "Who painted 'Las Meninas'?",
+      "Option A": "El Greco",
+      "Option B": "Diego Velázquez",
+      "Option C": "Francisco Goya",
+      "Option D": "Bartolomé Murillo",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_127",
+      "Question Text": "Who was a leading figure in Dada?",
+      "Option A": "Salvador Dalí",
+      "Option B": "Marcel Duchamp",
+      "Option C": "Max Ernst",
+      "Option D": "Man Ray",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_128",
+      "Question Text": "What art movement is Henri Matisse associated with?",
+      "Option A": "Cubism",
+      "Option B": "Fauvism",
+      "Option C": "Expressionism",
+      "Option D": "Surrealism",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_129",
+      "Question Text": "Who painted 'Nighthawks'?",
+      "Option A": "Norman Rockwell",
+      "Option B": "Edward Hopper",
+      "Option C": "Andrew Wyeth",
+      "Option D": "Grant Wood",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_130",
+      "Question Text": "What movement uses geometric shapes and bright colors?",
+      "Option A": "Impressionism",
+      "Option B": "Expressionism",
+      "Option C": "Cubism",
+      "Option D": "Surrealism",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_131",
+      "Question Text": "Who painted 'The Sleeping Gypsy'?",
+      "Option A": "Paul Gauguin",
+      "Option B": "Henri Rousseau",
+      "Option C": "Georges Seurat",
+      "Option D": "Paul Cézanne",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_132",
+      "Question Text": "Who created 'The Age of Bronze'?",
+      "Option A": "Auguste Rodin",
+      "Option B": "Constantin Brâncuși",
+      "Option C": "Henry Moore",
+      "Option D": "Alberto Giacometti",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_133",
+      "Question Text": "What is art created by manipulating landscapes called?",
+      "Option A": "Environmental Art",
+      "Option B": "Land Art",
+      "Option C": "Earth Art",
+      "Option D": "Nature Art",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_134",
+      "Question Text": "Who created 'The Great Wave off Kanagawa'?",
+      "Option A": "Hiroshige",
+      "Option B": "Hokusai",
+      "Option C": "Utamaro",
+      "Option D": "Kuniyoshi",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_135",
+      "Question Text": "Who created 'Physical Impossibility of Death'?",
+      "Option A": "Jeff Koons",
+      "Option B": "Damien Hirst",
+      "Option C": "Tracey Emin",
+      "Option D": "Anish Kapoor",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_136",
+      "Question Text": "Who depicts American urban and rural scenes?",
+      "Option A": "Norman Rockwell",
+      "Option B": "Edward Hopper",
+      "Option C": "Andrew Wyeth",
+      "Option D": "Thomas Hart Benton",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_137",
+      "Question Text": "What creates illusion of depth on flat surface?",
+      "Option A": "Perspective",
+      "Option B": "Foreshortening",
+      "Option C": "Chiaroscuro",
+      "Option D": "Trompe l'oeil",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_138",
+      "Question Text": "Who painted 'Whistler's Mother'?",
+      "Option A": "John Singer Sargent",
+      "Option B": "James McNeill Whistler",
+      "Option C": "Winslow Homer",
+      "Option D": "Thomas Eakins",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_139",
+      "Question Text": "What movement is Andy Warhol associated with?",
+      "Option A": "Abstract Expressionism",
+      "Option B": "Pop Art",
+      "Option C": "Minimalism",
+      "Option D": "Conceptual Art",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_140",
+      "Question Text": "Who is known for paper 'Cut-Outs'?",
+      "Option A": "Pablo Picasso",
+      "Option B": "Henri Matisse",
+      "Option C": "Georges Braque",
+      "Option D": "Fernand Léger",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_141",
+      "Question Text": "What is a three-panel painting called?",
+      "Option A": "Diptych",
+      "Option B": "Triptych",
+      "Option C": "Polyptych",
+      "Option D": "Pentaptych",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_142",
+      "Question Text": "Who painted 'Impression, Sunrise'?",
+      "Option A": "Pierre-Auguste Renoir",
+      "Option B": "Claude Monet",
+      "Option C": "Edgar Degas",
+      "Option D": "Camille Pissarro",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_143",
+      "Question Text": "What movement features dreamy, illogical images?",
+      "Option A": "Expressionism",
+      "Option B": "Dadaism",
+      "Option C": "Surrealism",
+      "Option D": "Symbolism",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_144",
+      "Question Text": "Who created the 'Fountain' readymade?",
+      "Option A": "Salvador Dalí",
+      "Option B": "Marcel Duchamp",
+      "Option C": "Man Ray",
+      "Option D": "Max Ernst",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_145",
+      "Question Text": "Who painted 'Storm on the Sea of Galilee'?",
+      "Option A": "J.M.W. Turner",
+      "Option B": "Rembrandt",
+      "Option C": "Winslow Homer",
+      "Option D": "Ivan Aivazovsky",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_146",
+      "Question Text": "What movement uses simple shapes and limited colors?",
+      "Option A": "Maximalism",
+      "Option B": "Minimalism",
+      "Option C": "Modernism",
+      "Option D": "Mannerism",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_147",
+      "Question Text": "Who painted 'The Garden of Love'?",
+      "Option A": "Antoine Watteau",
+      "Option B": "Peter Paul Rubens",
+      "Option C": "Nicolas Poussin",
+      "Option D": "Jean-Honoré Fragonard",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_148",
+      "Question Text": "What is a preliminary sketch called?",
+      "Option A": "Study",
+      "Option B": "Cartoon",
+      "Option C": "Draft",
+      "Option D": "Layout",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_149",
+      "Question Text": "Who painted 'The Card Players' series?",
+      "Option A": "Vincent van Gogh",
+      "Option B": "Paul Cézanne",
+      "Option C": "Edgar Degas",
+      "Option D": "Georges Seurat",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_150",
+      "Question Text": "Who created the 'LOVE' sculpture?",
+      "Option A": "Claes Oldenburg",
+      "Option B": "Robert Indiana",
+      "Option C": "Alexander Calder",
+      "Option D": "Louise Nevelson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_151",
+      "Question Text": "What is a painting of inanimate objects called?",
+      "Option A": "Portrait",
+      "Option B": "Landscape",
+      "Option C": "Still Life",
+      "Option D": "Genre Scene",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_152",
+      "Question Text": "Who painted 'The Peasant Wedding'?",
+      "Option A": "Hieronymus Bosch",
+      "Option B": "Pieter Bruegel the Elder",
+      "Option C": "Jan van Eyck",
+      "Option D": "Roger van der Weyden",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_153",
+      "Question Text": "Who painted 'The Death of Marat'?",
+      "Option A": "Eugène Delacroix",
+      "Option B": "Jacques-Louis David",
+      "Option C": "Jean-Auguste-Dominique Ingres",
+      "Option D": "Antoine-Jean Gros",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_154",
+      "Question Text": "What technique created the 'Pietà'?",
+      "Option A": "Bronze Casting",
+      "Option B": "Marble Sculpture",
+      "Option C": "Wood Carving",
+      "Option D": "Terra Cotta",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_155",
+      "Question Text": "Who painted 'The Gross Clinic'?",
+      "Option A": "Winslow Homer",
+      "Option B": "Thomas Eakins",
+      "Option C": "John Singer Sargent",
+      "Option D": "William Merritt Chase",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_156",
+      "Question Text": "What is a large outdoor painting called?",
+      "Option A": "Mural",
+      "Option B": "Fresco",
+      "Option C": "Panel",
+      "Option D": "Canvas",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_157",
+      "Question Text": "Who is known for drip paintings?",
+      "Option A": "Willem de Kooning",
+      "Option B": "Jackson Pollock",
+      "Option C": "Mark Rothko",
+      "Option D": "Franz Kline",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_158",
+      "Question Text": "Who painted 'The Oath of the Horatii'?",
+      "Option A": "Nicolas Poussin",
+      "Option B": "Jacques-Louis David",
+      "Option C": "Jean-Auguste-Dominique Ingres",
+      "Option D": "Eugène Delacroix",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_159",
+      "Question Text": "Who created 'The Raft of the Medusa'?",
+      "Option A": "Eugène Delacroix",
+      "Option B": "Théodore Géricault",
+      "Option C": "Antoine-Jean Gros",
+      "Option D": "Paul Delaroche",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_160",
+      "Question Text": "Who painted 'The Red Vineyard'?",
+      "Option A": "Paul Cézanne",
+      "Option B": "Vincent van Gogh",
+      "Option C": "Paul Gauguin",
+      "Option D": "Georges Seurat",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_161",
+      "Question Text": "Who painted 'The Anatomy Lesson'?",
+      "Option A": "Frans Hals",
+      "Option B": "Rembrandt",
+      "Option C": "Jan Steen",
+      "Option D": "Johannes Vermeer",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_162",
+      "Question Text": "Who created 'Bird in Space'?",
+      "Option A": "Henry Moore",
+      "Option B": "Constantin Brâncuși",
+      "Option C": "Alberto Giacometti",
+      "Option D": "Barbara Hepworth",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_163",
+      "Question Text": "What is a painting of a person called?",
+      "Option A": "Figure",
+      "Option B": "Portrait",
+      "Option C": "Study",
+      "Option D": "Model",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_164",
+      "Question Text": "Who painted 'Olympia'?",
+      "Option A": "Pierre-Auguste Renoir",
+      "Option B": "Édouard Manet",
+      "Option C": "Edgar Degas",
+      "Option D": "Claude Monet",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_165",
+      "Question Text": "Who painted 'The Blue Boy'?",
+      "Option A": "Joshua Reynolds",
+      "Option B": "Thomas Gainsborough",
+      "Option C": "William Hogarth",
+      "Option D": "John Constable",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_166",
+      "Question Text": "Who is known for mother-child paintings?",
+      "Option A": "Berthe Morisot",
+      "Option B": "Mary Cassatt",
+      "Option C": "Eva Gonzalès",
+      "Option D": "Marie Bracquemond",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_167",
+      "Question Text": "What uses carved wooden blocks for printing?",
+      "Option A": "Lithography",
+      "Option B": "Woodcut",
+      "Option C": "Etching",
+      "Option D": "Engraving",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_168",
+      "Question Text": "Who painted 'Burial of Count Orgaz'?",
+      "Option A": "Diego Velázquez",
+      "Option B": "El Greco",
+      "Option C": "Francisco Goya",
+      "Option D": "Bartolomé Murillo",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_169",
+      "Question Text": "Who is known for colorful abstract works?",
+      "Option A": "Paul Klee",
+      "Option B": "Wassily Kandinsky",
+      "Option C": "Piet Mondrian",
+      "Option D": "Kazimir Malevich",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_170",
+      "Question Text": "What movement is Mark Rothko associated with?",
+      "Option A": "Abstract Expressionism",
+      "Option B": "Color Field Painting",
+      "Option C": "Minimalism",
+      "Option D": "Pop Art",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_171",
+      "Question Text": "Who painted 'The Sleeping Gypsy'?",
+      "Option A": "Paul Gauguin",
+      "Option B": "Henri Rousseau",
+      "Option C": "Georges Seurat",
+      "Option D": "Paul Cézanne",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "ART_172",
+      "Question Text": "Who created 'The Bride Stripped Bare'?",
+      "Option A": "Salvador Dalí",
+      "Option B": "Marcel Duchamp",
+      "Option C": "Max Ernst",
+      "Option D": "Man Ray",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    }
+  ]
+}

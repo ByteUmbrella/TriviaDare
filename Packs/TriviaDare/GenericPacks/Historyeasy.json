@@ -1,0 +1,1444 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "HISTORY_1",
+      "Question Text": "What is the name of Bill Clinton's only daughter?",
+      "Option A": "Chelsea",
+      "Option B": "Hillary",
+      "Option C": "Laura",
+      "Option D": "Rebecca",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_2",
+      "Question Text": "In which mountain range was the Incan Empire based?",
+      "Option A": "Rocky Mountains",
+      "Option B": "Andes",
+      "Option C": "Sierra Nevada",
+      "Option D": "Rockies",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_3",
+      "Question Text": "The 'Lost Colony' of Roanoke was in which US state?",
+      "Option A": "North Carolina",
+      "Option B": "South Carolina",
+      "Option C": "Virginia",
+      "Option D": "Georgia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_4",
+      "Question Text": "Which country's economy went through a restructuring called perestroika in the 1980s?",
+      "Option A": "Russia",
+      "Option B": "Ukraine",
+      "Option C": "Soviet Union",
+      "Option D": "Belarus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_5",
+      "Question Text": "The Royal Family of which country financed Christopher Columbus's expeditions?",
+      "Option A": "Portugal",
+      "Option B": "France",
+      "Option C": "England",
+      "Option D": "Spain",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_6",
+      "Question Text": "The Wright brothers, the first people to make a powered flight, were which nationality?",
+      "Option A": "British",
+      "Option B": "French",
+      "Option C": "German",
+      "Option D": "American",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_7",
+      "Question Text": "What was the first name of former US diplomat Mr Kissinger?",
+      "Option A": "George",
+      "Option B": "Harry",
+      "Option C": "Henry",
+      "Option D": "Harold",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_8",
+      "Question Text": "During World War 2, Charles de Gaulle led the French resistance from which country?",
+      "Option A": "France",
+      "Option B": "England",
+      "Option C": "United Kingdom",
+      "Option D": "United States",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_9",
+      "Question Text": "The Great Smoky Mountains National Park was opened in 1940 in which state?",
+      "Option A": "Kentucky",
+      "Option B": "North Carolina",
+      "Option C": "Tennessee",
+      "Option D": "Virginia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_10",
+      "Question Text": "Empress Wu was the only female leader of which country?",
+      "Option A": "Japan",
+      "Option B": "Korea",
+      "Option C": "China",
+      "Option D": "Vietnam",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_11",
+      "Question Text": "Boers came into conflict with Xhosa people in which country?",
+      "Option A": "Namibia",
+      "Option B": "Zimbabwe",
+      "Option C": "South Africa",
+      "Option D": "Botswana",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_12",
+      "Question Text": "What is the name of the Space Shuttle which broke up on launch in 1986?",
+      "Option A": "Atlantis",
+      "Option B": "Challenger",
+      "Option C": "Discovery",
+      "Option D": "Endeavour",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_13",
+      "Question Text": "Which Civil Rights leader was the face of the Nation of Islam?",
+      "Option A": "Martin Luther King Jr.",
+      "Option B": "Malcolm X",
+      "Option C": "Medgar Evers",
+      "Option D": "Ralph Abernathy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_14",
+      "Question Text": "In World War 2, what was a Spitfire?",
+      "Option A": "Tank",
+      "Option B": "Battleship",
+      "Option C": "Fighter Plane",
+      "Option D": "Submarine",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_15",
+      "Question Text": "In which UK city was Queen Elizabeth I crowned in 1559?",
+      "Option A": "Oxford",
+      "Option B": "Cambridge",
+      "Option C": "London",
+      "Option D": "York",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_16",
+      "Question Text": "Scientist Galileo Galilei is one of the most famous people from which country?",
+      "Option A": "Spain",
+      "Option B": "France",
+      "Option C": "Italy",
+      "Option D": "Greece",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_17",
+      "Question Text": "Kennedy was elected to the US parliament in 1946 to represent which state?",
+      "Option A": "New York",
+      "Option B": "Massachusetts",
+      "Option C": "Rhode Island",
+      "Option D": "Connecticut",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_18",
+      "Question Text": "Britain transported convicts to which country, starting in 1840?",
+      "Option A": "Canada",
+      "Option B": "New Zealand",
+      "Option C": "Australia",
+      "Option D": "South Africa",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_19",
+      "Question Text": "What was the term for the UK's adoption of a new currency in 1970?",
+      "Option A": "Decimalization",
+      "Option B": "Monetization",
+      "Option C": "Standardization",
+      "Option D": "Modernization",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_20",
+      "Question Text": "What was the name of Hitler and Mussolini's political ideology?",
+      "Option A": "Nazism",
+      "Option B": "Communism",
+      "Option C": "Fascism",
+      "Option D": "Totalitarianism",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_21",
+      "Question Text": "Botany Bay was an early British colony in which country?",
+      "Option A": "New Zealand",
+      "Option B": "South Africa",
+      "Option C": "Australia",
+      "Option D": "Canada",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_22",
+      "Question Text": "Kurdistan was a troubled region in Turkey and which other country?",
+      "Option A": "Syria",
+      "Option B": "Iran",
+      "Option C": "Iraq",
+      "Option D": "Lebanon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_23",
+      "Question Text": "What was the first name of Elizabethan explorer Raleigh?",
+      "Option A": "John",
+      "Option B": "Richard",
+      "Option C": "Walter",
+      "Option D": "William",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_24",
+      "Question Text": "What is the name of Bill Clinton's only daughter?",
+      "Option A": "Chelsea",
+      "Option B": "Hillary",
+      "Option C": "Laura",
+      "Option D": "Rebecca",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_25",
+      "Question Text": "Which country hosted the first Eurovision song contest?",
+      "Option A": "France",
+      "Option B": "Italy",
+      "Option C": "Switzerland",
+      "Option D": "Belgium",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_26",
+      "Question Text": "The Battle of Hamburger Hill was a feature of which conflict?",
+      "Option A": "Korean War",
+      "Option B": "World War II",
+      "Option C": "Vietnam War",
+      "Option D": "Gulf War",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_27",
+      "Question Text": "What was the first name of US President Coolidge?",
+      "Option A": "Charles",
+      "Option B": "Herbert",
+      "Option C": "Calvin",
+      "Option D": "William",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_28",
+      "Question Text": "In 1840, a French colony became established in Akaroa in which country?",
+      "Option A": "Australia",
+      "Option B": "New Zealand",
+      "Option C": "Fiji",
+      "Option D": "Samoa",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_29",
+      "Question Text": "What was the generic term for North America after it was first discovered?",
+      "Option A": "Old World",
+      "Option B": "Western World",
+      "Option C": "New World",
+      "Option D": "Frontier",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_30",
+      "Question Text": "What was the term for people who rushed to California to look for gold?",
+      "Option A": "Gold Seekers",
+      "Option B": "Prospectors",
+      "Option C": "Miners",
+      "Option D": "Pioneers",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_31",
+      "Question Text": "President James Monroe was from which US state?",
+      "Option A": "North Carolina",
+      "Option B": "South Carolina",
+      "Option C": "Virginia",
+      "Option D": "Maryland",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_32",
+      "Question Text": "Hessians were soldiers from which country who came to fight in America?",
+      "Option A": "Austria",
+      "Option B": "Prussia",
+      "Option C": "Germany",
+      "Option D": "Switzerland",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_33",
+      "Question Text": "Leonid Brezhnev was a 20th-century leader of which country?",
+      "Option A": "Poland",
+      "Option B": "Czechoslovakia",
+      "Option C": "Soviet Union",
+      "Option D": "East Germany",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_34",
+      "Question Text": "Which term refers to the USSR and Americans stockpiling nuclear weapons?",
+      "Option A": "Nuclear Race",
+      "Option B": "Weapon Race",
+      "Option C": "Arms Race",
+      "Option D": "Military Race",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_35",
+      "Question Text": "The Molotov Cocktail is named after a foreign minister from which country?",
+      "Option A": "Soviet Union",
+      "Option B": "Russia",
+      "Option C": "Ukraine",
+      "Option D": "Poland",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_36",
+      "Question Text": "Which European is credited with discovering America?",
+      "Option A": "Vespucci",
+      "Option B": "Magellan",
+      "Option C": "Columbus",
+      "Option D": "Cabot",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_37",
+      "Question Text": "Edo is the former name of which world capital?",
+      "Option A": "Beijing",
+      "Option B": "Seoul",
+      "Option C": "Tokyo",
+      "Option D": "Taipei",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_38",
+      "Question Text": "The first African football World Cup was held in 2010 in which country?",
+      "Option A": "Nigeria",
+      "Option B": "Egypt",
+      "Option C": "South Africa",
+      "Option D": "Kenya",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_39",
+      "Question Text": "The 'Livre Tournois' was the currency in which country before an 18th-century revolution?",
+      "Option A": "Spain",
+      "Option B": "Italy",
+      "Option C": "France",
+      "Option D": "Belgium",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_40",
+      "Question Text": "What was Aristotle's job in Ancient Greece?",
+      "Option A": "Scientist",
+      "Option B": "Politician",
+      "Option C": "Philosopher",
+      "Option D": "Merchant",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_41",
+      "Question Text": "The Viet Cong fought in a conflict in which country?",
+      "Option A": "Laos",
+      "Option B": "Cambodia",
+      "Option C": "Vietnam",
+      "Option D": "Thailand",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_42",
+      "Question Text": "Which Nobel prize did Nelson Mandela win?",
+      "Option A": "Literature",
+      "Option B": "Peace",
+      "Option C": "Economics",
+      "Option D": "Science",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_43",
+      "Question Text": "Princess Victoria, heir to the throne of which country, got married in 2010?",
+      "Option A": "Norway",
+      "Option B": "Sweden",
+      "Option C": "Denmark",
+      "Option D": "Finland",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_44",
+      "Question Text": "Which hurricane devastated New Orleans in 2005?",
+      "Option A": "Rita",
+      "Option B": "Ike",
+      "Option C": "Katrina",
+      "Option D": "Gustav",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_45",
+      "Question Text": "Anne of Denmark was crowned Queen of which country in 1590?",
+      "Option A": "England",
+      "Option B": "Ireland",
+      "Option C": "Scotland",
+      "Option D": "Wales",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_46",
+      "Question Text": "The British surrendered to Washington at Yorktown in which state?",
+      "Option A": "Maryland",
+      "Option B": "North Carolina",
+      "Option C": "Virginia",
+      "Option D": "South Carolina",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_47",
+      "Question Text": "Which ancient city was famous for its Hanging Gardens?",
+      "Option A": "Troy",
+      "Option B": "Athens",
+      "Option C": "Babylon",
+      "Option D": "Sparta",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_48",
+      "Question Text": "The Ionian islands became part of which country in 1864?",
+      "Option A": "Italy",
+      "Option B": "Turkey",
+      "Option C": "Greece",
+      "Option D": "Albania",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_49",
+      "Question Text": "People in which part of the world built traditional shelters called tepees?",
+      "Option A": "South America",
+      "Option B": "North America",
+      "Option C": "Central America",
+      "Option D": "Caribbean",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_50",
+      "Question Text": "The Jacobins were the driving force behind which country's revolution?",
+      "Option A": "Russia",
+      "Option B": "United States",
+      "Option C": "England",
+      "Option D": "France",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_51",
+      "Question Text": "What was the surname of the first female US Attorney General?",
+      "Option A": "Rusk",
+      "Option B": "Reno",
+      "Option C": "Rice",
+      "Option D": "Rodham",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_52",
+      "Question Text": "Lederhosen are traditional German shorts made from which material?",
+      "Option A": "Cotton",
+      "Option B": "Wool",
+      "Option C": "Leather",
+      "Option D": "Silk",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_53",
+      "Question Text": "Which was the first country to put a man into space?",
+      "Option A": "United States",
+      "Option B": "China",
+      "Option C": "Soviet Union",
+      "Option D": "Russia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_54",
+      "Question Text": "Sarah Good, Sarah Osborne, and Tituba were accused of what crime in Salem in 1692?",
+      "Option A": "Treason",
+      "Option B": "Witchcraft",
+      "Option C": "Heresy",
+      "Option D": "Murder",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_55",
+      "Question Text": "The Sino-Japanese war was fought between Japan and which country?",
+      "Option A": "Korea",
+      "Option B": "Philippines",
+      "Option C": "Vietnam",
+      "Option D": "China",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_56",
+      "Question Text": "Tokugawa Ieyasu was the founder of a ruling dynasty in which country?",
+      "Option A": "China",
+      "Option B": "Korea",
+      "Option C": "Japan",
+      "Option D": "Thailand",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_57",
+      "Question Text": "Tenochtitlan was the capital of which Empire?",
+      "Option A": "Inca",
+      "Option B": "Maya",
+      "Option C": "Aztec",
+      "Option D": "Olmec",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_58",
+      "Question Text": "What did Charles Blondin cross on a tightrope in 1859?",
+      "Option A": "Hudson River",
+      "Option B": "Mississippi River",
+      "Option C": "Niagara Falls",
+      "Option D": "Colorado River",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_59",
+      "Question Text": "What is a nickname for William Shakespeare?",
+      "Option A": "The Poet",
+      "Option B": "The Bard",
+      "Option C": "The Writer",
+      "Option D": "The Dramatist",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_60",
+      "Question Text": "What was the name of John F Kennedy's initiative to send American volunteers abroad?",
+      "Option A": "Freedom Corps",
+      "Option B": "Hope Corps",
+      "Option C": "Peace Corps",
+      "Option D": "Unity Corps",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_61",
+      "Question Text": "Which U.S. president issued the Emancipation Proclamation?",
+      "Option A": "Andrew Johnson",
+      "Option B": "Ulysses S. Grant",
+      "Option C": "Abraham Lincoln",
+      "Option D": "James Buchanan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_62",
+      "Question Text": "Who was the first person to sign the Declaration of Independence?",
+      "Option A": "Samuel Adams",
+      "Option B": "Thomas Jefferson",
+      "Option C": "John Adams",
+      "Option D": "John Hancock",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_63",
+      "Question Text": "Marshal Tito was a post-WW2 leader of which European country?",
+      "Option A": "Czechoslovakia",
+      "Option B": "Poland",
+      "Option C": "Yugoslavia",
+      "Option D": "Romania",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_64",
+      "Question Text": "Which General led the Confederate forces in the US Civil War?",
+      "Option A": "Stonewall Jackson",
+      "Option B": "Robert E. Lee",
+      "Option C": "Jefferson Davis",
+      "Option D": "Braxton Bragg",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_65",
+      "Question Text": "Who was the principal author of the Declaration of Independence?",
+      "Option A": "John Adams",
+      "Option B": "Benjamin Franklin",
+      "Option C": "Thomas Jefferson",
+      "Option D": "James Madison",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_66",
+      "Question Text": "Which 11th-century Scottish king is the subject of a Shakespeare play?",
+      "Option A": "Malcolm",
+      "Option B": "Duncan",
+      "Option C": "Kenneth",
+      "Option D": "Macbeth",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_67",
+      "Question Text": "Principia Mathematica was a 1687 work by which world-famous thinker?",
+      "Option A": "Leibniz",
+      "Option B": "Galileo",
+      "Option C": "Descartes",
+      "Option D": "Newton",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_68",
+      "Question Text": "The Finnish Civil War in 1918 was a battle for independence from which country?",
+      "Option A": "Sweden",
+      "Option B": "Denmark",
+      "Option C": "Germany",
+      "Option D": "Russia",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_69",
+      "Question Text": "Countries around which body of water were hit by a tsunami in December 2004?",
+      "Option A": "Pacific Ocean",
+      "Option B": "Atlantic Ocean",
+      "Option C": "Indian Ocean",
+      "Option D": "Arctic Ocean",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_70",
+      "Question Text": "Until 2000, which technology was restricted to the US military?",
+      "Option A": "Satellite Imaging",
+      "Option B": "Internet",
+      "Option C": "GPS",
+      "Option D": "Radar",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_71",
+      "Question Text": "What were the anti-government protests which shook the Arab world in 2010?",
+      "Option A": "Arab Uprising",
+      "Option B": "Arab Revolution",
+      "Option C": "Arab Spring",
+      "Option D": "Arab Revolt",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_72",
+      "Question Text": "In which country were the Tiananmen Square protests in 1989?",
+      "Option A": "Taiwan",
+      "Option B": "North Korea",
+      "Option C": "China",
+      "Option D": "Japan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_73",
+      "Question Text": "The Watergate scandal involved an office building in which US city?",
+      "Option A": "Chicago",
+      "Option B": "New York",
+      "Option C": "Washington DC",
+      "Option D": "Los Angeles",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_74",
+      "Question Text": "Which country sent ships in an Armada to invade England in 1588?",
+      "Option A": "France",
+      "Option B": "Portugal",
+      "Option C": "Spain",
+      "Option D": "Netherlands",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_75",
+      "Question Text": "The Santa Fe trail led from Missouri to which state?",
+      "Option A": "Colorado",
+      "Option B": "Arizona",
+      "Option C": "New Mexico",
+      "Option D": "Texas",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_76",
+      "Question Text": "Fidel Castro was President and Prime Minister of which country?",
+      "Option A": "Dominican Republic",
+      "Option B": "Nicaragua",
+      "Option C": "Cuba",
+      "Option D": "Haiti",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_77",
+      "Question Text": "Hugo Chavez was elected President of which country in 1998?",
+      "Option A": "Colombia",
+      "Option B": "Peru",
+      "Option C": "Venezuela",
+      "Option D": "Ecuador",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_78",
+      "Question Text": "Which US President announced sanctions against the USSR when it invaded Afghanistan?",
+      "Option A": "Reagan",
+      "Option B": "Ford",
+      "Option C": "Carter",
+      "Option D": "Nixon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_79",
+      "Question Text": "Emperor Theodosius II was in charge of which empire?",
+      "Option A": "Roman",
+      "Option B": "Greek",
+      "Option C": "Persian",
+      "Option D": "Byzantine",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_80",
+      "Question Text": "In what year did the United States declare its independence from Great Britain?",
+      "Option A": 1770,
+      "Option B": 1775,
+      "Option C": 1776,
+      "Option D": 1780,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_81",
+      "Question Text": "Ranier III came to the throne of which small state in 1949?",
+      "Option A": "Liechtenstein",
+      "Option B": "Monaco",
+      "Option C": "Andorra",
+      "Option D": "San Marino",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_82",
+      "Question Text": "What was the last major battle of the American Revolution?",
+      "Option A": "Battle of Bunker Hill",
+      "Option B": "Battle of Saratoga",
+      "Option C": "Battle of Yorktown",
+      "Option D": "Battle of Trenton",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_83",
+      "Question Text": "What was the language of the Moors, who lived in Spain until 1492?",
+      "Option A": "Turkish",
+      "Option B": "Persian",
+      "Option C": "Arabic",
+      "Option D": "Berber",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_84",
+      "Question Text": "Who was the Prime Minister of the United Kingdom during World War II?",
+      "Option A": "Clement Attlee",
+      "Option B": "Neville Chamberlain",
+      "Option C": "Winston Churchill",
+      "Option D": "Anthony Eden",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_85",
+      "Question Text": "What was invented by Louis Braille?",
+      "Option A": "Typewriter",
+      "Option B": "Writing System",
+      "Option C": "Telephone",
+      "Option D": "Printing Press",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_86",
+      "Question Text": "What was the surname of the inventor of the electric light bulb?",
+      "Option A": "Tesla",
+      "Option B": "Bell",
+      "Option C": "Edison",
+      "Option D": "Westinghouse",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_87",
+      "Question Text": "Explorer Vasco da Gama came from which country?",
+      "Option A": "Spain",
+      "Option B": "Italy",
+      "Option C": "Portugal",
+      "Option D": "France",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_88",
+      "Question Text": "The Roman military defensive move of 'testudo' takes its name from which animal?",
+      "Option A": "Lion",
+      "Option B": "Turtle",
+      "Option C": "Eagle",
+      "Option D": "Serpent",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_89",
+      "Question Text": "What word means events told in date order?",
+      "Option A": "Sequential",
+      "Option B": "Chronological",
+      "Option C": "Historical",
+      "Option D": "Temporal",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_90",
+      "Question Text": "Which US city was called Yerba Buena until 1847?",
+      "Option A": "San Diego",
+      "Option B": "Los Angeles",
+      "Option C": "San Francisco",
+      "Option D": "Sacramento",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_91",
+      "Question Text": "Rosa Parks made her bus protest in which US state?",
+      "Option A": "Georgia",
+      "Option B": "Mississippi",
+      "Option C": "Alabama",
+      "Option D": "Tennessee",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_92",
+      "Question Text": "In which US city did Washington make the first State of the Union address?",
+      "Option A": "Philadelphia",
+      "Option B": "Boston",
+      "Option C": "New York",
+      "Option D": "Washington D.C.",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_93",
+      "Question Text": "Which US state was originally called New Netherlands?",
+      "Option A": "New York",
+      "Option B": "Pennsylvania",
+      "Option C": "New Jersey",
+      "Option D": "Delaware",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_94",
+      "Question Text": "King Tut is the nickname of a ruler from which country?",
+      "Option A": "Mesopotamia",
+      "Option B": "Greece",
+      "Option C": "Egypt",
+      "Option D": "Persia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_95",
+      "Question Text": "Who was the first president of the United States?",
+      "Option A": "George Washington",
+      "Option B": "John Adams",
+      "Option C": "Thomas Jefferson",
+      "Option D": "Benjamin Franklin",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_96",
+      "Question Text": "Where was the Declaration of Independence signed?",
+      "Option A": "Boston",
+      "Option B": "Philadelphia",
+      "Option C": "New York",
+      "Option D": "Charleston",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_97",
+      "Question Text": "How many original colonies were there?",
+      "Option A": 11,
+      "Option B": 12,
+      "Option C": 13,
+      "Option D": 14,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_98",
+      "Question Text": "Which war did Abraham Lincoln lead the US through?",
+      "Option A": "Revolutionary War",
+      "Option B": "War of 1812",
+      "Option C": "Mexican War",
+      "Option D": "Civil War",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_99",
+      "Question Text": "What famous rock did the Mayflower pilgrims land on?",
+      "Option A": "Plymouth Rock",
+      "Option B": "Independence Rock",
+      "Option C": "Gibraltar Rock",
+      "Option D": "Chimney Rock",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_100",
+      "Question Text": "Which state is home to Plymouth Rock today?",
+      "Option A": "Maine",
+      "Option B": "Massachusetts",
+      "Option C": "Connecticut",
+      "Option D": "Rhode Island",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_101",
+      "Question Text": "Where was Abraham Lincoln assassinated?",
+      "Option A": "Globe Theater",
+      "Option B": "Capitol Theater",
+      "Option C": "Ford's Theater",
+      "Option D": "National Theater",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_102",
+      "Question Text": "What are the first three words of the Constitution?",
+      "Option A": "In Congress Assembled",
+      "Option B": "By Popular Demand",
+      "Option C": "United States Constitution",
+      "Option D": "We The People",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_103",
+      "Question Text": "Which Native American tribe first met the Pilgrims?",
+      "Option A": "Wampanoag",
+      "Option B": "Cherokee",
+      "Option C": "Iroquois",
+      "Option D": "Pequot",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_104",
+      "Question Text": "What caused thousands of Wampanoag deaths after Pilgrims arrived?",
+      "Option A": "Warfare",
+      "Option B": "Epidemics",
+      "Option C": "Starvation",
+      "Option D": "Climate",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_105",
+      "Question Text": "What glasses did Benjamin Franklin invent?",
+      "Option A": "Reading glasses",
+      "Option B": "Sunglasses",
+      "Option C": "Bifocals",
+      "Option D": "Magnifiers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_106",
+      "Question Text": "What year was the US Constitution written?",
+      "Option A": 1776,
+      "Option B": 1781,
+      "Option C": 1783,
+      "Option D": 1787,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_107",
+      "Question Text": "Which branch contains the Office of President?",
+      "Option A": "Executive",
+      "Option B": "Legislative",
+      "Option C": "Judicial",
+      "Option D": "Congressional",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_108",
+      "Question Text": "Who wrote the Star Spangled Banner?",
+      "Option A": "George M. Cohan",
+      "Option B": "Francis Scott Key",
+      "Option C": "John Philip Sousa",
+      "Option D": "Stephen Foster",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_109",
+      "Question Text": "Which city became the capital after Philadelphia?",
+      "Option A": "New York",
+      "Option B": "Boston",
+      "Option C": "Washington D.C.",
+      "Option D": "Baltimore",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_110",
+      "Question Text": "Who was the first president to live in the White House?",
+      "Option A": "George Washington",
+      "Option B": "Thomas Jefferson",
+      "Option C": "James Madison",
+      "Option D": "John Adams",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_111",
+      "Question Text": "Who created the first American flag?",
+      "Option A": "Betsy Ross",
+      "Option B": "Martha Washington",
+      "Option C": "Abigail Adams",
+      "Option D": "Dolley Madison",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_112",
+      "Question Text": "What year was slavery abolished by the 13th Amendment?",
+      "Option A": 1863,
+      "Option B": 1865,
+      "Option C": 1866,
+      "Option D": 1867,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_113",
+      "Question Text": "Which ancient Greek poet created The Iliad?",
+      "Option A": "Sophocles",
+      "Option B": "Aristotle",
+      "Option C": "Homer",
+      "Option D": "Plato",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_114",
+      "Question Text": "What was the capital of the Byzantine empire?",
+      "Option A": "Rome",
+      "Option B": "Athens",
+      "Option C": "Alexandria",
+      "Option D": "Constantinople",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_115",
+      "Question Text": "What language was spoken in ancient Rome?",
+      "Option A": "Latin",
+      "Option B": "Greek",
+      "Option C": "Aramaic",
+      "Option D": "Hebrew",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_116",
+      "Question Text": "Which ancient structure in Rome hosted gladiator fights?",
+      "Option A": "Pantheon",
+      "Option B": "Colosseum",
+      "Option C": "Forum",
+      "Option D": "Circus Maximus",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_117",
+      "Question Text": "Who painted the Sistine Chapel ceiling?",
+      "Option A": "Da Vinci",
+      "Option B": "Raphael",
+      "Option C": "Michelangelo",
+      "Option D": "Botticelli",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_118",
+      "Question Text": "What mythical creatures did Chinese emperors claim descent from?",
+      "Option A": "Phoenix",
+      "Option B": "Unicorn",
+      "Option C": "Lion",
+      "Option D": "Dragons",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_119",
+      "Question Text": "What ancient Egyptian writing system used symbols?",
+      "Option A": "Hieroglyphics",
+      "Option B": "Cuneiform",
+      "Option C": "Sanskrit",
+      "Option D": "Phoenician",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_120",
+      "Question Text": "What were ancient Egyptian rulers called?",
+      "Option A": "Pharaohs",
+      "Option B": "Emperors",
+      "Option C": "Kings",
+      "Option D": "Sultans",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_121",
+      "Question Text": "Which famous statue has a lion's body and human head?",
+      "Option A": "Colossus",
+      "Option B": "Sphinx",
+      "Option C": "Anubis",
+      "Option D": "Osiris",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_122",
+      "Question Text": "What process preserved ancient Egyptian dead?",
+      "Option A": "Cremation",
+      "Option B": "Burial",
+      "Option C": "Mummification",
+      "Option D": "Entombment",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_123",
+      "Question Text": "Which city did Greeks conquer using a wooden horse?",
+      "Option A": "Athens",
+      "Option B": "Sparta",
+      "Option C": "Thebes",
+      "Option D": "Troy",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_124",
+      "Question Text": "Which temple honored Athena in ancient Athens?",
+      "Option A": "Parthenon",
+      "Option B": "Acropolis",
+      "Option C": "Temple of Zeus",
+      "Option D": "Temple of Apollo",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_125",
+      "Question Text": "Which 'great' ruler created the Ancient Greek Empire?",
+      "Option A": "Cyrus",
+      "Option B": "Alexander the Great",
+      "Option C": "Darius",
+      "Option D": "Xerxes",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_126",
+      "Question Text": "Which empire did Queen Victoria rule?",
+      "Option A": "Roman",
+      "Option B": "French",
+      "Option C": "British",
+      "Option D": "Spanish",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_127",
+      "Question Text": "Where did Shakespeare produce his famous plays?",
+      "Option A": "Royal Theater",
+      "Option B": "Swan Theater",
+      "Option C": "Rose Theater",
+      "Option D": "Globe Theater",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_128",
+      "Question Text": "When did the French Revolution begin?",
+      "Option A": 1789,
+      "Option B": 1790,
+      "Option C": 1791,
+      "Option D": 1792,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_129",
+      "Question Text": "Which French philosopher said 'I think, therefore I am'?",
+      "Option A": "Voltaire",
+      "Option B": "René Descartes",
+      "Option C": "Rousseau",
+      "Option D": "Montesquieu",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_130",
+      "Question Text": "When did the Berlin Wall fall?",
+      "Option A": 1987,
+      "Option B": 1988,
+      "Option C": 1989,
+      "Option D": 1990,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_131",
+      "Question Text": "What year did humans first land on the moon?",
+      "Option A": 1967,
+      "Option B": 1968,
+      "Option C": 1970,
+      "Option D": 1969,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_132",
+      "Question Text": "Who invented the telephone with first US patent?",
+      "Option A": "Alexander Graham Bell",
+      "Option B": "Thomas Edison",
+      "Option C": "Nikola Tesla",
+      "Option D": "George Westinghouse",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_133",
+      "Question Text": "What brothers achieved the first powered flight?",
+      "Option A": "Edison Brothers",
+      "Option B": "Wright Brothers",
+      "Option C": "Bell Brothers",
+      "Option D": "Marx Brothers",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_134",
+      "Question Text": "Where was the first powered flight achieved?",
+      "Option A": "Boston",
+      "Option B": "Philadelphia",
+      "Option C": "Kitty Hawk",
+      "Option D": "Washington",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_135",
+      "Question Text": "What was the first satellite in space?",
+      "Option A": "Explorer",
+      "Option B": "Vanguard",
+      "Option C": "Telstar",
+      "Option D": "Sputnik",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_136",
+      "Question Text": "Who discovered polonium and radium?",
+      "Option A": "Marie Curie",
+      "Option B": "Albert Einstein",
+      "Option C": "Niels Bohr",
+      "Option D": "Max Planck",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_137",
+      "Question Text": "What was the first recorded antibiotic?",
+      "Option A": "Tetracycline",
+      "Option B": "Penicillin",
+      "Option C": "Streptomycin",
+      "Option D": "Amoxicillin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_138",
+      "Question Text": "Which ancient civilization invented the wheel?",
+      "Option A": "Egyptians",
+      "Option B": "Babylonians",
+      "Option C": "Sumerians",
+      "Option D": "Persians",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_139",
+      "Question Text": "What year was the first television invented?",
+      "Option A": 1925,
+      "Option B": 1926,
+      "Option C": 1928,
+      "Option D": 1927,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_140",
+      "Question Text": "Who created the first gasoline-powered car?",
+      "Option A": "Karl Benz",
+      "Option B": "Henry Ford",
+      "Option C": "Gottlieb Daimler",
+      "Option D": "Rudolf Diesel",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_141",
+      "Question Text": "What was the first computer's weight in pounds?",
+      "Option A": 12000,
+      "Option B": 16000,
+      "Option C": 20000,
+      "Option D": 24000,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_142",
+      "Question Text": "When did the Titanic sink?",
+      "Option A": 1910,
+      "Option B": 1911,
+      "Option C": 1912,
+      "Option D": 1913,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_143",
+      "Question Text": "When did Hawaii become a state?",
+      "Option A": 1957,
+      "Option B": 1958,
+      "Option C": 1960,
+      "Option D": 1959,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HISTORY_144",
+      "Question Text": "When did World War II end?",
+      "Option A": "1945-09-02T04:00:00.000Z",
+      "Option B": "1945-08-15T04:00:00.000Z",
+      "Option C": "1945-10-01T05:00:00.000Z",
+      "Option D": "1945-07-04T04:00:00.000Z",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    }
+  ]
+}

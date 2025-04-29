@@ -1,30 +1,93 @@
 {
   "expo": {
     "name": "TriviaDare",
-    "slug": "TriviaDare",
+    "slug": "triviadare",
     "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "jsEngine": "hermes",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.playsigns.triviadare",
+      "buildNumber": "3",
+      "newArchEnabled": true,
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "podfileConfig": "./ios-podfile-config.js",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification"
+        ],
+        "NSCameraUsageDescription": "This app does not use the camera.",
+        "NSPhotoLibraryUsageDescription": "This app does not access your photos.",
+        "NSMicrophoneUsageDescription": "This app does not use the microphone.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.playsigns.triviadare",
+      "versionCode": 1,
+      "newArchEnabled": true,
+      "permissions": [
+        "INTERNET"
+      ],
+      "softwareKeyboardLayoutMode": "pan",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4560844b-ec55-4122-8d80-f779871717c3"
+      }
+    },
+    "owner": "playsigns",
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "enabled": true,
+      "url": "https://u.expo.dev/4560844b-ec55-4122-8d80-f779871717c3"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-video",
+        {
+          "iOSResourceRoot": "Resources"
+        }
+      ],
+      "react-native-video",
+      "@react-native-firebase/app",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "podfileProperties": {
+              "use_modular_headers!": true
+            }
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "tsconfigPaths": true
     }
   }
 }

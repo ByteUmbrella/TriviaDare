@@ -1,0 +1,4804 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "MOVIES_1",
+      "Question Text": "What's the fiery name of Jay Pritchett's Colombian wife in the hilarious 'Modern Family'?",
+      "Option A": "Sofia Vergara",
+      "Option B": "Gloria Delgado-Pritchett",
+      "Option C": "Carmen Pritchett",
+      "Option D": "Maria Ramirez",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_2",
+      "Question Text": "Which legendary Viking warrior raids his way into your TV screen in an epic saga?",
+      "Option A": "The Last Kingdom",
+      "Option B": "Game of Thrones",
+      "Option C": "Vikings",
+      "Option D": "Norsemen",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_3",
+      "Question Text": "Which high school is the hotspot for secrets, heartaches, and drama in '13 Reasons Why'?",
+      "Option A": "Liberty High",
+      "Option B": "West Beverly High",
+      "Option C": "Riverdale High",
+      "Option D": "Constance Billard School",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_4",
+      "Question Text": "Which mysterious island is home to Oceanic Flight 815, where survival and secrets collide?",
+      "Option A": "Lost",
+      "Option B": "The Island",
+      "Option C": "Survivor Island",
+      "Option D": "Paradise Isle",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_5",
+      "Question Text": "Which animated town features the bumbling Mayor Joe Quimby causing mayhem?",
+      "Option A": "South Park",
+      "Option B": "Family Guy",
+      "Option C": "The Simpsons",
+      "Option D": "Quahog",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_6",
+      "Question Text": "Which irreverent mountain town is home to Kenny, Kyle, Stan, and Cartman?",
+      "Option A": "Springfield",
+      "Option B": "Quahog",
+      "Option C": "Highland",
+      "Option D": "South Park",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_7",
+      "Question Text": "Which talented actress brings the charming Eleanor to life in 'The Good Place'?",
+      "Option A": "Amy Poehler",
+      "Option B": "Kristen Bell",
+      "Option C": "Ellie Kemper",
+      "Option D": "Jane Krakowski",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_8",
+      "Question Text": "Which gripping series chronicles the rise and fall of Pablo Escobar?",
+      "Option A": "Breaking Bad",
+      "Option B": "Narcos",
+      "Option C": "El Chapo",
+      "Option D": "Queen of the South",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_9",
+      "Question Text": "Which actor gave life to the wise and witty Quincy in a classic detective series?",
+      "Option A": "Peter Falk",
+      "Option B": "Jack Klugman",
+      "Option C": "James Garner",
+      "Option D": "Raymond Burr",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_10",
+      "Question Text": "Which colorful puppet band, led by Dr. Teeth, rocks out on a beloved family show?",
+      "Option A": "Fraggle Rock",
+      "Option B": "Sesame Street",
+      "Option C": "Muppets",
+      "Option D": "Bear in the Big Blue House",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_11",
+      "Question Text": "Which sunny California drama features the Cohen siblings in Newport Beach?",
+      "Option A": "Beverly Hills 90210",
+      "Option B": "Laguna Beach",
+      "Option C": "The OC",
+      "Option D": "California Dreams",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_12",
+      "Question Text": "Which detective duo, Maddie and David, solve mysteries with flair in a classic '80s series?",
+      "Option A": "Hart to Hart",
+      "Option B": "Moonlighting",
+      "Option C": "Remington Steele",
+      "Option D": "Simon & Simon",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_13",
+      "Question Text": "Which quiz show challenges contestants to respond with questions instead of answers?",
+      "Option A": "Who Wants to Be a Millionaire",
+      "Option B": "Wheel of Fortune",
+      "Option C": "Family Feud",
+      "Option D": "Jeopardy!",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_14",
+      "Question Text": "Which TV show kicks off with 'You've Got Time', proving music is the ultimate cell-ebrities?",
+      "Option A": "Oz",
+      "Option B": "Prison Break",
+      "Option C": "Wentworth",
+      "Option D": "Orange is the New Black",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_15",
+      "Question Text": "Which pop star's double life includes belting out 'Nobody's Perfect'?",
+      "Option A": "Lizzie McGuire",
+      "Option B": "Hannah Montana",
+      "Option C": "iCarly",
+      "Option D": "That's So Raven",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_16",
+      "Question Text": "Which beloved sitcom welcomes you with 'Where Everybody Knows Your Name'?",
+      "Option A": "Friends",
+      "Option B": "Cheers",
+      "Option C": "Frasier",
+      "Option D": "Happy Days",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_17",
+      "Question Text": "Which teen drama kicks off with Paula Cole's 'I Don't Want to Wait'?",
+      "Option A": "The O.C.",
+      "Option B": "One Tree Hill",
+      "Option C": "Dawson's Creek",
+      "Option D": "Beverly Hills 90210",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_18",
+      "Question Text": "Which actor-turned-musician performed the iconic theme song to 'The Fresh Prince of Bel-Air'?",
+      "Option A": "LL Cool J",
+      "Option B": "Will Smith",
+      "Option C": "MC Hammer",
+      "Option D": "Queen Latifah",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_19",
+      "Question Text": "Which heartwarming sitcom thanks you with 'Thank You for Being a Friend'?",
+      "Option A": "The Golden Girls",
+      "Option B": "Friends",
+      "Option C": "Grace and Frankie",
+      "Option D": "Hot in Cleveland",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_20",
+      "Question Text": "Which superhero sitcom belts out 'Believe It or Not' as its heroic theme?",
+      "Option A": "The Greatest American Hero",
+      "Option B": "Wonder Woman",
+      "Option C": "The Six Million Dollar Man",
+      "Option D": "The Incredible Hulk",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_21",
+      "Question Text": "Which geeky sitcom rocks with The Black Keys' 'I'll Be Your Man'?",
+      "Option A": "Silicon Valley",
+      "Option B": "The IT Crowd",
+      "Option C": "The Big Bang Theory",
+      "Option D": "New Girl",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_22",
+      "Question Text": "Which classic show sails away with 'The Ballad of Gilligan's Isle'?",
+      "Option A": "Love Boat",
+      "Option B": "Gilligan's Island",
+      "Option C": "Fantasy Island",
+      "Option D": "Voyage to the Bottom of the Sea",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_23",
+      "Question Text": "Which nostalgic series starts with 'With a Little Help from My Friends'?",
+      "Option A": "Happy Days",
+      "Option B": "The Wonder Years",
+      "Option C": "That '70s Show",
+      "Option D": "Family Ties",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_24",
+      "Question Text": "Which TV character's infamous 'D'oh!' captures every oops moment in Springfield?",
+      "Option A": "Peter Griffin",
+      "Option B": "Homer Simpson",
+      "Option C": "Stan Smith",
+      "Option D": "Bob Belcher",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_25",
+      "Question Text": "Which beloved sitcom made 'How you doin'?' the ultimate pickup line?",
+      "Option A": "Seinfeld",
+      "Option B": "Friends",
+      "Option C": "Frasier",
+      "Option D": "Will & Grace",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_26",
+      "Question Text": "Which iconic Vulcan delivers 'Live long and prosper' with logic?",
+      "Option A": "Spock",
+      "Option B": "Data",
+      "Option C": "Tuvok",
+      "Option D": "Sarek",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_27",
+      "Question Text": "Which classic show shouted 'Dyn-o-mite!' with pure 70s flair?",
+      "Option A": "Sanford and Son",
+      "Option B": "Good Times",
+      "Option C": "The Jeffersons",
+      "Option D": "What's Happening!!",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_28",
+      "Question Text": "Which flawed character admits 'I've made a huge mistake' in his wild adventures?",
+      "Option A": "Michael Bluth",
+      "Option B": "Gob Bluth",
+      "Option C": "Tobias Fünke",
+      "Option D": "George Michael Bluth",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_29",
+      "Question Text": "Which reality show boss famously declared 'You're fired!'?",
+      "Option A": "Hell's Kitchen",
+      "Option B": "The Apprentice",
+      "Option C": "Shark Tank",
+      "Option D": "Kitchen Nightmares",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_30",
+      "Question Text": "Which physicist can't resist dropping a 'Bazinga!' after every clever prank?",
+      "Option A": "Leonard Hofstadter",
+      "Option B": "Raj Koothrappali",
+      "Option C": "Howard Wolowitz",
+      "Option D": "Sheldon Cooper",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_31",
+      "Question Text": "Which animated series has fans yelling 'Oh my God, they killed Kenny!'?",
+      "Option A": "Family Guy",
+      "Option B": "The Simpsons",
+      "Option C": "South Park",
+      "Option D": "Bob's Burgers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_32",
+      "Question Text": "Which Tanner family member exclaimed 'How rude!' with perfect timing?",
+      "Option A": "D.J.",
+      "Option B": "Stephanie",
+      "Option C": "Michelle",
+      "Option D": "Kimmy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_33",
+      "Question Text": "Which action series had detectives saying 'Book 'em, Danno!'?",
+      "Option A": "Magnum P.I.",
+      "Option B": "Hawaii Five-O",
+      "Option C": "Miami Vice",
+      "Option D": "NYPD Blue",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_34",
+      "Question Text": "Which fantasy saga won most Emmy Awards for Outstanding Drama Series?",
+      "Option A": "The Sopranos",
+      "Option B": "Breaking Bad",
+      "Option C": "Game of Thrones",
+      "Option D": "The Crown",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_35",
+      "Question Text": "Which medical dramedy had the most-watched series finale?",
+      "Option A": "ER",
+      "Option B": "Grey's Anatomy",
+      "Option C": "MAS*H",
+      "Option D": "House",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_36",
+      "Question Text": "Which mob boss series won most Golden Globes for Best Drama?",
+      "Option A": "The Sopranos",
+      "Option B": "Boardwalk Empire",
+      "Option C": "The Wire",
+      "Option D": "Breaking Bad",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_37",
+      "Question Text": "Which sophisticated sitcom won Outstanding Comedy Series five years straight?",
+      "Option A": "Cheers",
+      "Option B": "Friends",
+      "Option C": "Frasier",
+      "Option D": "Seinfeld",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_38",
+      "Question Text": "Which sketch show has most Primetime Emmys for Outstanding Comedy?",
+      "Option A": "In Living Color",
+      "Option B": "MadTV",
+      "Option C": "Saturday Night Live",
+      "Option D": "SCTV",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_39",
+      "Question Text": "Which workplace comedy dominated Golden Globes from 2006-2009?",
+      "Option A": "The Office",
+      "Option B": "30 Rock",
+      "Option C": "Parks and Recreation",
+      "Option D": "Scrubs",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_40",
+      "Question Text": "Which fantasy epic won most SAG Awards for Outstanding Ensemble?",
+      "Option A": "The Crown",
+      "Option B": "Game of Thrones",
+      "Option C": "The Handmaid's Tale",
+      "Option D": "Downton Abbey",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_41",
+      "Question Text": "Which period drama won five Primetime Emmys for Outstanding Series?",
+      "Option A": "Downton Abbey",
+      "Option B": "Mad Men",
+      "Option C": "The Crown",
+      "Option D": "Boardwalk Empire",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_42",
+      "Question Text": "Which chemistry teacher's journey earned most Critics' Choice Awards?",
+      "Option A": "Breaking Bad",
+      "Option B": "Better Call Saul",
+      "Option C": "Ozark",
+      "Option D": "The Wire",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_43",
+      "Question Text": "Which sitcom had the most-watched scripted finale of all time?",
+      "Option A": "Seinfeld",
+      "Option B": "Friends",
+      "Option C": "Cheers",
+      "Option D": "MASH",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_44",
+      "Question Text": "Which mockumentary takes you to Pawnee's parks department?",
+      "Option A": "The Office",
+      "Option B": "Modern Family",
+      "Option C": "Parks and Recreation",
+      "Option D": "Documentary Now!",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_45",
+      "Question Text": "Which zombie series keeps viewers on edge with undead encounters?",
+      "Option A": "The Walking Dead",
+      "Option B": "Fear the Walking Dead",
+      "Option C": "Z Nation",
+      "Option D": "Black Summer",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_46",
+      "Question Text": "Which legal drama features lawyers in power suits solving cases?",
+      "Option A": "The Good Wife",
+      "Option B": "Boston Legal",
+      "Option C": "Suits",
+      "Option D": "Law & Order",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_47",
+      "Question Text": "Which series follows Seattle Grace's chaotic surgical staff?",
+      "Option A": "Chicago Med",
+      "Option B": "ER",
+      "Option C": "Grey's Anatomy",
+      "Option D": "New Amsterdam",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_48",
+      "Question Text": "Which fantasy saga brought dragons and betrayals to HBO?",
+      "Option A": "The Witcher",
+      "Option B": "House of the Dragon",
+      "Option C": "Game of Thrones",
+      "Option D": "Merlin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_49",
+      "Question Text": "Which workplace comedy captures Dunder Mifflin's daily antics?",
+      "Option A": "Parks and Recreation",
+      "Option B": "Brooklyn Nine-Nine",
+      "Option C": "The Office",
+      "Option D": "Superstore",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_50",
+      "Question Text": "Which crime drama explores Baltimore's institutions?",
+      "Option A": "The Shield",
+      "Option B": "The Wire",
+      "Option C": "Law & Order",
+      "Option D": "NYPD Blue",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_51",
+      "Question Text": "Which series mixes sci-fi and horror in Hawkins, Indiana?",
+      "Option A": "Dark",
+      "Option B": "The OA",
+      "Option C": "Stranger Things",
+      "Option D": "The Society",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_52",
+      "Question Text": "Which period drama follows 1960s advertising wizards?",
+      "Option A": "The Marvelous Mrs. Maisel",
+      "Option B": "Mad Men",
+      "Option C": "Masters of Sex",
+      "Option D": "The Americans",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_53",
+      "Question Text": "Which series follows a chemistry teacher turned crime lord?",
+      "Option A": "Ozark",
+      "Option B": "Weeds",
+      "Option C": "Breaking Bad",
+      "Option D": "Better Call Saul",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_54",
+      "Question Text": "Who drives the hilarious 'Carpool Karaoke' segment?",
+      "Option A": "Jimmy Fallon",
+      "Option B": "Jimmy Kimmel",
+      "Option C": "James Corden",
+      "Option D": "Stephen Colbert",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_55",
+      "Question Text": "Which host brings quirky dance moves to her talk show?",
+      "Option A": "Kelly Clarkson",
+      "Option B": "Wendy Williams",
+      "Option C": "Ellen DeGeneres",
+      "Option D": "Queen Latifah",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_56",
+      "Question Text": "Who leads contestants through intense tribal councils on 'Survivor'?",
+      "Option A": "Phil Keoghan",
+      "Option B": "Jeff Probst",
+      "Option C": "Ryan Seacrest",
+      "Option D": "Carson Daly",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_57",
+      "Question Text": "Which host brings musical talents to 'The Tonight Show'?",
+      "Option A": "Jimmy Fallon",
+      "Option B": "Jimmy Kimmel",
+      "Option C": "Stephen Colbert",
+      "Option D": "James Corden",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_58",
+      "Question Text": "Who helps discover the next pop superstar on 'American Idol'?",
+      "Option A": "Carson Daly",
+      "Option B": "Ryan Seacrest",
+      "Option C": "Nick Cannon",
+      "Option D": "Mario Lopez",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_59",
+      "Question Text": "Which affable host gets contestants to guess prices right?",
+      "Option A": "Bob Barker",
+      "Option B": "Wayne Brady",
+      "Option C": "Drew Carey",
+      "Option D": "Steve Harvey",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_60",
+      "Question Text": "Which witty host takes the stage on 'The Late Show'?",
+      "Option A": "Jimmy Kimmel",
+      "Option B": "James Corden",
+      "Option C": "Stephen Colbert",
+      "Option D": "Seth Meyers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_61",
+      "Question Text": "Who became the first-ever 'Commander-in-TV' in 1939?",
+      "Option A": "Herbert Hoover",
+      "Option B": "Franklin D Roosevelt",
+      "Option C": "Harry Truman",
+      "Option D": "Calvin Coolidge",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_62",
+      "Question Text": "Which mysterious character kept fans guessing on 'Lost'?",
+      "Option A": "Richard Alpert",
+      "Option B": "Jacob",
+      "Option C": "Benjamin Linus",
+      "Option D": "John Locke",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_63",
+      "Question Text": "Which TV witch wiggled her nose to cast spells?",
+      "Option A": "Samantha Stevens",
+      "Option B": "Sabrina Spellman",
+      "Option C": "Prue Halliwell",
+      "Option D": "Endora",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_64",
+      "Question Text": "Who played the idealistic president in 'The West Wing'?",
+      "Option A": "President Bartlett",
+      "Option B": "President Palmer",
+      "Option C": "President Kirkman",
+      "Option D": "President Grant",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_65",
+      "Question Text": "Who hosted 'Punk'd' before becoming a major movie star?",
+      "Option A": "Justin Timberlake",
+      "Option B": "Ashton Kutcher",
+      "Option C": "Ryan Seacrest",
+      "Option D": "Jimmy Fallon",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_66",
+      "Question Text": "Who ended up as Monica's love interest in 'Friends'?",
+      "Option A": "Ross",
+      "Option B": "Joey",
+      "Option C": "Richard",
+      "Option D": "Chandler",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_67",
+      "Question Text": "Which wild-haired neighbor was known as Cosmo?",
+      "Option A": "Wilson",
+      "Option B": "Kramer",
+      "Option C": "Schneider",
+      "Option D": "Urkel",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_68",
+      "Question Text": "Which political series starred Kevin Spacey as Frank Underwood?",
+      "Option A": "Madam Secretary",
+      "Option B": "Scandal",
+      "Option C": "House of Cards",
+      "Option D": "The West Wing",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_69",
+      "Question Text": "Which hospital comedy featured Zach Braff as JD?",
+      "Option A": "ER",
+      "Option B": "Grey's Anatomy",
+      "Option C": "Scrubs",
+      "Option D": "Chicago Med",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_70",
+      "Question Text": "Which teen series featured the mysterious antagonist 'A'?",
+      "Option A": "Gossip Girl",
+      "Option B": "Pretty Little Liars",
+      "Option C": "Riverdale",
+      "Option D": "The Vampire Diaries",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_71",
+      "Question Text": "Which vampire series spun off from 'Buffy'?",
+      "Option A": "True Blood",
+      "Option B": "The Originals",
+      "Option C": "Angel",
+      "Option D": "The Vampire Diaries",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_72",
+      "Question Text": "Which character was Frasier's sophisticated brother?",
+      "Option A": "Martin Crane",
+      "Option B": "Niles Crane",
+      "Option C": "Gil Chesterton",
+      "Option D": "Bulldog Briscoe",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_73",
+      "Question Text": "Who shared life insights in 'Clarissa Explains It All'?",
+      "Option A": "Clarissa Darling",
+      "Option B": "Alex Mack",
+      "Option C": "Blossom Russo",
+      "Option D": "Sam Anders",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_74",
+      "Question Text": "Which FBI team tracked missing persons?",
+      "Option A": "Criminal Minds",
+      "Option B": "Without a Trace",
+      "Option C": "CSI",
+      "Option D": "NCIS",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_75",
+      "Question Text": "Which reality show features aspiring fashion designers?",
+      "Option A": "Top Chef",
+      "Option B": "Project Runway",
+      "Option C": "America's Next Top Model",
+      "Option D": "Making the Cut",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_76",
+      "Question Text": "Who hosts the long-running game show 'Wheel of Fortune'?",
+      "Option A": "Alex Trebek",
+      "Option B": "Pat Sajak",
+      "Option C": "Bob Barker",
+      "Option D": "Drew Carey",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_77",
+      "Question Text": "Which animated series is set in the town of Arlen, Texas?",
+      "Option A": "The Simpsons",
+      "Option B": "Family Guy",
+      "Option C": "King of the Hill",
+      "Option D": "South Park",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_78",
+      "Question Text": "Who played the titular character in 'Malcolm in the Middle'?",
+      "Option A": "Frankie Muniz",
+      "Option B": "Neil Patrick Harris",
+      "Option C": "Fred Savage",
+      "Option D": "Josh Peck",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_79",
+      "Question Text": "Which show features the catchphrase 'Winter is Coming'?",
+      "Option A": "Vikings",
+      "Option B": "The Last Kingdom",
+      "Option C": "Game of Thrones",
+      "Option D": "Outlander",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_80",
+      "Question Text": "Who hosted 'Reading Rainbow' for over two decades?",
+      "Option A": "Morgan Freeman",
+      "Option B": "LeVar Burton",
+      "Option C": "Bill Nye",
+      "Option D": "Mr. Rogers",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_81",
+      "Question Text": "Which show features Springfield Elementary School?",
+      "Option A": "South Park",
+      "Option B": "The Simpsons",
+      "Option C": "Family Guy",
+      "Option D": "Bob's Burgers",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_82",
+      "Question Text": "Who played Rachel Green in 'Friends'?",
+      "Option A": "Courteney Cox",
+      "Option B": "Jennifer Aniston",
+      "Option C": "Lisa Kudrow",
+      "Option D": "Christina Applegate",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_83",
+      "Question Text": "Which show features Central Perk coffee shop?",
+      "Option A": "How I Met Your Mother",
+      "Option B": "Friends",
+      "Option C": "Will & Grace",
+      "Option D": "Seinfeld",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_84",
+      "Question Text": "What was the name of the bar in 'Cheers'?",
+      "Option A": "Paddy's Pub",
+      "Option B": "MacLaren's",
+      "Option C": "Cheers",
+      "Option D": "Sullivan's",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_85",
+      "Question Text": "Which show featured the fictional paper company Dunder Mifflin?",
+      "Option A": "Parks and Recreation",
+      "Option B": "30 Rock",
+      "Option C": "The Office",
+      "Option D": "Superstore",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_86",
+      "Question Text": "Who played Tony Soprano in 'The Sopranos'?",
+      "Option A": "Ray Liotta",
+      "Option B": "Joe Pesci",
+      "Option C": "James Gandolfini",
+      "Option D": "Robert De Niro",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_87",
+      "Question Text": "Which show features Sterling Cooper advertising agency?",
+      "Option A": "Mad Men",
+      "Option B": "The Morning Show",
+      "Option C": "Suits",
+      "Option D": "The Good Wife",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_88",
+      "Question Text": "Who played Walter White in 'Breaking Bad'?",
+      "Option A": "Bryan Cranston",
+      "Option B": "Jon Hamm",
+      "Option C": "Bob Odenkirk",
+      "Option D": "Aaron Paul",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_89",
+      "Question Text": "Which show features the fictional town of Stars Hollow?",
+      "Option A": "One Tree Hill",
+      "Option B": "Gilmore Girls",
+      "Option C": "Everwood",
+      "Option D": "Providence",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_90",
+      "Question Text": "Who played Carrie Bradshaw in 'Sex and the City'?",
+      "Option A": "Kim Cattrall",
+      "Option B": "Sarah Jessica Parker",
+      "Option C": "Kristin Davis",
+      "Option D": "Cynthia Nixon",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_91",
+      "Question Text": "Which show features Seattle Grace Hospital?",
+      "Option A": "Chicago Med",
+      "Option B": "ER",
+      "Option C": "House",
+      "Option D": "Grey's Anatomy",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_92",
+      "Question Text": "Who played Michael Scott in 'The Office'?",
+      "Option A": "John Krasinski",
+      "Option B": "Rainn Wilson",
+      "Option C": "Steve Carell",
+      "Option D": "Ed Helms",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_93",
+      "Question Text": "Which show features the fictional district of Pawnee?",
+      "Option A": "Brooklyn Nine-Nine",
+      "Option B": "Parks and Recreation",
+      "Option C": "The Office",
+      "Option D": "Community",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_94",
+      "Question Text": "Who played Don Draper in 'Mad Men'?",
+      "Option A": "Jon Hamm",
+      "Option B": "John Slattery",
+      "Option C": "Vincent Kartheiser",
+      "Option D": "January Jones",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_95",
+      "Question Text": "Which show features the law firm Pearson Hardman?",
+      "Option A": "The Good Wife",
+      "Option B": "Boston Legal",
+      "Option C": "Suits",
+      "Option D": "Law & Order",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_96",
+      "Question Text": "Who played Sheldon Cooper in 'The Big Bang Theory'?",
+      "Option A": "Johnny Galecki",
+      "Option B": "Jim Parsons",
+      "Option C": "Kunal Nayyar",
+      "Option D": "Simon Helberg",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_97",
+      "Question Text": "Which show features the fictional town of Hawkins?",
+      "Option A": "Dark",
+      "Option B": "Black Mirror",
+      "Option C": "Stranger Things",
+      "Option D": "The OA",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_98",
+      "Question Text": "Who played Leslie Knope in 'Parks and Recreation'?",
+      "Option A": "Tina Fey",
+      "Option B": "Amy Poehler",
+      "Option C": "Kristen Wiig",
+      "Option D": "Maya Rudolph",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_99",
+      "Question Text": "Which show features the Bluth family banana stand?",
+      "Option A": "Modern Family",
+      "Option B": "Arrested Development",
+      "Option C": "Schitt's Creek",
+      "Option D": "The Goldbergs",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_100",
+      "Question Text": "Who played Jack Bauer in '24'?",
+      "Option A": "Kiefer Sutherland",
+      "Option B": "Dennis Haysbert",
+      "Option C": "Carlos Bernard",
+      "Option D": "Elisha Cuthbert",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_101",
+      "Question Text": "Which show features the fictional town of Riverdale?",
+      "Option A": "Pretty Little Liars",
+      "Option B": "Riverdale",
+      "Option C": "The Vampire Diaries",
+      "Option D": "Teen Wolf",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_102",
+      "Question Text": "Who played Olivia Pope in 'Scandal'?",
+      "Option A": "Viola Davis",
+      "Option B": "Kerry Washington",
+      "Option C": "Regina King",
+      "Option D": "Taraji P. Henson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_103",
+      "Question Text": "Which show features the fictional law firm Lockhart Gardner?",
+      "Option A": "Suits",
+      "Option B": "The Good Wife",
+      "Option C": "Boston Legal",
+      "Option D": "Law & Order",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_104",
+      "Question Text": "Who played Dexter Morgan in 'Dexter'?",
+      "Option A": "Michael C. Hall",
+      "Option B": "James Spader",
+      "Option C": "Hugh Laurie",
+      "Option D": "Bryan Cranston",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_105",
+      "Question Text": "Which show features the fictional tech company Pied Piper?",
+      "Option A": "The IT Crowd",
+      "Option B": "Silicon Valley",
+      "Option C": "Halt and Catch Fire",
+      "Option D": "Mr. Robot",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_106",
+      "Question Text": "Who played Claire Underwood in 'House of Cards'?",
+      "Option A": "Robin Wright",
+      "Option B": "Kate Mara",
+      "Option C": "Patricia Clarkson",
+      "Option D": "Diane Lane",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_107",
+      "Question Text": "Which show features the fictional prison Litchfield?",
+      "Option A": "Oz",
+      "Option B": "Prison Break",
+      "Option C": "Orange is the New Black",
+      "Option D": "Wentworth",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_108",
+      "Question Text": "Who played Elizabeth Jennings in 'The Americans'?",
+      "Option A": "Keri Russell",
+      "Option B": "Claire Danes",
+      "Option C": "Elizabeth Mitchell",
+      "Option D": "Jennifer Garner",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_109",
+      "Question Text": "Which show features the fictional town of Twin Peaks?",
+      "Option A": "Twin Peaks",
+      "Option B": "Wayward Pines",
+      "Option C": "Castle Rock",
+      "Option D": "Gravity Falls",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_110",
+      "Question Text": "Who played Agent Cooper in 'Twin Peaks'?",
+      "Option A": "Kyle MacLachlan",
+      "Option B": "Michael Ontkean",
+      "Option C": "Ray Wise",
+      "Option D": "Richard Beymer",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_111",
+      "Question Text": "Which show features the fictional company Waystar Royco?",
+      "Option A": "Billions",
+      "Option B": "Industry",
+      "Option C": "Succession",
+      "Option D": "The Morning Show",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_112",
+      "Question Text": "Who played Logan Roy in 'Succession'?",
+      "Option A": "Brian Cox",
+      "Option B": "Jeremy Strong",
+      "Option C": "Kieran Culkin",
+      "Option D": "Matthew Macfadyen",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_113",
+      "Question Text": "Which show features the fictional town of Mystic Falls?",
+      "Option A": "True Blood",
+      "Option B": "The Vampire Diaries",
+      "Option C": "Salem",
+      "Option D": "Hemlock Grove",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_114",
+      "Question Text": "Who played Elena Gilbert in 'The Vampire Diaries'?",
+      "Option A": "Nina Dobrev",
+      "Option B": "Ashley Greene",
+      "Option C": "Kristen Stewart",
+      "Option D": "Lucy Hale",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_115",
+      "Question Text": "Which show features the fictional restaurant Los Pollos Hermanos?",
+      "Option A": "Breaking Bad",
+      "Option B": "Narcos",
+      "Option C": "Better Call Saul",
+      "Option D": "Ozark",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_116",
+      "Question Text": "Who played Jesse Pinkman in 'Breaking Bad'?",
+      "Option A": "Bryan Cranston",
+      "Option B": "Bob Odenkirk",
+      "Option C": "Aaron Paul",
+      "Option D": "Giancarlo Esposito",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_117",
+      "Question Text": "Which show features the fictional tech company E Corp?",
+      "Option A": "Silicon Valley",
+      "Option B": "Mr. Robot",
+      "Option C": "Halt and Catch Fire",
+      "Option D": "Devs",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_118",
+      "Question Text": "Who played Elliot Alderson in 'Mr. Robot'?",
+      "Option A": "Rami Malek",
+      "Option B": "Christian Slater",
+      "Option C": "Martin Wallström",
+      "Option D": "BD Wong",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_119",
+      "Question Text": "Which show features the fictional town of Westview?",
+      "Option A": "Wandavision",
+      "Option B": "The Boys",
+      "Option C": "Umbrella Academy",
+      "Option D": "Doom Patrol",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_120",
+      "Question Text": "Who played Wanda Maximoff in 'Wandavision'?",
+      "Option A": "Scarlett Johansson",
+      "Option B": "Elizabeth Olsen",
+      "Option C": "Karen Gillan",
+      "Option D": "Zoe Saldana",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_121",
+      "Question Text": "Which comedy series features a study group at Greendale Community College?",
+      "Option A": "The Middle",
+      "Option B": "Community",
+      "Option C": "Greek",
+      "Option D": "New Girl",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_122",
+      "Question Text": "Who played Phil Dunphy in 'Modern Family'?",
+      "Option A": "Eric Stonestreet",
+      "Option B": "Ty Burrell",
+      "Option C": "Jesse Tyler Ferguson",
+      "Option D": "Ed O'Neill",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_123",
+      "Question Text": "Which show features the fictional workplace Cloud 9?",
+      "Option A": "The Office",
+      "Option B": "Parks and Recreation",
+      "Option C": "Superstore",
+      "Option D": "Brooklyn Nine-Nine",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_124",
+      "Question Text": "Who played Jake Peralta in 'Brooklyn Nine-Nine'?",
+      "Option A": "Joe Lo Truglio",
+      "Option B": "Terry Crews",
+      "Option C": "Andy Samberg",
+      "Option D": "Andre Braugher",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_125",
+      "Question Text": "Which show features the Roy family media empire?",
+      "Option A": "Billions",
+      "Option B": "Empire",
+      "Option C": "Succession",
+      "Option D": "Dynasty",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_126",
+      "Question Text": "Who played Tommy Shelby in 'Peaky Blinders'?",
+      "Option A": "Tom Hardy",
+      "Option B": "Sam Neill",
+      "Option C": "Cillian Murphy",
+      "Option D": "Paul Anderson",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_127",
+      "Question Text": "Which show features the fictional town of Charming?",
+      "Option A": "Sons of Anarchy",
+      "Option B": "Mayans M.C.",
+      "Option C": "The Shield",
+      "Option D": "Justified",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_128",
+      "Question Text": "Who played Ragnar Lothbrok in 'Vikings'?",
+      "Option A": "Alexander Ludwig",
+      "Option B": "Travis Fimmel",
+      "Option C": "Gustaf Skarsgård",
+      "Option D": "Clive Standen",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_129",
+      "Question Text": "Which show features the fictional prison Fox River?",
+      "Option A": "Oz",
+      "Option B": "Prison Break",
+      "Option C": "Orange is the New Black",
+      "Option D": "Wentworth",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_130",
+      "Question Text": "Who played Michael Scofield in 'Prison Break'?",
+      "Option A": "Dominic Purcell",
+      "Option B": "Robert Knepper",
+      "Option C": "William Fichtner",
+      "Option D": "Wentworth Miller",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_131",
+      "Question Text": "Which show features the fictional company Hooli?",
+      "Option A": "Mr. Robot",
+      "Option B": "Silicon Valley",
+      "Option C": "Halt and Catch Fire",
+      "Option D": "StartUp",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_132",
+      "Question Text": "Who played Barney Stinson in 'How I Met Your Mother'?",
+      "Option A": "Josh Radnor",
+      "Option B": "Jason Segel",
+      "Option C": "Neil Patrick Harris",
+      "Option D": "Alyson Hannigan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_133",
+      "Question Text": "Which show features the fictional town of Neptune?",
+      "Option A": "The O.C.",
+      "Option B": "Veronica Mars",
+      "Option C": "One Tree Hill",
+      "Option D": "Dawson's Creek",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_134",
+      "Question Text": "Who played Veronica Mars?",
+      "Option A": "Blake Lively",
+      "Option B": "Kristen Bell",
+      "Option C": "Emma Roberts",
+      "Option D": "Leighton Meester",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_135",
+      "Question Text": "Which show features the fictional hospital County General?",
+      "Option A": "Grey's Anatomy",
+      "Option B": "Chicago Hope",
+      "Option C": "ER",
+      "Option D": "St. Elsewhere",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_136",
+      "Question Text": "Who played Dr. Doug Ross in 'ER'?",
+      "Option A": "George Clooney",
+      "Option B": "Anthony Edwards",
+      "Option C": "Eriq La Salle",
+      "Option D": "Noah Wyle",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_137",
+      "Question Text": "Which show features the fictional law firm Crane, Poole & Schmidt?",
+      "Option A": "The Practice",
+      "Option B": "Boston Legal",
+      "Option C": "Ally McBeal",
+      "Option D": "L.A. Law",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_138",
+      "Question Text": "Who played Denny Crane in 'Boston Legal'?",
+      "Option A": "James Spader",
+      "Option B": "William Shatner",
+      "Option C": "Candice Bergen",
+      "Option D": "John Larroquette",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_139",
+      "Question Text": "Which show features the fictional paper company Wernham Hogg?",
+      "Option A": "The Office (US)",
+      "Option B": "The IT Crowd",
+      "Option C": "The Office (UK)",
+      "Option D": "Extras",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_140",
+      "Question Text": "Who played David Brent in 'The Office (UK)'?",
+      "Option A": "Martin Freeman",
+      "Option B": "Mackenzie Crook",
+      "Option C": "Ricky Gervais",
+      "Option D": "Stephen Merchant",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_141",
+      "Question Text": "Which show features the fictional town of Everwood?",
+      "Option A": "Dawson's Creek",
+      "Option B": "Everwood",
+      "Option C": "Life Unexpected",
+      "Option D": "Providence",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_142",
+      "Question Text": "Who played Andy Brown in 'Everwood'?",
+      "Option A": "Treat Williams",
+      "Option B": "Gregory Smith",
+      "Option C": "Tom Amandes",
+      "Option D": "Chris Pratt",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_143",
+      "Question Text": "Which show features the fictional restaurant Freddy's BBQ Joint?",
+      "Option A": "House of Cards",
+      "Option B": "The Wire",
+      "Option C": "True Detective",
+      "Option D": "Ozark",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_144",
+      "Question Text": "Who played Omar Little in 'The Wire'?",
+      "Option A": "Idris Elba",
+      "Option B": "Michael K. Williams",
+      "Option C": "Wood Harris",
+      "Option D": "Lance Reddick",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_145",
+      "Question Text": "Which show features the fictional town of Tree Hill?",
+      "Option A": "The O.C.",
+      "Option B": "One Tree Hill",
+      "Option C": "Friday Night Lights",
+      "Option D": "Smallville",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_146",
+      "Question Text": "Who played Nathan Scott in 'One Tree Hill'?",
+      "Option A": "Chad Michael Murray",
+      "Option B": "James Lafferty",
+      "Option C": "Tyler Hilton",
+      "Option D": "Lee Norris",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_147",
+      "Question Text": "Which show features the fictional company Massive Dynamic?",
+      "Option A": "Fringe",
+      "Option B": "Person of Interest",
+      "Option C": "The X-Files",
+      "Option D": "Warehouse 13",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_148",
+      "Question Text": "Who played Walter Bishop in 'Fringe'?",
+      "Option A": "Lance Reddick",
+      "Option B": "Joshua Jackson",
+      "Option C": "John Noble",
+      "Option D": "Blair Brown",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_149",
+      "Question Text": "Which show features the fictional town of Capeside?",
+      "Option A": "My So-Called Life",
+      "Option B": "Freaks and Geeks",
+      "Option C": "Dawson's Creek",
+      "Option D": "Popular",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_150",
+      "Question Text": "Who played Dawson Leery in 'Dawson's Creek'?",
+      "Option A": "Joshua Jackson",
+      "Option B": "James Van Der Beek",
+      "Option C": "Kerr Smith",
+      "Option D": "Chad Michael Murray",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_151",
+      "Question Text": "Which show features the fictional company Sterling Cooper Draper Pryce?",
+      "Option A": "Mad Men",
+      "Option B": "Trust Me",
+      "Option C": "The Crazy Ones",
+      "Option D": "Better Off Ted",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_152",
+      "Question Text": "Who played Joan Harris in 'Mad Men'?",
+      "Option A": "January Jones",
+      "Option B": "Christina Hendricks",
+      "Option C": "Elisabeth Moss",
+      "Option D": "Jessica Paré",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_153",
+      "Question Text": "Which show features the fictional town of Sunnydale?",
+      "Option A": "True Blood",
+      "Option B": "Buffy the Vampire Slayer",
+      "Option C": "Charmed",
+      "Option D": "Supernatural",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_154",
+      "Question Text": "Who played Spike in 'Buffy the Vampire Slayer'?",
+      "Option A": "David Boreanaz",
+      "Option B": "James Marsters",
+      "Option C": "Anthony Head",
+      "Option D": "Nicholas Brendon",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_155",
+      "Question Text": "Which show features the fictional company Massive Tech?",
+      "Option A": "Person of Interest",
+      "Option B": "Mr. Robot",
+      "Option C": "Black Mirror",
+      "Option D": "Devs",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_156",
+      "Question Text": "Who played John Reese in 'Person of Interest'?",
+      "Option A": "Michael Emerson",
+      "Option B": "Jim Caviezel",
+      "Option C": "Kevin Chapman",
+      "Option D": "Taraji P. Henson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_157",
+      "Question Text": "Which show features the fictional town of Bon Temps?",
+      "Option A": "True Blood",
+      "Option B": "The Originals",
+      "Option C": "Midnight Texas",
+      "Option D": "Salem",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_158",
+      "Question Text": "Who played Sookie Stackhouse in 'True Blood'?",
+      "Option A": "Anna Paquin",
+      "Option B": "Deborah Ann Woll",
+      "Option C": "Rutina Wesley",
+      "Option D": "Kristin Bauer van Straten",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_159",
+      "Question Text": "Which show features the fictional company Veridian Dynamics?",
+      "Option A": "Corporate",
+      "Option B": "Better Off Ted",
+      "Option C": "Incorporated",
+      "Option D": "Upload",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_160",
+      "Question Text": "Who played Theodore 'Ted' Crisp in 'Better Off Ted'?",
+      "Option A": "Jay Harrington",
+      "Option B": "Portia de Rossi",
+      "Option C": "Andrea Anders",
+      "Option D": "Malcolm Barrett",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_161",
+      "Question Text": "Which show features the fictional town of Stars Hollow?",
+      "Option A": "Hart of Dixie",
+      "Option B": "Gilmore Girls",
+      "Option C": "Sweet Magnolias",
+      "Option D": "Virgin River",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_162",
+      "Question Text": "Who played Lorelai Gilmore in 'Gilmore Girls'?",
+      "Option A": "Lauren Graham",
+      "Option B": "Alexis Bledel",
+      "Option C": "Melissa McCarthy",
+      "Option D": "Kelly Bishop",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_163",
+      "Question Text": "Which show features the fictional company Sabre?",
+      "Option A": "The Office (US)",
+      "Option B": "Parks and Recreation",
+      "Option C": "30 Rock",
+      "Option D": "Workaholics",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_164",
+      "Question Text": "Who played Jo Bennett in 'The Office (US)'?",
+      "Option A": "Margo Martindale",
+      "Option B": "Kathy Bates",
+      "Option C": "Jane Lynch",
+      "Option D": "Jessica Walter",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_165",
+      "Question Text": "Which show features the fictional town of Castle Rock?",
+      "Option A": "Haven",
+      "Option B": "Castle Rock",
+      "Option C": "Midnight Mass",
+      "Option D": "American Horror Story",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_166",
+      "Question Text": "Who played Henry Deaver in 'Castle Rock'?",
+      "Option A": "Bill Skarsgård",
+      "Option B": "André Holland",
+      "Option C": "Melanie Lynskey",
+      "Option D": "Jane Levy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_167",
+      "Question Text": "Which show features the fictional company Reynholm Industries?",
+      "Option A": "Silicon Valley",
+      "Option B": "The IT Crowd",
+      "Option C": "Corporate",
+      "Option D": "Mythic Quest",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_168",
+      "Question Text": "Who played Roy Trenneman in 'The IT Crowd'?",
+      "Option A": "Richard Ayoade",
+      "Option B": "Chris O'Dowd",
+      "Option C": "Matt Berry",
+      "Option D": "Katherine Parkinson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_169",
+      "Question Text": "Which show features the fictional town of Fairview?",
+      "Option A": "Desperate Housewives",
+      "Option B": "Pretty Little Liars",
+      "Option C": "Revenge",
+      "Option D": "Devious Maids",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_170",
+      "Question Text": "Who played Susan Mayer in 'Desperate Housewives'?",
+      "Option A": "Eva Longoria",
+      "Option B": "Marcia Cross",
+      "Option C": "Teri Hatcher",
+      "Option D": "Felicity Huffman",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_171",
+      "Question Text": "Which show features the fictional company Good News?",
+      "Option A": "Murphy Brown",
+      "Option B": "The Newsroom",
+      "Option C": "Sports Night",
+      "Option D": "Great News",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_172",
+      "Question Text": "Who played Carol Wendelson in 'Great News'?",
+      "Option A": "Andrea Martin",
+      "Option B": "Briga Heelan",
+      "Option C": "Nicole Richie",
+      "Option D": "Horatio Sanz",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_173",
+      "Question Text": "Which show features the fictional town of Neptune?",
+      "Option A": "Veronica Mars",
+      "Option B": "Pretty Little Liars",
+      "Option C": "The O.C.",
+      "Option D": "One Tree Hill",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_174",
+      "Question Text": "Who played Keith Mars in 'Veronica Mars'?",
+      "Option A": "Enrico Colantoni",
+      "Option B": "Jason Dohring",
+      "Option C": "Percy Daggs III",
+      "Option D": "Francis Capra",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_175",
+      "Question Text": "Which show features the fictional company Mode magazine?",
+      "Option A": "The Bold Type",
+      "Option B": "Ugly Betty",
+      "Option C": "Just Shoot Me!",
+      "Option D": "Suddenly Susan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_176",
+      "Question Text": "Who played Betty Suarez in 'Ugly Betty'?",
+      "Option A": "America Ferrera",
+      "Option B": "Vanessa Williams",
+      "Option C": "Becki Newton",
+      "Option D": "Ana Ortiz",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_177",
+      "Question Text": "Which show features the fictional town of Bluebell?",
+      "Option A": "Hart of Dixie",
+      "Option B": "Sweet Magnolias",
+      "Option C": "Virgin River",
+      "Option D": "Cedar Cove",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_178",
+      "Question Text": "Who played Zoe Hart in 'Hart of Dixie'?",
+      "Option A": "Rachel Bilson",
+      "Option B": "Jaime King",
+      "Option C": "Cress Williams",
+      "Option D": "Scott Porter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_179",
+      "Question Text": "Which show features the fictional company TGS?",
+      "Option A": "Studio 60",
+      "Option B": "30 Rock",
+      "Option C": "The Morning Show",
+      "Option D": "Great News",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_180",
+      "Question Text": "Who played Liz Lemon in '30 Rock'?",
+      "Option A": "Jane Krakowski",
+      "Option B": "Tina Fey",
+      "Option C": "Alec Baldwin",
+      "Option D": "Tracy Morgan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_181",
+      "Question Text": "Which show features the fictional company Richmond Green?",
+      "Option A": "A.P. Bio",
+      "Option B": "Abbott Elementary",
+      "Option C": "Ted Lasso",
+      "Option D": "Shrinking",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_182",
+      "Question Text": "Who played Rebecca Welton in 'Ted Lasso'?",
+      "Option A": "Hannah Waddingham",
+      "Option B": "Juno Temple",
+      "Option C": "Sarah Niles",
+      "Option D": "Ellie Taylor",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_183",
+      "Question Text": "Which show features the fictional town of Easttown?",
+      "Option A": "Mare of Easttown",
+      "Option B": "Sharp Objects",
+      "Option C": "The Undoing",
+      "Option D": "Big Little Lies",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_184",
+      "Question Text": "Who played Mare Sheehan in 'Mare of Easttown'?",
+      "Option A": "Kate Winslet",
+      "Option B": "Julianne Nicholson",
+      "Option C": "Jean Smart",
+      "Option D": "Angourie Rice",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_185",
+      "Question Text": "Which show features the fictional company WaystarRoyco?",
+      "Option A": "Industry",
+      "Option B": "Billions",
+      "Option C": "Succession",
+      "Option D": "Super Pumped",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_186",
+      "Question Text": "Who played Ebenezer Scrooge in 'A Christmas Carol'?",
+      "Option A": "Guy Pearce",
+      "Option B": "Michael Caine",
+      "Option C": "George C. Scott",
+      "Option D": "Patrick Stewart",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_187",
+      "Question Text": "Which show features the fictional town of Virgin River?",
+      "Option A": "Sweet Magnolias",
+      "Option B": "Virgin River",
+      "Option C": "Firefly Lane",
+      "Option D": "Chesapeake Shores",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_188",
+      "Question Text": "Who played Melinda 'Mel' Monroe in 'Virgin River'?",
+      "Option A": "Alexandra Breckenridge",
+      "Option B": "Lauren Hammersley",
+      "Option C": "Annette O'Toole",
+      "Option D": "Sarah Dugdale",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_189",
+      "Question Text": "Which show features the fictional company The Morning Show?",
+      "Option A": "Studio 60",
+      "Option B": "The Newsroom",
+      "Option C": "The Morning Show",
+      "Option D": "Great News",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_190",
+      "Question Text": "Who played Alex Levy in 'The Morning Show'?",
+      "Option A": "Jennifer Aniston",
+      "Option B": "Reese Witherspoon",
+      "Option C": "Karen Pittman",
+      "Option D": "Gugu Mbatha-Raw",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_191",
+      "Question Text": "Which show features the fictional town of Sweet Magnolias?",
+      "Option A": "Hart of Dixie",
+      "Option B": "Virgin River",
+      "Option C": "Sweet Magnolias",
+      "Option D": "Ginny & Georgia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_192",
+      "Question Text": "Who played Maddie Townsend in 'Sweet Magnolias'?",
+      "Option A": "JoAnna Garcia Swisher",
+      "Option B": "Brooke Elliott",
+      "Option C": "Heather Headley",
+      "Option D": "Jamie Lynn Spears",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_193",
+      "Question Text": "Which show features the fictional company Genpop?",
+      "Option A": "Upload",
+      "Option B": "Made For Love",
+      "Option C": "Maniac",
+      "Option D": "Devs",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_194",
+      "Question Text": "Who played Nathan Brown in 'Upload'?",
+      "Option A": "Robbie Amell",
+      "Option B": "Andy Allo",
+      "Option C": "Allegra Edwards",
+      "Option D": "Zainab Johnson",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_195",
+      "Question Text": "Which show features the fictional town of Wellsbury?",
+      "Option A": "Ginny & Georgia",
+      "Option B": "Never Have I Ever",
+      "Option C": "The Society",
+      "Option D": "Looking for Alaska",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_196",
+      "Question Text": "Who played Georgia Miller in 'Ginny & Georgia'?",
+      "Option A": "Brianne Howey",
+      "Option B": "Antonia Gentry",
+      "Option C": "Jennifer Robertson",
+      "Option D": "Felix Mallard",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_197",
+      "Question Text": "Which show features the fictional company Mythic Quest?",
+      "Option A": "Silicon Valley",
+      "Option B": "Upload",
+      "Option C": "Mythic Quest",
+      "Option D": "Halt and Catch Fire",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_198",
+      "Question Text": "Who played Ian Grimm in 'Mythic Quest'?",
+      "Option A": "Rob McElhenney",
+      "Option B": "Charlotte Nicdao",
+      "Option C": "Danny Pudi",
+      "Option D": "F. Murray Abraham",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_199",
+      "Question Text": "Which show features the fictional town of The Coterie?",
+      "Option A": "Good Trouble",
+      "Option B": "The Fosters",
+      "Option C": "Switched at Birth",
+      "Option D": "The Bold Type",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_200",
+      "Question Text": "Who played Callie Adams Foster in 'Good Trouble'?",
+      "Option A": "Maia Mitchell",
+      "Option B": "Cierra Ramirez",
+      "Option C": "Zuri Adele",
+      "Option D": "Sherry Cola",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_201",
+      "Question Text": "Which show features the fictional company Scarlet Magazine?",
+      "Option A": "The Bold Type",
+      "Option B": "Younger",
+      "Option C": "Just Shoot Me!",
+      "Option D": "Running in Heels",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_202",
+      "Question Text": "Who played Jane Sloan in 'The Bold Type'?",
+      "Option A": "Katie Stevens",
+      "Option B": "Meghann Fahy",
+      "Option C": "Aisha Dee",
+      "Option D": "Melora Hardin",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_203",
+      "Question Text": "Which show features the fictional town of Serenity?",
+      "Option A": "Sweet Magnolias",
+      "Option B": "Virgin River",
+      "Option C": "Cedar Cove",
+      "Option D": "Chesapeake Shores",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_204",
+      "Question Text": "Who played Chief Bill Gillespie in 'In the Heat of the Night'?",
+      "Option A": "Carroll O'Connor",
+      "Option B": "Howard Rollins",
+      "Option C": "Alan Autry",
+      "Option D": "David Hart",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_205",
+      "Question Text": "Which show features the fictional company UBA?",
+      "Option A": "The Morning Show",
+      "Option B": "Studio 60",
+      "Option C": "Sports Night",
+      "Option D": "The Newsroom",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_206",
+      "Question Text": "Who played Bradley Jackson in 'The Morning Show'?",
+      "Option A": "Jennifer Aniston",
+      "Option B": "Reese Witherspoon",
+      "Option C": "Karen Pittman",
+      "Option D": "Gugu Mbatha-Raw",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_207",
+      "Question Text": "Which show features the fictional town of Horseshoe Bay?",
+      "Option A": "Nancy Drew",
+      "Option B": "Riverdale",
+      "Option C": "Pretty Little Liars",
+      "Option D": "Veronica Mars",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_208",
+      "Question Text": "Who played Nancy Drew in the CW series?",
+      "Option A": "Kennedy McMann",
+      "Option B": "Maddison Jaizani",
+      "Option C": "Leah Lewis",
+      "Option D": "Alex Saxon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_209",
+      "Question Text": "Which show features the fictional company Empirical Press?",
+      "Option A": "Younger",
+      "Option B": "The Bold Type",
+      "Option C": "Good Girls",
+      "Option D": "The Morning Show",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_210",
+      "Question Text": "Who played Liza Miller in 'Younger'?",
+      "Option A": "Sutton Foster",
+      "Option B": "Hilary Duff",
+      "Option C": "Debi Mazar",
+      "Option D": "Miriam Shor",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_211",
+      "Question Text": "Which show features the fictional town of Mullins?",
+      "Option A": "Raising Dion",
+      "Option B": "The Umbrella Academy",
+      "Option C": "Locke & Key",
+      "Option D": "October Faction",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_212",
+      "Question Text": "Who played Nicole Warren in 'Raising Dion'?",
+      "Option A": "Alisha Wainwright",
+      "Option B": "Ja'Siah Young",
+      "Option C": "Jazmyn Simon",
+      "Option D": "Jason Ritter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_213",
+      "Question Text": "Which show features the fictional company The Daily Dose?",
+      "Option A": "Great News",
+      "Option B": "Murphy Brown",
+      "Option C": "The Morning Show",
+      "Option D": "Sports Night",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_214",
+      "Question Text": "Who played Katie Wendelson in 'Great News'?",
+      "Option A": "Briga Heelan",
+      "Option B": "Andrea Martin",
+      "Option C": "Nicole Richie",
+      "Option D": "John Michael Higgins",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_215",
+      "Question Text": "Which show features the fictional town of Millwood?",
+      "Option A": "Pretty Little Liars: Original Sin",
+      "Option B": "Cruel Summer",
+      "Option C": "One of Us is Lying",
+      "Option D": "The Society",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_216",
+      "Question Text": "Who played Tabby Haworthe in 'Pretty Little Liars: Original Sin'?",
+      "Option A": "Chandler Kinney",
+      "Option B": "Maia Reficco",
+      "Option C": "Bailee Madison",
+      "Option D": "Zaria",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_217",
+      "Question Text": "Which show features the fictional company Sacred Heart Hospital?",
+      "Option A": "ER",
+      "Option B": "Chicago Hope",
+      "Option C": "Scrubs",
+      "Option D": "Grey's Anatomy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_218",
+      "Question Text": "Who played Dr. Perry Cox in 'Scrubs'?",
+      "Option A": "Zach Braff",
+      "Option B": "Donald Faison",
+      "Option C": "John C. McGinley",
+      "Option D": "Ken Jenkins",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_219",
+      "Question Text": "Which show features the fictional town of Beacon Hills?",
+      "Option A": "The Vampire Diaries",
+      "Option B": "Teen Wolf",
+      "Option C": "Riverdale",
+      "Option D": "Pretty Little Liars",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_220",
+      "Question Text": "Who played Scott McCall in 'Teen Wolf'?",
+      "Option A": "Tyler Posey",
+      "Option B": "Dylan O'Brien",
+      "Option C": "Tyler Hoechlin",
+      "Option D": "Holland Roden",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_221",
+      "Question Text": "Which show features the fictional company Mode?",
+      "Option A": "The Devil Wears Prada",
+      "Option B": "Ugly Betty",
+      "Option C": "The Bold Type",
+      "Option D": "Younger",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_222",
+      "Question Text": "Who played Wilhelmina Slater in 'Ugly Betty'?",
+      "Option A": "America Ferrera",
+      "Option B": "Vanessa Williams",
+      "Option C": "Becki Newton",
+      "Option D": "Ana Ortiz",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_223",
+      "Question Text": "Which show features the fictional town of Cedar Cove?",
+      "Option A": "Virgin River",
+      "Option B": "Sweet Magnolias",
+      "Option C": "Cedar Cove",
+      "Option D": "Chesapeake Shores",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_224",
+      "Question Text": "Who played Olivia Lockhart in 'Cedar Cove'?",
+      "Option A": "Andie MacDowell",
+      "Option B": "Sarah Smyth",
+      "Option C": "Teryl Rothery",
+      "Option D": "Paula Shaw",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_225",
+      "Question Text": "Which show features the fictional company CTU?",
+      "Option A": "NCIS",
+      "Option B": "Criminal Minds",
+      "Option C": 24,
+      "Option D": "Homeland",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_226",
+      "Question Text": "Who played Tony Almeida in '24'?",
+      "Option A": "Carlos Bernard",
+      "Option B": "Dennis Haysbert",
+      "Option C": "Kiefer Sutherland",
+      "Option D": "Mary Lynn Rajskub",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_227",
+      "Question Text": "Which show features the fictional town of Jarden?",
+      "Option A": "The Leftovers",
+      "Option B": "Under the Dome",
+      "Option C": "Revolution",
+      "Option D": "The 100",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_228",
+      "Question Text": "Who played Kevin Garvey in 'The Leftovers'?",
+      "Option A": "Justin Theroux",
+      "Option B": "Christopher Eccleston",
+      "Option C": "Amy Brenneman",
+      "Option D": "Carrie Coon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_229",
+      "Question Text": "Which show features the fictional company Empire Entertainment?",
+      "Option A": "Power",
+      "Option B": "Empire",
+      "Option C": "Star",
+      "Option D": "The Get Down",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_230",
+      "Question Text": "Who played Cookie Lyon in 'Empire'?",
+      "Option A": "Taraji P. Henson",
+      "Option B": "Gabrielle Union",
+      "Option C": "Regina King",
+      "Option D": "Angela Bassett",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_231",
+      "Question Text": "Which show features the fictional town of Rosewood?",
+      "Option A": "Pretty Little Liars",
+      "Option B": "Riverdale",
+      "Option C": "The Vampire Diaries",
+      "Option D": "Teen Wolf",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_232",
+      "Question Text": "Who played Spencer Hastings in 'Pretty Little Liars'?",
+      "Option A": "Lucy Hale",
+      "Option B": "Ashley Benson",
+      "Option C": "Troian Bellisario",
+      "Option D": "Shay Mitchell",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_233",
+      "Question Text": "Which show features the fictional company Waystar Royco?",
+      "Option A": "Billions",
+      "Option B": "Industry",
+      "Option C": "Succession",
+      "Option D": "Super Pumped",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_234",
+      "Question Text": "Who played Shiv Roy in 'Succession'?",
+      "Option A": "Sarah Snook",
+      "Option B": "J. Smith-Cameron",
+      "Option C": "Hiam Abbass",
+      "Option D": "Justine Lupe",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_235",
+      "Question Text": "Which show features the fictional town of Midnight?",
+      "Option A": "True Blood",
+      "Option B": "Midnight Texas",
+      "Option C": "American Horror Story",
+      "Option D": "Salem",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_236",
+      "Question Text": "Who played Manfred Bernardo in 'Midnight Texas'?",
+      "Option A": "François Arnaud",
+      "Option B": "Dylan Bruce",
+      "Option C": "Parisa Fitz-Henley",
+      "Option D": "Arielle Kebbel",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_237",
+      "Question Text": "Which show features the fictional company Pied Piper?",
+      "Option A": "Silicon Valley",
+      "Option B": "Halt and Catch Fire",
+      "Option C": "StartUp",
+      "Option D": "Mr. Robot",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_238",
+      "Question Text": "Who played Richard Hendricks in 'Silicon Valley'?",
+      "Option A": "Thomas Middleditch",
+      "Option B": "T.J. Miller",
+      "Option C": "Martin Starr",
+      "Option D": "Kumail Nanjiani",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_239",
+      "Question Text": "Which show features the fictional town of Port Charles?",
+      "Option A": "General Hospital",
+      "Option B": "Days of Our Lives",
+      "Option C": "All My Children",
+      "Option D": "One Life to Live",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_240",
+      "Question Text": "Who played Sonny Corinthos in 'General Hospital'?",
+      "Option A": "Maurice Benard",
+      "Option B": "Steve Burton",
+      "Option C": "Anthony Geary",
+      "Option D": "Jack Wagner",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_241",
+      "Question Text": "Which is the first movie in the Austin Powers franchise?",
+      "Option A": "Austin Powers: International Man of Mystery",
+      "Option B": "Austin Powers: The Spy Who Shagged Me",
+      "Option C": "Austin Powers in Goldmember",
+      "Option D": "Austin Powers: Secret Agent",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_242",
+      "Question Text": "What city is overrun with ghosts in Ghostbusters?",
+      "Option A": "Chicago",
+      "Option B": "Los Angeles",
+      "Option C": "New York",
+      "Option D": "Boston",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_243",
+      "Question Text": "In Back to the Future, what speed does the DeLorean have to reach to experience time travel?",
+      "Option A": "55 mph",
+      "Option B": "77 mph",
+      "Option C": "88 mph",
+      "Option D": "99 mph",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_244",
+      "Question Text": "What year were The Mask, Dumb and Dumber and Ace Ventura: Pet Detective released?",
+      "Option A": 1993,
+      "Option B": 1994,
+      "Option C": 1995,
+      "Option D": 1996,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_245",
+      "Question Text": "Inigo Montoya is a character from which 1987 iconic Rob Reiner film?",
+      "Option A": "Stand By Me",
+      "Option B": "When Harry Met Sally",
+      "Option C": "The Princess Bride",
+      "Option D": "This Is Spinal Tap",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_246",
+      "Question Text": "Which holiday do Meg Ryan and Billy Crystal celebrate at the end of When Harry Met Sally?",
+      "Option A": "Christmas",
+      "Option B": "Valentine's Day",
+      "Option C": "Thanksgiving",
+      "Option D": "New Year's Eve",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_247",
+      "Question Text": "What flavor Pop Tarts does Buddy the Elf use in his spaghetti in Elf?",
+      "Option A": "Strawberry",
+      "Option B": "Blueberry",
+      "Option C": "Chocolate",
+      "Option D": "Cinnamon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_248",
+      "Question Text": "Who starred as Arnold Schwarzenegger's twin in the 1988 movie Twins?",
+      "Option A": "Danny DeVito",
+      "Option B": "Billy Crystal",
+      "Option C": "Rick Moranis",
+      "Option D": "Joe Pesci",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_249",
+      "Question Text": "What is Bill Murray's occupation in Groundhog Day?",
+      "Option A": "Police Officer",
+      "Option B": "Meteorologist",
+      "Option C": "Teacher",
+      "Option D": "Radio Host",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_250",
+      "Question Text": "What famous NFL quarterback plays Mary's former love interest in There's Something About Mary?",
+      "Option A": "John Elway",
+      "Option B": "Dan Marino",
+      "Option C": "Brett Favre",
+      "Option D": "Steve Young",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_251",
+      "Question Text": "Who was the first character to speak in the first Star Wars movie?",
+      "Option A": "Luke Skywalker",
+      "Option B": "R2-D2",
+      "Option C": "C3PO",
+      "Option D": "Princess Leia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_252",
+      "Question Text": "In The Matrix, what color are the two pills that Morpheus gives Neo to choose between?",
+      "Option A": "Green or Blue",
+      "Option B": "Red or Blue",
+      "Option C": "Blue or Yellow",
+      "Option D": "Red or Green",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_253",
+      "Question Text": "The Lord of the Rings movies are based on a novel by what author?",
+      "Option A": "C.S. Lewis",
+      "Option B": "J.R.R. Tolkien",
+      "Option C": "George R.R. Martin",
+      "Option D": "Terry Pratchett",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_254",
+      "Question Text": "What is the name of the computer in 2001: A Space Odyssey?",
+      "Option A": "Mother",
+      "Option B": "Hal",
+      "Option C": "Master Control",
+      "Option D": "Deep Thought",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_255",
+      "Question Text": "What are the bad guys called in The Transformers?",
+      "Option A": "Destructicons",
+      "Option B": "Predacons",
+      "Option C": "Decepticons",
+      "Option D": "Terrorcons",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_256",
+      "Question Text": "What is the name of the spaceship in Alien?",
+      "Option A": "USCSS Nostromo",
+      "Option B": "USS Enterprise",
+      "Option C": "Millennium Falcon",
+      "Option D": "Nebuchadnezzar",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_257",
+      "Question Text": "What actor played the President of the United States in Independence Day?",
+      "Option A": "Harrison Ford",
+      "Option B": "Bill Pullman",
+      "Option C": "Morgan Freeman",
+      "Option D": "Dennis Quaid",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_258",
+      "Question Text": "What illegal substance is Tom Cruise addicted to in Minority Report?",
+      "Option A": "Nexus",
+      "Option B": "Clarity",
+      "Option C": "Substance D",
+      "Option D": "Nuke",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_259",
+      "Question Text": "What substance is Han Solo frozen in during The Empire Strikes Back?",
+      "Option A": "Carbonite",
+      "Option B": "Kryptonite",
+      "Option C": "Vibranium",
+      "Option D": "Adamantium",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_260",
+      "Question Text": "What are the names of the twins played by Lindsay Lohan in the 1998 film The Parent Trap?",
+      "Option A": "Mary and Marie",
+      "Option B": "Hallie and Annie",
+      "Option C": "Sophie and Sarah",
+      "Option D": "Lisa and Lucy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_261",
+      "Question Text": "What non-puppet actor played Scrooge in the movie The Muppet Christmas Carol?",
+      "Option A": "Patrick Stewart",
+      "Option B": "Michael Caine",
+      "Option C": "Ian McKellen",
+      "Option D": "Christopher Plummer",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_262",
+      "Question Text": "Which Pixar movie featured a journey to South America in a house held up by floating balloons?",
+      "Option A": "Inside Out",
+      "Option B": "Up",
+      "Option C": "Brave",
+      "Option D": "WALL-E",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_263",
+      "Question Text": "Who directed It's a Wonderful Life?",
+      "Option A": "Frank Capra",
+      "Option B": "John Ford",
+      "Option C": "Alfred Hitchcock",
+      "Option D": "Billy Wilder",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_264",
+      "Question Text": "What are the names of Cinderella's wicked stepsisters?",
+      "Option A": "Anastasia and Drizella",
+      "Option B": "Prudence and Patience",
+      "Option C": "Grizelda and Lucinda",
+      "Option D": "Flora and Fauna",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_265",
+      "Question Text": "What is the dog's actual name in The Sandlot?",
+      "Option A": "Killer",
+      "Option B": "Beast",
+      "Option C": "Hercules",
+      "Option D": "Thunder",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_266",
+      "Question Text": "What is Jack-Jack's real name in The Incredibles?",
+      "Option A": "Jackson Robert",
+      "Option B": "John Jackson",
+      "Option C": "Jack Johnson",
+      "Option D": "James Jackson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_267",
+      "Question Text": "Which 90's movie featured the songs 'My Guy (My God)' and 'I Will Follow Him'?",
+      "Option A": "Sister Act",
+      "Option B": "The Preacher's Wife",
+      "Option C": "The Fighting Temptations",
+      "Option D": "Leap of Faith",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_268",
+      "Question Text": "What is the name of Kevin Costner's character in Field of Dreams?",
+      "Option A": "John Kinsella",
+      "Option B": "Ray Kinsella",
+      "Option C": "Joe Jackson",
+      "Option D": "Billy Chapel",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_269",
+      "Question Text": "Where is Humperdinck's kingdom in The Princess Bride?",
+      "Option A": "Guilder",
+      "Option B": "Florin",
+      "Option C": "Ruritania",
+      "Option D": "Genovia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_270",
+      "Question Text": "In Disney's Alice in Wonderland, who is the first character to speak to Alice after she falls through the rabbit hole?",
+      "Option A": "White Rabbit",
+      "Option B": "Cheshire Cat",
+      "Option C": "Door Knob",
+      "Option D": "Mad Hatter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_271",
+      "Question Text": "What was the first feature-length animated movie ever released?",
+      "Option A": "Pinocchio",
+      "Option B": "Fantasia",
+      "Option C": "Snow White and the Seven Dwarfs",
+      "Option D": "Bambi",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_272",
+      "Question Text": "In Finding Nemo, how many white stripes does Nemo have?",
+      "Option A": "Two",
+      "Option B": "Three",
+      "Option C": "Four",
+      "Option D": "Five",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_273",
+      "Question Text": "Who voiced Victor Van Dort in Corpse Bride?",
+      "Option A": "Johnny Depp",
+      "Option B": "Tim Burton",
+      "Option C": "Helena Bonham Carter",
+      "Option D": "Christopher Lee",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_274",
+      "Question Text": "What is the name of the fictional place where Frozen takes place?",
+      "Option A": "Corona",
+      "Option B": "Arendelle",
+      "Option C": "DunBroch",
+      "Option D": "Enchancia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_275",
+      "Question Text": "What was the first animated movie made entirely by CGI?",
+      "Option A": "Antz",
+      "Option B": "A Bug's Life",
+      "Option C": "Toy Story",
+      "Option D": "Shrek",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_276",
+      "Question Text": "What land are the tiny dinosaurs trying to get to in The Land Before Time?",
+      "Option A": "The Great Valley",
+      "Option B": "Paradise Falls",
+      "Option C": "Green Valley",
+      "Option D": "Sunny Plains",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_277",
+      "Question Text": "What villain threatens the entire Lego universe in The Lego Movie?",
+      "Option A": "President Business",
+      "Option B": "Lord Business",
+      "Option C": "Evil CEO",
+      "Option D": "Master Builder",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_278",
+      "Question Text": "What animated film was the third highest grossing movie in 2001?",
+      "Option A": "Shrek",
+      "Option B": "Monsters, Inc.",
+      "Option C": "Atlantis",
+      "Option D": "Jimmy Neutron",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_279",
+      "Question Text": "What song do Cinderella and Prince Charming dance to at the ball?",
+      "Option A": "A Dream is a Wish",
+      "Option B": "So This Is Love",
+      "Option C": "Bibbidi-Bobbidi-Boo",
+      "Option D": "Perfect Dream",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_280",
+      "Question Text": "Which child from Willy Wonka and the Chocolate Factory finds the first Golden Ticket?",
+      "Option A": "Charlie Bucket",
+      "Option B": "Violet Beauregarde",
+      "Option C": "Mike Teavee",
+      "Option D": "Augustus Gloop",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_281",
+      "Question Text": "Set in a Los Angeles office building, the 1979 novel 'Nothing Lasts Forever' is the basis for what film?",
+      "Option A": "Die Hard",
+      "Option B": "Lethal Weapon",
+      "Option C": "Speed",
+      "Option D": "True Lies",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_282",
+      "Question Text": "How many tributes survive the first day of The Hunger Games?",
+      "Option A": 8,
+      "Option B": 11,
+      "Option C": 13,
+      "Option D": 15,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_283",
+      "Question Text": "What Hemingway novel was adapted into a movie where Santiago goes 84 days without a catch?",
+      "Option A": "For Whom the Bell Tolls",
+      "Option B": "The Old Man and the Sea",
+      "Option C": "A Farewell to Arms",
+      "Option D": "The Sun Also Rises",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_284",
+      "Question Text": "Which teen flick about high school students was based on Jane Austen's 'Emma'?",
+      "Option A": "10 Things I Hate About You",
+      "Option B": "Clueless",
+      "Option C": "She's All That",
+      "Option D": "Mean Girls",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_285",
+      "Question Text": "What film about escaped convicts was inspired by 'The Odyssey'?",
+      "Option A": "Cool Hand Luke",
+      "Option B": "The Fugitive",
+      "Option C": "O Brother, Where Art Thou?",
+      "Option D": "Con Air",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_286",
+      "Question Text": "Fantastic Mr. Fox was created from a children's book by what author?",
+      "Option A": "Dr. Seuss",
+      "Option B": "Roald Dahl",
+      "Option C": "E.B. White",
+      "Option D": "Maurice Sendak",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_287",
+      "Question Text": "Contact is based on a book by what writer?",
+      "Option A": "Isaac Asimov",
+      "Option B": "Arthur C. Clarke",
+      "Option C": "Carl Sagan",
+      "Option D": "Ray Bradbury",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_288",
+      "Question Text": "If you watch the Marvel movies in chronological order, which movie would you start with?",
+      "Option A": "Iron Man",
+      "Option B": "Captain America: The First Avenger",
+      "Option C": "Thor",
+      "Option D": "The Incredible Hulk",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_289",
+      "Question Text": "What is the highest-grossing movie of all time?",
+      "Option A": "Titanic",
+      "Option B": "Avengers: Endgame",
+      "Option C": "Avatar",
+      "Option D": "Star Wars: The Force Awakens",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_290",
+      "Question Text": "What was the name of the boat in Jaws?",
+      "Option A": "Orca",
+      "Option B": "Shark Hunter",
+      "Option C": "Sea Quest",
+      "Option D": "Neptune",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_291",
+      "Question Text": "What was Jason Bourne's real name?",
+      "Option A": "John Smith",
+      "Option B": "David Webb",
+      "Option C": "Michael Stratton",
+      "Option D": "James Wilson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_292",
+      "Question Text": "Where does Jack's compass point in Pirates of the Caribbean?",
+      "Option A": "True North",
+      "Option B": "Treasure",
+      "Option C": "To whatever he desires most",
+      "Option D": "The Black Pearl",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_293",
+      "Question Text": "Who played the lead role in the 2001 film Lara Croft: Tomb Raider?",
+      "Option A": "Angelina Jolie",
+      "Option B": "Kate Beckinsale",
+      "Option C": "Milla Jovovich",
+      "Option D": "Charlize Theron",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_294",
+      "Question Text": "In Speed, why was Annie's driver's license suspended?",
+      "Option A": "Drunk driving",
+      "Option B": "Parking tickets",
+      "Option C": "Speeding",
+      "Option D": "Expired license",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_295",
+      "Question Text": "What national monument does Cary Grant climb in North by Northwest?",
+      "Option A": "Statue of Liberty",
+      "Option B": "Washington Monument",
+      "Option C": "Mount Rushmore",
+      "Option D": "Lincoln Memorial",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_296",
+      "Question Text": "Which film earned Tom Hanks his first Academy Award nomination?",
+      "Option A": "Big",
+      "Option B": "Splash",
+      "Option C": "Philadelphia",
+      "Option D": "Forrest Gump",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_297",
+      "Question Text": "What Disney movie was nominated for 13 Academy Awards and won 5?",
+      "Option A": "Snow White",
+      "Option B": "Beauty and the Beast",
+      "Option C": "Mary Poppins",
+      "Option D": "The Lion King",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_298",
+      "Question Text": "For what movie did Steven Spielberg win his first Oscar for Best Director?",
+      "Option A": "Jaws",
+      "Option B": "E.T.",
+      "Option C": "Schindler's List",
+      "Option D": "Saving Private Ryan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_299",
+      "Question Text": "Which animated movie had the first nomination for Best Picture?",
+      "Option A": "Snow White",
+      "Option B": "Beauty and The Beast",
+      "Option C": "The Lion King",
+      "Option D": "Toy Story",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_300",
+      "Question Text": "What was the first color film to win an Oscar for Best Picture?",
+      "Option A": "The Wizard of Oz",
+      "Option B": "Gone with the Wind",
+      "Option C": "An American in Paris",
+      "Option D": "Singin' in the Rain",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_301",
+      "Question Text": "Who is the youngest Best Actor Academy Award winner?",
+      "Option A": "Timothy Hutton",
+      "Option B": "Adrien Brody",
+      "Option C": "Eddie Redmayne",
+      "Option D": "Nicolas Cage",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_302",
+      "Question Text": "Which male artist has the most Academy Awards?",
+      "Option A": "Steven Spielberg",
+      "Option B": "Walt Disney",
+      "Option C": "John Ford",
+      "Option D": "Alan Menken",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_303",
+      "Question Text": "What musical won Best Picture in 1968?",
+      "Option A": "The Sound of Music",
+      "Option B": "West Side Story",
+      "Option C": "Oliver!",
+      "Option D": "My Fair Lady",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_304",
+      "Question Text": "What year were the first Academy Awards handed out?",
+      "Option A": 1927,
+      "Option B": 1928,
+      "Option C": 1929,
+      "Option D": 1930,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_305",
+      "Question Text": "Who was the first woman to win the Academy Award for Best Director?",
+      "Option A": "Sofia Coppola",
+      "Option B": "Jane Campion",
+      "Option C": "Kathryn Bigelow",
+      "Option D": "Greta Gerwig",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_306",
+      "Question Text": "When were the Oscars shown on television for the first time?",
+      "Option A": 1951,
+      "Option B": 1952,
+      "Option C": 1953,
+      "Option D": 1954,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_307",
+      "Question Text": "Which new award category was added to the Academy Awards in 2001?",
+      "Option A": "Best Animated Feature",
+      "Option B": "Best Visual Effects",
+      "Option C": "Best Sound Mixing",
+      "Option D": "Best Makeup",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_308",
+      "Question Text": "What film portrays the life of Venus and Serena Williams?",
+      "Option A": "King Richard",
+      "Option B": "Match Point",
+      "Option C": "Wimbledon",
+      "Option D": "Battle of the Sexes",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_309",
+      "Question Text": "Who directed A League of Their Own?",
+      "Option A": "Nora Ephron",
+      "Option B": "Penny Marshall",
+      "Option C": "Amy Heckerling",
+      "Option D": "Kathryn Bigelow",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_310",
+      "Question Text": "Who played the 'Unsinkable Molly Brown' in Titanic?",
+      "Option A": "Kate Winslet",
+      "Option B": "Frances Fisher",
+      "Option C": "Kathy Bates",
+      "Option D": "Gloria Stuart",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_311",
+      "Question Text": "In Because of Winn-Dixie, what is Winn-Dixie?",
+      "Option A": "A cat",
+      "Option B": "A horse",
+      "Option C": "A dog",
+      "Option D": "A store",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_312",
+      "Question Text": "Which country enters a bobsleigh team in Cool Runnings?",
+      "Option A": "Bahamas",
+      "Option B": "Trinidad",
+      "Option C": "Jamaica",
+      "Option D": "Barbados",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_313",
+      "Question Text": "Aaron Sorkin won an Oscar for writing what 2010 drama about Facebook?",
+      "Option A": "The Social Network",
+      "Option B": "Steve Jobs",
+      "Option C": "Moneyball",
+      "Option D": "The Founder",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_314",
+      "Question Text": "Which movie has the tagline: 'The true story of a real fake'?",
+      "Option A": "Shattered Glass",
+      "Option B": "Catch Me If You Can",
+      "Option C": "American Hustle",
+      "Option D": "The Informant!",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_315",
+      "Question Text": "What film was named the #12 most inspirational movie by AFI in 2006?",
+      "Option A": "Rocky",
+      "Option B": "Hoosiers",
+      "Option C": "Apollo 13",
+      "Option D": "Field of Dreams",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_316",
+      "Question Text": "Which college football team did Quinton Aaron train with for The Blind Side?",
+      "Option A": "Ole Miss",
+      "Option B": "Georgia Tech",
+      "Option C": "Tennessee",
+      "Option D": "Alabama",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_317",
+      "Question Text": "How many horses played the role of Seabiscuit?",
+      "Option A": 5,
+      "Option B": 8,
+      "Option C": 10,
+      "Option D": 12,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_318",
+      "Question Text": "What campus was depicted as Harvard in A Beautiful Mind?",
+      "Option A": "Yale",
+      "Option B": "Princeton",
+      "Option C": "Manhattan College",
+      "Option D": "Columbia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_319",
+      "Question Text": "Which film used eight different ballparks as Oakland Athletics stadium?",
+      "Option A": "Field of Dreams",
+      "Option B": "Moneyball",
+      "Option C": "Major League",
+      "Option D": "Bull Durham",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_320",
+      "Question Text": "What 2005 film featured Witherspoon and Phoenix singing their own songs?",
+      "Option A": "Chicago",
+      "Option B": "Walk the Line",
+      "Option C": "Ray",
+      "Option D": "Dreamgirls",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_321",
+      "Question Text": "What spell makes feathers fly in Harry Potter and the Sorcerer's Stone?",
+      "Option A": "Alohomora",
+      "Option B": "Wingardium Leviosa",
+      "Option C": "Expelliarmus",
+      "Option D": "Lumos",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_322",
+      "Question Text": "In The Lion, Witch and Wardrobe, what country is always winter but never Christmas?",
+      "Option A": "Telmar",
+      "Option B": "Calormen",
+      "Option C": "Narnia",
+      "Option D": "Archenland",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_323",
+      "Question Text": "What airport played both itself and Paris's Orly Airport in Home Alone?",
+      "Option A": "JFK",
+      "Option B": "LAX",
+      "Option C": "O'Hare",
+      "Option D": "Atlanta",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_324",
+      "Question Text": "In The Nightmare Before Christmas, who is mistakenly kidnapped before Santa?",
+      "Option A": "The Tooth Fairy",
+      "Option B": "The Easter Bunny",
+      "Option C": "The Sandman",
+      "Option D": "Father Time",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_325",
+      "Question Text": "What 1982 family film took two years to produce with 1,900 production personnel?",
+      "Option A": "E.T.",
+      "Option B": "Annie",
+      "Option C": "The Dark Crystal",
+      "Option D": "Poltergeist",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_326",
+      "Question Text": "What was the name of the whale in Free Willy?",
+      "Option A": "Willy",
+      "Option B": "Keiko",
+      "Option C": "Shamu",
+      "Option D": "Echo",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_327",
+      "Question Text": "What mode of transportation is the Polar Express?",
+      "Option A": "Sleigh",
+      "Option B": "Bus",
+      "Option C": "Train",
+      "Option D": "Airplane",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_328",
+      "Question Text": "What 1993 film starring Robin Williams takes place in San Francisco?",
+      "Option A": "Jumanji",
+      "Option B": "Hook",
+      "Option C": "Mrs. Doubtfire",
+      "Option D": "Patch Adams",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_329",
+      "Question Text": "What gas is used to 'turbo' cars in The Fast and the Furious?",
+      "Option A": "NOS",
+      "Option B": "Hydrogen",
+      "Option C": "Propane",
+      "Option D": "Methane",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_330",
+      "Question Text": "How do scientists recover dinosaur DNA in Jurassic Park?",
+      "Option A": "From fossils",
+      "Option B": "From frozen specimens",
+      "Option C": "From amber with mosquitos",
+      "Option D": "From cave paintings",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_331",
+      "Question Text": "What do astronauts travel through to find a new planet in Interstellar?",
+      "Option A": "Black hole",
+      "Option B": "Wormhole",
+      "Option C": "Time portal",
+      "Option D": "Space rift",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_332",
+      "Question Text": "What was the first science fiction film?",
+      "Option A": "Metropolis",
+      "Option B": "A Trip to the Moon",
+      "Option C": "King Kong",
+      "Option D": "The Lost World",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_333",
+      "Question Text": "What did Sean Connery always wear in James Bond movies?",
+      "Option A": "His watch",
+      "Option B": "His toupee",
+      "Option C": "His ring",
+      "Option D": "His tie",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_334",
+      "Question Text": "Which Disney film features Demi Moore, Kevin Kline and Jason Alexander?",
+      "Option A": "Pocahontas",
+      "Option B": "Mulan",
+      "Option C": "The Hunchback of Notre Dame",
+      "Option D": "Hercules",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_335",
+      "Question Text": "Fried Green Tomatoes is about which two women who run a café?",
+      "Option A": "Ruth and Mary",
+      "Option B": "Idgie and Ruth",
+      "Option C": "Evelyn and Ninny",
+      "Option D": "Mary and Idgie",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_336",
+      "Question Text": "In City Slickers, what did Mitch Robbins call the calf he helped deliver?",
+      "Option A": "Norman",
+      "Option B": "Billy",
+      "Option C": "Junior",
+      "Option D": "Lucky",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_337",
+      "Question Text": "What famous author wrote the book that inspired 'O Brother, Where Art Thou'?",
+      "Option A": "Mark Twain",
+      "Option B": "Homer",
+      "Option C": "William Faulkner",
+      "Option D": "John Steinbeck",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_338",
+      "Question Text": "Which film showcased both Whoopi Goldberg and Oprah Winfrey's debuts?",
+      "Option A": "The Color Purple",
+      "Option B": "Ghost",
+      "Option C": "Sister Act",
+      "Option D": "Beloved",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_339",
+      "Question Text": "Which teen comedy was based on Jane Austen's 'Emma'?",
+      "Option A": "10 Things I Hate About You",
+      "Option B": "She's All That",
+      "Option C": "Clueless",
+      "Option D": "Mean Girls",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_340",
+      "Question Text": "What appeared in All the President's Men but not in Watergate documents?",
+      "Option A": "Follow the money",
+      "Option B": "Deep Throat",
+      "Option C": "The smoking gun",
+      "Option D": "Cover-up",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_341",
+      "Question Text": "What film follows a father's journey to train his daughters for tennis greatness?",
+      "Option A": "King Richard",
+      "Option B": "Battle of the Sexes",
+      "Option C": "Match Point",
+      "Option D": "Wimbledon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_342",
+      "Question Text": "In what movie do you spend time in Neverland?",
+      "Option A": "Hook",
+      "Option B": "Peter Pan",
+      "Option C": "Finding Neverland",
+      "Option D": "Pan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_343",
+      "Question Text": "Who played Lara Croft in the 2001 film Tomb Raider?",
+      "Option A": "Kate Beckinsale",
+      "Option B": "Angelina Jolie",
+      "Option C": "Milla Jovovich",
+      "Option D": "Michelle Rodriguez",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_344",
+      "Question Text": "What song appears when Cinderella dances with the Prince?",
+      "Option A": "A Dream is a Wish",
+      "Option B": "So This Is Love",
+      "Option C": "Bibbidi-Bobbidi-Boo",
+      "Option D": "Once Upon a Dream",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_345",
+      "Question Text": "Which movie featured Robin Williams as Mrs. Doubtfire?",
+      "Option A": "Hook",
+      "Option B": "Mrs. Doubtfire",
+      "Option C": "Jumanji",
+      "Option D": "Patch Adams",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_346",
+      "Question Text": "What is the name of the kingdom in The Princess Bride?",
+      "Option A": "Guilder",
+      "Option B": "Florin",
+      "Option C": "Ruritania",
+      "Option D": "Genovia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_347",
+      "Question Text": "In Finding Nemo, what is Nemo's distinguishing feature?",
+      "Option A": "Two white stripes",
+      "Option B": "Three white stripes",
+      "Option C": "Four white stripes",
+      "Option D": "One small fin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_348",
+      "Question Text": "Who voices the main character in Corpse Bride?",
+      "Option A": "Johnny Depp",
+      "Option B": "Tim Burton",
+      "Option C": "Helena Bonham Carter",
+      "Option D": "Alan Rickman",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_349",
+      "Question Text": "What is the setting of Frozen?",
+      "Option A": "Corona",
+      "Option B": "Arendelle",
+      "Option C": "DunBroch",
+      "Option D": "Andalasia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_350",
+      "Question Text": "What villain tries to take over the Lego universe?",
+      "Option A": "Evil Emperor",
+      "Option B": "Lord Business",
+      "Option C": "Master Builder",
+      "Option D": "President Business",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_351",
+      "Question Text": "Which animated film features songs by Demi Moore and Kevin Kline?",
+      "Option A": "Pocahontas",
+      "Option B": "Mulan",
+      "Option C": "The Hunchback of Notre Dame",
+      "Option D": "Hercules",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_352",
+      "Question Text": "What is the name of the first animated feature film?",
+      "Option A": "Bambi",
+      "Option B": "Pinocchio",
+      "Option C": "Snow White and the Seven Dwarfs",
+      "Option D": "Fantasia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_353",
+      "Question Text": "In which movie does a house float using balloons?",
+      "Option A": "The Incredibles",
+      "Option B": "Up",
+      "Option C": "Ratatouille",
+      "Option D": "WALL-E",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_354",
+      "Question Text": "What is the name of the dog in The Sandlot?",
+      "Option A": "Beast",
+      "Option B": "Killer",
+      "Option C": "Hercules",
+      "Option D": "Monster",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_355",
+      "Question Text": "Which actor played Scrooge alongside the Muppets?",
+      "Option A": "Patrick Stewart",
+      "Option B": "Michael Caine",
+      "Option C": "Ian McKellen",
+      "Option D": "Jim Carrey",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_356",
+      "Question Text": "What was the first animated film to be nominated for Best Picture?",
+      "Option A": "Snow White",
+      "Option B": "Beauty and the Beast",
+      "Option C": "Up",
+      "Option D": "Toy Story",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_357",
+      "Question Text": "In which film does Lindsay Lohan play twins?",
+      "Option A": "Mean Girls",
+      "Option B": "Freaky Friday",
+      "Option C": "The Parent Trap",
+      "Option D": "Life-Size",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_358",
+      "Question Text": "What is the main setting of Mrs. Doubtfire?",
+      "Option A": "New York",
+      "Option B": "Chicago",
+      "Option C": "San Francisco",
+      "Option D": "Seattle",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_359",
+      "Question Text": "Which airport appears in Home Alone?",
+      "Option A": "JFK",
+      "Option B": "LaGuardia",
+      "Option C": "O'Hare",
+      "Option D": "Newark",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_360",
+      "Question Text": "What is the name of the train in The Polar Express?",
+      "Option A": "The Christmas Express",
+      "Option B": "The North Pole Express",
+      "Option C": "The Polar Express",
+      "Option D": "The Santa Express",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_361",
+      "Question Text": "What physicist did Cillian Murphy portray in his Oscar-winning 2024 role?",
+      "Option A": "Albert Einstein",
+      "Option B": "Werner Heisenberg",
+      "Option C": "J. Robert Oppenheimer",
+      "Option D": "Niels Bohr",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_362",
+      "Question Text": "In what 1993 movie do Bill Murray and Andie MacDowell relive the same day?",
+      "Option A": "About Time",
+      "Option B": "Groundhog Day",
+      "Option C": "1899-12-30T17:01:00.000Z",
+      "Option D": "Edge of Tomorrow",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_363",
+      "Question Text": "What Stephen King adaptation features Kathy Bates imprisoning a book author?",
+      "Option A": "The Shining",
+      "Option B": "Misery",
+      "Option C": "Dolores Claiborne",
+      "Option D": "Gerald's Game",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_364",
+      "Question Text": "What year was 'Bad Boys' with Will Smith and Martin Lawrence released?",
+      "Option A": 1994,
+      "Option B": 1995,
+      "Option C": 1996,
+      "Option D": 1997,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_365",
+      "Question Text": "What iconic U.S. symbol appears half-buried at the end of 'Planet of the Apes'?",
+      "Option A": "Washington Monument",
+      "Option B": "Mount Rushmore",
+      "Option C": "Statue of Liberty",
+      "Option D": "Liberty Bell",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_366",
+      "Question Text": "Which Tarantino film features John Travolta and Samuel L. Jackson as hitmen?",
+      "Option A": "Jackie Brown",
+      "Option B": "Reservoir Dogs",
+      "Option C": "Kill Bill",
+      "Option D": "Pulp Fiction",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_367",
+      "Question Text": "What is the name of the motel in the 1960 horror movie 'Psycho'?",
+      "Option A": "Overlook Hotel",
+      "Option B": "Bates Motel",
+      "Option C": "Paradise Motel",
+      "Option D": "Norman's Inn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_368",
+      "Question Text": "What fictional magazine does Anne Hathaway work for in 'The Devil Wears Prada'?",
+      "Option A": "Vogue",
+      "Option B": "Elle",
+      "Option C": "Runway",
+      "Option D": "Fashion",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_369",
+      "Question Text": "What modern musical features Emma Stone and Ryan Gosling?",
+      "Option A": "The Greatest Showman",
+      "Option B": "La La Land",
+      "Option C": "Chicago",
+      "Option D": "Moulin Rouge",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_370",
+      "Question Text": "What sketch-comedian wrote and directed 'Get Out'?",
+      "Option A": "Keegan-Michael Key",
+      "Option B": "Jordan Peele",
+      "Option C": "Andy Samberg",
+      "Option D": "Bill Hader",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_371",
+      "Question Text": "What's the name of the talking tree in 'Guardians of the Galaxy'?",
+      "Option A": "Treebeard",
+      "Option B": "Groot",
+      "Option C": "Branch",
+      "Option D": "Oakey",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_372",
+      "Question Text": "What instrument does Miles Teller's character play in 'Whiplash'?",
+      "Option A": "Piano",
+      "Option B": "Saxophone",
+      "Option C": "Trumpet",
+      "Option D": "Drums",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_373",
+      "Question Text": "What fictional country is Mia Thermopolis expected to rule in 'The Princess Diaries'?",
+      "Option A": "Aldovia",
+      "Option B": "Genovia",
+      "Option C": "Monaco",
+      "Option D": "Belgravia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_374",
+      "Question Text": "What is the first rule of Fight Club?",
+      "Option A": "Don't get caught",
+      "Option B": "No weapons",
+      "Option C": "You do not talk about Fight Club",
+      "Option D": "No killing",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_375",
+      "Question Text": "What character does Robert Downey Jr. play in the 'Iron Man' series?",
+      "Option A": "Bruce Banner",
+      "Option B": "Steve Rogers",
+      "Option C": "Tony Stark",
+      "Option D": "Peter Parker",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_376",
+      "Question Text": "What is Marty McFly's mother's assumed name for him in 'Back to the Future'?",
+      "Option A": "Levi Strauss",
+      "Option B": "Calvin Klein",
+      "Option C": "Tommy Hilfiger",
+      "Option D": "Ralph Lauren",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_377",
+      "Question Text": "What South Korean film won Best Picture at the 2020 Oscars?",
+      "Option A": "Burning",
+      "Option B": "Minari",
+      "Option C": "Parasite",
+      "Option D": "Train to Busan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_378",
+      "Question Text": "What is Lt. Bradley Bradshaw's call sign in 'Top Gun: Maverick'?",
+      "Option A": "Goose",
+      "Option B": "Rooster",
+      "Option C": "Phoenix",
+      "Option D": "Hangman",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_379",
+      "Question Text": "In what movie did Tom Hanks make his directorial debut?",
+      "Option A": "Cast Away",
+      "Option B": "That Thing You Do",
+      "Option C": "Larry Crowne",
+      "Option D": "Road to Perdition",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_380",
+      "Question Text": "Who provides the voice of Darth Vader in the 'Star Wars' franchise?",
+      "Option A": "Morgan Freeman",
+      "Option B": "James Earl Jones",
+      "Option C": "Keith David",
+      "Option D": "Lawrence Fishburne",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_381",
+      "Question Text": "What's the name of the high school in 'Grease'?",
+      "Option A": "East High",
+      "Option B": "Rydell High",
+      "Option C": "West High",
+      "Option D": "Lincoln High",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_382",
+      "Question Text": "What gang are Danny Zuko and Kenickie members of in 'Grease'?",
+      "Option A": "The Scorpions",
+      "Option B": "The T-Birds",
+      "Option C": "The Jets",
+      "Option D": "The Sharks",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_383",
+      "Question Text": "What song from 'Grease' received an Oscar nomination?",
+      "Option A": "Summer Nights",
+      "Option B": "Greased Lightning",
+      "Option C": "Hopelessly Devoted to You",
+      "Option D": "You're the One That I Want",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_384",
+      "Question Text": "Where does the film 'Avatar' take place?",
+      "Option A": "Pandora",
+      "Option B": "Terra",
+      "Option C": "Naboo",
+      "Option D": "Endor",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_385",
+      "Question Text": "What famous duo wrote 'The Sound of Music'?",
+      "Option A": "Lerner and Loewe",
+      "Option B": "Gilbert and Sullivan",
+      "Option C": "Rodgers and Hammerstein",
+      "Option D": "Gershwin Brothers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_386",
+      "Question Text": "What instrument did Julie Andrews learn for 'The Sound of Music'?",
+      "Option A": "Piano",
+      "Option B": "Guitar",
+      "Option C": "Violin",
+      "Option D": "Flute",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_387",
+      "Question Text": "What famous E.T. phrase became iconic?",
+      "Option A": "Take me home",
+      "Option B": "E.T. phone home",
+      "Option C": "I must go home",
+      "Option D": "Call home",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_388",
+      "Question Text": "Who plays Dr. Ellie Sattler in 'Jurassic Park'?",
+      "Option A": "Laura Dern",
+      "Option B": "Frances McDormand",
+      "Option C": "Holly Hunter",
+      "Option D": "Jodie Foster",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_389",
+      "Question Text": "What container is used to hide dinosaur embryos in 'Jurassic Park'?",
+      "Option A": "Water bottle",
+      "Option B": "Barbasol can",
+      "Option C": "Lunch box",
+      "Option D": "Thermos",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_390",
+      "Question Text": "Who wrote the book that inspired 'Jurassic Park'?",
+      "Option A": "Stephen King",
+      "Option B": "Michael Crichton",
+      "Option C": "John Grisham",
+      "Option D": "Tom Clancy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_391",
+      "Question Text": "What Massachusetts island serves as Amity Island in 'Jaws'?",
+      "Option A": "Nantucket",
+      "Option B": "Martha's Vineyard",
+      "Option C": "Block Island",
+      "Option D": "Cape Cod",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_392",
+      "Question Text": "How many Rings of Power are there in 'The Lord of the Rings'?",
+      "Option A": 9,
+      "Option B": 15,
+      "Option C": 20,
+      "Option D": 25,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_393",
+      "Question Text": "What nickname does Gollum give to the One Ring?",
+      "Option A": "The Precious",
+      "Option B": "My Love",
+      "Option C": "My Precious",
+      "Option D": "The One",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_394",
+      "Question Text": "What is Andy Dufresne's occupation in 'The Shawshank Redemption'?",
+      "Option A": "Teacher",
+      "Option B": "Lawyer",
+      "Option C": "Banker",
+      "Option D": "Doctor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_395",
+      "Question Text": "Who plays Ellis Boyd 'Red' Redding in 'The Shawshank Redemption'?",
+      "Option A": "Samuel L. Jackson",
+      "Option B": "Morgan Freeman",
+      "Option C": "Denzel Washington",
+      "Option D": "Forest Whitaker",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_396",
+      "Question Text": "In 'While You Were Sleeping', what city does Sandra Bullock work in?",
+      "Option A": "New York",
+      "Option B": "Boston",
+      "Option C": "Chicago",
+      "Option D": "Philadelphia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_397",
+      "Question Text": "What Tom Cruise movie features him dancing to 'Old Time Rock & Roll'?",
+      "Option A": "Top Gun",
+      "Option B": "Risky Business",
+      "Option C": "Cocktail",
+      "Option D": "All the Right Moves",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_398",
+      "Question Text": "What's the name of the necklace Rose throws in 'Titanic'?",
+      "Option A": "Star of the Ocean",
+      "Option B": "Heart of the Ocean",
+      "Option C": "Blue Diamond",
+      "Option D": "Ocean's Heart",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_399",
+      "Question Text": "Which Indiana Jones film was nominated for Best Picture?",
+      "Option A": "Raiders of the Lost Ark",
+      "Option B": "Temple of Doom",
+      "Option C": "Last Crusade",
+      "Option D": "Kingdom of the Crystal Skull",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_400",
+      "Question Text": "Who recorded 'Danger Zone' from 'Top Gun'?",
+      "Option A": "Kenny Loggins",
+      "Option B": "Phil Collins",
+      "Option C": "Peter Cetera",
+      "Option D": "Michael Bolton",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_401",
+      "Question Text": "What Queen song features in the car scene in 'Wayne's World'?",
+      "Option A": "We Will Rock You",
+      "Option B": "We Are The Champions",
+      "Option C": "Bohemian Rhapsody",
+      "Option D": "Another One Bites the Dust",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_402",
+      "Question Text": "What is Baby's real first name in 'Dirty Dancing'?",
+      "Option A": "Elizabeth",
+      "Option B": "Frances",
+      "Option C": "Barbara",
+      "Option D": "Jennifer",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_403",
+      "Question Text": "What's the name of the resort in 'Dirty Dancing'?",
+      "Option A": "Mountain Lake Lodge",
+      "Option B": "Kellerman's Mountain House",
+      "Option C": "Pine Grove Resort",
+      "Option D": "Catskill Palace",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_404",
+      "Question Text": "Which 1990 movie starred Patrick Swayze and Demi Moore?",
+      "Option A": "Point Break",
+      "Option B": "Ghost",
+      "Option C": "Road House",
+      "Option D": "Next of Kin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_405",
+      "Question Text": "Who won an Oscar for Supporting Actress in 'Ghost'?",
+      "Option A": "Demi Moore",
+      "Option B": "Whoopi Goldberg",
+      "Option C": "Glenn Close",
+      "Option D": "Susan Sarandon",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_406",
+      "Question Text": "How much money is offered in 'Indecent Proposal'?",
+      "Option A": 500000,
+      "Option B": "$1 million",
+      "Option C": "$2 million",
+      "Option D": "$5 million",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_407",
+      "Question Text": "In which 1988 movie did Julia Roberts play a pizza waitress named Daisy?",
+      "Option A": "Steel Magnolias",
+      "Option B": "Mystic Pizza",
+      "Option C": "Pretty Woman",
+      "Option D": "Satisfaction",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_408",
+      "Question Text": "What's the name of the beauty parlor in 'Steel Magnolias'?",
+      "Option A": "Truvy's",
+      "Option B": "Magnolia's",
+      "Option C": "Southern Belle's",
+      "Option D": "Beauty Box",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_409",
+      "Question Text": "What Prince song does Julia Roberts sing in the bath in 'Pretty Woman'?",
+      "Option A": "Purple Rain",
+      "Option B": "Kiss",
+      "Option C": "When Doves Cry",
+      "Option D": "Little Red Corvette",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_410",
+      "Question Text": "How much does Edward pay Vivian for the week in 'Pretty Woman'?",
+      "Option A": 2000,
+      "Option B": 3000,
+      "Option C": 5000,
+      "Option D": 10000,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_411",
+      "Question Text": "What 1972 film features the line 'I'm gonna make him an offer he can't refuse'?",
+      "Option A": "The Godfather",
+      "Option B": "Mean Streets",
+      "Option C": "The French Connection",
+      "Option D": "Serpico",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_412",
+      "Question Text": "Who wrote the book 'The Godfather'?",
+      "Option A": "Mario Puzo",
+      "Option B": "Francis Ford Coppola",
+      "Option C": "Nicholas Pileggi",
+      "Option D": "Don DeLillo",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_413",
+      "Question Text": "In 'The Godfather', who is killed by a car bomb meant for Michael?",
+      "Option A": "Sonny",
+      "Option B": "Fredo",
+      "Option C": "Apollonia",
+      "Option D": "Kay",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_414",
+      "Question Text": "Where does the movie 'Purple Rain' take place?",
+      "Option A": "Chicago",
+      "Option B": "Detroit",
+      "Option C": "Minneapolis",
+      "Option D": "New York",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_415",
+      "Question Text": "What is Prince's full name?",
+      "Option A": "Prince Nelson",
+      "Option B": "Prince Rogers Nelson",
+      "Option C": "Prince Philip Nelson",
+      "Option D": "Prince Michael Nelson",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_416",
+      "Question Text": "In which movie did Gal Gadot make her film debut?",
+      "Option A": "Wonder Woman",
+      "Option B": "Fast & Furious",
+      "Option C": "Date Night",
+      "Option D": "Knight and Day",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_417",
+      "Question Text": "How many Infinity Stones are there in 'Avengers: Endgame'?",
+      "Option A": "Four",
+      "Option B": "Five",
+      "Option C": "Six",
+      "Option D": "Seven",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_418",
+      "Question Text": "What town does 'Twilight' take place in?",
+      "Option A": "Port Angeles",
+      "Option B": "Forks",
+      "Option C": "Seattle",
+      "Option D": "Portland",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_419",
+      "Question Text": "What state does Bella move from in 'Twilight'?",
+      "Option A": "California",
+      "Option B": "Florida",
+      "Option C": "Texas",
+      "Option D": "Arizona",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_420",
+      "Question Text": "What sport do the vampires play in 'Twilight'?",
+      "Option A": "Football",
+      "Option B": "Baseball",
+      "Option C": "Soccer",
+      "Option D": "Volleyball",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_421",
+      "Question Text": "Who plays Lt. James Gordon in 'The Dark Knight'?",
+      "Option A": "Michael Caine",
+      "Option B": "Gary Oldman",
+      "Option C": "Morgan Freeman",
+      "Option D": "Aaron Eckhart",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_422",
+      "Question Text": "What 2008 movie features a contestant accused of cheating on a TV quiz show?",
+      "Option A": "The Millionaire",
+      "Option B": "Quiz Show",
+      "Option C": "Slumdog Millionaire",
+      "Option D": "Who Wants to Be Rich",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_423",
+      "Question Text": "Who portrays greedy oilman Daniel Plainview in 'There Will Be Blood'?",
+      "Option A": "Christian Bale",
+      "Option B": "Daniel Day Lewis",
+      "Option C": "Viggo Mortensen",
+      "Option D": "Russell Crowe",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_424",
+      "Question Text": "What mathematician's life is chronicled in 'A Beautiful Mind'?",
+      "Option A": "Alan Turing",
+      "Option B": "Stephen Hawking",
+      "Option C": "John Nash",
+      "Option D": "Paul Erdős",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_425",
+      "Question Text": "What is the name of the dog in the animated movie 'Up'?",
+      "Option A": "Doug",
+      "Option B": "Dug",
+      "Option C": "Duke",
+      "Option D": "Dash",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_426",
+      "Question Text": "What 2003 rom-com stars Kate Hudson trying to lose a guy in 10 days?",
+      "Option A": "How to Lose a Guy in 10 Days",
+      "Option B": "13 Going on 30",
+      "Option C": "The Wedding Planner",
+      "Option D": "Sweet Home Alabama",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_427",
+      "Question Text": "What whisky brand is Bill Murray promoting in 'Lost in Translation'?",
+      "Option A": "Yamazaki",
+      "Option B": "Hibiki",
+      "Option C": "Suntory",
+      "Option D": "Nikka",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_428",
+      "Question Text": "What country singer's life is portrayed in 'Walk the Line'?",
+      "Option A": "Elvis Presley",
+      "Option B": "Johnny Cash",
+      "Option C": "Jerry Lee Lewis",
+      "Option D": "Hank Williams",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_429",
+      "Question Text": "What song does Abigail Breslin dance to in 'Little Miss Sunshine'?",
+      "Option A": "Super Freak",
+      "Option B": "Get Down Tonight",
+      "Option C": "Stayin' Alive",
+      "Option D": "Y.M.C.A.",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_430",
+      "Question Text": "What are the names of the lovers in 'The Notebook'?",
+      "Option A": "Jack and Rose",
+      "Option B": "Noah and Allie",
+      "Option C": "Sam and Annie",
+      "Option D": "Johnny and Baby",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_431",
+      "Question Text": "What 2000 movie stars Kirsten Dunst as a cheerleader?",
+      "Option A": "Sugar & Spice",
+      "Option B": "Bring It On",
+      "Option C": "American Beauty",
+      "Option D": "Save the Last Dance",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_432",
+      "Question Text": "What Britney Spears song is from her 2002 movie 'Crossroads'?",
+      "Option A": "Lucky",
+      "Option B": "I'm Not a Girl, Not Yet a Woman",
+      "Option C": "Stronger",
+      "Option D": "Sometimes",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_433",
+      "Question Text": "What are the names of Timon and Pumbaa's meerkat and warthog in 'The Lion King'?",
+      "Option A": "Timon and Pumbaa",
+      "Option B": "Zazu and Rafiki",
+      "Option C": "Ed and Banzai",
+      "Option D": "Shenzi and Ed",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_434",
+      "Question Text": "What does Princess Aurora prick her finger on in 'Sleeping Beauty'?",
+      "Option A": "Needle",
+      "Option B": "Thorn",
+      "Option C": "Spinning Wheel",
+      "Option D": "Pin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_435",
+      "Question Text": "What helps the medicine go down in 'Mary Poppins'?",
+      "Option A": "A spoonful of honey",
+      "Option B": "A spoonful of sugar",
+      "Option C": "A cup of tea",
+      "Option D": "A piece of candy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_436",
+      "Question Text": "Which actor plays Mrs. Potts in 'Beauty and the Beast'?",
+      "Option A": "Julie Andrews",
+      "Option B": "Angela Lansbury",
+      "Option C": "Betty White",
+      "Option D": "Maggie Smith",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_437",
+      "Question Text": "Who voices Tiana in 'The Princess and the Frog'?",
+      "Option A": "Anika Noni Rose",
+      "Option B": "Jennifer Hudson",
+      "Option C": "Audra McDonald",
+      "Option D": "Brandy",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_438",
+      "Question Text": "What kind of sports team is featured in 'The Mighty Ducks'?",
+      "Option A": "Football",
+      "Option B": "Baseball",
+      "Option C": "Hockey",
+      "Option D": "Soccer",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_439",
+      "Question Text": "What food causes the body switch in 'Freaky Friday'?",
+      "Option A": "Fortune Cookie",
+      "Option B": "Magic Popcorn",
+      "Option C": "Special Pizza",
+      "Option D": "Mystery Candy",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_440",
+      "Question Text": "Which rock star inspired Johnny Depp's Jack Sparrow character?",
+      "Option A": "Mick Jagger",
+      "Option B": "Keith Richards",
+      "Option C": "Steven Tyler",
+      "Option D": "Ozzy Osbourne",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_441",
+      "Question Text": "What's the name of Captain Barbossa's monkey in 'Pirates of the Caribbean'?",
+      "Option A": "Jack",
+      "Option B": "Silver",
+      "Option C": "Cotton",
+      "Option D": "Monkey",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_442",
+      "Question Text": "Who voices Dory in 'Finding Nemo'?",
+      "Option A": "Ellen DeGeneres",
+      "Option B": "Jennifer Aniston",
+      "Option C": "Christina Applegate",
+      "Option D": "Julia Louis-Dreyfus",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_443",
+      "Question Text": "What is the name of the snowman in 'Frozen'?",
+      "Option A": "Sven",
+      "Option B": "Kristoff",
+      "Option C": "Olaf",
+      "Option D": "Marshmallow",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_444",
+      "Question Text": "What Danish author wrote 'The Snow Queen' which inspired 'Frozen'?",
+      "Option A": "Hans Christian Andersen",
+      "Option B": "Brothers Grimm",
+      "Option C": "Charles Perrault",
+      "Option D": "Wilhelm Hauff",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_445",
+      "Question Text": "What is Helen's superpower in 'The Incredibles'?",
+      "Option A": "Super Strength",
+      "Option B": "Invisibility",
+      "Option C": "Elasticity",
+      "Option D": "Speed",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_446",
+      "Question Text": "Who plays Fairy Godmother in the 1997 'Cinderella'?",
+      "Option A": "Whoopi Goldberg",
+      "Option B": "Whitney Houston",
+      "Option C": "Brandy",
+      "Option D": "Bernadette Peters",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_447",
+      "Question Text": "What is the name of Jafar's parrot in 'Aladdin'?",
+      "Option A": "Abu",
+      "Option B": "Rajah",
+      "Option C": "Iago",
+      "Option D": "Carpet",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_448",
+      "Question Text": "What 1996 Disney movie won an Oscar for 'Colors of the Wind'?",
+      "Option A": "Mulan",
+      "Option B": "Pocahontas",
+      "Option C": "The Hunchback of Notre Dame",
+      "Option D": "Hercules",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_449",
+      "Question Text": "What does Ariel use to comb her hair in 'The Little Mermaid'?",
+      "Option A": "Seashell",
+      "Option B": "Coral",
+      "Option C": "Brush",
+      "Option D": "Fork",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_450",
+      "Question Text": "Who voices Mushu in 'Mulan'?",
+      "Option A": "Eddie Murphy",
+      "Option B": "Chris Tucker",
+      "Option C": "Chris Rock",
+      "Option D": "Mike Myers",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_451",
+      "Question Text": "What magical land lies beyond the wardrobe in The Chronicles of Narnia?",
+      "Option A": "Wonderland",
+      "Option B": "Oz",
+      "Option C": "Narnia",
+      "Option D": "Neverland",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_452",
+      "Question Text": "What are the names of Ron Weasley's twin brothers in Harry Potter?",
+      "Option A": "Bill and Charlie",
+      "Option B": "Fred and George",
+      "Option C": "Percy and Ron",
+      "Option D": "Gred and Forge",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_453",
+      "Question Text": "What is Harry Potter's Patronus?",
+      "Option A": "Wolf",
+      "Option B": "Dog",
+      "Option C": "Stag",
+      "Option D": "Phoenix",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_454",
+      "Question Text": "Who plays Gilderoy Lockhart in 'Harry Potter'?",
+      "Option A": "Kenneth Branagh",
+      "Option B": "Alan Rickman",
+      "Option C": "Gary Oldman",
+      "Option D": "David Thewlis",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_455",
+      "Question Text": "What potion transforms Harry and Ron into Crabbe and Goyle?",
+      "Option A": "Felix Felicis",
+      "Option B": "Veritaserum",
+      "Option C": "Polyjuice Potion",
+      "Option D": "Amortentia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_456",
+      "Question Text": "What's the name of Filch's cat in Harry Potter?",
+      "Option A": "Crookshanks",
+      "Option B": "Mrs. Norris",
+      "Option C": "Professor McGonagall",
+      "Option D": "Lady Whiskers",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_457",
+      "Question Text": "Which actor plays Voldemort in the Harry Potter series?",
+      "Option A": "Gary Oldman",
+      "Option B": "Alan Rickman",
+      "Option C": "Ralph Fiennes",
+      "Option D": "Jason Isaacs",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_458",
+      "Question Text": "What ghost haunts the girls' bathroom at Hogwarts?",
+      "Option A": "The Grey Lady",
+      "Option B": "Moaning Myrtle",
+      "Option C": "Nearly Headless Nick",
+      "Option D": "The Bloody Baron",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_459",
+      "Question Text": "Which Harry Potter candy comes in unusual flavors like spinach and liver?",
+      "Option A": "Chocolate Frogs",
+      "Option B": "Bertie Bott's Every Flavor Beans",
+      "Option C": "Fizzing Whizzbees",
+      "Option D": "Drooble's Best Blowing Gum",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_460",
+      "Question Text": "Who played Dumbledore in the first two Harry Potter films?",
+      "Option A": "Michael Gambon",
+      "Option B": "Richard Harris",
+      "Option C": "Ian McKellen",
+      "Option D": "Christopher Lee",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_461",
+      "Question Text": "What are the four houses at Hogwarts?",
+      "Option A": "Gryffindor, Ravenclaw, Hufflepuff, Slytherin",
+      "Option B": "Lion, Eagle, Badger, Snake",
+      "Option C": "Red, Blue, Yellow, Green",
+      "Option D": "North, South, East, West",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_462",
+      "Question Text": "What position does Harry Potter play in Quidditch?",
+      "Option A": "Keeper",
+      "Option B": "Chaser",
+      "Option C": "Beater",
+      "Option D": "Seeker",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_463",
+      "Question Text": "What is the name of Ron Weasley's rat?",
+      "Option A": "Trevor",
+      "Option B": "Scabbers",
+      "Option C": "Hedwig",
+      "Option D": "Crookshanks",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_464",
+      "Question Text": "Which aunt does Harry Potter accidentally inflate?",
+      "Option A": "Aunt Petunia",
+      "Option B": "Aunt Marge",
+      "Option C": "Aunt Susan",
+      "Option D": "Aunt Patricia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_465",
+      "Question Text": "Who composed the iconic 'Hedwig's Theme' for Harry Potter?",
+      "Option A": "Hans Zimmer",
+      "Option B": "Howard Shore",
+      "Option C": "John Williams",
+      "Option D": "Danny Elfman",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_466",
+      "Question Text": "What competition does Harry participate in during 'The Goblet of Fire'?",
+      "Option A": "Quidditch World Cup",
+      "Option B": "Triwizard Tournament",
+      "Option C": "Dueling Championship",
+      "Option D": "House Cup",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_467",
+      "Question Text": "Before Twilight, what character did Robert Pattinson play in Harry Potter?",
+      "Option A": "Viktor Krum",
+      "Option B": "Cedric Diggory",
+      "Option C": "Cormac McLaggen",
+      "Option D": "Oliver Wood",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_468",
+      "Question Text": "Who was Professor Snape in love with?",
+      "Option A": "Narcissa Malfoy",
+      "Option B": "Lily Potter",
+      "Option C": "Bellatrix Lestrange",
+      "Option D": "Professor McGonagall",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_469",
+      "Question Text": "Who plays the role of Bellatrix Lestrange?",
+      "Option A": "Emma Thompson",
+      "Option B": "Helena Bonham Carter",
+      "Option C": "Maggie Smith",
+      "Option D": "Julie Walters",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_470",
+      "Question Text": "What is the name of Draco Malfoy's father?",
+      "Option A": "Lucius",
+      "Option B": "Severus",
+      "Option C": "Rodolphus",
+      "Option D": "Augustus",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_471",
+      "Question Text": "What does the Hogwarts motto 'Draco Dormiens Nunquam Titillandus' mean?",
+      "Option A": "Dragons Rule All",
+      "Option B": "Never Wake a Sleeping Dragon",
+      "Option C": "Never Tickle a Sleeping Dragon",
+      "Option D": "Beware the Dragon's Wrath",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_472",
+      "Question Text": "In which Star Wars film did Harrison Ford first work with George Lucas?",
+      "Option A": "A New Hope",
+      "Option B": "American Graffiti",
+      "Option C": "Raiders of the Lost Ark",
+      "Option D": "The Empire Strikes Back",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_473",
+      "Question Text": "What is Han Solo's response when Leia says 'I love you'?",
+      "Option A": "I love you too",
+      "Option B": "I know",
+      "Option C": "Same here",
+      "Option D": "Thank you",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_474",
+      "Question Text": "What year was 'Gone with the Wind' released?",
+      "Option A": 1937,
+      "Option B": 1938,
+      "Option C": 1939,
+      "Option D": 1940,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_475",
+      "Question Text": "Who played Scarlett O'Hara in 'Gone with the Wind'?",
+      "Option A": "Olivia de Havilland",
+      "Option B": "Vivien Leigh",
+      "Option C": "Joan Fontaine",
+      "Option D": "Katherine Hepburn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_476",
+      "Question Text": "What is Indiana Jones afraid of in 'Raiders of the Lost Ark'?",
+      "Option A": "Heights",
+      "Option B": "Spiders",
+      "Option C": "Snakes",
+      "Option D": "Darkness",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_477",
+      "Question Text": "Which film features both Whoopi Goldberg and Oprah's acting debuts?",
+      "Option A": "Ghost",
+      "Option B": "Sister Act",
+      "Option C": "The Color Purple",
+      "Option D": "Beloved",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_478",
+      "Question Text": "In what film did Tom Cruise make his debut?",
+      "Option A": "Risky Business",
+      "Option B": "Top Gun",
+      "Option C": "Endless Love",
+      "Option D": "Taps",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_479",
+      "Question Text": "What does E.T. stand for?",
+      "Option A": "Extra Time",
+      "Option B": "Extra Terrestrial",
+      "Option C": "External Transport",
+      "Option D": "Earth Traveler",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "MOVIES_480",
+      "Question Text": "What does HAL stand for in '2001: A Space Odyssey'?",
+      "Option A": "Heuristically Algorithmic Logic",
+      "Option B": "Hardware Abstraction Layer",
+      "Option C": "Habitable Artificial Life",
+      "Option D": "Heuristically programmed ALgorithmic computer",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    }
+  ]
+}

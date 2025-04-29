@@ -1,0 +1,504 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "FRIENDS_1",
+      "Question Text": "Placeholder Question 1 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_2",
+      "Question Text": "Placeholder Question 2 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_3",
+      "Question Text": "Placeholder Question 3 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_4",
+      "Question Text": "Placeholder Question 4 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_5",
+      "Question Text": "Placeholder Question 5 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_6",
+      "Question Text": "Placeholder Question 6 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_7",
+      "Question Text": "Placeholder Question 7 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_8",
+      "Question Text": "Placeholder Question 8 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_9",
+      "Question Text": "Placeholder Question 9 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_10",
+      "Question Text": "Placeholder Question 10 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_11",
+      "Question Text": "Placeholder Question 11 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_12",
+      "Question Text": "Placeholder Question 12 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_13",
+      "Question Text": "Placeholder Question 13 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_14",
+      "Question Text": "Placeholder Question 14 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_15",
+      "Question Text": "Placeholder Question 15 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_16",
+      "Question Text": "Placeholder Question 16 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_17",
+      "Question Text": "Placeholder Question 17 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_18",
+      "Question Text": "Placeholder Question 18 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_19",
+      "Question Text": "Placeholder Question 19 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_20",
+      "Question Text": "Placeholder Question 20 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_21",
+      "Question Text": "Placeholder Question 21 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_22",
+      "Question Text": "Placeholder Question 22 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_23",
+      "Question Text": "Placeholder Question 23 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_24",
+      "Question Text": "Placeholder Question 24 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_25",
+      "Question Text": "Placeholder Question 25 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_26",
+      "Question Text": "Placeholder Question 26 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_27",
+      "Question Text": "Placeholder Question 27 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_28",
+      "Question Text": "Placeholder Question 28 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_29",
+      "Question Text": "Placeholder Question 29 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_30",
+      "Question Text": "Placeholder Question 30 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_31",
+      "Question Text": "Placeholder Question 31 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_32",
+      "Question Text": "Placeholder Question 32 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_33",
+      "Question Text": "Placeholder Question 33 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_34",
+      "Question Text": "Placeholder Question 34 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_35",
+      "Question Text": "Placeholder Question 35 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_36",
+      "Question Text": "Placeholder Question 36 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_37",
+      "Question Text": "Placeholder Question 37 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_38",
+      "Question Text": "Placeholder Question 38 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_39",
+      "Question Text": "Placeholder Question 39 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_40",
+      "Question Text": "Placeholder Question 40 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_41",
+      "Question Text": "Placeholder Question 41 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_42",
+      "Question Text": "Placeholder Question 42 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C_C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_43",
+      "Question Text": "Placeholder Question 43 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_44",
+      "Question Text": "Placeholder Question 44 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_45",
+      "Question Text": "Placeholder Question 45 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_46",
+      "Question Text": "Placeholder Question 46 (FRIENDS easy)",
+      "Option A": "Placeholder A_C",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_47",
+      "Question Text": "Placeholder Question 47 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_48",
+      "Question Text": "Placeholder Question 48 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B_C",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_49",
+      "Question Text": "Placeholder Question 49 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "FRIENDS_50",
+      "Question Text": "Placeholder Question 50 (FRIENDS easy)",
+      "Option A": "Placeholder A",
+      "Option B": "Placeholder B",
+      "Option C": "Placeholder C",
+      "Option D": "Placeholder D_C",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    }
+  ]
+}

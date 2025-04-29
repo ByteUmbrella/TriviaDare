@@ -1,0 +1,3474 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "THELORDOFTHERINGS_1",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Kills Smaug?",
+      "Option A": "Thorin",
+      "Option B": "Legolas",
+      "Option C": "Bard",
+      "Option D": "Gandalf",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_2",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Weapon Is Used To Kill Smaug?",
+      "Option A": "Iron Arrow",
+      "Option B": "Black Arrow",
+      "Option C": "Dragon Arrow",
+      "Option D": "Steel Arrow",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_3",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Does Smaug's Body Crush When He Falls?",
+      "Option A": "Bard's Son",
+      "Option B": "The Master of Laketown",
+      "Option C": "Alfrid",
+      "Option D": "Braga",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_4",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Where Do The Survivors Of Laketown Seek Refuge?",
+      "Option A": "Mirkwood",
+      "Option B": "Erebor",
+      "Option C": "Iron Hills",
+      "Option D": "Dale",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_5",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Is Thorin Obsessively Searching For?",
+      "Option A": "Gold",
+      "Option B": "Gems",
+      "Option C": "The Arkenstone",
+      "Option D": "The Ring",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_6",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Rescues Gandalf From Dol Guldur?",
+      "Option A": "The White Council",
+      "Option B": "Galadriel Elrond and Saruman",
+      "Option C": "Radagast and Beorn",
+      "Option D": "The Eagles",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_7",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Where Does Bolg Go To Summon The Second Army?",
+      "Option A": "Mount Gundabad",
+      "Option B": "Dol Guldur",
+      "Option C": "Moria",
+      "Option D": "Mount Gram",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_8",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Creatures Bolster Bolg's Army?",
+      "Option A": "Wargs and Trolls",
+      "Option B": "Goblins and Spiders",
+      "Option C": "Orc Berserkers and Giant Bats",
+      "Option D": "Dragons and Wereworms",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_9",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Why Does Thranduil Come To Dale?",
+      "Option A": "For Revenge",
+      "Option B": "For War",
+      "Option C": "To Reclaim A Treasure",
+      "Option D": "For Alliance",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_10",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Does Bilbo Give To Thranduil And Bard?",
+      "Option A": "The Arkenstone",
+      "Option B": "Mithril Armor",
+      "Option C": "Dragon Gold",
+      "Option D": "White Gems",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_11",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Arrives With A Dwarf Army?",
+      "Option A": "Thorin",
+      "Option B": "Balin",
+      "Option C": "Dáin",
+      "Option D": "Gimli",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_12",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Makes Thorin Regain His Sanity?",
+      "Option A": "Hallucinations of Being Swallowed By Gold",
+      "Option B": "Bilbo's Words",
+      "Option C": "Gandalf's Magic",
+      "Option D": "The Arkenstone",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_13",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Where Do Thorin And His Company Go To Kill Azog?",
+      "Option A": "Erebor",
+      "Option B": "Ravenhill",
+      "Option C": "Dale",
+      "Option D": "Gundabad",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_14",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Which Dwarf Does Azog Kill?",
+      "Option A": "Thorin",
+      "Option B": "Kili",
+      "Option C": "Fíli",
+      "Option D": "Dwalin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_15",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Kills Bolg?",
+      "Option A": "Thorin",
+      "Option B": "Legolas",
+      "Option C": "Tauriel",
+      "Option D": "Beorn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_16",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Which Dwarf Dies Protecting Tauriel?",
+      "Option A": "Thorin",
+      "Option B": "Fili",
+      "Option C": "Kíli",
+      "Option D": "Dwalin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_17",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Arrives With The Great Eagles?",
+      "Option A": "Gandalf and Galadriel",
+      "Option B": "Elrond and Saruman",
+      "Option C": "Radagast and Beorn",
+      "Option D": "The White Council",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_18",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, How Does Thorin Die?",
+      "Option A": "Fatally Wounded Killing Azog",
+      "Option B": "Killed By Bolg",
+      "Option C": "Dragon Fire",
+      "Option D": "Orc Arrow",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_19",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Becomes The New King Under The Mountain?",
+      "Option A": "Fili",
+      "Option B": "Kili",
+      "Option C": "Dáin",
+      "Option D": "Balin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_20",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Is Happening At Bag End When Bilbo Returns?",
+      "Option A": "An Auction",
+      "Option B": "A Party",
+      "Option C": "A Wedding",
+      "Option D": "A Funeral",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_21",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Does Thranduil Tell Legolas To Seek?",
+      "Option A": "Gandalf",
+      "Option B": "Elrond",
+      "Option C": "Galadriel",
+      "Option D": "Strider",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_22",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Does Gandalf Warn Bilbo About?",
+      "Option A": "The Journey",
+      "Option B": "The Gold",
+      "Option C": "The Ring",
+      "Option D": "The War",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_23",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, How Long After The Main Story Does The Final Scene Take Place?",
+      "Option A": "Forty Years",
+      "Option B": "Fifty Years",
+      "Option C": "Sixty Years",
+      "Option D": "Seventy Years",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_24",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Where Does Galadriel Say Sauron Will Go?",
+      "Option A": "The East",
+      "Option B": "The South",
+      "Option C": "The North",
+      "Option D": "The West",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_25",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, How Does Bilbo Sneak Through The Battle?",
+      "Option A": "Hiding",
+      "Option B": "Running",
+      "Option C": "Using His Ring",
+      "Option D": "Following Gandalf",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_26",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Stops Thorin From Killing Bilbo?",
+      "Option A": "Balin",
+      "Option B": "Gandalf",
+      "Option C": "Dwalin",
+      "Option D": "Bofur",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_27",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Why Does Bard Withdraw His Forces?",
+      "Option A": "To Defend Dale",
+      "Option B": "To Retreat",
+      "Option C": "To Regroup",
+      "Option D": "To Surrender",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_28",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Which Three Groups Initially Fight Before The Orcs Arrive?",
+      "Option A": "Men Orcs and Elves",
+      "Option B": "Dwarves Elves and Men",
+      "Option C": "Elves Orcs and Dwarves",
+      "Option D": "Dwarves Men and Goblins",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_29",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Accompanies Thorin To Ravenhill?",
+      "Option A": "Bilbo and Balin",
+      "Option B": "Dwalin Fíli and Kíli",
+      "Option C": "Ori and Nori",
+      "Option D": "Bofur and Bifur",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_30",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Warning Do Tauriel And Legolas Bring?",
+      "Option A": "Smaug's Return",
+      "Option B": "Bolg's Army Approaching",
+      "Option C": "Dragon Attack",
+      "Option D": "Orc Invasion",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_31",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Volunteers To Warn Thorin About Bolg?",
+      "Option A": "Bard",
+      "Option B": "Bilbo",
+      "Option C": "Legolas",
+      "Option D": "Tauriel",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_32",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Does Bilbo Tell Gandalf He Did With The Ring?",
+      "Option A": "Lost It",
+      "Option B": "Destroyed It",
+      "Option C": "Gave It Away",
+      "Option D": "Kept It",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_33",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Does Bilbo Make Peace With Before Their Death?",
+      "Option A": "Fili",
+      "Option B": "Kili",
+      "Option C": "Dwalin",
+      "Option D": "Thorin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_34",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Does Thorin Initially Refuse To Give Bard?",
+      "Option A": "Food",
+      "Option B": "Weapons",
+      "Option C": "Share of Gold",
+      "Option D": "Shelter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_35",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Previously Withheld Treasure From The Elves?",
+      "Option A": "Thrain",
+      "Option B": "Dain",
+      "Option C": "Thorin",
+      "Option D": "Thrór",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_36",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Does Thorin Order To Be Sealed?",
+      "Option A": "Treasury",
+      "Option B": "Armory",
+      "Option C": "Gates",
+      "Option D": "Entrance to Lonely Mountain",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_37",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Does Gandalf Travel With Back To The Shire?",
+      "Option A": "Radagast",
+      "Option B": "Beorn",
+      "Option C": "Bilbo",
+      "Option D": "Elrond",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_38",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Warning Does Gandalf Bring To Dale?",
+      "Option A": "Dragon Attack",
+      "Option B": "Orc Invasion",
+      "Option C": "Azog's Army",
+      "Option D": "Goblin Attack",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_39",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Dismisses Gandalf's Warning?",
+      "Option A": "Bard",
+      "Option B": "Thranduil",
+      "Option C": "Thorin",
+      "Option D": "Dain",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_40",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Does Bilbo Accuse Thorin Of Being Clouded By?",
+      "Option A": "Greed",
+      "Option B": "Pride",
+      "Option C": "Anger",
+      "Option D": "Fear",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_41",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Age Is Bilbo Turning In The Final Scene?",
+      "Option A": 109,
+      "Option B": 110,
+      "Option C": 111,
+      "Option D": 112,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_42",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What City Does The Second Front Of Battle Open In?",
+      "Option A": "Erebor",
+      "Option B": "Dale",
+      "Option C": "Laketown",
+      "Option D": "Mirkwood",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_43",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Do Legolas And Tauriel See Marching?",
+      "Option A": "Azog's Army",
+      "Option B": "Dwarven Army",
+      "Option C": "Elven Army",
+      "Option D": "Bolg's Army",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_44",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Does Bilbo Return To Find At Bag End?",
+      "Option A": "Empty House",
+      "Option B": "Party",
+      "Option C": "His Belongings Being Auctioned",
+      "Option D": "New Owners",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_45",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Why Are Bilbo's Belongings Being Sold?",
+      "Option A": "He Was Missing",
+      "Option B": "He Was Presumed Dead",
+      "Option C": "He Was Banished",
+      "Option D": "He Was Forgotten",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_46",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Do Galadriel And The Others Battle At Dol Guldur?",
+      "Option A": "Orcs",
+      "Option B": "Goblins",
+      "Option C": "Sauron",
+      "Option D": "The Nazgûl",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_47",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Form Does Sauron Take In Dol Guldur?",
+      "Option A": "Physical",
+      "Option B": "Spiritual",
+      "Option C": "Shadow",
+      "Option D": "Formless",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_48",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Who Takes Leadership Of Laketown?",
+      "Option A": "Alfrid",
+      "Option B": "Bard",
+      "Option C": "Braga",
+      "Option D": "Percy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_49",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, What Was The Master Trying To Escape With?",
+      "Option A": "Weapons",
+      "Option B": "Food",
+      "Option C": "Jewels",
+      "Option D": "Town's Gold",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_50",
+      "Question Text": "In The Hobbit: The Battle of the Five Armies, Where Is The Final Meeting Between Gandalf And Bilbo?",
+      "Option A": "Outskirts of the Shire",
+      "Option B": "Bag End",
+      "Option C": "Bree",
+      "Option D": "The Green Dragon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_51",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Creature Can Beorn Transform Into?",
+      "Option A": "A Wolf",
+      "Option B": "A Lion",
+      "Option C": "A Bear",
+      "Option D": "A Tiger",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_52",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Does Azog Delegate The Hunt For Thorin To?",
+      "Option A": "Yazneg",
+      "Option B": "The Defiler",
+      "Option C": "The Hunter",
+      "Option D": "Bolg",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_53",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Gandalf Find On The Old Ruin?",
+      "Option A": "Black Speech",
+      "Option B": "Elvish Runes",
+      "Option C": "Dwarvish Script",
+      "Option D": "Ancient Text",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_54",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Creatures Attack The Company In Mirkwood?",
+      "Option A": "Orcs",
+      "Option B": "Giant Spiders",
+      "Option C": "Wargs",
+      "Option D": "Goblins",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_55",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Leads The Wood-elves That Save The Dwarves From The Spiders?",
+      "Option A": "Thranduil and Guards",
+      "Option B": "Elrond and Warriors",
+      "Option C": "Tauriel and Legolas",
+      "Option D": "Haldir and Archers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_56",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Is The King Of The Wood-elves?",
+      "Option A": "Elrond",
+      "Option B": "Celeborn",
+      "Option C": "Thranduil",
+      "Option D": "Legolas",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_57",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, How Do The Dwarves Escape From The Wood-elves?",
+      "Option A": "Underground Tunnel",
+      "Option B": "Secret Path",
+      "Option C": "River Route",
+      "Option D": "Wine Barrels",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_58",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Type Of Arrow Is Kíli Shot With?",
+      "Option A": "Elf Arrow",
+      "Option B": "Orc Arrow",
+      "Option C": "Morgul Shaft",
+      "Option D": "Poison Arrow",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_59",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Do Gandalf And Radagast Find In The Nazgûl Tombs?",
+      "Option A": "They Are Empty",
+      "Option B": "They Are Sealed",
+      "Option C": "They Are Cursed",
+      "Option D": "They Are Destroyed",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_60",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Smuggles The Company Into Laketown?",
+      "Option A": "Percy",
+      "Option B": "Bard",
+      "Option C": "Alfrid",
+      "Option D": "Braga",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_61",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Which Dwarves Stay Behind In Laketown?",
+      "Option A": "Thorin and Company",
+      "Option B": "Kíli Fíli Óin Bofur",
+      "Option C": "Dwalin and Balin",
+      "Option D": "Nori and Dori",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_62",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Object Is Bilbo Sent To Retrieve From Smaug?",
+      "Option A": "Gold Cup",
+      "Option B": "Ring",
+      "Option C": "Jewel",
+      "Option D": "The Arkenstone",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_63",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Is Bard's Ancestry?",
+      "Option A": "Common Man",
+      "Option B": "Last Ruler of Dale",
+      "Option C": "Noble Family",
+      "Option D": "Merchant Class",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_64",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Weapon Does Bard Possess That Can Kill Smaug?",
+      "Option A": "Black Arrow",
+      "Option B": "Elvish Blade",
+      "Option C": "Dragon Spear",
+      "Option D": "Ancient Sword",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_65",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Does The Necromancer Reveal Himself To Be?",
+      "Option A": "Sauron",
+      "Option B": "Witch-king",
+      "Option C": "Dark Lord",
+      "Option D": "Shadow Lord",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_66",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, How Do The Dwarves Try To Defeat Smaug?",
+      "Option A": "Dragon Arrows",
+      "Option B": "Giant Trap",
+      "Option C": "Molten Gold",
+      "Option D": "Magic Spells",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_67",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Where Does Smaug Head After Escaping The Mountain?",
+      "Option A": "Dale",
+      "Option B": "Mirkwood",
+      "Option C": "Iron Hills",
+      "Option D": "Laketown",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_68",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Arrests Bard?",
+      "Option A": "Alfrid",
+      "Option B": "Braga",
+      "Option C": "The Master of Laketown",
+      "Option D": "Percy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_69",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Does Bard Task With Hiding The Black Arrow?",
+      "Option A": "His Daughter",
+      "Option B": "His Wife",
+      "Option C": "His Son",
+      "Option D": "His Brother",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_70",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Thranduil Do When He Learns Of The Evil Army?",
+      "Option A": "Prepares For War",
+      "Option B": "Sends For Help",
+      "Option C": "Rallies Allies",
+      "Option D": "Seals His Kingdom",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_71",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Follows Tauriel When She Leaves To Help The Dwarves?",
+      "Option A": "Thranduil",
+      "Option B": "Guards",
+      "Option C": "Legolas",
+      "Option D": "Feren",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_72",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does The Master Promise The Company In Exchange For Gold?",
+      "Option A": "Protection",
+      "Option B": "Safe Passage",
+      "Option C": "Arms and Supplies",
+      "Option D": "Boats",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_73",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Where Does Gandalf Send Radagast?",
+      "Option A": "To Find Beorn",
+      "Option B": "To Alert Elrond",
+      "Option C": "To Warn Galadriel",
+      "Option D": "To Scout Dol Guldur",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_74",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Bilbo Use To Free The Dwarves From The Spiders?",
+      "Option A": "Sting",
+      "Option B": "The Ring",
+      "Option C": "Elvish Magic",
+      "Option D": "His Wit",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_75",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, How Many Years Had Passed Since Smaug's Attack?",
+      "Option A": "60 Years",
+      "Option B": "70 Years",
+      "Option C": "80 Years",
+      "Option D": "90 Years",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_76",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Defeats Gandalf In Dol Guldur?",
+      "Option A": "Azog",
+      "Option B": "Bolg",
+      "Option C": "The Witch-king",
+      "Option D": "The Necromancer",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_77",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Place Does Gandalf Warn The Company About?",
+      "Option A": "The Mountain",
+      "Option B": "Dol Guldur",
+      "Option C": "The Forest",
+      "Option D": "Mirkwood",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_78",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, How Many Nazgûl Tombs Are Empty?",
+      "Option A": "Seven",
+      "Option B": "Nine",
+      "Option C": "Three",
+      "Option D": "Five",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_79",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Beorn Tell The Company About The Wood-elves?",
+      "Option A": "They Are Wise",
+      "Option B": "They Are Helpful",
+      "Option C": "They Are Friendly",
+      "Option D": "They Are Dangerous",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_80",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Where Is Azog Summoned To?",
+      "Option A": "Moria",
+      "Option B": "Dol Guldur",
+      "Option C": "Gundabad",
+      "Option D": "Angmar",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_81",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Gandalf Tell The Company To Stay On?",
+      "Option A": "The Road",
+      "Option B": "The Trail",
+      "Option C": "The Route",
+      "Option D": "The Path",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_82",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Helps The Dwarves Fight Off Bolg In Laketown?",
+      "Option A": "Bard and Guards",
+      "Option B": "Tauriel and Legolas",
+      "Option C": "Town Guards",
+      "Option D": "The Master's Men",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_83",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Do The Dwarves Use To Melt The Gold?",
+      "Option A": "Forge Fire",
+      "Option B": "Mountain Heat",
+      "Option C": "Smaug's Flames",
+      "Option D": "Dragon Fire",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_84",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Happens When Bilbo Kills The Baby Spider?",
+      "Option A": "Feels Guilty",
+      "Option B": "Understands Ring's Dark Influence",
+      "Option C": "Becomes Afraid",
+      "Option D": "Gets Stronger",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_85",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Where Does The Three-way Battle Take Place?",
+      "Option A": "In Forest",
+      "Option B": "Near Lake",
+      "Option C": "By Mountain",
+      "Option D": "On The River",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_86",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Gandalf Discover About The Nine?",
+      "Option A": "They Are Dead",
+      "Option B": "They Are Hidden",
+      "Option C": "Called to Dol Guldur",
+      "Option D": "They Are Free",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_87",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Smaug Know About When He Awakens?",
+      "Option A": "The Ring's Location",
+      "Option B": "The Company's Size",
+      "Option C": "The Dwarves' Plot",
+      "Option D": "The Mountain's Secrets",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_88",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Where Do The Orcs Ambush The Barrel Riders?",
+      "Option A": "In Forest",
+      "Option B": "On The River",
+      "Option C": "By Shore",
+      "Option D": "At Rapids",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_89",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Direction Is The Evil Army Amassing In?",
+      "Option A": "The North",
+      "Option B": "The South",
+      "Option C": "The East",
+      "Option D": "The West",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_90",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, How Does Bilbo Find The Hidden Entrance?",
+      "Option A": "Following Map",
+      "Option B": "Using Ring",
+      "Option C": "Discovers It Himself",
+      "Option D": "By Accident",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_91",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Where Does Azog's Army March From?",
+      "Option A": "Dol Guldur",
+      "Option B": "Moria",
+      "Option C": "Gundabad",
+      "Option D": "Angmar",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_92",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Do The Dwarves Create To Trap Smaug?",
+      "Option A": "Gold Net",
+      "Option B": "Golden Statue",
+      "Option C": "Metal Chain",
+      "Option D": "Iron Cage",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_93",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Infiltrates Dol Guldur Alone?",
+      "Option A": "Radagast",
+      "Option B": "Elrond",
+      "Option C": "Gandalf",
+      "Option D": "Saruman",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_94",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Galadriel Request Of Gandalf?",
+      "Option A": "Scout Mirkwood",
+      "Option B": "Find Sauron",
+      "Option C": "Investigate The Tombs",
+      "Option D": "Protect Rivendell",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_95",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Where Is The Town's Launcher Located?",
+      "Option A": "Dale",
+      "Option B": "Mountain",
+      "Option C": "Tower",
+      "Option D": "Laketown",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_96",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Part Of The Mountain Do The Dwarves Rekindle?",
+      "Option A": "The Gate",
+      "Option B": "The Hall",
+      "Option C": "The Forge",
+      "Option D": "The Mine",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_97",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Who Commands Azog To Marshal His Forces?",
+      "Option A": "Sauron",
+      "Option B": "Bolg",
+      "Option C": "The Necromancer",
+      "Option D": "The Witch-king",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_98",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Thorin Promise The Master Of Laketown?",
+      "Option A": "Share Of The Treasure",
+      "Option B": "Protection",
+      "Option C": "Alliance",
+      "Option D": "Weapons",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_99",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, What Does Thranduil Neglect To Help With?",
+      "Option A": "Dragon Attack",
+      "Option B": "Orc Invasion",
+      "Option C": "Dale's Defense",
+      "Option D": "Smaug's Attack",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_100",
+      "Question Text": "In The Hobbit: The Desolation of Smaug, Where Does Beorn Escort The Company To?",
+      "Option A": "Forest Edge",
+      "Option B": "Borders of Mirkwood",
+      "Option C": "Mountain Pass",
+      "Option D": "River Crossing",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_101",
+      "Question Text": "In The Hobbit: An Unexpected Journey, How Old Is Bilbo When He Begins Writing His Adventure Story?",
+      "Option A": 111,
+      "Option B": 110,
+      "Option C": 112,
+      "Option D": 113,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_102",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Was The Name Of The Dwarf King Who Ruled Under The Lonely Mountain?",
+      "Option A": "Thrain",
+      "Option B": "Thorin",
+      "Option C": "Dain",
+      "Option D": "Thrór",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_103",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Which Town Near The Lonely Mountain Did Smaug Destroy?",
+      "Option A": "Esgaroth",
+      "Option B": "Laketown",
+      "Option C": "Dale",
+      "Option D": "Iron Hills",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_104",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Which King Refused To Help The Dwarves Against Smaug?",
+      "Option A": "Thranduil",
+      "Option B": "Elrond",
+      "Option C": "Thorin",
+      "Option D": "Bard",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_105",
+      "Question Text": "In The Hobbit: An Unexpected Journey, How Old Is Bilbo When Gandalf Visits Him?",
+      "Option A": 45,
+      "Option B": 48,
+      "Option C": 50,
+      "Option D": 52,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_106",
+      "Question Text": "In The Hobbit: An Unexpected Journey, How Many Dwarves Come To Bilbo's House?",
+      "Option A": 11,
+      "Option B": 12,
+      "Option C": 13,
+      "Option D": 14,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_107",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Role Does Gandalf Want Bilbo To Play In The Quest?",
+      "Option A": "Guide",
+      "Option B": "Burglar",
+      "Option C": "Scout",
+      "Option D": "Cook",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_108",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Happens To The Trolls When Exposed To Sunlight?",
+      "Option A": "Die",
+      "Option B": "Explode",
+      "Option C": "Turn To Stone",
+      "Option D": "Flee",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_109",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Is The Name Of The Sword Gandalf Takes From The Troll Cave?",
+      "Option A": "Orcrist",
+      "Option B": "Glamdring",
+      "Option C": "Sting",
+      "Option D": "Anduril",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_110",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Is The Name Of Thorin's Sword From The Troll Cave?",
+      "Option A": "Orcrist",
+      "Option B": "Glamdring",
+      "Option C": "Narsil",
+      "Option D": "Anglachel",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_111",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Which Wizard Warns About The Evil In Dol Guldur?",
+      "Option A": "Radagast the Brown",
+      "Option B": "Gandalf the Grey",
+      "Option C": "Saruman the White",
+      "Option D": "Alatar the Blue",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_112",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Is The Evil Presence Radagast Encounters Called?",
+      "Option A": "Dark Lord",
+      "Option B": "Shadow",
+      "Option C": "The Necromancer",
+      "Option D": "Witch-king",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_113",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Who Reveals The Secret About The Hidden Door?",
+      "Option A": "Gandalf",
+      "Option B": "Elrond",
+      "Option C": "Thorin",
+      "Option D": "Balin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_114",
+      "Question Text": "In The Hobbit: An Unexpected Journey, When Can The Hidden Door Be Seen?",
+      "Option A": "Durin's Day",
+      "Option B": "Full Moon",
+      "Option C": "New Year",
+      "Option D": "Last Light",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_115",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Who Are The Members Of The White Council?",
+      "Option A": "Wizards Only",
+      "Option B": "High Elves",
+      "Option C": "Istari",
+      "Option D": "Elrond Galadriel Saruman",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_116",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Weapon Does Radagast Find In Dol Guldur?",
+      "Option A": "Morgul Blade",
+      "Option B": "Dark Sword",
+      "Option C": "Witch Knife",
+      "Option D": "Shadow Dagger",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_117",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Creatures Fight In The Misty Mountains?",
+      "Option A": "Mountain Trolls",
+      "Option B": "Rock Giants",
+      "Option C": "Stone Giants",
+      "Option D": "Hill Giants",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_118",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Who Rules The Goblins In The Misty Mountains?",
+      "Option A": "Goblin King",
+      "Option B": "The Great Goblin",
+      "Option C": "Goblin Lord",
+      "Option D": "Goblin Chief",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_119",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Game Does Bilbo Play With Gollum?",
+      "Option A": "Riddles",
+      "Option B": "Questions",
+      "Option C": "Words",
+      "Option D": "Guesses",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_120",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Power Does Bilbo's Ring Grant Him?",
+      "Option A": "Speed",
+      "Option B": "Strength",
+      "Option C": "Invisibility",
+      "Option D": "Flight",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_121",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Who Killed Thorin's Grandfather Thrór?",
+      "Option A": "Smaug",
+      "Option B": "Bolg",
+      "Option C": "Azog",
+      "Option D": "The Great Goblin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_122",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Did Thorin Cut Off From Azog In Battle?",
+      "Option A": "Forearm",
+      "Option B": "Hand",
+      "Option C": "Arm",
+      "Option D": "Wrist",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_123",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Where Did Thorin Battle Azog?",
+      "Option A": "In Erebor",
+      "Option B": "Inside Moria",
+      "Option C": "Outside Moria",
+      "Option D": "At Dale",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_124",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Who Saves The Company From Azog's Hunting Party?",
+      "Option A": "Beorn",
+      "Option B": "Gandalf",
+      "Option C": "Eagles",
+      "Option D": "Radagast",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_125",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Where Do The Eagles Take The Company?",
+      "Option A": "The Carrock",
+      "Option B": "Rivendell",
+      "Option C": "Beorn's House",
+      "Option D": "Eagle's Eyrie",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_126",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Bird Wakes Smaug?",
+      "Option A": "Raven",
+      "Option B": "Crow",
+      "Option C": "Eagle",
+      "Option D": "Thrush",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_127",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Does The Thrush Use To Make Noise?",
+      "Option A": "A Rock",
+      "Option B": "A Shell",
+      "Option C": "A Snail Against Stone",
+      "Option D": "Its Beak",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_128",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Which Dwarf Is The Youngest In The Company?",
+      "Option A": "Kíli",
+      "Option B": "Fíli",
+      "Option C": "Ori",
+      "Option D": "Nori",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_129",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Forest Has Been Corrupted By Dark Magic?",
+      "Option A": "Fangorn",
+      "Option B": "Mirkwood",
+      "Option C": "Old Forest",
+      "Option D": "Greenwood",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_130",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Where Do The Dwarves Find The Hidden Passage?",
+      "Option A": "Dale",
+      "Option B": "Rivendell",
+      "Option C": "Erebor",
+      "Option D": "Moria",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_131",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Animal Does Azog Ride?",
+      "Option A": "Horse",
+      "Option B": "Warg",
+      "Option C": "Wolf",
+      "Option D": "Bear",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_132",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Does Bilbo Do After The Company Leaves Without Him?",
+      "Option A": "Stays Home",
+      "Option B": "Runs After Them",
+      "Option C": "Goes Back to Bed",
+      "Option D": "Calls For Help",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_133",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Does Gandalf Give Bilbo From The Troll Cave?",
+      "Option A": "Elven Dagger",
+      "Option B": "Magic Ring",
+      "Option C": "Gold Coin",
+      "Option D": "Mithril Shirt",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_134",
+      "Question Text": "In The Hobbit: An Unexpected Journey, How Many Trolls Capture The Company?",
+      "Option A": "Three",
+      "Option B": "Four",
+      "Option C": "Five",
+      "Option D": "Two",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_135",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Does Bilbo Do When He Has The Chance To Kill Gollum?",
+      "Option A": "Attacks Him",
+      "Option B": "Spares Him",
+      "Option C": "Tricks Him",
+      "Option D": "Runs Away",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_136",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Who Kills The Great Goblin?",
+      "Option A": "Thorin",
+      "Option B": "Gandalf",
+      "Option C": "Bilbo",
+      "Option D": "Dwalin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_137",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Where Does The Company First See The Lonely Mountain?",
+      "Option A": "From The Carrock",
+      "Option B": "From Dale",
+      "Option C": "From Mirkwood",
+      "Option D": "From Rivendell",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_138",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Does Saruman Want Gandalf To Do About The Quest?",
+      "Option A": "Support It",
+      "Option B": "Delay It",
+      "Option C": "End It",
+      "Option D": "Join It",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_139",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Who Does Gandalf Secretly Tell About Moving The Dwarves Forward?",
+      "Option A": "Elrond",
+      "Option B": "Radagast",
+      "Option C": "Saruman",
+      "Option D": "Galadriel",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_140",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Does Bilbo Use To Stall The Trolls?",
+      "Option A": "Conversation",
+      "Option B": "Fighting",
+      "Option C": "Magic",
+      "Option D": "Riddles",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_141",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Where Does Gollum Live?",
+      "Option A": "Under Mountain",
+      "Option B": "In Forest",
+      "Option C": "In A Cave",
+      "Option D": "By Lake",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_142",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Separates Bilbo From The Dwarves In The Goblin Caves?",
+      "Option A": "He Falls Into A Crevice",
+      "Option B": "He Gets Lost",
+      "Option C": "He Runs Away",
+      "Option D": "He Hides",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_143",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Who Placed The Bounty On Thorin's Head?",
+      "Option A": "Smaug",
+      "Option B": "Azog",
+      "Option C": "The Great Goblin",
+      "Option D": "The Necromancer",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_144",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Does Bilbo Do When Thorin Is Attacked By Azog?",
+      "Option A": "Runs Away",
+      "Option B": "Hides",
+      "Option C": "Saves Him",
+      "Option D": "Calls For Help",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_145",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Does Thorin Initially Think Of Bilbo?",
+      "Option A": "Disdain",
+      "Option B": "Respect",
+      "Option C": "Trust",
+      "Option D": "Friendship",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_146",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Race Does Thorin Grow To Hate After The Dragon's Attack?",
+      "Option A": "Men",
+      "Option B": "Dwarves",
+      "Option C": "Hobbits",
+      "Option D": "Elves",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_147",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Do The Dwarves Seek To Reclaim?",
+      "Option A": "Their Home",
+      "Option B": "Their Honor",
+      "Option C": "Their Kingdom",
+      "Option D": "Their Gold",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_148",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Kind Of Dragon Is Smaug?",
+      "Option A": "Ice Drake",
+      "Option B": "Winged Drake",
+      "Option C": "Fire Drake",
+      "Option D": "Storm Drake",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_149",
+      "Question Text": "In The Hobbit: An Unexpected Journey, Where Does Bilbo Keep His New Ring?",
+      "Option A": "In His Bag",
+      "Option B": "In A Box",
+      "Option C": "In His Pocket",
+      "Option D": "In His Vest",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_150",
+      "Question Text": "In The Hobbit: An Unexpected Journey, What Does Gollum Lose That Bilbo Finds?",
+      "Option A": "The Ring",
+      "Option B": "A Key",
+      "Option C": "A Coin",
+      "Option D": "A Gem",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_151",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie How Many Rings Of Power Were Given To The Elves?",
+      "Option A": "7",
+      "Option B": "3",
+      "Option C": "9",
+      "Option D": "5",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_152",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie How Old Is Bilbo Turning At His Birthday Party?",
+      "Option A": "110",
+      "Option B": "111",
+      "Option C": "112",
+      "Option D": "113",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_153",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, How Long Had Gollum Been Following The Fellowship When First Spotted?",
+      "Option A": "2 Days",
+      "Option B": "3 Days",
+      "Option C": "4 Days",
+      "Option D": "5 Days",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_154",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, How Old Is Frodo At The Beginning?",
+      "Option A": "30 Years Old",
+      "Option B": "35 Years Old",
+      "Option C": "45 Years Old",
+      "Option D": "50 Years Old",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_155",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Gift Does Gimli Request From Galadriel?",
+      "Option A": "Her Ring",
+      "Option B": "Her Blessing",
+      "Option C": "Her Wisdom",
+      "Option D": "A Lock Of Her Hair",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_156",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Shape Does Gandalf Make With His Smoke After Bilbo's Ring?",
+      "Option A": "A Ship",
+      "Option B": "A Dragon",
+      "Option C": "A Ring",
+      "Option D": "An Eagle",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_157",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Ancient Name Of Weathertop?",
+      "Option A": "Min Barad",
+      "Option B": "Dol Amroth",
+      "Option C": "Amon Sul",
+      "Option D": "Amon Din",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_158",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Happens When The Ring Is Thrown Into Bilbo's Fire?",
+      "Option A": "It Melts",
+      "Option B": "It Glows",
+      "Option C": "An Inscription Appears",
+      "Option D": "Nothing",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_159",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, Who Else Besides Legolas Uses A Bow In The Mines of Moria?",
+      "Option A": "Boromir",
+      "Option B": "Aragorn",
+      "Option C": "Gandalf",
+      "Option D": "Gimli",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_160",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie What Is The Name Of Aragorn's Father?",
+      "Option A": "Arador",
+      "Option B": "Aranath",
+      "Option C": "Argonui",
+      "Option D": "Arathorn",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_161",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie How Is Boromir Killed?",
+      "Option A": "Arrows",
+      "Option B": "Sword",
+      "Option C": "Spear",
+      "Option D": "Axe",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_162",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, Whose Tomb Does The Fellowship Find In Moria?",
+      "Option A": "Balin",
+      "Option B": "Thorin",
+      "Option C": "Thrain",
+      "Option D": "Ori",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_163",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie What Language Is Written On The One Ring?",
+      "Option A": "Elvish",
+      "Option B": "Dwarvish",
+      "Option C": "Common Speech",
+      "Option D": "Black Speech",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_164",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie Who Dies Fighting The Uruk-hai At Amon Hen?",
+      "Option A": "Aragorn",
+      "Option B": "Boromir",
+      "Option C": "Legolas",
+      "Option D": "Gimli",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_165",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, Which Fellowship Member Attempts To Take The Ring From Frodo?",
+      "Option A": "Boromir",
+      "Option B": "Aragorn",
+      "Option C": "Gandalf",
+      "Option D": "Gimli",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_166",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Mountain Pass Does The Fellowship Attempt To Cross?",
+      "Option A": "Cirith Ungol",
+      "Option B": "High Pass",
+      "Option C": "Caradhras",
+      "Option D": "Redhorn Pass",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_167",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Type Of Birds Does Legolas Identify As Spies Of Saruman?",
+      "Option A": "Ravens",
+      "Option B": "Crebain",
+      "Option C": "Crows",
+      "Option D": "Eagles",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_168",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Excuse Does Sam Give When Caught Eavesdropping?",
+      "Option A": "Cleaning Windows",
+      "Option B": "Gardening",
+      "Option C": "Cutting The Grass",
+      "Option D": "Trimming Hedges",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_169",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Balrog Called In Moria?",
+      "Option A": "Shadow Flame",
+      "Option B": "Flame of Udûn",
+      "Option C": "Durin's Bane",
+      "Option D": "Morgoth's Fire",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_170",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Race Do Orcs Originally Come From?",
+      "Option A": "Men",
+      "Option B": "Elves",
+      "Option C": "Dwarves",
+      "Option D": "Trolls",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_171",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, Who Solves The Riddle To Enter The Mines Of Moria?",
+      "Option A": "Gandalf",
+      "Option B": "Frodo",
+      "Option C": "Aragorn",
+      "Option D": "Legolas",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_172",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is Sam's Original Occupation In Relation To Frodo?",
+      "Option A": "Gardener",
+      "Option B": "Cook",
+      "Option C": "Servant",
+      "Option D": "Helper",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_173",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Name Of The Eagle That Rescues Gandalf?",
+      "Option A": "Thorondor",
+      "Option B": "Gwaihir",
+      "Option C": "Landroval",
+      "Option D": "Meneldor",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_174",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Does Aragorn Take From Boromir After His Death?",
+      "Option A": "His Sword",
+      "Option B": "His Horn",
+      "Option C": "His Bracers (Wrist-Guards)",
+      "Option D": "His Ring",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_175",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Race Was Gollum Before Being Corrupted By The Ring?",
+      "Option A": "Man",
+      "Option B": "Hobbit",
+      "Option C": "Dwarf",
+      "Option D": "Elf",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_176",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Does Aragorn Say Is His True Name When Revealed At The Council?",
+      "Option A": "King of Gondor",
+      "Option B": "Ranger of the North",
+      "Option C": "Heir of Elendil",
+      "Option D": "Isildur's Heir",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_177",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, Who Defeats The Cave Troll In Moria?",
+      "Option A": "Aragorn",
+      "Option B": "Gimli",
+      "Option C": "Boromir",
+      "Option D": "Legolas",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_178",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, Who Does Frodo First See In Galadriel's Mirror?",
+      "Option A": "Gandalf",
+      "Option B": "Sam",
+      "Option C": "Aragorn",
+      "Option D": "Legolas",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_179",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Does Sam Promise Gandalf He Won't Do Regarding Frodo?",
+      "Option A": "Leave Him",
+      "Option B": "Betray Him",
+      "Option C": "Follow Him",
+      "Option D": "Lose Him",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_180",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, Where Do Lady Galadriel And Lord Celeborn Reside?",
+      "Option A": "Lothlorien",
+      "Option B": "Rivendell",
+      "Option C": "Mirkwood",
+      "Option D": "Grey Havens",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_181",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Name Of The White City Boromir Speaks Of?",
+      "Option A": "Osgiliath",
+      "Option B": "Annúminas",
+      "Option C": "Fornost",
+      "Option D": "Minas Tirith",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_182",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Material Is Frodo's Chain Mail Made From?",
+      "Option A": "Steel",
+      "Option B": "Silver",
+      "Option C": "Mithril",
+      "Option D": "Iron",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_183",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Ancient Dwarven Realm Does The Fellowship Pass Through?",
+      "Option A": "Moria",
+      "Option B": "Erebor",
+      "Option C": "Iron Hills",
+      "Option D": "Khazad-dûm",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_184",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Alias Does Frodo Use At The Prancing Pony?",
+      "Option A": "Mr. Baggins",
+      "Option B": "Mr. Gardner",
+      "Option C": "Mr. Took",
+      "Option D": "Mr. Underhill",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_185",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Does Bilbo Call The Ring At His Birthday Party?",
+      "Option A": "The Ring",
+      "Option B": "My Gift",
+      "Option C": "My Precious",
+      "Option D": "My Treasure",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_186",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Are The Ringwraiths Also Known As?",
+      "Option A": "Nazgul",
+      "Option B": "Dark Riders",
+      "Option C": "Shadow Riders",
+      "Option D": "Black Riders",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_187",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, How Many Members Make Up The Fellowship?",
+      "Option A": "Seven",
+      "Option B": "Nine",
+      "Option C": "Ten",
+      "Option D": "Eight",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_188",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Direction Does Aragorn Plan To Enter Mordor From?",
+      "Option A": "South",
+      "Option B": "East",
+      "Option C": "North",
+      "Option D": "West",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_189",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Does Gandalf Tell Meriadoc To Follow When In Doubt?",
+      "Option A": "Nose",
+      "Option B": "Heart",
+      "Option C": "Head",
+      "Option D": "Instinct",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_190",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Name Of Saruman's Tower?",
+      "Option A": "Barad-dûr",
+      "Option B": "Cirith Ungol",
+      "Option C": "Minas Morgul",
+      "Option D": "Orthanc",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_191",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Name Of Saruman's Magical Seeing Stone?",
+      "Option A": "Silmaril",
+      "Option B": "Arkenstone",
+      "Option C": "Seeing Glass",
+      "Option D": "Palantir",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_192",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Mountain Pass Does Saruman Create A Storm On?",
+      "Option A": "High Pass",
+      "Option B": "Redhorn Gate",
+      "Option C": "Pass Of Caradhras",
+      "Option D": "Cirith Ungol",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_193",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Gift Does Galadriel Give To Frodo?",
+      "Option A": "Phial of Galadriel",
+      "Option B": "Elven Cloak",
+      "Option C": "Crystal Vial",
+      "Option D": "Light Stone",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_194",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, Which Hobbits Are Captured By The Uruk-hai?",
+      "Option A": "Frodo and Sam",
+      "Option B": "Sam and Pippin",
+      "Option C": "Merry and Frodo",
+      "Option D": "Pippin and Merry",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_195",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Are The Nazgûl Also Known As?",
+      "Option A": "Black Riders",
+      "Option B": "Dark Hunters",
+      "Option C": "Shadow Lords",
+      "Option D": "Ringwraiths",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_196",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Name Of Sam's Love Interest?",
+      "Option A": "Ruby",
+      "Option B": "Daisy",
+      "Option C": "Rosie",
+      "Option D": "Pearl",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_197",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Name Of The Sword Given To Frodo?",
+      "Option A": "Sting",
+      "Option B": "Glamdring",
+      "Option C": "Orcrist",
+      "Option D": "Narsil",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_198",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Order Do Gandalf And Saruman Belong To?",
+      "Option A": "The Wise",
+      "Option B": "The Maiar",
+      "Option C": "The White Council",
+      "Option D": "The Istari",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_199",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, Where Had Bilbo Hoped To Visit But Was Too Old?",
+      "Option A": "Rivendell",
+      "Option B": "Mirkwood",
+      "Option C": "The Lonely Mountain",
+      "Option D": "Grey Havens",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_200",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Name Of The Inn Where Frodo Meets Aragorn?",
+      "Option A": "The Green Dragon",
+      "Option B": "The Dancing Pony",
+      "Option C": "The Prancing Pony",
+      "Option D": "The Golden Perch",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_201",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Is The Name Of The Book Gandalf Finds In Minas Tirith About The One Ring?",
+      "Option A": "The Scroll of Isildur",
+      "Option B": "The Ring Lore",
+      "Option C": "The Dark Tales",
+      "Option D": "The Ancient Text",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_202",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie What Does Galadriel Say Can Change The Course Of The Future?",
+      "Option A": "The Bravest Heart",
+      "Option B": "The Smallest Person",
+      "Option C": "The Strongest Will",
+      "Option D": "The Greatest Power",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_203",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie What Is Saruman's Army Called?",
+      "Option A": "The Dark Army",
+      "Option B": "The Fighting Orcs",
+      "Option C": "The Uruk-hai",
+      "Option D": "The Elite Forces",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_204",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie What Happens To Metal Objects When Thrown Into The Ring's Inscription Fire?",
+      "Option A": "They Burn",
+      "Option B": "They Melt",
+      "Option C": "They Crack",
+      "Option D": "They Dissolve",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_205",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie, What Story Does Bilbo Tell The Children During His Birthday Celebration?",
+      "Option A": "Trolls",
+      "Option B": "Dragons",
+      "Option C": "Giants",
+      "Option D": "Wolves",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_206",
+      "Question Text": "In TLOTR: Fellowship of the Ring movie What Is Gandalf's Famous Line To The Balrog?",
+      "Option A": "You Cannot Win",
+      "Option B": "You Shall Not Pass",
+      "Option C": "You Must Return",
+      "Option D": "You Will Fall",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_207",
+      "Question Text": "In TLOTR movies, How Old Is Aragorn During The War Of The Ring?",
+      "Option A": "85 Years Old",
+      "Option B": "87 Years Old",
+      "Option C": "89 Years Old",
+      "Option D": "91 Years Old",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_208",
+      "Question Text": "In TLOTR movies, What Is The Name Of Sauron's Fortress In Mordor?",
+      "Option A": "Minas Morgul",
+      "Option B": "Barad-dûr",
+      "Option C": "Cirith Ungol",
+      "Option D": "Durthang",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_209",
+      "Question Text": "In TLOTR movies, Who Helped Forge The Rings Of Power With Sauron?",
+      "Option A": "Elrond",
+      "Option B": "Galadriel",
+      "Option C": "Gil-galad",
+      "Option D": "Celebrimbor",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_210",
+      "Question Text": "In TLOTR movies, What Is The Capital City Of Rohan?",
+      "Option A": "Helm's Deep",
+      "Option B": "Dunharrow",
+      "Option C": "Edoras",
+      "Option D": "Aldburg",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_211",
+      "Question Text": "In TLOTR movies, Who Kills The Witch-King Of Angmar?",
+      "Option A": "Aragorn",
+      "Option B": "Gandalf",
+      "Option C": "Éowyn",
+      "Option D": "Merry",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_212",
+      "Question Text": "In TLOTR movies, How Many Wizards Were Sent To Middle-Earth?",
+      "Option A": "Three",
+      "Option B": "Four",
+      "Option C": "Six",
+      "Option D": "Five",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_213",
+      "Question Text": "In TLOTR movies, Who Holds The Three Elven Rings Of Power?",
+      "Option A": "Elrond Only",
+      "Option B": "Gandalf Galadriel Elrond",
+      "Option C": "Galadriel Only",
+      "Option D": "Círdan Only",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_214",
+      "Question Text": "In TLOTR movies, Who Does Sam Marry At The End?",
+      "Option A": "Diamond",
+      "Option B": "Pearl",
+      "Option C": "Rosie Cotton",
+      "Option D": "Ruby",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_215",
+      "Question Text": "In TLOTR: Return of the King movie, What Creature Nearly Kills Aragorn At The Black Gate?",
+      "Option A": "A Troll",
+      "Option B": "An Orc",
+      "Option C": "A Nazgûl",
+      "Option D": "A Warg",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_216",
+      "Question Text": "In TLOTR: Return of the King movie, What Is The Name Of Aragorn's Reforged Sword?",
+      "Option A": "Glamdring",
+      "Option B": "Orcrist",
+      "Option C": "Narsil",
+      "Option D": "Anduril",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_217",
+      "Question Text": "In TLOTR: Return of the King movie, How Does Gollum Finally Obtain The One Ring?",
+      "Option A": "Steals It",
+      "Option B": "Takes It",
+      "Option C": "Bites Frodo's Finger Off",
+      "Option D": "Finds It",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_218",
+      "Question Text": "In TLOTR: Return of the King movie, What Object Of Boromir's Does Denethor Hold?",
+      "Option A": "Boromir's Horn",
+      "Option B": "Boromir's Sword",
+      "Option C": "Boromir's Shield",
+      "Option D": "Boromir's Cloak",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_219",
+      "Question Text": "In TLOTR: Return of the King movie, Which Of Merry's Body Parts Is Injured Fighting The Witch-King?",
+      "Option A": "His Leg",
+      "Option B": "His Hand",
+      "Option C": "His Shoulder",
+      "Option D": "His Arm",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_220",
+      "Question Text": "In TLOTR: Return of the King movie, What Does Frodo Give To Sam Before Departing Middle-Earth?",
+      "Option A": "His Ring",
+      "Option B": "His Book",
+      "Option C": "His Sword",
+      "Option D": "His Cloak",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_221",
+      "Question Text": "In TLOTR: Return of the King movie, What Does Frodo Lose While Escaping Shelob's Webs?",
+      "Option A": "His Ring",
+      "Option B": "His Sword (Sting)",
+      "Option C": "His Light",
+      "Option D": "His Cloak",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_222",
+      "Question Text": "In TLOTR: Return of the King movie, What Does Sauron Say When Pippin Touches The Palantir?",
+      "Option A": "Build Me An Army",
+      "Option B": "I See You",
+      "Option C": "Join Me",
+      "Option D": "Die Now",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_223",
+      "Question Text": "In TLOTR: Return of the King movie, What Is The Name Of The Giant Spider That Attacks Frodo?",
+      "Option A": "Ungoliant",
+      "Option B": "Arachne",
+      "Option C": "Weaver",
+      "Option D": "Shelob",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_224",
+      "Question Text": "In TLOTR: Return of the King movie, What Is Gandalf's Unusual Sleeping Habit?",
+      "Option A": "Never Sleeps",
+      "Option B": "Sleeps With Eyes Open",
+      "Option C": "Sleeps Standing",
+      "Option D": "Sleeps Walking",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_225",
+      "Question Text": "In TLOTR: Return of the King movie, How Does Smeagol Originally Acquire The Ring From Deagol?",
+      "Option A": "Steals It",
+      "Option B": "Fights Him",
+      "Option C": "Strangles Him",
+      "Option D": "Tricks Him",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_226",
+      "Question Text": "In TLOTR: Return of the King movie, What Is Minas Tirith's Other Name?",
+      "Option A": "The City Of Kings",
+      "Option B": "The White City",
+      "Option C": "The Guard City",
+      "Option D": "The Tower City",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_227",
+      "Question Text": "In TLOTR: Return of the King, What Was Sméagol Doing When His Cousin Found The Ring?",
+      "Option A": "Hunting",
+      "Option B": "Swimming",
+      "Option C": "Fishing",
+      "Option D": "Sleeping",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_228",
+      "Question Text": "In TLOTR: Return of the King, What Is The Name Of Sméagol's Cousin Who Originally Found The Ring?",
+      "Option A": "Meagol",
+      "Option B": "Beagol",
+      "Option C": "Treagol",
+      "Option D": "Déagol",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_229",
+      "Question Text": "In TLOTR: Return of the King, Who Kills Saruman At Orthanc?",
+      "Option A": "Gandalf",
+      "Option B": "Grima Wormtongue",
+      "Option C": "Aragorn",
+      "Option D": "Legolas",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_230",
+      "Question Text": "In TLOTR: Return of the King, What Object Does Saruman Drop When He Falls From Orthanc?",
+      "Option A": "His Staff",
+      "Option B": "His Ring",
+      "Option C": "The Palantír",
+      "Option D": "His Sword",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_231",
+      "Question Text": "In TLOTR: Return of the King, Who Wins The Drinking Competition In Edoras?",
+      "Option A": "Gimli",
+      "Option B": "Legolas",
+      "Option C": "Aragorn",
+      "Option D": "Éomer",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_232",
+      "Question Text": "In TLOTR: Return of the King, What Does Pippin See In The Palantír?",
+      "Option A": "A White Tree In Flames",
+      "Option B": "A Black Tower",
+      "Option C": "An Eye Of Fire",
+      "Option D": "An Army Marching",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_233",
+      "Question Text": "In TLOTR: Return of the King, What Horse Does Gandalf Ride To Minas Tirith?",
+      "Option A": "Arod",
+      "Option B": "Hasufel",
+      "Option C": "Brego",
+      "Option D": "Shadowfax",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_234",
+      "Question Text": "In TLOTR: Return of the King, Who Is The Steward Of Gondor?",
+      "Option A": "Boromir",
+      "Option B": "Faramir",
+      "Option C": "Imrahil",
+      "Option D": "Denethor",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_235",
+      "Question Text": "In TLOTR: Return of the King, What Creature Does Gollum Lead Frodo To?",
+      "Option A": "Nazgûl",
+      "Option B": "Orc",
+      "Option C": "Shelob",
+      "Option D": "Warg",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_236",
+      "Question Text": "In TLOTR: Return of the King, How Many Riders Does Théoden Gather At Dunharrow?",
+      "Option A": 5000,
+      "Option B": 6000,
+      "Option C": 7000,
+      "Option D": 8000,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_237",
+      "Question Text": "In TLOTR: Return of the King, What Path Do Aragorn, Legolas, And Gimli Take Under The Mountain?",
+      "Option A": "Dark Road",
+      "Option B": "Shadow Path",
+      "Option C": "Mountain Trail",
+      "Option D": "Paths of the Dead",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_238",
+      "Question Text": "In TLOTR: Return of the King, Who Secretly Takes Merry To Battle?",
+      "Option A": "Éowyn",
+      "Option B": "Théoden",
+      "Option C": "Éomer",
+      "Option D": "Gamling",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_239",
+      "Question Text": "In TLOTR: Return of the King, What Is The Name Of The Massive Battering Ram Used At Minas Tirith?",
+      "Option A": "Grond",
+      "Option B": "Hammer",
+      "Option C": "Breaker",
+      "Option D": "Crusher",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_240",
+      "Question Text": "In TLOTR: Return of the King, Who Commands The Orc Forces At Minas Tirith?",
+      "Option A": "Gothmog",
+      "Option B": "Shagrat",
+      "Option C": "Gorbag",
+      "Option D": "Grishnákh",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_241",
+      "Question Text": "In TLOTR: Return of the King, What Does Denethor Try To Do To Faramir?",
+      "Option A": "Kill Him",
+      "Option B": "Exile Him",
+      "Option C": "Imprison Him",
+      "Option D": "Burn Him Alive",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_242",
+      "Question Text": "In TLOTR: Return of the King, What Breaks Gandalf's Staff?",
+      "Option A": "The Witch-king",
+      "Option B": "Sauron",
+      "Option C": "The Balrog",
+      "Option D": "Dark Magic",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_243",
+      "Question Text": "In TLOTR: Return of the King, What Creatures Do The Haradrim Ride Into Battle?",
+      "Option A": "Wargs",
+      "Option B": "Dragons",
+      "Option C": "Mûmakil",
+      "Option D": "Trolls",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_244",
+      "Question Text": "In TLOTR: Return of the King, Who Helps Éowyn Defeat The Witch-king?",
+      "Option A": "Merry",
+      "Option B": "Pippin",
+      "Option C": "Aragorn",
+      "Option D": "Faramir",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_245",
+      "Question Text": "In TLOTR: Return of the King, What Army Does Aragorn Bring On The Black Ships?",
+      "Option A": "Army of Rohan",
+      "Option B": "Army of Gondor",
+      "Option C": "Elven Army",
+      "Option D": "Army of the Dead",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_246",
+      "Question Text": "In TLOTR: Return of the King, Where Do The Orcs Hold Frodo Prisoner?",
+      "Option A": "Barad-dûr",
+      "Option B": "Minas Morgul",
+      "Option C": "Tower of Cirith Ungol",
+      "Option D": "Black Gate",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_247",
+      "Question Text": "In TLOTR: Return of the King, What Do Sam And Frodo Use As A Disguise In Mordor?",
+      "Option A": "Orc Armor",
+      "Option B": "Elf Cloaks",
+      "Option C": "Dark Robes",
+      "Option D": "Peasant Clothes",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_248",
+      "Question Text": "In TLOTR: Return of the King, Who Appears At The Black Gate To Negotiate With Aragorn?",
+      "Option A": "Gothmog",
+      "Option B": "Nazgûl",
+      "Option C": "Mouth of Sauron",
+      "Option D": "Lieutenant of Barad-dûr",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_249",
+      "Question Text": "In TLOTR: Return of the King, What Does Sam Carry Up Mount Doom?",
+      "Option A": "The Ring",
+      "Option B": "Supplies",
+      "Option C": "Frodo",
+      "Option D": "Weapons",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_250",
+      "Question Text": "In TLOTR: Return of the King, How Does Gollum Finally Get The Ring From Frodo?",
+      "Option A": "Steals It",
+      "Option B": "Takes It",
+      "Option C": "Fights For It",
+      "Option D": "Bites Off His Finger",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_251",
+      "Question Text": "In TLOTR: Return of the King, Who Rescues Frodo And Sam From Mount Doom?",
+      "Option A": "The Eagles",
+      "Option B": "Gandalf",
+      "Option C": "Aragorn",
+      "Option D": "The Army",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_252",
+      "Question Text": "In TLOTR: Return of the King, What Title Is Aragorn Given At His Coronation?",
+      "Option A": "King of Gondor",
+      "Option B": "High King",
+      "Option C": "Lord of Men",
+      "Option D": "King Elessar",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_253",
+      "Question Text": "In TLOTR: Return of the King, Who Does Sam Marry?",
+      "Option A": "Diamond",
+      "Option B": "Ruby",
+      "Option C": "Rosie Cotton",
+      "Option D": "Pearl",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_254",
+      "Question Text": "In TLOTR: Return of the King, Where Do The Elves Sail From?",
+      "Option A": "Rivendell",
+      "Option B": "Lothlórien",
+      "Option C": "The Grey Havens",
+      "Option D": "Minas Tirith",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_255",
+      "Question Text": "In TLOTR: Return of the King, What Book Does Frodo Leave For Sam To Complete?",
+      "Option A": "The History",
+      "Option B": "The Tales",
+      "Option C": "The Red Book",
+      "Option D": "The Chronicles",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_256",
+      "Question Text": "In TLOTR: Return of the King, What Happens To Théoden In The Battle Of Pelennor Fields?",
+      "Option A": "Wounded",
+      "Option B": "Captured",
+      "Option C": "Dies",
+      "Option D": "Retreats",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_257",
+      "Question Text": "In TLOTR: Return of the King, What Does Aragorn Use To Challenge Sauron?",
+      "Option A": "The Palantír",
+      "Option B": "The Ring",
+      "Option C": "The Sword",
+      "Option D": "The Crown",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_258",
+      "Question Text": "In TLOTR: Return of the King, What Weapon Does Aragorn Receive From Elrond?",
+      "Option A": "Glamdring",
+      "Option B": "Sting",
+      "Option C": "Orcrist",
+      "Option D": "Andúril",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_259",
+      "Question Text": "In TLOTR: Return of the King, Who Becomes King Of Rohan After Théoden?",
+      "Option A": "Faramir",
+      "Option B": "Gamling",
+      "Option C": "Háma",
+      "Option D": "Éomer",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_260",
+      "Question Text": "In TLOTR: Return of the King, What Happens To The Army Of The Dead After The Battle?",
+      "Option A": "They Vanish",
+      "Option B": "Aragorn Releases Them",
+      "Option C": "They Stay",
+      "Option D": "They Fight On",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_261",
+      "Question Text": "In TLOTR: Return of the King, Where Does Faramir Meet Éowyn?",
+      "Option A": "Houses of Healing",
+      "Option B": "Gardens",
+      "Option C": "Castle",
+      "Option D": "Palace",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_262",
+      "Question Text": "In TLOTR: Return of the King, What Light Does Sam Use Against Shelob?",
+      "Option A": "Star Glass",
+      "Option B": "Torch",
+      "Option C": "Fire",
+      "Option D": "Light of Eärendil",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_263",
+      "Question Text": "In TLOTR: Return of the King, What Do The Orcs Fight Over In Cirith Ungol?",
+      "Option A": "Mithril Shirt",
+      "Option B": "Weapons",
+      "Option C": "Food",
+      "Option D": "Gold",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_264",
+      "Question Text": "In TLOTR: Return of the King, Who Helps Heal Éowyn's Injuries?",
+      "Option A": "Gandalf",
+      "Option B": "Faramir",
+      "Option C": "Aragorn",
+      "Option D": "Éomer",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_265",
+      "Question Text": "In TLOTR: Return of the King, What Creatures Come To Help Fight The Nazgûl?",
+      "Option A": "Hawks",
+      "Option B": "Eagles",
+      "Option C": "Dragons",
+      "Option D": "Fellbeasts",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_266",
+      "Question Text": "In TLOTR: Return of the King, What City Does Gandalf Say Sauron Will Attack First?",
+      "Option A": "Osgiliath",
+      "Option B": "Helm's Deep",
+      "Option C": "Edoras",
+      "Option D": "Minas Tirith",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_267",
+      "Question Text": "In TLOTR: Return of the King, What Does Denethor Eat While Faramir Rides To His Death?",
+      "Option A": "Nothing",
+      "Option B": "Bread",
+      "Option C": "Wine",
+      "Option D": "A Feast",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_268",
+      "Question Text": "In TLOTR: Return of the King, Who Saves Faramir From The Pyre?",
+      "Option A": "Gandalf",
+      "Option B": "Beregond",
+      "Option C": "Pippin",
+      "Option D": "Shadowfax",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_269",
+      "Question Text": "In TLOTR: Return of the King, What Do The Orcs Use To Cover Gondor's Sky?",
+      "Option A": "Smoke",
+      "Option B": "Fire",
+      "Option C": "Darkness",
+      "Option D": "Black Clouds",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_270",
+      "Question Text": "In TLOTR: Return of the King, What Does Aragorn See In The Palantír That Distresses Him?",
+      "Option A": "Arwen Dying",
+      "Option B": "Sauron's Army",
+      "Option C": "The Future",
+      "Option D": "His Death",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_271",
+      "Question Text": "In TLOTR: Return of the King, Where Does The Final Battle Against Sauron Take Place?",
+      "Option A": "Mordor",
+      "Option B": "Osgiliath",
+      "Option C": "The Black Gate",
+      "Option D": "Minas Tirith",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_272",
+      "Question Text": "In TLOTR: Return of the King, What Happens To Barad-dûr When The Ring Is Destroyed?",
+      "Option A": "It Explodes",
+      "Option B": "It Disappears",
+      "Option C": "It Collapses",
+      "Option D": "It Burns",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_273",
+      "Question Text": "In TLOTR: Return of the King, Who Goes Into The West With Frodo?",
+      "Option A": "Gandalf Only",
+      "Option B": "The Elves Only",
+      "Option C": "Bilbo Gandalf Elrond Galadriel",
+      "Option D": "The Ring Bearers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_274",
+      "Question Text": "In TLOTR: Return of the King, What Is The Name Of The Harbor Where The Elves Depart?",
+      "Option A": "White Havens",
+      "Option B": "Grey Havens",
+      "Option C": "Elven Harbor",
+      "Option D": "Last Harbor",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_275",
+      "Question Text": "In TLOTR: Return of the King, How Many Days Does Gandalf Say It Takes To Reach Minas Tirith?",
+      "Option A": "Three Days",
+      "Option B": "Four Days",
+      "Option C": "Five Days",
+      "Option D": "Six Days",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_276",
+      "Question Text": "In TLOTR: Return of the King, What Does Arwen's Vision Show Her?",
+      "Option A": "Death",
+      "Option B": "War",
+      "Option C": "Peace",
+      "Option D": "Her Future Son",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_277",
+      "Question Text": "In TLOTR: Return of the King, What Does Sam Find After Gollum Accuses Him?",
+      "Option A": "Nothing",
+      "Option B": "Lembas Bread",
+      "Option C": "Ring",
+      "Option D": "Rope",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_278",
+      "Question Text": "In TLOTR: Return of the King, How Many Great Eagles Rescue Frodo And Sam?",
+      "Option A": "One",
+      "Option B": "Two",
+      "Option C": "Four",
+      "Option D": "Three",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_279",
+      "Question Text": "In TLOTR: Return of the King, What Does Aragorn First Do As King?",
+      "Option A": "Take Crown",
+      "Option B": "Make Speech",
+      "Option C": "Honor The Hobbits",
+      "Option D": "Meet People",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_280",
+      "Question Text": "In TLOTR: Return of the King, Who Crowns Aragorn As King?",
+      "Option A": "Gandalf",
+      "Option B": "Elrond",
+      "Option C": "Faramir",
+      "Option D": "Éomer",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_281",
+      "Question Text": "In TLOTR: Return of the King, What Is The Last Line Sam Says In The Film?",
+      "Option A": "Well I'm Back",
+      "Option B": "Goodbye",
+      "Option C": "The End",
+      "Option D": "Home At Last",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_282",
+      "Question Text": "In TLOTR: Return of the King, What Does Gandalf Say Has Begun When Aragorn Is Crowned?",
+      "Option A": "New Era",
+      "Option B": "Peace",
+      "Option C": "Age of the King",
+      "Option D": "Fourth Age",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_283",
+      "Question Text": "In TLOTR: Return of the King, What Inn Do The Hobbits Return To In The Shire?",
+      "Option A": "Prancing Pony",
+      "Option B": "Golden Perch",
+      "Option C": "Dragon's Head",
+      "Option D": "Green Dragon",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_284",
+      "Question Text": "In TLOTR: Return of the King, How Many Years After Weathertop Does Frodo Feel His Wound?",
+      "Option A": "Four Years",
+      "Option B": "Three Years",
+      "Option C": "Two Years",
+      "Option D": "Five Years",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_285",
+      "Question Text": "In TLOTR: Return of the King, What Does Gollum Call Mount Doom's Secret Entrance?",
+      "Option A": "The Path",
+      "Option B": "The Way",
+      "Option C": "The Tunnel",
+      "Option D": "The Stairs",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_286",
+      "Question Text": "In TLOTR: Return of the King, What Do The Rohirrim Repeatedly Shout Before Charging?",
+      "Option A": "Death",
+      "Option B": "Fight",
+      "Option C": "Charge",
+      "Option D": "Victory",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_287",
+      "Question Text": "In TLOTR: Return of the King, Who Leads The Nine Nazgûl In Battle?",
+      "Option A": "Dark Lord",
+      "Option B": "Sauron",
+      "Option C": "The Witch-king",
+      "Option D": "Morgul Lord",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_288",
+      "Question Text": "In TLOTR: The Two Towers movie, What Weakness Does Wormtongue Identify In Helm's Deep?",
+      "Option A": "A Storm Drain",
+      "Option B": "The Wall",
+      "Option C": "The Gate",
+      "Option D": "The Tower",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_289",
+      "Question Text": "In TLOTR: The Two Towers movie, What Does Legolas Say A Red Sunrise Means?",
+      "Option A": "War Is Coming",
+      "Option B": "Blood Has Been Spilled",
+      "Option C": "Death Approaches",
+      "Option D": "Evil Rises",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_290",
+      "Question Text": "In TLOTR: The Two Towers movie, What Competition Do Legolas And Gimli Have During The Battle Of Helm's Deep?",
+      "Option A": "Most Arrows",
+      "Option B": "Most Kills",
+      "Option C": "Counting Their Kills",
+      "Option D": "Best Fighter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_291",
+      "Question Text": "In TLOTR: The Two Towers movie, What Is The Gathering Of The Ents Called?",
+      "Option A": "Tree Council",
+      "Option B": "Entmoot",
+      "Option C": "Forest Meeting",
+      "Option D": "Great Gathering",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_292",
+      "Question Text": "In TLOTR: The Two Towers movie, What Forest Do Merry And Pippin Meet Treebeard In?",
+      "Option A": "Fangorn",
+      "Option B": "Mirkwood",
+      "Option C": "Old Forest",
+      "Option D": "Dark Forest",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_293",
+      "Question Text": "In TLOTR: The Two Towers movie, What Do The Three Hunters Find That Suggests Merry And Pippin's Death?",
+      "Option A": "Their Weapons",
+      "Option B": "Their Cloaks",
+      "Option C": "Their Footprints",
+      "Option D": "One Of Their Belts",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_294",
+      "Question Text": "In TLOTR: The Two Towers movie, What Is The Name Of Gandalf's White Horse?",
+      "Option A": "Arod",
+      "Option B": "Shadowfax",
+      "Option C": "Hasufel",
+      "Option D": "Brego",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_295",
+      "Question Text": "In TLOTR: The Two Towers movie, Where Does Gollum Promise To Lead Frodo And Sam?",
+      "Option A": "Mordor",
+      "Option B": "Secret Path",
+      "Option C": "The Black Gate",
+      "Option D": "Hidden Way",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_296",
+      "Question Text": "In TLOTR: The Two Towers, On Which Bridge Does Gandalf Battle The Balrog?",
+      "Option A": "Stone Bridge",
+      "Option B": "Bridge of Khazad-dum",
+      "Option C": "Great Bridge",
+      "Option D": "Dark Bridge",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_297",
+      "Question Text": "In TLOTR: The Two Towers, In Which Hills Do Frodo And Sam Encounter Gollum?",
+      "Option A": "Ash Mountains",
+      "Option B": "Misty Mountains",
+      "Option C": "Weather Hills",
+      "Option D": "Emyn Muil",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_298",
+      "Question Text": "In TLOTR: The Two Towers, Who Is Revealed To Be Controlling King Théoden?",
+      "Option A": "Saruman",
+      "Option B": "Sauron",
+      "Option C": "Dark Magic",
+      "Option D": "Grima Wormtongue",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_299",
+      "Question Text": "In TLOTR: The Two Towers, What Is The Name Of King Théoden's Son Who Falls In Battle?",
+      "Option A": "Éomer",
+      "Option B": "Theodred",
+      "Option C": "Éomund",
+      "Option D": "Théodwyn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_300",
+      "Question Text": "In TLOTR: The Two Towers, Who Do Merry And Pippin Meet In Fangorn Forest?",
+      "Option A": "Gandalf",
+      "Option B": "Aragorn",
+      "Option C": "Treebeard",
+      "Option D": "Legolas",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_301",
+      "Question Text": "In TLOTR: The Two Towers, What Area Do Frodo, Sam, And Gollum Cross To Reach The Black Gate?",
+      "Option A": "Emyn Muil",
+      "Option B": "Morgul Vale",
+      "Option C": "Dead Marshes",
+      "Option D": "Ithilien",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_302",
+      "Question Text": "In TLOTR: The Two Towers, What Army Arrives At The Black Gate While The Hobbits Watch?",
+      "Option A": "Haradrim",
+      "Option B": "Corsairs",
+      "Option C": "Easterlings",
+      "Option D": "Southrons",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_303",
+      "Question Text": "In TLOTR: The Two Towers, What Is Gandalf Called After His Return?",
+      "Option A": "Gandalf the Grey",
+      "Option B": "Gandalf the Wise",
+      "Option C": "Gandalf the White",
+      "Option D": "Gandalf the Powerful",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_304",
+      "Question Text": "In TLOTR: The Two Towers, Where Does King Théoden Choose To Shelter His People?",
+      "Option A": "Helm's Deep",
+      "Option B": "Dunharrow",
+      "Option C": "Edoras",
+      "Option D": "Isengard",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_305",
+      "Question Text": "In TLOTR: The Two Towers, How Many Riders Does Gandalf Promise To Return With?",
+      "Option A": 1000,
+      "Option B": 1500,
+      "Option C": 3000,
+      "Option D": 2000,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_306",
+      "Question Text": "In TLOTR: The Two Towers, What Weakness Does Wormtongue Reveal To Saruman About Helm's Deep?",
+      "Option A": "The Gate",
+      "Option B": "The Drain",
+      "Option C": "The Keep",
+      "Option D": "The Outer Wall",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_307",
+      "Question Text": "In TLOTR: The Two Towers, How Large Is Saruman's Army That Attacks Helm's Deep?",
+      "Option A": 10000,
+      "Option B": 8000,
+      "Option C": 12000,
+      "Option D": 15000,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_308",
+      "Question Text": "In TLOTR: The Two Towers, What Region Do Gollum And The Hobbits Travel To After The Black Gate?",
+      "Option A": "Mordor",
+      "Option B": "Gondor",
+      "Option C": "Ithilien",
+      "Option D": "Rohan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_309",
+      "Question Text": "In TLOTR: The Two Towers, What Creatures Attack The Rohirrim On Their Way To Helm's Deep?",
+      "Option A": "Warg-riders",
+      "Option B": "Orcs",
+      "Option C": "Uruk-hai",
+      "Option D": "Wild Men",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_310",
+      "Question Text": "In TLOTR: The Two Towers, Which Elf Leader Brings Reinforcements To Helm's Deep?",
+      "Option A": "Haldir",
+      "Option B": "Legolas",
+      "Option C": "Glorfindel",
+      "Option D": "Celeborn",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_311",
+      "Question Text": "In TLOTR: The Two Towers, What Meeting Do The Ents Hold To Discuss The War?",
+      "Option A": "Tree Council",
+      "Option B": "Forest Meet",
+      "Option C": "Entmoot",
+      "Option D": "Great Gathering",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_312",
+      "Question Text": "In TLOTR: The Two Towers, What Horse Saves Aragorn After He Falls From The Cliff?",
+      "Option A": "Hasufel",
+      "Option B": "Brego",
+      "Option C": "Arod",
+      "Option D": "Shadowfax",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_313",
+      "Question Text": "In TLOTR: The Two Towers, Who Is Revealed To Be Boromir's Brother?",
+      "Option A": "Faramir",
+      "Option B": "Damrod",
+      "Option C": "Mablung",
+      "Option D": "Madril",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_314",
+      "Question Text": "In TLOTR: The Two Towers, What Place Do Faramir's Rangers Take Frodo And Sam To?",
+      "Option A": "Henneth Annûn",
+      "Option B": "Osgiliath",
+      "Option C": "Minas Tirith",
+      "Option D": "Cair Andros",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_315",
+      "Question Text": "In TLOTR: The Two Towers, What Does Saruman Use To Breach The Wall Of Helm's Deep?",
+      "Option A": "Fire",
+      "Option B": "Explosive Devices",
+      "Option C": "Battering Ram",
+      "Option D": "Siege Tower",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_316",
+      "Question Text": "In TLOTR: The Two Towers, What Makes Treebeard Change His Mind About Fighting?",
+      "Option A": "Merry's Speech",
+      "Option B": "Seeing Decimated Trees",
+      "Option C": "Pippin's Plan",
+      "Option D": "Saruman's Betrayal",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_317",
+      "Question Text": "In TLOTR: The Two Towers, What Do The Ents Call Their Attack On Isengard?",
+      "Option A": "Final Attack",
+      "Option B": "The Last March of the Ents",
+      "Option C": "Tree's Revenge",
+      "Option D": "Forest's Wrath",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_318",
+      "Question Text": "In TLOTR: The Two Towers, What River Do The Ents Release To Flood Isengard?",
+      "Option A": "Isen",
+      "Option B": "Anduin",
+      "Option C": "Entwash",
+      "Option D": "Limlight",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_319",
+      "Question Text": "In TLOTR: The Two Towers, To Which City Does Faramir Take The Hobbits?",
+      "Option A": "Minas Tirith",
+      "Option B": "Cair Andros",
+      "Option C": "Osgiliath",
+      "Option D": "Pelargir",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_320",
+      "Question Text": "In TLOTR: The Two Towers, What Does Elrond Show Arwen About Her Future If She Stays?",
+      "Option A": "Her Loneliness",
+      "Option B": "Her Grief",
+      "Option C": "Aragorn's Death",
+      "Option D": "Their Separation",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_321",
+      "Question Text": "In TLOTR: The Two Towers, Where Does Elrond Want Arwen To Go?",
+      "Option A": "Rivendell",
+      "Option B": "Lothlorien",
+      "Option C": "Grey Havens",
+      "Option D": "The Undying Lands",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_322",
+      "Question Text": "In TLOTR: The Two Towers, Who Is Éomer's Sister?",
+      "Option A": "Théodwyn",
+      "Option B": "Éowyn",
+      "Option C": "Morwen",
+      "Option D": "Elfhild",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_323",
+      "Question Text": "In TLOTR: The Two Towers, What People Attack Villages In Rohan Under Saruman's Command?",
+      "Option A": "Uruk-hai Only",
+      "Option B": "Orcs Only",
+      "Option C": "Wild Men Only",
+      "Option D": "Orcs and Dunlendings",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_324",
+      "Question Text": "In TLOTR: The Two Towers, What Happens To Éomer When He Confronts Wormtongue?",
+      "Option A": "He Is Imprisoned",
+      "Option B": "He Is Banished",
+      "Option C": "He Is Demoted",
+      "Option D": "He Is Threatened",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_325",
+      "Question Text": "In TLOTR: The Two Towers, Who Do The Fleeing Uruk-hai Encounter In Fangorn Forest?",
+      "Option A": "Huorns",
+      "Option B": "Ents",
+      "Option C": "Trees",
+      "Option D": "Forest Guards",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_326",
+      "Question Text": "In TLOTR: The Two Towers, What Time Of Day Does Gandalf Arrive At Helm's Deep?",
+      "Option A": "Night",
+      "Option B": "Noon",
+      "Option C": "Evening",
+      "Option D": "Dawn",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_327",
+      "Question Text": "In TLOTR: The Two Towers, What Is The Name Of Saruman's Tower?",
+      "Option A": "Barad-dûr",
+      "Option B": "Cirith Ungol",
+      "Option C": "Minas Morgul",
+      "Option D": "Orthanc",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_328",
+      "Question Text": "In TLOTR: The Two Towers, Which Elf Speaks To Elrond About The Fate Of Men?",
+      "Option A": "Galadriel",
+      "Option B": "Celeborn",
+      "Option C": "Arwen",
+      "Option D": "Thranduil",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_329",
+      "Question Text": "In TLOTR: The Two Towers, What Does Gollum Call The Creature He Plans To Lead Frodo To?",
+      "Option A": "It",
+      "Option B": "The Beast",
+      "Option C": "Her",
+      "Option D": "The Spider",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_330",
+      "Question Text": "In TLOTR: The Two Towers, Who Is Faramir Trying To Prove His Worth To?",
+      "Option A": "Aragorn",
+      "Option B": "Denethor",
+      "Option C": "Boromir",
+      "Option D": "Gandalf",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_331",
+      "Question Text": "In TLOTR: The Two Towers, What Animals Do The Children Ride To Warn Edoras?",
+      "Option A": "Ponies",
+      "Option B": "Horses",
+      "Option C": "Mules",
+      "Option D": "Donkeys",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_332",
+      "Question Text": "In TLOTR: The Two Towers, What Type Of Creature Does The Nazgûl Ride Over The Dead Marshes?",
+      "Option A": "Dragon",
+      "Option B": "Wyvern",
+      "Option C": "Fell Beast",
+      "Option D": "Winged Beast",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_333",
+      "Question Text": "In TLOTR: The Two Towers, What Part Of Middle-earth Is Treebeard The Oldest Of?",
+      "Option A": "Ents",
+      "Option B": "Trees",
+      "Option C": "Forest",
+      "Option D": "Woods",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_334",
+      "Question Text": "In TLOTR: The Two Towers, What Do The Defenders First Use Against The Uruk-hai At Helm's Deep?",
+      "Option A": "Rocks",
+      "Option B": "Spears",
+      "Option C": "Swords",
+      "Option D": "Arrows",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_335",
+      "Question Text": "In TLOTR: The Two Towers, What Happens To Haldir During The Battle Of Helm's Deep?",
+      "Option A": "He Flees",
+      "Option B": "He Dies",
+      "Option C": "He Survives",
+      "Option D": "He Disappears",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_336",
+      "Question Text": "In TLOTR: The Two Towers, Where Do The Defenders Retreat To When The Wall Is Breached?",
+      "Option A": "Gate",
+      "Option B": "Tower",
+      "Option C": "Hall",
+      "Option D": "The Keep",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_337",
+      "Question Text": "In TLOTR: The Two Towers, What Nearly Makes Frodo Kill Sam In Osgiliath?",
+      "Option A": "Gollum's Words",
+      "Option B": "Fear",
+      "Option C": "Madness",
+      "Option D": "The Ring's Influence",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_338",
+      "Question Text": "In TLOTR: The Two Towers, Why Does Gollum Feel Betrayed By Frodo?",
+      "Option A": "Being Handed To Faramir's Men",
+      "Option B": "Being Tied Up",
+      "Option C": "Being Left Behind",
+      "Option D": "Being Accused",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_339",
+      "Question Text": "In TLOTR: The Two Towers, What Does Sam Say They Are Fighting For?",
+      "Option A": "The Shire",
+      "Option B": "Each Other",
+      "Option C": "Good",
+      "Option D": "Hope",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_340",
+      "Question Text": "In TLOTR: The Two Towers, What Happens To The Uruk-hai Who Flee Into Fangorn?",
+      "Option A": "They Escape",
+      "Option B": "They Hide",
+      "Option C": "They Fight",
+      "Option D": "The Ents Kill Them",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_341",
+      "Question Text": "In TLOTR: The Two Towers, How Long Does Gandalf Say He Will Take To Return With Help?",
+      "Option A": "Three Days",
+      "Option B": "Four Days",
+      "Option C": "Five Days",
+      "Option D": "Six Days",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_342",
+      "Question Text": "In TLOTR: The Two Towers, What Do The Uruks Use To Climb The Walls Of Helm's Deep?",
+      "Option A": "Scaling Ladders",
+      "Option B": "Ropes",
+      "Option C": "Grappling Hooks",
+      "Option D": "Siege Towers",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_343",
+      "Question Text": "In TLOTR: The Two Towers, What Kind Of Group Ambushes The Haradrim In Ithilien?",
+      "Option A": "Rangers",
+      "Option B": "Soldiers",
+      "Option C": "Warriors",
+      "Option D": "Guards",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_344",
+      "Question Text": "In TLOTR: The Two Towers, What Does Gandalf Say Is About To Begin After Helm's Deep?",
+      "Option A": "The Battle for Middle-earth",
+      "Option B": "The Final War",
+      "Option C": "The Great Conflict",
+      "Option D": "The Last Fight",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_345",
+      "Question Text": "In TLOTR: The Two Towers, How Does Gollum's Personality Split When Deciding To Betray Frodo?",
+      "Option A": "Darker Self and Lighter Self",
+      "Option B": "Good and Evil",
+      "Option C": "Sméagol and Gollum",
+      "Option D": "Past and Present",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_346",
+      "Question Text": "In TLOTR: The Two Towers, What Convinces Faramir To Let Frodo Go?",
+      "Option A": "Overhearing Sam's Speech",
+      "Option B": "Seeing The Ring",
+      "Option C": "Understanding Truth",
+      "Option D": "Knowing Danger",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "THELORDOFTHERINGS_347",
+      "Question Text": "In TLOTR: The Two Towers, Who Leads The Final Charge Out Of Helm's Deep?",
+      "Option A": "Gandalf and Éomer",
+      "Option B": "Théoden and Éomer",
+      "Option C": "Aragorn and Éomer",
+      "Option D": "Aragorn and Théoden",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    }
+  ]
+}

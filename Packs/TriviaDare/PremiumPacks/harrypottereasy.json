@@ -1,0 +1,4234 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "HARRYPOTTER_1",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Setting On Newt's Case Makes It Safe For Muggles?",
+      "Option A": "No-Maj Mode",
+      "Option B": "Muggle Worthy",
+      "Option C": "Safe Mode",
+      "Option D": "Normal Setting",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_2",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Is The Name Of The New York Wizard Newspaper?",
+      "Option A": "Magical Times",
+      "Option B": "New York Ghost",
+      "Option C": "Wizard Post",
+      "Option D": "Magical Herald",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_3",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Is The Full Name Of Mary Lou's Anti-Witch Movement?",
+      "Option A": "The Witch Hunters Society",
+      "Option B": "The New Salem Philanthropic Society",
+      "Option C": "The Anti-Magic League",
+      "Option D": "The Second Salem Movement",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_4",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Who Is Tina's Supervisor In The Wand Permit Department?",
+      "Option A": "Graves",
+      "Option B": "Picquery",
+      "Option C": "Abernathy",
+      "Option D": "Shaw",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_5",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Year Is The Film Set?",
+      "Option A": 1924,
+      "Option B": 1925,
+      "Option C": 1926,
+      "Option D": 1927,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_6",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Are Non-Magical People Called In America?",
+      "Option A": "Muggles",
+      "Option B": "Non-Magic",
+      "Option C": "No-Maj",
+      "Option D": "Ordinary",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_7",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Creature Escapes From Newt's Case In The Bank?",
+      "Option A": "Niffler",
+      "Option B": "Bowtruckle",
+      "Option C": "Occamy",
+      "Option D": "Demiguise",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_8",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Is Jacob Kowalski's Profession?",
+      "Option A": "Butcher",
+      "Option B": "Chef",
+      "Option C": "Cook",
+      "Option D": "Baker",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_9",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Special Ability Does Queenie Goldstein Have?",
+      "Option A": "Divination",
+      "Option B": "Clairvoyance",
+      "Option C": "Telepathy",
+      "Option D": "Legilimency",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_10",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Is The Name Of America's Magical Government?",
+      "Option A": "American Ministry",
+      "Option B": "MACUSA",
+      "Option C": "Wizard Congress",
+      "Option D": "Magic Council",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_11",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Creature Does Newt Plan To Release In Arizona?",
+      "Option A": "Thunderbird",
+      "Option B": "Phoenix",
+      "Option C": "Griffin",
+      "Option D": "Dragon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_12",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Where Was The Thunderbird Originally Found?",
+      "Option A": "Arizona",
+      "Option B": "Texas",
+      "Option C": "Egypt",
+      "Option D": "Montana",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_13",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Dark Force Lives Inside Suppressed Magical Children?",
+      "Option A": "Dark Spirit",
+      "Option B": "Shadow Force",
+      "Option C": "Obscurus",
+      "Option D": "Wraith",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_14",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Who Is The President Of MACUSA?",
+      "Option A": "Emily Shaw",
+      "Option B": "Mary Lou",
+      "Option C": "Agnes Brown",
+      "Option D": "Seraphina Picquery",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_15",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Position Does Percival Graves Hold?",
+      "Option A": "Head Auror",
+      "Option B": "Director of Magical Security",
+      "Option C": "Chief of Staff",
+      "Option D": "Minister of Magic",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_16",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Is The Name Of The Goblin Gangster?",
+      "Option A": "Gnarlack",
+      "Option B": "Griphook",
+      "Option C": "Gornuk",
+      "Option D": "Gringott",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_17",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Who Is Really Disguised As Percival Graves?",
+      "Option A": "Dumbledore",
+      "Option B": "Newt",
+      "Option C": "Theseus",
+      "Option D": "Grindelwald",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_18",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Does Newt Leave Jacob To Fund His Bakery?",
+      "Option A": "Gold Galleons",
+      "Option B": "Silver Occamy Eggshells",
+      "Option C": "Precious Gems",
+      "Option D": "Dragon Scales",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_19",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Is A Squib?",
+      "Option A": "Magical Creature",
+      "Option B": "Non-Magical Person of Wizard Ancestry",
+      "Option C": "Half-Blood Wizard",
+      "Option D": "Magical Animal",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_20",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Which Character Is Revealed To Be The Obscurus?",
+      "Option A": "Credence",
+      "Option B": "Modesty",
+      "Option C": "Chastity",
+      "Option D": "Mary Lou",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_21",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Where Is The Final Confrontation With Credence?",
+      "Option A": "City Hall",
+      "Option B": "Times Square",
+      "Option C": "Central Park",
+      "Option D": "Subway Tunnel",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_22",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, How Does MACUSA Erase The City's Memories?",
+      "Option A": "Memory Charm",
+      "Option B": "Obliviate Spell",
+      "Option C": "Forgetfulness Potion",
+      "Option D": "Thunderbird Rain",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_23",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Will Newt's Book Become?",
+      "Option A": "Hogwarts Textbook",
+      "Option B": "Bestseller",
+      "Option C": "Research Journal",
+      "Option D": "Ministry Guide",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_24",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Why Is Beast Ownership Banned In America?",
+      "Option A": "Past Incidents",
+      "Option B": "Fear of Exposure",
+      "Option C": "Safety Concerns",
+      "Option D": "Magical Law",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_25",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Does Graves Promise Credence?",
+      "Option A": "Power",
+      "Option B": "Freedom",
+      "Option C": "To Teach Him Magic",
+      "Option D": "Protection",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_26",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Who Dies In The Barebone House?",
+      "Option A": "Chastity",
+      "Option B": "Mary Lou",
+      "Option C": "Modesty",
+      "Option D": "Credence",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_27",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Why Does Tina Initially Arrest Newt?",
+      "Option A": "Having Creatures",
+      "Option B": "Breaking Law",
+      "Option C": "Being An Unregistered Wizard",
+      "Option D": "Public Magic Use",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_28",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Does Jacob's Suitcase Contain?",
+      "Option A": "Money",
+      "Option B": "Baked Goods",
+      "Option C": "Personal Items",
+      "Option D": "Clothes",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_29",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Animal Is A Niffler Similar To?",
+      "Option A": "Platypus",
+      "Option B": "Mole",
+      "Option C": "Badger",
+      "Option D": "Raccoon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_30",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Does Newt Claim He's In America To Buy?",
+      "Option A": "Bowtruckle",
+      "Option B": "Appaloosa Puffskein",
+      "Option C": "Niffler",
+      "Option D": "Phoenix",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_31",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Which Senator Is Killed?",
+      "Option A": "Henry Shaw Jr",
+      "Option B": "William Shaw",
+      "Option C": "John Shaw",
+      "Option D": "Robert Shaw",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_32",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Does Graves Want Credence To Find?",
+      "Option A": "Child",
+      "Option B": "An Obscurus",
+      "Option C": "Witch",
+      "Option D": "Magic",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_33",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Why Can't American Wizards Marry No-Majs?",
+      "Option A": "Security Risk",
+      "Option B": "Tradition",
+      "Option C": "It's Forbidden",
+      "Option D": "Law",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_34",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Age Do Most Obscurial Children Live To?",
+      "Option A": "Eight",
+      "Option B": "Ten",
+      "Option C": "Twelve",
+      "Option D": "Fifteen",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_35",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Does Newt Say His Mission Is With Magical Creatures?",
+      "Option A": "Study Them",
+      "Option B": "Rescue And Release",
+      "Option C": "Protect Them",
+      "Option D": "Train Them",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_36",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Is Found Under Modesty's Bed?",
+      "Option A": "Toy",
+      "Option B": "Book",
+      "Option C": "A Wand",
+      "Option D": "Doll",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_37",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Who Are The Barebone Children?",
+      "Option A": "Credence Chastity Modesty",
+      "Option B": "Mary Tom Sarah",
+      "Option C": "John James Jane",
+      "Option D": "Peter Paul Mary",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_38",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Happens To Jacob's Memories In The End?",
+      "Option A": "Partially Lost",
+      "Option B": "Erased By Rain",
+      "Option C": "Magically Removed",
+      "Option D": "Slowly Faded",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_39",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Inspires Jacob's Pastry Designs?",
+      "Option A": "Dreams",
+      "Option B": "Memories",
+      "Option C": "Newt's Creatures",
+      "Option D": "Magic",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_40",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, Why Does Graves Want To Expose Magic To No-Majs?",
+      "Option A": "For Power",
+      "Option B": "For Control",
+      "Option C": "To Start A War",
+      "Option D": "For Freedom",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_41",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Does MACUSA Stand For?",
+      "Option A": "Magical Congress of the United States of America",
+      "Option B": "Magical Council of United States Administration",
+      "Option C": "Ministry of American Conjurers United States Assembly",
+      "Option D": "Magical Community of United States Alliance",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_42",
+      "Question Text": "In Fantastic Beasts and Where to Find Them, What Creature Runs Wild In Central Park?",
+      "Option A": "Erumpent",
+      "Option B": "Nundu",
+      "Option C": "Graphorn",
+      "Option D": "Zouwu",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_43",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Spell Transforms Animals Into Water Goblets?",
+      "Option A": "Transformo",
+      "Option B": "Aquafors",
+      "Option C": "Veraverto",
+      "Option D": "Fera Verto",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_44",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Second Message Appears In Blood On The Wall?",
+      "Option A": "The Chamber Has Been Opened",
+      "Option B": "Her Skeleton Will Lie In The Chamber Forever",
+      "Option C": "The Heir Has Returned",
+      "Option D": "She Will Never Return",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_45",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Object Must The Students Transform Their Animals Into?",
+      "Option A": "Wine Glasses",
+      "Option B": "Cups",
+      "Option C": "Water Goblets",
+      "Option D": "Chalices",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_46",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Charm Creates A High-Pitched Shrieking Noise?",
+      "Option A": "Sonorus",
+      "Option B": "Quietus",
+      "Option C": "Muffliato",
+      "Option D": "Caterwauling",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_47",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Charm Causes Extreme Tickling?",
+      "Option A": "Tarantallegra",
+      "Option B": "Levicorpus",
+      "Option C": "Rictusempra",
+      "Option D": "Furnunculus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_48",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Does Ron Receive After Flying The Ford Anglia?",
+      "Option A": "Letter",
+      "Option B": "Warning",
+      "Option C": "Detention",
+      "Option D": "A Howler",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_49",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Is Gilderoy Lockhart's Favorite Color?",
+      "Option A": "Lilac",
+      "Option B": "Pink",
+      "Option C": "Purple",
+      "Option D": "Lavender",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_50",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Is The Password To The Slytherin Common Room?",
+      "Option A": "Serpent",
+      "Option B": "Pure-Blood",
+      "Option C": "Salazar",
+      "Option D": "Slytherin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_51",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Plant Do Second-Years Handle In Their First Herbology Lesson?",
+      "Option A": "Devil's Snare",
+      "Option B": "Venomous Tentacula",
+      "Option C": "Mandrakes",
+      "Option D": "Gillyweed",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_52",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Substance Can Destroy A Horcrux?",
+      "Option A": "Basilisk Venom",
+      "Option B": "Dragon Fire",
+      "Option C": "Phoenix Tears",
+      "Option D": "Fiendfyre",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_53",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Is Ron's Detention Task With Filch?",
+      "Option A": "Clean Bathrooms",
+      "Option B": "Sort Files",
+      "Option C": "Polish The Trophy Room Silver",
+      "Option D": "Scrub Floors",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_54",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Who Is The Captain Of The Gryffindor Quidditch Team?",
+      "Option A": "Harry Potter",
+      "Option B": "Fred Weasley",
+      "Option C": "Angelina Johnson",
+      "Option D": "Oliver Wood",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_55",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Why Doesn't Harry Receive Letters From His Friends?",
+      "Option A": "Dobby Intercepted Them",
+      "Option B": "Owls Got Lost",
+      "Option C": "Mail Was Cursed",
+      "Option D": "Post Office Strike",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_56",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Why Is Hagrid Not Allowed To Use Magic?",
+      "Option A": "Broke His Wand",
+      "Option B": "Failed Tests",
+      "Option C": "He Was Expelled From Hogwarts",
+      "Option D": "Ministry Ban",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_57",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, How Did Moaning Myrtle Die?",
+      "Option A": "Killing Curse",
+      "Option B": "Poisoned",
+      "Option C": "She Looked The Basilisk In The Eye",
+      "Option D": "Accident",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_58",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Is The Name Of Dumbledore's Phoenix?",
+      "Option A": "Fawkes",
+      "Option B": "Phoenix",
+      "Option C": "Flame",
+      "Option D": "Fire",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_59",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Who Initially Possessed Tom Riddle's Diary?",
+      "Option A": "Tom Riddle",
+      "Option B": "Lucius Malfoy",
+      "Option C": "Ginny Weasley",
+      "Option D": "Draco Malfoy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_60",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Who Is The Defense Against The Dark Arts Teacher?",
+      "Option A": "Snape",
+      "Option B": "Gilderoy Lockhart",
+      "Option C": "Quirrell",
+      "Option D": "Lupin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_61",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Who Do Harry And Ron First Meet At Hogwarts After Missing The Train?",
+      "Option A": "McGonagall",
+      "Option B": "Snape",
+      "Option C": "Filch",
+      "Option D": "Dumbledore",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_62",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Tree Attacks The Flying Car?",
+      "Option A": "Ancient Oak",
+      "Option B": "Whomping Willow",
+      "Option C": "Giant Elm",
+      "Option D": "Magic Pine",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_63",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Spell Does Lockhart Use On Harry's Broken Arm?",
+      "Option A": "Episkey",
+      "Option B": "Ferula",
+      "Option C": "Brackium Emendo",
+      "Option D": "Vulnera Sanentur",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_64",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Which Student Does Lockhart Reference In His Quote About Pixies?",
+      "Option A": "Thomas",
+      "Option B": "Longbottom",
+      "Option C": "Finnigan",
+      "Option D": "Weasley",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_65",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Who Teased Myrtle About Her Glasses?",
+      "Option A": "Tom Riddle",
+      "Option B": "Peeves",
+      "Option C": "Helena Ravenclaw",
+      "Option D": "Olive Hornby",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_66",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Does Malfoy Call Harry During Quidditch?",
+      "Option A": "Potter Head",
+      "Option B": "Lightning Face",
+      "Option C": "Four Eyes",
+      "Option D": "Scarhead",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_67",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, How Many Points Does Myrtle Say You Get For Throwing Something Through Her?",
+      "Option A": 5,
+      "Option B": 15,
+      "Option C": 10,
+      "Option D": 20,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_68",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Who First Opens The Chamber That Year?",
+      "Option A": "Ginny Weasley",
+      "Option B": "Tom Riddle",
+      "Option C": "Lucius Malfoy",
+      "Option D": "Draco Malfoy",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_69",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, How Many Muggles Saw The Flying Car?",
+      "Option A": 5,
+      "Option B": 6,
+      "Option C": 7,
+      "Option D": 8,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_70",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Where Is The Polyjuice Potion Brewed?",
+      "Option A": "Dungeon",
+      "Option B": "Classroom",
+      "Option C": "Girls' Lavatory",
+      "Option D": "Common Room",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_71",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Who Does Ron Transform Into?",
+      "Option A": "Crabbe",
+      "Option B": "Goyle",
+      "Option C": "Malfoy",
+      "Option D": "Flint",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_72",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, How Many Times Did Lockhart Win Most Charming Smile?",
+      "Option A": "Two",
+      "Option B": "Three",
+      "Option C": "Four",
+      "Option D": "Five",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_73",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Who Was The First To Be Petrified?",
+      "Option A": "Justin",
+      "Option B": "Colin",
+      "Option C": "Nearly Headless Nick",
+      "Option D": "Mrs. Norris",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_74",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, How Long Since The Chamber Was Last Opened?",
+      "Option A": "25 Years",
+      "Option B": "40 Years",
+      "Option C": "50 Years",
+      "Option D": "75 Years",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_75",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Who Originally Put The Basilisk In The Chamber?",
+      "Option A": "Godric Gryffindor",
+      "Option B": "Salazar Slytherin",
+      "Option C": "Rowena Ravenclaw",
+      "Option D": "Helga Hufflepuff",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_76",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Plant Were Students Learning About In Herbology?",
+      "Option A": "Mandrake",
+      "Option B": "Devil's Snare",
+      "Option C": "Gillyweed",
+      "Option D": "Venomous Tentacula",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_77",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, Whose Dinner Does Dobby Ruin?",
+      "Option A": "The Dursleys",
+      "Option B": "The Grangers",
+      "Option C": "The Masons",
+      "Option D": "The Creeveys",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_78",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Is The Model Of The Weasleys' Flying Car?",
+      "Option A": "Ford Prefect",
+      "Option B": "Ford Cortina",
+      "Option C": "Ford Escort",
+      "Option D": "Ford Anglia",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_79",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Creatures Cause Chaos In Lockhart's First Class?",
+      "Option A": "Doxies",
+      "Option B": "Bowtruckles",
+      "Option C": "Cornish Pixies",
+      "Option D": "Nifflers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_80",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Advice Does Hagrid Give Before Going To Azkaban?",
+      "Option A": "Stay Safe",
+      "Option B": "Hide Away",
+      "Option C": "Follow The Spiders",
+      "Option D": "Trust Dumbledore",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_81",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Cures The Petrified Victims?",
+      "Option A": "Mandrake Draught",
+      "Option B": "Phoenix Tears",
+      "Option C": "Bezoar",
+      "Option D": "Wiggenweld Potion",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_82",
+      "Question Text": "In Harry Potter and the Chamber of Secrets, What Saves Harry From The Basilisk Venom?",
+      "Option A": "Bezoar",
+      "Option B": "Antidote",
+      "Option C": "Healing Spell",
+      "Option D": "Phoenix Tears",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_83",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Year Is The Film Set?",
+      "Option A": "1926",
+      "Option B": "1927",
+      "Option C": "1928",
+      "Option D": "1929",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_84",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Who Helps Grindelwald Escape MACUSA?",
+      "Option A": "Abernathy",
+      "Option B": "Rosier",
+      "Option C": "Krall",
+      "Option D": "Nagel",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_85",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Has Happened To Newt's Travel Rights?",
+      "Option A": "They Were Revoked",
+      "Option B": "They Expired",
+      "Option C": "They Were Suspended",
+      "Option D": "They Were Limited",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_86",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Who Is Newt's Brother?",
+      "Option A": "Perseus",
+      "Option B": "Atlas",
+      "Option C": "Arcturus",
+      "Option D": "Theseus Scamander",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_87",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Is Leta Lestrange's Job?",
+      "Option A": "Auror",
+      "Option B": "Secretary",
+      "Option C": "Assistant to Head of Magical Law Enforcement",
+      "Option D": "Ministry Official",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_88",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Does The Ministry Want Newt To Do?",
+      "Option A": "Join Aurors",
+      "Option B": "Find Credence",
+      "Option C": "Hunt Grindelwald",
+      "Option D": "Teach at Hogwarts",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_89",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Why Is Dumbledore Under Surveillance?",
+      "Option A": "Teaching Dark Arts",
+      "Option B": "Supporting Rebels",
+      "Option C": "Meeting Grindelwald",
+      "Option D": "Refusing to Fight Grindelwald",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_90",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Subject Does Dumbledore Teach?",
+      "Option A": "Defense Against the Dark Arts",
+      "Option B": "Transfiguration",
+      "Option C": "Charms",
+      "Option D": "Potions",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_91",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Why Aren't Jacob's Memories Fully Erased?",
+      "Option A": "Rain Was Light",
+      "Option B": "Spell Failed",
+      "Option C": "Magic Resistance",
+      "Option D": "His Memories Were Good",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_92",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Is Nagini's Original Form?",
+      "Option A": "Snake",
+      "Option B": "Animal",
+      "Option C": "Human",
+      "Option D": "Spirit",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_93",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Where Is The Circus Arcanus Located?",
+      "Option A": "London",
+      "Option B": "Berlin",
+      "Option C": "Rome",
+      "Option D": "Paris",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_94",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Is Nagini's Curse Called?",
+      "Option A": "Animagus",
+      "Option B": "Maledictus",
+      "Option C": "Metamorphmagus",
+      "Option D": "Obscurus",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_95",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Is Yusuf Kama's Vow About?",
+      "Option A": "Finding Leta",
+      "Option B": "Avenging Family",
+      "Option C": "Protecting Magic",
+      "Option D": "Killing Corvus Lestrange",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_96",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Where Is The Lestrange Family Tomb?",
+      "Option A": "Montmartre Cemetery",
+      "Option B": "Saint-Denis Basilica",
+      "Option C": "Père Lachaise Cemetery",
+      "Option D": "Montparnasse Cemetery",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_97",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Color Are Grindelwald's Protective Flames?",
+      "Option A": "Red",
+      "Option B": "Green",
+      "Option C": "Black",
+      "Option D": "Blue",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_98",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Who Sacrifices Themselves To Save The Others?",
+      "Option A": "Tina",
+      "Option B": "Leta Lestrange",
+      "Option C": "Theseus",
+      "Option D": "Newt",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_99",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Which Famous Alchemist Helps Fight Grindelwald?",
+      "Option A": "Paracelus",
+      "Option B": "Nicolas Flamel",
+      "Option C": "Artemis Scamander",
+      "Option D": "Newt Scamander",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_100",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Does Newt Give Dumbledore?",
+      "Option A": "Memory Vial",
+      "Option B": "Blood Pact Vial",
+      "Option C": "Pensieve Memory",
+      "Option D": "Elder Wand",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_101",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Where Is Grindelwald's Base Located?",
+      "Option A": "Germany",
+      "Option B": "Switzerland",
+      "Option C": "France",
+      "Option D": "Austria",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_102",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Bird Is Associated With The Dumbledores?",
+      "Option A": "Owl",
+      "Option B": "Phoenix",
+      "Option C": "Raven",
+      "Option D": "Eagle",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_103",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Does Queenie Do To Jacob Initially?",
+      "Option A": "Enchants Him",
+      "Option B": "Confunds Him",
+      "Option C": "Obliviates Him",
+      "Option D": "Imperious Him",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_104",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Why Does Tina Think Newt Can't Travel?",
+      "Option A": "Ministry Ban",
+      "Option B": "Criminal Record",
+      "Option C": "Family Issues",
+      "Option D": "She Believes He's Engaged to Leta",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_105",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Who Does The Ministry Send Instead of Newt?",
+      "Option A": "Theseus",
+      "Option B": "Travers",
+      "Option C": "Spielman",
+      "Option D": "Grimmson",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_106",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Does Grindelwald Show At His Rally?",
+      "Option A": "Past Wars",
+      "Option B": "Future Magic",
+      "Option C": "Wizard Supremacy",
+      "Option D": "World War II Images",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_107",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Is Leta's Connection To Credence?",
+      "Option A": "She Switched Him With Her Brother",
+      "Option B": "She Protected Him",
+      "Option C": "She Killed His Parents",
+      "Option D": "She Found Him",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_108",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Who Joins Grindelwald At The Rally?",
+      "Option A": "Leta and Queenie",
+      "Option B": "Credence and Leta",
+      "Option C": "Queenie and Nagini",
+      "Option D": "Credence and Queenie",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_109",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Prevents Dumbledore Fighting Grindelwald?",
+      "Option A": "Magical Ban",
+      "Option B": "Ministry Order",
+      "Option C": "Blood Pact",
+      "Option D": "Wizard's Oath",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_110",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Name Does Grindelwald Give Credence?",
+      "Option A": "Corvus Lestrange",
+      "Option B": "Albus Dumbledore",
+      "Option C": "Ariana Dumbledore",
+      "Option D": "Aurelius Dumbledore",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_111",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Does Grindelwald Give Credence?",
+      "Option A": "A Book",
+      "Option B": "A Memory",
+      "Option C": "A Phoenix",
+      "Option D": "A Wand",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_112",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Is Queenie's Special Ability?",
+      "Option A": "Divination",
+      "Option B": "Legilimency",
+      "Option C": "Occlumency",
+      "Option D": "Telepathy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_113",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Was Leta's Crime At Hogwarts?",
+      "Option A": "Stealing",
+      "Option B": "Cheating",
+      "Option C": "Risking A Student's Life",
+      "Option D": "Using Dark Magic",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_114",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Is Theseus's Job?",
+      "Option A": "Minister",
+      "Option B": "Hit Wizard",
+      "Option C": "Unspeakable",
+      "Option D": "Auror",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_115",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, Where Does Grindelwald Hold His Rally?",
+      "Option A": "Paris Catacombs",
+      "Option B": "Lestrange Tomb",
+      "Option C": "Ministry Building",
+      "Option D": "Underground Chamber",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_116",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What War Did Theseus Fight In?",
+      "Option A": "Goblin War",
+      "Option B": "World War I",
+      "Option C": "Wizard War",
+      "Option D": "Great War",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_117",
+      "Question Text": "In Fantastic Beasts: The Crimes of Grindelwald, What Is Yusuf's Relation To Leta?",
+      "Option A": "Cousin",
+      "Option B": "Half-Brother",
+      "Option C": "Uncle",
+      "Option D": "Father",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_118",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Does Harry Ask Griphook To Help Him Do?",
+      "Option A": "Steal Gold",
+      "Option B": "Find Horcrux",
+      "Option C": "Break Into Bellatrix's Vault",
+      "Option D": "Get Sword",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_119",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Does Griphook Want In Exchange For His Help?",
+      "Option A": "Gold",
+      "Option B": "Freedom",
+      "Option C": "The Sword of Gryffindor",
+      "Option D": "Gringotts Access",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_120",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Which Horcrux Is Hidden In Bellatrix's Vault?",
+      "Option A": "Helga Hufflepuff's Cup",
+      "Option B": "Rowena Ravenclaw's Diadem",
+      "Option C": "Salazar Slytherin's Locket",
+      "Option D": "Tom Riddle's Diary",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_121",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, How Do The Trio Escape Gringotts?",
+      "Option A": "Apparition",
+      "Option B": "Flying Car",
+      "Option C": "On A Dragon's Back",
+      "Option D": "Portkey",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_122",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Helps The Trio Enter Hogwarts?",
+      "Option A": "Neville Longbottom",
+      "Option B": "Severus Snape",
+      "Option C": "Minerva McGonagall",
+      "Option D": "Aberforth Dumbledore",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_123",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Sent Dobby To Save Them At Malfoy Manor?",
+      "Option A": "Aberforth Dumbledore",
+      "Option B": "Kreacher",
+      "Option C": "Winky",
+      "Option D": "Narcissa Malfoy",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_124",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Which Ghost Helps Harry Find Ravenclaw's Diadem?",
+      "Option A": "Nearly Headless Nick",
+      "Option B": "The Bloody Baron",
+      "Option C": "The Fat Friar",
+      "Option D": "Helena Ravenclaw",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_125",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Where Do Ron And Hermione Share Their First Kiss?",
+      "Option A": "Room of Requirement",
+      "Option B": "Great Hall",
+      "Option C": "Chamber of Secrets",
+      "Option D": "Gryffindor Common Room",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_126",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Dies In The Room Of Requirement Fire?",
+      "Option A": "Crabbe",
+      "Option B": "Malfoy",
+      "Option C": "Zabini",
+      "Option D": "Goyle",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_127",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Type Of Fire Does Goyle Cast?",
+      "Option A": "Fiendfyre",
+      "Option B": "Dragon Fire",
+      "Option C": "Cursed Fire",
+      "Option D": "Inferno",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_128",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Where Does Snape Die?",
+      "Option A": "Shrieking Shack",
+      "Option B": "The Boathouse",
+      "Option C": "Great Hall",
+      "Option D": "Astronomy Tower",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_129",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Kills Snape?",
+      "Option A": "Nagini",
+      "Option B": "Voldemort",
+      "Option C": "Bellatrix",
+      "Option D": "Death Eaters",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_130",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Which Three Major Characters Die In The Battle Of Hogwarts?",
+      "Option A": "Snape McGonagall Flitwick",
+      "Option B": "Fred Weasley Remus Lupin Nymphadora Tonks",
+      "Option C": "Molly Arthur Percy",
+      "Option D": "George Ginny Charlie",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_131",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Animal Was Snape's Patronus?",
+      "Option A": "A Stag",
+      "Option B": "A Cat",
+      "Option C": "A Doe",
+      "Option D": "A Wolf",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_132",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Why Did Snape Protect Harry All These Years?",
+      "Option A": "Dumbledore's Orders",
+      "Option B": "Wizard's Debt",
+      "Option C": "Love For Lily Potter",
+      "Option D": "Duty to Order",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_133",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Object Contains The Resurrection Stone?",
+      "Option A": "The Ring",
+      "Option B": "The Golden Snitch",
+      "Option C": "The Locket",
+      "Option D": "The Wand",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_134",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Does Harry See Using The Resurrection Stone?",
+      "Option A": "Only His Parents",
+      "Option B": "His Parents and Sirius",
+      "Option C": "The Marauders",
+      "Option D": "His Parents Sirius Remus",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_135",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Kills Bellatrix Lestrange?",
+      "Option A": "Ginny Weasley",
+      "Option B": "Hermione Granger",
+      "Option C": "Molly Weasley",
+      "Option D": "Luna Lovegood",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_136",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Destroys The Final Horcrux, Nagini?",
+      "Option A": "Neville Longbottom",
+      "Option B": "Ron Weasley",
+      "Option C": "Hermione Granger",
+      "Option D": "Harry Potter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_137",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Spell Finally Kills Voldemort?",
+      "Option A": "Expelliarmus",
+      "Option B": "Avada Kedavra",
+      "Option C": "His Own Killing Curse",
+      "Option D": "Sectumsempra",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_138",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Does Harry Do With The Elder Wand?",
+      "Option A": "Keeps It",
+      "Option B": "Destroys It",
+      "Option C": "Returns It",
+      "Option D": "Buries It",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_139",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Does Harry Meet In Limbo?",
+      "Option A": "Dumbledore",
+      "Option B": "Snape",
+      "Option C": "His Parents",
+      "Option D": "Sirius",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_140",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Object Does Neville Pull From The Sorting Hat?",
+      "Option A": "Elder Wand",
+      "Option B": "Phoenix Feather",
+      "Option C": "Basilisk Fang",
+      "Option D": "Sword of Gryffindor",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_141",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Which Family Abandons Voldemort During The Final Battle?",
+      "Option A": "The Carrows",
+      "Option B": "The Lestranges",
+      "Option C": "The Notts",
+      "Option D": "The Malfoys",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_142",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Spell Does Harry Use Against Voldemort's Final Curse?",
+      "Option A": "Protego",
+      "Option B": "Expelliarmus",
+      "Option C": "Stupefy",
+      "Option D": "Reducto",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_143",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Why Didn't The Elder Wand Kill Harry?",
+      "Option A": "He Was Its True Master",
+      "Option B": "Love Protection",
+      "Option C": "Ancient Magic",
+      "Option D": "Phoenix Core",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_144",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Do Ron And Hermione Use A Basilisk Fang To Destroy?",
+      "Option A": "The Diadem",
+      "Option B": "Hufflepuff's Cup",
+      "Option C": "The Locket",
+      "Option D": "The Ring",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_145",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Which Room Contains Ravenclaw's Diadem?",
+      "Option A": "Room of Requirement",
+      "Option B": "Great Hall",
+      "Option C": "Ravenclaw Tower",
+      "Option D": "Chamber of Secrets",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_146",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Was The Last Horcrux Inside Harry?",
+      "Option A": "His Scar",
+      "Option B": "Dark Magic",
+      "Option C": "Ancient Curse",
+      "Option D": "A Piece of Voldemort's Soul",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_147",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Shows Harry The Secret Passage Into Hogwarts?",
+      "Option A": "Aberforth",
+      "Option B": "Seamus",
+      "Option C": "Luna",
+      "Option D": "Neville Longbottom",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_148",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Who Duels Snape Before He Flees Hogwarts?",
+      "Option A": "Professor McGonagall",
+      "Option B": "Professor Flitwick",
+      "Option C": "Professor Sprout",
+      "Option D": "Professor Slughorn",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_149",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Does Snape Give Harry Before Dying?",
+      "Option A": "A Message",
+      "Option B": "A Wand",
+      "Option C": "A Potion",
+      "Option D": "His Memories",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_150",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, Where Does The Final Battle Take Place?",
+      "Option A": "Ministry of Magic",
+      "Option B": "Diagon Alley",
+      "Option C": "Hogwarts Castle",
+      "Option D": "Godric's Hollow",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_151",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, How Many Years Later Is The Epilogue Set?",
+      "Option A": "Ten Years",
+      "Option B": "Fifteen Years",
+      "Option C": "Seventeen Years",
+      "Option D": "Nineteen Years",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_152",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 2, What Location Features In The Final Scene?",
+      "Option A": "Hogwarts",
+      "Option B": "Diagon Alley",
+      "Option C": "Platform 9¾",
+      "Option D": "King's Cross Station",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_153",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Where Does Hermione Take The Trio After Bill And Fleur's Wedding?",
+      "Option A": "Diagon Alley",
+      "Option B": "Shaftesbury Avenue",
+      "Option C": "Piccadilly Circus",
+      "Option D": "Oxford Street",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_154",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Is Kingsley Shacklebolt's Patronus?",
+      "Option A": "A Lynx",
+      "Option B": "A Lion",
+      "Option C": "A Tiger",
+      "Option D": "A Leopard",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_155",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Becomes Headmaster After Dumbledore's Death?",
+      "Option A": "McGonagall",
+      "Option B": "Flitwick",
+      "Option C": "Severus Snape",
+      "Option D": "Slughorn",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_156",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Does Griphook Want In Exchange For His Help?",
+      "Option A": "Gold",
+      "Option B": "Freedom",
+      "Option C": "Justice",
+      "Option D": "Sword of Gryffindor",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_157",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Is The Name Of The Waterfall That Removes Enchantments In Gringotts?",
+      "Option A": "The Cleansing Falls",
+      "Option B": "The Truth Cascade",
+      "Option C": "The Magic's Bane",
+      "Option D": "The Thief's Downfall",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_158",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What False Name Does Hermione Give To The Snatchers?",
+      "Option A": "Helena Ravenclaw",
+      "Option B": "Penelope Clearwater",
+      "Option C": "Cho Chang",
+      "Option D": "Lavender Brown",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_159",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Which Horcrux Is Destroyed After The Slytherin Locket?",
+      "Option A": "Ravenclaw's Diadem",
+      "Option B": "Nagini",
+      "Option C": "The Ring",
+      "Option D": "Hufflepuff's Cup",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_160",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Whose Eyes Open The Film?",
+      "Option A": "Rufus Scrimgeour",
+      "Option B": "Severus Snape",
+      "Option C": "Harry Potter",
+      "Option D": "Voldemort",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_161",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Hovers Over The Table At Malfoy Manor?",
+      "Option A": "Bathilda Bagshot",
+      "Option B": "Charity Burbage",
+      "Option C": "Professor Vector",
+      "Option D": "Madam Rosmerta",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_162",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Reveals Harry's Moving Date To Voldemort?",
+      "Option A": "Mundungus Fletcher",
+      "Option B": "Peter Pettigrew",
+      "Option C": "Severus Snape",
+      "Option D": "Yaxley",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_163",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Are Harry And Ginny Doing When George Interrupts?",
+      "Option A": "Talking",
+      "Option B": "Hugging",
+      "Option C": "Dancing",
+      "Option D": "Kissing",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_164",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Destroys The Locket Horcrux?",
+      "Option A": "Harry",
+      "Option B": "Hermione",
+      "Option C": "Ron",
+      "Option D": "Neville",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_165",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, On What Day Do Harry And Hermione Visit Godric's Hollow?",
+      "Option A": "Christmas Eve",
+      "Option B": "New Year's Eve",
+      "Option C": "Halloween",
+      "Option D": "Easter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_166",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Which Tale Contains The Deathly Hallows Story?",
+      "Option A": "The Wizard's Hairy Heart",
+      "Option B": "The Fountain of Fair Fortune",
+      "Option C": "The Tale of the Three Brothers",
+      "Option D": "Babbitty Rabbitty",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_167",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Happens To Charity Burbage?",
+      "Option A": "Killing Curse",
+      "Option B": "Torture",
+      "Option C": "Nagini Eats Her",
+      "Option D": "Imprisonment",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_168",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Delivers Dumbledore's Bequests?",
+      "Option A": "Arthur Weasley",
+      "Option B": "Kingsley Shacklebolt",
+      "Option C": "Rufus Scrimgeour",
+      "Option D": "Percy Weasley",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_169",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, How Do Workers Enter The Ministry?",
+      "Option A": "Through Fireplaces",
+      "Option B": "Through Phone Booth",
+      "Option C": "Through Visitor's Entrance",
+      "Option D": "Through Toilets",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_170",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Suggests Voldemort Use A Different Wand?",
+      "Option A": "Bellatrix",
+      "Option B": "Lucius",
+      "Option C": "Snape",
+      "Option D": "Mr. Ollivander",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_171",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Asks Ron (As Cattermole) To Fix The Rain?",
+      "Option A": "Pius Thicknesse",
+      "Option B": "Dolores Umbridge",
+      "Option C": "Yaxley",
+      "Option D": "Albert Runcorn",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_172",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Made The Sword Of Gryffindor?",
+      "Option A": "Goblins",
+      "Option B": "Wizards",
+      "Option C": "Dwarves",
+      "Option D": "Elves",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_173",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Carves 'Mudblood' Into Hermione's Arm?",
+      "Option A": "Narcissa Malfoy",
+      "Option B": "Bellatrix Lestrange",
+      "Option C": "Fenrir Greyback",
+      "Option D": "Scabior",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_174",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Does Voldemort Take From Dumbledore's Tomb?",
+      "Option A": "Dumbledore's Wand",
+      "Option B": "Phoenix Feather",
+      "Option C": "Resurrection Stone",
+      "Option D": "Cloak of Invisibility",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_175",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Protection Over Harry Breaks On His Birthday?",
+      "Option A": "His Mother's Spell",
+      "Option B": "The Fidelius Charm",
+      "Option C": "Blood Protection",
+      "Option D": "Age Charm",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_176",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Dies During Harry's Transport To Safety?",
+      "Option A": "Hedwig Only",
+      "Option B": "Mad-Eye Moody Hedwig",
+      "Option C": "George's Ear",
+      "Option D": "Fred Weasley",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_177",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Does Dumbledore Leave Ron In His Will?",
+      "Option A": "The Sword",
+      "Option B": "The Pensieve",
+      "Option C": "The Deluminator",
+      "Option D": "The Map",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_178",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Book Does Hermione Receive In The Will?",
+      "Option A": "Hogwarts: A History",
+      "Option B": "Advanced Rune Translation",
+      "Option C": "Magical Hieroglyphs",
+      "Option D": "The Tales of Beedle the Bard",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_179",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Where Do The Trio Hide After The Wedding Attack?",
+      "Option A": "The Burrow",
+      "Option B": "Number 12 Grimmauld Place",
+      "Option C": "Shell Cottage",
+      "Option D": "Godric's Hollow",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_180",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Originally Stole Slytherin's Locket?",
+      "Option A": "Sirius Black",
+      "Option B": "Kreacher",
+      "Option C": "Mundungus Fletcher",
+      "Option D": "Regulus Black",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_181",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Had The Locket After Mundungus Fletcher?",
+      "Option A": "Dolores Umbridge",
+      "Option B": "Narcissa Malfoy",
+      "Option C": "Bellatrix Lestrange",
+      "Option D": "Rita Skeeter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_182",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Message Appears On The Golden Snitch?",
+      "Option A": "I Open At The Close",
+      "Option B": "Until The End",
+      "Option C": "The Last Task",
+      "Option D": "Victory Awaits",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_183",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Form Does Bathilda Bagshot Transform Into?",
+      "Option A": "Voldemort",
+      "Option B": "Nagini",
+      "Option C": "Death Eater",
+      "Option D": "Inferius",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_184",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Type Of Patronus Leads Harry To The Sword?",
+      "Option A": "A Stag",
+      "Option B": "A Horse",
+      "Option C": "A Wolf",
+      "Option D": "A Doe",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_185",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Does The Deluminator Help Ron Do?",
+      "Option A": "See The Future",
+      "Option B": "Light The Way",
+      "Option C": "Find His Way Back",
+      "Option D": "Transport Magic",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_186",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Are The Three Deathly Hallows?",
+      "Option A": "Resurrection Stone Cloak of Invisibility Elder Wand",
+      "Option B": "Sword Ring Locket",
+      "Option C": "Diadem Cup Diary",
+      "Option D": "Wand Stone Crown",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_187",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Why Does Xenophilius Betray The Trio?",
+      "Option A": "For Money",
+      "Option B": "For Power",
+      "Option C": "To Save Luna",
+      "Option D": "For Protection",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_188",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Does Harry See In His Vision About The Elder Wand?",
+      "Option A": "Grindelwald",
+      "Option B": "Dumbledore",
+      "Option C": "Gregorovitch",
+      "Option D": "Ollivander",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_189",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Helps The Prisoners Escape Malfoy Manor?",
+      "Option A": "Kreacher",
+      "Option B": "Dobby",
+      "Option C": "Winky",
+      "Option D": "Hokey",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_190",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Who Do They Find In Malfoy Manor's Cellar?",
+      "Option A": "Dean and Luna",
+      "Option B": "Ollivander and Griphook",
+      "Option C": "Luna Ollivander Griphook",
+      "Option D": "Ron and Hermione",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_191",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, What Does Harry Use To Call For Help At Malfoy Manor?",
+      "Option A": "Coin",
+      "Option B": "Mirror Shard",
+      "Option C": "Patronus",
+      "Option D": "Wand",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_192",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, How Does Dobby Die?",
+      "Option A": "Bellatrix's Knife",
+      "Option B": "Killing Curse",
+      "Option C": "Crushing Spell",
+      "Option D": "Poison",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_193",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Where Do The Survivors Take Refuge?",
+      "Option A": "The Burrow",
+      "Option B": "Grimmauld Place",
+      "Option C": "Shell Beach",
+      "Option D": "Bill and Fleur's Cottage",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_194",
+      "Question Text": "In Harry Potter and the Deathly Hallows Part 1, Why Can't Voldemort's Wand Kill Harry?",
+      "Option A": "Elder Wand Master",
+      "Option B": "Twin Cores",
+      "Option C": "They Share Phoenix Feather Cores",
+      "Option D": "Blood Protection",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_195",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Does Moaning Myrtle Suggest Harry Do With The Golden Egg?",
+      "Option A": "Break It",
+      "Option B": "Shake It",
+      "Option C": "Listen Carefully",
+      "Option D": "Put It Underwater",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_196",
+      "Question Text": "In Harry Potter and the Goblet of Fire, On Which Arm Do Death Eaters Have The Dark Mark?",
+      "Option A": "Right",
+      "Option B": "Left",
+      "Option C": "Both",
+      "Option D": "Neither",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_197",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Color Was Hermione's Yule Ball Dress Described As In The Book?",
+      "Option A": "Pink",
+      "Option B": "Purple",
+      "Option C": "Periwinkle Blue",
+      "Option D": "Gold",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_198",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Gives Harry The Gillyweed For The Second Task?",
+      "Option A": "Hermione",
+      "Option B": "Neville",
+      "Option C": "Dobby",
+      "Option D": "Professor Moody",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_199",
+      "Question Text": "In Harry Potter and the Goblet of Fire, In What Order Do The Champions Pick Their Dragons?",
+      "Option A": "Cedric Harry Fleur Krum",
+      "Option B": "Fleur Krum Cedric Harry",
+      "Option C": "Krum Cedric Harry Fleur",
+      "Option D": "Harry Fleur Krum Cedric",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_200",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Dangerous Seeker Move Does Viktor Krum Use?",
+      "Option A": "Sloth Grip Roll",
+      "Option B": "Porskoff Ploy",
+      "Option C": "Transylvanian Tackle",
+      "Option D": "Wronski Feint",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_201",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Is The Name Of The Boil-Causing Jinx?",
+      "Option A": "Densaugeo",
+      "Option B": "Relashio",
+      "Option C": "Furnunculus",
+      "Option D": "Impedimenta",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_202",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Are The Two Half-Giants?",
+      "Option A": "Hagrid and Grawp",
+      "Option B": "Hagrid and Madame Maxime",
+      "Option C": "Madame Maxime and Grawp",
+      "Option D": "Hagrid and Karkus",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_203",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Becomes Headmaster Of Durmstrang After Voldemort's First Defeat?",
+      "Option A": "Viktor Krum Sr.",
+      "Option B": "Gellert Grindelwald",
+      "Option C": "Igor Karkaroff",
+      "Option D": "Ivan Poliakoff",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_204",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Object Serves As The Portkey To The World Cup?",
+      "Option A": "A Newspaper",
+      "Option B": "A Can",
+      "Option C": "A Boot",
+      "Option D": "A Ball",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_205",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Anniversary Of The Quidditch World Cup Is Being Celebrated?",
+      "Option A": "421st",
+      "Option B": "422nd",
+      "Option C": "423rd",
+      "Option D": "424th",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_206",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Is The First Champion Chosen By The Goblet?",
+      "Option A": "Cedric Diggory",
+      "Option B": "Fleur Delacour",
+      "Option C": "Viktor Krum",
+      "Option D": "Harry Potter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_207",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Which Dragon Does Harry Face In The First Task?",
+      "Option A": "Common Welsh Green",
+      "Option B": "Chinese Fireball",
+      "Option C": "Swedish Short-Snout",
+      "Option D": "Hungarian Horntail",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_208",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Does Moody Transform Malfoy Into?",
+      "Option A": "A Rat",
+      "Option B": "A Toad",
+      "Option C": "A Ferret",
+      "Option D": "A Mouse",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_209",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Does Ron Say His Dress Robes Make Him Look Like?",
+      "Option A": "His Grandmother",
+      "Option B": "His Great Uncle",
+      "Option C": "His Aunt Muriel",
+      "Option D": "His Great Aunt Tessie",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_210",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Does Snape Accuse Harry Of Stealing?",
+      "Option A": "Gillyweed",
+      "Option B": "Boomslang Skin",
+      "Option C": "Lacewing Flies",
+      "Option D": "Bezoar",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_211",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Which Character Does Harry Develop Feelings For?",
+      "Option A": "Parvati Patil",
+      "Option B": "Lavender Brown",
+      "Option C": "Cho Chang",
+      "Option D": "Padma Patil",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_212",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Is Hermione's Date To The Yule Ball?",
+      "Option A": "Neville Longbottom",
+      "Option B": "Ron Weasley",
+      "Option C": "Cedric Diggory",
+      "Option D": "Viktor Krum",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_213",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Where Does The Triwizard Cup Transport Harry And Cedric?",
+      "Option A": "Forbidden Forest",
+      "Option B": "Ministry of Magic",
+      "Option C": "Hogsmeade",
+      "Option D": "Little Hangleton Graveyard",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_214",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Why Does Voldemort Say Wormtail Returned To Him?",
+      "Option A": "Loyalty",
+      "Option B": "Power",
+      "Option C": "Love",
+      "Option D": "Fear",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_215",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Which Team Wins The Quidditch World Cup?",
+      "Option A": "Ireland",
+      "Option B": "Bulgaria",
+      "Option C": "England",
+      "Option D": "France",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_216",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Is The Name Of Cedric's Father?",
+      "Option A": "Arthur",
+      "Option B": "Edward",
+      "Option C": "John",
+      "Option D": "Amos",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_217",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Does Lucius Malfoy Say To Mr. Weasley About Rain?",
+      "Option A": "Watch The Weather",
+      "Option B": "Mind The Clouds",
+      "Option C": "Better Cast A Charm",
+      "Option D": "If It Rains You'll Be The First To Know",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_218",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Is The Headmistress Of Beauxbatons?",
+      "Option A": "Madame Rosmerta",
+      "Option B": "Madame Pomfrey",
+      "Option C": "Madame Maxime",
+      "Option D": "Madame Hooch",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_219",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Which Department Does Percy Work In?",
+      "Option A": "Department of International Magical Co-operation",
+      "Option B": "Department of Mysteries",
+      "Option C": "Department of Magical Law Enforcement",
+      "Option D": "Department of Magical Transportation",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_220",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Is The Gryffindor Common Room Password?",
+      "Option A": "Phoenix Feather",
+      "Option B": "Lion Heart",
+      "Option C": "Fortuna Major",
+      "Option D": "Balderdash",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_221",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Kisses The Golden Egg In The Common Room?",
+      "Option A": "Dean Thomas",
+      "Option B": "Neville Longbottom",
+      "Option C": "Lee Jordan",
+      "Option D": "Seamus Finnegan",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_222",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Which Champion Is Attacked By Grindylows In The Second Task?",
+      "Option A": "Fleur Delacour",
+      "Option B": "Viktor Krum",
+      "Option C": "Harry Potter",
+      "Option D": "Cedric Diggory",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_223",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Does Harry Buy On The Hogwarts Express?",
+      "Option A": "Chocolate Frogs",
+      "Option B": "Nothing",
+      "Option C": "Cauldron Cakes",
+      "Option D": "Bertie Botts Beans",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_224",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Why Does Ron Get Angry With Harry?",
+      "Option A": "Lost His Rat",
+      "Option B": "Broke His Wand",
+      "Option C": "Thought He Added Himself To The Goblet",
+      "Option D": "Didn't Share Glory",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_225",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Is Harry's Date To The Yule Ball?",
+      "Option A": "Cho Chang",
+      "Option B": "Ginny Weasley",
+      "Option C": "Hermione Granger",
+      "Option D": "Parvati Patil",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_226",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Special Event Returns To Hogwarts After A Century?",
+      "Option A": "Triwizard Tournament",
+      "Option B": "Dueling Club",
+      "Option C": "Wizard's Chess Championship",
+      "Option D": "Quidditch World Cup",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_227",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Who Won The Match Between Ireland And Bulgaria?",
+      "Option A": "Bulgaria",
+      "Option B": "England",
+      "Option C": "Scotland",
+      "Option D": "Ireland",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_228",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Does Lucius Say To Mr. Weasley At The World Cup?",
+      "Option A": "Enjoy The Game",
+      "Option B": "If It Rains You Will Be The First To Know",
+      "Option C": "Watch Your Step",
+      "Option D": "Mind Your Business",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_229",
+      "Question Text": "In Harry Potter and the Goblet of Fire, Which Dragon Species Does Harry Face?",
+      "Option A": "Chinese Fireball",
+      "Option B": "Swedish Short-Snout",
+      "Option C": "Hungarian Horntail",
+      "Option D": "Welsh Green",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_230",
+      "Question Text": "In Harry Potter and the Goblet of Fire, What Is The Reason Voldemort Gives For Wormtail's Return?",
+      "Option A": "Fear",
+      "Option B": "Loyalty",
+      "Option C": "Love",
+      "Option D": "Power",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_231",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Who Finds Harry Under The Invisibility Cloak With A Broken Nose?",
+      "Option A": "Neville Longbottom",
+      "Option B": "Ginny Weasley",
+      "Option C": "Luna Lovegood",
+      "Option D": "Hermione Granger",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_232",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Three Scents Does Hermione Smell In The Amortentia Potion?",
+      "Option A": "Roses Books And Mint",
+      "Option B": "Vanilla Chocolate And Cinnamon",
+      "Option C": "Fresh Air Rain And Grass",
+      "Option D": "Freshly Mowed Grass New Parchment And Spearmint Toothpaste",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_233",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Is The Name Of The Matron At Tom Riddle's Orphanage?",
+      "Option A": "Mrs. Cole",
+      "Option B": "Mrs. Smith",
+      "Option C": "Mrs. Jones",
+      "Option D": "Mrs. Brown",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_234",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Does The Gold Chain From Lavender Say?",
+      "Option A": "My Sweetheart",
+      "Option B": "True Love",
+      "Option C": "Forever Yours",
+      "Option D": "Always Yours",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_235",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Where Is The Second Vanishing Cabinet Located?",
+      "Option A": "Hogwarts",
+      "Option B": "Knockturn Alley",
+      "Option C": "Diagon Alley",
+      "Option D": "Borgin And Burkes",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_236",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Is The Name Of Fred And George's Joke Shop?",
+      "Option A": "Zonko's",
+      "Option B": "Magical Mischief",
+      "Option C": "Wizard Wheezes",
+      "Option D": "Weasleys' Wizard Wheezes",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_237",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Must Dumbledore Do To Enter The Horcrux Cave?",
+      "Option A": "Cut His Hand",
+      "Option B": "Speak Parseltongue",
+      "Option C": "Use Elder Wand",
+      "Option D": "Cast Alohomora",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_238",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Spell Does Luna Use To Fix Harry's Broken Nose?",
+      "Option A": "Reparo",
+      "Option B": "Ferula",
+      "Option C": "Episkey",
+      "Option D": "Brackium Emendo",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_239",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Who Is The New Defence Against The Dark Arts Teacher?",
+      "Option A": "Horace Slughorn",
+      "Option B": "Severus Snape",
+      "Option C": "Remus Lupin",
+      "Option D": "Alastor Moody",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_240",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Does Draco First Send Through The Vanishing Cabinet?",
+      "Option A": "An Apple",
+      "Option B": "A Bird",
+      "Option C": "A Book",
+      "Option D": "A Letter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_241",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Who Put Love Potion In The Chocolates Ron Eats?",
+      "Option A": "Lavender Brown",
+      "Option B": "Romilda Vane",
+      "Option C": "Katie Bell",
+      "Option D": "Parvati Patil",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_242",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Who Does Harry Take To Slughorn's Christmas Party?",
+      "Option A": "Ginny Weasley",
+      "Option B": "Luna Lovegood",
+      "Option C": "Hermione Granger",
+      "Option D": "Cho Chang",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_243",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Who Serves Drinks At Slughorn's Party?",
+      "Option A": "House Elves",
+      "Option B": "Dean Thomas",
+      "Option C": "Neville Longbottom",
+      "Option D": "Seamus Finnigan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_244",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Is Hagrid Upset About When Found By Harry And Slughorn?",
+      "Option A": "Fang Is Sick",
+      "Option B": "Buckbeak Is Gone",
+      "Option C": "Grawp Left",
+      "Option D": "Aragog Has Died",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_245",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Who Does Ron Beat To Become Gryffindor Keeper?",
+      "Option A": "Dean Thomas",
+      "Option B": "Seamus Finnigan",
+      "Option C": "Cormac McLaggen",
+      "Option D": "Neville Longbottom",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_246",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Who Becomes Ron's Girlfriend?",
+      "Option A": "Hermione Granger",
+      "Option B": "Parvati Patil",
+      "Option C": "Lavender Brown",
+      "Option D": "Luna Lovegood",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_247",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Must Dumbledore Use To Open The Cave Wall?",
+      "Option A": "Blood",
+      "Option B": "Magic Words",
+      "Option C": "Elder Wand",
+      "Option D": "Phoenix Tears",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_248",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Furniture Is Slughorn Disguised As?",
+      "Option A": "An Armchair",
+      "Option B": "A Sofa Couch",
+      "Option C": "A Bookcase",
+      "Option D": "A Table",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_249",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, How Does Luna Find Harry On The Train?",
+      "Option A": "She Sees His Shoes",
+      "Option B": "His Head Is Full Of Wrackspurts",
+      "Option C": "She Uses A Spell",
+      "Option D": "She Follows Nargles",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_250",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Should You Do To The Sopophorous Bean?",
+      "Option A": "Cut It",
+      "Option B": "Crush It",
+      "Option C": "Boil It",
+      "Option D": "Grind It",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_251",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Does Hermione Eat To Scare Her Date?",
+      "Option A": "Dragon Tartare",
+      "Option B": "Firewhisky",
+      "Option C": "Acid Pops",
+      "Option D": "Cockroach Clusters",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_252",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Where Does Harry Hide The Potions Book?",
+      "Option A": "The Room Of Requirement",
+      "Option B": "Chamber of Secrets",
+      "Option C": "Gryffindor Tower",
+      "Option D": "Behind A Tapestry",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_253",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Creatures Attack In The Cave?",
+      "Option A": "Grindylows",
+      "Option B": "Inferi",
+      "Option C": "Dementors",
+      "Option D": "Dark Spirits",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_254",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, How Do Death Eaters Enter Hogwarts?",
+      "Option A": "A Vanishing Cabinet",
+      "Option B": "Secret Passage",
+      "Option C": "Through Forest",
+      "Option D": "Hidden Door",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_255",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Who Disarms Dumbledore On The Astronomy Tower?",
+      "Option A": "Snape",
+      "Option B": "Draco Malfoy",
+      "Option C": "Bellatrix",
+      "Option D": "Greyback",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_256",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Are The Initials Of The Person Who Stole The Real Horcrux?",
+      "Option A": "S.B.B.",
+      "Option B": "P.A.B.",
+      "Option C": "B.A.B.",
+      "Option D": "R.A.B.",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_257",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Which Bridge Do The Death Eaters Destroy?",
+      "Option A": "London Bridge",
+      "Option B": "Tower Bridge",
+      "Option C": "Westminster Bridge",
+      "Option D": "Millennium Bridge",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_258",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Which Wandmaker Do The Death Eaters Kidnap?",
+      "Option A": "Mr. Ollivander",
+      "Option B": "Gregorovitch",
+      "Option C": "Jimmy Kiddell",
+      "Option D": "Arturo Cephalopos",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_259",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Type Of Vow Does Snape Make With Narcissa?",
+      "Option A": "Unbreakable Vow",
+      "Option B": "Wizard's Oath",
+      "Option C": "Blood Pact",
+      "Option D": "Magical Bond",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_260",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Which Werewolf Death Eater Meets With Draco In Borgin & Burke's?",
+      "Option A": "Remus Lupin",
+      "Option B": "William Wildsmith",
+      "Option C": "Augustus Moon",
+      "Option D": "Fenrir Greyback",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_261",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Potion Does Harry Win In Slughorn's Class?",
+      "Option A": "Liquid Luck",
+      "Option B": "Veritaserum",
+      "Option C": "Polyjuice Potion",
+      "Option D": "Amortentia",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_262",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Who Helps Harry Hide The Half-Blood Prince's Book?",
+      "Option A": "Hermione",
+      "Option B": "Ginny",
+      "Option C": "Ron",
+      "Option D": "Luna",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_263",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Memory Does Dumbledore Need From Slughorn?",
+      "Option A": "Young Voldemort Asking About Horcruxes",
+      "Option B": "Young Tom Riddle's School Days",
+      "Option C": "Riddle's Prefect Years",
+      "Option D": "Slughorn's First Class",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_264",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Which Two Horcruxes Had Already Been Destroyed?",
+      "Option A": "Ring and Locket",
+      "Option B": "Tom Riddle's Diary Marvolo Gaunt's Ring",
+      "Option C": "Cup and Diary",
+      "Option D": "Locket and Diary",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_265",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Protects Harry And Dumbledore From The Inferi?",
+      "Option A": "Shield Charm",
+      "Option B": "Patronus Charm",
+      "Option C": "Ring of Fire",
+      "Option D": "Water Wall",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_266",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Object Do Harry And Dumbledore Retrieve From The Cave?",
+      "Option A": "Slytherin's Locket",
+      "Option B": "Ravenclaw's Diadem",
+      "Option C": "Hufflepuff's Cup",
+      "Option D": "Gryffindor's Sword",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_267",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Spell Does Dumbledore Use To Defend Against The Inferi?",
+      "Option A": "Ring of Fire",
+      "Option B": "Protego Maxima",
+      "Option C": "Firestorm",
+      "Option D": "Incendio",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_268",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, Which Shop In Knockturn Alley Do The Malfoys Visit?",
+      "Option A": "Potage's Cauldron Shop",
+      "Option B": "Borgin & Burke's",
+      "Option C": "The Spiny Serpent",
+      "Option D": "Dark Arts Emporium",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_269",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Does Harry Use To Spy On Malfoy On The Train?",
+      "Option A": "Extendable Ears",
+      "Option B": "Invisibility Cloak",
+      "Option C": "Disillusionment Charm",
+      "Option D": "Polyjuice Potion",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_270",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Location Do Bellatrix And Greyback Attack During Christmas?",
+      "Option A": "Godric's Hollow",
+      "Option B": "Hogsmeade",
+      "Option C": "Diagon Alley",
+      "Option D": "The Burrow",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_271",
+      "Question Text": "In Harry Potter and the Half-Blood Prince, What Do The Trio Decide To Skip Their Final Year For?",
+      "Option A": "To Join Order",
+      "Option B": "To Hide",
+      "Option C": "To Hunt Horcruxes",
+      "Option D": "To Fight Death Eaters",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_272",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Is The Name Of The Tea Shop Where Harry And Cho Have Their Valentine's Date?",
+      "Option A": "Madam Puddifoot's",
+      "Option B": "Rosa Lee Teabag",
+      "Option C": "The Leaky Cauldron",
+      "Option D": "Brews and Stews",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_273",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Is Dumbledore's Full Name?",
+      "Option A": "Albus Severus Brian Dumbledore",
+      "Option B": "Albus Percival Wulfric Brian Dumbledore",
+      "Option C": "Albus Wulfric Percival Dumbledore",
+      "Option D": "Albus Brian Wulfric Dumbledore",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_274",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Is The Name Of The Pub Where Dumbledore's Army Is Founded?",
+      "Option A": "The Three Broomsticks",
+      "Option B": "The Leaky Cauldron",
+      "Option C": "Hog's Head",
+      "Option D": "The Green Dragon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_275",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Is Used As The Visitor's Entrance To The Ministry Of Magic?",
+      "Option A": "Post Box",
+      "Option B": "Phone Box",
+      "Option C": "Telephone Booth",
+      "Option D": "Red Box",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_276",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Spell Magically Locks Doors?",
+      "Option A": "Alohomora",
+      "Option B": "Colloportus",
+      "Option C": "Fermaportus",
+      "Option D": "Clausus",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_277",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Uses The Levicorpus Spell On Snape In His Memory?",
+      "Option A": "Sirius Black",
+      "Option B": "Remus Lupin",
+      "Option C": "Peter Pettigrew",
+      "Option D": "James Potter",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_278",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Creatures Infest The Curtains At Grimmauld Place?",
+      "Option A": "Pixies",
+      "Option B": "Boggarts",
+      "Option C": "Doxies",
+      "Option D": "Gnomes",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_279",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Where Does The DA Hold Their Secret Meetings?",
+      "Option A": "Room of Requirement",
+      "Option B": "Chamber of Secrets",
+      "Option C": "Shrieking Shack",
+      "Option D": "Astronomy Tower",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_280",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Which Death Eater Kills Sirius Black?",
+      "Option A": "Lucius Malfoy",
+      "Option B": "Bellatrix Lestrange",
+      "Option C": "Dolohov",
+      "Option D": "Rookwood",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_281",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Signs Harry's Expulsion Letter?",
+      "Option A": "Cornelius Fudge",
+      "Option B": "Mafalda Hopkirk",
+      "Option C": "Dolores Umbridge",
+      "Option D": "Percy Weasley",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_282",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Finds Harry And Dudley After The Dementor Attack?",
+      "Option A": "Petunia",
+      "Option B": "Mrs. Figg",
+      "Option C": "Mr. Prentice",
+      "Option D": "Mrs. Polkiss",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_283",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Where Do The Order Take Harry After The Dursleys?",
+      "Option A": "The Burrow",
+      "Option B": "Shell Cottage",
+      "Option C": "The Leaky Cauldron",
+      "Option D": "12 Grimmauld Place",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_284",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Accompanies Harry To His Trial Besides Dumbledore?",
+      "Option A": "Sirius Black",
+      "Option B": "Mr. Weasley",
+      "Option C": "Remus Lupin",
+      "Option D": "Mad-Eye Moody",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_285",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Does Umbridge Make Harry Write In Detention?",
+      "Option A": "I Will Not Disobey",
+      "Option B": "I Will Be Good",
+      "Option C": "I Will Follow Rules",
+      "Option D": "I Must Not Tell Lies",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_286",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Is The First Professor Umbridge Tries To Fire?",
+      "Option A": "Professor Trelawney",
+      "Option B": "Professor Flitwick",
+      "Option C": "Professor Hagrid",
+      "Option D": "Professor Vector",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_287",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Discovers The Room Of Requirement?",
+      "Option A": "Harry Potter",
+      "Option B": "Neville Longbottom",
+      "Option C": "Dobby",
+      "Option D": "Fred and George",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_288",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Is The Name Of Hagrid's Half-Brother?",
+      "Option A": "Grawp",
+      "Option B": "Gwarp",
+      "Option C": "Grop",
+      "Option D": "Grump",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_289",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Product Do The Students Use To Escape The Inquisitorial Squad?",
+      "Option A": "Fever Fudge",
+      "Option B": "Nosebleed Nougat",
+      "Option C": "Puking Pastilles",
+      "Option D": "Fainting Fancies",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_290",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Advantage Does Harry Say They Have Over Voldemort?",
+      "Option A": "Something Worth Fighting For",
+      "Option B": "Love",
+      "Option C": "Friendship",
+      "Option D": "Unity",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_291",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Is The Name Of The Black Family House Elf?",
+      "Option A": "Dobby",
+      "Option B": "Winky",
+      "Option C": "Hokey",
+      "Option D": "Kreacher",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_292",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Teaches Care Of Magical Creatures Initially?",
+      "Option A": "Professor Grubbly-Plank",
+      "Option B": "Professor Hagrid",
+      "Option C": "Professor Kettleburn",
+      "Option D": "Professor Vector",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_293",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, How Does Dudley Mock Harry About Cedric?",
+      "Option A": "His Friend",
+      "Option B": "His Partner",
+      "Option C": "His Mate",
+      "Option D": "Your Boyfriend",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_294",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Form Does Luna's Patronus Take?",
+      "Option A": "A Horse",
+      "Option B": "A Swan",
+      "Option C": "A Rabbit",
+      "Option D": "A Dove",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_295",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Sends Harry's Expulsion Notice?",
+      "Option A": "Mafalda Hopkirk",
+      "Option B": "Dolores Umbridge",
+      "Option C": "Cornelius Fudge",
+      "Option D": "Percy Weasley",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_296",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Finds Harry's Prophecy In The Department Of Mysteries?",
+      "Option A": "Harry Potter",
+      "Option B": "Neville Longbottom",
+      "Option C": "Ron Weasley",
+      "Option D": "Hermione Granger",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_297",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Does Sirius Do To Make Lucius Drop The Prophecy?",
+      "Option A": "Hexes Him",
+      "Option B": "Stuns Him",
+      "Option C": "Kicks Him",
+      "Option D": "Punches Him",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_298",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Holds Harry Back After Sirius Dies?",
+      "Option A": "Dumbledore",
+      "Option B": "Remus Lupin",
+      "Option C": "Kingsley",
+      "Option D": "Tonks",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_299",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Do Ministry Workers Use For Inter-Department Communication?",
+      "Option A": "Owls",
+      "Option B": "Memos",
+      "Option C": "Paper Airplanes",
+      "Option D": "Notes",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_300",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Is Dumbledore's Full Name?",
+      "Option A": "Albus Severus Brian Dumbledore",
+      "Option B": "Albus Brian Percival Dumbledore",
+      "Option C": "Albus Percival Wulfric Brian Dumbledore",
+      "Option D": "Albus Wulfric Brian Dumbledore",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_301",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Is The Incantation For The Stunning Spell?",
+      "Option A": "Expelliarmus",
+      "Option B": "Impedimenta",
+      "Option C": "Stupefy",
+      "Option D": "Petrificus Totalus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_302",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Who Else Can See The Thestrals Besides Harry?",
+      "Option A": "Neville",
+      "Option B": "Cho",
+      "Option C": "Luna Lovegood",
+      "Option D": "Ginny",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_303",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Does Umbridge's Special Quill Use For Ink?",
+      "Option A": "Red Ink",
+      "Option B": "Invisible Ink",
+      "Option C": "Dark Ink",
+      "Option D": "Blood",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_304",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Which Death Eater Tries To Get The Prophecy From Harry?",
+      "Option A": "Bellatrix",
+      "Option B": "Dolohov",
+      "Option C": "Rookwood",
+      "Option D": "Lucius Malfoy",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_305",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, Where Is Azkaban Located?",
+      "Option A": "The Middle Of The Ocean",
+      "Option B": "North Sea",
+      "Option C": "Atlantic Ocean",
+      "Option D": "Irish Sea",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_306",
+      "Question Text": "In Harry Potter and the Order of the Phoenix, What Curse Does Harry Use Against Bellatrix?",
+      "Option A": "Cruciatus Curse",
+      "Option B": "Imperius Curse",
+      "Option C": "Stunning Spell",
+      "Option D": "Disarming Charm",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_307",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Can't You Do On School Grounds According To Hogwarts: A History?",
+      "Option A": "Fly",
+      "Option B": "Apparate",
+      "Option C": "Disapparate",
+      "Option D": "Teleport",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_308",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, How Many Hours Do Harry And Hermione Travel Back In Time?",
+      "Option A": "Two",
+      "Option B": "Three",
+      "Option C": "Four",
+      "Option D": "Five",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_309",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Specific Time Do Harry And Hermione Travel Back To?",
+      "Option A": "5:30 PM",
+      "Option B": "6:30 PM",
+      "Option C": "7:00 PM",
+      "Option D": "7:30 PM",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_310",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Do The Gryffindor Boys' Candies Make Them Do?",
+      "Option A": "Animal Noises",
+      "Option B": "Dance",
+      "Option C": "Sing",
+      "Option D": "Float",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_311",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Is Seamus Finnigan's Boggart?",
+      "Option A": "Spider",
+      "Option B": "Snake",
+      "Option C": "Ghost",
+      "Option D": "A Banshee",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_312",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Is The Name Of The Witch Who Enjoyed Being Burned?",
+      "Option A": "Helga The Odd",
+      "Option B": "Wendelin The Weird",
+      "Option C": "Morgana The Strange",
+      "Option D": "Circe The Peculiar",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_313",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Is Hermione's Time-Travel Device Called?",
+      "Option A": "Time Turner",
+      "Option B": "Time Glass",
+      "Option C": "Time Spinner",
+      "Option D": "Time Wheel",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_314",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Is The Name Of The Pub Where Students Get Butterbeer?",
+      "Option A": "The Three Broomsticks",
+      "Option B": "The Hog's Head",
+      "Option C": "The Leaky Cauldron",
+      "Option D": "The Green Dragon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_315",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Name Does Peter Pettigrew Use As A Rat?",
+      "Option A": "Whiskers",
+      "Option B": "Ratty",
+      "Option C": "Scabbers",
+      "Option D": "Squeakers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_316",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Where Does Harry First Learn About Sirius Black?",
+      "Option A": "Daily Prophet",
+      "Option B": "Ministry",
+      "Option C": "On The Knight Bus",
+      "Option D": "Leaky Cauldron",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_317",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, For Whom Was The Whomping Willow Planted?",
+      "Option A": "Remus Lupin",
+      "Option B": "Sirius Black",
+      "Option C": "James Potter",
+      "Option D": "Peter Pettigrew",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_318",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Who Does Harry Accidentally Inflate At The Dursleys?",
+      "Option A": "Aunt Marge",
+      "Option B": "Uncle Vernon",
+      "Option C": "Aunt Petunia",
+      "Option D": "Dudley",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_319",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Is The Name Of The Hippogriff In Hagrid's Class?",
+      "Option A": "Witherwings",
+      "Option B": "Beaky",
+      "Option C": "Stormy",
+      "Option D": "Buckbeak",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_320",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Activity Is Dudley Mainly Shown Doing?",
+      "Option A": "Watching TV",
+      "Option B": "Playing Games",
+      "Option C": "Eating",
+      "Option D": "Bullying",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_321",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Is The Name Of The Purple Triple-Decker Bus?",
+      "Option A": "Magic Bus",
+      "Option B": "Wizard Express",
+      "Option C": "Knight Bus",
+      "Option D": "Night Bus",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_322",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Anonymous Gift Does Harry Receive At The End?",
+      "Option A": "A Nimbus 2001",
+      "Option B": "A Cleansweep",
+      "Option C": "A Firebolt",
+      "Option D": "A Comet 260",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_323",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Is Harry's Quidditch Robe Number?",
+      "Option A": 5,
+      "Option B": 7,
+      "Option C": 9,
+      "Option D": 11,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_324",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Was Included With Harry's New Broomstick?",
+      "Option A": "A Phoenix Feather",
+      "Option B": "An Owl Feather",
+      "Option C": "A Gray Hippogriff's Feather",
+      "Option D": "An Eagle Feather",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_325",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Which Animal Does Seamus Imitate While Eating Candy?",
+      "Option A": "A Lion",
+      "Option B": "A Monkey",
+      "Option C": "A Gorilla",
+      "Option D": "A Chimp",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_326",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Who Uses The Time Turner Together?",
+      "Option A": "Ron and Harry",
+      "Option B": "Ron and Hermione",
+      "Option C": "Hermione and Harry",
+      "Option D": "Harry and Dumbledore",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_327",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, How Many Times Must They Turn The Time Turner?",
+      "Option A": "1 Time",
+      "Option B": "2 Times",
+      "Option C": "3 Times",
+      "Option D": "4 Times",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_328",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Time Do They Return To?",
+      "Option A": "1899-12-30T12:00:00.000Z",
+      "Option B": "1899-12-30T12:15:00.000Z",
+      "Option C": "1899-12-30T12:30:00.000Z",
+      "Option D": "1899-12-30T12:45:00.000Z",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_329",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Which Professor Is Revealed To Be A Werewolf?",
+      "Option A": "Snape",
+      "Option B": "Flitwick",
+      "Option C": "Hagrid",
+      "Option D": "Lupin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_330",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Image Appears On The Great Hall Ceiling During The Sleepover?",
+      "Option A": "A Galaxy",
+      "Option B": "A Storm",
+      "Option C": "Stars",
+      "Option D": "The Moon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_331",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What School Do The Dursleys Tell Aunt Marge Harry Attends?",
+      "Option A": "St. Mary's",
+      "Option B": "St. Brutus's",
+      "Option C": "St. George's",
+      "Option D": "St. Peter's",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_332",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Where Does The Knight Bus Take Harry?",
+      "Option A": "The Burrow",
+      "Option B": "Diagon Alley",
+      "Option C": "The Ministry",
+      "Option D": "The Leaky Cauldron",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_333",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Where Did The Weasleys Vacation During Summer?",
+      "Option A": "Egypt",
+      "Option B": "Greece",
+      "Option C": "Turkey",
+      "Option D": "Morocco",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_334",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Does Lupin Give Harry After The Dementor Attack?",
+      "Option A": "Chocolate",
+      "Option B": "Tea",
+      "Option C": "Water",
+      "Option D": "Potion",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_335",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Does Hermione Use To Attend Multiple Classes?",
+      "Option A": "A Magic Watch",
+      "Option B": "A Spell",
+      "Option C": "An Enchanted Ring",
+      "Option D": "A Time-turner",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_336",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Spell Is Harry Practicing In The Opening Scene?",
+      "Option A": "Lumos",
+      "Option B": "Nox",
+      "Option C": "Incendio",
+      "Option D": "Lumos Maxima",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_337",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Which Team Was Playing When Harry Falls Off His Broom?",
+      "Option A": "Slytherin",
+      "Option B": "Ravenclaw",
+      "Option C": "Gryffindor",
+      "Option D": "Hufflepuff",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_338",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Who Cast The Patronus That Saved Harry?",
+      "Option A": "Himself",
+      "Option B": "Dumbledore",
+      "Option C": "Lupin",
+      "Option D": "Snape",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_339",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Which Professor Does Harry Meet On The Train?",
+      "Option A": "McGonagall",
+      "Option B": "Snape",
+      "Option C": "Remus Lupin",
+      "Option D": "Flitwick",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_340",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Animals Accompany The Hogwarts Choir?",
+      "Option A": "Owls",
+      "Option B": "Ravens",
+      "Option C": "Toads",
+      "Option D": "Frogs",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_341",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Form Does Harry's Patronus Take?",
+      "Option A": "Horse",
+      "Option B": "Wolf",
+      "Option C": "Dog",
+      "Option D": "Stag",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_342",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Does Ron's Boggart Transform Into?",
+      "Option A": "Snake",
+      "Option B": "Rat",
+      "Option C": "Spider",
+      "Option D": "Ghost",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_343",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Who Is The Divination Professor?",
+      "Option A": "Minerva McGonagall",
+      "Option B": "Sybill Trelawney",
+      "Option C": "Aurora Sinistra",
+      "Option D": "Septima Vector",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_344",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Creatures Search The Hogwarts Express?",
+      "Option A": "Aurors",
+      "Option B": "Guards",
+      "Option C": "Dementors",
+      "Option D": "Ministry Officials",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_345",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Phrase Activates The Marauder's Map?",
+      "Option A": "Reveal Your Secrets",
+      "Option B": "I Solemnly Swear That I Am Up To No Good",
+      "Option C": "Show Me The Way",
+      "Option D": "Open Sesame",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_346",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Who Gives Harry The Marauder's Map?",
+      "Option A": "Lee Jordan",
+      "Option B": "Fred and George Weasley",
+      "Option C": "Peeves",
+      "Option D": "Filch",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_347",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Was James Potter's School Nickname?",
+      "Option A": "Padfoot",
+      "Option B": "Moony",
+      "Option C": "Prongs",
+      "Option D": "Wormtail",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_348",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Which Form Does The Boggart Take When Ron Faces It?",
+      "Option A": "Spider",
+      "Option B": "Snake",
+      "Option C": "Clown",
+      "Option D": "Monster",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_349",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Does Professor Trelawney See In Harry's Tea Leaves?",
+      "Option A": "The Grim",
+      "Option B": "A Dog",
+      "Option C": "A Wolf",
+      "Option D": "Death",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_350",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, Who Was The Secret Keeper For The Potters?",
+      "Option A": "Peter Pettigrew",
+      "Option B": "Sirius Black",
+      "Option C": "Remus Lupin",
+      "Option D": "James Potter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_351",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Is The Phrase To Deactivate The Marauder's Map?",
+      "Option A": "Mischief Managed",
+      "Option B": "Task Complete",
+      "Option C": "Secret Hidden",
+      "Option D": "Mission Accomplished",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_352",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Does The Dementor's Kiss Do To A Person?",
+      "Option A": "Freezes Them",
+      "Option B": "Kills Them",
+      "Option C": "Petrifies Them",
+      "Option D": "Removes Their Soul",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_353",
+      "Question Text": "In Harry Potter and the Prisoner of Azkaban, What Animal Is Scabbers Revealed To Be?",
+      "Option A": "A Rat",
+      "Option B": "Peter Pettigrew",
+      "Option C": "An Animagus",
+      "Option D": "A Death Eater",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_354",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Where Does The Film Begin?",
+      "Option A": "New York",
+      "Option B": "London",
+      "Option C": "Berlin",
+      "Option D": "Kweilin China",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_355",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Year Is The Film Set?",
+      "Option A": 1927,
+      "Option B": 1929,
+      "Option C": 1931,
+      "Option D": 1932,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_356",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Magical Creature Can See Into One's Soul?",
+      "Option A": "Phoenix",
+      "Option B": "Qilin",
+      "Option C": "Unicorn",
+      "Option D": "Dragon",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_357",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Is Credence's Real Father?",
+      "Option A": "Albus Dumbledore",
+      "Option B": "Aberforth Dumbledore",
+      "Option C": "Percival Dumbledore",
+      "Option D": "Gellert Grindelwald",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_358",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Position Is Being Elected?",
+      "Option A": "Minister of Magic",
+      "Option B": "Head Warlock",
+      "Option C": "Chief Wizard",
+      "Option D": "Supreme Mugwump",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_359",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Is The Brazilian Candidate?",
+      "Option A": "Maria Silva",
+      "Option B": "Vicência Santos",
+      "Option C": "Isabella Lima",
+      "Option D": "Ana Santos",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_360",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Where Is The Election Ceremony Held?",
+      "Option A": "Tibet",
+      "Option B": "Bhutan",
+      "Option C": "Nepal",
+      "Option D": "Mongolia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_361",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Is The Name Of The German Wizard Prison?",
+      "Option A": "Nurmengard",
+      "Option B": "Azkaban",
+      "Option C": "Stormhold",
+      "Option D": "Erkstag",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_362",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Subject Does Lally Hicks Teach?",
+      "Option A": "Charms",
+      "Option B": "Transfiguration",
+      "Option C": "Defense",
+      "Option D": "Potions",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_363",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Where Do Jacob And Queenie Get Married?",
+      "Option A": "Central Park",
+      "Option B": "Manhattan",
+      "Option C": "New York",
+      "Option D": "Jacob's Bakery",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_364",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Dark Magic Does Grindelwald Use On The Qilin?",
+      "Option A": "Necromancy",
+      "Option B": "Blood Magic",
+      "Option C": "Dark Arts",
+      "Option D": "Death Magic",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_365",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Has The Real Suitcase In Bhutan?",
+      "Option A": "Bunty",
+      "Option B": "Newt",
+      "Option C": "Theseus",
+      "Option D": "Jacob",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_366",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What School Does Lally Teach At?",
+      "Option A": "Hogwarts",
+      "Option B": "Ilvermorny",
+      "Option C": "Beauxbatons",
+      "Option D": "Durmstrang",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_367",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Is The Current Supreme Mugwump?",
+      "Option A": "Anton Vogel",
+      "Option B": "Heinrich Meyer",
+      "Option C": "Klaus Schmidt",
+      "Option D": "Wilhelm Weber",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_368",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Breaks The Blood Pact?",
+      "Option A": "Clashing Spells",
+      "Option B": "True Love",
+      "Option C": "Sacrifice",
+      "Option D": "Death",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_369",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Where Do Dumbledore And Grindelwald Meet?",
+      "Option A": "Muggle Tea Shop",
+      "Option B": "Wizard Pub",
+      "Option C": "Ministry",
+      "Option D": "Hogwarts",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_370",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Secret Does The Qilin Have?",
+      "Option A": "Hidden Power",
+      "Option B": "Special Magic",
+      "Option C": "It Had Twins",
+      "Option D": "Ancient Magic",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_371",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Is Newt's Assistant?",
+      "Option A": "Bunty Broadacre",
+      "Option B": "Queenie Goldstein",
+      "Option C": "Tina Goldstein",
+      "Option D": "Leta Lestrange",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_372",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What City Is The Team Sent To?",
+      "Option A": "Berlin",
+      "Option B": "Paris",
+      "Option C": "Vienna",
+      "Option D": "Munich",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_373",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Is Planted As A Spy?",
+      "Option A": "Yusuf Kama",
+      "Option B": "Theseus Scamander",
+      "Option C": "Jacob Kowalski",
+      "Option D": "Newt Scamander",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_374",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Is The Election Ceremony Called?",
+      "Option A": "Path of Truth",
+      "Option B": "Walk of the Qilin",
+      "Option C": "Ceremony of Light",
+      "Option D": "Sacred Election",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_375",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Does The Living Qilin Bow To?",
+      "Option A": "Grindelwald",
+      "Option B": "Dumbledore",
+      "Option C": "Vogel",
+      "Option D": "Santos",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_376",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Saves Credence From Grindelwald's Killing Curse?",
+      "Option A": "Newt and Theseus",
+      "Option B": "Tina and Queenie",
+      "Option C": "Bunty and Jacob",
+      "Option D": "Albus and Aberforth",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_377",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Crime Is Jacob Framed For?",
+      "Option A": "Murder",
+      "Option B": "Theft",
+      "Option C": "Attempting To Murder Grindelwald",
+      "Option D": "Treason",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_378",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Tests Yusuf's Loyalty?",
+      "Option A": "Grindelwald",
+      "Option B": "Queenie",
+      "Option C": "Credence",
+      "Option D": "Vogel",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_379",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Where Is Aberforth's Inn Located?",
+      "Option A": "Diagon Alley",
+      "Option B": "London",
+      "Option C": "Hogsmeade",
+      "Option D": "Godric's Hollow",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_380",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Is The Name Of Aberforth's Inn?",
+      "Option A": "Three Broomsticks",
+      "Option B": "Hog's Head",
+      "Option C": "Leaky Cauldron",
+      "Option D": "Green Dragon",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_381",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Attends Jacob's Wedding?",
+      "Option A": "Newt Scamander",
+      "Option B": "Tina Goldstein",
+      "Option C": "Theseus Scamander",
+      "Option D": "Leta Lestrange",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_382",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Does Grindelwald Do To The Dead Qilin?",
+      "Option A": "Transforms It",
+      "Option B": "Reanimates It",
+      "Option C": "Destroys It",
+      "Option D": "Hides It",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_383",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, Who Becomes The New Supreme Mugwump?",
+      "Option A": "Vogel",
+      "Option B": "Dumbledore",
+      "Option C": "Grindelwald",
+      "Option D": "Santos",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_384",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Happens When Dumbledore And Grindelwald Duel?",
+      "Option A": "Dumbledore Wins",
+      "Option B": "Grindelwald Wins",
+      "Option C": "Stalemate",
+      "Option D": "No Winner",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_385",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Organization Acquits Grindelwald?",
+      "Option A": "Ministry of Magic",
+      "Option B": "Wizengamot",
+      "Option C": "Wizard Council",
+      "Option D": "International Confederation of Wizards",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_386",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, How Do Newt And Theseus Return To Hogwarts?",
+      "Option A": "Portkey",
+      "Option B": "Apparition",
+      "Option C": "Flying",
+      "Option D": "Floo Powder",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_387",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Strategy Does Dumbledore's Team Use With Suitcases?",
+      "Option A": "Magical Protection",
+      "Option B": "Switching Spells",
+      "Option C": "Hidden Contents",
+      "Option D": "Multiple Identical Ones",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_388",
+      "Question Text": "In Fantastic Beasts: The Secrets of Dumbledore, What Does Dumbledore Do When Offered Leadership?",
+      "Option A": "Declines",
+      "Option B": "Accepts",
+      "Option C": "Hesitates",
+      "Option D": "Delegates",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_389",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Was The Final House Score Between Gryffindor And Slytherin?",
+      "Option A": "472 To 462",
+      "Option B": "475 To 472",
+      "Option C": "482 To 472",
+      "Option D": "492 To 472",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_390",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, Who Does Draco Introduce Before Entering The Great Hall?",
+      "Option A": "Crabbe And Goyle",
+      "Option B": "Zabini And Nott",
+      "Option C": "Parkinson And Bulstrode",
+      "Option D": "Flint And Pucey",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_391",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, How Does Hagrid Spell 'Happy Birthday' On Harry's Cake?",
+      "Option A": "Happee Birthdae",
+      "Option B": "Happy Birtday",
+      "Option C": "Happie Burthday",
+      "Option D": "Happey Birthdey",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_392",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Ball Do Chasers Use To Score In Quidditch?",
+      "Option A": "Bludger",
+      "Option B": "Quaffle",
+      "Option C": "Snitch",
+      "Option D": "Bowling Ball",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_393",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, In Which Gringotts Vault Was The Philosopher's Stone Hidden?",
+      "Option A": "Vault 687",
+      "Option B": "Vault 713",
+      "Option C": "Vault 711",
+      "Option D": "Vault 998",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_394",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, How Many Players Are On A Standard Quidditch Team?",
+      "Option A": "Five",
+      "Option B": "Six",
+      "Option C": "Seven",
+      "Option D": "Eight",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_395",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, Who Is Called First During The Sorting Ceremony In The Movie?",
+      "Option A": "Hannah Abbott",
+      "Option B": "Hermione",
+      "Option C": "Susan Bones",
+      "Option D": "Lavender Brown",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_396",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, Who Was The First Student Harry Met In The Book?",
+      "Option A": "Draco Malfoy",
+      "Option B": "Ron Weasley",
+      "Option C": "Neville Longbottom",
+      "Option D": "Susan Bones",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_397",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, How Many Birthday Presents Does Dudley Receive?",
+      "Option A": "Thirty-Five",
+      "Option B": "Thirty-Six",
+      "Option C": "Thirty-Seven",
+      "Option D": "Thirty-Eight",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_398",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Animal Appears On Baruffio's Chest After Mispronouncing A Spell?",
+      "Option A": "Buffalo",
+      "Option B": "Ox",
+      "Option C": "Bull",
+      "Option D": "Cow",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_399",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Is Harry's Wand Made Of?",
+      "Option A": "Oak And Dragon Heartstring",
+      "Option B": "Holly And Phoenix Feather",
+      "Option C": "Yew And Unicorn Hair",
+      "Option D": "Maple And Phoenix Feather",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_400",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Does The Sign Outside The Boa Constrictor's Enclosure Say?",
+      "Option A": "Born In Zoo",
+      "Option B": "Bred In Captivity",
+      "Option C": "Raised In Zoo",
+      "Option D": "Born In Wild",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_401",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Is The First Spell Hermione Casts?",
+      "Option A": "Alohomora",
+      "Option B": "Oculus Reparo",
+      "Option C": "Wingardium Leviosa",
+      "Option D": "Lumos",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_402",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Is The Name Of The Mirror That Shows One's Desires?",
+      "Option A": "Mirror of Truth",
+      "Option B": "Mirror of Erised",
+      "Option C": "Mirror of Dreams",
+      "Option D": "Mirror of Destiny",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_403",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, Who Is The Oldest Weasley Child?",
+      "Option A": "Charlie",
+      "Option B": "Bill",
+      "Option C": "Percy",
+      "Option D": "Fred",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_404",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Is The Name Of The Quidditch Supply Store?",
+      "Option A": "Quidditch Emporium",
+      "Option B": "Broomstix",
+      "Option C": "Quality Quidditch Supplies",
+      "Option D": "Wizard Sports",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_405",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Spell Creates A Portkey?",
+      "Option A": "Portus",
+      "Option B": "Portkey",
+      "Option C": "Transporto",
+      "Option D": "Mobilius",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_406",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, Which Ghost Does Harry Impersonate To Scare Peeves?",
+      "Option A": "The Bloody Baron",
+      "Option B": "Nearly Headless Nick",
+      "Option C": "The Grey Lady",
+      "Option D": "The Fat Friar",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_407",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Is The Number Of Harry Potter's Family Vault?",
+      "Option A": 687,
+      "Option B": 713,
+      "Option C": 619,
+      "Option D": 711,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_408",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, Who Was Harry's Mother's Sister?",
+      "Option A": "Marge Dursley",
+      "Option B": "Petunia Dursley",
+      "Option C": "Rose Evans",
+      "Option D": "Mary Evans",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_409",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Was The Gryffindor Password?",
+      "Option A": "Lion Heart",
+      "Option B": "Fortuna Major",
+      "Option C": "Pig Snout",
+      "Option D": "Caput Draconis",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_410",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Type Of Snake Does Harry Talk To At The Zoo?",
+      "Option A": "Python Reticulatus",
+      "Option B": "Burmese Python",
+      "Option C": "Ball Python",
+      "Option D": "Green Anaconda",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_411",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, On What Day Do The Dursleys Flee From The Hogwarts Letters?",
+      "Option A": "Thursday",
+      "Option B": "Friday",
+      "Option C": "Saturday",
+      "Option D": "Sunday",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_412",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, Which Famous Wizard Card Does Harry Get In His Chocolate Frog?",
+      "Option A": "Merlin",
+      "Option B": "Albus Dumbledore",
+      "Option C": "Nicolas Flamel",
+      "Option D": "Agrippa",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_413",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, Which Floor Is Prohibited For Students To Enter?",
+      "Option A": "1st Floor",
+      "Option B": "2nd Floor",
+      "Option C": "3rd Floor",
+      "Option D": "4th Floor",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_414",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Is The Three-Headed Dog's Name?",
+      "Option A": "Fang",
+      "Option B": "Snuffles",
+      "Option C": "Fluffy",
+      "Option D": "Rex",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_415",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, On What Holiday Does The Troll Attack Hogwarts?",
+      "Option A": "Christmas",
+      "Option B": "Easter",
+      "Option C": "Valentine's Day",
+      "Option D": "Halloween",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_416",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Creature Does Harry Find Dead In The Forest?",
+      "Option A": "A Centaur",
+      "Option B": "A Dragon",
+      "Option C": "A Unicorn",
+      "Option D": "A Hippogriff",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_417",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Chess Piece Does Harry Play As?",
+      "Option A": "Bishop",
+      "Option B": "Knight",
+      "Option C": "Rook",
+      "Option D": "Pawn",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_418",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Chess Piece Does Ron Play As?",
+      "Option A": "Bishop",
+      "Option B": "Knight",
+      "Option C": "Rook",
+      "Option D": "King",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_419",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Chess Piece Does Hermione Play As?",
+      "Option A": "Bishop",
+      "Option B": "Knight",
+      "Option C": "Rook",
+      "Option D": "Queen",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_420",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Reason Does Dumbledore Give For Harry's Victory Over Quirrell?",
+      "Option A": "Love",
+      "Option B": "Magic",
+      "Option C": "Courage",
+      "Option D": "Destiny",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_421",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Does Harry Catch To Join The Quidditch Team?",
+      "Option A": "Golden Snitch",
+      "Option B": "Quaffle",
+      "Option C": "Neville's Remembrall",
+      "Option D": "Bludger",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_422",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Does The Hogwarts Motto Mean?",
+      "Option A": "Never Tickle A Sleeping Dragon",
+      "Option B": "Knowledge Is Power",
+      "Option C": "Magic Is Might",
+      "Option D": "Unity In Strength",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HARRYPOTTER_423",
+      "Question Text": "In Harry Potter and the Sorcerer's Stone, What Is The Name Of Neville's Toad?",
+      "Option A": "Terry",
+      "Option B": "Trevor",
+      "Option C": "Tommy",
+      "Option D": "Toby",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    }
+  ]
+}

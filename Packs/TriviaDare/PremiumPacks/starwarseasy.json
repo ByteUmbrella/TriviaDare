@@ -1,0 +1,4134 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "STARWARS_1",
+      "Question Text": "In Star Wars, How Many Forms Of Communication Is C-3PO Fluent In?",
+      "Option A": "Over 3 Million",
+      "Option B": "Over 4 Million",
+      "Option C": "Over 5 Million",
+      "Option D": "Over 6 Million",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_2",
+      "Question Text": "In Star Wars: A New Hope, How Many Credits Does Luke Get For Selling His Speeder?",
+      "Option A": 1000,
+      "Option B": 1500,
+      "Option C": 2000,
+      "Option D": 2500,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_3",
+      "Question Text": "In Star Wars: A New Hope, How Much Does Obi-Wan Promise Han For Transport To Alderaan?",
+      "Option A": "10000 Credits",
+      "Option B": "12000 Credits",
+      "Option C": "15000 Credits",
+      "Option D": "17000 Credits",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_4",
+      "Question Text": "In Star Wars: A New Hope, How Wide Is The Death Star's Exhaust Port?",
+      "Option A": "1 Meter",
+      "Option B": "1.5 Meters",
+      "Option C": "2 Meters",
+      "Option D": "3 Meters",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_5",
+      "Question Text": "In Star Wars: A New Hope, In What Year Was Greedo's Shot Added?",
+      "Option A": 1995,
+      "Option B": 1997,
+      "Option C": 1999,
+      "Option D": 2001,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_6",
+      "Question Text": "In Star Wars: A New Hope, What Are The Two Suns Of Tatooine Called?",
+      "Option A": "Binary I and Binary II",
+      "Option B": "Solar I and Solar II",
+      "Option C": "Twin I and Twin II",
+      "Option D": "Tatoo I and Tatoo II",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_7",
+      "Question Text": "In Star Wars: A New Hope, What Color Is Luke's First Lightsaber?",
+      "Option A": "Green",
+      "Option B": "Red",
+      "Option C": "Blue",
+      "Option D": "Yellow",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_8",
+      "Question Text": "In Star Wars: A New Hope, What Does Obi-Wan Live Beyond?",
+      "Option A": "The Wastes",
+      "Option B": "The Desert",
+      "Option C": "The Dune Sea",
+      "Option D": "The Badlands",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_9",
+      "Question Text": "In Star Wars: A New Hope, What Is The First Sentence Of Princess Leia's Transmission?",
+      "Option A": "General Kenobi Years Ago You Served My Father In The Clone Wars",
+      "Option B": "Help Me Obi-Wan Kenobi",
+      "Option C": "This Is Princess Leia Of Alderaan",
+      "Option D": "Years Ago During The Clone Wars",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_10",
+      "Question Text": "In Star Wars: A New Hope, What Is The Occupation Of Luke's Aunt And Uncle?",
+      "Option A": "Water Collectors",
+      "Option B": "Desert Farmers",
+      "Option C": "Sand Farmers",
+      "Option D": "Moisture Farmers",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_11",
+      "Question Text": "In Star Wars: A New Hope, What Location Does Obi-Wan Describe As 'A Wretched Hive Of Scum And Villainy'?",
+      "Option A": "Anchorhead",
+      "Option B": "Mos Eisley",
+      "Option C": "Bestine",
+      "Option D": "Tosche Station",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_12",
+      "Question Text": "In Star Wars: A New Hope, What Model Of Landspeeder Does Luke Own?",
+      "Option A": "X-32",
+      "Option B": "X-34",
+      "Option C": "X-36",
+      "Option D": "X-38",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_13",
+      "Question Text": "In Star Wars: A New Hope, What Planet Does Leia Tell Tarkin Contains The Rebel Base?",
+      "Option A": "Yavin",
+      "Option B": "Hoth",
+      "Option C": "Alderaan",
+      "Option D": "Dantooine",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_14",
+      "Question Text": "In Star Wars: A New Hope, What Two Words Convince Han To Rescue Princess Leia?",
+      "Option A": "She's Important",
+      "Option B": "She's Rich",
+      "Option C": "She's Royalty",
+      "Option D": "She's Valuable",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_15",
+      "Question Text": "In Star Wars: A New Hope, Who Did R2-D2 And C-3PO Belong To Previously?",
+      "Option A": "Bail Organa",
+      "Option B": "Owen Lars",
+      "Option C": "General Kenobi",
+      "Option D": "Captain Antilles",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_16",
+      "Question Text": "In Star Wars: A New Hope, Who Does Luke Live With At The Beginning?",
+      "Option A": "Uncle Owen and Aunt Beru",
+      "Option B": "Ben Kenobi",
+      "Option C": "The Lars Family",
+      "Option D": "His Grandparents",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_17",
+      "Question Text": "In Star Wars: A New Hope, Who Is The Only Character Mentioned In The Opening Crawl?",
+      "Option A": "Luke Skywalker",
+      "Option B": "Princess Leia",
+      "Option C": "Darth Vader",
+      "Option D": "Emperor Palpatine",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_18",
+      "Question Text": "In Star Wars: A New Hope, Who Receives The First Medal During The Award Ceremony?",
+      "Option A": "Han Solo",
+      "Option B": "Luke Skywalker",
+      "Option C": "Chewbacca",
+      "Option D": "R2-D2",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_19",
+      "Question Text": "In Star Wars: A New Hope, What Is Princess Leia's Adoptive Father's Name?",
+      "Option A": "Bail",
+      "Option B": "Breha",
+      "Option C": "Raymus",
+      "Option D": "Prestor",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_20",
+      "Question Text": "In Star Wars: A New Hope, What Star Destroyer Pursues The Tantive IV?",
+      "Option A": "Avenger",
+      "Option B": "Devastator",
+      "Option C": "Executor",
+      "Option D": "Intimidator",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_21",
+      "Question Text": "In Star Wars: A New Hope, What Type Of Mission Do The Rebels Claim To Be On?",
+      "Option A": "Peace",
+      "Option B": "Mercy",
+      "Option C": "Diplomatic",
+      "Option D": "Trade",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_22",
+      "Question Text": "In Star Wars: A New Hope, Where Does Luke Want To Go Instead Of Staying For Harvest?",
+      "Option A": "Mos Eisley",
+      "Option B": "Anchorhead",
+      "Option C": "The Academy",
+      "Option D": "Bestine",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_23",
+      "Question Text": "In Star Wars: A New Hope, What Is Luke's Uncle's Name?",
+      "Option A": "Lars",
+      "Option B": "Owen",
+      "Option C": "Ben",
+      "Option D": "Cliegg",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_24",
+      "Question Text": "In Star Wars: A New Hope, Which Bounty Hunter Confronts Han In The Cantina?",
+      "Option A": "Greedo",
+      "Option B": "Bossk",
+      "Option C": "Dengar",
+      "Option D": "IG-88",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_25",
+      "Question Text": "In Star Wars: A New Hope, What Is The Name Of Princess Leia's Ship?",
+      "Option A": "Millennium Falcon",
+      "Option B": "Rebel One",
+      "Option C": "Star Cruiser",
+      "Option D": "Tantive IV",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_26",
+      "Question Text": "In Star Wars: A New Hope, What Aren't Allowed In The Mos Eisley Cantina?",
+      "Option A": "Weapons",
+      "Option B": "Imperials",
+      "Option C": "Rebels",
+      "Option D": "Droids",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_27",
+      "Question Text": "In Star Wars: A New Hope, How Many Credits Does Han Initially Request?",
+      "Option A": 5000,
+      "Option B": 8000,
+      "Option C": 10000,
+      "Option D": 15000,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_28",
+      "Question Text": "In Star Wars: A New Hope, Where Was Luke Heading Before Cleaning The Droids?",
+      "Option A": "Anchorhead",
+      "Option B": "Mos Eisley",
+      "Option C": "Tosche Station",
+      "Option D": "Bestine",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_29",
+      "Question Text": "In Star Wars: A New Hope, Who Previously Owned R2-D2 And C-3PO?",
+      "Option A": "Captain Antilles",
+      "Option B": "Bail Organa",
+      "Option C": "Owen Lars",
+      "Option D": "Ben Kenobi",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_30",
+      "Question Text": "In Star Wars: A New Hope, What Is Luke's Squadron Number During The Death Star Attack?",
+      "Option A": "Red 3",
+      "Option B": "Red 4",
+      "Option C": "Red 6",
+      "Option D": "Red 5",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_31",
+      "Question Text": "In Star Wars: A New Hope, What Language Does Aunt Beru Want The Droid To Speak?",
+      "Option A": "Binary",
+      "Option B": "Basic",
+      "Option C": "Bocce",
+      "Option D": "Huttese",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_32",
+      "Question Text": "In Star Wars: Ahsoka, Who Was Ahsoka's Jedi Master?",
+      "Option A": "Obi-Wan Kenobi",
+      "Option B": "Mace Windu",
+      "Option C": "Plo Koon",
+      "Option D": "Anakin Skywalker",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_33",
+      "Question Text": "In Star Wars: Ahsoka, What Color Is Ahsoka's Original Lightsaber?",
+      "Option A": "Blue",
+      "Option B": "Yellow",
+      "Option C": "Green",
+      "Option D": "White",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_34",
+      "Question Text": "In Star Wars: Ahsoka, What Nickname Does Anakin Give To Ahsoka?",
+      "Option A": "Kiddo",
+      "Option B": "Padawan",
+      "Option C": "Snips",
+      "Option D": "Little One",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_35",
+      "Question Text": "In Star Wars: Andor, What Model Transport Does Cassian Use To Escape Morlana One?",
+      "Option A": "VCX-100",
+      "Option B": "WTK-85A",
+      "Option C": "YT-1300",
+      "Option D": "Z-95",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_36",
+      "Question Text": "In Star Wars: Andor, Which Planet Does Mon Mothma Come From, As Revealed During Perrin Fertha's Party?",
+      "Option A": "Chandrila",
+      "Option B": "Coruscant",
+      "Option C": "Alderaan",
+      "Option D": "Naboo",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_37",
+      "Question Text": "In Star Wars: Andor, How Many Credits Does Arvel Skeen Claim The Kyber Crystal Necklace Is Worth?",
+      "Option A": 30000,
+      "Option B": 40000,
+      "Option C": 50000,
+      "Option D": 60000,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_38",
+      "Question Text": "In Star Wars: Andor, In What Year BBY Does The Pilot Episode Take Place?",
+      "Option A": "5 BBY",
+      "Option B": "4 BBY",
+      "Option C": "3 BBY",
+      "Option D": "6 BBY",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_39",
+      "Question Text": "In Star Wars: Attack of the Clones, How Many Members Are On The Jedi Council?",
+      "Option A": 10,
+      "Option B": 12,
+      "Option C": 14,
+      "Option D": 16,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_40",
+      "Question Text": "In Star Wars: Attack of the Clones, Whose DNA Were The Clone Troopers Created From?",
+      "Option A": "Obi-Wan Kenobi",
+      "Option B": "Jango Fett",
+      "Option C": "Count Dooku",
+      "Option D": "Sifo-Dyas",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_41",
+      "Question Text": "In Star Wars: Attack of the Clones, What Is The Name Of Padme's Killed Decoy?",
+      "Option A": "Sabe",
+      "Option B": "Corde",
+      "Option C": "Dorme",
+      "Option D": "Verse",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_42",
+      "Question Text": "In Star Wars: Attack of the Clones, Who Is Naboo's New Queen?",
+      "Option A": "Amidala",
+      "Option B": "Apailana",
+      "Option C": "Jamillia",
+      "Option D": "Neeyutnee",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_43",
+      "Question Text": "In Star Wars: Attack of the Clones, Who Does Zam Wessel Work For?",
+      "Option A": "Jango Fett",
+      "Option B": "Count Dooku",
+      "Option C": "Nute Gunray",
+      "Option D": "Darth Sidious",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_44",
+      "Question Text": "In Star Wars: Attack of the Clones, What Is Obi-Wan's Droid's Number?",
+      "Option A": "R2",
+      "Option B": "R4",
+      "Option C": "R5",
+      "Option D": "R6",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_45",
+      "Question Text": "In Star Wars: Attack of the Clones, What Is Anakin's Mother's Name?",
+      "Option A": "Beru",
+      "Option B": "Shmi",
+      "Option C": "Breha",
+      "Option D": "Jobal",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_46",
+      "Question Text": "In Star Wars: Attack of the Clones, Who Kidnaps Shmi Skywalker?",
+      "Option A": "Tusken Raiders",
+      "Option B": "Jawas",
+      "Option C": "Pirates",
+      "Option D": "Bounty Hunters",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_47",
+      "Question Text": "In Star Wars: Attack of the Clones, What Is C-3PO Not Programmed For?",
+      "Option A": "Destruction",
+      "Option B": "Combat",
+      "Option C": "War",
+      "Option D": "Violence",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_48",
+      "Question Text": "In Star Wars: Attack of the Clones, Why Does Anakin Return To Tatooine?",
+      "Option A": "Missing His Home",
+      "Option B": "Nightmares Of His Mother",
+      "Option C": "Looking For Parts",
+      "Option D": "Meeting Old Friends",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_49",
+      "Question Text": "In Star Wars: Attack of the Clones, What Two Things Are Forbidden For Jedi?",
+      "Option A": "Attachment And Possession",
+      "Option B": "Love And Hate",
+      "Option C": "Fear And Anger",
+      "Option D": "Greed And Pride",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_50",
+      "Question Text": "In Star Wars: Attack of the Clones, Who Ordered The Clone Army According To Kamino?",
+      "Option A": "Count Dooku",
+      "Option B": "Master Sifo-Dyas",
+      "Option C": "Obi-Wan Kenobi",
+      "Option D": "Yoda",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_51",
+      "Question Text": "In Star Wars: Attack of the Clones, What Item Does Dooku Take During His Escape?",
+      "Option A": "Lightsaber",
+      "Option B": "Holocron",
+      "Option C": "Death Star Plans",
+      "Option D": "Jedi Archives",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_52",
+      "Question Text": "In Star Wars: Attack of the Clones, What Is Obi-Wan's Droid's Number?",
+      "Option A": "R4",
+      "Option B": "R2",
+      "Option C": "R5",
+      "Option D": "R6",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_53",
+      "Question Text": "In Star Wars: Attack of the Clones, What Clue Does Obi-Wan Trace To Kamino?",
+      "Option A": "Slave I",
+      "Option B": "Jango's Helmet",
+      "Option C": "Saberdart",
+      "Option D": "Poisonous Dart",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_54",
+      "Question Text": "In Star Wars: Attack of the Clones, Who Was Padme's First Love On Naboo?",
+      "Option A": "Palo",
+      "Option B": "Ian",
+      "Option C": "Rush",
+      "Option D": "Clovis",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_55",
+      "Question Text": "In Star Wars: Attack of the Clones, How Many Bounty Hunters Does Jango Hire?",
+      "Option A": "Two",
+      "Option B": "Three",
+      "Option C": "Four",
+      "Option D": "Five",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_56",
+      "Question Text": "In Star Wars: Attack of the Clones, Who Is The Assassin Working For Jango Fett?",
+      "Option A": "Aurra Sing",
+      "Option B": "Bossk",
+      "Option C": "Zam Wessel",
+      "Option D": "Cad Bane",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_57",
+      "Question Text": "In Star Wars: Attack of the Clones, What Is The Name Of Obi-Wan's Diner-Owning Friend?",
+      "Option A": "Watto",
+      "Option B": "Dex Bonteri",
+      "Option C": "Dexter Jettster",
+      "Option D": "Max Rebo",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_58",
+      "Question Text": "In Star Wars: Attack of the Clones, On Which Planet Were The Clones Created?",
+      "Option A": "Kamino",
+      "Option B": "Geonosis",
+      "Option C": "Naboo",
+      "Option D": "Coruscant",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_59",
+      "Question Text": "In Star Wars: Attack of the Clones, Who Says 'I've Got A Bad Feeling About This'?",
+      "Option A": "Obi-Wan",
+      "Option B": "Padme",
+      "Option C": "Anakin Skywalker",
+      "Option D": "Yoda",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_60",
+      "Question Text": "In Star Wars: Attack of the Clones, At Which Club Do The Jedi Find Zam Wesell?",
+      "Option A": "Coruscant Club",
+      "Option B": "1313 Club",
+      "Option C": "Dex's Diner",
+      "Option D": "Outlander Club",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_61",
+      "Question Text": "In Star Wars: Attack of the Clones, What Is Count Dooku's Sith Name?",
+      "Option A": "Darth Sidious",
+      "Option B": "Darth Tyranus",
+      "Option C": "Darth Maul",
+      "Option D": "Darth Plagueis",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_62",
+      "Question Text": "In Star Wars: Attack of the Clones, Which Jedi Kills Jango Fett?",
+      "Option A": "Obi-Wan Kenobi",
+      "Option B": "Kit Fisto",
+      "Option C": "Mace Windu",
+      "Option D": "Ki-Adi-Mundi",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_63",
+      "Question Text": "In Star Wars: Attack of the Clones, Why Is Anakin Denied Club Entry?",
+      "Option A": "He's Too Young",
+      "Option B": "He's A Jedi",
+      "Option C": "No Weapons Allowed",
+      "Option D": "Wrong Dress Code",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_64",
+      "Question Text": "In Star Wars: Attack of the Clones, What Code Name Do Jedi Use For Their Temple?",
+      "Option A": "Old Folks Home",
+      "Option B": "Safe House",
+      "Option C": "Temple Base",
+      "Option D": "Sanctuary",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_65",
+      "Question Text": "In Star Wars: Attack of the Clones, What Are The Poisonous Creatures Sent To Kill Padme?",
+      "Option A": "Nexu",
+      "Option B": "Kouhuns",
+      "Option C": "Acklay",
+      "Option D": "Reek",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_66",
+      "Question Text": "In Star Wars: Attack of the Clones, What Is Elan Sleezebaggano Selling?",
+      "Option A": "Spice",
+      "Option B": "Weapons",
+      "Option C": "Death Sticks",
+      "Option D": "Glitterstim",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_67",
+      "Question Text": "In Star Wars: Attack of the Clones, What Does Yoda Call The Young Jedi Trainees?",
+      "Option A": "Initiates",
+      "Option B": "Padawans",
+      "Option C": "Younglings",
+      "Option D": "Students",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_68",
+      "Question Text": "In Star Wars: Attack of the Clones, How Much Faster Do Clones Age?",
+      "Option A": "Three Times",
+      "Option B": "Four Times",
+      "Option C": "One And A Half Times",
+      "Option D": "Twice As Fast",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_69",
+      "Question Text": "In Star Wars, How Many Light Years Equal One Parsec?",
+      "Option A": "2.54 Light Years",
+      "Option B": "3.14 Light Years",
+      "Option C": "3.26 Light Years",
+      "Option D": "4.12 Light Years",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_70",
+      "Question Text": "In Star Wars, What Is A Parsec A Measurement Of?",
+      "Option A": "Time",
+      "Option B": "Distance",
+      "Option C": "Speed",
+      "Option D": "Velocity",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_71",
+      "Question Text": "In Star Wars, What Planet Are Wookiees From?",
+      "Option A": "Kashyyyk",
+      "Option B": "Endor",
+      "Option C": "Yavin",
+      "Option D": "Dathomir",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_72",
+      "Question Text": "In Star Wars, Who Created The 'Rule of Two' For The Sith?",
+      "Option A": "Darth Bane",
+      "Option B": "Darth Plagueis",
+      "Option C": "Darth Revan",
+      "Option D": "Darth Sidious",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_73",
+      "Question Text": "In Star Wars: Obi-Wan Kenobi, What Is Obi-Wan's Alias While In Hiding On Tatooine?",
+      "Option A": "Ken",
+      "Option B": "Owen",
+      "Option C": "Lars",
+      "Option D": "Ben",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_74",
+      "Question Text": "In Star Wars: Obi-Wan Kenobi, Which Jedi Does Obi-Wan Finally Communicate With As A Force Spirit In The Series Finale?",
+      "Option A": "Yoda",
+      "Option B": "Anakin",
+      "Option C": "Qui-Gon Jinn",
+      "Option D": "Mace Windu",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_75",
+      "Question Text": "In Star Wars: Obi-Wan Kenobi, On Which Planet Is The Fortress Inquisitorius Located?",
+      "Option A": "Nur",
+      "Option B": "Mustafar",
+      "Option C": "Exegol",
+      "Option D": "Moraband",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_76",
+      "Question Text": "In Star Wars: Obi-Wan Kenobi, What Is The Name Of The Underground Network That Helps Force-Sensitive Individuals Escape The Empire?",
+      "Option A": "The Underground",
+      "Option B": "The Rebellion",
+      "Option C": "The Resistance",
+      "Option D": "The Path",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_77",
+      "Question Text": "In Star Wars: Obi-Wan Kenobi, What Is The Name Of The Imperial Officer Who Helps Obi-Wan And Leia Escape?",
+      "Option A": "Maya",
+      "Option B": "Vara",
+      "Option C": "Kara",
+      "Option D": "Tala",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_78",
+      "Question Text": "In Star Wars: Obi-Wan Kenobi, What Is Princess Leia's Droid Companion Called?",
+      "Option A": "Lola",
+      "Option B": "L3",
+      "Option C": "L0-LA",
+      "Option D": "LC-24",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_79",
+      "Question Text": "In Star Wars: Obi-Wan Kenobi, What Is Reva's Full Title Among The Inquisitors?",
+      "Option A": "First Sister",
+      "Option B": "Second Sister",
+      "Option C": "Fourth Sister",
+      "Option D": "Third Sister",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_80",
+      "Question Text": "In Star Wars: Obi-Wan Kenobi, On Which Planet Does The Path Network Have Their Main Facility?",
+      "Option A": "Nur",
+      "Option B": "Jabiim",
+      "Option C": "Mapuzo",
+      "Option D": "Daiyu",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_81",
+      "Question Text": "In Star Wars, What Planet Is Jabba The Hutt's Palace Located On?",
+      "Option A": "Nal Hutta",
+      "Option B": "Tatooine",
+      "Option C": "Geonosis",
+      "Option D": "Nar Shaddaa",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_82",
+      "Question Text": "In Star Wars: Return of the Jedi, How Does Luke Destroy The Final Speeder Bike?",
+      "Option A": "Blaster",
+      "Option B": "Force Push",
+      "Option C": "Lightsaber",
+      "Option D": "Explosive",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_83",
+      "Question Text": "In Star Wars: Return of the Jedi, How Does Luke Get An Audience With Jabba?",
+      "Option A": "Uses Jedi Mind Trick on Bib Fortuna",
+      "Option B": "Bribes The Guards",
+      "Option C": "Sneaks In",
+      "Option D": "Fights His Way In",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_84",
+      "Question Text": "In Star Wars: Return of the Jedi, How Much Does Jabba Initially Offer For Chewbacca?",
+      "Option A": 25000,
+      "Option B": 35000,
+      "Option C": 45000,
+      "Option D": 50000,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_85",
+      "Question Text": "In Star Wars: Return of the Jedi, How Old Does Yoda Say He Is?",
+      "Option A": 800,
+      "Option B": 900,
+      "Option C": 950,
+      "Option D": 1000,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_86",
+      "Question Text": "In Star Wars: Return of the Jedi, What Is The Name Of The Emperor's Personal Guards?",
+      "Option A": "Imperial Guards",
+      "Option B": "Elite Guards",
+      "Option C": "Royal Guards",
+      "Option D": "Crimson Guards",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_87",
+      "Question Text": "In Star Wars: Return of the Jedi, What Species Are The Emperor's Royal Guards?",
+      "Option A": "Human",
+      "Option B": "Chiss",
+      "Option C": "Mandalorian",
+      "Option D": "Clone",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_88",
+      "Question Text": "In Star Wars: Return of the Jedi, What Species Is Admiral Ackbar?",
+      "Option A": "Quarren",
+      "Option B": "Nautolan",
+      "Option C": "Gungan",
+      "Option D": "Mon Calamari",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_89",
+      "Question Text": "In Star Wars: Return of the Jedi, Where Is The Sarlacc Pit Located?",
+      "Option A": "Dune Sea",
+      "Option B": "Jundland Wastes",
+      "Option C": "Beggar's Canyon",
+      "Option D": "The Great Pit of Carkoon",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_90",
+      "Question Text": "In Star Wars: Return of the Jedi, Which Ship Delivers The Fatal Shot To The Second Death Star?",
+      "Option A": "X-Wing",
+      "Option B": "Y-Wing",
+      "Option C": "Millennium Falcon",
+      "Option D": "B-Wing",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_91",
+      "Question Text": "In Star Wars: Return of the Jedi, Which Squadrons Does Lando Order To Follow Him In The Death Star Attack?",
+      "Option A": "Blue and Green",
+      "Option B": "Red and Blue",
+      "Option C": "Green and Gold",
+      "Option D": "Red and Gold",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_92",
+      "Question Text": "In Star Wars: Return of the Jedi, Who Plays Darth Vader Without The Helmet At The End?",
+      "Option A": "David Prowse",
+      "Option B": "James Earl Jones",
+      "Option C": "Sebastian Shaw",
+      "Option D": "Hayden Christensen",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_93",
+      "Question Text": "In Star Wars: Return of the Jedi, Who Goes Undercover As A Skiff Guard?",
+      "Option A": "Lando Calrissian",
+      "Option B": "Luke Skywalker",
+      "Option C": "Han Solo",
+      "Option D": "Chewbacca",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_94",
+      "Question Text": "In Star Wars: Return of the Jedi, What Monster Does Luke Fight In Jabba's Palace?",
+      "Option A": "Wampa",
+      "Option B": "Nexu",
+      "Option C": "Acklay",
+      "Option D": "Rancor",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_95",
+      "Question Text": "In Star Wars: Return of the Jedi, What Is Jabba's Sidekick's Name?",
+      "Option A": "Bib Fortuna",
+      "Option B": "Salacious Crumb",
+      "Option C": "Max Rebo",
+      "Option D": "Sy Snootles",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_96",
+      "Question Text": "In Star Wars: Return of the Jedi, Who Kills Jabba The Hutt?",
+      "Option A": "Luke Skywalker",
+      "Option B": "Han Solo",
+      "Option C": "Chewbacca",
+      "Option D": "Princess Leia",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_97",
+      "Question Text": "In Star Wars: Return of the Jedi, Who Is Lando's Millennium Falcon Co-Pilot?",
+      "Option A": "Chewbacca",
+      "Option B": "Wedge Antilles",
+      "Option C": "Nien Nunb",
+      "Option D": "Ten Numb",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_98",
+      "Question Text": "In Star Wars: Return of the Jedi, What Is Chewbacca's Bounty Set At?",
+      "Option A": 35000,
+      "Option B": 40000,
+      "Option C": 45000,
+      "Option D": 50000,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_99",
+      "Question Text": "In Star Wars: Return of the Jedi, Who Originally Played Anakin Skywalker?",
+      "Option A": "Sebastian Shaw",
+      "Option B": "David Prowse",
+      "Option C": "James Earl Jones",
+      "Option D": "Hayden Christensen",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_100",
+      "Question Text": "In Star Wars: Return of the Jedi, Where Is The Sarlacc Located?",
+      "Option A": "Jundland Wastes",
+      "Option B": "Dune Sea",
+      "Option C": "Beggar's Canyon",
+      "Option D": "Mos Eisley",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_101",
+      "Question Text": "In Star Wars: Return of the Jedi, Which Moon Houses The Death Star Shield?",
+      "Option A": "Yavin",
+      "Option B": "Hoth",
+      "Option C": "Dagobah",
+      "Option D": "Endor",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_102",
+      "Question Text": "In Star Wars: Return of the Jedi, What Species Are Native To Endor?",
+      "Option A": "Ewoks",
+      "Option B": "Jawas",
+      "Option C": "Wookiees",
+      "Option D": "Tusken Raiders",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_103",
+      "Question Text": "In Star Wars: Return of the Jedi, Who Is Gold Leader In The Final Battle?",
+      "Option A": "Wedge Antilles",
+      "Option B": "Lando Calrissian",
+      "Option C": "Han Solo",
+      "Option D": "Luke Skywalker",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_104",
+      "Question Text": "In Star Wars: Return of the Jedi, Who Commands The Overall Death Star Assault?",
+      "Option A": "General Madine",
+      "Option B": "Admiral Ackbar",
+      "Option C": "Mon Mothma",
+      "Option D": "General Rieekan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_105",
+      "Question Text": "In Star Wars: Return of the Jedi, What Is Vader's Super Star Destroyer Called?",
+      "Option A": "The Executor",
+      "Option B": "The Devastator",
+      "Option C": "The Avenger",
+      "Option D": "The Ravager",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_106",
+      "Question Text": "In Star Wars: Return of the Jedi, What Does Luke Tell Vader To Let Go Of?",
+      "Option A": "His Hate",
+      "Option B": "His Anger",
+      "Option C": "His Fear",
+      "Option D": "His Past",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_107",
+      "Question Text": "In Star Wars: Return of the Jedi, Who Is Red Leader In The Final Battle?",
+      "Option A": "Luke",
+      "Option B": "Wedge",
+      "Option C": "Biggs",
+      "Option D": "Porkins",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_108",
+      "Question Text": "In Star Wars: Return of the Jedi, What Are Anakin's Final Words To Luke?",
+      "Option A": "Save Me",
+      "Option B": "I Love You",
+      "Option C": "Tell Your Sister",
+      "Option D": "You Were Right",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_109",
+      "Question Text": "In Star Wars: Revenge of the Sith, How Does Obi-Wan Describe General Grievous's Blaster?",
+      "Option A": "Crude",
+      "Option B": "Primitive",
+      "Option C": "Barbaric",
+      "Option D": "Uncivilized",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_110",
+      "Question Text": "In Star Wars: Revenge of the Sith, On What Planet Do Obi-Wan And Anakin Have Their Final Duel?",
+      "Option A": "Mustafar",
+      "Option B": "Coruscant",
+      "Option C": "Utapau",
+      "Option D": "Kashyyyk",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_111",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Are General Grievous's Stolen Lightsabers Made Of?",
+      "Option A": "Durasteel",
+      "Option B": "Beskar",
+      "Option C": "Electrosteel",
+      "Option D": "Cortosis",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_112",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Lies Beneath The Jedi Temple On Coruscant?",
+      "Option A": "Sith Holocron",
+      "Option B": "Ancient Sith Temple",
+      "Option C": "Dark Side Nexus",
+      "Option D": "Sith Artifacts",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_113",
+      "Question Text": "In Star Wars: Revenge of the Sith, Which Character Says 'Army Or Not, You Must Realize You Are Doomed'?",
+      "Option A": "Count Dooku",
+      "Option B": "Darth Sidious",
+      "Option C": "General Grievous",
+      "Option D": "Mace Windu",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_114",
+      "Question Text": "In Star Wars: Revenge of the Sith, How Does Liberty Die According To Padme?",
+      "Option A": "With Thunderous Applause",
+      "Option B": "With Great Sorrow",
+      "Option C": "In Darkness",
+      "Option D": "In Silence",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_115",
+      "Question Text": "In Star Wars: Revenge of the Sith, On Which Lava Planet Do Obi-Wan And Anakin Duel?",
+      "Option A": "Sullust",
+      "Option B": "Mustafar",
+      "Option C": "Geonosis",
+      "Option D": "Utapau",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_116",
+      "Question Text": "In Star Wars: Revenge of the Sith, Who Was Sent To Aid The Wookiees On Kashyyyk?",
+      "Option A": "Mace Windu",
+      "Option B": "Obi-Wan",
+      "Option C": "Yoda",
+      "Option D": "Ki-Adi-Mundi",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_117",
+      "Question Text": "In Star Wars: Revenge of the Sith, Where Does Sidious Send The Separatist Leaders?",
+      "Option A": "Utapau",
+      "Option B": "Mustafar",
+      "Option C": "Geonosis",
+      "Option D": "Coruscant",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_118",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Is The Number Of The Order To Execute Jedi?",
+      "Option A": 65,
+      "Option B": 66,
+      "Option C": 67,
+      "Option D": 68,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_119",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Is The Opening Battle Called?",
+      "Option A": "Battle of Geonosis",
+      "Option B": "Battle of Utapau",
+      "Option C": "Siege of Coruscant",
+      "Option D": "Battle of Coruscant",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_120",
+      "Question Text": "In Star Wars: Revenge of the Sith, When Does Sidious Become Scarred?",
+      "Option A": "Fighting Yoda",
+      "Option B": "During Mace Windu Fight",
+      "Option C": "Arresting The Jedi",
+      "Option D": "Order 66",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_121",
+      "Question Text": "In Star Wars: Revenge of the Sith, Which Sith Lord Could Save People From Death?",
+      "Option A": "Darth Sidious",
+      "Option B": "Darth Plagueis",
+      "Option C": "Darth Bane",
+      "Option D": "Darth Tyranus",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_122",
+      "Question Text": "In Star Wars: Revenge of the Sith, Why Does Anakin Attack Obi-Wan?",
+      "Option A": "Jealousy",
+      "Option B": "Thinks He Turned Padme",
+      "Option C": "Dark Side Corruption",
+      "Option D": "Following Orders",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_123",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Does Vader Scream Learning Of Padme's Death?",
+      "Option A": "Why",
+      "Option B": "Never",
+      "Option C": "Impossible",
+      "Option D": "No",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_124",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Is Given As Padme's Cause Of Death?",
+      "Option A": "Broken Heart",
+      "Option B": "Lost Will To Live",
+      "Option C": "Force Choke",
+      "Option D": "Complications",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_125",
+      "Question Text": "In Star Wars: Revenge of the Sith, How Many Lightsabers Does Grievous Use?",
+      "Option A": "Two",
+      "Option B": "Three",
+      "Option C": "Four",
+      "Option D": "Six",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_126",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Do Yoda And Obi-Wan Return To Deactivate?",
+      "Option A": "Jedi Temple Beacon",
+      "Option B": "Security Systems",
+      "Option C": "Clone Protocol",
+      "Option D": "Defense Grid",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_127",
+      "Question Text": "In Star Wars: Revenge of the Sith, Whose Memory Is Wiped At The End?",
+      "Option A": "R2-D2",
+      "Option B": "Owen Lars",
+      "Option C": "Bail Organa",
+      "Option D": "C-3PO",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_128",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Does Obi-Wan Say Only Sith Do?",
+      "Option A": "Deal In Absolutes",
+      "Option B": "Use The Dark Side",
+      "Option C": "Kill Younglings",
+      "Option D": "Betray Their Friends",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_129",
+      "Question Text": "In Star Wars: Revenge of the Sith, How Does Obi-Wan Describe The Blaster?",
+      "Option A": "Random",
+      "Option B": "Clumsy",
+      "Option C": "Primitive",
+      "Option D": "Uncivilized",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_130",
+      "Question Text": "In Star Wars: Revenge of the Sith, How Many Times Has Anakin Saved Obi-Wan?",
+      "Option A": "Nine",
+      "Option B": "Ten",
+      "Option C": "Eight",
+      "Option D": "Seven",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_131",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Does Palpatine Tell Anakin About Good?",
+      "Option A": "It's Absolute",
+      "Option B": "It's Relative",
+      "Option C": "It's Universal",
+      "Option D": "It's A Point Of View",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_132",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Is Obi-Wan's Varactyl Named?",
+      "Option A": "Giga",
+      "Option B": "Boga",
+      "Option C": "Doga",
+      "Option D": "Roga",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_133",
+      "Question Text": "In Star Wars: Revenge of the Sith, What Order Does Vader Receive On Mustafar?",
+      "Option A": "Kill The Separatists",
+      "Option B": "Shut Down Droid Armies",
+      "Option C": "Execute Order 66",
+      "Option D": "Secure The Temple",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_134",
+      "Question Text": "In Star Wars: Revenge of the Sith, Where Are The Twins Born?",
+      "Option A": "Naboo",
+      "Option B": "Alderaan",
+      "Option C": "Polis Massa",
+      "Option D": "Coruscant",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_135",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Does Kylo Ren Meet On Exegol?",
+      "Option A": "Snoke",
+      "Option B": "Emperor Palpatine",
+      "Option C": "Darth Vader",
+      "Option D": "The Knights of Ren",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_136",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Is The Name Of Palpatine's Fleet?",
+      "Option A": "The Imperial Order",
+      "Option B": "The New Order",
+      "Option C": "The Final Order",
+      "Option D": "The Sith Order",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_137",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Object Does Kylo Use To Find Exegol?",
+      "Option A": "Dark Holocron",
+      "Option B": "Sith Compass",
+      "Option C": "Sith Wayfinder",
+      "Option D": "Ancient Map",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_138",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Do The Resistance Meet On Pasaana?",
+      "Option A": "Han Solo",
+      "Option B": "Lando Calrissian",
+      "Option C": "Luke Skywalker",
+      "Option D": "Maz Kanata",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_139",
+      "Question Text": "In Star Wars: The Rise of Skywalker, To Which Planet Do They Travel To Find A Droidsmith?",
+      "Option A": "Jakku",
+      "Option B": "Kijimi",
+      "Option C": "Pasaana",
+      "Option D": "Exegol",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_140",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Is Revealed As The First Order Spy?",
+      "Option A": "General Hux",
+      "Option B": "General Pryde",
+      "Option C": "Captain Phasma",
+      "Option D": "Kylo Ren",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_141",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Is Rey's Grandfather?",
+      "Option A": "Obi-Wan Kenobi",
+      "Option B": "Luke Skywalker",
+      "Option C": "Darth Vader",
+      "Option D": "Emperor Palpatine",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_142",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Interrupts Rey And Kylo's Duel On Endor?",
+      "Option A": "Han Solo",
+      "Option B": "Leia Organa",
+      "Option C": "Luke Skywalker",
+      "Option D": "Finn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_143",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Appears To Kylo In A Vision?",
+      "Option A": "Han Solo",
+      "Option B": "Luke Skywalker",
+      "Option C": "Leia Organa",
+      "Option D": "Darth Vader",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_144",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Sacrifices Their Life Force To Save Rey?",
+      "Option A": "Ben Solo",
+      "Option B": "Luke Skywalker",
+      "Option C": "Leia Organa",
+      "Option D": "Emperor Palpatine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_145",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Surname Does Rey Take At The End?",
+      "Option A": "Skywalker",
+      "Option B": "Solo",
+      "Option C": "Palpatine",
+      "Option D": "Organa",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_146",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Is The Name Of The Droidsmith On Kijimi?",
+      "Option A": "Doc Brown",
+      "Option B": "Maz Kanata",
+      "Option C": "Babu Frik",
+      "Option D": "DJ",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_147",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Is Poe's Old Acquaintance On Kijimi?",
+      "Option A": "Maz Kanata",
+      "Option B": "Rose Tico",
+      "Option C": "Zorii Bliss",
+      "Option D": "Kaydel Ko Connix",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_148",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Type Of Connection Do Rey And Kylo Share?",
+      "Option A": "Force Bond",
+      "Option B": "Force Link",
+      "Option C": "Force Dyad",
+      "Option D": "Force Connection",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_149",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Kills General Hux?",
+      "Option A": "Kylo Ren",
+      "Option B": "Captain Phasma",
+      "Option C": "Finn",
+      "Option D": "General Pryde",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_150",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Was The Name Of The Assassin Who Killed Rey's Parents?",
+      "Option A": "Cad Bane",
+      "Option B": "Aurra Sing",
+      "Option C": "Ochi",
+      "Option D": "Jango Fett",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_151",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Weapon Contained Clues To The Wayfinder?",
+      "Option A": "Lightsaber",
+      "Option B": "Blaster",
+      "Option C": "Sith Dagger",
+      "Option D": "Ancient Sword",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_152",
+      "Question Text": "In Star Wars: The Rise of Skywalker, On Which Planet Does Rey Bury The Lightsabers?",
+      "Option A": "Jakku",
+      "Option B": "Naboo",
+      "Option C": "Tatooine",
+      "Option D": "Ahch-To",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_153",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Whose Homestead Does Rey Visit On Tatooine?",
+      "Option A": "Kenobi Family",
+      "Option B": "Skywalker Family",
+      "Option C": "Solo Family",
+      "Option D": "Lars Family",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_154",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Which Force Ghosts Appear To Rey At The End?",
+      "Option A": "Han and Leia",
+      "Option B": "Luke and Leia",
+      "Option C": "Anakin and Obi-Wan",
+      "Option D": "Yoda and Luke",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_155",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Planet Serves As The Resistance Base?",
+      "Option A": "D'Qar",
+      "Option B": "Crait",
+      "Option C": "Yavin 4",
+      "Option D": "Ajan-Kloss",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_156",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Why Does Hux Help The Resistance Escape?",
+      "Option A": "To Save The Galaxy",
+      "Option B": "To Get Revenge",
+      "Option C": "To Defeat Kylo Ren",
+      "Option D": "To Join The Resistance",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_157",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Why Can't C-3PO Translate The Dagger?",
+      "Option A": "Memory Wipe",
+      "Option B": "Sith Language Ban",
+      "Option C": "Damaged Circuits",
+      "Option D": "Programming Limits",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_158",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Do Rey's Parents Hide Her From?",
+      "Option A": "The First Order",
+      "Option B": "Palpatine's Search",
+      "Option C": "The Empire",
+      "Option D": "The Knights of Ren",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_159",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Where Did Rey's Parents Hide Her?",
+      "Option A": "Tatooine",
+      "Option B": "Pasaana",
+      "Option C": "Naboo",
+      "Option D": "Jakku",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_160",
+      "Question Text": "In Star Wars: The Rise of Skywalker, Who Is Revealed To Be The Power Behind Snoke?",
+      "Option A": "Kylo Ren",
+      "Option B": "Emperor Palpatine",
+      "Option C": "The First Order",
+      "Option D": "The Dark Side",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_161",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Ship Do Finn And Poe Use To Meet Their Informant?",
+      "Option A": "Millennium Falcon",
+      "Option B": "X-Wing",
+      "Option C": "Y-Wing",
+      "Option D": "TIE Fighter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_162",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Event Is Happening When The Resistance Arrives On Pasaana?",
+      "Option A": "Market Day",
+      "Option B": "Race",
+      "Option C": "Celebration",
+      "Option D": "Festival",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_163",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Type Of Planet Is Kijimi Described As?",
+      "Option A": "Desert World",
+      "Option B": "Mountain Planet",
+      "Option C": "Cold Haven For Smugglers",
+      "Option D": "Mining Colony",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_164",
+      "Question Text": "In Star Wars: The Rise of Skywalker, What Are Rey's Father's Origins?",
+      "Option A": "Palpatine's Clone",
+      "Option B": "Jedi Knight",
+      "Option C": "Imperial Officer",
+      "Option D": "Resistance Fighter",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_165",
+      "Question Text": "In Star Wars: Rogue One, What Type Of Elite Troopers Serve As Krennic's Guards?",
+      "Option A": "Shadow Troopers",
+      "Option B": "Dark Troopers",
+      "Option C": "Death Troopers",
+      "Option D": "Elite Troopers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_166",
+      "Question Text": "In Star Wars: Rogue One, On Which Planet Do The Ersos Hide Their Farm?",
+      "Option A": "Tatooine",
+      "Option B": "Jedha",
+      "Option C": "Lah'mu",
+      "Option D": "Eadu",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_167",
+      "Question Text": "In Star Wars: Rogue One, What Is Orson Krennic's Official Title?",
+      "Option A": "Imperial Commander",
+      "Option B": "Director of Advanced Weapons Research",
+      "Option C": "Chief of Imperial Security",
+      "Option D": "Grand Admiral",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_168",
+      "Question Text": "In Star Wars: Rogue One, Who Slaughters The Rebels In The Final Corridor Scene?",
+      "Option A": "Darth Vader",
+      "Option B": "Death Troopers",
+      "Option C": "Imperial Guards",
+      "Option D": "Storm Troopers",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_169",
+      "Question Text": "In Star Wars: Rogue One, Who Is The Main Heroine Of The Story?",
+      "Option A": "Jyn Erso",
+      "Option B": "Mon Mothma",
+      "Option C": "Lyra Erso",
+      "Option D": "Princess Leia",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_170",
+      "Question Text": "In Star Wars: Rogue One, Which Character Repeatedly Says 'I Am One With The Force'?",
+      "Option A": "Baze Malbus",
+      "Option B": "Cassian Andor",
+      "Option C": "Chirrut Imwe",
+      "Option D": "Bodhi Rook",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_171",
+      "Question Text": "In Star Wars: Rogue One, Which Cantina Character Appears On Jedha?",
+      "Option A": "Greedo",
+      "Option B": "Ponda Baba",
+      "Option C": "Cornelius Evazan",
+      "Option D": "Figrin D'an",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_172",
+      "Question Text": "In Star Wars: Rogue One, How Is A Star Destroyer Destroyed In The Space Battle?",
+      "Option A": "Ion Cannon",
+      "Option B": "Rammed By Another Destroyer",
+      "Option C": "Rebel Bombers",
+      "Option D": "X-Wing Attack",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_173",
+      "Question Text": "In Star Wars: Rogue One, What Type Of Troopers Defend Scarif?",
+      "Option A": "Death Troopers",
+      "Option B": "Sand Troopers",
+      "Option C": "Scout Troopers",
+      "Option D": "Shoretroopers",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_174",
+      "Question Text": "In Star Wars: Rogue One, Which Classic Droids Make A Cameo Appearance?",
+      "Option A": "R2-D2 and C-3PO",
+      "Option B": "BB-8 and R2-D2",
+      "Option C": "C-3PO and K-2SO",
+      "Option D": "R2-D2 and Chopper",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_175",
+      "Question Text": "In Star Wars: Rogue One, Which Character Is CGI-Recreated After Actor's Death?",
+      "Option A": "Princess Leia",
+      "Option B": "Mon Mothma",
+      "Option C": "Director Krennic",
+      "Option D": "Grand Moff Tarkin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_176",
+      "Question Text": "In Star Wars: Rogue One, What Is The Name Of The Stolen Imperial Ship?",
+      "Option A": "Tantive IV",
+      "Option B": "Rogue One",
+      "Option C": "Hammerhead",
+      "Option D": "Ghost",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_177",
+      "Question Text": "In Star Wars: Rogue One, What Are The Empire Mining From Jedha?",
+      "Option A": "Kyber Crystals",
+      "Option B": "Coaxium",
+      "Option C": "Tibanna Gas",
+      "Option D": "Beskar",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_178",
+      "Question Text": "In Star Wars: Rogue One, Which Planet Houses The Imperial Data Center?",
+      "Option A": "Scarif",
+      "Option B": "Eadu",
+      "Option C": "Jedha",
+      "Option D": "Mustafar",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_179",
+      "Question Text": "In Star Wars: Rogue One, Who Shoots At Krennic In The Opening Scene?",
+      "Option A": "Lyra Erso",
+      "Option B": "Galen Erso",
+      "Option C": "Saw Gerrera",
+      "Option D": "Jyn Erso",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_180",
+      "Question Text": "In Star Wars: Rogue One, Who Helps Young Jyn Escape After Her Father's Capture?",
+      "Option A": "Mon Mothma",
+      "Option B": "Bail Organa",
+      "Option C": "Saw Gerrera",
+      "Option D": "Captain Andor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_181",
+      "Question Text": "In Star Wars: Rogue One, Who Is Baze Malbus's Companion?",
+      "Option A": "Bodhi Rook",
+      "Option B": "K-2SO",
+      "Option C": "Chirrut Imwe",
+      "Option D": "Cassian Andor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_182",
+      "Question Text": "In Star Wars: Rogue One, Who Leads The Space Assault On Scarif?",
+      "Option A": "Admiral Raddus",
+      "Option B": "General Draven",
+      "Option C": "Mon Mothma",
+      "Option D": "Admiral Ackbar",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_183",
+      "Question Text": "In Star Wars: Rogue One, Which Princess Appears In The Final Scene?",
+      "Option A": "Princess Leia",
+      "Option B": "Mon Mothma",
+      "Option C": "Jyn Erso",
+      "Option D": "Queen Breha",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_184",
+      "Question Text": "In Star Wars: Rogue One, What Call Sign Does Luke Later Inherit?",
+      "Option A": "Red Leader",
+      "Option B": "Red Three",
+      "Option C": "Red Wing",
+      "Option D": "Red Five",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_185",
+      "Question Text": "In Star Wars: Rogue One, On Which Planet Is Vader's Castle Located?",
+      "Option A": "Coruscant",
+      "Option B": "Exegol",
+      "Option C": "Mustafar",
+      "Option D": "Moraband",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_186",
+      "Question Text": "In Star Wars: Rogue One, Which Droid Sacrifices Itself For Jyn And Cassian?",
+      "Option A": "R2-D2",
+      "Option B": "K-2SO",
+      "Option C": "C-3PO",
+      "Option D": "BB-8",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_187",
+      "Question Text": "In Star Wars: Rogue One, Who Convinces Jyn To Rescue Her Father?",
+      "Option A": "Cassian Andor",
+      "Option B": "Saw Gerrera",
+      "Option C": "Mon Mothma",
+      "Option D": "Bail Organa",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_188",
+      "Question Text": "In Star Wars: Rogue One, Who Is Dr. Evazan's Criminal Partner?",
+      "Option A": "Ponda Baba",
+      "Option B": "Greedo",
+      "Option C": "Bossk",
+      "Option D": "Dengar",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_189",
+      "Question Text": "In Star Wars: Rogue One, What Organization Were Chirrut And Baze Part Of?",
+      "Option A": "Jedi Order",
+      "Option B": "Guardians of the Whills",
+      "Option C": "Knights of Ren",
+      "Option D": "Temple Guards",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_190",
+      "Question Text": "In Star Wars: Rogue One, What Weapon Ultimately Kills The Main Characters?",
+      "Option A": "Star Destroyer",
+      "Option B": "Ion Cannon",
+      "Option C": "Orbital Strike",
+      "Option D": "Death Star",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_191",
+      "Question Text": "In Star Wars: Rogue One, Who Is Peter Cushing's CGI-Recreated Character?",
+      "Option A": "Director Krennic",
+      "Option B": "Admiral Raddus",
+      "Option C": "Grand Moff Tarkin",
+      "Option D": "General Draven",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_192",
+      "Question Text": "In Star Wars: Rogue One, What Powers The Death Star's Main Weapon?",
+      "Option A": "Kyber Crystals",
+      "Option B": "Coaxium",
+      "Option C": "Tibanna Gas",
+      "Option D": "Nuclear Fusion",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_193",
+      "Question Text": "In Star Wars: Rogue One, Where Does The Final Battle Take Place?",
+      "Option A": "Jedha",
+      "Option B": "Eadu",
+      "Option C": "Yavin",
+      "Option D": "Scarif",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_194",
+      "Question Text": "In Star Wars: Rogue One, What Ship Escapes With The Death Star Plans?",
+      "Option A": "Millennium Falcon",
+      "Option B": "Rogue One",
+      "Option C": "Tantive IV",
+      "Option D": "Ghost",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_195",
+      "Question Text": "In Star Wars: Skeleton Crew, What Is The Name Of The Ship The Children Discover And Eventually Use To Leave Their Planet?",
+      "Option A": "Ghost Ship",
+      "Option B": "Dark Star",
+      "Option C": "Shadow Runner",
+      "Option D": "Onyx Cinder",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_196",
+      "Question Text": "In Star Wars: Skeleton Crew, What Is The Name Of The Droid That Becomes The Children's Companion?",
+      "Option A": "SM-33",
+      "Option B": "R4-D5",
+      "Option C": "BB-12",
+      "Option D": "K2-S0",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_197",
+      "Question Text": "In Star Wars: Skeleton Crew, What Is The Name Of The Planet The Main Characters Are From?",
+      "Option A": "Pasaana",
+      "Option B": "Nevarro",
+      "Option C": "At Attin",
+      "Option D": "Jakku",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_198",
+      "Question Text": "In Star Wars: Skeleton Crew, What Does The Pirate Jod Na Nawood Initially Claim To Be?",
+      "Option A": "A Jedi",
+      "Option B": "A Smuggler",
+      "Option C": "A Bounty Hunter",
+      "Option D": "A Merchant",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_199",
+      "Question Text": "In Star Wars: Skeleton Crew, Who Is The Original Owner Of The Hidden Treasure The Characters Seek?",
+      "Option A": "Jod Na Nawood",
+      "Option B": "Moff Gideon",
+      "Option C": "Captain Voss",
+      "Option D": "Tak Rennod",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_200",
+      "Question Text": "In Star Wars: Skeleton Crew, What Is The Name Of The Luxury Planet Where Rennod's Former Base Is Located?",
+      "Option A": "Canto Bight",
+      "Option B": "Coruscant",
+      "Option C": "Lanupa",
+      "Option D": "Naboo",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_201",
+      "Question Text": "In Star Wars: Skeleton Crew, What Type Of Facility Is Hidden On At Attin?",
+      "Option A": "Imperial Base",
+      "Option B": "Rebel Outpost",
+      "Option C": "Weapons Factory",
+      "Option D": "Old Republic Mint",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_202",
+      "Question Text": "In Star Wars: Skeleton Crew, What Is The Name Of The Map Expert That Jod Takes The Children To Meet?",
+      "Option A": "Maz Kanata",
+      "Option B": "Kh'ymm",
+      "Option C": "Zuvio",
+      "Option D": "Babu Frik",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_203",
+      "Question Text": "In Solo: A Star Wars Story, On Which Planet Do We First Meet Han?",
+      "Option A": "Mimban",
+      "Option B": "Corellia",
+      "Option C": "Kessel",
+      "Option D": "Vandor",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_204",
+      "Question Text": "In Solo: A Star Wars Story, What Valuable Substance Does Han Initially Steal?",
+      "Option A": "Spice",
+      "Option B": "Coaxium",
+      "Option C": "Kyber Crystals",
+      "Option D": "Tibanna Gas",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_205",
+      "Question Text": "In Solo: A Star Wars Story, How Does Han Get His Last Name 'Solo'?",
+      "Option A": "Imperial Officer Gives It",
+      "Option B": "He Makes It Up",
+      "Option C": "Family Name",
+      "Option D": "Street Name",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_206",
+      "Question Text": "In Solo: A Star Wars Story, In Which Branch Of The Empire Does Han Enlist?",
+      "Option A": "Imperial Navy",
+      "Option B": "Imperial Academy",
+      "Option C": "Imperial Infantry",
+      "Option D": "Imperial Guard",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_207",
+      "Question Text": "In Solo: A Star Wars Story, Where Does Han Meet Chewbacca?",
+      "Option A": "Prison Cell",
+      "Option B": "Cantina",
+      "Option C": "Battlefield",
+      "Option D": "Mud Pit Prison",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_208",
+      "Question Text": "In Solo: A Star Wars Story, Who Is The Leader Of Beckett's Crew?",
+      "Option A": "Tobias Beckett",
+      "Option B": "Val",
+      "Option C": "Rio Durant",
+      "Option D": "Qi'ra",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_209",
+      "Question Text": "In Solo: A Star Wars Story, What Is The Name Of Val's Wife?",
+      "Option A": "Rio",
+      "Option B": "Val",
+      "Option C": "Qi'ra",
+      "Option D": "Enfys",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_210",
+      "Question Text": "In Solo: A Star Wars Story, What Type Of Heist Does The Crew First Attempt?",
+      "Option A": "Bank Heist",
+      "Option B": "Cargo Heist",
+      "Option C": "Train Heist",
+      "Option D": "Ship Heist",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_211",
+      "Question Text": "In Solo: A Star Wars Story, What Is The Name Of Lando's Droid Companion?",
+      "Option A": "K-2SO",
+      "Option B": "R2-D2",
+      "Option C": "BB-8",
+      "Option D": "L3-37",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_212",
+      "Question Text": "In Solo: A Star Wars Story, How Does Han Win The Millennium Falcon?",
+      "Option A": "Dice Game",
+      "Option B": "Betting",
+      "Option C": "Sabacc Game",
+      "Option D": "Pod Race",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_213",
+      "Question Text": "In Solo: A Star Wars Story, What Is Qi'ra's Position In Crimson Dawn?",
+      "Option A": "Enforcer",
+      "Option B": "Lieutenant",
+      "Option C": "Guard",
+      "Option D": "Agent",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_214",
+      "Question Text": "In Solo: A Star Wars Story, Who Is The Leader Of Crimson Dawn?",
+      "Option A": "Maul",
+      "Option B": "Beckett",
+      "Option C": "Dryden Vos",
+      "Option D": "Qi'ra",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_215",
+      "Question Text": "In Solo: A Star Wars Story, What Planet Do They Visit For The Coaxium Job?",
+      "Option A": "Mimban",
+      "Option B": "Kessel",
+      "Option C": "Savareen",
+      "Option D": "Vandor",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_216",
+      "Question Text": "In Solo: A Star Wars Story, What Route Does Han Navigate In Record Time?",
+      "Option A": "Death Star Run",
+      "Option B": "Kessel Run",
+      "Option C": "Trade Route",
+      "Option D": "Smuggler's Run",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_217",
+      "Question Text": "In Solo: A Star Wars Story, What Creates The Dangerous Kessel Run?",
+      "Option A": "Black Holes",
+      "Option B": "The Maelstrom",
+      "Option C": "Asteroid Field",
+      "Option D": "Space Storm",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_218",
+      "Question Text": "In Solo: A Star Wars Story, Which Character Sacrifices Themselves During The Train Heist?",
+      "Option A": "Rio",
+      "Option B": "Beckett",
+      "Option C": "Val",
+      "Option D": "Qi'ra",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_219",
+      "Question Text": "In Solo: A Star Wars Story, What Game Does Lando Keep Cheating At?",
+      "Option A": "Dejarik",
+      "Option B": "Sabacc",
+      "Option C": "Pazaak",
+      "Option D": "Dice",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_220",
+      "Question Text": "In Solo: A Star Wars Story, What Criminal Organization Does Qi'ra Work For?",
+      "Option A": "Black Sun",
+      "Option B": "Crimson Dawn",
+      "Option C": "Pyke Syndicate",
+      "Option D": "Hutt Cartel",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_221",
+      "Question Text": "In Solo: A Star Wars Story, What Is The Name Of The Marauder Group They Encounter?",
+      "Option A": "Rebels",
+      "Option B": "Pirates",
+      "Option C": "Raiders",
+      "Option D": "Cloud Riders",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_222",
+      "Question Text": "In Solo: A Star Wars Story, Who Leads The Cloud Riders?",
+      "Option A": "Qi'ra",
+      "Option B": "Beckett",
+      "Option C": "Enfys Nest",
+      "Option D": "Dryden Vos",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_223",
+      "Question Text": "In Solo: A Star Wars Story, What Does L3-37 Start On Kessel?",
+      "Option A": "Slave Revolt",
+      "Option B": "Prison Break",
+      "Option C": "Revolution",
+      "Option D": "Droid Rebellion",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_224",
+      "Question Text": "In Solo: A Star Wars Story, What Happens To L3's Neural Core?",
+      "Option A": "Uploaded To Falcon",
+      "Option B": "Destroyed",
+      "Option C": "Saved By Lando",
+      "Option D": "Lost In Space",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_225",
+      "Question Text": "In Solo: A Star Wars Story, Who Betrays Han At The End?",
+      "Option A": "Qi'ra",
+      "Option B": "Beckett",
+      "Option C": "Lando",
+      "Option D": "Dryden",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_226",
+      "Question Text": "In Solo: A Star Wars Story, Who Is Revealed As The True Leader Of Crimson Dawn?",
+      "Option A": "Dryden Vos",
+      "Option B": "Qi'ra",
+      "Option C": "Emperor",
+      "Option D": "Darth Maul",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_227",
+      "Question Text": "In Solo: A Star Wars Story, Where Does The Final Showdown Take Place?",
+      "Option A": "Kessel",
+      "Option B": "Corellia",
+      "Option C": "Savareen",
+      "Option D": "Vandor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_228",
+      "Question Text": "In Solo: A Star Wars Story, What Does Enfys Nest Want The Coaxium For?",
+      "Option A": "Personal Gain",
+      "Option B": "Black Market",
+      "Option C": "The Rebellion",
+      "Option D": "Criminal Empire",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_229",
+      "Question Text": "In Solo: A Star Wars Story, How Does Qi'ra Contact Crimson Dawn's Leader?",
+      "Option A": "Crimson Dawn Ring",
+      "Option B": "Holocron",
+      "Option C": "Communicator",
+      "Option D": "Datapad",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_230",
+      "Question Text": "In Solo: A Star Wars Story, What Famous Gambling Den Does Lando Own?",
+      "Option A": "The Lodge",
+      "Option B": "The Casino",
+      "Option C": "The Club",
+      "Option D": "The Den",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_231",
+      "Question Text": "In Solo: A Star Wars Story, What Species Are The Guards On The Conveyex Train?",
+      "Option A": "Storm Troopers",
+      "Option B": "Death Troopers",
+      "Option C": "Range Troopers",
+      "Option D": "Imperial Guards",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_232",
+      "Question Text": "In Solo: A Star Wars Story, What Does Han Give To Start The Rebellion?",
+      "Option A": "Coaxium",
+      "Option B": "Credits",
+      "Option C": "Weapons",
+      "Option D": "Information",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_233",
+      "Question Text": "In Star Wars: The Acolyte, What Is Mae and Osha's Home Planet?",
+      "Option A": "Dathomir",
+      "Option B": "Naboo",
+      "Option C": "Brendok",
+      "Option D": "Coruscant",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_234",
+      "Question Text": "In Star Wars: The Acolyte, What Does The Brendok Witch Coven Call The Force?",
+      "Option A": "Magic",
+      "Option B": "Power",
+      "Option C": "Energy",
+      "Option D": "Threads",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_235",
+      "Question Text": "In Star Wars: The Acolyte, What Is The Name Of Osha's Droid?",
+      "Option A": "BB-8",
+      "Option B": "R2-D2",
+      "Option C": "Pip",
+      "Option D": "K-2SO",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_236",
+      "Question Text": "In Star Wars: The Acolyte, Which Senator Mistrusts The Jedi Order?",
+      "Option A": "Rayencourt",
+      "Option B": "Mon Mothma",
+      "Option C": "Bail Organa",
+      "Option D": "Padmé Amidala",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_237",
+      "Question Text": "In Star Wars: The Book of Boba Fett, What Species Teaches Boba Their Combat And Survival Skills?",
+      "Option A": "Mandalorians",
+      "Option B": "Hutts",
+      "Option C": "Jawas",
+      "Option D": "Tusken Raiders",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_238",
+      "Question Text": "In Star Wars: The Book of Boba Fett, What Is The Name Of The Cantina Run By Garsa Fwip?",
+      "Option A": "The Palace",
+      "Option B": "The Sanctuary",
+      "Option C": "The Outpost",
+      "Option D": "The Haven",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_239",
+      "Question Text": "In Star Wars: The Book of Boba Fett, Which Wookiee Bounty Hunter Is Sent To Intimidate Boba?",
+      "Option A": "Chewbacca",
+      "Option B": "Krrsantan",
+      "Option C": "Tarfful",
+      "Option D": "Gungi",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_240",
+      "Question Text": "In Star Wars: The Book of Boba Fett, What Do The Tusken Raiders Force Boba To Search For In The Desert?",
+      "Option A": "Black Melons",
+      "Option B": "Water",
+      "Option C": "Crystals",
+      "Option D": "Food",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_241",
+      "Question Text": "In Star Wars: The Book of Boba Fett, Which Criminal Organization Controls The Spice Trade On Tatooine?",
+      "Option A": "Hutt Cartel",
+      "Option B": "The Pyke Syndicate",
+      "Option C": "Crimson Dawn",
+      "Option D": "Black Sun",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_242",
+      "Question Text": "In Star Wars: The Book of Boba Fett, What Gift Do The Twins Present To Boba?",
+      "Option A": "A Rancor",
+      "Option B": "A Wookiee",
+      "Option C": "A Ship",
+      "Option D": "A Weapon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_243",
+      "Question Text": "In Star Wars: The Book of Boba Fett, Which Infamous Bounty Hunter Arrives In Freetown On Behalf Of The Pykes?",
+      "Option A": "Bossk",
+      "Option B": "Cad Bane",
+      "Option C": "Dengar",
+      "Option D": "IG-88",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_244",
+      "Question Text": "In Star Wars: The Book of Boba Fett, What Weapon Does Boba Use To Finally Defeat Cad Bane?",
+      "Option A": "Blaster",
+      "Option B": "Vibroblade",
+      "Option C": "Gaffi Stick",
+      "Option D": "Flamethrower",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_245",
+      "Question Text": "In Star Wars: The Clone Wars, What Technique Is Used To Infiltrate The Citadel?",
+      "Option A": "Carbon Freezing",
+      "Option B": "Cloaking Device",
+      "Option C": "Force Stealth",
+      "Option D": "Mind Trick",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_246",
+      "Question Text": "In Star Wars: The Clone Wars, Which Villain Makes Their Debut By Killing Several Jedi?",
+      "Option A": "Count Dooku",
+      "Option B": "General Grievous",
+      "Option C": "Asajj Ventress",
+      "Option D": "Cad Bane",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_247",
+      "Question Text": "In Star Wars: The Clone Wars, Who Gives Direct Orders To Osi Sobeck?",
+      "Option A": "Darth Sidious",
+      "Option B": "Count Dooku",
+      "Option C": "General Grievous",
+      "Option D": "Nute Gunray",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_248",
+      "Question Text": "In Star Wars: The Clone Wars, What Is The Name Of Darth Maul's Brother?",
+      "Option A": "Feral",
+      "Option B": "Viscus",
+      "Option C": "Savage Opress",
+      "Option D": "Nightbrother",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_249",
+      "Question Text": "In Star Wars: The Clone Wars, Which Jedi Helped Ahsoka Recover Her Lightsabers?",
+      "Option A": "Plo Koon",
+      "Option B": "Anakin Skywalker",
+      "Option C": "Tera Sinube",
+      "Option D": "Kit Fisto",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_250",
+      "Question Text": "In Star Wars: The Clone Wars, What Was The Name Of The R3 Unit That Temporarily Replaced R2-D2?",
+      "Option A": "Goldie",
+      "Option B": "Rusty",
+      "Option C": "Sparky",
+      "Option D": "Chrome",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_251",
+      "Question Text": "In Star Wars: The Clone Wars, What Is The Name Of The Clone Squad Including Cutup, Droidbait, Heavy, Rex, and Fives?",
+      "Option A": "Domino Squad",
+      "Option B": "Alpha Squad",
+      "Option C": "Beta Squad",
+      "Option D": "Delta Squad",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_252",
+      "Question Text": "In Star Wars: The Clone Wars, Which Bounty Hunter Used Quinlan Vos's Lightsaber?",
+      "Option A": "Aurra Sing",
+      "Option B": "Bossk",
+      "Option C": "Cad Bane",
+      "Option D": "Embo",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_253",
+      "Question Text": "In Star Wars: The Clone Wars, Which Species Is Native To Ryloth?",
+      "Option A": "Togruta",
+      "Option B": "Zabrak",
+      "Option C": "Nautolan",
+      "Option D": "Twi'lek",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_254",
+      "Question Text": "In Star Wars: The Clone Wars, What Is The Name Of Jabba The Hutt's Uncle?",
+      "Option A": "Gardulla",
+      "Option B": "Ziro",
+      "Option C": "Gorga",
+      "Option D": "Jabba",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_255",
+      "Question Text": "In Star Wars: The Clone Wars, What Are The Most Basic Separatist Droids Called?",
+      "Option A": "B-1 Battle Droid",
+      "Option B": "Super Battle Droid",
+      "Option C": "Commando Droid",
+      "Option D": "Tactical Droid",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_256",
+      "Question Text": "In Star Wars: The Clone Wars, To Which Planet Did Cad Bane Bring The Force-Sensitive Children?",
+      "Option A": "Coruscant",
+      "Option B": "Naboo",
+      "Option C": "Kamino",
+      "Option D": "Mustafar",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_257",
+      "Question Text": "In Star Wars: The Clone Wars, What Is Ki-Adi-Mundi's Clone Legion Called?",
+      "Option A": "501st Legion",
+      "Option B": "212th Battalion",
+      "Option C": "327th Star Corps",
+      "Option D": "21st Nova Corps",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_258",
+      "Question Text": "In Star Wars: The Clone Wars, Who First Wielded The Darksaber On Screen?",
+      "Option A": "Duchess Satine",
+      "Option B": "Death Watch",
+      "Option C": "Pre Vizsla",
+      "Option D": "Sabine Wren",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_259",
+      "Question Text": "In Star Wars: The Clone Wars, Who Was The Corrupt Prime Minister Of Mandalore?",
+      "Option A": "Satine",
+      "Option B": "Pre Vizsla",
+      "Option C": "Bo-Katan",
+      "Option D": "Almec",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_260",
+      "Question Text": "In Star Wars: The Clone Wars, Which Planet Did Admiral Trench Attack In Season 2?",
+      "Option A": "Christophsis",
+      "Option B": "Ryloth",
+      "Option C": "Geonosis",
+      "Option D": "Kamino",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_261",
+      "Question Text": "In Star Wars: The Clone Wars, On Which Planet Do The Ones Reside?",
+      "Option A": "Korriban",
+      "Option B": "Mortis",
+      "Option C": "Dathomir",
+      "Option D": "Moraband",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_262",
+      "Question Text": "In Star Wars: The Clone Wars, Which Jedi Was Captured At The Citadel?",
+      "Option A": "Kit Fisto",
+      "Option B": "Plo Koon",
+      "Option C": "Even Piell",
+      "Option D": "Saesee Tiin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_263",
+      "Question Text": "In Star Wars: The Clone Wars, Which Species Hunted Ahsoka For Sport?",
+      "Option A": "Wookiee",
+      "Option B": "Rodian",
+      "Option C": "Trandoshan",
+      "Option D": "Weequay",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_264",
+      "Question Text": "In Star Wars: The Clone Wars, Which Gungan Sacrificed Himself To Capture General Grievous?",
+      "Option A": "Jar Jar Binks",
+      "Option B": "Tarpals",
+      "Option C": "Boss Nass",
+      "Option D": "Captain Typho",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_265",
+      "Question Text": "In Star Wars: The Clone Wars, On Which Planet Did Pong Krell Die?",
+      "Option A": "Felucia",
+      "Option B": "Umbara",
+      "Option C": "Geonosis",
+      "Option D": "Ryloth",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_266",
+      "Question Text": "In Star Wars: The Clone Wars, Which Species Does Anakin Hate Due To Their Slave Trading On Tatooine?",
+      "Option A": "Hutt",
+      "Option B": "Toydarian",
+      "Option C": "Rodian",
+      "Option D": "Zygerrian",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_267",
+      "Question Text": "In Star Wars: The Clone Wars, Who Did Obi-Wan Impersonate When Faking His Death?",
+      "Option A": "Cad Bane",
+      "Option B": "Rako Hardeen",
+      "Option C": "Embo",
+      "Option D": "Boba Fett",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_268",
+      "Question Text": "In Star Wars: The Clone Wars, What Is The Name Of Moralo Eval's Bounty Hunter Competition Arena?",
+      "Option A": "The Pit",
+      "Option B": "The Box",
+      "Option C": "The Arena",
+      "Option D": "The Cage",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_269",
+      "Question Text": "In Star Wars: The Clone Wars, Which Jedi Did Savage Opress Kill With His Horns?",
+      "Option A": "Shaak Ti",
+      "Option B": "Adi Gallia",
+      "Option C": "Stass Allie",
+      "Option D": "Aayla Secura",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_270",
+      "Question Text": "In Star Wars: The Clone Wars, Which Crime Syndicate Was Forced To Ally With Maul?",
+      "Option A": "Pyke Syndicate",
+      "Option B": "Black Sun",
+      "Option C": "Hutt Cartel",
+      "Option D": "Crimson Dawn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_271",
+      "Question Text": "In Star Wars: The Clone Wars, To Which Planet Are Younglings Taken To Find Their Kyber Crystals?",
+      "Option A": "Jedha",
+      "Option B": "Christophsis",
+      "Option C": "Ilum",
+      "Option D": "Lothal",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_272",
+      "Question Text": "In Star Wars: The Clone Wars, What Was Meebur Gascon's Military Rank?",
+      "Option A": "General",
+      "Option B": "Colonel",
+      "Option C": "Major",
+      "Option D": "Commander",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_273",
+      "Question Text": "In Star Wars: The Clone Wars, What Is The Name Of The Clone Who Deserted The Republic To Start A Family?",
+      "Option A": "Rex",
+      "Option B": "Cody",
+      "Option C": "Fives",
+      "Option D": "Cut",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_274",
+      "Question Text": "In Star Wars: The Clone Wars, Who Was The Chief Medical Scientist In The Kamino Clone Facility?",
+      "Option A": "Taun We",
+      "Option B": "Ko Sai",
+      "Option C": "Lama Su",
+      "Option D": "Nala Se",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_275",
+      "Question Text": "In Star Wars: The Clone Wars, Who Removed Ahsoka's Padawan Braid?",
+      "Option A": "Mace Windu",
+      "Option B": "Yoda",
+      "Option C": "Jedi Temple Guard",
+      "Option D": "Anakin Skywalker",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_276",
+      "Question Text": "In Star Wars: The Clone Wars, Which Kaminoan Droid Assists Fives and Omega?",
+      "Option A": "R2-D2",
+      "Option B": "4A-7",
+      "Option C": "AZI-3",
+      "Option D": "TC-14",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_277",
+      "Question Text": "In Star Wars: Empire Strikes Back, What Creature Attacks Luke On Hoth?",
+      "Option A": "Rancor",
+      "Option B": "Nexu",
+      "Option C": "Wampa",
+      "Option D": "Reek",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_278",
+      "Question Text": "In Star Wars: Empire Strikes Back, What Would Leia Rather Kiss Than Han?",
+      "Option A": "Wookie",
+      "Option B": "Droid",
+      "Option C": "Rancor",
+      "Option D": "Jabba",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_279",
+      "Question Text": "In Star Wars: Empire Strikes Back, What Is Luke's Call Sign On Hoth?",
+      "Option A": "Rogue Leader",
+      "Option B": "Echo 3",
+      "Option C": "Red 5",
+      "Option D": "Blue Leader",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_280",
+      "Question Text": "In Star Wars: Empire Strikes Back, Which Admiral Survives Vader's Wrath?",
+      "Option A": "Admiral Piett",
+      "Option B": "Admiral Ozzel",
+      "Option C": "Admiral Motti",
+      "Option D": "Admiral Konstantine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_281",
+      "Question Text": "In Star Wars: Empire Strikes Back, Who Exits Hyperspace Too Close To Hoth?",
+      "Option A": "Captain Needa",
+      "Option B": "Admiral Piett",
+      "Option C": "General Veers",
+      "Option D": "Admiral Ozzel",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_282",
+      "Question Text": "In Star Wars: Empire Strikes Back, Who Leads The Ground Assault On Hoth?",
+      "Option A": "General Veers",
+      "Option B": "Captain Needa",
+      "Option C": "Admiral Piett",
+      "Option D": "Colonel Yularen",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_283",
+      "Question Text": "In Star Wars: Empire Strikes Back, Which System Precedes Cloud City?",
+      "Option A": "Hoth",
+      "Option B": "Anoat",
+      "Option C": "Dagobah",
+      "Option D": "Bespin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_284",
+      "Question Text": "In Star Wars: Empire Strikes Back, What Are The Odds Of Surviving An Asteroid Field?",
+      "Option A": "2720 to 1",
+      "Option B": "3720 to 1",
+      "Option C": "4720 to 1",
+      "Option D": "5720 to 1",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_285",
+      "Question Text": "In Star Wars: Empire Strikes Back, What Does Yoda Take From Luke On Dagobah?",
+      "Option A": "Lightsaber",
+      "Option B": "Food",
+      "Option C": "Power Converter",
+      "Option D": "A Lamp",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_286",
+      "Question Text": "In Star Wars: Empire Strikes Back, Where Does Luke Plan To Meet Lando?",
+      "Option A": "Bespin",
+      "Option B": "Naboo",
+      "Option C": "Tatooine",
+      "Option D": "Coruscant",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_287",
+      "Question Text": "In Star Wars: Empire Strikes Back, What Is The Millennium Falcon's Docking Bay Number?",
+      "Option A": 227,
+      "Option B": 427,
+      "Option C": 327,
+      "Option D": 527,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_288",
+      "Question Text": "In Star Wars: Empire Strikes Back, Who Commands The Avenger?",
+      "Option A": "Captain Piett",
+      "Option B": "Captain Pellaeon",
+      "Option C": "Captain Veers",
+      "Option D": "Captain Needa",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_289",
+      "Question Text": "In Star Wars: Empire Strikes Back, What Substance Is Han Frozen In?",
+      "Option A": "Durasteel",
+      "Option B": "Carbonite",
+      "Option C": "Tibanna",
+      "Option D": "Beskar",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_290",
+      "Question Text": "In Star Wars: Empire Strikes Back, What Is Han's Response To Leia's Love?",
+      "Option A": "Thank You",
+      "Option B": "I Know",
+      "Option C": "Likewise",
+      "Option D": "Of Course",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_291",
+      "Question Text": "In Star Wars: Empire Strikes Back, Who Does Luke Call For First Below Cloud City?",
+      "Option A": "Leia",
+      "Option B": "Han",
+      "Option C": "Ben Kenobi",
+      "Option D": "Lando",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_292",
+      "Question Text": "In Star Wars: The Empire Strikes Back, On What Planet Does Luke Fight Vader?",
+      "Option A": "Hoth",
+      "Option B": "Bespin",
+      "Option C": "Dagobah",
+      "Option D": "Tatooine",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_293",
+      "Question Text": "In Star Wars: The Empire Strikes Back, What Color Is The Inside Of A Tauntaun?",
+      "Option A": "Light Gray",
+      "Option B": "Pink",
+      "Option C": "Red",
+      "Option D": "White",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_294",
+      "Question Text": "In Star Wars: The Empire Strikes Back, What Creatures Attach To The Millennium Falcon?",
+      "Option A": "Space Slugs",
+      "Option B": "Rathtars",
+      "Option C": "Parasites",
+      "Option D": "Mynocks",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_295",
+      "Question Text": "In Star Wars: The Empire Strikes Back, What Is Han's Response When Told The Odds Of Surviving An Asteroid Field?",
+      "Option A": "Shut Up",
+      "Option B": "Watch This",
+      "Option C": "Never Tell Me The Odds!",
+      "Option D": "I Don't Care",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_296",
+      "Question Text": "In Star Wars: The Empire Strikes Back, What Is Luke Told Not To Bring Into The Cave?",
+      "Option A": "Weapons",
+      "Option B": "R2-D2",
+      "Option C": "The Force",
+      "Option D": "His Lightsaber",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_297",
+      "Question Text": "In Star Wars: The Empire Strikes Back, What Is The Name Of The Planet Where Luke Trains With Yoda?",
+      "Option A": "Dagobah",
+      "Option B": "Naboo",
+      "Option C": "Kashyyyk",
+      "Option D": "Endor",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_298",
+      "Question Text": "In Star Wars: The Empire Strikes Back, What Object Does Yoda Fight R2-D2 Over?",
+      "Option A": "Flashlight",
+      "Option B": "Food",
+      "Option C": "Lightsaber",
+      "Option D": "Stick",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_299",
+      "Question Text": "In Star Wars: The Empire Strikes Back, What System Is Cloud City Located In?",
+      "Option A": "Hoth System",
+      "Option B": "Anoat System",
+      "Option C": "Dagobah System",
+      "Option D": "Bespin System",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_300",
+      "Question Text": "In Star Wars: The Empire Strikes Back, What Was Han Solo's Rank At The Battle Of Hoth?",
+      "Option A": "Captain",
+      "Option B": "Commander",
+      "Option C": "General",
+      "Option D": "Lieutenant",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_301",
+      "Question Text": "In Star Wars: The Empire Strikes Back, Which Character Is Described As 'A Suave Phoenix In A Cape'?",
+      "Option A": "Han Solo",
+      "Option B": "Luke Skywalker",
+      "Option C": "Boba Fett",
+      "Option D": "Lando Calrissian",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_302",
+      "Question Text": "In Star Wars: The Empire Strikes Back, Which Hand Does Luke Lose In His Battle With Vader?",
+      "Option A": "Left Hand",
+      "Option B": "Both Hands",
+      "Option C": "Right Hand",
+      "Option D": "Neither Hand",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_303",
+      "Question Text": "In Star Wars: The Empire Strikes Back, Who Does Luke Call Out To First When Hanging Below Cloud City?",
+      "Option A": "Leia",
+      "Option B": "Han Solo",
+      "Option C": "Ben (Obi-Wan) Kenobi",
+      "Option D": "Yoda",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_304",
+      "Question Text": "In Star Wars: The Empire Strikes Back, Who Played Boba Fett?",
+      "Option A": "Jeremy Bulloch",
+      "Option B": "David Prowse",
+      "Option C": "Peter Mayhew",
+      "Option D": "Mark Hamill",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_305",
+      "Question Text": "In Star Wars: The Empire Strikes Back, Who Saves Luke From Freezing On Hoth?",
+      "Option A": "Wedge Antilles",
+      "Option B": "Han Solo",
+      "Option C": "Leia Organa",
+      "Option D": "Chewbacca",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_306",
+      "Question Text": "In Star Wars: The Force Awakens, How Many Parsecs Does Rey Think The Kessel Run Takes?",
+      "Option A": 14,
+      "Option B": 12,
+      "Option C": 16,
+      "Option D": 18,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_307",
+      "Question Text": "In Star Wars: The Force Awakens, What Color Are The Marks On Kylo Ren's Helmet?",
+      "Option A": "Black",
+      "Option B": "Gold",
+      "Option C": "Silver",
+      "Option D": "Red",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_308",
+      "Question Text": "In Star Wars: The Force Awakens, What Nickname Does Han Give Finn?",
+      "Option A": "Kid",
+      "Option B": "Trooper",
+      "Option C": "Hero",
+      "Option D": "Big Deal",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_309",
+      "Question Text": "In Star Wars: The Force Awakens, What Planet Houses The Resistance Base?",
+      "Option A": "Takodana",
+      "Option B": "Jakku",
+      "Option C": "D'Qar",
+      "Option D": "Hosnian Prime",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_310",
+      "Question Text": "In Star Wars: The Force Awakens, What Was Finn's Stormtrooper Designation?",
+      "Option A": "FN-1234",
+      "Option B": "FN-5555",
+      "Option C": "FN-1187",
+      "Option D": "FN-2187",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_311",
+      "Question Text": "In Star Wars: The Force Awakens, What Are The Stormtroopers Searching For At The Start?",
+      "Option A": "BB-8",
+      "Option B": "Luke Skywalker",
+      "Option C": "The Resistance",
+      "Option D": "Map To Luke Skywalker",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_312",
+      "Question Text": "In Star Wars: The Force Awakens, What Is The Name Of The Junk Dealer On Jakku?",
+      "Option A": "Watto",
+      "Option B": "Dex",
+      "Option C": "Unkar Plutt",
+      "Option D": "Sebulba",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_313",
+      "Question Text": "In Star Wars: The Force Awakens, What Creatures Is Han Solo Transporting?",
+      "Option A": "Rathtars",
+      "Option B": "Rancors",
+      "Option C": "Wampas",
+      "Option D": "Nexu",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_314",
+      "Question Text": "In Star Wars: The Force Awakens, What Is The Name Of The First Order's Base?",
+      "Option A": "Death Star III",
+      "Option B": "Star Killer",
+      "Option C": "Starkiller Base",
+      "Option D": "First Order Base",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_315",
+      "Question Text": "In Star Wars: The Force Awakens, Who Gives Finn Luke's Old Lightsaber?",
+      "Option A": "Rey",
+      "Option B": "Han Solo",
+      "Option C": "Maz Kanata",
+      "Option D": "Leia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_316",
+      "Question Text": "In Star Wars: The Force Awakens, On Which Desert Planet Does The Film Open?",
+      "Option A": "Tatooine",
+      "Option B": "Jakku",
+      "Option C": "Pasaana",
+      "Option D": "Geonosis",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_317",
+      "Question Text": "In Star Wars: The Force Awakens, What Organization Replaced The Empire?",
+      "Option A": "The New Order",
+      "Option B": "The First Order",
+      "Option C": "The Final Order",
+      "Option D": "The Imperial Order",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_318",
+      "Question Text": "In Star Wars: The Force Awakens, What Group Opposes The First Order?",
+      "Option A": "The Republic",
+      "Option B": "The Resistance",
+      "Option C": "The Rebels",
+      "Option D": "The Alliance",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_319",
+      "Question Text": "In Star Wars: The Force Awakens, What Was Kylo Ren's Birth Name?",
+      "Option A": "Luke",
+      "Option B": "Adam",
+      "Option C": "Ben",
+      "Option D": "Han",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_320",
+      "Question Text": "In Star Wars: The Force Awakens, How Many Portions Does Unkar Offer For BB-8?",
+      "Option A": "Forty",
+      "Option B": "Fifty",
+      "Option C": "Fifty-Five",
+      "Option D": "Sixty",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_321",
+      "Question Text": "In Star Wars: The Force Awakens, What Will Happen If Luke Returns, According To Snoke?",
+      "Option A": "New Jedi Will Rise",
+      "Option B": "The Order Will Fall",
+      "Option C": "Balance Returns",
+      "Option D": "Hope Returns",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_322",
+      "Question Text": "In Star Wars: The Force Awakens, How Many Years After Return Of The Jedi Is This Set?",
+      "Option A": "Twenty",
+      "Option B": "Thirty",
+      "Option C": "Forty",
+      "Option D": "Fifty",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_323",
+      "Question Text": "In Star Wars: The Force Awakens, To Whom Does Poe Give The Map?",
+      "Option A": "Rey",
+      "Option B": "BB-8",
+      "Option C": "R2-D2",
+      "Option D": "Finn",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_324",
+      "Question Text": "In Star Wars: The Force Awakens, What Vehicle Does Rey Call Home?",
+      "Option A": "X-Wing",
+      "Option B": "TIE Fighter",
+      "Option C": "Speeder",
+      "Option D": "AT-AT",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_325",
+      "Question Text": "In Star Wars: The Force Awakens, What Item Of Poe's Does Finn Take?",
+      "Option A": "His Blaster",
+      "Option B": "His X-Wing",
+      "Option C": "His Jacket",
+      "Option D": "His Droid",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_326",
+      "Question Text": "In Star Wars: The Force Awakens, Who Is Kylo Ren's Master?",
+      "Option A": "Snoke",
+      "Option B": "Palpatine",
+      "Option C": "Vader",
+      "Option D": "Luke",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_327",
+      "Question Text": "In Star Wars: The Force Awakens, How Long Has Maz Run Her Cantina?",
+      "Option A": "500 Years",
+      "Option B": "1000 Years",
+      "Option C": "1500 Years",
+      "Option D": "2000 Years",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_328",
+      "Question Text": "In Star Wars: The Force Awakens, Which Planet Does Starkiller Base Destroy?",
+      "Option A": "Hosnian Prime",
+      "Option B": "Coruscant",
+      "Option C": "Naboo",
+      "Option D": "D'Qar",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_329",
+      "Question Text": "In Star Wars: The Force Awakens, Who Does Kylo Ren Capture On Takodana?",
+      "Option A": "Rey",
+      "Option B": "Finn",
+      "Option C": "Poe",
+      "Option D": "BB-8",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_330",
+      "Question Text": "In Star Wars: The Force Awakens, What Must Be Destroyed On Starkiller Base?",
+      "Option A": "Shield Generator",
+      "Option B": "Power Core",
+      "Option C": "Thermal Oscillator",
+      "Option D": "Main Reactor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_331",
+      "Question Text": "In Star Wars: The Force Awakens, What Was Finn's Job On Starkiller Base?",
+      "Option A": "Security",
+      "Option B": "Sanitation",
+      "Option C": "Maintenance",
+      "Option D": "Guard",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_332",
+      "Question Text": "In Star Wars: The Force Awakens, Who Lowers The Shields On Starkiller Base?",
+      "Option A": "Finn",
+      "Option B": "Han Solo",
+      "Option C": "General Hux",
+      "Option D": "Captain Phasma",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_333",
+      "Question Text": "In Star Wars: The Last Jedi, What Are The Crystal Foxes Called?",
+      "Option A": "Crystaline",
+      "Option B": "Ice Wolves",
+      "Option C": "Crystal Canines",
+      "Option D": "Vulptex",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_334",
+      "Question Text": "In Star Wars: The Last Jedi, What Color Is Luke's Lightsaber During His Fight With Kylo Ren?",
+      "Option A": "Green",
+      "Option B": "Red",
+      "Option C": "Blue",
+      "Option D": "Purple",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_335",
+      "Question Text": "In Star Wars: The Last Jedi, What First Order Ship Does Paige Tico Help Destroy?",
+      "Option A": "Star Destroyer",
+      "Option B": "Finalizer",
+      "Option C": "Dreadnought",
+      "Option D": "Supremacy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_336",
+      "Question Text": "In Star Wars: The Last Jedi, What Was Rose's Job In The Resistance?",
+      "Option A": "Maintenance Worker",
+      "Option B": "Pilot",
+      "Option C": "Engineer",
+      "Option D": "Mechanic",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_337",
+      "Question Text": "In Star Wars: The Last Jedi, Which Character Pilots The TIE Silencer?",
+      "Option A": "General Hux",
+      "Option B": "Captain Phasma",
+      "Option C": "Kylo Ren",
+      "Option D": "Supreme Leader Snoke",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_338",
+      "Question Text": "In Star Wars: The Last Jedi, What Is Kylo Ren's TIE Fighter Called?",
+      "Option A": "TIE Advanced",
+      "Option B": "TIE Interceptor",
+      "Option C": "TIE Special",
+      "Option D": "TIE Silencer",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_339",
+      "Question Text": "In Star Wars: The Last Jedi, What Is A Baby Porg Called?",
+      "Option A": "Porgling",
+      "Option B": "Porgito",
+      "Option C": "Porglet",
+      "Option D": "Porgchick",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_340",
+      "Question Text": "In Star Wars: The Last Jedi, What Is The Name Of The Casino City?",
+      "Option A": "Monte Carlo",
+      "Option B": "Canto Bight",
+      "Option C": "Cloud City",
+      "Option D": "Casino Royale",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_341",
+      "Question Text": "In Star Wars: The Last Jedi, What Is Rose's Role In The Resistance?",
+      "Option A": "Maintenance Worker",
+      "Option B": "Pilot",
+      "Option C": "Engineer",
+      "Option D": "Mechanic",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_342",
+      "Question Text": "In Star Wars: The Last Jedi, Which Planet Has Crimson-Colored Soil?",
+      "Option A": "Jakku",
+      "Option B": "Crait",
+      "Option C": "Hoth",
+      "Option D": "D'Qar",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_343",
+      "Question Text": "In Star Wars: The Last Jedi, What Are The New Armored Transports Called?",
+      "Option A": "AT-M6",
+      "Option B": "AT-AT",
+      "Option C": "AT-ST",
+      "Option D": "AT-TE",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_344",
+      "Question Text": "In Star Wars: The Last Jedi, Who Says 'I Need Someone To Show Me My Place In All This'?",
+      "Option A": "Kylo Ren",
+      "Option B": "Rey",
+      "Option C": "Finn",
+      "Option D": "Rose",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_345",
+      "Question Text": "In Star Wars: The Last Jedi, Which Planet Is The Resistance Evacuating From?",
+      "Option A": "Crait",
+      "Option B": "Takodana",
+      "Option C": "D'Qar",
+      "Option D": "Jakku",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_346",
+      "Question Text": "In Star Wars: The Last Jedi, Who Replaces Leia As Fleet Commander?",
+      "Option A": "Admiral Ackbar",
+      "Option B": "Vice Admiral Holdo",
+      "Option C": "General Organa",
+      "Option D": "Commander D'Acy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_347",
+      "Question Text": "In Star Wars: The Last Jedi, What Creatures Race At Canto Bight?",
+      "Option A": "Dewbacks",
+      "Option B": "Fathiers",
+      "Option C": "Tauntauns",
+      "Option D": "Varactyls",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_348",
+      "Question Text": "In Star Wars: The Last Jedi, What Does Luke Say Is The Jedi Legacy?",
+      "Option A": "Hope",
+      "Option B": "Success",
+      "Option C": "Failure",
+      "Option D": "Pride",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_349",
+      "Question Text": "In Star Wars: The Last Jedi, Why Are Rose And Finn Arrested?",
+      "Option A": "Parking Violation",
+      "Option B": "Theft",
+      "Option C": "Fighting",
+      "Option D": "Trespassing",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_350",
+      "Question Text": "In Star Wars: The Last Jedi, What Does BB-8 Use As Ammunition?",
+      "Option A": "Bolts",
+      "Option B": "Credits",
+      "Option C": "Casino Tokens",
+      "Option D": "Coins",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_351",
+      "Question Text": "In Star Wars: The Last Jedi, Who Burns The Jedi Library?",
+      "Option A": "Rey",
+      "Option B": "Yoda",
+      "Option C": "Luke",
+      "Option D": "Kylo Ren",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_352",
+      "Question Text": "In Star Wars: The Last Jedi, Who Pilots The Raddus On The Suicide Mission?",
+      "Option A": "Holdo",
+      "Option B": "Leia",
+      "Option C": "Poe",
+      "Option D": "Rose",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_353",
+      "Question Text": "In Star Wars: The Last Jedi, What Creatures Guide The Resistance To Safety?",
+      "Option A": "Porgs",
+      "Option B": "Caretakers",
+      "Option C": "Vulptices",
+      "Option D": "Fathiers",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_354",
+      "Question Text": "In Star Wars: The Last Jedi, What Does Finn Find On The Millennium Falcon?",
+      "Option A": "Lightsaber",
+      "Option B": "Weapons",
+      "Option C": "Sacred Texts",
+      "Option D": "Map",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_355",
+      "Question Text": "In Star Wars: The Last Jedi, What First Order Ship Does Paige Tico Help Destroy?",
+      "Option A": "Star Destroyer",
+      "Option B": "Finalizer",
+      "Option C": "Dreadnought",
+      "Option D": "Supremacy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_356",
+      "Question Text": "In Star Wars: The Last Jedi, What Race Maintains The Jedi Structures On Ahch-To?",
+      "Option A": "Caretakers",
+      "Option B": "Porgs",
+      "Option C": "Lanai",
+      "Option D": "Natives",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_357",
+      "Question Text": "In Star Wars: The Last Jedi, What Color Is Snoke's Robe?",
+      "Option A": "Red",
+      "Option B": "Black",
+      "Option C": "Silver",
+      "Option D": "Gold",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_358",
+      "Question Text": "In Star Wars: The Last Jedi, What Is The Name Of The New BB Unit?",
+      "Option A": "BB-H8",
+      "Option B": "BB-7",
+      "Option C": "BB-9E",
+      "Option D": "BB-10",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_359",
+      "Question Text": "In The Mandalorian, What Is The Name Of The Tiny Missiles Made Of Beskar Steel That Is Forged With The Bounty From The Client?",
+      "Option A": "Whistling Birds",
+      "Option B": "Singing Arrows",
+      "Option C": "Humming Darts",
+      "Option D": "Buzzing Bolts",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_360",
+      "Question Text": "In The Mandalorian, What Does The Mandalorian Retrieve After Their Speeder Bikes Are Destroyed By Fennec Shand?",
+      "Option A": "Speeder",
+      "Option B": "Swoop Bike",
+      "Option C": "Dewback",
+      "Option D": "Sand Crawler",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_361",
+      "Question Text": "In The Mandalorian, What Type Of Imperial Trooper Was Cara Dune?",
+      "Option A": "Death Trooper",
+      "Option B": "Shock Trooper",
+      "Option C": "Scout Trooper",
+      "Option D": "Storm Trooper",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_362",
+      "Question Text": "In The Mandalorian, How Many X-Wings Attack Ran's Ship?",
+      "Option A": "3 X-Wings",
+      "Option B": "4 X-Wings",
+      "Option C": "2 X-Wings",
+      "Option D": "5 X-Wings",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_363",
+      "Question Text": "In The Mandalorian, What Is The Age Of The Child (Grogu)?",
+      "Option A": "50 Years Old",
+      "Option B": "40 Years Old",
+      "Option C": "60 Years Old",
+      "Option D": "70 Years Old",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_364",
+      "Question Text": "In The Mandalorian, Which Planet Does Din Djarin Visit To Repair His Ship After The Bounty Hunter Dogfight?",
+      "Option A": "Nevarro",
+      "Option B": "Sorgan",
+      "Option C": "Arvala-7",
+      "Option D": "Tatooine",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_365",
+      "Question Text": "In The Mandalorian, What Is Cara Dune's Home Planet?",
+      "Option A": "Naboo",
+      "Option B": "Alderaan",
+      "Option C": "Coruscant",
+      "Option D": "Mandalore",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_366",
+      "Question Text": "In The Mandalorian, On Which Planet Is The Child First Found?",
+      "Option A": "Arvala-7",
+      "Option B": "Nevarro",
+      "Option C": "Sorgan",
+      "Option D": "Tatooine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_367",
+      "Question Text": "In The Mandalorian, On Which Planet Is The Client's Base Located?",
+      "Option A": "Navarro",
+      "Option B": "Tatooine",
+      "Option C": "Arvala-7",
+      "Option D": "Sorgan",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_368",
+      "Question Text": "In The Mandalorian, What Item Was Created From The Initial Beskar Steel Down Payment?",
+      "Option A": "Helmet",
+      "Option B": "Chest Plate",
+      "Option C": "Pauldron",
+      "Option D": "Vambrace",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_369",
+      "Question Text": "In The Mandalorian, Who Are The Four Members That Join The Prison Break Mission?",
+      "Option A": "Xi'an Burg Ran Zero",
+      "Option B": "Mayfield Burg Q9-0 and Xi'An",
+      "Option C": "Zero Xi'an Mayfeld Ran",
+      "Option D": "Burg Zero Mayfeld Xi'an",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_370",
+      "Question Text": "In The Mandalorian, What Do The Jawas Request In Exchange For The Stolen Ship Parts?",
+      "Option A": "The Child",
+      "Option B": "Mudhorn Egg",
+      "Option C": "Beskar Steel",
+      "Option D": "Credits",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_371",
+      "Question Text": "In The Mandalorian, What Weapon Does Moff Gideon Use To Escape His Crashed TIE Fighter?",
+      "Option A": "Lightsaber",
+      "Option B": "Vibroblade",
+      "Option C": "Dark Saber",
+      "Option D": "Force Pike",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_372",
+      "Question Text": "In The Mandalorian, What Is Din Djarin's Birth Name?",
+      "Option A": "Mando",
+      "Option B": "The Mandalorian",
+      "Option C": "Dyn Jarren",
+      "Option D": "Din Djarin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_373",
+      "Question Text": "In The Mandalorian, What Is The Designation Of The Bounty Hunter Droid?",
+      "Option A": "IG-88",
+      "Option B": "IG-11",
+      "Option C": "IG-86",
+      "Option D": "IG-12",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_374",
+      "Question Text": "In The Mandalorian, What Is The Name Of The Forest Planet Where Din Hides With The Child?",
+      "Option A": "Endor",
+      "Option B": "Kashyyyk",
+      "Option C": "Sorgan",
+      "Option D": "Takodana",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_375",
+      "Question Text": "In The Mandalorian, What Heavy Weapon Do Moff Gideon's Forces Deploy Outside The Cantina?",
+      "Option A": "AT-ST",
+      "Option B": "Turbolaser",
+      "Option C": "Heavy Repeater",
+      "Option D": "E-Web",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_376",
+      "Question Text": "In The Mandalorian, What Type Of Imperial Walker Threatens The Village?",
+      "Option A": "AT-AT",
+      "Option B": "AT-ST",
+      "Option C": "AT-TE",
+      "Option D": "AT-RT",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_377",
+      "Question Text": "In The Mandalorian, What Is The Name Of Din Djarin's Ship?",
+      "Option A": "Slave I",
+      "Option B": "Ghost",
+      "Option C": "Millennium Falcon",
+      "Option D": "Razor Crest",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_378",
+      "Question Text": "In The Mandalorian, What Species Are The Raiders That Attack The Village In Chapter 4?",
+      "Option A": "Weequay",
+      "Option B": "Klatooinian",
+      "Option C": "Nikto",
+      "Option D": "Rodian",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_379",
+      "Question Text": "In The Mandalorian, How Many Beskar Bars Was The Initial Down Payment For The Child?",
+      "Option A": "2 Beskar Bars",
+      "Option B": "1 Beskar Bar",
+      "Option C": "3 Beskar Bars",
+      "Option D": "4 Beskar Bars",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_380",
+      "Question Text": "In The Mandalorian, What Creatures Attack The Group When They Return To Navarro?",
+      "Option A": "Nexu",
+      "Option B": "Mynocks",
+      "Option C": "Womp Rats",
+      "Option D": "Krayt Dragons",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_381",
+      "Question Text": "In The Mandalorian, What Was The Total Bounty Offered For The Child?",
+      "Option A": "20 Beskar Bars",
+      "Option B": "30 Beskar Bars",
+      "Option C": "15 Beskar Bars",
+      "Option D": "25 Beskar Bars",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_382",
+      "Question Text": "In The Mandalorian, What Creatures Does Kuiil Use For Transportation?",
+      "Option A": "Blurrgs",
+      "Option B": "Dewbacks",
+      "Option C": "Banthas",
+      "Option D": "Tauntauns",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_383",
+      "Question Text": "In The Mandalorian, What Medical Treatment Does IG-11 Apply To Din's Head Injury?",
+      "Option A": "Kolto",
+      "Option B": "Bacta",
+      "Option C": "Stim Pack",
+      "Option D": "Med Pack",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_384",
+      "Question Text": "In The Mandalorian, Who Is Toro Calican's Bounty Target?",
+      "Option A": "Cara Dune",
+      "Option B": "Kuiil",
+      "Option C": "Fennec Shand",
+      "Option D": "The Client",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_385",
+      "Question Text": "In The Mandalorian, What Two Items Does The Armorer Give Din In Chapter 8?",
+      "Option A": "Jetpack & Personal Signet",
+      "Option B": "Beskar Spear & Whistling Birds",
+      "Option C": "Flamethrower & Grappling Line",
+      "Option D": "Vambrace & Pauldron",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_386",
+      "Question Text": "In The Mandalorian, Where Does Din First Meet Toro Calican?",
+      "Option A": "Mos Eisley Cantina",
+      "Option B": "Nevarro Cantina",
+      "Option C": "Mos Pelgo Cantina",
+      "Option D": "Chalmun's Cantina",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_387",
+      "Question Text": "In The Mandalorian, Which Creature Does The Child First Use The Force Against?",
+      "Option A": "Blurrg",
+      "Option B": "Scout Trooper",
+      "Option C": "Dewback",
+      "Option D": "Mudhorn",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_388",
+      "Question Text": "In The Mandalorian, Whose Laboratory Houses The Child When Din First Finds Him?",
+      "Option A": "Dr Mandible",
+      "Option B": "Dr Ragon",
+      "Option C": "Dr Evazan",
+      "Option D": "Dr Pershing",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_389",
+      "Question Text": "In Star Wars: The Phantom Menace, How Old Is Padmé When Elected Queen Of Naboo?",
+      "Option A": 12,
+      "Option B": 14,
+      "Option C": 16,
+      "Option D": 18,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_390",
+      "Question Text": "In Star Wars: The Phantom Menace, What Does Yoda Sense In Anakin That Concerns Him?",
+      "Option A": "Anger",
+      "Option B": "Hate",
+      "Option C": "Fear",
+      "Option D": "Darkness",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_391",
+      "Question Text": "In Star Wars: The Phantom Menace, What Is The Maximum Speed Of A Podracer?",
+      "Option A": "600 kilometers per hour",
+      "Option B": "700 kilometers per hour",
+      "Option C": "800 kilometers per hour",
+      "Option D": "900 kilometers per hour",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_392",
+      "Question Text": "In Star Wars: The Phantom Menace, What Was Anakin's Midi-chlorian Count?",
+      "Option A": "Over 15000",
+      "Option B": "Over 17000",
+      "Option C": "Over 19000",
+      "Option D": "Over 20000",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_393",
+      "Question Text": "In Star Wars: The Phantom Menace, Who Nearly Gets Injured When Anakin First Tests His Pod Racer?",
+      "Option A": "Shmi",
+      "Option B": "Padmé",
+      "Option C": "Jar Jar Binks",
+      "Option D": "Qui-Gon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_394",
+      "Question Text": "In Star Wars: The Phantom Menace, Where Do Anakin And Queen Amidala First Meet?",
+      "Option A": "Watto's Junk Shop",
+      "Option B": "Mos Espa Market",
+      "Option C": "Podrace Arena",
+      "Option D": "Slave Quarters",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_395",
+      "Question Text": "In Star Wars: The Phantom Menace, What Species Is Watto?",
+      "Option A": "Rodian",
+      "Option B": "Hutt",
+      "Option C": "Toydarian",
+      "Option D": "Neimoidian",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_396",
+      "Question Text": "In Star Wars: The Phantom Menace, Who Is Obi-Wan Kenobi's Mentor?",
+      "Option A": "Mace Windu",
+      "Option B": "Yoda",
+      "Option C": "Count Dooku",
+      "Option D": "Qui-Gon Jinn",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_397",
+      "Question Text": "In Star Wars: The Phantom Menace, What Species Is Jar Jar Binks?",
+      "Option A": "Neimoidian",
+      "Option B": "Rodian",
+      "Option C": "Twi'lek",
+      "Option D": "Gungan",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_398",
+      "Question Text": "In Star Wars: The Phantom Menace, What First Signals Danger To The Jedi On The Trade Federation Ship?",
+      "Option A": "Their Ship Is Destroyed",
+      "Option B": "Poison Gas",
+      "Option C": "Battle Droids",
+      "Option D": "Force Warning",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_399",
+      "Question Text": "In Star Wars: The Phantom Menace, Why Does Mace Windu Reject Anakin's Training?",
+      "Option A": "Too Young",
+      "Option B": "He Is Too Old",
+      "Option C": "Too Dangerous",
+      "Option D": "Too Emotional",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_400",
+      "Question Text": "In Star Wars: The Phantom Menace, Who Is Honored With A Ball At The Medal Ceremony?",
+      "Option A": "Boss Nass",
+      "Option B": "Queen Amidala",
+      "Option C": "Jar Jar Binks",
+      "Option D": "Captain Panaka",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_401",
+      "Question Text": "In Star Wars: The Phantom Menace, Who Does Anakin Defeat In The Pod Race?",
+      "Option A": "Mawhonic",
+      "Option B": "Ben Quadinaros",
+      "Option C": "Mars Guo",
+      "Option D": "Sebulba",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_402",
+      "Question Text": "In Star Wars: The Phantom Menace, How Does Jabba Start The Pod Race?",
+      "Option A": "Waves Flag",
+      "Option B": "Fires Gun",
+      "Option C": "Drops Weight",
+      "Option D": "Spits Food Into Bell",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_403",
+      "Question Text": "In Star Wars: The Phantom Menace, Which Council Member Is The Same Species As Yoda?",
+      "Option A": "Saesee Tiin",
+      "Option B": "Yaddle",
+      "Option C": "Plo Koon",
+      "Option D": "Ki-Adi-Mundi",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_404",
+      "Question Text": "In Star Wars: The Phantom Menace, What Is The Trade Federation Protocol Droid's Number?",
+      "Option A": "TC-13",
+      "Option B": "TC-14",
+      "Option C": "TC-15",
+      "Option D": "TC-16",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_405",
+      "Question Text": "In Star Wars: The Phantom Menace, What Tiny Life Forms Communicate With The Force?",
+      "Option A": "Bacteria",
+      "Option B": "Cells",
+      "Option C": "Midi-chlorians",
+      "Option D": "Microbes",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_406",
+      "Question Text": "In Star Wars: The Phantom Menace, What Did Yoda Teach Obi-Wan To Be?",
+      "Option A": "Mindful Of The Future",
+      "Option B": "Patient",
+      "Option C": "Wise",
+      "Option D": "Strong",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_407",
+      "Question Text": "In Star Wars: The Phantom Menace, How Does Nute Gunray Describe Their Blockade?",
+      "Option A": "Legal Action",
+      "Option B": "Trade Dispute",
+      "Option C": "Necessary Evil",
+      "Option D": "Perfectly Legal",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_408",
+      "Question Text": "In Star Wars: The Phantom Menace, Which Gungan City Is Jar Jar From?",
+      "Option A": "Otoh Gunga",
+      "Option B": "Gunga City",
+      "Option C": "Naboo Deep",
+      "Option D": "Gungan Deep",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_409",
+      "Question Text": "In Star Wars: The Phantom Menace, Which Planet Is Under Trade Federation Blockade?",
+      "Option A": "Coruscant",
+      "Option B": "Tatooine",
+      "Option C": "Alderaan",
+      "Option D": "Naboo",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_410",
+      "Question Text": "In Star Wars: The Phantom Menace, On Which Planet's Moons Do Angels Live?",
+      "Option A": "Naboo",
+      "Option B": "Tatooine",
+      "Option C": "Coruscant",
+      "Option D": "Iego",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_411",
+      "Question Text": "In Star Wars: The Phantom Menace, What Advice Does Shmi Give Anakin?",
+      "Option A": "Stay Safe",
+      "Option B": "Be Strong",
+      "Option C": "Be Brave And Don't Look Back",
+      "Option D": "Trust The Force",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_412",
+      "Question Text": "In Star Wars: The Phantom Menace, What Squadron Fights In The Battle Of Naboo?",
+      "Option A": "Alpha Squadron",
+      "Option B": "Delta Squadron",
+      "Option C": "Bravo Squadron",
+      "Option D": "Echo Squadron",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "STARWARS_413",
+      "Question Text": "In Star Wars: The Phantom Menace, What Is Qui-Gon's Final Wish?",
+      "Option A": "That Anakin Be Trained",
+      "Option B": "Peace For Naboo",
+      "Option C": "Defeat The Sith",
+      "Option D": "Save Obi-Wan",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    }
+  ]
+}

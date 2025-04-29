@@ -1,0 +1,1804 @@
+{
+  "Sheet1": [
+    {
+      "Question ID": "GEOGRAPHY_1",
+      "Question Text": "Which southeastern province in China is famous for its vibrant culture and delicious dim sum?",
+      "Option A": "Guangdong",
+      "Option B": "Sichuan",
+      "Option C": "Hunan",
+      "Option D": "Yunnan",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_2",
+      "Question Text": "Ben Nevis stands tall as the highest mountain in which country?",
+      "Option A": "Wales",
+      "Option B": "England",
+      "Option C": "Scotland",
+      "Option D": "Northern Ireland",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_3",
+      "Question Text": "The icy Davis Strait plays border tag between Greenland and which northern neighbor?",
+      "Option A": "United States",
+      "Option B": "Denmark",
+      "Option C": "Iceland",
+      "Option D": "Canada",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_4",
+      "Question Text": "Which majestic body of water does Oregon proudly wave goodbye to?",
+      "Option A": "Atlantic Ocean",
+      "Option B": "Pacific Ocean",
+      "Option C": "Gulf of Mexico",
+      "Option D": "Caribbean Sea",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_5",
+      "Question Text": "Nestled between Nepal, the Himalayas cast their impressive shadow on which country?",
+      "Option A": "Pakistan",
+      "Option B": "India",
+      "Option C": "Bangladesh",
+      "Option D": "Bhutan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_6",
+      "Question Text": "Hawaii basks in the endless embrace of which vast body of water?",
+      "Option A": "Indian Ocean",
+      "Option B": "Atlantic Ocean",
+      "Option C": "Pacific Ocean",
+      "Option D": "Arctic Ocean",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_7",
+      "Question Text": "What's the soft, white rock that kids love to chalk up their sidewalks?",
+      "Option A": "Limestone",
+      "Option B": "Chalk",
+      "Option C": "Marble",
+      "Option D": "Gypsum",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_8",
+      "Question Text": "Which sea takes the crown for being the world's saltiest?",
+      "Option A": "Red Sea",
+      "Option B": "Mediterranean Sea",
+      "Option C": "Dead Sea",
+      "Option D": "Caspian Sea",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_9",
+      "Question Text": "What fluffy formations are born when water vapor throws a party in the sky?",
+      "Option A": "Mist",
+      "Option B": "Fog",
+      "Option C": "Vapor",
+      "Option D": "Clouds",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_10",
+      "Question Text": "Which expansive desert in northern China proves sandy landscapes can be cool?",
+      "Option A": "Taklamakan",
+      "Option B": "Gobi",
+      "Option C": "Badain Jaran",
+      "Option D": "Kumtag",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_11",
+      "Question Text": "Which coastal stretch near West Africa shares its name with a classic Beatles song?",
+      "Option A": "Africa",
+      "Option B": "Sahara",
+      "Option C": "Sahel",
+      "Option D": "Guinea",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_12",
+      "Question Text": "Patna, Srinagar, and Meerut are like the Bollywood stars of which vibrant country?",
+      "Option A": "Pakistan",
+      "Option B": "Bangladesh",
+      "Option C": "Nepal",
+      "Option D": "India",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_13",
+      "Question Text": "Which country's most spoken language shares its name with a fierce warrior tribe?",
+      "Option A": "Zimbabwe",
+      "Option B": "Kenya",
+      "Option C": "South Africa",
+      "Option D": "Namibia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_14",
+      "Question Text": "Abyssinia is the old name for which real African nation?",
+      "Option A": "Sudan",
+      "Option B": "Somalia",
+      "Option C": "Ethiopia",
+      "Option D": "Eritrea",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_15",
+      "Question Text": "Tripoli is the bustling capital of which North African country?",
+      "Option A": "Tunisia",
+      "Option B": "Algeria",
+      "Option C": "Egypt",
+      "Option D": "Libya",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_16",
+      "Question Text": "Which peninsula splits into north and south, each rocking its own version of the won?",
+      "Option A": "Vietnam",
+      "Option B": "China",
+      "Option C": "Korea",
+      "Option D": "Japan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_17",
+      "Question Text": "Which country is the vino lover's paradise, home to the Chianti vineyards?",
+      "Option A": "France",
+      "Option B": "Spain",
+      "Option C": "Portugal",
+      "Option D": "Italy",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_18",
+      "Question Text": "Which chilly nation sips the most electricity per person?",
+      "Option A": "Norway",
+      "Option B": "Sweden",
+      "Option C": "Finland",
+      "Option D": "Iceland",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_19",
+      "Question Text": "What was the name of the southern region that became its own country in 2011?",
+      "Option A": "North Sudan",
+      "Option B": "South Sudan",
+      "Option C": "Western Sudan",
+      "Option D": "Eastern Sudan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_20",
+      "Question Text": "CARIFTA brings Caribbean countries together in which region?",
+      "Option A": "Central America",
+      "Option B": "North America",
+      "Option C": "Caribbean",
+      "Option D": "South America",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_21",
+      "Question Text": "What West Virginia capital shares its name with a popular dance move?",
+      "Option A": "Columbia",
+      "Option B": "Charleston",
+      "Option C": "Wheeling",
+      "Option D": "Huntington",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_22",
+      "Question Text": "In which US state can you witness the jaw-dropping views of the Grand Canyon?",
+      "Option A": "Utah",
+      "Option B": "Nevada",
+      "Option C": "Arizona",
+      "Option D": "New Mexico",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_23",
+      "Question Text": "On which grand continent does India call home?",
+      "Option A": "Europe",
+      "Option B": "Africa",
+      "Option C": "Australia",
+      "Option D": "Asia",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_24",
+      "Question Text": "Penascola and Sarasota are sun-soaked cities in which sunny US state?",
+      "Option A": "Alabama",
+      "Option B": "Georgia",
+      "Option C": "Florida",
+      "Option D": "Louisiana",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_25",
+      "Question Text": "Chihuahua, Coahuila, and Nuevo León border which US state?",
+      "Option A": "New Mexico",
+      "Option B": "Arizona",
+      "Option C": "California",
+      "Option D": "Texas",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_26",
+      "Question Text": "What's the capital city of Brazil that sounds like a sci-fi movie?",
+      "Option A": "São Paulo",
+      "Option B": "Rio de Janeiro",
+      "Option C": "Brasília",
+      "Option D": "Belo Horizonte",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_27",
+      "Question Text": "Bhutan nestles in which majestic mountain range?",
+      "Option A": "Andes",
+      "Option B": "Rockies",
+      "Option C": "Alps",
+      "Option D": "Himalayas",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_28",
+      "Question Text": "Nunavut, Alberta, and Manitoba are provinces in which vast country?",
+      "Option A": "United States",
+      "Option B": "Russia",
+      "Option C": "Canada",
+      "Option D": "Australia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_29",
+      "Question Text": "Santa Fe is the capital of which artistic and desert-filled US state?",
+      "Option A": "Arizona",
+      "Option B": "Utah",
+      "Option C": "New Mexico",
+      "Option D": "Colorado",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_30",
+      "Question Text": "Alice Springs, Wollongong, and Fremantle are cities in which sunburnt country?",
+      "Option A": "New Zealand",
+      "Option B": "South Africa",
+      "Option C": "Australia",
+      "Option D": "Brazil",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_31",
+      "Question Text": "Which icy expanse is so frosty that even the sun takes a chill pill?",
+      "Option A": "Arctic",
+      "Option B": "Glacier",
+      "Option C": "Tundra",
+      "Option D": "Permafrost",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_32",
+      "Question Text": "In geography, what's the fancy term for how high you are?",
+      "Option A": "Height",
+      "Option B": "Elevation",
+      "Option C": "Altitude",
+      "Option D": "Apex",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_33",
+      "Question Text": "What's the term for land that's like a public park?",
+      "Option A": "Shared",
+      "Option B": "Common",
+      "Option C": "Public",
+      "Option D": "Open",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_34",
+      "Question Text": "In German and French, what word describes a majestic structure?",
+      "Option A": "Burg",
+      "Option B": "Palace",
+      "Option C": "Tower",
+      "Option D": "Castle",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_35",
+      "Question Text": "What do we call Earth's version of a slow-motion sandblasting?",
+      "Option A": "Weathering",
+      "Option B": "Erosion",
+      "Option C": "Abrasion",
+      "Option D": "Corrosion",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_36",
+      "Question Text": "What's the snazzy name for a coastal wetland that likes seawater?",
+      "Option A": "Marsh",
+      "Option B": "Swamp",
+      "Option C": "Salt Marsh",
+      "Option D": "Estuary",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_37",
+      "Question Text": "Which tiny ocean critter is the Picasso of the sea?",
+      "Option A": "Starfish",
+      "Option B": "Jellyfish",
+      "Option C": "Coral",
+      "Option D": "Sea Urchin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_38",
+      "Question Text": "What word describes land so dry that even plants give up?",
+      "Option A": "Barren",
+      "Option B": "Desert",
+      "Option C": "Arid",
+      "Option D": "Sterile",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_39",
+      "Question Text": "What's the official term for going on a tree-chopping spree?",
+      "Option A": "Logging",
+      "Option B": "Clearing",
+      "Option C": "Deforestation",
+      "Option D": "Harvesting",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_40",
+      "Question Text": "What's the superhero nickname for One World Trade Center?",
+      "Option A": "Liberty Tower",
+      "Option B": "Freedom Tower",
+      "Option C": "Hope Tower",
+      "Option D": "Victory Tower",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_41",
+      "Question Text": "Which sunny US state is home to NASA's Kennedy Space Center?",
+      "Option A": "California",
+      "Option B": "Texas",
+      "Option C": "Florida",
+      "Option D": "Alabama",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_42",
+      "Question Text": "Which southern state proudly declares itself the 'Heart of Dixie'?",
+      "Option A": "Georgia",
+      "Option B": "Mississippi",
+      "Option C": "Alabama",
+      "Option D": "Louisiana",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_43",
+      "Question Text": "Ciudad Universitaria and Banco de España station you in which vibrant European city?",
+      "Option A": "Barcelona",
+      "Option B": "Valencia",
+      "Option C": "Madrid",
+      "Option D": "Seville",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_44",
+      "Question Text": "Where is Cathay Pacific headquartered?",
+      "Option A": "Singapore",
+      "Option B": "China",
+      "Option C": "Hong Kong",
+      "Option D": "Taiwan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_45",
+      "Question Text": "Which mighty river splits US geography like an east vs. west rap battle?",
+      "Option A": "Missouri",
+      "Option B": "Colorado",
+      "Option C": "Mississippi",
+      "Option D": "Ohio",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_46",
+      "Question Text": "Kuala Lumpur is the bustling capital of which Asian powerhouse?",
+      "Option A": "Indonesia",
+      "Option B": "Thailand",
+      "Option C": "Philippines",
+      "Option D": "Malaysia",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_47",
+      "Question Text": "Which South American giant boasts the highest population?",
+      "Option A": "Argentina",
+      "Option B": "Colombia",
+      "Option C": "Peru",
+      "Option D": "Brazil",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_48",
+      "Question Text": "Which US city grooves to the legendary beats of Motown Records?",
+      "Option A": "Chicago",
+      "Option B": "Detroit",
+      "Option C": "Cleveland",
+      "Option D": "Cincinnati",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_49",
+      "Question Text": "The Allegheny Plateau is rocking out in New York and which other state?",
+      "Option A": "Ohio",
+      "Option B": "Pennsylvania",
+      "Option C": "West Virginia",
+      "Option D": "Michigan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_50",
+      "Question Text": "Which glamorous US city is home to the famous Hollywood Sign?",
+      "Option A": "San Diego",
+      "Option B": "San Francisco",
+      "Option C": "Los Angeles",
+      "Option D": "Hollywood",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_51",
+      "Question Text": "The Indianapolis race track zooms into which midwestern state?",
+      "Option A": "Ohio",
+      "Option B": "Michigan",
+      "Option C": "Illinois",
+      "Option D": "Indiana",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_52",
+      "Question Text": "The Gulf of St. Lawrence dives into which oceanic playground?",
+      "Option A": "Pacific Ocean",
+      "Option B": "Arctic Ocean",
+      "Option C": "Atlantic Ocean",
+      "Option D": "Indian Ocean",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_53",
+      "Question Text": "Where does the mysterious Bermuda Triangle plot its enigmatic tales?",
+      "Option A": "Caribbean Sea",
+      "Option B": "Pacific Ocean",
+      "Option C": "Atlantic Ocean",
+      "Option D": "Gulf of Mexico",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_54",
+      "Question Text": "Dry Tortugas National Park is sunning itself in which sunny US state?",
+      "Option A": "California",
+      "Option B": "Hawaii",
+      "Option C": "Florida",
+      "Option D": "Texas",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_55",
+      "Question Text": "Memphis and Nashville are jamming out in which musically rich state?",
+      "Option A": "Kentucky",
+      "Option B": "Missouri",
+      "Option C": "Mississippi",
+      "Option D": "Tennessee",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_56",
+      "Question Text": "What's the trendy term for the outer districts of a city?",
+      "Option A": "Outskirts",
+      "Option B": "Periphery",
+      "Option C": "Suburbs",
+      "Option D": "Edges",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_57",
+      "Question Text": "Which of the Great Lakes plays northern neighbor to Ohio?",
+      "Option A": "Michigan",
+      "Option B": "Superior",
+      "Option C": "Erie",
+      "Option D": "Huron",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_58",
+      "Question Text": "The St. Lawrence River connects the Great Lakes to which grand ocean?",
+      "Option A": "Pacific Ocean",
+      "Option B": "Arctic Ocean",
+      "Option C": "Atlantic Ocean",
+      "Option D": "Indian Ocean",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_59",
+      "Question Text": "Which US state is the proud home of both Memphis and Nashville?",
+      "Option A": "Arkansas",
+      "Option B": "Kentucky",
+      "Option C": "Missouri",
+      "Option D": "Tennessee",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_60",
+      "Question Text": "Maasai warriors call which continent home?",
+      "Option A": "South America",
+      "Option B": "Australia",
+      "Option C": "Africa",
+      "Option D": "Asia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_61",
+      "Question Text": "Which city replaced Rio de Janeiro as Brazil's capital?",
+      "Option A": "Sao Paulo",
+      "Option B": "Salvador",
+      "Option C": "Brasilia",
+      "Option D": "Belo Horizonte",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_62",
+      "Question Text": "Edinburgh is the capital of which part of the UK?",
+      "Option A": "Wales",
+      "Option B": "England",
+      "Option C": "Northern Ireland",
+      "Option D": "Scotland",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_63",
+      "Question Text": "Which European city is a bike-loving canal paradise with the Van Gogh Museum?",
+      "Option A": "Rotterdam",
+      "Option B": "The Hague",
+      "Option C": "Amsterdam",
+      "Option D": "Utrecht",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_64",
+      "Question Text": "Where can you ride the metro to art heaven with stops like Louvre-Rivoli?",
+      "Option A": "Lyon",
+      "Option B": "Marseille",
+      "Option C": "Paris",
+      "Option D": "Nice",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_65",
+      "Question Text": "Highland Games bring the heat every summer in which country?",
+      "Option A": "Ireland",
+      "Option B": "England",
+      "Option C": "Wales",
+      "Option D": "Scotland",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_66",
+      "Question Text": "Hebrew is the official language of which modern-day nation?",
+      "Option A": "Palestine",
+      "Option B": "Jordan",
+      "Option C": "Israel",
+      "Option D": "Lebanon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_67",
+      "Question Text": "Which dam on the Colorado River shares its name with a U.S. President?",
+      "Option A": "Hoover",
+      "Option B": "Roosevelt",
+      "Option C": "Kennedy",
+      "Option D": "Johnson",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_68",
+      "Question Text": "What's the classy synonym for a stream?",
+      "Option A": "Creek",
+      "Option B": "Brook",
+      "Option C": "Rivulet",
+      "Option D": "Stream",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_69",
+      "Question Text": "What iconic shape do the Hollywood Walk of Fame plaques sport?",
+      "Option A": "Circle",
+      "Option B": "Square",
+      "Option C": "Star",
+      "Option D": "Diamond",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_70",
+      "Question Text": "What's the fancy term for tiny river particles?",
+      "Option A": "Sand",
+      "Option B": "Silt",
+      "Option C": "Mud",
+      "Option D": "Sediment",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_71",
+      "Question Text": "On which continent do tornadoes throw the wildest spin moves?",
+      "Option A": "South America",
+      "Option B": "North America",
+      "Option C": "Europe",
+      "Option D": "Asia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_72",
+      "Question Text": "Which chilly desert in northern China proves deserts can be cool?",
+      "Option A": "Taklamakan",
+      "Option B": "Gobi",
+      "Option C": "Badain Jaran",
+      "Option D": "Kumtag",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_73",
+      "Question Text": "What four-letter word describes a rugged rocky outcrop?",
+      "Option A": "Rock",
+      "Option B": "Crag",
+      "Option C": "Peak",
+      "Option D": "Bluff",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_74",
+      "Question Text": "What's the geography term for man-made waterways?",
+      "Option A": "Waterway",
+      "Option B": "Channel",
+      "Option C": "River",
+      "Option D": "Canal",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_75",
+      "Question Text": "Which word describes sudden and severe flooding?",
+      "Option A": "Surge",
+      "Option B": "Flood",
+      "Option C": "Flash",
+      "Option D": "Deluge",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_76",
+      "Question Text": "What's the cool alias for NASA's launch headquarters?",
+      "Option A": "Space Center",
+      "Option B": "Kennedy Space Center",
+      "Option C": "Cape Canaveral",
+      "Option D": "Launch Point",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_77",
+      "Question Text": "Which Italian city is home to a legendary relic?",
+      "Option A": "Rome",
+      "Option B": "Milan",
+      "Option C": "Turin",
+      "Option D": "Venice",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_78",
+      "Question Text": "Which city neighbors the iconic Pyramids of Giza?",
+      "Option A": "Alexandria",
+      "Option B": "Luxor",
+      "Option C": "Cairo",
+      "Option D": "Giza",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_79",
+      "Question Text": "In which US state lies Arlington National Cemetery?",
+      "Option A": "Maryland",
+      "Option B": "Washington D.C.",
+      "Option C": "Virginia",
+      "Option D": "Delaware",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_80",
+      "Question Text": "Which stops are on the subway of India's capital city?",
+      "Option A": "Mumbai",
+      "Option B": "Kolkata",
+      "Option C": "Janakpuri West",
+      "Option D": "Chennai",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_81",
+      "Question Text": "Which eternal city boasts Piazza Navona and Villa Borghese?",
+      "Option A": "Florence",
+      "Option B": "Venice",
+      "Option C": "Milan",
+      "Option D": "Rome",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_82",
+      "Question Text": "Piccadilly Circus is the heart of which iconic city?",
+      "Option A": "Manchester",
+      "Option B": "Birmingham",
+      "Option C": "London",
+      "Option D": "Liverpool",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_83",
+      "Question Text": "If you're at the Sorbonne, which romantic city are you in?",
+      "Option A": "Nice",
+      "Option B": "Marseille",
+      "Option C": "Paris",
+      "Option D": "Lyon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_84",
+      "Question Text": "What giant wheel in London offers panoramic views?",
+      "Option A": "London Eye",
+      "Option B": "Observation Wheel",
+      "Option C": "Big Ben",
+      "Option D": "London Bridge",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_85",
+      "Question Text": "Which magical city is home to Disney and Universal theme parks?",
+      "Option A": "Tampa",
+      "Option B": "Miami",
+      "Option C": "Orlando",
+      "Option D": "Daytona",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_86",
+      "Question Text": "Where can you explore the historic Edinburgh Castle?",
+      "Option A": "Ireland",
+      "Option B": "England",
+      "Option C": "Wales",
+      "Option D": "Scotland",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_87",
+      "Question Text": "Which European country goes by 'Slovenská republika'?",
+      "Option A": "Slovenia",
+      "Option B": "Slovakia",
+      "Option C": "Serbia",
+      "Option D": "Croatia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_88",
+      "Question Text": "Which US state has a name ending with 'and Providence Plantations'?",
+      "Option A": "Massachusetts",
+      "Option B": "Rhode Island",
+      "Option C": "Connecticut",
+      "Option D": "Vermont",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_89",
+      "Question Text": "Marrakesh is the jewel of which North African country?",
+      "Option A": "Algeria",
+      "Option B": "Tunisia",
+      "Option C": "Morocco",
+      "Option D": "Libya",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_90",
+      "Question Text": "Where does the mighty Volga River begin its journey?",
+      "Option A": "Ukraine",
+      "Option B": "Belarus",
+      "Option C": "Russia",
+      "Option D": "Kazakhstan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_91",
+      "Question Text": "Fez and Tangier are stars of which North African nation?",
+      "Option A": "Algeria",
+      "Option B": "Tunisia",
+      "Option C": "Morocco",
+      "Option D": "Libya",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_92",
+      "Question Text": "Which Massachusetts town sounds like it's saying 'Hello' in Hebrew?",
+      "Option A": "Boston",
+      "Option B": "Salem",
+      "Option C": "Cambridge",
+      "Option D": "Plymouth",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_93",
+      "Question Text": "What do Brits wave instead of dollars?",
+      "Option A": "Euro",
+      "Option B": "Crown",
+      "Option C": "Pound",
+      "Option D": "Shilling",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_94",
+      "Question Text": "Which US city is the billionaire playground?",
+      "Option A": "San Francisco",
+      "Option B": "Los Angeles",
+      "Option C": "Chicago",
+      "Option D": "New York",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_95",
+      "Question Text": "What's the term for goods and services that cross borders?",
+      "Option A": "Imports",
+      "Option B": "Exports",
+      "Option C": "Trade",
+      "Option D": "Commerce",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_96",
+      "Question Text": "Which giant country stirred controversy with its one-child policy?",
+      "Option A": "India",
+      "Option B": "Japan",
+      "Option C": "China",
+      "Option D": "South Korea",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_97",
+      "Question Text": "What was the dream language created in 1887 to unite the world?",
+      "Option A": "Lingua",
+      "Option B": "Esperanto",
+      "Option C": "Mondial",
+      "Option D": "Universal",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_98",
+      "Question Text": "What's the English name for Germany's enchanted forest?",
+      "Option A": "Dark Forest",
+      "Option B": "Black Forest",
+      "Option C": "Green Forest",
+      "Option D": "Mystic Forest",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_99",
+      "Question Text": "The Commonwealth is a family reunion for countries once part of which empire?",
+      "Option A": "French Empire",
+      "Option B": "Spanish Empire",
+      "Option C": "United Kingdom",
+      "Option D": "Portuguese Empire",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_100",
+      "Question Text": "Harrods is found in which glamorous city?",
+      "Option A": "Manchester",
+      "Option B": "Birmingham",
+      "Option C": "London",
+      "Option D": "Edinburgh",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_101",
+      "Question Text": "Elephant and Castle is an area in which European capital?",
+      "Option A": "Dublin",
+      "Option B": "London",
+      "Option C": "Paris",
+      "Option D": "Berlin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_102",
+      "Question Text": "What adorable nickname do New Zealanders embrace?",
+      "Option A": "Kiwi",
+      "Option B": "Sheep",
+      "Option C": "Penguin",
+      "Option D": "Kea",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_103",
+      "Question Text": "España is the local name for which vibrant country?",
+      "Option A": "Portugal",
+      "Option B": "Brazil",
+      "Option C": "Mexico",
+      "Option D": "Spain",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_104",
+      "Question Text": "Yoruba people groove from which African region?",
+      "Option A": "East Africa",
+      "Option B": "West Africa",
+      "Option C": "Central Africa",
+      "Option D": "South Africa",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_105",
+      "Question Text": "Maasai warriors call which continent home?",
+      "Option A": "South America",
+      "Option B": "Australia",
+      "Option C": "Africa",
+      "Option D": "Asia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_106",
+      "Question Text": "What's the sidekick stream that teams up with a mighty river?",
+      "Option A": "Delta",
+      "Option B": "Tributary",
+      "Option C": "Watershed",
+      "Option D": "Creek",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_107",
+      "Question Text": "Which gigantic nation claims the title for the biggest landmass on Earth?",
+      "Option A": "Canada",
+      "Option B": "China",
+      "Option C": "United States",
+      "Option D": "Russia",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_108",
+      "Question Text": "What's Africa's superstar river that holds the title for the longest?",
+      "Option A": "Congo River",
+      "Option B": "Zambezi River",
+      "Option C": "The Nile River",
+      "Option D": "Orange River",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_109",
+      "Question Text": "At the southernmost tip, the Strait of Magellan is located on which continent?",
+      "Option A": "Antarctica",
+      "Option B": "South America",
+      "Option C": "Africa",
+      "Option D": "Australia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_110",
+      "Question Text": "Which vibrant city is home to the epic Rijksmuseum and Anne Frank's House?",
+      "Option A": "Rotterdam",
+      "Option B": "The Hague",
+      "Option C": "Amsterdam",
+      "Option D": "Utrecht",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_111",
+      "Question Text": "What majestic mountain keeps a watchful eye over Cape Town?",
+      "Option A": "Lion's Head",
+      "Option B": "Table Mountain",
+      "Option C": "Devil's Peak",
+      "Option D": "Signal Hill",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_112",
+      "Question Text": "Which country is bustling with the most people on the planet?",
+      "Option A": "China",
+      "Option B": "India",
+      "Option C": "United States",
+      "Option D": "Indonesia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_113",
+      "Question Text": "What's the tallest mountain on Earth?",
+      "Option A": "K2",
+      "Option B": "Kangchenjunga",
+      "Option C": "Mount Everest",
+      "Option D": "Lhotse",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_114",
+      "Question Text": "Standing tall as the second highest peak in the world?",
+      "Option A": "K2",
+      "Option B": "Kangchenjunga",
+      "Option C": "Mount McKinley",
+      "Option D": "Mount Everest",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_115",
+      "Question Text": "In which body of water do the Dodecanese islands party under the sun?",
+      "Option A": "Ionian Sea",
+      "Option B": "Adriatic Sea",
+      "Option C": "Aegean Sea",
+      "Option D": "Mediterranean Sea",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_116",
+      "Question Text": "How many time zones does Russia cover?",
+      "Option A": "Nine",
+      "Option B": "Ten",
+      "Option C": "Eleven",
+      "Option D": "Twelve",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_117",
+      "Question Text": "What's the largest island on the planet?",
+      "Option A": "Borneo",
+      "Option B": "Madagascar",
+      "Option C": "Greenland",
+      "Option D": "New Guinea",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_118",
+      "Question Text": "Which fiery mountain is an active volcano in its homeland?",
+      "Option A": "Mount Fuji",
+      "Option B": "Mount Aso",
+      "Option C": "Mount Unzen",
+      "Option D": "Mount Sakurajima",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_119",
+      "Question Text": "In which US city can you find the Solomon R. Guggenheim Museum?",
+      "Option A": "Chicago",
+      "Option B": "San Francisco",
+      "Option C": "New York",
+      "Option D": "Los Angeles",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_120",
+      "Question Text": "Dorset, Cheshire, and Kent are regions of which country?",
+      "Option A": "Wales",
+      "Option B": "Scotland",
+      "Option C": "England",
+      "Option D": "Northern Ireland",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_121",
+      "Question Text": "What is the tallest mountain in the world?",
+      "Option A": "Mount Everest",
+      "Option B": "K2",
+      "Option C": "Kangchenjunga",
+      "Option D": "Lhotse",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_122",
+      "Question Text": "Which country has the largest population?",
+      "Option A": "India",
+      "Option B": "China",
+      "Option C": "USA",
+      "Option D": "Indonesia",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_123",
+      "Question Text": "What is the longest river in Africa?",
+      "Option A": "Congo",
+      "Option B": "Niger",
+      "Option C": "Nile",
+      "Option D": "Zambezi",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_124",
+      "Question Text": "In which city is the Golden Gate Bridge?",
+      "Option A": "Los Angeles",
+      "Option B": "Seattle",
+      "Option C": "New York",
+      "Option D": "San Francisco",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_125",
+      "Question Text": "What is the capital of Mexico?",
+      "Option A": "Mexico City",
+      "Option B": "Guadalajara",
+      "Option C": "Monterrey",
+      "Option D": "Tijuana",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_126",
+      "Question Text": "What's the largest country in the world?",
+      "Option A": "Canada",
+      "Option B": "Russia",
+      "Option C": "China",
+      "Option D": "USA",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_127",
+      "Question Text": "Which U.S. state has no poisonous snakes?",
+      "Option A": "Hawaii",
+      "Option B": "Maine",
+      "Option C": "Alaska",
+      "Option D": "Montana",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_128",
+      "Question Text": "In which city is the Eiffel Tower located?",
+      "Option A": "Lyon",
+      "Option B": "Marseille",
+      "Option C": "Nice",
+      "Option D": "Paris",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_129",
+      "Question Text": "What is Canada's capital city?",
+      "Option A": "Ottawa",
+      "Option B": "Toronto",
+      "Option C": "Vancouver",
+      "Option D": "Montreal",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_130",
+      "Question Text": "What's the largest ocean in the world?",
+      "Option A": "Atlantic",
+      "Option B": "Pacific",
+      "Option C": "Indian",
+      "Option D": "Arctic",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_131",
+      "Question Text": "Which Italian city does Mt. Vesuvius overlook?",
+      "Option A": "Rome",
+      "Option B": "Milan",
+      "Option C": "Naples",
+      "Option D": "Venice",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_132",
+      "Question Text": "What is the smallest country in the world?",
+      "Option A": "Monaco",
+      "Option B": "San Marino",
+      "Option C": "Liechtenstein",
+      "Option D": "Vatican City",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_133",
+      "Question Text": "What's California's capital city?",
+      "Option A": "Sacramento",
+      "Option B": "Los Angeles",
+      "Option C": "San Francisco",
+      "Option D": "San Diego",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_134",
+      "Question Text": "Which country has the most natural lakes?",
+      "Option A": "USA",
+      "Option B": "Canada",
+      "Option C": "Russia",
+      "Option D": "Finland",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_135",
+      "Question Text": "Which planet is closest to Earth?",
+      "Option A": "Mars",
+      "Option B": "Mercury",
+      "Option C": "Venus",
+      "Option D": "Jupiter",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_136",
+      "Question Text": "What river flows through the Brazilian rainforest?",
+      "Option A": "Orinoco",
+      "Option B": "Paraguay",
+      "Option C": "Parana",
+      "Option D": "Amazon",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_137",
+      "Question Text": "What's the coldest place on Earth?",
+      "Option A": "Antarctica",
+      "Option B": "Siberia",
+      "Option C": "Greenland",
+      "Option D": "Alaska",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_138",
+      "Question Text": "What's the UK's official currency?",
+      "Option A": "Euro",
+      "Option B": "Pound sterling",
+      "Option C": "Dollar",
+      "Option D": "Franc",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_139",
+      "Question Text": "Where are the Spanish Steps located?",
+      "Option A": "Madrid",
+      "Option B": "Barcelona",
+      "Option C": "Rome",
+      "Option D": "Venice",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_140",
+      "Question Text": "How many countries are in the United Kingdom?",
+      "Option A": 3,
+      "Option B": 5,
+      "Option C": 2,
+      "Option D": 4,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_141",
+      "Question Text": "What's Senegal's capital city?",
+      "Option A": "Dakar",
+      "Option B": "Abidjan",
+      "Option C": "Lagos",
+      "Option D": "Accra",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_142",
+      "Question Text": "How many time zones does Russia have?",
+      "Option A": 9,
+      "Option B": 11,
+      "Option C": 13,
+      "Option D": 15,
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_143",
+      "Question Text": "What's the tallest mountain in Canada?",
+      "Option A": "Mont Jacques",
+      "Option B": "Mont Logan",
+      "Option C": "Mount Logan",
+      "Option D": "Mount McKinley",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_144",
+      "Question Text": "What's Australia's largest city?",
+      "Option A": "Sydney",
+      "Option B": "Melbourne",
+      "Option C": "Perth",
+      "Option D": "Brisbane",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_145",
+      "Question Text": "What type of leaf is on Canada's flag?",
+      "Option A": "Maple",
+      "Option B": "Oak",
+      "Option C": "Birch",
+      "Option D": "Pine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_146",
+      "Question Text": "What's the second tallest mountain in the world?",
+      "Option A": "K2",
+      "Option B": "Kangchenjunga",
+      "Option C": "Mount Everest",
+      "Option D": "Lhotse",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_147",
+      "Question Text": "What Cape sits at Africa's tip?",
+      "Option A": "Cape Town",
+      "Option B": "Cape of Good Hope",
+      "Option C": "Cape Point",
+      "Option D": "Cape Agulhas",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_148",
+      "Question Text": "Which country first used tinsel on holiday trees?",
+      "Option A": "Austria",
+      "Option B": "France",
+      "Option C": "Germany",
+      "Option D": "England",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_149",
+      "Question Text": "What's the only US tropical rainforest?",
+      "Option A": "Hawaii Volcanoes",
+      "Option B": "Olympic",
+      "Option C": "Everglades",
+      "Option D": "El Yunque",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_150",
+      "Question Text": "What's the driest continent on Earth?",
+      "Option A": "Antarctica",
+      "Option B": "Australia",
+      "Option C": "Africa",
+      "Option D": "Asia",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_151",
+      "Question Text": "Which European city held the first organized marathon?",
+      "Option A": "Rome",
+      "Option B": "Athens",
+      "Option C": "London",
+      "Option D": "Paris",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_152",
+      "Question Text": "Which continent is Cambodia located in?",
+      "Option A": "Africa",
+      "Option B": "Europe",
+      "Option C": "Asia",
+      "Option D": "Oceania",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_153",
+      "Question Text": "Which ocean contains the Bermuda Triangle?",
+      "Option A": "Pacific",
+      "Option B": "Indian",
+      "Option C": "Arctic",
+      "Option D": "Atlantic",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_154",
+      "Question Text": "What's South Dakota's capital?",
+      "Option A": "Pierre",
+      "Option B": "Sioux Falls",
+      "Option C": "Rapid City",
+      "Option D": "Aberdeen",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_155",
+      "Question Text": "What's the smallest US state?",
+      "Option A": "Delaware",
+      "Option B": "Rhode Island",
+      "Option C": "Hawaii",
+      "Option D": "Connecticut",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_156",
+      "Question Text": "What's the longest river in the US?",
+      "Option A": "Mississippi",
+      "Option B": "Colorado",
+      "Option C": "Missouri",
+      "Option D": "Rio Grande",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_157",
+      "Question Text": "What's the lowest point in the US?",
+      "Option A": "Great Basin",
+      "Option B": "Salton Sea",
+      "Option C": "Badwater Basin",
+      "Option D": "Death Valley",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_158",
+      "Question Text": "What's the flattest US state?",
+      "Option A": "Florida",
+      "Option B": "Kansas",
+      "Option C": "Nebraska",
+      "Option D": "Iowa",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_159",
+      "Question Text": "What state houses Mount Rushmore?",
+      "Option A": "North Dakota",
+      "Option B": "South Dakota",
+      "Option C": "Wyoming",
+      "Option D": "Montana",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_160",
+      "Question Text": "What's the largest US lake?",
+      "Option A": "Michigan",
+      "Option B": "Erie",
+      "Option C": "Superior",
+      "Option D": "Huron",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_161",
+      "Question Text": "What's the coldest US state?",
+      "Option A": "Montana",
+      "Option B": "Minnesota",
+      "Option C": "Maine",
+      "Option D": "Alaska",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_162",
+      "Question Text": "What's the largest US bay?",
+      "Option A": "Chesapeake Bay",
+      "Option B": "San Francisco Bay",
+      "Option C": "Tampa Bay",
+      "Option D": "Hudson Bay",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_163",
+      "Question Text": "Which state is The Garden State?",
+      "Option A": "Vermont",
+      "Option B": "New Jersey",
+      "Option C": "Connecticut",
+      "Option D": "Delaware",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_164",
+      "Question Text": "Which state was bought from Russia?",
+      "Option A": "Hawaii",
+      "Option B": "Oregon",
+      "Option C": "Alaska",
+      "Option D": "Washington",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_165",
+      "Question Text": "How many total islands does Hawaii have?",
+      "Option A": 98,
+      "Option B": 112,
+      "Option C": 124,
+      "Option D": 132,
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_166",
+      "Question Text": "What's Jamaica's capital?",
+      "Option A": "Kingston",
+      "Option B": "Montego Bay",
+      "Option C": "Port Royal",
+      "Option D": "Spanish Town",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_167",
+      "Question Text": "What's Europe named after?",
+      "Option A": "A goddess",
+      "Option B": "A princess",
+      "Option C": "A mountain",
+      "Option D": "A river",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_168",
+      "Question Text": "What country wasn't part of Soviet Union?",
+      "Option A": "Ukraine",
+      "Option B": "Belarus",
+      "Option C": "Romania",
+      "Option D": "Kazakhstan",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_169",
+      "Question Text": "What's the deepest ocean point?",
+      "Option A": "Puerto Rico Trench",
+      "Option B": "Tonga Trench",
+      "Option C": "Java Trench",
+      "Option D": "Mariana Trench",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_170",
+      "Question Text": "How many time zones does Australia have?",
+      "Option A": 3,
+      "Option B": 4,
+      "Option C": 5,
+      "Option D": 6,
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_171",
+      "Question Text": "Which direction do latitude lines run?",
+      "Option A": "Right to left",
+      "Option B": "Left to right",
+      "Option C": "Diagonal",
+      "Option D": "Curved",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_172",
+      "Question Text": "What's the third-longest river globally?",
+      "Option A": "Mississippi",
+      "Option B": "Nile",
+      "Option C": "Yangtze",
+      "Option D": "Amazon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_173",
+      "Question Text": "What river flows through Grand Canyon?",
+      "Option A": "Rio Grande",
+      "Option B": "Snake River",
+      "Option C": "Arkansas River",
+      "Option D": "Colorado River",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_174",
+      "Question Text": "What's the world's largest island?",
+      "Option A": "Greenland",
+      "Option B": "Australia",
+      "Option C": "Madagascar",
+      "Option D": "New Guinea",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_175",
+      "Question Text": "What country ends with Q?",
+      "Option A": "Kuwait",
+      "Option B": "Iraq",
+      "Option C": "Iran",
+      "Option D": "Turkey",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_176",
+      "Question Text": "How many African countries are there?",
+      "Option A": 48,
+      "Option B": 51,
+      "Option C": 54,
+      "Option D": 57,
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_177",
+      "Question Text": "What's the largest waterfall worldwide?",
+      "Option A": "Niagara",
+      "Option B": "Iguazu",
+      "Option C": "Angel",
+      "Option D": "Victoria",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_178",
+      "Question Text": "Where is the Leaning Tower of Pisa?",
+      "Option A": "Italy",
+      "Option B": "France",
+      "Option C": "Spain",
+      "Option D": "Greece",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_179",
+      "Question Text": "What's Belgium's nickname?",
+      "Option A": "The Heart of Europe",
+      "Option B": "The Cockpit of Europe",
+      "Option C": "The Capital of Europe",
+      "Option D": "The Crown of Europe",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "GEOGRAPHY_180",
+      "Question Text": "Which country has older pyramids than Egypt?",
+      "Option A": "Libya",
+      "Option B": "Ethiopia",
+      "Option C": "Sudan",
+      "Option D": "Algeria",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    }
+  ]
+}
