@@ -12,14 +12,17 @@ import {
   Image,
   Modal,
   Platform,
-  BackHandler
+  BackHandler,
+  Easing
 } from 'react-native';
 import { GameContext, useGame } from '../Context/GameContext';
 import * as Font from 'expo-font';
 import PlayerModal from '../Context/PlayerModal';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { Ionicons } from '@expo/vector-icons';
 import { useSettings } from '../Context/Settings';
 import { useFocusEffect } from '@react-navigation/native';
+import * as Animatable from 'react-native-animatable';
 
 // Keep all your existing imports for packs
 import spicy from '../Packs/DaresOnly/spicy.json';
@@ -31,6 +34,15 @@ import icebreakers from '../Packs/DaresOnly/icebreakers.json';
 import musicmania from '../Packs/DaresOnly/music_mania.json';
 import officefun from '../Packs/DaresOnly/office_fun.json';
 import outinpublic from '../Packs/DaresOnly/out_in_public.json';
+import houseparty from '../Packs/DaresOnly/house_party.json'
+
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
+
+// Function to calculate responsive font sizes
+const scaleFontSize = (size) => {
+  const scaleFactor = Math.min(SCREEN_WIDTH / 375, SCREEN_HEIGHT / 812);
+  return Math.round(size * scaleFactor);
+};
 
 const packData = {
   spicy,
@@ -42,6 +54,7 @@ const packData = {
   musicmania,
   officefun,
   outinpublic,
+  houseparty,
 };
 
 const packImages = {
@@ -54,19 +67,30 @@ const packImages = {
   adventureseekers: require('../assets/DaresOnly/adventure.jpg'),
   bar: require('../assets/DaresOnly/bar.jpg'),
   spicy: require('../assets/DaresOnly/spicy.jpg'),
+  houseparty: require('../assets/DaresOnly/houseparty.jpg'),
 };
 
-// Custom Casino-style Alert Component
+// Enhanced Casino-style Alert Component
 const CasinoAlert = ({ visible, title, message, onCancel, onConfirm, cancelText = "Cancel", confirmText = "Confirm" }) => {
   return (
     <Modal
       transparent={true}
       visible={visible}
       animationType="fade"
+      statusBarTranslucent={Platform.OS === 'android'}
     >
       <View style={styles.alertOverlay}>
-        <View style={styles.alertContainer}>
+        <Animatable.View 
+          animation="fadeIn" 
+          duration={300} 
+          style={styles.alertContainer}
+        >
           <Text style={styles.alertTitle}>{title}</Text>
+          <View style={styles.casinoSeparator}>
+            <View style={styles.separatorLine} />
+            <Ionicons name="diamond" size={16} color="#FFD700" />
+            <View style={styles.separatorLine} />
+          </View>
           <Text style={styles.alertMessage}>{message}</Text>
           
           <View style={styles.alertButtonContainer}>
@@ -86,7 +110,7 @@ const CasinoAlert = ({ visible, title, message, onCancel, onConfirm, cancelText 
               <Text style={styles.alertConfirmText}>{confirmText}</Text>
             </TouchableOpacity>
           </View>
-        </View>
+        </Animatable.View>
       </View>
     </Modal>
   );
@@ -117,6 +141,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
   const [fontLoaded, setFontLoaded] = useState(false);
   const [totalDaresPerGame, setTotalDaresPerGame] = useState(dareCount * players.length);
   const [isLoading, setIsLoading] = useState(true);
+  const [isFirstRender, setIsFirstRender] = useState(true);
   
   // Custom alert state
   const [alertVisible, setAlertVisible] = useState(false);
@@ -128,18 +153,97 @@ const DareOnlyScreen = ({ navigation, route }) => {
     cancelText: 'No'
   });
 
-  // Animation values
-  const flipAnim = useRef(new Animated.Value(0)).current;
+  // Dealer-style Animation values
+  const cardPosition = useRef(new Animated.ValueXY({ x: 0, y: 0 })).current;
+  const cardOpacity = useRef(new Animated.Value(1)).current;
+  const cardRotation = useRef(new Animated.Value(0)).current;
+  const cardScale = useRef(new Animated.Value(1)).current;
+  const cardShadowOpacity = useRef(new Animated.Value(0.5)).current;
+  const nextCardPosition = useRef(new Animated.ValueXY({ x: SCREEN_WIDTH, y: 30 })).current;
+  const nextCardOpacity = useRef(new Animated.Value(0)).current;
+  const nextCardRotation = useRef(new Animated.Value(15)).current;
+  const nextCardScale = useRef(new Animated.Value(0.9)).current;
+  const cardFlipRotation = useRef(new Animated.Value(0)).current;
+  
+  // Additional animation values
   const revealAnim = useRef(new Animated.Value(0)).current;
   const chipsFallAnim = useRef(new Animated.Value(0)).current;
   const buttonScaleAnim = useRef(new Animated.Value(1)).current;
   const spotlightAnim = useRef(new Animated.Value(0)).current;
   const casinoLightsAnim = useRef(new Animated.Value(0)).current;
+  const cardShineAnim = useRef(new Animated.Value(0)).current;
 
   const isGameOver = daresAsked.every(dares => dares >= dareCount);
   const { width, height } = Dimensions.get('window');
   const isLandscape = width > height;
   
+  // Animation for initial card entrance (dealer style)
+  useEffect(() => {
+    if (isFirstRender && !isLoading && !showResults) {
+      // Start with card off-screen (as if dealer is holding it)
+      cardPosition.setValue({ x: -SCREEN_WIDTH, y: 100 });
+      cardOpacity.setValue(0);
+      cardRotation.setValue(-15);
+      cardScale.setValue(0.9);
+      
+      // Animate card being dealt onto the table
+      Animated.parallel([
+          Animated.timing(cardPosition, {
+              toValue: { x: 0, y: 0 },
+              duration: 600,
+              useNativeDriver: true,
+              easing: Easing.out(Easing.back(1.5))
+          }),
+          Animated.timing(cardOpacity, {
+              toValue: 1,
+              duration: 400,
+              useNativeDriver: true,
+          }),
+          Animated.timing(cardRotation, {
+              toValue: 0,
+              duration: 600,
+              useNativeDriver: true,
+              easing: Easing.out(Easing.back(1.2))
+          }),
+          Animated.timing(cardScale, {
+              toValue: 1,
+              duration: 600,
+              useNativeDriver: true,
+              easing: Easing.out(Easing.back(1.2))
+          }),
+          Animated.sequence([
+              Animated.delay(300),
+              Animated.spring(cardShadowOpacity, {
+                  toValue: 1,
+                  friction: 6,
+                  useNativeDriver: true
+              })
+          ])
+      ]).start(() => {
+          setIsFirstRender(false);
+      });
+    }
+  }, [isFirstRender, isLoading, showResults]);
+  
+  // Start card shine animation
+  useEffect(() => {
+    if (!isLoading && !showResults) {
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(cardShineAnim, {
+            toValue: 1,
+            duration: 2000,
+            useNativeDriver: true,
+          }),
+          Animated.timing(cardShineAnim, {
+            toValue: 0,
+            duration: 2000,
+            useNativeDriver: true,
+          }),
+        ])
+      ).start();
+    }
+  }, [isLoading, showResults]);
 
   // Handle Android back button
   useFocusEffect(
@@ -152,10 +256,10 @@ const DareOnlyScreen = ({ navigation, route }) => {
           }
           // Show custom confirmation dialog instead of standard Alert
           showCustomAlert({
-            title: "End Game",
-            message: "Are you sure you want to exit this game?",
-            confirmText: "Exit",
-            cancelText: "Cancel",
+            title: "Cash Out",
+            message: "Are you sure you want to end this game and cash out?",
+            confirmText: "Cash Out",
+            cancelText: "Continue Playing",
             onConfirm: () => navigation.goBack()
           });
           return true;
@@ -258,9 +362,9 @@ const DareOnlyScreen = ({ navigation, route }) => {
     } catch (error) {
       console.error('Error initializing game data:', error);
       showCustomAlert({
-        title: 'Error Loading Game',
-        message: 'There was a problem loading the game data. Please try again.',
-        confirmText: 'OK',
+        title: 'Game Loading Error',
+        message: 'There was a problem with the cards. Please try again.',
+        confirmText: 'Return to Table',
         onConfirm: () => navigation.goBack()
       });
     } finally {
@@ -393,14 +497,79 @@ const DareOnlyScreen = ({ navigation, route }) => {
         setCurrentDareCompleted(null);
         setFlippedOnce(false);
         setFlipped(false);
+        cardFlipRotation.setValue(0);
 
-        Animated.spring(flipAnim, {
-          toValue: 0,
-          useNativeDriver: true,
-          // Adjust spring properties for Android
-          tension: Platform.OS === 'android' ? 40 : 30,
-          friction: Platform.OS === 'android' ? 8 : 7,
-        }).start();
+        // Dealer-style animation for switching to the next card
+
+        // 1. First animate current card sliding off to the left (like discarding)
+        Animated.parallel([
+            Animated.timing(cardPosition, {
+                toValue: { x: -SCREEN_WIDTH - 100, y: 100 },
+                duration: 400,
+                useNativeDriver: true,
+                easing: Easing.out(Easing.cubic)
+            }),
+            Animated.timing(cardOpacity, {
+                toValue: 0,
+                duration: 300,
+                useNativeDriver: true,
+            }),
+            Animated.timing(cardRotation, {
+                toValue: -20,
+                duration: 400, 
+                useNativeDriver: true,
+            }),
+            Animated.timing(cardShadowOpacity, {
+                toValue: 0,
+                duration: 200,
+                useNativeDriver: true,
+            })
+        ]).start(() => {
+            // After card is gone, reset positions for next card
+            
+            // Small delay before dealing the next card
+            setTimeout(() => {
+                // 2. Prepare the next card to come in from the right
+                cardPosition.setValue({ x: SCREEN_WIDTH, y: 30 });
+                cardRotation.setValue(15);
+                cardScale.setValue(0.9);
+                
+                // 3. Then animate the next card coming in from the right (like dealing)
+                Animated.parallel([
+                    Animated.timing(cardPosition, {
+                        toValue: { x: 0, y: 0 },
+                        duration: 600,
+                        useNativeDriver: true,
+                        easing: Easing.out(Easing.back(1.5))
+                    }),
+                    Animated.timing(cardOpacity, {
+                        toValue: 1,
+                        duration: 400,
+                        useNativeDriver: true,
+                    }),
+                    Animated.timing(cardRotation, {
+                        toValue: 0,
+                        duration: 600,
+                        useNativeDriver: true,
+                        easing: Easing.out(Easing.back(1.2))
+                    }),
+                    Animated.timing(cardScale, {
+                        toValue: 1,
+                        duration: 600,
+                        useNativeDriver: true,
+                        easing: Easing.out(Easing.back(1.2))
+                    }),
+                    Animated.sequence([
+                        Animated.delay(300),
+                        Animated.spring(cardShadowOpacity, {
+                            toValue: 1,
+                            friction: 6,
+                            useNativeDriver: true
+                        })
+                    ])
+                ]).start();
+            }, 50);
+        });
       }
     }
   };
@@ -408,10 +577,10 @@ const DareOnlyScreen = ({ navigation, route }) => {
   const handleEndGame = () => {
     // Use custom alert instead of standard Alert
     showCustomAlert({
-      title: "End Game",
-      message: "Are you sure you want to end the game now?",
-      confirmText: "End Game",
-      cancelText: "Cancel",
+      title: "Cash Out",
+      message: "Are you sure you want to cash out and end the game now?",
+      confirmText: "Cash Out",
+      cancelText: "Continue Playing",
       onConfirm: () => {
         setShowResults(true);
         startRevealAnimation();
@@ -455,7 +624,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
     if (players.length <= 2) {
       showCustomAlert({
         title: "Cannot Remove Player",
-        message: "At least two players are required.",
+        message: "At least two players are required at this table.",
         confirmText: "OK",
         onConfirm: () => {}
       });
@@ -485,24 +654,32 @@ const DareOnlyScreen = ({ navigation, route }) => {
 
   const flipCard = () => {
     if (!flippedOnce) {
-      Animated.spring(flipAnim, {
-        toValue: flipped ? 0 : 1,
-        useNativeDriver: true,
-        // Adjust spring properties for Android
-        tension: Platform.OS === 'android' ? 40 : 30,
-        friction: Platform.OS === 'android' ? 8 : 7,
-      }).start();
-      setFlipped(!flipped);
       setFlippedOnce(true);
+      setFlipped(true);
+      
+      // Add card flip animation
+      Animated.timing(cardFlipRotation, {
+        toValue: 1,
+        duration: 600,
+        useNativeDriver: true,
+        easing: Easing.out(Easing.back(1.5))
+      }).start();
     }
   };
 
-  const frontInterpolate = flipAnim.interpolate({
+  // Card shine effect position
+  const shinePosition = cardShineAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: ['-150%', '250%'],
+  });
+
+  // Front and back card rotation for 3D flip
+  const frontInterpolate = cardFlipRotation.interpolate({
     inputRange: [0, 1],
     outputRange: ['0deg', '180deg'],
   });
 
-  const backInterpolate = flipAnim.interpolate({
+  const backInterpolate = cardFlipRotation.interpolate({
     inputRange: [0, 1],
     outputRange: ['180deg', '360deg'],
   });
@@ -517,20 +694,44 @@ const DareOnlyScreen = ({ navigation, route }) => {
     outputRange: ['0deg', '0deg', '360deg'],
   });
 
+  // Dealer-style card transformation
+  const cardAnimatedStyle = {
+    transform: [
+      { translateX: cardPosition.x },
+      { translateY: cardPosition.y },
+      { rotate: cardRotation.interpolate({
+          inputRange: [-20, 0, 20],
+          outputRange: ['-20deg', '0deg', '20deg'],
+      })},
+      { scale: cardScale }
+    ],
+    opacity: cardOpacity,
+  };
+
+  // Card flipping styles
   const frontAnimatedStyle = {
     transform: [{ rotateY: frontInterpolate }],
+    backfaceVisibility: 'hidden',
   };
 
   const backAnimatedStyle = {
     transform: [{ rotateY: backInterpolate }],
+    backfaceVisibility: 'hidden',
   };
 
   if (isLoading || !fontLoaded) {
     return (
       <ImageBackground source={require('../assets/redfelt.jpg')} style={styles.container}>
+        <View style={styles.feltOverlay} />
         <StatusBar hidden />
         <View style={styles.loadingContainer}>
-          <Text style={styles.loadingText}>Loading Game...</Text>
+          <Animatable.Text 
+            animation="pulse" 
+            iterationCount="infinite" 
+            style={styles.loadingText}
+          >
+            Dealing cards...
+          </Animatable.Text>
         </View>
       </ImageBackground>
     );
@@ -554,6 +755,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
       style={styles.container}
       fadeDuration={Platform.OS === 'android' ? 300 : 0}
     >
+      <View style={styles.feltOverlay} />
       <StatusBar hidden />
       
       {/* Casino spotlight effect for results view */}
@@ -573,6 +775,31 @@ const DareOnlyScreen = ({ navigation, route }) => {
           ]} 
         />
       )}
+      
+      {/* Casino lighting effect */}
+      <Animated.View 
+          style={[
+              styles.casinoLights,
+              {
+                  opacity: casinoLightsAnim.interpolate({
+                      inputRange: [0, 1],
+                      outputRange: [0, 0.2]
+                  })
+              }
+          ]}
+      />
+      
+      {/* Dealer's position (visual indicator where cards come from) */}
+      <View style={styles.dealerPosition}>
+          <Animatable.View
+              animation="pulse"
+              iterationCount="infinite"
+              duration={2000}
+              style={styles.dealerIndicator}
+          >
+              <Ionicons name="person" size={20} color="#FFD700" />
+          </Animatable.View>
+      </View>
       
       <ScrollView 
         contentContainerStyle={styles.scrollContent}
@@ -662,7 +889,17 @@ const DareOnlyScreen = ({ navigation, route }) => {
           </View>
         ) : (
           <>
-            <Text style={styles.title}>{playerName}</Text>
+            {/* Header with player name */}
+            <View style={styles.header}>
+              <Text style={styles.title}>{playerName}</Text>
+              <View style={styles.titleDecoration}>
+                <View style={styles.titleLine} />
+                <Ionicons name="diamond" size={24} color="#FFD700" />
+                <View style={styles.titleLine} />
+              </View>
+            </View>
+            
+            {/* Chip score indicator */}
             <View style={styles.completedDaresBadge}>
               <Image
                 source={require('../assets/DaresOnly/yellowpokerchip.png')}
@@ -672,83 +909,142 @@ const DareOnlyScreen = ({ navigation, route }) => {
                 {completedDares[currentPlayerIndex]}
               </Text>
             </View>
-            <View style={[styles.dareContainer, isLandscape ? styles.dareContainerLandscape : null]}>
-              <TouchableOpacity 
-                onPress={flipCard}
-                activeOpacity={Platform.OS === 'android' ? 0.8 : 0.9}
-              >
-                <Animated.View style={[styles.card, frontAnimatedStyle]}>
-                  <Image 
-                    source={packImages[packName]} 
-                    style={styles.cardImage}
-                    fadeDuration={Platform.OS === 'android' ? 300 : 0}
-                  />
-                  {!flippedOnce && (
-                    <View style={styles.cardHint}>
-                      <Text style={styles.cardHintText}>Tap to Flip</Text>
+            
+            {/* Card container with dealer-style animation */}
+            <View style={[styles.dareContainerWrapper, isLandscape ? styles.dareContainerLandscape : null]}>
+              {/* Card shadow - animated separately for depth effect */}
+              <Animated.View 
+                style={[
+                  styles.cardShadow,
+                  {
+                    opacity: cardShadowOpacity,
+                    transform: [
+                      { translateX: cardPosition.x.interpolate({
+                          inputRange: [-SCREEN_WIDTH, 0, SCREEN_WIDTH],
+                          outputRange: [-10, 0, 10],
+                          extrapolate: 'clamp'
+                      })},
+                      { translateY: cardPosition.y.interpolate({
+                          inputRange: [-100, 0, 100],
+                          outputRange: [-5, 6, 15],
+                          extrapolate: 'clamp'
+                      })}
+                    ]
+                  }
+                ]} 
+              />
+              
+              <Animated.View style={[styles.dareContainer, cardAnimatedStyle]}>
+                <TouchableOpacity 
+                  onPress={flipCard}
+                  activeOpacity={Platform.OS === 'android' ? 0.8 : 0.9}
+                  style={styles.cardTouchable}
+                >
+                  {/* Front of card */}
+                  <Animated.View style={[styles.card, frontAnimatedStyle]}>
+                    <Image 
+                      source={packImages[packName]} 
+                      style={styles.cardImage}
+                      fadeDuration={Platform.OS === 'android' ? 300 : 0}
+                    />
+                    
+                    {/* Shine effect */}
+                    <Animated.View 
+                      style={[
+                        styles.cardShine,
+                        {
+                          transform: [{ translateX: shinePosition }]
+                        }
+                      ]}
+                    />
+                    
+                    {!flippedOnce && (
+                      <View style={styles.cardHint}>
+                        <Text style={styles.cardHintText}>Tap to Flip</Text>
+                      </View>
+                    )}
+                  </Animated.View>
+                  
+                  {/* Back of card (dare content) */}
+                  <Animated.View style={[styles.card, styles.cardBack, backAnimatedStyle]}>
+                    <View style={styles.cardBackHeader}>
+                      <Ionicons name="diamond" size={18} color="#FFD700" />
+                      <Text style={styles.cardPackName}>{route.params?.packName}</Text>
+                      <Ionicons name="diamond" size={18} color="#FFD700" />
                     </View>
-                  )}
-                </Animated.View>
-                <Animated.View style={[styles.card, styles.cardBack, backAnimatedStyle]}>
-                  <View style={styles.dareTextContainer}>
-                    <Text 
-                      style={styles.dareText}
-                      adjustsFontSizeToFit={true}
-                      numberOfLines={8}
-                      minimumFontScale={0.5}
-                    >
-                      {currentDare}
-                    </Text>
-                  </View>
-                  <View style={styles.dareButtonsContainer}>
-                    <TouchableOpacity
-                      style={[
-                        styles.dareButton,
-                        currentDareCompleted === true ? styles.dareButtonComplete : null
-                      ]}
-                      onPress={() => handleDareCompletion(true)}
-                      disabled={isGameOver}
-                      activeOpacity={0.7}
-                    >
-                      <Icon name="check" size={24} color="white" />
-                    </TouchableOpacity>
+                    
+                    <View style={styles.dareTextContainer}>
+                      <Text 
+                        style={styles.dareText}
+                        adjustsFontSizeToFit={true}
+                        numberOfLines={8}
+                        minimumFontScale={0.5}
+                      >
+                        {currentDare}
+                      </Text>
+                    </View>
+                    
+                    <View style={styles.dareButtonsContainer}>
+                      <TouchableOpacity
+                        style={[
+                          styles.dareButton,
+                          currentDareCompleted === true ? styles.dareButtonComplete : null
+                        ]}
+                        onPress={() => handleDareCompletion(true)}
+                        disabled={isGameOver}
+                        activeOpacity={0.7}
+                      >
+                        <Ionicons name="checkmark" size={28} color="white" />
+                      </TouchableOpacity>
 
-                    <TouchableOpacity
-                      style={[
-                        styles.dareButton,
-                        currentDareCompleted === 'needTime' ? styles.moreTimeButton : null
-                      ]}
-                      onPress={() => handleDareCompletion('needTime')}
-                      disabled={isGameOver}
-                      activeOpacity={0.7}
-                    >
-                      <Icon name="clock-o" size={20} color="white" style={styles.buttonIcon} />
-                      <Text style={styles.buttonText}>+ Time</Text>
-                    </TouchableOpacity>
+                      <TouchableOpacity
+                        style={[
+                          styles.dareButton,
+                          styles.moreTimeButton,
+                          currentDareCompleted === 'needTime' ? styles.moreTimeButtonActive : null
+                        ]}
+                        onPress={() => handleDareCompletion('needTime')}
+                        disabled={isGameOver}
+                        activeOpacity={0.7}
+                      >
+                        <Ionicons name="time" size={24} color="white" style={styles.buttonIcon} />
+                        <Text style={styles.buttonText}>+ Time</Text>
+                      </TouchableOpacity>
 
-                    <TouchableOpacity
-                      style={[
-                        styles.dareButton,
-                        currentDareCompleted === false ? styles.dareButtonIncomplete : null
-                      ]}
-                      onPress={() => handleDareCompletion(false)}
-                      disabled={isGameOver}
-                      activeOpacity={0.7}
-                    >
-                      <Icon name="times" size={24} color="white" />
-                    </TouchableOpacity>
-                  </View>
-                </Animated.View>
-              </TouchableOpacity>
+                      <TouchableOpacity
+                        style={[
+                          styles.dareButton,
+                          currentDareCompleted === false ? styles.dareButtonIncomplete : null
+                        ]}
+                        onPress={() => handleDareCompletion(false)}
+                        disabled={isGameOver}
+                        activeOpacity={0.7}
+                      >
+                        <Ionicons name="close" size={28} color="white" />
+                      </TouchableOpacity>
+                    </View>
+                  </Animated.View>
+                </TouchableOpacity>
+              </Animated.View>
             </View>
             
+            {/* Progress indicator */}
+            <View style={styles.daresAskedContainer}>
+              <View style={styles.daresAskedBadge}>
+                <Text style={styles.daresAskedText}>
+                  {daresAsked[currentPlayerIndex] + 1} / {dareCount}
+                </Text>
+              </View>
+            </View>
+            
+            {/* Bottom action buttons */}
             <View style={styles.bottomButtons}>
               <TouchableOpacity 
                 style={styles.endGameButton} 
                 onPress={handleEndGame}
                 activeOpacity={0.7}
               >
-                <Icon name="flag" size={20} color="#fff" />
+                <Ionicons name="flag" size={22} color="#fff" />
                 <Text style={styles.buttonText}>Cash Out</Text>
               </TouchableOpacity>
               
@@ -770,15 +1066,9 @@ const DareOnlyScreen = ({ navigation, route }) => {
                 disabled={isGameOver}
                 activeOpacity={0.7}
               >
-                <Icon name="users" size={20} color="#fff" />
+                <Ionicons name="people" size={22} color="#fff" />
                 <Text style={styles.buttonText}>Players</Text>
               </TouchableOpacity>
-            </View>
-            
-            <View style={styles.daresAskedContainer}>
-              <Text style={styles.daresAskedText}>
-                {daresAsked[currentPlayerIndex] + 1} / {dareCount}
-              </Text>
             </View>
           </>
         )}
@@ -815,71 +1105,112 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#000',
   },
+  feltOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(28, 115, 51, 0.2)', // Green felt overlay
+    opacity: 0.8,
+  },
+  casinoLights: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: '#FFD700', // Gold lights
+  },
   scrollContent: {
     flexGrow: 1,
     padding: 10,
     paddingTop: Platform.OS === 'android' ? 40 : 50,
     paddingBottom: 120, // Add padding at the bottom to ensure content doesn't get hidden behind buttons
   },
+  header: {
+    width: '100%',
+    alignItems: 'center',
+    marginBottom: 30,
+    marginTop: 10
+  },
   title: {
-    fontSize: Platform.OS === 'android' ? 36 : 40,
+    fontSize: scaleFontSize(50),
     fontWeight: 'bold',
-    color: '#fff',
-    marginBottom: Platform.OS === 'android' ? 65 : 75,
+    color: '#FFD700', // Gold color for casino feel
     textAlign: 'center',
     fontFamily: 'Poker',
+    marginBottom: 5,
     ...Platform.select({
       ios: {
-        textShadowColor: 'rgba(255, 215, 0, 0.5)',
-        textShadowOffset: { width: 0, height: 2 },
+        textShadowColor: 'rgba(0, 0, 0, 0.8)',
+        textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 5,
       },
       android: {
-        textShadowColor: 'rgba(255, 215, 0, 0.5)',
-        textShadowOffset: { width: 0, height: 1 },
+        textShadowColor: 'rgba(0, 0, 0, 0.8)',
+        textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 3,
         elevation: 3,
       }
     }),
   },
+  titleDecoration: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '60%',
+    marginBottom: 20,
+    marginTop:-10
+  },
+  titleLine: {
+    flex: 1,
+    height: 1,
+    backgroundColor: '#FFD700',
+  },
+  dareContainerWrapper: {
+    width: 350,
+    height: 450,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  cardShadow: {
+    position: 'absolute',
+    width: 310,
+    height: 410,
+    borderRadius: 18,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    top: 15,
+    left: 15,
+    zIndex: 1,
+  },
   dareContainer: {
-    backgroundColor: 'transparent', // Changed from white to transparent
+    backgroundColor: 'transparent',
     borderRadius: 20,
-    padding: 20,
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.8,
-        shadowRadius: 2,
-      },
-      android: {
-        elevation: 8,
-      }
-    }),
-    width: 375,
-    height: 475,
+    padding: 0,
+    width: 310,
+    height: 420,
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
+    zIndex: 2,
   },
   dareContainerLandscape: {
     flex: 1,
     marginTop: 5,
   },
+  cardTouchable: {
+    width: '100%',
+    height: '100%',
+  },
   card: {
-    width: 350,
-    height: 425,
+    width: '100%',
+    height: '100%',
     backfaceVisibility: 'hidden',
-    borderRadius: 20,
-    borderWidth: 1,
-    borderColor: '#ddd',
+    borderRadius: 16,
+    borderWidth: 2,
+    borderColor: '#FFD700', // Gold border
+    overflow: 'hidden',
+    backgroundColor: 'white',
     ...Platform.select({
       ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
+        shadowColor: '#FFD700',
+        shadowOffset: { width: 0, height: 4 },
         shadowOpacity: 0.5,
-        shadowRadius: 3,
+        shadowRadius: 6,
       },
       android: {
         elevation: 5,
@@ -889,25 +1220,55 @@ const styles = StyleSheet.create({
   cardBack: {
     position: 'absolute',
     top: 0,
+    left: 0,
     backgroundColor: 'white',
-    borderRadius: 20,
+    borderRadius: 16,
+  },
+  cardShine: {
+    position: 'absolute',
+    width: 40,
+    height: '200%',
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    transform: [{ rotate: '30deg' }],
   },
   cardImage: {
     width: '100%',
     height: '100%',
+    borderRadius: 16,
+    resizeMode: 'cover',
+  },
+  cardCorner: {
+    position: 'absolute',
+    top: 8,
+    left: 8,
+    zIndex: 10,
+  },
+  cardCornerBottom: {
+    top: 'auto',
+    left: 'auto',
+    bottom: 8,
+    right: 8,
+    transform: [{ rotate: '180deg' }],
+  },
+  suitContainer: {
     alignItems: 'center',
-    borderRadius: 20,
+    justifyContent: 'center',
+  },
+  cardCornerText: {
+    color: '#000',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
   cardHint: {
     position: 'absolute',
     bottom: 20,
     alignSelf: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
     borderRadius: 10,
     paddingVertical: 8,
     paddingHorizontal: 15,
     borderWidth: 1,
-    borderColor: '#333',
+    borderColor: '#FFD700',
     ...Platform.select({
       ios: {
         shadowColor: '#000',
@@ -923,37 +1284,56 @@ const styles = StyleSheet.create({
   cardHintText: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#FFD700',
+  },
+  cardBackHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 15,
+    paddingBottom: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#FFD700',
+  },
+  cardPackName: {
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 18,
+    marginHorizontal: 8,
   },
   dareTextContainer: {
     flex: 1,
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
-    paddingTop: 40,
-    paddingBottom: 100,
+    paddingVertical: 20,
     width: '100%',
-    height: '70%',
   },
   dareText: {
     color: '#333',
     textAlign: 'center',
-    fontFamily: Platform.OS === 'android' ? 'Poker' : 'Poker',
-    fontSize: Platform.OS === 'android' ? 40 : 45,
-    lineHeight: Platform.OS === 'android' ? 44 : 48,
+    fontFamily: Platform.select({
+      ios: 'Montserrat-Bold',
+      android: 'Montserrat-Bold', // Android system font
+    }),
+    fontSize: scaleFontSize(30), // Reduced from 36 for better readability with system font
+    lineHeight: Platform.OS === 'android' ? 36 : 38,
+    fontWeight: 'bold', // Apply bold through fontWeight instead of fontFamily
     includeFontPadding: false,
     textAlignVertical: 'top',
   },
   buttonText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: scaleFontSize(14),
     fontWeight: 'bold',
     textAlign: 'center',
     flexWrap: 'nowrap',
     flexShrink: 1,
+    marginTop: 4,
   },
   nextPlayerButtonDisabled: {
-    backgroundColor: '#aaa',
+    backgroundColor: '#555',
+    opacity: 0.7,
     ...Platform.select({
       ios: {
         shadowOpacity: 0.2,
@@ -968,22 +1348,21 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: '100%',
     paddingHorizontal: 15,
-    position: 'absolute',
-    bottom: 20,
+    paddingBottom: 20,
     gap: 10,
   },
   dareButton: {
-    backgroundColor: 'grey',
+    backgroundColor: '#555',
     padding: 10,
-    borderRadius: 20,
-    width: '30%',
+    borderRadius: 50, // Make it circular
+    width: 80,
     height: 80,
     ...Platform.select({
       ios: {
         shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.8,
-        shadowRadius: 2,
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
       },
       android: {
         elevation: 5,
@@ -995,16 +1374,19 @@ const styles = StyleSheet.create({
     borderColor: '#fff',
   },
   moreTimeButton: {
-    backgroundColor: '#FFA500',
+    backgroundColor: '#FF9800',
+  },
+  moreTimeButtonActive: {
+    backgroundColor: '#F57C00',
   },
   buttonIcon: {
     marginBottom: 5,
   },
   dareButtonComplete: {
-    backgroundColor: '#4caf50',
+    backgroundColor: '#4CAF50',
   },
   dareButtonIncomplete: {
-    backgroundColor: '#d32f2f',
+    backgroundColor: '#D32F2F',
   },
   bottomButtons: {
     flexDirection: 'row',
@@ -1015,19 +1397,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
     justifyContent: 'space-between',
-    zIndex: 100, // Add a high zIndex to ensure it stays on top
+    zIndex: 100,
   },
   endGameButton: {
-    backgroundColor: '#d32f2f',
+    backgroundColor: '#D32F2F',
     padding: 15,
     borderRadius: 10,
     width: '30%', // Reduced width for 3-button layout
     ...Platform.select({
       ios: {
         shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.8,
-        shadowRadius: 2,
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
       },
       android: {
         elevation: 5,
@@ -1036,6 +1418,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD700',
   },
   nextPlayerButtonBottom: {
     backgroundColor: '#304FFE',
@@ -1045,9 +1429,9 @@ const styles = StyleSheet.create({
     ...Platform.select({
       ios: {
         shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.8,
-        shadowRadius: 2,
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
       },
       android: {
         elevation: 5,
@@ -1056,18 +1440,20 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD700',
   },
   managePlayersButton: {
-    backgroundColor: '#4caf50',
+    backgroundColor: '#4CAF50',
     padding: 15,
     borderRadius: 10,
     width: '30%', // Reduced width for 3-button layout
     ...Platform.select({
       ios: {
         shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.8,
-        shadowRadius: 2,
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
       },
       android: {
         elevation: 5,
@@ -1076,46 +1462,79 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD700',
   },
   daresAskedContainer: {
     position: 'absolute',
-    top: 65,
-    right: 25,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    borderRadius: 10,
-    padding: 5,
+    top: Platform.OS === 'android' ? 48 : 55,
+    right: 15,
+    zIndex: 10,
+  },
+  daresAskedBadge: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    borderRadius: 15,
+    paddingVertical:8,
+    paddingHorizontal: 12,
+    borderWidth: 1,
+    borderColor: '#FFD700',
     ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.8,
+        shadowRadius: 3,
+      },
       android: {
-        elevation: 3,
+        elevation: 4,
       }
     }),
   },
   daresAskedText: {
-    color: '#fff',
-    fontSize: Platform.OS === 'android' ? 26 : 30,
+    color: '#FFD700',
+    fontSize: scaleFontSize(15),
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   completedDaresBadge: {
     position: 'absolute',
-    top: 80,
+    top: 105,
     alignSelf: 'center',
     backgroundColor: 'transparent',
     borderRadius: 20,
-    padding: 10,
-    marginTop: 10,
+    padding: 11,
+    marginTop: 15,
     alignItems: 'center',
+    zIndex: 10,
   },
   completedDaresText: {
     color: '#000',
-    fontSize: 25,
+    fontSize: 24,
     fontWeight: 'bold',
     position: 'absolute',
-    top: '40%',
+    top: '45%',
     left: '55%',
   },
   pokerChip: {
-    width: 50,
-    height: 50,
+    width: 55,
+    height: 55,
     resizeMode: 'contain',
+  },
+  dealerPosition: {
+    position: 'absolute',
+    right: 15,
+    top: SCREEN_HEIGHT / 2 - 100,
+    zIndex: 10,
+  },
+  dealerIndicator: {
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD700',
   },
   resultsContainer: {
     flex: 1,
@@ -1147,21 +1566,21 @@ const styles = StyleSheet.create({
   },
   resultsButtonText: {
     color: '#FFFFFF',
-    fontSize: Platform.OS === 'android' ? 25 : 45,
+    fontSize: scaleFontSize(28),
     fontWeight: 'bold',
     textAlign: 'center',
     fontFamily: 'Poker',
     marginVertical: -8,
     ...Platform.select({
       ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.2)',
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 2,
+        textShadowRadius: 3,
       },
       android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.4)',
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 1,
+        textShadowRadius: 2,
       }
     }),
   },
@@ -1171,31 +1590,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   loadingText: {
-    color: '#FFFFFF',
-    fontSize: 24,
+    color: '#FFD700',
+    fontSize: scaleFontSize(26),
     fontWeight: 'bold',
     textAlign: 'center',
+    fontFamily: 'Poker',
     ...Platform.select({
       ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.2)',
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 2,
+        textShadowRadius: 3,
       },
       android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.4)',
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 1,
+        textShadowRadius: 2,
       }
     }),
-  },
-  casinoLight: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(255, 215, 0, 0.1)',
-    zIndex: 1,
   },
   cardSpreadContainer: {
     position: 'absolute',
@@ -1223,23 +1634,22 @@ const styles = StyleSheet.create({
       }
     }),
     borderWidth: 2,
-    borderColor: 'white',
+    borderColor: '#FFD700',
   },
   spotlight: {
     position: 'absolute',
-    width: '100%',
-    height: '100%',
+    width: '150%',
+    height: '150%',
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
     borderRadius: 600,
     top: '50%',
     left: '50%',
     transform: [
-      { translateX: -150 },
-      { translateY: -150 },
+      { translateX: -300 },
+      { translateY: -300 },
     ],
     zIndex: 1,
   },
-  
   // Casino-style Alert styles
   alertOverlay: {
     flex: 1,
@@ -1258,9 +1668,9 @@ const styles = StyleSheet.create({
     borderColor: '#FFD700',
     ...Platform.select({
       ios: {
-        shadowColor: '#000',
+        shadowColor: '#FFD700',
         shadowOffset: { width: 0, height: 4 },
-        shadowOpacity: 0.5,
+        shadowOpacity: 0.6,
         shadowRadius: 8,
       },
       android: {
@@ -1269,10 +1679,10 @@ const styles = StyleSheet.create({
     }),
   },
   alertTitle: {
-    fontSize: 24,
+    fontSize: scaleFontSize(24),
     fontWeight: 'bold',
     color: '#FFD700',
-    marginBottom: 15,
+    marginBottom: 10,
     textAlign: 'center',
     fontFamily: 'Poker',
     ...Platform.select({
@@ -1288,8 +1698,19 @@ const styles = StyleSheet.create({
       }
     }),
   },
+  casinoSeparator: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '80%',
+    marginBottom: 15,
+  },
+  separatorLine: {
+    flex: 1,
+    height: 1,
+    backgroundColor: '#FFD700',
+  },
   alertMessage: {
-    fontSize: 18,
+    fontSize: scaleFontSize(18),
     color: '#FFFFFF',
     marginBottom: 20,
     textAlign: 'center',
@@ -1347,12 +1768,12 @@ const styles = StyleSheet.create({
   },
   alertCancelText: {
     color: '#FFFFFF',
-    fontSize: 16,
+    fontSize: scaleFontSize(16),
     fontWeight: 'bold',
   },
   alertConfirmText: {
     color: '#FFFFFF',
-    fontSize: 16,
+    fontSize: scaleFontSize(16),
     fontWeight: 'bold',
   }
 });

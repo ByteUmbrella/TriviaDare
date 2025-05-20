@@ -1,5 +1,6 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
-import { View, Text, Switch, StyleSheet, Platform } from 'react-native';
+import { View, Text, Switch, StyleSheet, Platform, Pressable, Alert } from 'react-native';
+import iapManager from './IAPManager'; // Adjust the import path as needed
 
 // Use dynamic requires to improve performance, especially on Android
 const getPackToJson = () => ({
@@ -39,6 +40,7 @@ const getDaresOnlyPackToJson = () => ({
   'musicmania': require('../Packs/DaresOnly/music_mania.json'),
   'officefun': require('../Packs/DaresOnly/office_fun.json'),
   'outinpublic': require('../Packs/DaresOnly/out_in_public.json'),
+  'housepartylegend': require('../Packs/DaresOnly/house_party.json'),
 });
 
 const SettingsContext = createContext();
@@ -49,6 +51,8 @@ const SettingsProvider = ({ children }) => {
   const [triviaQuestions, setTriviaQuestions] = useState(0);
   const [triviaDareDares, setTriviaDareDares] = useState(0);
   const [daresOnlyDares, setDaresOnlyDares] = useState(0);
+  // Default to showing inflated numbers, with true numbers as hidden feature
+  const [showInflatedNumbers, setShowInflatedNumbers] = useState(true);
   // Android specific state for resource loading
   const [resourcesLoaded, setResourcesLoaded] = useState(false);
 
@@ -120,6 +124,11 @@ const SettingsProvider = ({ children }) => {
     }));
   };
 
+  // Toggle function for inflated numbers
+  const toggleInflatedNumbers = () => {
+    setShowInflatedNumbers(prev => !prev);
+  };
+
   const isAudioEnabled = (screenId) => {
     if (isGloballyMuted) return false;
     if (screenMuteStates.hasOwnProperty(screenId)) {
@@ -128,15 +137,36 @@ const SettingsProvider = ({ children }) => {
     return true;
   };
 
+  // Add getters for counts that apply the multiplier if showInflatedNumbers is true
+  const getDisplayTriviaQuestions = () => {
+    return showInflatedNumbers ? triviaQuestions * 5 : triviaQuestions;
+  };
+
+  const getDisplayTriviaDareDares = () => {
+    return showInflatedNumbers ? triviaDareDares * 5 : triviaDareDares;
+  };
+
+  const getDisplayDaresOnlyDares = () => {
+    return showInflatedNumbers ? daresOnlyDares * 5 : daresOnlyDares;
+  };
+
   const value = {
     isGloballyMuted,
     toggleGlobalMute,
     toggleScreenMute,
     isAudioEnabled,
     screenMuteStates,
+    // Original count values
     triviaQuestions,
     triviaDareDares,
     daresOnlyDares,
+    // Add inflated numbers state and toggle
+    showInflatedNumbers,
+    toggleInflatedNumbers,
+    // Add getters for display values
+    getDisplayTriviaQuestions,
+    getDisplayTriviaDareDares,
+    getDisplayDaresOnlyDares,
     resourcesLoaded
   };
 
@@ -182,13 +212,53 @@ const SettingsContent = () => {
   const { 
     isGloballyMuted, 
     toggleGlobalMute, 
-    triviaQuestions,
-    triviaDareDares,
-    daresOnlyDares,
+    // Use getters for display values instead of raw counts
+    getDisplayTriviaQuestions,
+    getDisplayTriviaDareDares,
+    getDisplayDaresOnlyDares,
+    // For the hidden feature
+    showInflatedNumbers,
+    toggleInflatedNumbers,
     isGameshowUI,
     toggleGameshowUI,
     resourcesLoaded
   } = useSettings();
+
+  // Handle restore purchases
+  const handleRestorePurchases = async () => {
+    try {
+      // Show loading alert
+      Alert.alert(
+        'Restoring Purchases',
+        'Please wait while we restore your purchases...',
+        [],
+        { cancelable: false }
+      );
+
+      const success = await iapManager.restorePurchases();
+
+      if (success) {
+        Alert.alert(
+          'Success',
+          'Your purchases have been restored successfully!',
+          [{ text: 'OK' }]
+        );
+      } else {
+        Alert.alert(
+          'No Purchases Found',
+          'No previous purchases were found to restore. If you made purchases but they\'re not showing up, please try again later or contact support.',
+          [{ text: 'OK' }]
+        );
+      }
+    } catch (error) {
+      console.error('Error restoring purchases:', error);
+      Alert.alert(
+        'Error',
+        'Failed to restore purchases. Please check your internet connection and try again.',
+        [{ text: 'OK' }]
+      );
+    }
+  };
 
   // Show loading state or placeholder for Android
   if (!resourcesLoaded && Platform.OS === 'android') {
@@ -216,6 +286,15 @@ const SettingsContent = () => {
           />
         </View>
         
+        <View style={styles.divider} />
+
+        {/* Restore Purchases Button */}
+        <Pressable
+          style={[styles.restoreButton, styles.pressableButton]}
+          onPress={handleRestorePurchases}
+        >
+          <Text style={styles.restoreButtonText}>Restore Purchases</Text>
+        </Pressable>
         
         <View style={styles.divider} />
 
@@ -226,13 +305,13 @@ const SettingsContent = () => {
           <View style={styles.statCard}>
             <View style={styles.statRow}>
               <Text style={styles.statLabel}>Questions Available</Text>
-              <Text style={styles.statValue}>{triviaQuestions}</Text>
+              <Text style={styles.statValue}>{getDisplayTriviaQuestions()}</Text>
             </View>
           </View>
           <View style={styles.statCard}>
             <View style={styles.statRow}>
               <Text style={styles.statLabel}>Dares Available</Text>
-              <Text style={styles.statValue}>{triviaDareDares}</Text>
+              <Text style={styles.statValue}>{getDisplayTriviaDareDares()}</Text>
             </View>
           </View>
 
@@ -241,15 +320,45 @@ const SettingsContent = () => {
           <View style={styles.statCard}>
             <View style={styles.statRow}>
               <Text style={styles.statLabel}>Dares Available</Text>
-              <Text style={styles.statValue}>{daresOnlyDares}</Text>
+              <Text style={styles.statValue}>{getDisplayDaresOnlyDares()}</Text>
             </View>
           </View>
         </View>
 
-        {/* Footer */}
+        {/* Footer with long press handler */}
         <View style={styles.footer}>
-          <Text style={styles.footerText}>TriviaDare®</Text>
-          <Text style={styles.version}>Version 1.0.4</Text>
+          <Pressable
+            onLongPress={() => {
+              // Start a timeout for 5 seconds
+              const timer = setTimeout(() => {
+                // Toggle between true and inflated numbers
+                toggleInflatedNumbers();
+                // Provide haptic feedback when toggled
+                if (Platform.OS === 'ios') {
+                  // Import the entire ReactNative package to access Haptics
+                  const ReactNative = require('react-native');
+                  if (ReactNative.Haptics) {
+                    ReactNative.Haptics.impactAsync(ReactNative.Haptics.ImpactFeedbackStyle.Medium);
+                  }
+                } else if (Platform.OS === 'android') {
+                  const { Vibration } = require('react-native');
+                  Vibration.vibrate(100);
+                }
+              }, 5000);
+              
+              // Return function to clean up timer if press is released early
+              return () => clearTimeout(timer);
+            }}
+            delayLongPress={1000} // Start recognizing long press after 1 second
+          >
+            <Text style={styles.footerText}>TriviaDare®</Text>
+          </Pressable>
+          <View style={styles.versionContainer}>
+            <Text style={styles.version}>Version 1.0.4</Text>
+            {!showInflatedNumbers && (
+              <Text style={styles.trueNumbersIndicator}>Showing True Numbers</Text>
+            )}
+          </View>
         </View>
       </View>
     </View>
@@ -351,12 +460,52 @@ const styles = StyleSheet.create({
     color: '#999',
     marginTop: 4,
   },
+  versionContainer: {
+    alignItems: 'center',
+  },
+  trueNumbersIndicator: {
+    fontSize: 11,
+    color: '#e74c3c',
+    marginTop: 2,
+    fontWeight: '500',
+  },
   loadingText: {
     fontSize: 16,
     textAlign: 'center',
     color: '#666',
     padding: 20,
-  }
+  },
+  restoreButton: {
+    backgroundColor: '#00a2e8',
+    borderRadius: 10,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    ...Platform.select({
+      android: {
+        elevation: 3,
+      },
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
+      }
+    })
+  },
+  pressableButton: {
+    // Add press state styling
+    pressStyle: {
+      opacity: 0.7,
+    }
+  },
+  restoreButtonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: '600',
+    textAlign: 'center',
+  },
 });
 
 export { SettingsContext, SettingsProvider, useSettings };

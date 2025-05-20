@@ -13,7 +13,8 @@ import {
   Vibration,
   TouchableNativeFeedback,
   Alert,
-  Share
+  Share,
+  Linking
 } from 'react-native';
 import { useNavigation, useRoute, useFocusEffect } from '@react-navigation/native';
 import { useGame } from '../Context/GameContext';
@@ -24,11 +25,85 @@ import * as Animatable from 'react-native-animatable';
 import { Audio } from 'expo-av';
 
 const { width } = Dimensions.get('window');
-const CROWN_SIZE = Platform.OS === 'android' ? 36 : 40; // Slightly smaller crown on Android
+const CROWN_SIZE = Platform.OS === 'android' ? 28 : 32;
 
-// Floating stars component for winner celebration with Android optimizations
+// Helper function to extract pack name from packStats
+const getPackName = (packStatsObj, routeParams) => {
+  // First check direct route params (highest priority)
+  if (routeParams?.packName) return routeParams.packName;
+  if (routeParams?.selectedPack) return routeParams.selectedPack;
+  
+  // Check if packStatsObj is a direct string (the pack name itself)
+  if (typeof packStatsObj === 'string') return packStatsObj;
+  
+  // Check if packStatsObj is missing or null
+  if (!packStatsObj) return "Trivia Pack";
+  
+  // Check packStatsObj properties
+  if (packStatsObj.packName) return packStatsObj.packName;
+  if (packStatsObj.name) return packStatsObj.name;
+  if (packStatsObj.selectedPack) return packStatsObj.selectedPack;
+  
+  // Check for packId and then match it to name
+  const packId = packStatsObj.packId || packStatsObj.selectedPackId || packStatsObj.id;
+  if (packId) {
+    // Match the ID to the name using a lookup table
+    const packIdToName = {
+      'entertainment': 'Entertainment',
+      'science': 'Science',
+      'history': 'History',
+      'sports': 'Sports',
+      'art': 'Art & Literature',
+      'geography': 'Geography',
+      'music': 'Music',
+      'technology': 'Technology',
+      'harrypotter': 'Harry Potter Movies',
+      'marvelcinamaticuniverse': 'Marvel Cinematic Universe',
+      'starwars': 'Star Wars',
+      'disneyanimatedmovies': 'Disney Animated Movies',
+      'thelordoftherings': 'The Lord of the Rings',
+      'pixar': 'Pixar Movies',
+      'friends': 'Friends Sitcom',
+      'videogames': 'Video Games',
+      'howimetyourmother': 'How I Met Your Mother',
+      'theoffice': 'The Office',
+      'themepark': 'Theme Parks'
+    };
+    
+    if (packIdToName[packId]) return packIdToName[packId];
+  }
+  
+  // Check nested objects
+  if (packStatsObj.pack) {
+    if (typeof packStatsObj.pack === 'string') return packStatsObj.pack;
+    if (packStatsObj.pack && packStatsObj.pack.name) return packStatsObj.pack.name;
+  }
+  
+  if (packStatsObj.packInfo) {
+    if (typeof packStatsObj.packInfo === 'string') return packStatsObj.packInfo;
+    if (packStatsObj.packInfo && packStatsObj.packInfo.name) return packStatsObj.packInfo.name;
+  }
+  
+  // Default fallback
+  return "Trivia Pack";
+};
+
+// Create shortened app store links with icons
+const getAppStoreLinks = () => {
+  // Use short links for both stores
+  const appStoreLink = "https://apple.co/triviadare"; // Replace with your actual short link
+  const playStoreLink = "https://bit.ly/triviadare-android"; // Replace with your actual short link
+  
+  return {
+    ios: `📱 iOS: ${appStoreLink}`,
+    android: `🤖 Android: ${playStoreLink}`,
+    both: `📱 iOS: ${appStoreLink} | 🤖 Android: ${playStoreLink}`
+  };
+};
+
+// Floating stars component for winner celebration
 const FloatingStars = () => {
-  const stars = Array(Platform.OS === 'android' ? 6 : 8).fill(0).map(() => ({
+  const stars = Array(Platform.OS === 'android' ? 4 : 6).fill(0).map(() => ({
     translateY: useRef(new Animated.Value(0)).current,
     translateX: useRef(new Animated.Value(0)).current,
     scale: useRef(new Animated.Value(0)).current,
@@ -36,48 +111,42 @@ const FloatingStars = () => {
   }));
 
   useEffect(() => {
-    // Platform-specific animation durations for better Android performance
-    const baseDuration = Platform.OS === 'android' ? 2500 : 3000;
-    const delayIncrement = Platform.OS === 'android' ? 400 : 500;
-    
     stars.forEach((star, index) => {
-      const startPositionX = (index % 2 === 0 ? -1 : 1) * (Math.random() * 100 + 50);
+      const startPositionX = (index % 2 === 0 ? -1 : 1) * (Math.random() * 50 + 25);
       const animation = Animated.loop(
         Animated.sequence([
           Animated.parallel([
             Animated.timing(star.translateY, {
-              toValue: -200 - (index * 30),
-              duration: baseDuration + (index * delayIncrement),
+              toValue: -100 - (index * 15),
+              duration: 2000 + (index * 300),
               useNativeDriver: true,
             }),
             Animated.timing(star.translateX, {
               toValue: startPositionX,
-              duration: baseDuration + (index * delayIncrement),
+              duration: 2000 + (index * 300),
               useNativeDriver: true,
             }),
             Animated.timing(star.scale, {
               toValue: 1,
-              duration: Platform.OS === 'android' ? 800 : 1000, // Faster scaling on Android
+              duration: 600,
               useNativeDriver: true,
             }),
             Animated.timing(star.rotate, {
               toValue: 1,
-              duration: baseDuration + (index * delayIncrement),
+              duration: 2000 + (index * 300),
               useNativeDriver: true,
             }),
           ]),
           Animated.timing(star.scale, {
             toValue: 0,
-            duration: Platform.OS === 'android' ? 400 : 500, // Faster fade out on Android
+            duration: 300,
             useNativeDriver: true,
           }),
         ])
       );
-      // Stagger the start of animations
-      setTimeout(() => animation.start(), index * (Platform.OS === 'android' ? 150 : 200));
+      setTimeout(() => animation.start(), index * 100);
     });
     
-    // Clean up animations on unmount
     return () => {
       stars.forEach(star => {
         star.translateY.stopAnimation();
@@ -112,7 +181,7 @@ const FloatingStars = () => {
         >
           <Ionicons 
             name="star" 
-            size={Platform.OS === 'android' ? 26 : 30} // Smaller stars on Android
+            size={Platform.OS === 'android' ? 22 : 26} 
             color="#FFD700" 
           />
         </Animated.View>
@@ -121,96 +190,100 @@ const FloatingStars = () => {
   );
 };
 
-// Shimmer effect component for winner's card with Android optimizations
-const ShimmerEffect = () => {
-  const shimmerAnim = useRef(new Animated.Value(0)).current;
-  const translateX = useRef(new Animated.Value(-width)).current;
+// Helper function to format numbers with commas
+const formatNumber = (num) => {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
 
-  useEffect(() => {
-    // Platform-specific animation durations for better Android performance
-    const opacityDuration = Platform.OS === 'android' ? 1200 : 1500;
-    const translationDuration = Platform.OS === 'android' ? 1600 : 2000;
-    
-    const shimmerOpacity = Animated.loop(
-      Animated.sequence([
-        Animated.timing(shimmerAnim, {
-          toValue: 1,
-          duration: opacityDuration,
-          useNativeDriver: true,
-        }),
-        Animated.timing(shimmerAnim, {
-          toValue: 0,
-          duration: opacityDuration,
-          useNativeDriver: true,
-        }),
-      ])
-    );
-
-    const shimmerTranslation = Animated.loop(
-      Animated.sequence([
-        Animated.timing(translateX, {
-          toValue: width,
-          duration: translationDuration,
-          useNativeDriver: true,
-        }),
-        Animated.timing(translateX, {
-          toValue: -width,
-          duration: 0,
-          useNativeDriver: true,
-        }),
-      ])
-    );
-
-    shimmerOpacity.start();
-    shimmerTranslation.start();
-    
-    // Clean up animations on unmount
-    return () => {
-      shimmerAnim.stopAnimation();
-      translateX.stopAnimation();
-    };
-  }, []);
-
-  return (
-    <View style={styles.shimmerContainer}>
-      <Animated.View
-        style={[
-          styles.shimmer,
-          {
-            opacity: shimmerAnim.interpolate({
-              inputRange: [0, 0.5, 1],
-              outputRange: [0.1, 0.3, 0.1],
-            }),
-            transform: [{ translateX }],
-          },
-        ]}
-      />
-    </View>
-  );
+// Helper function to get podium styles based on placement
+const getPodiumStyles = (rank, totalPlayers) => {
+  const baseHeight = Platform.OS === 'android' ? 65 : 75;
+  const baseFontSize = Platform.OS === 'android' ? 20 : 24;
+  const baseScoreSize = Platform.OS === 'android' ? 16 : 18;
+  const basePadding = Platform.OS === 'android' ? 10 : 12;
+  
+  switch (rank) {
+    case 0: // 1st place
+      return {
+        minHeight: baseHeight + 30,
+        fontSize: baseFontSize + 6,
+        scoreSize: baseScoreSize + 4,
+        padding: basePadding + 4,
+        marginVertical: 6,
+        scale: 1.0,
+      };
+    case 1: // 2nd place
+      return {
+        minHeight: baseHeight + 20,
+        fontSize: baseFontSize + 3,
+        scoreSize: baseScoreSize + 2,
+        padding: basePadding + 2,
+        marginVertical: 4,
+        scale: 0.98,
+      };
+    case 2: // 3rd place
+      return {
+        minHeight: baseHeight + 10,
+        fontSize: baseFontSize + 1,
+        scoreSize: baseScoreSize + 1,
+        padding: basePadding + 1,
+        marginVertical: 3,
+        scale: 0.96,
+      };
+    default: // 4th and below
+      return {
+        minHeight: baseHeight,
+        fontSize: baseFontSize - 1,
+        scoreSize: baseScoreSize,
+        padding: basePadding,
+        marginVertical: 2,
+        scale: 0.94,
+      };
+  }
 };
 
 const ResultsScreen = () => {
   const navigation = useNavigation();
   const route = useRoute();
   const { hardReset } = useGame();
-  const { playerData = [], packStats, isMultiplayer = false } = route.params || {};
+  
+  // Enhanced destructuring to catch all pack name sources
+  const { 
+    playerData = [], 
+    packStats, 
+    isMultiplayer = false,
+    packName: directPackName,
+    selectedPack: directSelectedPack
+  } = route.params || {};
+  
+  // Log all possible sources of pack name
+  useEffect(() => {
+    console.log('ResultsScreen received params:', {
+      packStats,
+      directPackName,
+      directSelectedPack,
+      routeParams: route.params
+    });
+    
+    // Try to find pack name from all sources
+    const packName = getPackName(packStats, route.params);
+    console.log('ResultsScreen determined pack name:', packName);
+  }, []);
+  
   const scaleAnim = useRef(new Animated.Value(0)).current;
-  const bluetooth = useBluetooth();
-  const firebase = useFirebase(); // Add Firebase context
+  
+  // Use Firebase context
+  const firebase = useFirebase();
   const { resetGame } = useGame();
 
-  // State for Firebase multiplayer rematch voting
+  // State for multiplayer rematch voting
   const [rematchVotes, setRematchVotes] = useState({});
-  const [showRematchOption, setShowRematchOption] = useState(isMultiplayer);
+  const [showRematchOption, setShowRematchOption] = useState(true);
   
   // State for background music
   const [resultsMusic, setResultsMusic] = useState(null);
   const [musicIsPlaying, setMusicIsPlaying] = useState(false);
   const [isFocused, setIsFocused] = useState(true);
-
-  // Determine which multiplayer system to use
-  const isFirebaseMultiplayer = !!firebase?.currentRoom;
-  const isBluetoothMultiplayer = isMultiplayer && !isFirebaseMultiplayer;
 
   // Handle screen focus state
   useFocusEffect(
@@ -331,21 +404,69 @@ const ResultsScreen = () => {
     }
   };
 
-  // Handle sharing results
+  // Enhanced share results function with proper pack name and short links
   const handleShareResults = async () => {
     try {
-      // Format results for sharing
-      const resultsText = `TriviaDare Results:\n\n${playerData
-        .map((player, index) => `${index + 1}. ${player.player}: ${player.score} points`)
-        .join('\n')}\n\nCome play TriviaDare with me!`;
+      // Get the winner's score
+      const winner = sortedPlayers[0];
+      const winnerScore = formatNumber(winner.score);
+      const winnerName = winner.player || winner.name;
       
-      await Share.share({
-        message: resultsText,
-        title: 'TriviaDare Results'
+      // Debug logging for all pack information sources
+      console.log('Share function - all pack sources:', {
+        packStats,
+        directPackName,
+        directSelectedPack,
+        routeParams: route.params
       });
+      
+      // Get pack name using the enhanced helper function
+      const packName = getPackName(packStats, route.params);
+      console.log('Share using pack name:', packName);
+      
+      // Get app store links with icons
+      const storeLinks = getAppStoreLinks();
+      
+      // Create a dynamic share message based on game mode
+      let shareMessage;
+      
+      if (isMultiplayer) {
+        // Create multiplayer message with all player scores
+        const playerResults = sortedPlayers
+          .map((player, index) => `${index + 1}. ${player.player || player.name}: ${formatNumber(player.score)} pts`)
+          .join('\n');
+          
+        shareMessage = `🏆 TriviaDare Multiplayer Results 🏆\n\n${playerResults}\n\nWe played the "${packName}" pack! Can you beat our scores?\n\nDownload TriviaDare now! #TriviaDare\n${storeLinks.both}`;
+      } else {
+        // Create single player message with proper pack name
+        shareMessage = `🎮 I just scored ${winnerScore} points playing TriviaDare on the "${packName}" pack! Can you beat my score?\n\nDownload TriviaDare now and challenge me! #TriviaDare\n${storeLinks.both}`;
+      }
+      
+      // Configure share options
+      const shareOptions = {
+        message: shareMessage,
+        title: 'Share TriviaDare Results',
+      };
+      
+      // Show the share dialog
+      const result = await Share.share(shareOptions);
+      
+      // Haptic feedback when share sheet appears
+      if (Platform.OS === 'android') {
+        try {
+          Vibration.vibrate(50);
+        } catch (e) {
+          console.log('Vibration not available');
+        }
+      }
+      
+      // Optional: Analytics tracking of shares
+      if (result.action === Share.sharedAction) {
+        console.log('Shared successfully with pack:', packName);
+      }
     } catch (error) {
       console.error('Error sharing results:', error);
-      Alert.alert('Error', 'Could not share results.');
+      Alert.alert('Error', 'Could not share results. Please try again.');
     }
   };
 
@@ -378,7 +499,8 @@ const ResultsScreen = () => {
 
   // Calculate the total votes and percentage for multiplayer rematch
   const getRematchStats = () => {
-    if (isFirebaseMultiplayer) {
+    // Only use Firebase implementation if we're in Firebase multiplayer
+    if (firebase && firebase.currentRoom) {
       // Firebase implementation
       const players = firebase?.players || {};
       const totalPlayers = Object.keys(players).length;
@@ -404,19 +526,13 @@ const ResultsScreen = () => {
         votingProgress: totalPlayers > 0 ? totalVotes / totalPlayers : 0
       };
     } else {
-      // Bluetooth implementation
-      const totalVotes = Object.values(rematchVotes).length;
-      const yesVotes = Object.values(rematchVotes).filter(vote => vote === true).length;
-      const noVotes = totalVotes - yesVotes;
-      const requiredPlayers = playerData?.length || 1;
-      const votingProgress = requiredPlayers > 0 ? totalVotes / requiredPlayers : 0;
-      
+      // Single player or other modes - simplified implementation
       return {
-        yesVotes,
-        noVotes,
-        totalVotes,
-        requiredPlayers,
-        votingProgress
+        yesVotes: 0,
+        noVotes: 0,
+        totalVotes: 0,
+        requiredPlayers: 1,
+        votingProgress: 0
       };
     }
   };
@@ -434,133 +550,43 @@ const ResultsScreen = () => {
       }
     }
     
-    if (isFirebaseMultiplayer) {
-      // Firebase implementation
+    // Only use Firebase if we're in a Firebase multiplayer game
+    if (firebase && firebase.currentRoom) {
       try {
         await firebase.updatePlayerData({
-          rematchVote: wantsRematch
+          rematchVote: wantsRematch  // Vote for rematch
         });
         
         // If rematch has majority votes, handle it (host only)
-        if (firebase.isHost) {
+        if (firebase && firebase.isHost) {
           const stats = getRematchStats();
-          if (stats.totalVotes === stats.requiredPlayers && stats.yesVotes > stats.noVotes) {
-            handlePlayAgain();
-          } else if (stats.totalVotes === stats.requiredPlayers && stats.yesVotes <= stats.noVotes) {
-            handleReturnHome();
+          if (stats.totalVotes === stats.requiredPlayers) {
+            // Only process if everyone has voted for rematch
+            if (stats.yesVotes === stats.requiredPlayers) {
+              handlePlayAgain();
+            }
           }
         }
       } catch (error) {
         console.error('Error updating rematch vote in Firebase:', error);
-      }
-    } else if (isBluetoothMultiplayer && bluetooth) {
-      // Bluetooth implementation
-      // Add local vote
-      const playerName = bluetooth.playerName || 'unknown';
-      setRematchVotes(prev => ({
-        ...prev,
-        [playerName]: wantsRematch
-      }));
-      
-      // Send vote to other players
-      if (bluetooth.sendData) {
-        bluetooth.sendData({
-          type: 'rematchVote',
-          playerName,
-          vote: wantsRematch
-        });
       }
     }
   };
 
   // Listen for rematch votes from Firebase
   useEffect(() => {
-    if (isFirebaseMultiplayer && firebase.isHost) {
+    if (firebase && firebase.isHost) {
       // Check if all players have voted
       const stats = getRematchStats();
       if (stats.totalVotes === stats.requiredPlayers) {
-        if (stats.yesVotes > stats.noVotes) {
-          // Majority wants to play again
+        // Only play again if ALL players voted for rematch
+        if (stats.yesVotes === stats.requiredPlayers) {
           handlePlayAgain();
-        } else {
-          // Majority wants to return home
-          handleReturnHome();
         }
       }
     }
-  }, [firebase.players]);
-
-  // Listen for rematch votes from other players (Bluetooth)
-  useEffect(() => {
-    if (isBluetoothMultiplayer && bluetooth && bluetooth.onDataReceived) {
-      const handleData = (data) => {
-        if (data && data.type === 'rematchVote') {
-          setRematchVotes(prev => ({
-            ...prev,
-            [data.playerName]: data.vote
-          }));
-        }
-      };
-      
-      // Set up listener
-      bluetooth.onDataReceived = handleData;
-      
-      return () => {
-        bluetooth.onDataReceived = null;
-      };
-    }
-  }, [isBluetoothMultiplayer, bluetooth]);
-
-  // Check if enough votes to start rematch (Bluetooth)
-  useEffect(() => {
-    if (isBluetoothMultiplayer && totalVotes === requiredPlayers && yesVotes > noVotes) {
-      handlePlayAgain();
-    }
-  }, [rematchVotes]);
-
-  const handleReturnHome = async () => {
-    try {
-      // Stop the music before navigating
-      await stopResultsMusic();
-      
-      // If in Firebase multiplayer, leave the room
-      if (isFirebaseMultiplayer) {
-        try {
-          await firebase.updateGameState({
-            gameStatus: 'finished',
-            finishedAt: new Date().toISOString()
-          });
-          
-          // Leave room if not host, otherwise wait for players to leave
-          if (!firebase.isHost) {
-            await firebase.leaveRoom();
-          }
-        } catch (error) {
-          console.error('Error updating game state in Firebase:', error);
-        }
-      }
-      
-      // If in Bluetooth multiplayer, send event that we're returning to lobby
-      if (isBluetoothMultiplayer && bluetooth && bluetooth.sendData) {
-        bluetooth.sendData({
-          type: 'returnToLobby'
-        });
-      }
-      
-      // Reset game state
-      await hardReset();
-      
-      // Navigate to home
-      navigation.reset({
-        index: 0,
-        routes: [{ name: 'Home' }],
-      });
-    } catch (error) {
-      console.error('Error returning to home:', error);
-      navigation.navigate('Home');
-    }
-  };
-
+  }, [firebase?.players]);
+  
   const handlePlayAgain = async () => {
     try {
       // Stop the music before navigating
@@ -570,8 +596,8 @@ const ResultsScreen = () => {
       await hardReset();
       
       // Firebase multiplayer implementation
-      if (isFirebaseMultiplayer) {
-        if (firebase.isHost) {
+      if (firebase && firebase.currentRoom) {
+        if (firebase && firebase.isHost) {
           try {
             // Reset player scores and ready states
             const playerPromises = Object.keys(firebase.players || {}).map(playerId => {
@@ -606,40 +632,130 @@ const ResultsScreen = () => {
           navigation.navigate('LobbyScreen', { isHost: false });
         }
       }
-      // Bluetooth multiplayer implementation
-      else if (isBluetoothMultiplayer) {
-        // In Bluetooth multiplayer, return to the lobby to start a new game
-        navigation.reset({
-          index: 0,
-          routes: [
-            { name: 'Home' },
-            { name: 'MultiplayerConnection' },
-            { name: 'LobbyScreen' }
-          ],
-        });
-      } 
-      // Single player implementation
-      else {
-        // In single player, go to pack selection
-        navigation.reset({
-          index: 0,
-          routes: [
-            { name: 'Home' },
-            { name: 'TriviaPackSelectionScreen' }
-          ],
-        });
-      }
     } catch (error) {
       console.error('Error starting new game:', error);
-      navigation.navigate('TriviaPackSelectionScreen');
+      navigation.navigate('Home');
+    }
+  };
+
+  const handleReturnHome = async () => {
+    try {
+      // Stop the music before navigating
+      await stopResultsMusic();
+      
+      // If in Firebase multiplayer, leave the room
+      if (firebase && firebase.currentRoom) {
+        try {
+          await firebase.updateGameState({
+            gameStatus: 'finished',
+            finishedAt: new Date().toISOString()
+          });
+          
+          // Leave room if not host, otherwise wait for players to leave
+          if (firebase && !firebase.isHost) {
+            await firebase.leaveRoom();
+          }
+        } catch (error) {
+          console.error('Error updating game state in Firebase:', error);
+        }
+      }
+      
+      // Reset game state
+      await hardReset();
+      
+      // Create params with player data to pass to Home
+      const params = playerData && playerData.length > 0 
+        ? { players: playerData.map(p => p.player || p.name) }
+        : undefined;
+      
+      console.log("Navigating to Home with players:", params?.players);
+      
+      // Navigate to home screen with player data
+      navigation.reset({
+        index: 0,
+        routes: [{ 
+          name: 'Home',
+          params
+        }],
+      });
+    } catch (error) {
+      console.error('Error returning to home:', error);
+      navigation.navigate('Home');
     }
   };
 
   // Sort players by score
   const sortedPlayers = [...(playerData || [])].sort((a, b) => b.score - a.score);
 
-  // Platform-specific button rendering
+  // Helper function to get dynamic button styles based on player count
+  const getButtonStyles = () => {
+    const playerCount = sortedPlayers.length;
+    const isMultiplePlayerView = playerCount > 2;
+    
+    // Make buttons smaller for multiple players
+    const basePadding = isMultiplePlayerView ? 
+      (Platform.OS === 'android' ? 8 : 10) : 
+      (Platform.OS === 'android' ? 10 : 12);
+    
+    const fontSize = isMultiplePlayerView ? 
+      (Platform.OS === 'android' ? 14 : 16) : 
+      (Platform.OS === 'android' ? 16 : 18);
+      
+    return {
+      button: {
+        ...styles.button,
+        padding: basePadding,
+      },
+      buttonText: {
+        ...styles.buttonText,
+        fontSize: fontSize,
+      }
+    };
+  };
+
+  // Render an enhanced share button with platform-specific styling
+  const renderShareButton = () => {
+    const playerCount = sortedPlayers.length;
+    const isMultiplePlayerView = playerCount > 2;
+    
+    const shareButtonStyles = {
+      padding: isMultiplePlayerView ? 
+        (Platform.OS === 'ios' ? 10 : 8) : 
+        (Platform.OS === 'ios' ? 12 : 10),
+      fontSize: isMultiplePlayerView ? 14 : 16,
+    };
+    
+    return (
+      <Animatable.View
+        animation="pulse"
+        iterationCount={3}
+        duration={Platform.OS === 'android' ? 2000 : 2500}
+      >
+        <TouchableOpacity 
+          style={styles.shareButton}
+          onPress={handleShareResults}
+          activeOpacity={0.7}
+        >
+          <LinearGradient
+            colors={['#0088cc', '#005580']} // Twitter blue color scheme
+            style={[styles.shareGradient, { padding: shareButtonStyles.padding }]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 0 }}
+          >
+            <View style={styles.shareContent}>
+              <Ionicons name="share-social" size={isMultiplePlayerView ? 20 : 24} color="#FFFFFF" />
+              <Text style={[styles.shareButtonText, { fontSize: shareButtonStyles.fontSize }]}>Share Results</Text>
+            </View>
+          </LinearGradient>
+        </TouchableOpacity>
+      </Animatable.View>
+    );
+  };
+
+  // Platform-specific button rendering with dynamic sizing
   const renderButton = (onPress, style, text, voteCount = null) => {
+    const dynamicStyles = getButtonStyles();
+    
     if (Platform.OS === 'android') {
       return (
         <View style={[styles.buttonWrapper, style]}>
@@ -647,8 +763,8 @@ const ResultsScreen = () => {
             onPress={onPress}
             background={TouchableNativeFeedback.Ripple('#FFFFFF', false)}
           >
-            <View style={[styles.button, style, styles.buttonAndroid]}>
-              <Text style={[styles.buttonText, styles.buttonTextAndroid]}>{text}</Text>
+            <View style={[dynamicStyles.button, style, styles.buttonAndroid]}>
+              <Text style={[dynamicStyles.buttonText, styles.buttonTextAndroid]}>{text}</Text>
               {voteCount !== null && (
                 <Text style={[styles.voteCount, styles.voteCountAndroid]}>{voteCount}</Text>
               )}
@@ -660,11 +776,11 @@ const ResultsScreen = () => {
     
     return (
       <TouchableOpacity 
-        style={[styles.button, style]} 
+        style={[dynamicStyles.button, style]} 
         onPress={onPress}
         activeOpacity={0.7}
       >
-        <Text style={styles.buttonText}>{text}</Text>
+        <Text style={dynamicStyles.buttonText}>{text}</Text>
         {voteCount !== null && (
           <Text style={styles.voteCount}>{voteCount}</Text>
         )}
@@ -676,7 +792,6 @@ const ResultsScreen = () => {
     <ImageBackground 
       source={require('../assets/questionscreen.jpg')} 
       style={styles.fullscreen}
-      // Android-specific image loading optimization
       {...(Platform.OS === 'android' ? { 
         resizeMethod: 'resize',
         resizeMode: 'cover'
@@ -692,613 +807,595 @@ const ResultsScreen = () => {
             styles.multiplayerText,
             Platform.OS === 'android' ? styles.multiplayerTextAndroid : null
           ]}>
-            {isFirebaseMultiplayer ? 'Firebase Multiplayer' : 'Multiplayer Mode'}
+            {firebase && firebase.currentRoom ? 'Firebase Multiplayer' : 'Multiplayer Mode'}
           </Text>
         </View>
       )}
       
-      <ScrollView 
-        style={styles.container}
-        // Android-specific ScrollView optimizations
-        overScrollMode={Platform.OS === 'android' ? 'never' : 'auto'}
-        bounces={Platform.OS === 'ios'}
-        removeClippedSubviews={Platform.OS === 'android'}
-      >
-        {sortedPlayers.map((player, index) => {
-          const isWinner = index === 0;
-          const isRunnerUp = index === 1;
-          const isThird = index === 2;
-          
-          // Platform-specific animation durations
-          const animationDuration = Platform.OS === 'android' ? 1000 : 1200;
-          const pulseDuration = Platform.OS === 'android' ? 1200 : 1500;
-          
-          return (
-            <Animatable.View
-              key={`${player.player || player.name}-${index}`}
-              animation={isWinner ? "bounceIn" : "fadeInUp"}
-              delay={index * (Platform.OS === 'android' ? 200 : 300)} // Faster delay for Android
-              duration={animationDuration}
-            >
-              <LinearGradient
-                colors={isWinner 
-                  ? ['#ffd700', '#ff8c00', '#ffd700'] 
-                  : isRunnerUp 
-                    ? ['#E8E8E8', '#C0C0C0', '#E8E8E8']
-                    : isThird 
-                      ? ['#CD7F32', '#8B4513', '#CD7F32']
-                      : ['#282828', '#484848', '#282828']}
-                style={[
-                  styles.playerContainer, 
-                  isWinner && styles.winnerContainer,
-                  // Platform-specific styling
-                  Platform.OS === 'android' && styles.playerContainerAndroid,
-                  Platform.OS === 'android' && isWinner && styles.winnerContainerAndroid
-                ]}
-                start={{x: 0, y: 0}}
-                end={{x: 1, y: 0}}
+      <View style={styles.container}>
+        {/* Podium Container - No Scrolling */}
+        <View style={styles.podiumContainer}>
+          {sortedPlayers.map((player, index) => {
+            const isWinner = index === 0;
+            const isRunnerUp = index === 1;
+            const isThird = index === 2;
+            const podiumStyles = getPodiumStyles(index, sortedPlayers.length);
+            
+            // Platform-specific animation durations
+            const animationDuration = Platform.OS === 'android' ? 800 : 1000;
+            const pulseDuration = Platform.OS === 'android' ? 1200 : 1500;
+            
+            return (
+              <Animatable.View
+                key={`${player.player || player.name}-${index}`}
+                animation={isWinner ? "bounceIn" : "fadeInUp"}
+                delay={index * (Platform.OS === 'android' ? 150 : 200)}
+                duration={animationDuration}
+                style={{ transform: [{ scale: podiumStyles.scale }] }}
               >
-                {isWinner && <FloatingStars />}
-                {isWinner && <ShimmerEffect />}
-                
-                <Animatable.View 
-                  style={styles.rankContainer}
-                  animation={isWinner ? "pulse" : "fadeIn"}
-                  iterationCount={isWinner ? "infinite" : 1}
-                  duration={pulseDuration}
+                <LinearGradient
+                  colors={isWinner 
+                    ? ['#ffd700', '#ff8c00', '#ffd700'] 
+                    : isRunnerUp 
+                      ? ['#E8E8E8', '#C0C0C0', '#E8E8E8']
+                      : isThird 
+                        ? ['#CD7F32', '#8B4513', '#CD7F32']
+                        : ['#282828', '#484848', '#282828']}
+                  style={[
+                    styles.playerContainer, 
+                    {
+                      minHeight: podiumStyles.minHeight,
+                      marginVertical: podiumStyles.marginVertical,
+                      padding: podiumStyles.padding,
+                    },
+                    isWinner && styles.winnerContainer,
+                    Platform.OS === 'android' && styles.playerContainerAndroid,
+                    Platform.OS === 'android' && isWinner && styles.winnerContainerAndroid
+                  ]}
+                  start={{x: 0, y: 0}}
+                  end={{x: 1, y: 0}}
                 >
+                  {isWinner && <FloatingStars />}
+                  
+                  {/* Left side - Rank */}
+                  <View style={styles.rankContainer}>
                   <Text style={[
-                    styles.rankText, 
-                    isWinner && styles.winnerRank,
-                    // Platform-specific styling
-                    Platform.OS === 'android' && styles.rankTextAndroid,
-                    Platform.OS === 'android' && isWinner && styles.winnerRankAndroid
-                  ]}>
-                    #{index + 1}
-                  </Text>
-                  {isWinner && (
-                    <Animatable.View 
-                      animation="swing" 
-                      iterationCount="infinite" 
-                      duration={Platform.OS === 'android' ? 1800 : 2000} // Slightly faster on Android
-                      style={styles.trophyContainer}
-                    >
-                      <Ionicons name="trophy" size={CROWN_SIZE} color="#FFD700" />
-                    </Animatable.View>
-                  )}
-                </Animatable.View>
-
-                <View style={styles.playerInfo}>
-                  <Text style={[
-                    styles.playerName, 
-                    isWinner && styles.winnerText,
-                    // Platform-specific styling
-                    Platform.OS === 'android' && styles.playerNameAndroid,
-                    Platform.OS === 'android' && isWinner && styles.winnerTextAndroid
-                  ]}>
-                    {player.player || player.name}
-                    {isWinner && ' 👑'}
-                  </Text>
-                  <Animatable.Text 
-                    style={[
-                      styles.playerScore, 
-                      isWinner && styles.winnerScore,
-                      // Platform-specific styling
-                      Platform.OS === 'android' && styles.playerScoreAndroid,
-                      Platform.OS === 'android' && isWinner && styles.winnerScoreAndroid
-                    ]}
-                    animation={isWinner ? "flash" : "fadeIn"}
-                    iterationCount={isWinner ? "infinite" : 1}
-                    duration={Platform.OS === 'android' ? 1800 : 2000} // Slightly faster on Android
-                  >
-                    {player.score} pts
-                  </Animatable.Text>
-                </View>
-
-                {isWinner && (
-                  <Animatable.View 
-                    style={[
-                      styles.winnerBadge,
-                      // Platform-specific styling
-                      Platform.OS === 'android' && styles.winnerBadgeAndroid
-                    ]}
-                    animation="pulse" 
-                    easing="ease-out" 
-                    iterationCount="infinite"
-                    duration={pulseDuration}
-                  >
-                    <Text style={[
-                      styles.winnerBadgeText,
-                      // Platform-specific styling
-                      Platform.OS === 'android' && styles.winnerBadgeTextAndroid
-                    ]}>CHAMPION!</Text>
-                  </Animatable.View>
-                )}
-              </LinearGradient>
-            </Animatable.View>
-          );
-        })}
-      </ScrollView>
-      
-      <Animatable.View 
-        style={[
-          styles.buttonContainer,
-          // Platform-specific styling
-          Platform.OS === 'android' && styles.buttonContainerAndroid
-        ]}
-        animation="bounceIn"
-        delay={Platform.OS === 'android' ? 800 : 1000} // Faster delay for Android
-      >
-        {/* Share Results Button */}
-        <TouchableOpacity 
-          style={styles.shareButton}
-          onPress={handleShareResults}
-        >
-          <Ionicons name="share-social" size={24} color="#FFFFFF" />
-          <Text style={styles.shareButtonText}>Share Results</Text>
-        </TouchableOpacity>
-        
-        {isMultiplayer ? (
-          // Multiplayer buttons
-          <>
-            {showRematchOption ? (
-              <>
-                {renderButton(
-                  () => handleRematchVote(true),
-                  styles.rematchButton,
-                  "Vote for Rematch",
-                  `${yesVotes} of ${requiredPlayers} votes`
-                )}
-                
-                {renderButton(
-                  () => handleRematchVote(false),
-                  styles.returnButton,
-                  isFirebaseMultiplayer ? "Vote to Return to Home" : "Vote to Return to Lobby",
-                  `${noVotes} of ${requiredPlayers} votes`
-                )}
-                
-                {totalVotes > 0 && (
-                  <View style={styles.votingProgressContainer}>
-                    <View style={[
-                      styles.votingProgressBackground,
-                      // Platform-specific styling
-                      Platform.OS === 'android' && styles.votingProgressBackgroundAndroid
-                    ]}>
-                      <View 
-                         style={[
-                          styles.votingProgressFill,
-                          { width: `${votingProgress * 100}%` },
-                          // Platform-specific styling
-                          Platform.OS === 'android' && styles.votingProgressFillAndroid
-                        ]} 
-                      />
+                        styles.rankText,
+                        { fontSize: podiumStyles.fontSize },
+                        isWinner && styles.winnerRank,
+                        Platform.OS === 'android' && styles.rankTextAndroid,
+                        Platform.OS === 'android' && isWinner && styles.winnerRankAndroid
+                      ]}>
+                        #{index + 1}
+                      </Text>
+                      {isWinner && (
+                        <Animatable.View 
+                          animation="swing" 
+                          iterationCount="infinite" 
+                          duration={pulseDuration}
+                          style={styles.trophyContainer}
+                        >
+                          <Ionicons name="trophy" size={CROWN_SIZE} color="#FFD700" />
+                        </Animatable.View>
+                      )}
                     </View>
-                    <Text style={[
-                      styles.votingText,
-                      // Platform-specific styling
-                      Platform.OS === 'android' && styles.votingTextAndroid
-                    ]}>
-                      Voting: {totalVotes} of {requiredPlayers} players voted
-                    </Text>
-                  </View>
+
+                    {/* Center - Player Info */}
+                    <View style={styles.playerInfo}>
+                      <Text style={[
+                        styles.playerName, 
+                        { fontSize: podiumStyles.fontSize },
+                        isWinner && styles.winnerText,
+                        Platform.OS === 'android' && styles.playerNameAndroid,
+                        Platform.OS === 'android' && isWinner && styles.winnerTextAndroid
+                      ]}>
+                        {player.player || player.name}
+                        {isWinner && ' 👑'}
+                      </Text>
+                      <Animatable.Text 
+                        style={[
+                          styles.playerScore, 
+                          { fontSize: podiumStyles.scoreSize },
+                          isWinner && styles.winnerScore,
+                          Platform.OS === 'android' && styles.playerScoreAndroid,
+                          Platform.OS === 'android' && isWinner && styles.winnerScoreAndroid
+                        ]}
+                        animation={isWinner ? "flash" : "fadeIn"}
+                        iterationCount={isWinner ? "infinite" : 1}
+                        duration={pulseDuration}
+                      >
+                        {formatNumber(player.score)} pts
+                      </Animatable.Text>
+                    </View>
+
+                    {/* Right side - Winner Badge for 1st place */}
+                    {isWinner && (
+                      <Animatable.View 
+                        style={[
+                          styles.winnerBadge,
+                          Platform.OS === 'android' && styles.winnerBadgeAndroid
+                        ]}
+                        animation="pulse" 
+                        easing="ease-out" 
+                        iterationCount="infinite"
+                        duration={pulseDuration}
+                      >
+                        <Text style={[
+                          styles.winnerBadgeText,
+                          Platform.OS === 'android' && styles.winnerBadgeTextAndroid
+                        ]}>CHAMPION!</Text>
+                      </Animatable.View>
+                    )}
+                  </LinearGradient>
+                </Animatable.View>
+              );
+            })}
+          </View>
+          
+          {/* Button Container */}
+          <Animatable.View 
+            style={[
+              styles.buttonContainer,
+              Platform.OS === 'android' && styles.buttonContainerAndroid
+            ]}
+            animation="bounceIn"
+            delay={Platform.OS === 'android' ? 500 : 700}
+          >
+            {/* Enhanced Share Results Button */}
+            {renderShareButton()}
+            
+            {isMultiplayer ? (
+              // Multiplayer buttons
+              <>
+                {showRematchOption ? (
+                  <>
+                    {renderButton(
+                      () => handleRematchVote(true),
+                      styles.playAgainButton,
+                      "Vote to Play Again",
+                      `${yesVotes} of ${requiredPlayers}`
+                    )}
+                    
+                    {renderButton(
+                      () => handleRematchVote(false),
+                      styles.returnButton,
+                      "Vote to Return Home",
+                      `${noVotes} of ${requiredPlayers}`
+                    )}
+                    
+                    {totalVotes > 0 && (
+                      <View style={styles.votingProgressContainer}>
+                        <View style={[
+                          styles.votingProgressBackground,
+                          Platform.OS === 'android' && styles.votingProgressBackgroundAndroid
+                        ]}>
+                          <View 
+                             style={[
+                              styles.votingProgressFill,
+                              { width: `${votingProgress * 100}%` },
+                              Platform.OS === 'android' && styles.votingProgressFillAndroid
+                            ]} 
+                          />
+                        </View>
+                        <Text style={[
+                          styles.votingText,
+                          Platform.OS === 'android' && styles.votingTextAndroid
+                        ]}>
+                          Voting: {totalVotes} of {requiredPlayers} players voted
+                        </Text>
+                      </View>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    {renderButton(
+                      handleReturnHome,
+                      styles.returnButton,
+                      "Return Home"
+                    )}
+                  </>
                 )}
               </>
             ) : (
+              // Single player buttons - Only showing Return Home button
               <>
-                {renderButton(
-                  handlePlayAgain,
-                  styles.playAgainButton,
-                  isFirebaseMultiplayer && !firebase.isHost 
-                    ? "Waiting for Host" 
-                    : "Play Again"
-                )}
-                
                 {renderButton(
                   handleReturnHome,
                   styles.returnButton,
-                  isFirebaseMultiplayer ? "Return to Home" : "Return to Lobby"
+                  "Return Home"
                 )}
               </>
             )}
-          </>
-        ) : (
-          // Single player buttons
-          <>
-            {renderButton(
-              handlePlayAgain,
-              styles.playAgainButton,
-              "Play Again!"
-            )}
-            
-            {renderButton(
-              handleReturnHome,
-              styles.returnButton,
-              "Return Home"
-            )}
-          </>
-        )}
-      </Animatable.View>
-    </ImageBackground>
-  );
-};
+          </Animatable.View>
+        </View>
+      </ImageBackground>
+    );
+  };
 
-const styles = StyleSheet.create({
-  fullscreen: {
-    flex: 1,
-    resizeMode: 'cover',
-    paddingTop: Platform.OS === 'ios' ? 60 : 40,
-  },
-  container: {
-    flex: 1,
-    paddingVertical: 20,
-  },
-  multiplayerBanner: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'rgba(0, 100, 255, 0.7)',
-    paddingVertical: 5,
-    width: '100%',
-    marginBottom: 5,
-  },
-  // Android-specific multiplayer banner styling
-  multiplayerBannerAndroid: {
-    paddingVertical: 4,
-    backgroundColor: 'rgba(0, 100, 255, 0.8)', // Slightly more opaque for better visibility
-    elevation: 3, // Add elevation for better look
-  },
-  multiplayerText: {
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    fontSize: 16,
-    marginLeft: 5,
-    textShadowColor: '#000',
-    textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 2,
-  },
-  // Android-specific multiplayer text styling
-  multiplayerTextAndroid: {
-    fontSize: 14, // Slightly smaller text
-    fontWeight: '700', // Android may have issues with certain font weights
-    textShadowColor: undefined,
-    textShadowOffset: undefined,
-    textShadowRadius: undefined,
-    elevation: 2, // Use elevation instead of text shadow
-  },
-  playerContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    padding: 25,
-    marginHorizontal: 15,
-    borderRadius: 50,
-    marginBottom: 20,
-    marginTop: 15,
-    elevation: 10,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 5,
-    borderWidth: 2,
-    borderColor: 'rgba(255,255,255,0.2)',
-    overflow: 'visible',
-  },
-  // Android-specific player container styling
-  playerContainerAndroid: {
-    padding: 20, // Slightly more compact
-    borderWidth: 1.5, // Thinner border
-    shadowColor: undefined,
-    shadowOffset: undefined,
-    shadowOpacity: undefined,
-    shadowRadius: undefined,
-    elevation: 8, // Use elevation for shadow effect
-  },
-  winnerContainer: {
-    borderWidth: 4,
-    borderColor: '#FFD700',
-    transform: [{ scale: 1.05 }],
-    shadowColor: '#FFD700',
-    shadowOpacity: 0.6,
-    shadowRadius: 15,
-  },
-  // Android-specific winner container styling
-  winnerContainerAndroid: {
-    borderWidth: 3, // Slightly thinner border
-    shadowColor: undefined,
-    shadowOffset: undefined,
-    shadowOpacity: undefined,
-    shadowRadius: undefined,
-    elevation: 12, // Higher elevation for emphasis
-    transform: [{ scale: 1.03 }], // Slightly smaller scale for better performance
-  },
-  rankContainer: {
-    width: 70,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  rankText: {
-    fontSize: 36,
-    fontWeight: 'bold',
-    color: '#FFFFFF',
-    textShadowColor: 'rgba(0, 0, 0, 0.5)',
-    textShadowOffset: { width: 2, height: 2 },
-    textShadowRadius: 4,
-  },
-  // Android-specific rank text styling
-  rankTextAndroid: {
-    fontSize: 32, // Slightly smaller text
-    fontWeight: '700', // Android may have issues with certain font weights
-    textShadowColor: undefined,
-    textShadowOffset: undefined,
-    textShadowRadius: undefined,
-    elevation: 4, // Use elevation instead of text shadow
-  },
-  winnerRank: {
-    fontSize: 42,
-    color: '#FFD700',
-    textShadowColor: '#000',
-    textShadowRadius: 10,
-  },
-  // Android-specific winner rank styling
-  winnerRankAndroid: {
-    fontSize: 38, // Slightly smaller text
-    textShadowColor: undefined,
-    textShadowOffset: undefined,
-    textShadowRadius: undefined,
-    elevation: 6, // Use elevation instead of text shadow
-  },
-  playerInfo: {
-    flex: 1,
-    marginLeft: 20,
-  },
-  playerName: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#FFFFFF',
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 10,
-  },
-  // Android-specific player name styling
-  playerNameAndroid: {
-    fontSize: 28, // Slightly smaller text
-    fontWeight: '700', // Android may have issues with certain font weights
-    textShadowColor: undefined,
-    textShadowOffset: undefined,
-    textShadowRadius: undefined,
-    elevation: 4, // Use elevation instead of text shadow
-  },
-  playerScore: {
-    fontSize: 28,
-    color: '#00FF00',
-    marginTop: 8,
-    fontWeight: 'bold',
-    textShadowColor: 'rgba(0, 0, 0, 0.5)',
-    textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 3,
-  },
-  // Android-specific player score styling
-  playerScoreAndroid: {
-    fontSize: 24, // Slightly smaller text
-    fontWeight: '700', // Android may have issues with certain font weights
-    marginTop: 6, // Slightly less margin
-    textShadowColor: undefined,
-    textShadowOffset: undefined,
-    textShadowRadius: undefined,
-    elevation: 3, // Use elevation instead of text shadow
-  },
-  winnerText: {
-    fontSize: 36,
-    color: '#FFFFFF',
-  },
-  // Android-specific winner text styling
-  winnerTextAndroid: {
-    fontSize: 32, // Slightly smaller text
-  },
-  winnerScore: {
-    fontSize: 32,
-    color: '#00FF00',
-  },
-  // Android-specific winner score styling
-  winnerScoreAndroid: {
-    fontSize: 28, // Slightly smaller text
-  },
-  winnerBadge: {
-    backgroundColor: '#FFD700',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 20,
-    position: 'absolute',
-    right: 10,
-    top: 3,
-    elevation: 8,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 7,
-    transform: [{ rotate: '15deg' }],
-    zIndex: 1,
-  },
-  // Android-specific winner badge styling
-  winnerBadgeAndroid: {
-    paddingHorizontal: 16, // Slightly smaller padding
-    paddingVertical: 8, // Slightly smaller padding
-    borderRadius: 16, // Smaller radius
-    right: 5, // Adjust position
-    top: 2, // Adjust position
-    shadowColor: undefined,
-    shadowOffset: undefined,
-    shadowOpacity: undefined,
-    shadowRadius: undefined,
-    elevation: 10, // Use elevation for shadow effect
-  },
-  winnerBadgeText: {
-    color: '#000000',
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
-  // Android-specific winner badge text styling
-  winnerBadgeTextAndroid: {
-    fontSize: 14, // Slightly smaller text
-    fontWeight: '700', // Android may have issues with certain font weights
-  },
-  buttonContainer: {
-    padding: 20,
-    paddingBottom: Platform.OS === 'ios' ? 40 : 20,
-  },
-  // Android-specific button container styling
-  buttonContainerAndroid: {
-    padding: 16, // Slightly smaller padding
-  },
-  // Button wrapper for Android TouchableNativeFeedback
-  buttonWrapper: {
-    borderRadius: 30,
-    marginBottom: 10,
-    overflow: 'hidden',
-  },
-  button: {
-    padding: 20,
-    borderRadius: 30,
-    justifyContent: 'center',
-    alignItems: 'center',
-    elevation: 8,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 5,
-    borderWidth: 2,
-    marginBottom: 10,
-  },
-  // Android-specific button styling
-  buttonAndroid: {
-    padding: 18, // Slightly smaller padding
-    borderRadius: 0, // No border radius because it's applied to wrapper
-    marginBottom: 0, // No margin because it's applied to wrapper
-    borderWidth: 1.5, // Thinner border
-    shadowColor: undefined,
-    shadowOffset: undefined,
-    shadowOpacity: undefined,
-    shadowRadius: undefined,
-    elevation: 6, // Use elevation for shadow effect
-  },
-  playAgainButton: {
-    backgroundColor: '#FFD700',
-    borderColor: '#FFA500',
-  },
-  returnButton: {
-    backgroundColor: '#4682B4',
-    borderColor: '#1E90FF',
-  },
-  rematchButton: {
-    backgroundColor: '#4CAF50',
-    borderColor: '#2E7D32',
-  },
-  buttonText: {
-    color: '#000000',
-    fontSize: 24,
-    fontWeight: 'bold',
-    textShadowColor: 'rgba(255, 255, 255, 0.5)',
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 5,
-  },
-  // Android-specific button text styling
-  buttonTextAndroid: {
-    fontSize: 22, // Slightly smaller text
-    fontWeight: '700', // Android may have issues with certain font weights
-    textShadowColor: undefined,
-    textShadowOffset: undefined,
-    textShadowRadius: undefined,
-    elevation: 3, // Use elevation instead of text shadow
-  },
-  voteCount: {
-    color: '#FFFFFF',
-    fontSize: 16,
-    marginTop: 5,
-    textShadowColor: 'rgba(0, 0, 0, 0.5)',
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 2,
-  },
-  // Android-specific vote count styling
-  voteCountAndroid: {
-    fontSize: 14, // Slightly smaller text
-    marginTop: 4, // Slightly less margin
-    textShadowColor: undefined,
-    textShadowOffset: undefined,
-    textShadowRadius: undefined,
-    elevation: 2, // Use elevation instead of text shadow
-  },
-  votingProgressContainer: {
-    width: '100%',
-    alignItems: 'center',
-    marginTop: 10,
-  },
-  votingProgressBackground: {
-    width: '100%',
-    height: 10,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
-    borderRadius: 5,
-    overflow: 'hidden',
-  },
-  // Android-specific voting progress background styling
-  votingProgressBackgroundAndroid: {
-    height: 8, // Slightly smaller height
-    borderRadius: 4, // Smaller radius
-  },
-  votingProgressFill: {
-    height: '100%',
-    backgroundColor: '#FFD700',
-  },
-  // Android-specific voting progress fill styling
-  votingProgressFillAndroid: {
-    backgroundColor: '#FFC107', // Slightly different gold shade for better Android appearance
-  },
-  votingText: {
-    color: '#FFFFFF',
-    fontSize: 14,
-    marginTop: 5,
-    fontStyle: 'italic',
-  },
-  // Android-specific voting text styling
-  votingTextAndroid: {
-    fontSize: 12, // Slightly smaller text
-    marginTop: 4, // Slightly less margin
-  },
-  starsContainer: {
-    position: 'absolute',
-    top: -50,
-    left: -100,
-    right: -100,
-    bottom: -50,
-    zIndex: 2,
-    pointerEvents: 'none',
-  },
-  star: {
-    position: 'absolute',
-    zIndex: 2,
-    top: '50%',
-    left: '50%',
-  },
-  shimmerContainer: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    overflow: 'hidden',
-    borderRadius: 50,
-  },
-  shimmer: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: '#FFFFFF',
-    transform: [{ skewX: '-20deg' }],
-    width: '100%',
-  },
-  trophyContainer: {
-    marginTop: 5,
-  },
-});
+  const styles = StyleSheet.create({
+    fullscreen: {
+      flex: 1,
+      resizeMode: 'cover',
+      paddingTop: Platform.OS === 'ios' ? 60 : 40,
+    },
+    container: {
+      flex: 1,
+      justifyContent: 'space-between',
+      paddingHorizontal: 15,
+    },
+    multiplayerBanner: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: 'rgba(0, 100, 255, 0.7)',
+      paddingVertical: 5,
+      width: '100%',
+      marginBottom: 5,
+    },
+    // Android-specific multiplayer banner styling
+    multiplayerBannerAndroid: {
+      paddingVertical: 4,
+      backgroundColor: 'rgba(0, 100, 255, 0.8)',
+      elevation: 3,
+    },
+    multiplayerText: {
+      color: '#FFFFFF',
+      fontWeight: 'bold',
+      fontSize: 16,
+      marginLeft: 5,
+      textShadowColor: '#000',
+      textShadowOffset: { width: 1, height: 1 },
+      textShadowRadius: 2,
+    },
+    // Android-specific multiplayer text styling
+    multiplayerTextAndroid: {
+      fontSize: 14,
+      fontWeight: '700',
+      textShadowColor: undefined,
+      textShadowOffset: undefined,
+      textShadowRadius: undefined,
+      elevation: 2,
+    },
+    // Podium Container - No ScrollView
+    podiumContainer: {
+      flex: 1,
+      justifyContent: 'center',
+      paddingVertical: 10,
+    },
+    playerContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginHorizontal: 10,
+      borderRadius: 25,
+      marginBottom: 12,
+      elevation: 8,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.3,
+      shadowRadius: 5,
+      borderWidth: 2,
+      borderColor: 'rgba(255,255,255,0.2)',
+      overflow: 'hidden',
+    },
+    // Android-specific player container styling
+    playerContainerAndroid: {
+      borderWidth: 1.5,
+      shadowColor: undefined,
+      shadowOffset: undefined,
+      shadowOpacity: undefined,
+      shadowRadius: undefined,
+      elevation: 6,
+    },
+    winnerContainer: {
+      borderWidth: 3,
+      borderColor: '#FFD700',
+      shadowColor: '#FFD700',
+      shadowOpacity: 0.6,
+      shadowRadius: 15,
+    },
+    // Android-specific winner container styling
+    winnerContainerAndroid: {
+      borderWidth: 2,
+      shadowColor: undefined,
+      shadowOffset: undefined,
+      shadowOpacity: undefined,
+      shadowRadius: undefined,
+      elevation: 10,
+    },
+    rankContainer: {
+      width: 60,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    rankText: {
+      fontWeight: 'bold',
+      color: '#FFFFFF',
+      textShadowColor: 'rgba(0, 0, 0, 0.5)',
+      textShadowOffset: { width: 2, height: 2 },
+      textShadowRadius: 4,
+    },
+    // Android-specific rank text styling
+    rankTextAndroid: {
+      fontWeight: '700',
+      textShadowColor: undefined,
+      textShadowOffset: undefined,
+      textShadowRadius: undefined,
+      elevation: 4,
+    },
+    winnerRank: {
+      color: '#FFD700',
+      textShadowColor: '#000',
+      textShadowRadius: 10,
+    },
+    // Android-specific winner rank styling
+    winnerRankAndroid: {
+      textShadowColor: undefined,
+      textShadowOffset: undefined,
+      textShadowRadius: undefined,
+      elevation: 6,
+    },
+    playerInfo: {
+      flex: 1,
+      marginLeft: 10,
+      marginRight: 10,
+    },
+    playerName: {
+      fontWeight: 'bold',
+      color: '#FFFFFF',
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: { width: -1, height: 1 },
+      textShadowRadius: 10,
+    },
+    // Android-specific player name styling
+    playerNameAndroid: {
+      fontWeight: '700',
+      textShadowColor: undefined,
+      textShadowOffset: undefined,
+      textShadowRadius: undefined,
+      elevation: 4,
+    },
+    playerScore: {
+      color: '#00FF00',
+      marginTop: 4,
+      fontWeight: 'bold',
+      textShadowColor: 'rgba(0, 0, 0, 0.5)',
+      textShadowOffset: { width: 1, height: 1 },
+      textShadowRadius: 3,
+    },
+    // Android-specific player score styling
+    playerScoreAndroid: {
+      fontWeight: '700',
+      marginTop: 3,
+      textShadowColor: undefined,
+      textShadowOffset: undefined,
+      textShadowRadius: undefined,
+      elevation: 3,
+    },
+    winnerText: {
+      color: '#FFFFFF',
+    },
+    // Android-specific winner text styling
+    winnerTextAndroid: {
+      // Keep same as base
+    },
+    winnerScore: {
+      color: '#00FF00',
+    },
+    // Android-specific winner score styling
+    winnerScoreAndroid: {
+      // Keep same as base
+    },
+    winnerBadge: {
+      backgroundColor: '#FFD700',
+      paddingHorizontal: 12,
+      paddingVertical: 6,
+      borderRadius: 15,
+      elevation: 8,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.3,
+      shadowRadius: 7,
+      transform: [{ rotate: '10deg' }],
+    },
+    // Android-specific winner badge styling
+    winnerBadgeAndroid: {
+      paddingHorizontal: 10,
+      paddingVertical: 5,
+      borderRadius: 12,
+      shadowColor: undefined,
+      shadowOffset: undefined,
+      shadowOpacity: undefined,
+      shadowRadius: undefined,
+      elevation: 10,
+    },
+    winnerBadgeText: {
+      color: '#000000',
+      fontWeight: 'bold',
+      fontSize: 12,
+    },
+    // Android-specific winner badge text styling
+    winnerBadgeTextAndroid: {
+      fontSize: 11,
+      fontWeight: '700',
+    },
+    // Updated button container styles
+    buttonContainer: {
+      padding: 15,
+      paddingBottom: Platform.OS === 'ios' ? 30 : 15,
+      paddingTop: 10,
+    },
+    // Android-specific button container styling
+    buttonContainerAndroid: {
+      padding: 12,
+      paddingTop: 8,
+    },
+    // Button wrapper for Android TouchableNativeFeedback
+    buttonWrapper: {
+      borderRadius: 20,
+      marginBottom: 8,
+      overflow: 'hidden',
+    },
+    // Updated button styles - more compact
+    button: {
+      padding: 12,
+      borderRadius: 20,
+      justifyContent: 'center',
+      alignItems: 'center',
+      elevation: 6,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 3 },
+      shadowOpacity: 0.25,
+      shadowRadius: 4,
+      borderWidth: 2,
+      marginBottom: 8,
+      minHeight: 50,
+    },
+    // Android-specific button styling
+    buttonAndroid: {
+      padding: 12,
+      borderRadius: 0,
+      marginBottom: 0,
+      borderWidth: 1.5,
+      shadowColor: undefined,
+      shadowOffset: undefined,
+      shadowOpacity: undefined,
+      shadowRadius: undefined,
+      elevation: 5,
+      minHeight: 48,
+    },
+    playAgainButton: {
+      backgroundColor: '#FFD700',
+      borderColor: '#FFA500',
+    },
+    returnButton: {
+      backgroundColor: '#4682B4',
+      borderColor: '#1E90FF',
+    },
+    rematchButton: {
+      backgroundColor: '#4CAF50',
+      borderColor: '#2E7D32',
+    },
+    // Updated button text styles - smaller
+    buttonText: {
+      color: '#000000',
+      fontSize: 18,
+      fontWeight: 'bold',
+      textShadowColor: 'rgba(255, 255, 255, 0.5)',
+      textShadowOffset: { width: 0, height: 1 },
+      textShadowRadius: 5,
+      textAlign: 'center',
+    },
+    // Android-specific button text styling
+    buttonTextAndroid: {
+      fontSize: 16,
+      fontWeight: '700',
+      textShadowColor: undefined,
+      textShadowOffset: undefined,
+      textShadowRadius: undefined,
+      elevation: 3,
+    },
+    // Updated vote count styles - smaller
+    voteCount: {
+      color: '#FFFFFF',
+      fontSize: 14,
+      marginTop: 4,
+      textShadowColor: 'rgba(0, 0, 0, 0.5)',
+      textShadowOffset: { width: 0, height: 1 },
+      textShadowRadius: 2,
+    },
+    // Android-specific vote count styling
+    voteCountAndroid: {
+      fontSize: 12,
+      marginTop: 3,
+      textShadowColor: undefined,
+      textShadowOffset: undefined,
+      textShadowRadius: undefined,
+      elevation: 2,
+    },
+    votingProgressContainer: {
+      width: '100%',
+      alignItems: 'center',
+      marginTop: 8,
+    },
+    votingProgressBackground: {
+      width: '100%',
+      height: 8,
+      backgroundColor: 'rgba(255, 255, 255, 0.2)',
+      borderRadius: 4,
+      overflow: 'hidden',
+    },
+    // Android-specific voting progress background styling
+    votingProgressBackgroundAndroid: {
+      height: 6,
+      borderRadius: 3,
+    },
+    votingProgressFill: {
+      height: '100%',
+      backgroundColor: '#FFD700',
+    },
+    // Android-specific voting progress fill styling
+    votingProgressFillAndroid: {
+      backgroundColor: '#FFC107',
+    },
+    votingText: {
+      color: '#FFFFFF',
+      fontSize: 12,
+      marginTop: 4,
+      fontStyle: 'italic',
+    },
+    // Android-specific voting text styling
+    votingTextAndroid: {
+      fontSize: 11,
+      marginTop: 3,
+    },
+    starsContainer: {
+      position: 'absolute',
+      top: -30,
+      left: -50,
+      right: -50,
+      bottom: -30,
+      zIndex: 2,
+      pointerEvents: 'none',
+    },
+    star: {
+      position: 'absolute',
+      zIndex: 2,
+      top: '50%',
+      left: '50%',
+    },
+    trophyContainer: {
+      marginTop: 3,
+    },
+    // Enhanced share button styles - more compact
+    shareButton: {
+      width: '100%',
+      borderRadius: 20,
+      overflow: 'hidden',
+      marginBottom: 12,
+      elevation: 4,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.2,
+      shadowRadius: 3,
+    },
+    shareGradient: {
+      width: '100%',
+      padding: Platform.OS === 'ios' ? 12 : 10,
+    },
+    shareContent: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    shareButtonText: {
+      color: '#FFFFFF',
+      fontSize: 16,
+      fontWeight: 'bold',
+      marginLeft: 8,
+      textShadowColor: 'rgba(0, 0, 0, 0.3)',
+      textShadowOffset: { width: 0, height: 1 },
+      textShadowRadius: 2,
+    },
+  });
 
-export default ResultsScreen;
+  export default ResultsScreen;

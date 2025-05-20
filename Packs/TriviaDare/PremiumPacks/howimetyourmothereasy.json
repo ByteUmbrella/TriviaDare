@@ -1,3 +1,3034 @@
 {
-    "Sheet1": []
-  }
+  "Sheet1": [
+    {
+      "Question ID": "HOWIMETYOURMOTHER_1",
+      "Question Text": "In How I Met Your Mother, During The Three Night Party, Who Did Barney's Hookup Claim To Know?",
+      "Option A": "Brad Pitt",
+      "Option B": "Leonardo DiCaprio",
+      "Option C": "A champagne cork",
+      "Option D": "George Clooney",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_2",
+      "Question Text": "In How I Met Your Mother, How Many Parties Did Ted Throw To See Robin 'Casually'?",
+      "Option A": "Three",
+      "Option B": "Five",
+      "Option C": "Seven",
+      "Option D": "Nine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_3",
+      "Question Text": "In How I Met Your Mother, In What Year Does Future Ted Begin Telling His Story?",
+      "Option A": "2005",
+      "Option B": "2030",
+      "Option C": "2025",
+      "Option D": "2021",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_4",
+      "Question Text": "In How I Met Your Mother, Since What Year Has Ted Been Vomit-Free?",
+      "Option A": "1995",
+      "Option B": "1993",
+      "Option C": "1999",
+      "Option D": "2001",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_5",
+      "Question Text": "In How I Met Your Mother, What Animal Does Barney Dress As For Halloween?",
+      "Option A": "Penguin",
+      "Option B": "Duck",
+      "Option C": "Lion",
+      "Option D": "Tiger",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_6",
+      "Question Text": "In How I Met Your Mother, What Black Sabbath Song Can Marshall Sing?",
+      "Option A": "Iron Man",
+      "Option B": "Paranoid",
+      "Option C": "Tootsie Roll",
+      "Option D": "War Pigs",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_7",
+      "Question Text": "In How I Met Your Mother, What Code Does Barney Live By?",
+      "Option A": "Man Code",
+      "Option B": "Bro Code",
+      "Option C": "The Playbook",
+      "Option D": "Wing Man Code",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_8",
+      "Question Text": "In How I Met Your Mother, What Dating Rule Does Barney Create To End Dates Early?",
+      "Option A": "Fake Emergency Call",
+      "Option B": "Mother Is Sick",
+      "Option C": "Food Poisoning",
+      "Option D": "Chinese Food Restaurant",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_9",
+      "Question Text": "In How I Met Your Mother, What Do Barney And Lily Both Get Arrested For During Thanksgiving?",
+      "Option A": "Shoplifting",
+      "Option B": "Public Intoxication",
+      "Option C": "Trespassing",
+      "Option D": "BaskIceBall",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_10",
+      "Question Text": "In How I Met Your Mother, What Game Do Robin And Barney Both Claim To Have Never Lost At?",
+      "Option A": "Poker",
+      "Option B": "Battleship",
+      "Option C": "Laser Tag",
+      "Option D": "Red Dragon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_11",
+      "Question Text": "In How I Met Your Mother, What Halloween Costume Does Ted Wear Every Year?",
+      "Option A": "Vampire",
+      "Option B": "Superman",
+      "Option C": "Hanging Chad",
+      "Option D": "Moby",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_12",
+      "Question Text": "In How I Met Your Mother, What Is Barney's Famous Catchphrase?",
+      "Option A": "Challenge Accepted",
+      "Option B": "Suit Up!",
+      "Option C": "Legendary",
+      "Option D": "Wait For It",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_13",
+      "Question Text": "In How I Met Your Mother, What Is Barney's Signature Clothing Item?",
+      "Option A": "Tie",
+      "Option B": "Suit",
+      "Option C": "Watch",
+      "Option D": "Buttercup",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_14",
+      "Question Text": "In How I Met Your Mother, What Is Stuart's Wife's Name?",
+      "Option A": "Claudia",
+      "Option B": "Natalie",
+      "Option C": "Jessica",
+      "Option D": "Amanda",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_15",
+      "Question Text": "In How I Met Your Mother, What Is Ted's Hometown?",
+      "Option A": "Cleveland",
+      "Option B": "Columbus",
+      "Option C": "Cincinnati",
+      "Option D": "Dayton",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_16",
+      "Question Text": "In How I Met Your Mother, What Is The Name Of Carl's Special Red Shot?",
+      "Option A": "Red Dragon",
+      "Option B": "Woo Girl",
+      "Option C": "Carl's Revenge",
+      "Option D": "Red Death",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_17",
+      "Question Text": "In How I Met Your Mother, What Is The Name Of The Gang's Regular Bar?",
+      "Option A": "MacLaren's Pub",
+      "Option B": "McGee's",
+      "Option C": "Paddy's",
+      "Option D": "Ted's Place",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_18",
+      "Question Text": "In How I Met Your Mother, What National Landmark Do Ted And Barney Lick?",
+      "Option A": "Statue of Liberty",
+      "Option B": "Washington Monument",
+      "Option C": "Liberty Bell",
+      "Option D": "Mount Rushmore",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_19",
+      "Question Text": "In How I Met Your Mother, What Song Do Marshall And Lily Perform As A Duet?",
+      "Option A": "Summer Nights",
+      "Option B": "Don't Go Breaking My Heart",
+      "Option C": "Total Eclipse of the Heart",
+      "Option D": "Paradise by the Dashboard Light",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_20",
+      "Question Text": "In How I Met Your Mother, What Was The Name Of Barney's Ex-Girlfriend Who Left Him Before The Peace Corps?",
+      "Option A": "Shannon",
+      "Option B": "Nora",
+      "Option C": "Quinn",
+      "Option D": "Robin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_21",
+      "Question Text": "In How I Met Your Mother, What Was Victoria's Code Name The Night She Met Ted?",
+      "Option A": "Buttercup",
+      "Option B": "Cupcake",
+      "Option C": "Muffin",
+      "Option D": "Pastry Girl",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_22",
+      "Question Text": "In How I Met Your Mother, Where Did Victoria Move To For Baking School?",
+      "Option A": "Paris",
+      "Option B": "London",
+      "Option C": "Vienna",
+      "Option D": "Germany",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_23",
+      "Question Text": "In How I Met Your Mother, Which Bar Employee Frequently Helps The Gang?",
+      "Option A": "Carl",
+      "Option B": "Doug",
+      "Option C": "Wendy",
+      "Option D": "Brad",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_24",
+      "Question Text": "In How I Met Your Mother, Which Canadian Pop Star Becomes A News Anchor?",
+      "Option A": "Bryan Adams",
+      "Option B": "Celine Dion",
+      "Option C": "Robin Sparkles",
+      "Option D": "Shania Twain",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_25",
+      "Question Text": "In How I Met Your Mother, Which Character Is A Kindergarten Teacher?",
+      "Option A": "Robin",
+      "Option B": "Lily",
+      "Option C": "Tracy",
+      "Option D": "Zoey",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_26",
+      "Question Text": "In How I Met Your Mother, Which Character Owns A Collection Of Historical Swords?",
+      "Option A": "Ted",
+      "Option B": "Marshall",
+      "Option C": "Barney",
+      "Option D": "Robin",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_27",
+      "Question Text": "In How I Met Your Mother, Which Gang Member Always Dresses In Suits?",
+      "Option A": "Ted",
+      "Option B": "Marshall",
+      "Option C": "Robin",
+      "Option D": "Barney",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_28",
+      "Question Text": "In How I Met Your Mother, Who Always Has To Use The Bathroom?",
+      "Option A": "Marshall",
+      "Option B": "Lily",
+      "Option C": "Ted",
+      "Option D": "Robin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_29",
+      "Question Text": "In How I Met Your Mother, Who Warned Ted About Nothing Good Happening After 2 AM?",
+      "Option A": "Marshall",
+      "Option B": "His Mother",
+      "Option C": "Robin",
+      "Option D": "Barney",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_30",
+      "Question Text": "In How I Met Your Mother, Who Writes A Phone Number On Ted's Arm During His Blackout?",
+      "Option A": "Robin",
+      "Option B": "Lily",
+      "Option C": "Trudy",
+      "Option D": "Victoria",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_31",
+      "Question Text": "In How I Met Your Mother, How Long Were Marshall And Lily Temporarily Married?",
+      "Option A": "Three days",
+      "Option B": "One week",
+      "Option C": "Ten days",
+      "Option D": "Two weeks",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_32",
+      "Question Text": "In How I Met Your Mother, What Broadway Show Does Marshall Watch With Brad?",
+      "Option A": "Wicked",
+      "Option B": "Cats",
+      "Option C": "Rent",
+      "Option D": "Mamma Mia",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_33",
+      "Question Text": "In How I Met Your Mother, What Is Robin's Pop Star Name?",
+      "Option A": "Robin Sparkles",
+      "Option B": "Robin Diamond",
+      "Option C": "Robin Glitter",
+      "Option D": "Robin Daggers",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_34",
+      "Question Text": "In How I Met Your Mother, What Is Scooter's Real Name?",
+      "Option A": "Jeff",
+      "Option B": "Bill",
+      "Option C": "Michael",
+      "Option D": "Todd",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_35",
+      "Question Text": "In How I Met Your Mother, What Mileage Was Marshall's Fiero About To Hit When It Broke Down?",
+      "Option A": "100,000",
+      "Option B": "200,000",
+      "Option C": "150,000",
+      "Option D": "199,999",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_36",
+      "Question Text": "In How I Met Your Mother, What Movie Does Robin Hate That Upsets Ted?",
+      "Option A": "Field of Dreams",
+      "Option B": "The Notebook",
+      "Option C": "Titanic",
+      "Option D": "Star Wars",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_37",
+      "Question Text": "In How I Met Your Mother, What Nickname Does Barney Hate Being Called?",
+      "Option A": "Barn",
+      "Option B": "Stinson",
+      "Option C": "Swarley",
+      "Option D": "Barnacle",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_38",
+      "Question Text": "In How I Met Your Mother, What Part Of Marshall's Body Is Lily's Weakness?",
+      "Option A": "Calves",
+      "Option B": "Ears",
+      "Option C": "Chest",
+      "Option D": "Butt",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_39",
+      "Question Text": "In How I Met Your Mother, What Role Does Barney Never Let Marshall Be?",
+      "Option A": "Driver",
+      "Option B": "Banker",
+      "Option C": "Reindeer",
+      "Option D": "Wheelman",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_40",
+      "Question Text": "In How I Met Your Mother, What Song Do Ted And Marshall Always Play On Road Trips?",
+      "Option A": "Born To Run",
+      "Option B": "Sweet Caroline",
+      "Option C": "Don't Stop Believin'",
+      "Option D": "I'm Gonna Be (500 Miles)",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_41",
+      "Question Text": "In How I Met Your Mother, What Word Makes Lily Uncomfortable?",
+      "Option A": "Moist",
+      "Option B": "Panties",
+      "Option C": "Slacks",
+      "Option D": "Mucus",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_42",
+      "Question Text": "In How I Met Your Mother, Where Did Lily Go For Her Art Fellowship?",
+      "Option A": "New York",
+      "Option B": "San Francisco",
+      "Option C": "Chicago",
+      "Option D": "Los Angeles",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_43",
+      "Question Text": "In How I Met Your Mother, Which Actor Plays Barney's Brother?",
+      "Option A": "John Stamos",
+      "Option B": "Wayne Brady",
+      "Option C": "Neil Patrick Harris",
+      "Option D": "Jason Segel",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_44",
+      "Question Text": "In How I Met Your Mother, Which Character Has A Fear Of Driving?",
+      "Option A": "Ted",
+      "Option B": "Marshall",
+      "Option C": "Lily",
+      "Option D": "Robin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_45",
+      "Question Text": "In How I Met Your Mother, Which Character Is Famous For Their Slap Bets?",
+      "Option A": "Marshall",
+      "Option B": "Barney",
+      "Option C": "Ted",
+      "Option D": "Lily",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_46",
+      "Question Text": "In How I Met Your Mother, Which Character Was Previously Known As Robin Sparkles?",
+      "Option A": "Lily",
+      "Option B": "Tracy",
+      "Option C": "Robin",
+      "Option D": "Zoey",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_47",
+      "Question Text": "In How I Met Your Mother, Who Did Barney Initially Think Was His Father?",
+      "Option A": "Bob Barker",
+      "Option B": "John Stamos",
+      "Option C": "Wayne Brady",
+      "Option D": "Jerry Whittaker",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_48",
+      "Question Text": "In How I Met Your Mother, Who Did Barney Lose His Virginity To?",
+      "Option A": "Shannon",
+      "Option B": "Nora",
+      "Option C": "Quinn",
+      "Option D": "His music teacher",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_49",
+      "Question Text": "In How I Met Your Mother, Who Goes With Marshall And Ted To Visit Lily In San Francisco?",
+      "Option A": "Robin",
+      "Option B": "Barney",
+      "Option C": "Ranjit",
+      "Option D": "Victoria",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_50",
+      "Question Text": "In How I Met Your Mother, Who Is Barney's Brother?",
+      "Option A": "Wayne Brady",
+      "Option B": "Bob Barker",
+      "Option C": "Jerry Whittaker",
+      "Option D": "James Stinson",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_51",
+      "Question Text": "In How I Met Your Mother, What Amusement Park Hires Marshall's Evil Law Firm?",
+      "Option A": "Disney World",
+      "Option B": "Six Flags",
+      "Option C": "Walleye Lake",
+      "Option D": "Universal Studios",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_52",
+      "Question Text": "In How I Met Your Mother, What Does The Name 'Dowisetrepla' Stand For?",
+      "Option A": "Down With Settlement Place",
+      "Option B": "Downtown West of SoHo Triangle Plaza",
+      "Option C": "Downtown Wizard Settlement Place",
+      "Option D": "Downwind of the Sewage Treatment Plant",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_53",
+      "Question Text": "In How I Met Your Mother, What Games Does Marshall Create For Lily's Birthday?",
+      "Option A": "Marshgammon",
+      "Option B": "Lilial Pursuit",
+      "Option C": "Aldrin Olympics",
+      "Option D": "Lily's Quest",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_54",
+      "Question Text": "In How I Met Your Mother, What Is Lily's Eating-Related Nickname?",
+      "Option A": "Lilypad",
+      "Option B": "Big Fudge",
+      "Option C": "Red Lobster",
+      "Option D": "Little Piggy",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_55",
+      "Question Text": "In How I Met Your Mother, What Kind Of Band Does Ted And Barney's Bet Girl Play In?",
+      "Option A": "Jazz",
+      "Option B": "Rock",
+      "Option C": "Classical",
+      "Option D": "Country",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_56",
+      "Question Text": "In How I Met Your Mother, What State Do Ted And Barney Pretend To Be From?",
+      "Option A": "California",
+      "Option B": "Texas",
+      "Option C": "New Mexico",
+      "Option D": "Oklahoma",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_57",
+      "Question Text": "In How I Met Your Mother, What Was Barney Told He Had As A Kid?",
+      "Option A": "ADHD",
+      "Option B": "Allergies",
+      "Option C": "Asthma",
+      "Option D": "Special Needs",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_58",
+      "Question Text": "In How I Met Your Mother, What Was The Name Of Ted's Childhood Detective Club?",
+      "Option A": "The Mosby Boys",
+      "Option B": "Mystery Inc.",
+      "Option C": "Clue Crew",
+      "Option D": "Hardy Boys",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_59",
+      "Question Text": "In How I Met Your Mother, What Word Does Robin Overuse That Annoys The Gang?",
+      "Option A": "Actually",
+      "Option B": "Literally",
+      "Option C": "Basically",
+      "Option D": "Like",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_60",
+      "Question Text": "In How I Met Your Mother, What's Wrong With Marshall And Lily's Apartment?",
+      "Option A": "It's haunted",
+      "Option B": "It's too small",
+      "Option C": "It's crooked",
+      "Option D": "It smells",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_61",
+      "Question Text": "In How I Met Your Mother, Where Did Ted And Barney First Meet?",
+      "Option A": "MacLaren's",
+      "Option B": "Ted's apartment",
+      "Option C": "College",
+      "Option D": "Work",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_62",
+      "Question Text": "In How I Met Your Mother, Which Character Carries A Military-Grade Purse?",
+      "Option A": "Robin",
+      "Option B": "Lily",
+      "Option C": "Tracy",
+      "Option D": "Zoey",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_63",
+      "Question Text": "In How I Met Your Mother, Which Waitress Does Barney Date Breaking The Platinum Rule?",
+      "Option A": "Wendy",
+      "Option B": "Stacey",
+      "Option C": "Betty",
+      "Option D": "Amanda",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_64",
+      "Question Text": "In How I Met Your Mother, Who Does Barney Bet He Can Get To Grow A Moustache?",
+      "Option A": "Ted",
+      "Option B": "Marshall",
+      "Option C": "Robin",
+      "Option D": "Lily",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_65",
+      "Question Text": "In How I Met Your Mother, According To Barney Who Invented The Three Days Rule?",
+      "Option A": "Jesus",
+      "Option B": "Moses",
+      "Option C": "God",
+      "Option D": "Buddha",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_66",
+      "Question Text": "In How I Met Your Mother, According To Marshall Who Is The Only Non-White Person In Minnesota?",
+      "Option A": "Prince",
+      "Option B": "His neighbor",
+      "Option C": "The mailman",
+      "Option D": "Ted's college roommate",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_67",
+      "Question Text": "In How I Met Your Mother, After Barney Watches Lily's Play, What Does He Name His Own Play?",
+      "Option A": "Suck It Lily",
+      "Option B": "The Barney Show",
+      "Option C": "Suit Up",
+      "Option D": "The Playbook",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_68",
+      "Question Text": "In How I Met Your Mother, How Does Ted Describe Gazolas Pizza?",
+      "Option A": "Delicious",
+      "Option B": "Best in NYC",
+      "Option C": "Life-changing",
+      "Option D": "Worth the wait",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_69",
+      "Question Text": "In How I Met Your Mother, What Body Part Does Barney Pierce For The Murtaugh List?",
+      "Option A": "Ear",
+      "Option B": "Nose",
+      "Option C": "Eyebrow",
+      "Option D": "Tongue",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_70",
+      "Question Text": "In How I Met Your Mother, What Celebrity Joins Marshall's Search For The Perfect Burger?",
+      "Option A": "Alec Baldwin",
+      "Option B": "Adam Sandler",
+      "Option C": "Heidi Klum",
+      "Option D": "Regis Philbin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_71",
+      "Question Text": "In How I Met Your Mother, What Do People Say Instead Of 'Good' At Barney's Work?",
+      "Option A": "Great",
+      "Option B": "Awesome",
+      "Option C": "Fantastic",
+      "Option D": "Legendary",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_72",
+      "Question Text": "In How I Met Your Mother, What Does Barney Call Ted's Cramped Apartment?",
+      "Option A": "Shoebox",
+      "Option B": "Dollhouse",
+      "Option C": "Tiny Tim",
+      "Option D": "The Micro-apartment",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_73",
+      "Question Text": "In How I Met Your Mother, What Does Lily Always Bring Marshall From The Airport?",
+      "Option A": "Candy",
+      "Option B": "Souvenirs",
+      "Option C": "Snacks",
+      "Option D": "Magazines",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_74",
+      "Question Text": "In How I Met Your Mother, What Food Is Barney Allergic To?",
+      "Option A": "Peanuts",
+      "Option B": "Seafood",
+      "Option C": "Olives",
+      "Option D": "Tomatoes",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_75",
+      "Question Text": "In How I Met Your Mother, What Holiday Does Barney Invent In Season 4?",
+      "Option A": "Awesome Day",
+      "Option B": "Suit Up Day",
+      "Option C": "Not A Father's Day",
+      "Option D": "Slap Bet Day",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_76",
+      "Question Text": "In How I Met Your Mother, What Is Marshall's Basketball Nickname?",
+      "Option A": "Vanilla Thunder",
+      "Option B": "Beercules",
+      "Option C": "Big Fudge",
+      "Option D": "Beast",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_77",
+      "Question Text": "In How I Met Your Mother, What Is Ted's Radio Show Name At Wesleyan University?",
+      "Option A": "Doc Morning",
+      "Option B": "Doctor Love",
+      "Option C": "Professor Radio",
+      "Option D": "DJ Teddy Westside",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_78",
+      "Question Text": "In How I Met Your Mother, What Is The Murtaugh List?",
+      "Option A": "Things Too Old To Do",
+      "Option B": "Things Never To Do Again",
+      "Option C": "Things Barney Can't Do",
+      "Option D": "Things Ted Shouldn't Try",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_79",
+      "Question Text": "In How I Met Your Mother, What Is The Name Of Barney's Mother?",
+      "Option A": "Loretta",
+      "Option B": "Betty",
+      "Option C": "Virginia",
+      "Option D": "Rhonda",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_80",
+      "Question Text": "In How I Met Your Mother, What Is The Name Of Stella's Daughter?",
+      "Option A": "Emma",
+      "Option B": "Lucy",
+      "Option C": "Sarah",
+      "Option D": "Molly",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_81",
+      "Question Text": "In How I Met Your Mother, What Type Of Sauce Does Barney Consider Tabasco?",
+      "Option A": "Hot",
+      "Option B": "Spicy",
+      "Option C": "Medium",
+      "Option D": "Mild",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_82",
+      "Question Text": "In How I Met Your Mother, What Word Gets Robin's News Interviews Turned Into A Drinking Game?",
+      "Option A": "Actually",
+      "Option B": "But",
+      "Option C": "Literally",
+      "Option D": "Um",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_83",
+      "Question Text": "In How I Met Your Mother, Where Did Barney Get All The Items In His Office?",
+      "Option A": "Garage sales",
+      "Option B": "Internet",
+      "Option C": "Thrift stores",
+      "Option D": "Movies",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_84",
+      "Question Text": "In How I Met Your Mother, Where Do Marshall And Barney Work?",
+      "Option A": "Goliath National Bank",
+      "Option B": "Nicholson, Hewitt & West",
+      "Option C": "Altrucel",
+      "Option D": "AltraCorp",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_85",
+      "Question Text": "In How I Met Your Mother, Where Does Robin Co-Anchor With A Monkey?",
+      "Option A": "Metro News 1",
+      "Option B": "Channel 12",
+      "Option C": "Come On, Get Up New York!",
+      "Option D": "Morning Show",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_86",
+      "Question Text": "In How I Met Your Mother, Which Character Designs The GNB Building?",
+      "Option A": "Ted",
+      "Option B": "Hammond",
+      "Option C": "Brad",
+      "Option D": "Sven",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_87",
+      "Question Text": "In How I Met Your Mother, Which Character Works As A Corporate Lawyer At GNB?",
+      "Option A": "Ted",
+      "Option B": "Marshall",
+      "Option C": "Robin",
+      "Option D": "Barney",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_88",
+      "Question Text": "In How I Met Your Mother, Which Company Was Involved In Tennis Ball Fuzz And North Korea?",
+      "Option A": "Altrucel",
+      "Option B": "GNB",
+      "Option C": "Price Industries",
+      "Option D": "Bilson & Co.",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_89",
+      "Question Text": "In How I Met Your Mother, Who Is Ted's Sister?",
+      "Option A": "Heather",
+      "Option B": "Haley",
+      "Option C": "Holly",
+      "Option D": "Hannah",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_90",
+      "Question Text": "In How I Met Your Mother, Who Is The First Person To Receive An Intervention?",
+      "Option A": "Stuart",
+      "Option B": "Barney",
+      "Option C": "Ted",
+      "Option D": "Lily",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_91",
+      "Question Text": "In How I Met Your Mother, How Did Barney Handle Fights When Dating Robin?",
+      "Option A": "Running away",
+      "Option B": "Making jokes",
+      "Option C": "Apologizing profusely",
+      "Option D": "Buying gifts",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_92",
+      "Question Text": "In How I Met Your Mother, What Do Canadian Women Prefer Over Chocolate?",
+      "Option A": "Maple syrup",
+      "Option B": "Hockey tickets",
+      "Option C": "Tim Hortons",
+      "Option D": "Poutine",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_93",
+      "Question Text": "In How I Met Your Mother, What Do Ted And Marshall Call The Sidewalk Outside Their Building?",
+      "Option A": "The Porch",
+      "Option B": "The Stoop",
+      "Option C": "The Front",
+      "Option D": "The Steps",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_94",
+      "Question Text": "In How I Met Your Mother, What Play Is Barney Running During 'The Playbook' Episode?",
+      "Option A": "The SNASA",
+      "Option B": "The Ted Mosby",
+      "Option C": "The Scuba Diver",
+      "Option D": "The Time Traveler",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_95",
+      "Question Text": "In How I Met Your Mother, What Position Does Scooter Hold At Lily's School?",
+      "Option A": "Teacher",
+      "Option B": "Principal",
+      "Option C": "Janitor",
+      "Option D": "Cafeteria worker",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_96",
+      "Question Text": "In How I Met Your Mother, What Term Describes Sleeping With Seven Women In Seven Days?",
+      "Option A": "The Perfect Week",
+      "Option B": "The Home Run",
+      "Option C": "The Grand Slam",
+      "Option D": "The Full Court Press",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_97",
+      "Question Text": "In How I Met Your Mother, Where Is The Job Located That Robin Turns Down But Don Accepts?",
+      "Option A": "Chicago",
+      "Option B": "New York",
+      "Option C": "Tokyo",
+      "Option D": "Seattle",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_98",
+      "Question Text": "In How I Met Your Mother, Which Canadian Celebrity Helps Lily Break Up Robin And Barney?",
+      "Option A": "Celine Dion",
+      "Option B": "Wayne Gretzky",
+      "Option C": "Ryan Reynolds",
+      "Option D": "Alex Trebek",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_99",
+      "Question Text": "In How I Met Your Mother, Which Character Has A Doppelganger Who Is A Cab Driver?",
+      "Option A": "Ted",
+      "Option B": "Marshall",
+      "Option C": "Barney",
+      "Option D": "Robin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_100",
+      "Question Text": "In How I Met Your Mother, Which Character Is Known For Their Elaborate Plays To Meet Women?",
+      "Option A": "Ted",
+      "Option B": "Marshall",
+      "Option C": "Barney",
+      "Option D": "Robin",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_101",
+      "Question Text": "In How I Met Your Mother, What Building Does Zoey Try To Save?",
+      "Option A": "The Arcadian",
+      "Option B": "The Goliath",
+      "Option C": "The Empire State Building",
+      "Option D": "The Plaza",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_102",
+      "Question Text": "In How I Met Your Mother, What Christmas Movie Does The Gang Miss When Ted Destroys The Gingerbread House?",
+      "Option A": "Home Alone",
+      "Option B": "Die Hard",
+      "Option C": "It's A Wonderful Life",
+      "Option D": "Elf",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_103",
+      "Question Text": "In How I Met Your Mother, What Does Lily Ask When She Knows Robin Is Lying About Don?",
+      "Option A": "Where's the poop?",
+      "Option B": "What happened?",
+      "Option C": "Are you sure?",
+      "Option D": "Tell me the truth",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_104",
+      "Question Text": "In How I Met Your Mother, What Does Ted Call Himself When Meeting The Captain?",
+      "Option A": "The Admiral",
+      "Option B": "The Sailor",
+      "Option C": "The Commodore",
+      "Option D": "The Lieutenant",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_105",
+      "Question Text": "In How I Met Your Mother, What Drink Makes Ted Start Beatboxing?",
+      "Option A": "Flaming Homer",
+      "Option B": "Red Dragon",
+      "Option C": "Red Bull and Vodka",
+      "Option D": "Long Island Iced Tea",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_106",
+      "Question Text": "In How I Met Your Mother, What Film Does Marshall And Lily Watch Every Valentine's Day?",
+      "Option A": "The Princess Bride",
+      "Option B": "Sleepless in Seattle",
+      "Option C": "The Notebook",
+      "Option D": "Love Actually",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_107",
+      "Question Text": "In How I Met Your Mother, What Is The Name Of Randy's Home-Brewed Beer?",
+      "Option A": "Wharmpess",
+      "Option B": "Slapshot",
+      "Option C": "Beercules",
+      "Option D": "MacLaren's Draft",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_108",
+      "Question Text": "In How I Met Your Mother, What Museum Exhibit Did Barney Break As A Child?",
+      "Option A": "Dinosaur",
+      "Option B": "Planetarium",
+      "Option C": "Blue Whale",
+      "Option D": "Egyptian Mummy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_109",
+      "Question Text": "In How I Met Your Mother, What Names Does Ted Want For His Future Children?",
+      "Option A": "Luke and Leia",
+      "Option B": "Ross and Rachel",
+      "Option C": "Leia and Han",
+      "Option D": "Penny and Luke",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_110",
+      "Question Text": "In How I Met Your Mother, What Tool Does Barney Not Know How To Use?",
+      "Option A": "Hammer",
+      "Option B": "Screwdriver",
+      "Option C": "Wrench",
+      "Option D": "Power drill",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_111",
+      "Question Text": "In How I Met Your Mother, What Were Marshall's Father's Last Words?",
+      "Option A": "Goodbye son",
+      "Option B": "I love you",
+      "Option C": "Take care of your mother",
+      "Option D": "I'm not ready to go",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_112",
+      "Question Text": "In How I Met Your Mother, Who Is Barney's Real Father?",
+      "Option A": "Bob Barker",
+      "Option B": "Jerome Whittaker",
+      "Option C": "Sam Gibbs",
+      "Option D": "Tom",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_113",
+      "Question Text": "In How I Met Your Mother, Who Misses The First Robots Vs. Wrestlers Event?",
+      "Option A": "Marshall",
+      "Option B": "Ted",
+      "Option C": "Barney",
+      "Option D": "Robin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_114",
+      "Question Text": "In How I Met Your Mother, Who Objects To The Destruction Of The Arcadian?",
+      "Option A": "Ted",
+      "Option B": "Barney",
+      "Option C": "Marshall",
+      "Option D": "Lily",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_115",
+      "Question Text": "In How I Met Your Mother, What Does Lily's Father Keep In His Basement?",
+      "Option A": "Board games",
+      "Option B": "Model trains",
+      "Option C": "Antique cars",
+      "Option D": "Vintage guitars",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_116",
+      "Question Text": "In How I Met Your Mother, What Does Marshall Practice Parenting With?",
+      "Option A": "A doll",
+      "Option B": "A teddy bear",
+      "Option C": "A melon",
+      "Option D": "A plant",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_117",
+      "Question Text": "In How I Met Your Mother, What Is Marvin's Full Name?",
+      "Option A": "Marvin Eriksen",
+      "Option B": "Marvin Wait-for-it Eriksen",
+      "Option C": "Marvin Waitforit Eriksen",
+      "Option D": "Marvin W. Eriksen",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_118",
+      "Question Text": "In How I Met Your Mother, What Is Quinn's Stage Name As A Stripper?",
+      "Option A": "Karma",
+      "Option B": "Crystal",
+      "Option C": "Diamond",
+      "Option D": "Jasmine",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_119",
+      "Question Text": "In How I Met Your Mother, What Sign Hangs Outside MacLaren's Pub?",
+      "Option A": "No Boogie Boarding",
+      "Option B": "No Dancing",
+      "Option C": "Irish Pub",
+      "Option D": "Open 24 Hours",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_120",
+      "Question Text": "In How I Met Your Mother, What Six Words Does Robin Want To Hear From Her Father?",
+      "Option A": "I'm proud of you, Robin",
+      "Option B": "Robin, I love you so much",
+      "Option C": "I am so proud of you",
+      "Option D": "Robin Scherbatsky, I'm proud of you",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_121",
+      "Question Text": "In How I Met Your Mother, Which Actress Plays The Slutty Pumpkin?",
+      "Option A": "Katie Holmes",
+      "Option B": "Anne Hathaway",
+      "Option C": "Jennifer Love Hewitt",
+      "Option D": "Kate Hudson",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_122",
+      "Question Text": "In How I Met Your Mother, Which Star Wars Species Does Nora Dislike?",
+      "Option A": "Jawas",
+      "Option B": "Gungans",
+      "Option C": "Wookiees",
+      "Option D": "Ewoks",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_123",
+      "Question Text": "In How I Met Your Mother, Who Originally Owns The Ducky Tie?",
+      "Option A": "Ted",
+      "Option B": "Marshall",
+      "Option C": "Barney",
+      "Option D": "Ranjit",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_124",
+      "Question Text": "In How I Met Your Mother, At Which Bus Station Do Ted And The Mother Meet?",
+      "Option A": "Grand Central",
+      "Option B": "Penn Station",
+      "Option C": "Port Authority",
+      "Option D": "Farhampton",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_125",
+      "Question Text": "In How I Met Your Mother, What Does Lily Steal From The Captain's Apartment?",
+      "Option A": "Painting",
+      "Option B": "Vase",
+      "Option C": "Sculpture",
+      "Option D": "Artifact",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_126",
+      "Question Text": "In How I Met Your Mother, What Instrument Does The Mother Play?",
+      "Option A": "Piano",
+      "Option B": "Bass guitar",
+      "Option C": "Ukulele",
+      "Option D": "Violin",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_127",
+      "Question Text": "In How I Met Your Mother, What Is Robin Sparkles' Grunge Alter-Ego Called?",
+      "Option A": "Robin Spades",
+      "Option B": "Robin Daggers",
+      "Option C": "Robin Diamonds",
+      "Option D": "Robin Hearts",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_128",
+      "Question Text": "In How I Met Your Mother, What Rule Do Marshall And Lily Revoke After Marvin's Birth?",
+      "Option A": "Naked rule",
+      "Option B": "Borrowing rule",
+      "Option C": "No guests rule",
+      "Option D": "No shoes on the couch",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_129",
+      "Question Text": "In How I Met Your Mother, Where Does The Captain Invite Lily To Move?",
+      "Option A": "Rome",
+      "Option B": "Venice",
+      "Option C": "Florence",
+      "Option D": "Milan",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_130",
+      "Question Text": "In How I Met Your Mother, Where Will Ted Meet 'The Mother'?",
+      "Option A": "Wedding",
+      "Option B": "Bar",
+      "Option C": "Train station",
+      "Option D": "Airport",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_131",
+      "Question Text": "In How I Met Your Mother, Which 'Karate Kid' Actor Appears As A Clown?",
+      "Option A": "Ralph Macchio",
+      "Option B": "William Zabka",
+      "Option C": "Pat Morita",
+      "Option D": "Martin Kove",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_132",
+      "Question Text": "In How I Met Your Mother, Which Character Moves To Rome For An Art Consultant Job?",
+      "Option A": "Ted",
+      "Option B": "Robin",
+      "Option C": "Lily",
+      "Option D": "Tracy",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_133",
+      "Question Text": "In How I Met Your Mother, Who Becomes Marvin's Nanny?",
+      "Option A": "Robin",
+      "Option B": "Victoria",
+      "Option C": "Lily's father",
+      "Option D": "Ranjit",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_134",
+      "Question Text": "In How I Met Your Mother, Who Does Barney Tell Ted He Is Going To Propose To?",
+      "Option A": "Robin",
+      "Option B": "Nora",
+      "Option C": "Quinn",
+      "Option D": "Patrice",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_135",
+      "Question Text": "In How I Met Your Mother, Who Does Robin Let Hold Baby Marvin?",
+      "Option A": "Mike Tyson",
+      "Option B": "Kevin",
+      "Option C": "The Captain",
+      "Option D": "Stuart",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_136",
+      "Question Text": "In How I Met Your Mother, Under What Name Does Barney Keep His Suit Room?",
+      "Option A": "Mr. Stinson",
+      "Option B": "Tim Gunn",
+      "Option C": "Tom Ford",
+      "Option D": "Fred Savage",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_137",
+      "Question Text": "In How I Met Your Mother, What Do The Gang Delete 'No Questions Asked'?",
+      "Option A": "A text",
+      "Option B": "An email",
+      "Option C": "A voicemail",
+      "Option D": "A photo",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_138",
+      "Question Text": "In How I Met Your Mother, What Does Robin Steal From Simon's Wedding?",
+      "Option A": "Cake",
+      "Option B": "Champagne",
+      "Option C": "Centerpiece",
+      "Option D": "Bourbon",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_139",
+      "Question Text": "In How I Met Your Mother, What Food Does Robin's Mom Make Better Than Barney's?",
+      "Option A": "Pancakes",
+      "Option B": "Lasagna",
+      "Option C": "Apple pie",
+      "Option D": "Thanksgiving turkey",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_140",
+      "Question Text": "In How I Met Your Mother, What Food Does Ted Try For The First Time?",
+      "Option A": "Sushi",
+      "Option B": "Indian food",
+      "Option C": "Olives",
+      "Option D": "Escargot",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_141",
+      "Question Text": "In How I Met Your Mother, What Is Barney's Final Challenge?",
+      "Option A": "The Perfect Month",
+      "Option B": "The Ultimate Wingman",
+      "Option C": "The Playbook II",
+      "Option D": "The Perfect Week",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_142",
+      "Question Text": "In How I Met Your Mother, Which Character Becomes A Judge In The Future?",
+      "Option A": "Ted",
+      "Option B": "Robin",
+      "Option C": "Barney",
+      "Option D": "Marshall",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_143",
+      "Question Text": "In How I Met Your Mother, Who Does Ted End Up With At The Wedding Weekend?",
+      "Option A": "Robin",
+      "Option B": "Mother",
+      "Option C": "Stella",
+      "Option D": "Cassie",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_144",
+      "Question Text": "In How I Met Your Mother, Who Is The Captain Engaged To?",
+      "Option A": "Becky",
+      "Option B": "Zoey",
+      "Option C": "Robin",
+      "Option D": "Boats Boats Boats Girl",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_145",
+      "Question Text": "In How I Met Your Mother, Marshall hits Lily with what after he proposes?",
+      "Option A": "Flowers",
+      "Option B": "Ring box",
+      "Option C": "Champagne cork",
+      "Option D": "Confetti",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_146",
+      "Question Text": "In How I Met Your Mother, Thing Ted pretends he is buying at the store?",
+      "Option A": "Condoms",
+      "Option B": "Diapers",
+      "Option C": "Tampons",
+      "Option D": "Medicine",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_147",
+      "Question Text": "In How I Met Your Mother, Barney's luggage contains?",
+      "Option A": "Suits",
+      "Option B": "Emergency kit",
+      "Option C": "Playbook",
+      "Option D": "Scotch",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_148",
+      "Question Text": "In How I Met Your Mother, Name one of the things Ted fondly remembers about Natalie.",
+      "Option A": "Her smile",
+      "Option B": "Her laugh",
+      "Option C": "Her cooking",
+      "Option D": "Her dancing",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_149",
+      "Question Text": "In How I Met Your Mother, Barney says that there are 24 similarities between women and what?",
+      "Option A": "Fish",
+      "Option B": "Cars",
+      "Option C": "Robots",
+      "Option D": "Cats",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_150",
+      "Question Text": "In How I Met Your Mother, The Slutty Pumpkin's drink?",
+      "Option A": "Blood Mary",
+      "Option B": "Tequila Sunrise",
+      "Option C": "Kahlúa and root beer",
+      "Option D": "Jack and pumpkin",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_151",
+      "Question Text": "In How I Met Your Mother, Unusual creature in Ted and Marshall's apartment?",
+      "Option A": "Cockamouse",
+      "Option B": "Rat",
+      "Option C": "Possum",
+      "Option D": "Raccoon",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_152",
+      "Question Text": "In How I Met Your Mother, Place Lily's apartment has been turned into?",
+      "Option A": "Chinese Restaurant",
+      "Option B": "Storage Space",
+      "Option C": "Dentist Office",
+      "Option D": "Strip Club",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_153",
+      "Question Text": "In How I Met Your Mother, Sport Marshall's family has created?",
+      "Option A": "Baskiceball",
+      "Option B": "Lawn Bowling",
+      "Option C": "Ice Fishing",
+      "Option D": "Football Golf",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_154",
+      "Question Text": "In How I Met Your Mother, Name of the shot that Carl creates?",
+      "Option A": "Red Dragon",
+      "Option B": "Carl's Special",
+      "Option C": "The Minnesota Tidal Wave",
+      "Option D": "The Bartender's Choice",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_155",
+      "Question Text": "In How I Met Your Mother, 'Celebrity' that joins the gang on New Years?",
+      "Option A": "Moby",
+      "Option B": "Bon Jovi",
+      "Option C": "David Bowie",
+      "Option D": "Justin Timberlake",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_156",
+      "Question Text": "In How I Met Your Mother, First thing that Marshall and Lily agree about for the wedding?",
+      "Option A": "Flowers",
+      "Option B": "Guest List",
+      "Option C": "Band",
+      "Option D": "Venue",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_157",
+      "Question Text": "In How I Met Your Mother, Fake name Victoria uses?",
+      "Option A": "Buttercup",
+      "Option B": "Cupcake",
+      "Option C": "Muffin",
+      "Option D": "Cookie",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_158",
+      "Question Text": "In How I Met Your Mother, 'I want to know you, like _____ _____ _____.'",
+      "Option A": "I've Never Known",
+      "Option B": "You Know Me",
+      "Option C": "You Never Knew",
+      "Option D": "Wait-for-it",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_159",
+      "Question Text": "In How I Met Your Mother, What Barney refers to Ted's embarrassing story as?",
+      "Option A": "Teddy Westside",
+      "Option B": "The Classic Mosby",
+      "Option C": "The Time Ted Screwed Up",
+      "Option D": "The Schmosby",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_160",
+      "Question Text": "In How I Met Your Mother, Where is Marshall's dream internship?",
+      "Option A": "NRDC",
+      "Option B": "EPA",
+      "Option C": "World Wildlife Fund",
+      "Option D": "Sierra Club",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_161",
+      "Question Text": "In How I Met Your Mother, The song Marshall and Lily sing?",
+      "Option A": "Love Will Keep Us Together",
+      "Option B": "You're All I Need",
+      "Option C": "Summer Lovin'",
+      "Option D": "I Got You Babe",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_162",
+      "Question Text": "In How I Met Your Mother, Who do Marshall, Lily, and Barney hang out with?",
+      "Option A": "Ranjit",
+      "Option B": "Stuart",
+      "Option C": "Wendy",
+      "Option D": "Carl",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_163",
+      "Question Text": "In How I Met Your Mother, Cutout Ted and Marshall use on Sandy?",
+      "Option A": "Donald Trump",
+      "Option B": "Tom Brokaw",
+      "Option C": "Matt Lauer",
+      "Option D": "Anderson Cooper",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_164",
+      "Question Text": "In How I Met Your Mother, What Scooter wants to be?",
+      "Option A": "Lawyer",
+      "Option B": "Teacher",
+      "Option C": "Chef",
+      "Option D": "Doctor",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_165",
+      "Question Text": "In How I Met Your Mother, What Robin shows Ted to cheer him up?",
+      "Option A": "Her News Clip",
+      "Option B": "The Blue French Horn",
+      "Option C": "Robin Sparkles Video",
+      "Option D": "Her Dog",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_166",
+      "Question Text": "In How I Met Your Mother, What Ted does to stop Robin's camping trip?",
+      "Option A": "Steals her tent",
+      "Option B": "Creates a storm forecast",
+      "Option C": "Pretends to be sick",
+      "Option D": "Asks her to stay",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_167",
+      "Question Text": "In How I Met Your Mother, The pet George Clinton buys Lily?",
+      "Option A": "Dog",
+      "Option B": "Fish",
+      "Option C": "Cat",
+      "Option D": "Bird",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_168",
+      "Question Text": "In How I Met Your Mother, What Ted orders to cure his hangover?",
+      "Option A": "Bloody Mary",
+      "Option B": "Prairie Oyster",
+      "Option C": "Grease Burger",
+      "Option D": "Frosty Chocolate Milkshake",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_169",
+      "Question Text": "In How I Met Your Mother, What Ted and his dad talk about if things get uncomfortable?",
+      "Option A": "Sports",
+      "Option B": "Weather",
+      "Option C": "Politics",
+      "Option D": "Cars",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_170",
+      "Question Text": "In How I Met Your Mother, Movie Ted is mad that Robin dislikes?",
+      "Option A": "Field of Dreams",
+      "Option B": "Star Wars",
+      "Option C": "The Godfather",
+      "Option D": "The Karate Kid",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_171",
+      "Question Text": "In How I Met Your Mother, Concert Marshall and Brad go to?",
+      "Option A": "Justin Timberlake",
+      "Option B": "Katy Perry",
+      "Option C": "Counting Crows",
+      "Option D": "Nickelback",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_172",
+      "Question Text": "In How I Met Your Mother, Who plays the Cougar?",
+      "Option A": "Jane Seymour",
+      "Option B": "Heidi Klum",
+      "Option C": "Jennifer Aniston",
+      "Option D": "Megan Fox",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_173",
+      "Question Text": "In How I Met Your Mother, Show the end of the episode reference?",
+      "Option A": "Lost",
+      "Option B": "The Office",
+      "Option C": "Friends",
+      "Option D": "How I Met Your Mother",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_174",
+      "Question Text": "In How I Met Your Mother, What Barney has to find to win the game?",
+      "Option A": "A girl with daddy issues",
+      "Option B": "A girl with a crazy laugh",
+      "Option C": "A virgin",
+      "Option D": "A Canadian",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_175",
+      "Question Text": "In How I Met Your Mother, Name of Robin's hit single?",
+      "Option A": "Let's Go To The Mall",
+      "Option B": "Sandcastles in the Sand",
+      "Option C": "P.S. I Love You",
+      "Option D": "Make It Sparkle",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_176",
+      "Question Text": "In How I Met Your Mother, What James does that reveals he's in a relationship?",
+      "Option A": "Turns down a drink",
+      "Option B": "Refuses to hit on someone",
+      "Option C": "Wears a wedding ring",
+      "Option D": "Mentions his partner",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_177",
+      "Question Text": "In How I Met Your Mother, Word that Ted calls Lily?",
+      "Option A": "Grinch",
+      "Option B": "Witch",
+      "Option C": "Betrayer",
+      "Option D": "Backstabber",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_178",
+      "Question Text": "In How I Met Your Mother, Where the gang takes Robin's sister?",
+      "Option A": "Laser Tag",
+      "Option B": "Empire State Building",
+      "Option C": "Times Square",
+      "Option D": "Central Park",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_179",
+      "Question Text": "In How I Met Your Mother, Name of Ted's annoying ex-boss?",
+      "Option A": "Hammond",
+      "Option B": "Bilson",
+      "Option C": "Sven",
+      "Option D": "Druthers",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_180",
+      "Question Text": "In How I Met Your Mother, Who Barney bumps into on the street?",
+      "Option A": "His brother",
+      "Option B": "His ex-girlfriend",
+      "Option C": "A former co-worker",
+      "Option D": "His doppelganger",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_181",
+      "Question Text": "In How I Met Your Mother, Where is Ted's interview?",
+      "Option A": "Chicago",
+      "Option B": "New York",
+      "Option C": "London",
+      "Option D": "Paris",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_182",
+      "Question Text": "In How I Met Your Mother, Name of Barney's one-man show?",
+      "Option A": "Suck It Lily",
+      "Option B": "The Barney Show",
+      "Option C": "Suit Up!",
+      "Option D": "Legendary",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_183",
+      "Question Text": "In How I Met Your Mother, Name of the song that the Fiero plays?",
+      "Option A": "I'm Gonna Be (500 Miles)",
+      "Option B": "Born to Run",
+      "Option C": "Paradise by the Dashboard Light",
+      "Option D": "Sweet Caroline",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_184",
+      "Question Text": "In How I Met Your Mother, One of the names that Barney gives the truck in his Top Ten List",
+      "Option A": "Pickup Truck",
+      "Option B": "Monster Truck",
+      "Option C": "The Windowless Van",
+      "Option D": "The Kidney Harvester",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_185",
+      "Question Text": "In How I Met Your Mother, What Lily's grandmother gives her at the bridal shower?",
+      "Option A": "Antique sewing machine",
+      "Option B": "Handwritten recipes",
+      "Option C": "Family jewelry",
+      "Option D": "Wedding dress",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_186",
+      "Question Text": "In How I Met Your Mother, Show Barney appears on?",
+      "Option A": "The Price is Right",
+      "Option B": "Jeopardy",
+      "Option C": "Wheel of Fortune",
+      "Option D": "Family Feud",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_187",
+      "Question Text": "In How I Met Your Mother, Phrase Barney discovers has power at a wedding?",
+      "Option A": "Have you met Ted?",
+      "Option B": "I'm with the band",
+      "Option C": "I work for the bride",
+      "Option D": "It's for the bride",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_188",
+      "Question Text": "In How I Met Your Mother, Where Robin ends up after the breakup?",
+      "Option A": "Argentina",
+      "Option B": "Chicago",
+      "Option C": "Toronto",
+      "Option D": "Vancouver",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_189",
+      "Question Text": "In How I Met Your Mother, Ted's tramp stamp?",
+      "Option A": "Butterfly",
+      "Option B": "Dolphin",
+      "Option C": "Lightning Bolt",
+      "Option D": "Chinese Symbol",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_190",
+      "Question Text": "In How I Met Your Mother, What Robin keeps finding everywhere?",
+      "Option A": "Ted's ex-girlfriends",
+      "Option B": "Her old music videos",
+      "Option C": "Barney's playbook",
+      "Option D": "Canadian memorabilia",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_191",
+      "Question Text": "In How I Met Your Mother, What Robin tries using to shave her legs?",
+      "Option A": "Kitchen knife",
+      "Option B": "Wine bottle",
+      "Option C": "Beer bottle",
+      "Option D": "Butter knife",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_192",
+      "Question Text": "In How I Met Your Mother, One of Robin's 'buts' from the episode?",
+      "Option A": "She's moving",
+      "Option B": "She has commitment issues",
+      "Option C": "She has 5 dogs",
+      "Option D": "She's too career-focused",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_193",
+      "Question Text": "In How I Met Your Mother, Name of Ted's date?",
+      "Option A": "Blah Blah",
+      "Option B": "Tracy",
+      "Option C": "Victoria",
+      "Option D": "Stella",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_194",
+      "Question Text": "In How I Met Your Mother, Celebrity that Marshall and Jeff see in the restaurant?",
+      "Option A": "Bon Jovi",
+      "Option B": "Regis Philbin",
+      "Option C": "Meryl Streep",
+      "Option D": "George Clooney",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_195",
+      "Question Text": "In How I Met Your Mother, Name of Barney's crazy date?",
+      "Option A": "Jeanette",
+      "Option B": "Abby",
+      "Option C": "Naomi",
+      "Option D": "Honey",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_196",
+      "Question Text": "In How I Met Your Mother, One of the gang's annoying habits?",
+      "Option A": "Ted's correcting people",
+      "Option B": "Robin saying \"literally\"",
+      "Option C": "Marshall's snoring",
+      "Option D": "Lily's chewing",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_197",
+      "Question Text": "In How I Met Your Mother, Name of the song at the end of the episode?",
+      "Option A": "Let's Go To The Mall",
+      "Option B": "Simple Song",
+      "Option C": "This Will Be",
+      "Option D": "You Just Got Slapped",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_198",
+      "Question Text": "In How I Met Your Mother, Fashion Show that Ted and Barney go to?",
+      "Option A": "Victoria's Secret",
+      "Option B": "New York Fashion Week",
+      "Option C": "Milan Fashion Week",
+      "Option D": "Paris Fashion Week",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_199",
+      "Question Text": "In How I Met Your Mother, One of the eight steps of the Platinum Rule",
+      "Option A": "Attraction",
+      "Option B": "Bargaining",
+      "Option C": "Desperation",
+      "Option D": "The Hook",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_200",
+      "Question Text": "In How I Met Your Mother, Item that Ted picks up at the club?",
+      "Option A": "A girl's number",
+      "Option B": "Someone's wallet",
+      "Option C": "A lost phone",
+      "Option D": "A jacket",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_201",
+      "Question Text": "In How I Met Your Mother, Barney's lie that Stella only likes men with ______.",
+      "Option A": "Mustaches",
+      "Option B": "Tattoos",
+      "Option C": "British accents",
+      "Option D": "Money",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_202",
+      "Question Text": "In How I Met Your Mother, Website that one of the Final Four women has created?",
+      "Option A": "tedmosbyisnotajerk.com",
+      "Option B": "tedmosbyisajerk.com",
+      "Option C": "ihatetedmosby.com",
+      "Option D": "dumpedbyted.com",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_203",
+      "Question Text": "In How I Met Your Mother, Nickname Marshall gives his report?",
+      "Option A": "Beast",
+      "Option B": "Monster",
+      "Option C": "The Kraken",
+      "Option D": "Thunder",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_204",
+      "Question Text": "In How I Met Your Mother, Name Marshall gives to phenomenon when people act differently around old friends?",
+      "Option A": "The Time Warp",
+      "Option B": "The Reversion",
+      "Option C": "The Revertigo",
+      "Option D": "The Flashback",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_205",
+      "Question Text": "In How I Met Your Mother, Person Barney says wrote the Bro Code?",
+      "Option A": "Barney Stinson",
+      "Option B": "Neil Patrick Harris",
+      "Option C": "Bro-seidon",
+      "Option D": "Barnabas Stinson",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_206",
+      "Question Text": "In How I Met Your Mother, One of two politicians that Randy tries to insert Bro into?",
+      "Option A": "Barack Obama",
+      "Option B": "Joe Biden",
+      "Option C": "John McCain",
+      "Option D": "George W. Bush",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_207",
+      "Question Text": "In How I Met Your Mother, Animals that Lily's paintings have soothing effects on?",
+      "Option A": "Dogs",
+      "Option B": "Cats",
+      "Option C": "Monkeys",
+      "Option D": "Elephants",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_208",
+      "Question Text": "In How I Met Your Mother, Animal Robin's dog turns into after surgery?",
+      "Option A": "Cat",
+      "Option B": "Raccoon",
+      "Option C": "Hamster",
+      "Option D": "Guinea Pig",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_209",
+      "Question Text": "In How I Met Your Mother, Movie Ted makes Stella watch?",
+      "Option A": "Star Wars",
+      "Option B": "Field of Dreams",
+      "Option C": "The Princess Bride",
+      "Option D": "The Godfather",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_210",
+      "Question Text": "In How I Met Your Mother, Name of the bank that Barney works for?",
+      "Option A": "First National",
+      "Option B": "GNB",
+      "Option C": "City Bank",
+      "Option D": "Manhattan Trust",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_211",
+      "Question Text": "In How I Met Your Mother, Place where Robin accepts a job at the end of the episode?",
+      "Option A": "Chicago",
+      "Option B": "Tokyo",
+      "Option C": "Vancouver",
+      "Option D": "New York",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_212",
+      "Question Text": "In How I Met Your Mother, One of the reasons for an Intervention in the episode?",
+      "Option A": "Ted's red cowboy boots",
+      "Option B": "Marshall's fake accent",
+      "Option C": "Barney's magic tricks",
+      "Option D": "Lily's shopping addiction",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_213",
+      "Question Text": "In How I Met Your Mother, One of the two people Stella doesn't want at the wedding?",
+      "Option A": "Robin",
+      "Option B": "Ted's sister",
+      "Option C": "Ted's mother",
+      "Option D": "Ted's college buddy",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_214",
+      "Question Text": "In How I Met Your Mother, Robin's middle name?",
+      "Option A": "Charles",
+      "Option B": "Marie",
+      "Option C": "Vivian",
+      "Option D": "Scherbatsky",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_215",
+      "Question Text": "In How I Met Your Mother, Any of the names Barney gives to the phenomenon of women looking hotter in groups?",
+      "Option A": "The Cheerleader Effect",
+      "Option B": "The Bridesmaid Paradox",
+      "Option C": "The Group Delusion",
+      "Option D": "The Beer Goggles",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_216",
+      "Question Text": "In How I Met Your Mother, What does Sven's design for the building look like?",
+      "Option A": "Dinosaur",
+      "Option B": "Robot",
+      "Option C": "Spaceship",
+      "Option D": "Castle",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_217",
+      "Question Text": "In How I Met Your Mother, One of the poses Barney and Ted brainstorm?",
+      "Option A": "The Superman",
+      "Option B": "The Captain",
+      "Option C": "The Thinker",
+      "Option D": "The Superhero",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_218",
+      "Question Text": "In How I Met Your Mother, What Marshall uses to carve the turkey 3-5 years in the future?",
+      "Option A": "Electric knife",
+      "Option B": "Chainsaw",
+      "Option C": "Sword",
+      "Option D": "Lightsaber",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_219",
+      "Question Text": "In How I Met Your Mother, Canadian bar that Marshall brings Robin to?",
+      "Option A": "The Beaver Lodge",
+      "Option B": "The Hoser Hut",
+      "Option C": "The Maple Leaf",
+      "Option D": "The Canuck",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_220",
+      "Question Text": "In How I Met Your Mother, Marshall's euphemism for going to the bathroom at work?",
+      "Option A": "Reading a magazine",
+      "Option B": "Dropping the kids off",
+      "Option C": "Taking a conference call",
+      "Option D": "Filing some paperwork",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_221",
+      "Question Text": "In How I Met Your Mother, Name of Ted and Barney's bar/band?",
+      "Option A": "Puzzles",
+      "Option B": "The Bros",
+      "Option C": "The Wingmen",
+      "Option D": "The Architects",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_222",
+      "Question Text": "In How I Met Your Mother, The more common name for iliopsoas tendinitis?",
+      "Option A": "Dancer's Hip",
+      "Option B": "Runner's Knee",
+      "Option C": "Tennis Elbow",
+      "Option D": "Pitcher's Shoulder",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_223",
+      "Question Text": "In How I Met Your Mother, Name of Barney's fake wife or son?",
+      "Option A": "Beth",
+      "Option B": "Melissa",
+      "Option C": "Janet",
+      "Option D": "Carol",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_224",
+      "Question Text": "In How I Met Your Mother, Name of Ted's high school/college ex?",
+      "Option A": "Karen",
+      "Option B": "Emily",
+      "Option C": "Jessica",
+      "Option D": "Amanda",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_225",
+      "Question Text": "In How I Met Your Mother, What Lily plants in Ted's bed to start the breakup?",
+      "Option A": "Dirty socks",
+      "Option B": "Wet towel",
+      "Option C": "Hair",
+      "Option D": "Fake vomit",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_226",
+      "Question Text": "In How I Met Your Mother, One of the Canadian celebrities the gang guesses?",
+      "Option A": "Celine Dion",
+      "Option B": "Justin Bieber",
+      "Option C": "Ryan Reynolds",
+      "Option D": "Drake",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_227",
+      "Question Text": "In How I Met Your Mother, The movie the Murtaugh List is based from?",
+      "Option A": "Die Hard",
+      "Option B": "Lethal Weapon",
+      "Option C": "Rambo",
+      "Option D": "The Terminator",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_228",
+      "Question Text": "In How I Met Your Mother, What Marshall decides to start to make him indispensable at GNB?",
+      "Option A": "Fantasy football league",
+      "Option B": "Office betting pool",
+      "Option C": "March Madness bracket",
+      "Option D": "Office Olympics",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_229",
+      "Question Text": "In How I Met Your Mother, Name of the security guard who helps Barney and Marshall?",
+      "Option A": "Charles",
+      "Option B": "Doug",
+      "Option C": "Carl",
+      "Option D": "Tim",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_230",
+      "Question Text": "In How I Met Your Mother, Song that Marshall makes a chart for?",
+      "Option A": "I'm Gonna Be (500 Miles)",
+      "Option B": "Let's Go To The Mall",
+      "Option C": "Sandcastles in the Sand",
+      "Option D": "Highway to Hell",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_231",
+      "Question Text": "In How I Met Your Mother, The name of Tony's movie?",
+      "Option A": "The Wedding Bride",
+      "Option B": "The Breakup",
+      "Option C": "The Ex",
+      "Option D": "The Rebound",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_232",
+      "Question Text": "In How I Met Your Mother, What is on the next door building's roof?",
+      "Option A": "Hot tub",
+      "Option B": "Pool",
+      "Option C": "Garden",
+      "Option D": "Helipad",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_233",
+      "Question Text": "In How I Met Your Mother, Subject of the class that Ted accidentally goes to first?",
+      "Option A": "Economics",
+      "Option B": "Art History",
+      "Option C": "Physics",
+      "Option D": "Psychology",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_234",
+      "Question Text": "In How I Met Your Mother, Name of any of the three doppelgangers in the episode?",
+      "Option A": "Mexican Wrestler Ted",
+      "Option B": "Lesbian Robin",
+      "Option C": "Stripper Lily",
+      "Option D": "Mustache Marshall",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_235",
+      "Question Text": "In How I Met Your Mother, Any of the three topics that Robin gets distracted by?",
+      "Option A": "Hockey",
+      "Option B": "Guns",
+      "Option C": "Dogs",
+      "Option D": "Scotch",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_236",
+      "Question Text": "In How I Met Your Mother, Name of the song Marshall writes about the date?",
+      "Option A": "Let's Go on a Date",
+      "Option B": "The First Date",
+      "Option C": "Date Night",
+      "Option D": "Have You Met Ted?",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_237",
+      "Question Text": "In How I Met Your Mother, Name of the energy drink Marshall and Ted have?",
+      "Option A": "Red Bull",
+      "Option B": "Monster",
+      "Option C": "Tantrum",
+      "Option D": "5-Hour Energy",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_238",
+      "Question Text": "In How I Met Your Mother, Bagpipes is a euphemism for what?",
+      "Option A": "Arguing",
+      "Option B": "Singing",
+      "Option C": "Playing Music",
+      "Option D": "Sex",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_239",
+      "Question Text": "In How I Met Your Mother, Celebrity that Lily invites to break up Barney and Robin?",
+      "Option A": "Jason Segel",
+      "Option B": "Neil Patrick Harris",
+      "Option C": "Alan Thicke",
+      "Option D": "Wayne Gretzky",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_240",
+      "Question Text": "In How I Met Your Mother, The play that involves fake websites, an awesome name, and a smartphone?",
+      "Option A": "The SNASA",
+      "Option B": "The Ted Mosby",
+      "Option C": "The Time Traveler",
+      "Option D": "The Lorenzo Von Matterhorn",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_241",
+      "Question Text": "In How I Met Your Mother, Any of the board games that Mickey creates during the episode?",
+      "Option A": "Lilial Pursuit",
+      "Option B": "Slap Bet",
+      "Option C": "Marshgammon",
+      "Option D": "Diseases",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_242",
+      "Question Text": "In How I Met Your Mother, Name of the girl that Ted pursues in the episode?",
+      "Option A": "Cindy",
+      "Option B": "Zoey",
+      "Option C": "Stella",
+      "Option D": "Naomi",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_243",
+      "Question Text": "In How I Met Your Mother, Actor who is Lily's smoking voice?",
+      "Option A": "Harvey Fierstein",
+      "Option B": "Alan Thicke",
+      "Option C": "James Earl Jones",
+      "Option D": "Morgan Freeman",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_244",
+      "Question Text": "In How I Met Your Mother, One of three guest stars in the episode?",
+      "Option A": "Rachel Bilson",
+      "Option B": "Wayne Brady",
+      "Option C": "Britney Spears",
+      "Option D": "Katy Perry",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_245",
+      "Question Text": "In How I Met Your Mother, Robin's phrase that is used as a drinking game?",
+      "Option A": "But, um",
+      "Option B": "Literally",
+      "Option C": "Actually",
+      "Option D": "You know",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_246",
+      "Question Text": "In How I Met Your Mother, Sportscaster who guest stars in the episode?",
+      "Option A": "Bob Costas",
+      "Option B": "Jim Nantz",
+      "Option C": "Al Michaels",
+      "Option D": "Joe Buck",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_247",
+      "Question Text": "In How I Met Your Mother, Barney's ringtone in the episode?",
+      "Option A": "The Imperial March",
+      "Option B": "Let's Go To The Mall",
+      "Option C": "The Bro Hymn",
+      "Option D": "Suit Up Song",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_248",
+      "Question Text": "In How I Met Your Mother, One of the hot-chick professions in the episode?",
+      "Option A": "Nurse",
+      "Option B": "Teacher",
+      "Option C": "Yoga Instructor",
+      "Option D": "Paralegal",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_249",
+      "Question Text": "In How I Met Your Mother, Where does Robin go when she's upset?",
+      "Option A": "The roof",
+      "Option B": "The bar",
+      "Option C": "The shooting range",
+      "Option D": "Central Park",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_250",
+      "Question Text": "In How I Met Your Mother, Herb Barney is allergic to?",
+      "Option A": "Cilantro",
+      "Option B": "Oregano",
+      "Option C": "Basil",
+      "Option D": "Mint",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_251",
+      "Question Text": "In How I Met Your Mother, Marshall claims he's been mugged by what?",
+      "Option A": "A monkey",
+      "Option B": "A squirrel",
+      "Option C": "A kid",
+      "Option D": "A raccoon",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_252",
+      "Question Text": "In How I Met Your Mother, The guessing game that Marshall plays with the gang?",
+      "Option A": "Drunk or Kid",
+      "Option B": "True or False",
+      "Option C": "Yes or No",
+      "Option D": "This or That",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_253",
+      "Question Text": "In How I Met Your Mother, What Robin leaves in the room when she moves out?",
+      "Option A": "Clothes",
+      "Option B": "Furniture",
+      "Option C": "Pictures",
+      "Option D": "Decorations",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_254",
+      "Question Text": "In How I Met Your Mother, The poem that Ted recites twice in Italian?",
+      "Option A": "Shall I Compare Thee",
+      "Option B": "How Do I Love Thee",
+      "Option C": "To My Beloved",
+      "Option D": "Sonnet 18",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_255",
+      "Question Text": "In How I Met Your Mother, Jed Mosely's catch phrase?",
+      "Option A": "No can doosville, baby doll",
+      "Option B": "Suit up!",
+      "Option C": "Have you met Jed?",
+      "Option D": "Challenge accepted!",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_256",
+      "Question Text": "In How I Met Your Mother, What Marshall and Lily will do when they find the fifth doppelganger?",
+      "Option A": "Have a baby",
+      "Option B": "Move to the suburbs",
+      "Option C": "Get a dog",
+      "Option D": "Buy a house",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_257",
+      "Question Text": "In How I Met Your Mother, Former flame that is at the bar?",
+      "Option A": "Victoria",
+      "Option B": "Karen",
+      "Option C": "Stella",
+      "Option D": "Natalie",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_258",
+      "Question Text": "In How I Met Your Mother, Song that Barney, Sam, and James sing?",
+      "Option A": "Stand By Me",
+      "Option B": "For Once in My Life",
+      "Option C": "Signed Sealed Delivered",
+      "Option D": "Respect",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_259",
+      "Question Text": "In How I Met Your Mother, Item that reminds Ted about the GNB building?",
+      "Option A": "A blueprint",
+      "Option B": "A model",
+      "Option C": "A paperweight",
+      "Option D": "A tie",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_260",
+      "Question Text": "In How I Met Your Mother, Celebrity that you have to have seen to be a real New Yorker?",
+      "Option A": "Woody Allen",
+      "Option B": "Sarah Jessica Parker",
+      "Option C": "Alec Baldwin",
+      "Option D": "Jerry Seinfeld",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_261",
+      "Question Text": "In How I Met Your Mother, What Ted says he does for a living to Zoey?",
+      "Option A": "Architect",
+      "Option B": "Professor",
+      "Option C": "Writer",
+      "Option D": "Consultant",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_262",
+      "Question Text": "In How I Met Your Mother, What Marshall must eat to ensure his child's a boy?",
+      "Option A": "Steak",
+      "Option B": "Red meat",
+      "Option C": "Bacon",
+      "Option D": "Beef jerky",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_263",
+      "Question Text": "In How I Met Your Mother, Name of Randy's beer",
+      "Option A": "Wharmpess",
+      "Option B": "Randy's Brew",
+      "Option C": "Beercules",
+      "Option D": "Awesome Ale",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_264",
+      "Question Text": "In How I Met Your Mother, Exhibit that young Barney damaged?",
+      "Option A": "Dinosaur",
+      "Option B": "Planetarium",
+      "Option C": "The blue whale",
+      "Option D": "The space shuttle",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_265",
+      "Question Text": "In How I Met Your Mother, Name of Robin's TV show?",
+      "Option A": "Come On, Get Up New York!",
+      "Option B": "Wake Up, New York",
+      "Option C": "Metro News 1",
+      "Option D": "Rise and Shine, NYC",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_266",
+      "Question Text": "In How I Met Your Mother, Special poultry that Ted has prepared",
+      "Option A": "Turturkeykey",
+      "Option B": "Thanksgiving Turkey",
+      "Option C": "Roast Chicken",
+      "Option D": "Duck a l'Orange",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_267",
+      "Question Text": "In How I Met Your Mother, One of Lily's three rules about going out with another man's wife?",
+      "Option A": "No alcohol",
+      "Option B": "No dancing",
+      "Option C": "No touching",
+      "Option D": "No flirting",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_268",
+      "Question Text": "In How I Met Your Mother, Movie that Ted wants to see?",
+      "Option A": "The Wedding Bride",
+      "Option B": "Die Hard",
+      "Option C": "Love Actually",
+      "Option D": "Casablanca",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_269",
+      "Question Text": "In How I Met Your Mother, Robin's former co-anchor that reappears?",
+      "Option A": "Don",
+      "Option B": "Sandy",
+      "Option C": "Becky",
+      "Option D": "Patrice",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_270",
+      "Question Text": "In How I Met Your Mother, Movie that Marshall's father tells him to rent?",
+      "Option A": "The Princess Bride",
+      "Option B": "Crocodile Dundee 3",
+      "Option C": "Die Hard",
+      "Option D": "Predator",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_271",
+      "Question Text": "In How I Met Your Mother, Celebrity who plays Honey?",
+      "Option A": "Katy Perry",
+      "Option B": "Britney Spears",
+      "Option C": "Jennifer Lopez",
+      "Option D": "Rachel Bilson",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_272",
+      "Question Text": "In How I Met Your Mother, Movie that is Lily and Marshall's Valentine's tradition?",
+      "Option A": "Love Actually",
+      "Option B": "When Harry Met Sally",
+      "Option C": "The Notebook",
+      "Option D": "Pretty Woman",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_273",
+      "Question Text": "In How I Met Your Mother, Person who Ted runs into at Hong Kong airport?",
+      "Option A": "Stella",
+      "Option B": "Victoria",
+      "Option C": "Robin",
+      "Option D": "Tracy",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_274",
+      "Question Text": "In How I Met Your Mother, Guy who Robin begins dating?",
+      "Option A": "Nick",
+      "Option B": "Kevin",
+      "Option C": "Don",
+      "Option D": "Marcus",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_275",
+      "Question Text": "In How I Met Your Mother, Word that Ted can't pronounce?",
+      "Option A": "Encyclopedia",
+      "Option B": "Renaissance",
+      "Option C": "Chameleon",
+      "Option D": "Architecture",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_276",
+      "Question Text": "In How I Met Your Mother, Country where Lily was running off to?",
+      "Option A": "France",
+      "Option B": "Italy",
+      "Option C": "Germany",
+      "Option D": "Spain",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_277",
+      "Question Text": "In How I Met Your Mother, Subject of Marshall's rock opera?",
+      "Option A": "Robots",
+      "Option B": "Aliens",
+      "Option C": "Dinosaurs",
+      "Option D": "Zombies",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_278",
+      "Question Text": "In How I Met Your Mother, Building that Zoey reveals she grew up in?",
+      "Option A": "The Plaza",
+      "Option B": "The Empire State Building",
+      "Option C": "The Arcadian",
+      "Option D": "The Dakota",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_279",
+      "Question Text": "In How I Met Your Mother, App that Robin can't get to download?",
+      "Option A": "Instagram",
+      "Option B": "Twitter",
+      "Option C": "Tinder",
+      "Option D": "Facebook",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_280",
+      "Question Text": "In How I Met Your Mother, Creature that Lily's vomiting sounds like?",
+      "Option A": "Whale",
+      "Option B": "Dolphin",
+      "Option C": "Wolf",
+      "Option D": "Lion",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_281",
+      "Question Text": "In How I Met Your Mother, Theme of Punchy's wedding?",
+      "Option A": "Castle",
+      "Option B": "Beach",
+      "Option C": "Formal",
+      "Option D": "Winter Wonderland",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_282",
+      "Question Text": "In How I Met Your Mother, Game that Pete wants to play with Marshall?",
+      "Option A": "Poker",
+      "Option B": "Edward Fortyhands",
+      "Option C": "Beer Pong",
+      "Option D": "Quarters",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_283",
+      "Question Text": "In How I Met Your Mother, Event where Ted runs into Victoria again?",
+      "Option A": "Birthday party",
+      "Option B": "Wedding",
+      "Option C": "Class reunion",
+      "Option D": "Architects ball",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_284",
+      "Question Text": "In How I Met Your Mother, Class that Ted and Marshall take together?",
+      "Option A": "Economics",
+      "Option B": "Philosophy",
+      "Option C": "Art History",
+      "Option D": "Literature",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_285",
+      "Question Text": "In How I Met Your Mother, Movie creature that Nora hates?",
+      "Option A": "Aliens",
+      "Option B": "Zombies",
+      "Option C": "Ewoks",
+      "Option D": "Vampires",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_286",
+      "Question Text": "In How I Met Your Mother, Name of Lily and Marshall's doctor?",
+      "Option A": "Dr. Sonya",
+      "Option B": "Dr. Mitchell",
+      "Option C": "Dr. Sullivan",
+      "Option D": "Dr. Fisher",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_287",
+      "Question Text": "In How I Met Your Mother, Song Naomi sings to Ted?",
+      "Option A": "Don't Stop Believin'",
+      "Option B": "Total Eclipse of the Heart",
+      "Option C": "Walking on Sunshine",
+      "Option D": "I Will Always Love You",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_288",
+      "Question Text": "In How I Met Your Mother, What the sign in front of Maclaren's reads?",
+      "Option A": "Irish Pub",
+      "Option B": "No Boogie Boarding",
+      "Option C": "Live Music",
+      "Option D": "Happy Hour",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_289",
+      "Question Text": "In How I Met Your Mother, Food that Ted and Marshall go to find?",
+      "Option A": "Burgers",
+      "Option B": "Pizza",
+      "Option C": "Hot Dogs",
+      "Option D": "Chinese Food",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_290",
+      "Question Text": "In How I Met Your Mother, Name of James' daughter?",
+      "Option A": "Sadie",
+      "Option B": "Emily",
+      "Option C": "Lucy",
+      "Option D": "Sophie",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_291",
+      "Question Text": "In How I Met Your Mother, Team that Robin pretends she's sad about not making?",
+      "Option A": "Vancouver Canucks",
+      "Option B": "Toronto Maple Leafs",
+      "Option C": "Canadian Women's Curling",
+      "Option D": "Canadian Olympic Team",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_292",
+      "Question Text": "In How I Met Your Mother, Book series that Marshall loved as a kid?",
+      "Option A": "Harry Potter",
+      "Option B": "Goosebumps",
+      "Option C": "The Hardy Boys",
+      "Option D": "Nancy Drew",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_293",
+      "Question Text": "In How I Met Your Mother, One of two people who become part of the new group?",
+      "Option A": "Kevin",
+      "Option B": "Don",
+      "Option C": "Zoey",
+      "Option D": "Stuart",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_294",
+      "Question Text": "In How I Met Your Mother, Person who is raising bees in Lily and Marshall's basement?",
+      "Option A": "Mickey",
+      "Option B": "Judy",
+      "Option C": "Ranjit",
+      "Option D": "James",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_295",
+      "Question Text": "In How I Met Your Mother, Way that Barney and Ted determine they can enjoy the Drunk Train?",
+      "Option A": "Wearing suits",
+      "Option B": "Using fake names",
+      "Option C": "Pretending to be tourists",
+      "Option D": "Creating backstories",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_296",
+      "Question Text": "In How I Met Your Mother, Country where Robin goes in the episode?",
+      "Option A": "Canada",
+      "Option B": "Argentina",
+      "Option C": "Russia",
+      "Option D": "England",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_297",
+      "Question Text": "In How I Met Your Mother, Any of the hobbies Ted uses Robin's room for?",
+      "Option A": "Model building",
+      "Option B": "Painting",
+      "Option C": "Pottery",
+      "Option D": "Stamp collecting",
+      "Correct Answer": "Option A",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_298",
+      "Question Text": "In How I Met Your Mother, Place where Quinn and Barney are going on vacation?",
+      "Option A": "Hawaii",
+      "Option B": "Bali",
+      "Option C": "Fiji",
+      "Option D": "Aruba",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_299",
+      "Question Text": "In How I Met Your Mother, Any of the politicians that the future predicts will be president?",
+      "Option A": "Kucinich",
+      "Option B": "Clinton",
+      "Option C": "Bloomberg",
+      "Option D": "Gates",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_300",
+      "Question Text": "In How I Met Your Mother, Any of the people that Lily has dream-cheated with?",
+      "Option A": "Marshall's boss",
+      "Option B": "Ted",
+      "Option C": "Marshall's brother",
+      "Option D": "Barney",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_301",
+      "Question Text": "In How I Met Your Mother, Alcohol that Barney and Marshall take shots of?",
+      "Option A": "Tequila",
+      "Option B": "Whiskey",
+      "Option C": "Vodka",
+      "Option D": "Scotch",
+      "Correct Answer": "Option D",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_302",
+      "Question Text": "In How I Met Your Mother, Middle name that Barney proposes for Lily and Marshall's kid?",
+      "Option A": "Awesome",
+      "Option B": "Wait-for-it",
+      "Option C": "Legendary",
+      "Option D": "Miracle",
+      "Correct Answer": "Option B",
+      "Difficulty": "Easy"
+    },
+    {
+      "Question ID": "HOWIMETYOURMOTHER_303",
+      "Question Text": "In How I Met Your Mother, Name of Victoria's fiance?",
+      "Option A": "Ted",
+      "Option B": "Nick",
+      "Option C": "Klaus",
+      "Option D": "Robert",
+      "Correct Answer": "Option C",
+      "Difficulty": "Easy"
+    }
+  ]
+}

@@ -465,7 +465,7 @@ export const TRIVIA_PACKS = {
       name: 'Theme Parks',
       image: require('../assets/TriviaPackSelection/themepark.jpg'),
       description: 'Trivia about the world\'s most famous theme parks',
-      enabled: true,
+      enabled: false,
       category: 'Other',
       tags: ['theme parks', 'attractions', 'disney', 'universal'],
       defaultPrice: '$3.99',

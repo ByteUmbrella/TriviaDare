@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import {
   View,
@@ -18,7 +17,7 @@ import {
   ScrollView,
   Switch,
   Modal,
-  TouchableWithoutFeedback
+  TouchableWithoutFeedback,
 } from 'react-native';
 import { 
   TRIVIA_PACKS, 
@@ -35,6 +34,13 @@ import { Asset } from 'expo-asset';
 import { useFirebase } from '../Context/multiplayer/FirebaseContext';
 import { useFocusEffect } from '@react-navigation/native';
 import { Audio } from 'expo-av';
+
+// Import the IAP manager and needed constants
+import iapManager, { 
+  PRODUCT_IDS, 
+  PACK_TO_PRODUCT_MAP,
+  DARES_TO_PRODUCT_MAP
+} from '../Context/IAPManager';
 
 const TriviaPackSelectionScreen = ({ navigation, route }) => {
   // Get screen dimensions for responsive sizing
@@ -97,12 +103,50 @@ const TriviaPackSelectionScreen = ({ navigation, route }) => {
   const [showDevMode, setShowDevMode] = useState(false);
   const [betaMode, setBetaModeState] = useState(false);
   const [featuredPackIds, setFeaturedPackIds] = useState([]);
-  const [showBetaControls, setShowBetaControls] = useState(false);
-  const [showAdminControls, setShowAdminControls] = useState(false);
   
-  // Secret code for beta controls - tap the title 5 times
-  const [titleTapCount, setTitleTapCount] = useState(0);
+  // Secret long press states for showing question counts
+  const [showQuestionCounts, setShowQuestionCounts] = useState(false);
+  const longPressTimer = useRef(null);
 
+  // Connect to IAP manager for UI updates after purchases
+  useEffect(() => {
+    const refreshPacksAfterPurchase = async () => {
+      console.log('🔄 Refreshing packs after purchase completion');
+      // Wait a moment for the purchase to process fully
+      await new Promise(resolve => setTimeout(resolve, 500));
+      await loadPackStats();
+      
+      // Show success message to user
+      Alert.alert('Purchase Successful', 'Your purchase was completed successfully!');
+    };
+
+    // Set up refresh callback in IAP manager
+    if (iapManager) {
+      iapManager.onPurchaseComplete = refreshPacksAfterPurchase;
+    }
+    
+    return () => {
+      // Clean up
+      if (iapManager) {
+        iapManager.onPurchaseComplete = null;
+      }
+    };
+  }, []);
+
+  // Initialize IAP manager
+  useEffect(() => {
+    const initializeIAP = async () => {
+      try {
+        await iapManager.initialize();
+        console.log('✅ IAP manager initialized successfully');
+      } catch (error) {
+        console.error('❌ Error initializing IAP manager:', error);
+      }
+    };
+    
+    initializeIAP();
+  }, []);
+ 
   // Load and play background music
   useEffect(() => {
     let isMounted = true;
@@ -139,6 +183,10 @@ const TriviaPackSelectionScreen = ({ navigation, route }) => {
         backgroundMusicRef.current.stopAsync().catch(() => {});
         backgroundMusicRef.current.unloadAsync().catch(() => {});
         backgroundMusicRef.current = null; // Added this line to clear the reference
+      }
+      // Clean up long press timer
+      if (longPressTimer.current) {
+        clearTimeout(longPressTimer.current);
       }
     };
   }, []);
@@ -398,14 +446,21 @@ const TriviaPackSelectionScreen = ({ navigation, route }) => {
     setViewMode(prev => prev === 'grid' ? 'list' : 'grid');
   };
 
-  // Handle title press for beta controls
-  const handleTitlePress = () => {
-    const newCount = titleTapCount + 1;
-    setTitleTapCount(newCount);
-    
-    if (newCount === 5) {
-      setShowBetaControls(true);
-      setTitleTapCount(0);
+  // Handle long press start for showing question counts
+  const handleLongPressStart = () => {
+    longPressTimer.current = setTimeout(() => {
+      setShowQuestionCounts(prev => !prev);
+      if (Platform.OS === 'ios') {
+        const Haptics = require('expo-haptics');
+        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+      }
+    }, 5000);
+  };
+
+  const handleLongPressEnd = () => {
+    if (longPressTimer.current) {
+      clearTimeout(longPressTimer.current);
+      longPressTimer.current = null;
     }
   };
 
@@ -516,78 +571,6 @@ const TriviaPackSelectionScreen = ({ navigation, route }) => {
       setRefreshing(false);
     }
   }, []);
-
-  // Function to handle beta mode toggle
-  const toggleBetaMode = async () => {
-    try {
-      const newBetaState = !betaMode;
-      await setBetaMode(newBetaState);
-      setBetaModeState(newBetaState);
-      
-      // Refresh data to update UI
-      loadPackStats();
-      
-      Alert.alert(
-        "Beta Mode " + (newBetaState ? "Enabled" : "Disabled"),
-        newBetaState 
-          ? "All premium packs are now unlocked for testing."
-          : "Premium packs now require purchase.",
-        [{ text: "OK" }]
-      );
-    } catch (error) {
-      console.error('Error toggling beta mode:', error);
-      Alert.alert("Error", "Failed to toggle beta mode.");
-    }
-  };
-
-  // Function to manually set featured packs
-  const handleSetFeaturedPacks = async () => {
-    if (!selectedPack) {
-      Alert.alert("Select Pack", "Please select a pack to feature first (long press on a pack).");
-      return;
-    }
-    
-    try {
-      // Set the selected pack and one other as featured
-      const otherFeaturedId = featuredPackIds.find(id => id !== selectedPack.id) || 
-                             TRIVIA_PACKS.Premium[0].id;
-      
-      await setFeaturedPacksOverride([selectedPack.id, otherFeaturedId], 7);
-      
-      // Refresh featured packs
-      const featured = await getFeaturedPacks();
-      setFeaturedPackIds(featured);
-      
-      Alert.alert(
-        "Featured Pack Updated",
-        `${selectedPack.name} is now featured for 7 days.`,
-        [{ text: "OK" }]
-      );
-    } catch (error) {
-      console.error('Error setting featured packs:', error);
-      Alert.alert("Error", "Failed to update featured packs.");
-    }
-  };
-
-  // Function to reset featured packs to automatic rotation
-  const handleResetFeaturedPacks = async () => {
-    try {
-      await clearFeaturedPacksOverride();
-      
-      // Refresh featured packs
-      const featured = await getFeaturedPacks();
-      setFeaturedPackIds(featured);
-      
-      Alert.alert(
-        "Featured Packs Reset",
-        "Featured packs will now rotate automatically every 3 days.",
-        [{ text: "OK" }]
-      );
-    } catch (error) {
-      console.error('Error resetting featured packs:', error);
-      Alert.alert("Error", "Failed to reset featured packs.");
-    }
-  };
 
   // Handle back button press based on flow
   const handleBackPress = () => {
@@ -782,1046 +765,1075 @@ const TriviaPackSelectionScreen = ({ navigation, route }) => {
     return filteredPacks.slice(0, endIndex);
   }, [filteredPacks, currentPage]);
 
-// Enhanced pack selection handler with Firebase integration for multiplayer
-const handleSelectPack = async (pack) => {
-  // Set as selected pack for admin controls
-  setSelectedPack(pack);
-  
-  // Check if this is a premium pack that needs to be unlocked
-  const isPremium = TRIVIA_PACKS.Premium.some(p => p.id === pack.id);
-  const isUnlocked = packStats[pack.id]?.purchased || false;
-  
-  if (isPremium && !isUnlocked && !betaMode && !isDevMode) {
-    // Navigate to store for premium packs that aren't unlocked
-    navigation.navigate('Store', { highlightPackId: pack.id });
-    return;
-  }
-  
-  // Skip validation in dev mode if dev packs are visible
-  if (!isDevMode && validationErrors[pack.id]?.length > 0) {
-    Alert.alert(
-      "Pack Validation Errors",
-      `This pack has some issues:\n\n${validationErrors[pack.id].join('\n')}`,
-      [{ text: "OK" }]
-    );
-    return;
-  }
-
-  try {
-    const stats = await getPackStatistics(pack.id);
-    // Skip empty pack validation in dev mode
-    if (!isDevMode && stats.total === 0) {
+  // Enhanced pack selection handler with direct IAP integration
+  const handleSelectPack = async (pack) => {
+    // Set as selected pack for admin controls
+    setSelectedPack(pack);
+    
+    // Check if this is a premium pack that needs to be unlocked
+    const isPremium = TRIVIA_PACKS.Premium.some(p => p.id === pack.id);
+    const isUnlocked = packStats[pack.id]?.purchased || false;
+    
+    if (isPremium && !isUnlocked && !betaMode && !isDevMode) {
+      console.log('🛒 Initiating purchase for pack:', pack.id);
+      
+      try {
+        // First determine if this is a trivia pack or a dares pack to get correct product ID
+        let productId = null;
+        
+        // Look in trivia packs first
+        if (PACK_TO_PRODUCT_MAP[pack.id]) {
+          productId = PACK_TO_PRODUCT_MAP[pack.id];
+        } 
+        // Then check dares packs
+        else if (DARES_TO_PRODUCT_MAP[pack.id]) {
+          productId = DARES_TO_PRODUCT_MAP[pack.id];
+        }
+        
+        if (!productId) {
+          console.error('❌ No product ID found for pack:', pack.id);
+          Alert.alert('Error', 'Could not find product information for this pack.');
+          return;
+        }
+        
+        // Show purchase confirmation
+        Alert.alert(
+          `Purchase ${pack.name}`,
+          `Would you like to purchase this premium pack for ${pack.defaultPrice || '$3.99'}?`,
+          [
+            {
+              text: "Cancel",
+              style: "cancel"
+            },
+            {
+              text: "Purchase",
+              onPress: async () => {
+                try {
+                  // Show loading indicator
+                  setLoading(true);
+                  
+                  console.log('🛒 Requesting purchase for product:', productId);
+                  // This will trigger the native purchase dialog on iOS/Android
+                  const success = await iapManager.purchaseProduct(productId);
+                  
+                  if (success) {
+                    console.log('✅ Purchase initiated successfully');
+                    // UI will refresh after purchase completes via the callback we set up
+                  } else {
+                    console.log('⚠️ Purchase not initiated');
+                  }
+                } catch (error) {
+                  console.error('❌ Purchase initiation error:', error);
+                  Alert.alert('Error', 'Failed to start purchase. Please try again.');
+                } finally {
+                  setLoading(false);
+                }
+              }
+            }
+          ]
+        );
+        return;
+      } catch (error) {
+        console.error('❌ Purchase setup error:', error);
+        Alert.alert('Error', 'There was a problem setting up the purchase. Please try again.');
+        return;
+      }
+    }
+    
+    // Skip validation in dev mode if dev packs are visible
+    if (!isDevMode && validationErrors[pack.id]?.length > 0) {
       Alert.alert(
-        "Pack Not Available",
-        "This pack doesn't have any questions yet.",
+        "Pack Validation Errors",
+        `This pack has some issues:\n\n${validationErrors[pack.id].join('\n')}`,
         [{ text: "OK" }]
       );
       return;
     }
-
-    // Fade out animation before navigation - with different durations for Android
-    const animationDuration = Platform.OS === 'android' ? 150 : 200;
-    
-    Animated.timing(fadeAnim, {
-      toValue: 0,
-      duration: animationDuration,
-      useNativeDriver: true
-    }).start(() => {
-      // Check if we're coming from multiplayer flow
-      if (isMultiplayerFlow) {
-        // Check if we came from LobbyScreen specifically (via our custom flag)
-        const cameFromLobby = route.params?.__fromLobby;
-        console.log("Multiplayer flow detected, came from lobby:", cameFromLobby);
-        
-        // FIREBASE INTEGRATION: Use Firebase context for multiplayer
-        if (firebase && firebase.currentRoom) {
-          // Add console logs to track the data flow
-          console.log('[TriviaPackSelectionScreen] Updating Firebase with pack:', {
-            id: pack.id,
-            name: pack.name,
-            displayName: pack.displayName || pack.name
-          });
+   
+    try {
+      const stats = await getPackStatistics(pack.id);
+      // Skip empty pack validation in dev mode
+      if (!isDevMode && stats.total === 0) {
+        Alert.alert(
+          "Pack Not Available",
+          "This pack doesn't have any questions yet.",
+          [{ text: "OK" }]
+        );
+        return;
+      }
+   
+      // Fade out animation before navigation - with different durations for Android
+      const animationDuration = Platform.OS === 'android' ? 150 : 200;
+      
+      Animated.timing(fadeAnim, {
+        toValue: 0,
+        duration: animationDuration,
+        useNativeDriver: true
+      }).start(() => {
+        // Check if we're coming from multiplayer flow
+        if (isMultiplayerFlow) {
+          // Check if we came from LobbyScreen specifically (via our custom flag)
+          const cameFromLobby = route.params?.__fromLobby;
+          console.log("Multiplayer flow detected, came from lobby:", cameFromLobby);
           
-          // If we have a Firebase room, update game state with selected pack
-          firebase.updateGameState({
-            gameData: {
-              ...firebase.gameState?.gameData,
-              packName: pack.name,
-              packId: pack.id,
-              packDisplayName: pack.displayName || pack.name
-            }
-          }).then(() => {
-            console.log('[TriviaPackSelectionScreen] Firebase update successful');
+          // FIREBASE INTEGRATION: Use Firebase context for multiplayer
+          if (firebase && firebase.currentRoom) {
+            // Add console logs to track the data flow
+            console.log('[TriviaPackSelectionScreen] Updating Firebase with pack:', {
+              id: pack.id,
+              name: pack.name,
+              displayName: pack.displayName || pack.name
+            });
             
-            // Force a delay to ensure Firebase data is propagated before navigation
-            setTimeout(() => {
+            // If we have a Firebase room, update game state with selected pack
+            firebase.updateGameState({
+              gameData: {
+                ...firebase.gameState?.gameData,
+                packName: pack.name,
+                packId: pack.id,
+                packDisplayName: pack.displayName || pack.name
+              }
+            }).then(() => {
+              console.log('[TriviaPackSelectionScreen] Firebase update successful');
+              
+              // Force a delay to ensure Firebase data is propagated before navigation
+              setTimeout(() => {
+                if (cameFromLobby) {
+                  // If we came from lobby, use navigate instead of goBack
+                  console.log('[TriviaPackSelectionScreen] Returning to Lobby with updated pack:', pack.id, pack.name);
+                  
+                  // Use proper navigation with parameters to ensure the LobbyScreen updates correctly
+                  navigation.navigate('LobbyScreen', {
+                    selectedPack: pack.id,
+                    packName: pack.displayName || pack.name,
+                    fromPackSelection: true,
+                    _timestamp: Date.now() // Add unique timestamp to force params update
+                  });
+                } else {
+                  // Normal navigation to lobby with the selected pack
+                  navigation.navigate('LobbyScreen', {
+                    selectedPack: pack.name,
+                    packName: pack.displayName || pack.name,
+                    backgroundMusic: backgroundMusicRef.current
+                  });
+                }
+              }, 300); // Add a small delay to ensure Firebase update is processed
+            }).catch(error => {
+              console.error('[TriviaPackSelectionScreen] Error updating Firebase:', error);
+              Alert.alert('Error', 'Failed to update game with selected pack. Please try again.');
+              
+              // Even if Firebase update fails, still navigate back with the pack data
               if (cameFromLobby) {
-                // If we came from lobby, use navigate instead of goBack
-                console.log('[TriviaPackSelectionScreen] Returning to Lobby with updated pack:', pack.id, pack.name);
-                
-                // Use proper navigation with parameters to ensure the LobbyScreen updates correctly
                 navigation.navigate('LobbyScreen', {
                   selectedPack: pack.id,
                   packName: pack.displayName || pack.name,
                   fromPackSelection: true,
-                  _timestamp: Date.now() // Add unique timestamp to force params update
-                });
-              } else {
-                // Normal navigation to lobby with the selected pack
-                navigation.navigate('LobbyScreen', {
-                  selectedPack: pack.name,
-                  packName: pack.displayName || pack.name,
-                  backgroundMusic: backgroundMusicRef.current
+                  _timestamp: Date.now()
                 });
               }
-            }, 300); // Add a small delay to ensure Firebase update is processed
-          }).catch(error => {
-            console.error('[TriviaPackSelectionScreen] Error updating Firebase:', error);
-            Alert.alert('Error', 'Failed to update game with selected pack. Please try again.');
+            });
+          }
+          // Legacy Bluetooth support for backward compatibility
+          else if (bluetooth) {
+            bluetooth.setSelectedPack(pack.name);
+            bluetooth.setPackName(pack.displayName || pack.name);
             
-            // Even if Firebase update fails, still navigate back with the pack data
+            // Make sure we retrieve the current player name from bluetooth context
+            const currentPlayerName = bluetooth.playerName;
+            
             if (cameFromLobby) {
+              // If we came from lobby, use navigate instead of goBack
               navigation.navigate('LobbyScreen', {
                 selectedPack: pack.id,
                 packName: pack.displayName || pack.name,
                 fromPackSelection: true,
                 _timestamp: Date.now()
               });
+            } else {
+              // Navigate to lobby with the selected pack for multiplayer
+              // Pass playerName explicitly to ensure it's preserved
+              navigation.navigate('LobbyScreen', {
+                isHost: true,
+                selectedPack: pack.name,
+                packName: pack.displayName || pack.name,
+                playerName: currentPlayerName, // Explicitly pass the player name
+                backgroundMusic: backgroundMusicRef.current // Pass the music reference
+              });
             }
-          });
-        }
-        // Legacy Bluetooth support for backward compatibility
-        else if (bluetooth) {
-          bluetooth.setSelectedPack(pack.name);
-          bluetooth.setPackName(pack.displayName || pack.name);
-          
-          // Make sure we retrieve the current player name from bluetooth context
-          const currentPlayerName = bluetooth.playerName;
-          
-          if (cameFromLobby) {
-            // If we came from lobby, use navigate instead of goBack
-            navigation.navigate('LobbyScreen', {
-              selectedPack: pack.id,
-              packName: pack.displayName || pack.name,
-              fromPackSelection: true,
-              _timestamp: Date.now()
-            });
           } else {
-            // Navigate to lobby with the selected pack for multiplayer
-            // Pass playerName explicitly to ensure it's preserved
-            navigation.navigate('LobbyScreen', {
-              isHost: true,
-              selectedPack: pack.name,
-              packName: pack.displayName || pack.name,
-              playerName: currentPlayerName, // Explicitly pass the player name
-              backgroundMusic: backgroundMusicRef.current // Pass the music reference
-            });
+            
+            if (cameFromLobby) {
+              // Use navigate instead of goBack
+              navigation.navigate('LobbyScreen', {
+                selectedPack: pack.id,
+                packName: pack.displayName || pack.name,
+                fromPackSelection: true,
+                _timestamp: Date.now()
+              });
+            } else {
+              navigation.navigate('LobbyScreen', {
+                selectedPack: pack.name,
+                packName: pack.displayName || pack.name
+              });
+            }
           }
         } else {
-          // No Firebase or Bluetooth, but still need to handle navigation
-          if (cameFromLobby) {
-            // Use navigate instead of goBack
-            navigation.navigate('LobbyScreen', {
-              selectedPack: pack.id,
-              packName: pack.displayName || pack.name,
-              fromPackSelection: true,
-              _timestamp: Date.now()
-            });
-          } else {
-            navigation.navigate('LobbyScreen', {
-              selectedPack: pack.name,
-              packName: pack.displayName || pack.name
-            });
-          }
+          // Original single-player flow with Android-optimized navigation
+          const navigationConfig = Platform.OS === 'android' 
+            ? { animationEnabled: true } // Enable animations on Android for smoother transitions
+            : { animationEnabled: false, detachInactiveScreens: false }; // iOS original config
+            
+          navigation.navigate('GameConfirmation', {
+            selectedPack: pack.name,
+            navigationConfig,
+            backgroundMusic: backgroundMusicRef.current // Pass the music reference
+          });
         }
-      } else {
-        // Original single-player flow with Android-optimized navigation
-        const navigationConfig = Platform.OS === 'android' 
-          ? { animationEnabled: true } // Enable animations on Android for smoother transitions
-          : { animationEnabled: false, detachInactiveScreens: false }; // iOS original config
-          
-        navigation.navigate('GameConfirmation', {
-          selectedPack: pack.name,
-          navigationConfig,
-          backgroundMusic: backgroundMusicRef.current // Pass the music reference
-        });
-      }
-    });
-  } catch (error) {
-    console.error('Error selecting pack:', error);
-    Alert.alert('Error', 'Failed to load pack. Please try again.');
-  }
-};
-
+      });
+    } catch (error) {
+      console.error('Error selecting pack:', error);
+      Alert.alert('Error', 'Failed to load pack. Please try again.');
+    }
+  };
+   
   // Render category chip for premium categories
-const renderCategoryChip = useCallback((category, label, icon) => (
-  <TouchableOpacity 
-    style={[
-      styles.categoryChip,
-      premiumCategory === category && styles.categoryChipActive
-    ]}
-    onPress={() => setPremiumCategory(category)}
-    key={category}
-  >
-    {icon && (
-      <Ionicons 
-        name={icon} 
-        size={14} 
-        color={premiumCategory === category ? '#FFFFFF' : '#FFD700'} 
-        style={{ marginRight: 4 }}
-      />
-    )}
-    <Text style={[
-      styles.categoryChipText,
-      premiumCategory === category && styles.categoryChipTextActive
-    ]}>{label}</Text>
-  </TouchableOpacity>
-), [premiumCategory]);
-
-// Compact featured pack item for wider display
-const renderCompactFeaturedPack = useCallback((pack) => {
-  const packStat = packStats[pack.id];
-  const totalQuestions = packStat?.stats?.total || 0;
-  const isFeatured = featuredPackIds.includes(pack.id);
-  
-  return (
+  const renderCategoryChip = useCallback((category, label, icon) => (
     <TouchableOpacity 
-      key={pack.id}
       style={[
-        styles.compactFeaturedPack,
-        { width: (Dimensions.get('window').width / 2) - 28 }, // Calculate width here
-        isFeatured && styles.compactFeaturedPackHighlighted
+        styles.categoryChip,
+        premiumCategory === category && styles.categoryChipActive
       ]}
-      onPress={() => showPackDetail(pack)}
-      onLongPress={() => setSelectedPack(pack)}
+      onPress={() => setPremiumCategory(category)}
+      key={category}
     >
-    <ImageBackground 
-      source={pack.image} 
-      style={styles.compactFeaturedPackImage}
-      imageStyle={{ resizeMode: 'cover' }}
-    >
-      <View style={styles.compactFeaturedPackOverlay} />
-      {isFeatured && (
-        <View style={styles.compactFeaturedStar}>
-          <Ionicons name="star" size={16} color="black" />
-        </View>
+      {icon && (
+        <Ionicons 
+          name={icon} 
+          size={14} 
+          color={premiumCategory === category ? '#FFFFFF' : '#FFD700'} 
+          style={{ marginRight: 4 }}
+        />
       )}
-      <View style={styles.compactFeaturedTextContainer}>
-        <Text 
-          style={styles.compactFeaturedPackName}
-          numberOfLines={1}
-          ellipsizeMode="tail"
-        >
-          {pack.name}
-        </Text>
-        {totalQuestions > 0 && (
-          <Text style={styles.compactFeaturedPackQuestions}>
-            {totalQuestions} Q
-          </Text>
-        )}
-      </View>
-    </ImageBackground>
-  </TouchableOpacity>
-  );
-}, [packStats, featuredPackIds]);
-
-// Render pack item in grid or list mode
-const renderPackItem = useCallback(({ item }) => {
-  const packStat = packStats[item.id];
-  const isDisabled = (devModePacksVisible && isDevMode) ? 
-    false : 
-    !packStat?.isAvailable || !item.enabled;
-  
-  const hasErrors = validationErrors[item.id]?.length > 0;
-  const totalQuestions = packStat?.stats?.total || 0;
-  const isPremium = activeTab === 'Premium';
-  const isFeatured = featuredPackIds.includes(item.id);
-  const isPurchased = packStat?.purchased || false;
-  
-  // Show price in dev mode or if not purchased and not in beta mode
-  const showPrice = isDevMode || (isPremium && !isPurchased && !betaMode);
-
-  // Grid view render
-  if (viewMode === 'grid') {
+      <Text style={[
+        styles.categoryChipText,
+        premiumCategory === category && styles.categoryChipTextActive
+      ]}>{label}</Text>
+    </TouchableOpacity>
+  ), [premiumCategory]);
+   
+  // Compact featured pack item for wider display
+  const renderCompactFeaturedPack = useCallback((pack) => {
+    const packStat = packStats[pack.id];
+    const totalQuestions = packStat?.stats?.total || 0;
+    const isFeatured = featuredPackIds.includes(pack.id);
+    
     return (
       <TouchableOpacity 
+        key={pack.id}
         style={[
-          styles.packItem,
-          { width: itemWidth },
-          isDisabled && styles.disabledPack,
-          hasErrors && !isDevMode && styles.errorPack,
-          isFeatured && styles.featuredPackItem, // Special border for featured packs
-          isPurchased && styles.purchasedPackItem // Add special styling for purchased packs
+          styles.compactFeaturedPack,
+          { width: (Dimensions.get('window').width / 2) - 28 }, // Calculate width here
+          isFeatured && styles.compactFeaturedPackHighlighted
         ]}
-        onPress={() => !isDisabled && showPackDetail(item)}
-        onLongPress={() => setSelectedPack(item)}
-        disabled={isDisabled}
-        activeOpacity={0.7}
+        onPress={() => showPackDetail(pack)}
+        onLongPress={() => setSelectedPack(pack)}
       >
-        <ImageBackground 
-          source={item.image} 
-          style={styles.imageBackground}
-          fadeDuration={Platform.OS === 'android' ? 300 : 0}
-          imageStyle={{ resizeMode: 'cover' }}
+      <ImageBackground 
+        source={pack.image} 
+        style={styles.compactFeaturedPackImage}
+        imageStyle={{ resizeMode: 'cover' }}
+      >
+        <View style={styles.compactFeaturedPackOverlay} />
+        {isFeatured && (
+          <View style={styles.compactFeaturedStar}>
+            <Ionicons name="star" size={16} color="black" />
+          </View>
+        )}
+        <View style={styles.compactFeaturedTextContainer}>
+          <Text 
+            style={styles.compactFeaturedPackName}
+            numberOfLines={1}
+            ellipsizeMode="tail"
+          >
+            {pack.name}
+          </Text>
+          {/* Conditionally show question count based on showQuestionCounts state */}
+          {totalQuestions > 0 && showQuestionCounts && (
+            <Text style={styles.compactFeaturedPackQuestions}>
+              {totalQuestions} Q
+            </Text>
+          )}
+        </View>
+      </ImageBackground>
+    </TouchableOpacity>
+    );
+  }, [packStats, featuredPackIds, showQuestionCounts]);
+   
+  // Render pack item in grid or list mode
+  const renderPackItem = useCallback(({ item }) => {
+    const packStat = packStats[item.id];
+    const isDisabled = (devModePacksVisible && isDevMode) ? 
+      false : 
+      !packStat?.isAvailable || !item.enabled;
+    
+    const hasErrors = validationErrors[item.id]?.length > 0;
+    const totalQuestions = packStat?.stats?.total || 0;
+    const isPremium = activeTab === 'Premium';
+    const isFeatured = featuredPackIds.includes(item.id);
+    const isPurchased = packStat?.purchased || false;
+    
+    // Show price in dev mode or if not purchased and not in beta mode
+    const showPrice = isDevMode || (isPremium && !isPurchased && !betaMode);
+   
+    // Grid view render
+    if (viewMode === 'grid') {
+      return (
+        <TouchableOpacity 
+          style={[
+            styles.packItem,
+            { width: itemWidth },
+            isDisabled && styles.disabledPack,
+            hasErrors && !isDevMode && styles.errorPack,
+            isFeatured && styles.featuredPackItem, // Special border for featured packs
+            isPurchased && styles.purchasedPackItem // Add special styling for purchased packs
+          ]}
+          onPress={() => !isDisabled && showPackDetail(item)}
+          onLongPress={() => setSelectedPack(item)}
+          disabled={isDisabled}
+          activeOpacity={0.7}
         >
-          <View style={styles.overlay} />
-          <View style={styles.textGradient} />
+          <ImageBackground 
+            source={item.image} 
+            style={styles.imageBackground}
+            fadeDuration={Platform.OS === 'android' ? 300 : 0}
+            imageStyle={{ resizeMode: 'cover' }}
+          >
+            <View style={styles.overlay} />
+            <View style={styles.textGradient} />
+            
+            <View style={styles.packTextContainer}>
+    <Text 
+      style={styles.packText}
+      adjustsFontSizeToFit={true}
+      minimumFontScale={0.7}
+      numberOfLines={2}
+      ellipsizeMode="tail"
+    >
+      {item.name}
+    </Text>
+   </View>
+            {/* Conditionally show question count based on showQuestionCounts state */}
+            {packStat && packStat.isAvailable && showQuestionCounts && (
+              <View style={styles.packStatsContainer}>
+                <Text style={styles.questionCountText}>
+                  {`${totalQuestions} Questions`}
+                </Text>
+              </View>
+            )}
+   
+            {/* Error indicator */}
+            {hasErrors && !isDevMode && (
+              <View style={styles.errorIndicator}>
+                <Ionicons name="warning" size={24} color="#ff4500" />
+              </View>
+            )}
+   
+            {/* Coming soon badge */}
+            {isDisabled && !hasErrors && !isDevMode && (
+              <View style={styles.comingSoonBadge}>
+                <Text style={styles.comingSoonText}>Coming Soon</Text>
+              </View>
+            )}
+            
+            {/* Show price for non-purchased packs OR in dev mode */}
+            {isPremium && showPrice && (
+              <View style={styles.priceTagContainer}>
+                <Text style={styles.priceTagText}>{item.defaultPrice || '$3.99'}</Text>
+              </View>
+            )}
+            
+            {/* Featured star indicator */}
+            {isFeatured && (
+              <View style={styles.featuredStarIndicator}>
+                <Ionicons name="star" size={16} color="#FFD700" />
+              </View>
+            )}
+            
+            {/* Category badge if applicable */}
+            {item.category && (
+              <View style={styles.categoryBadge}>
+                <Text style={styles.categoryBadgeText}>{item.category}</Text>
+              </View>
+            )}
+            
+          </ImageBackground>
+        </TouchableOpacity>
+      );
+    }
+    // List view render
+    else {
+      return (
+        <TouchableOpacity 
+          style={[
+            styles.packItemList,
+            isDisabled && styles.disabledPack,
+            hasErrors && !isDevMode && styles.errorPackList,
+            isFeatured && styles.featuredPackItemList,
+            isPurchased && styles.purchasedPackItemList
+          ]}
+          onPress={() => !isDisabled && showPackDetail(item)}
+          onLongPress={() => setSelectedPack(item)}
+          disabled={isDisabled}
+          activeOpacity={0.7}
+        >
+          {/* Pack Thumbnail */}
+          <ImageBackground 
+            source={item.image} 
+            style={styles.listThumbnail}
+            imageStyle={{ borderRadius: 8 }}
+          >
+            <View style={styles.thumbnailOverlay} />
+            {isFeatured && (
+              <View style={styles.featuredIndicatorList}>
+                <Ionicons name="star" size={16} color="black" />
+              </View>
+            )}
+          </ImageBackground>
           
-          <View style={styles.packTextContainer}>
+          {/* Pack Info */}
+          <View style={styles.packInfoList}>
             <Text 
-              style={styles.packText}
-              numberOfLines={2}
+              style={styles.packNameList}
+              numberOfLines={1}
               ellipsizeMode="tail"
             >
               {item.name}
             </Text>
+            
+            <View style={styles.packMetaList}>
+              {item.category && (
+                <View style={styles.categoryBadgeList}>
+                  <Text style={styles.categoryBadgeTextList}>{item.category}</Text>
+                </View>
+              )}
+              
+              {/* Conditionally show question count in list view */}
+              {packStat && packStat.isAvailable && showQuestionCounts && (
+                <Text style={styles.questionCountTextList}>
+                  {`${totalQuestions} Q`}
+                </Text>
+              )}
+            </View>
           </View>
-
-          {packStat && packStat.isAvailable && (
-            <View style={styles.packStatsContainer}>
-              <Text style={styles.questionCountText}>
-                {`${totalQuestions} Questions`}
-              </Text>
-            </View>
-          )}
-
-          {/* Error indicator */}
-          {hasErrors && !isDevMode && (
-            <View style={styles.errorIndicator}>
-              <Ionicons name="warning" size={24} color="#ff4500" />
-            </View>
-          )}
-
-          {/* Coming soon badge */}
-          {isDisabled && !hasErrors && !isDevMode && (
-            <View style={styles.comingSoonBadge}>
-              <Text style={styles.comingSoonText}>Coming Soon</Text>
-            </View>
-          )}
           
-          {/* Show price for non-purchased packs OR in dev mode */}
-          {isPremium && showPrice && (
-            <View style={styles.priceTagContainer}>
-              <Text style={styles.priceTagText}>{item.defaultPrice || '$3.99'}</Text>
-            </View>
-          )}
-          
-          {/* Featured star indicator */}
-          {isFeatured && (
-            <View style={styles.featuredStarIndicator}>
-              <Ionicons name="star" size={16} color="#FFD700" />
-            </View>
-          )}
-          
-          {/* Category badge if applicable */}
-          {item.category && (
-            <View style={styles.categoryBadge}>
-              <Text style={styles.categoryBadgeText}>{item.category}</Text>
-            </View>
-          )}
-          
-        </ImageBackground>
-      </TouchableOpacity>
-    );
-  }
-  // List view render
-  else {
-    return (
-      <TouchableOpacity 
-        style={[
-          styles.packItemList,
-          isDisabled && styles.disabledPack,
-          hasErrors && !isDevMode && styles.errorPackList,
-          isFeatured && styles.featuredPackItemList,
-          isPurchased && styles.purchasedPackItemList
-        ]}
-        onPress={() => !isDisabled && showPackDetail(item)}
-        onLongPress={() => setSelectedPack(item)}
-        disabled={isDisabled}
-        activeOpacity={0.7}
-      >
-        {/* Pack Thumbnail */}
-        <ImageBackground 
-          source={item.image} 
-          style={styles.listThumbnail}
-          imageStyle={{ borderRadius: 8 }}
-        >
-          <View style={styles.thumbnailOverlay} />
-          {isFeatured && (
-            <View style={styles.featuredIndicatorList}>
-              <Ionicons name="star" size={16} color="black" />
-            </View>
-          )}
-        </ImageBackground>
-        
-        {/* Pack Info */}
-        <View style={styles.packInfoList}>
-          <Text 
-            style={styles.packNameList}
-            numberOfLines={1}
-            ellipsizeMode="tail"
-          >
-            {item.name}
-          </Text>
-          
-          <View style={styles.packMetaList}>
-            {item.category && (
-              <View style={styles.categoryBadgeList}>
-                <Text style={styles.categoryBadgeTextList}>{item.category}</Text>
+          {/* Indicators */}
+          <View style={styles.listIndicators}>
+            {/* Price tag for premium packs - show in dev mode or if not purchased */}
+            {isPremium && showPrice && (
+              <View style={styles.priceTagList}>
+                <Text style={styles.priceTagTextList}>{item.defaultPrice || '$3.99'}</Text>
               </View>
             )}
             
-            {packStat && packStat.isAvailable && (
-              <Text style={styles.questionCountTextList}>
-                {`${totalQuestions} Q`}
-              </Text>
+            {item.isNew && (
+              <View style={styles.newIndicatorList}>
+                <Text style={styles.newIndicatorTextList}>NEW</Text>
+              </View>
             )}
           </View>
-        </View>
-        
-        {/* Indicators */}
-        <View style={styles.listIndicators}>
-          {/* Price tag for premium packs - show in dev mode or if not purchased */}
-          {isPremium && showPrice && (
-            <View style={styles.priceTagList}>
-              <Text style={styles.priceTagTextList}>{item.defaultPrice || '$3.99'}</Text>
-            </View>
-          )}
-          
-          {item.isNew && (
-            <View style={styles.newIndicatorList}>
-              <Text style={styles.newIndicatorTextList}>NEW</Text>
-            </View>
-          )}
-        </View>
-      </TouchableOpacity>
-    );
-  }
-}, [packStats, validationErrors, devModePacksVisible, isDevMode, itemWidth, activeTab, betaMode, featuredPackIds, viewMode]);
-
-  // Function to render header for the FlatList
-const renderListHeader = useCallback(() => {
-  if (activeTab !== 'Premium' || isSearchVisible) return null;
-  
-  return (
-    <View style={styles.premiumControls}>
-      {/* Category Chips with Icons */}
-      <ScrollView 
-        horizontal 
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.categoryScrollContent}
-      >
-        {renderCategoryChip('All', 'All Packs', 'apps')}
-        {renderCategoryChip('TV', 'TV Shows', 'tv')}
-        {renderCategoryChip('Movies', 'Movies', 'film')}
-        {renderCategoryChip('Games', 'Video Games', 'game-controller')}
-        {renderCategoryChip('Books', 'Books', 'book')}
-        {renderCategoryChip('Other', 'Other', 'ellipsis-horizontal-circle')}
-      </ScrollView>
-      
-      {/* Sorting Controls */}
-      <View style={styles.sortContainer}>
-        <Text style={styles.sortLabel}>Sort:</Text>
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.sortButtonsContainer}
-        >
-          <TouchableOpacity 
-            style={[styles.sortButton, sortBy === 'alphabetical' && styles.sortButtonActive]}
-            onPress={() => setSortBy('alphabetical')}
-          >
-            <Text style={[
-              styles.sortButtonText, 
-              sortBy === 'alphabetical' && styles.sortButtonTextActive
-            ]}>A-Z</Text>
-          </TouchableOpacity>
-          <TouchableOpacity 
-            style={[styles.sortButton, sortBy === 'questions' && styles.sortButtonActive]}
-            onPress={() => setSortBy('questions')}
-          >
-            <Text style={[
-              styles.sortButtonText,
-              sortBy === 'questions' && styles.sortButtonTextActive
-            ]}>Questions</Text>
-          </TouchableOpacity>
-          <TouchableOpacity 
-            style={[styles.sortButton, sortBy === 'newest' && styles.sortButtonActive]}
-            onPress={() => setSortBy('newest')}
-          >
-            <Text style={[
-              styles.sortButtonText,
-              sortBy === 'newest' && styles.sortButtonTextActive
-            ]}>Newest</Text>
-          </TouchableOpacity>
-          <TouchableOpacity 
-            style={[styles.sortButton, sortBy === 'purchased' && styles.sortButtonActive]}
-            onPress={() => setSortBy('purchased')}
-          >
-            <Text style={[
-              styles.sortButtonText,
-              sortBy === 'purchased' && styles.sortButtonTextActive
-            ]}>Purchased</Text>
-          </TouchableOpacity>
-        </ScrollView>
-      </View>
-    
-      {/* Featured Packs Section - Animated Collapsible */}
-      <Animated.View style={[styles.featuredSection, { height: featuredHeightValue }]}>
-        <TouchableOpacity 
-          style={styles.featuredHeader}
-          onPress={toggleFeaturedSection}
-          activeOpacity={0.8}
-        >
-          <Text style={styles.featuredTitle}>Featured Packs</Text>
-          <Ionicons 
-            name={featuredSectionCollapsed ? "chevron-down" : "chevron-up"} 
-            size={20} 
-            color="#FFD700" 
-          />
         </TouchableOpacity>
+      );
+    }
+  }, [packStats, validationErrors, devModePacksVisible, isDevMode, itemWidth, activeTab, betaMode, featuredPackIds, viewMode, showQuestionCounts]);
+   
+  // Function to render header for the FlatList
+  const renderListHeader = useCallback(() => {
+    if (activeTab !== 'Premium' || isSearchVisible) return null;
+    
+    return (
+      <View style={styles.premiumControls}>
+        {/* Category Chips with Icons */}
+        <ScrollView 
+          horizontal 
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.categoryScrollContent}
+        >
+          {renderCategoryChip('All', 'All Packs', 'apps')}
+          {renderCategoryChip('TV', 'TV Shows', 'tv')}
+          {renderCategoryChip('Movies', 'Movies', 'film')}
+          {renderCategoryChip('Games', 'Video Games', 'game-controller')}
+          {renderCategoryChip('Books', 'Books', 'book')}
+          {renderCategoryChip('Other', 'Other', 'ellipsis-horizontal-circle')}
+        </ScrollView>
         
-        {!featuredSectionCollapsed && (
-          <ScrollView 
-            horizontal 
+        {/* Sorting Controls */}
+        <View style={styles.sortContainer}>
+          <Text style={styles.sortLabel}>Sort:</Text>
+          <ScrollView
+            horizontal
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.featuredScrollContent}
+            contentContainerStyle={styles.sortButtonsContainer}
           >
-            {actualFeaturedPacks.map(pack => renderCompactFeaturedPack(pack))}
+            <TouchableOpacity 
+              style={[styles.sortButton, sortBy === 'alphabetical' && styles.sortButtonActive]}
+              onPress={() => setSortBy('alphabetical')}
+            >
+              <Text style={[
+                styles.sortButtonText, 
+                sortBy === 'alphabetical' && styles.sortButtonTextActive
+              ]}>A-Z</Text>
+            </TouchableOpacity>
+            <TouchableOpacity 
+              style={[styles.sortButton, sortBy === 'questions' && styles.sortButtonActive]}
+              onPress={() => setSortBy('questions')}
+            >
+              <Text style={[
+                styles.sortButtonText,
+                sortBy === 'questions' && styles.sortButtonTextActive
+              ]}>Questions</Text>
+            </TouchableOpacity>
+            <TouchableOpacity 
+              style={[styles.sortButton, sortBy === 'newest' && styles.sortButtonActive]}
+              onPress={() => setSortBy('newest')}
+            >
+              <Text style={[
+                styles.sortButtonText,
+                sortBy === 'newest' && styles.sortButtonTextActive
+              ]}>Newest</Text>
+            </TouchableOpacity>
+            <TouchableOpacity 
+              style={[styles.sortButton, sortBy === 'purchased' && styles.sortButtonActive]}
+              onPress={() => setSortBy('purchased')}
+            >
+              <Text style={[
+                styles.sortButtonText,
+                sortBy === 'purchased' && styles.sortButtonTextActive
+              ]}>Purchased</Text>
+            </TouchableOpacity>
           </ScrollView>
-        )}
-      </Animated.View>
-    </View>
-  );
-}, [
-  activeTab, 
-  premiumCategory, 
-  sortBy, 
-  featuredSectionCollapsed, 
-  featuredHeightValue, 
-  actualFeaturedPacks,
-  isSearchVisible
-]);
-
-const renderListFooter = useCallback(() => {
-  // Only show the Everything Bundle in the Premium tab and when not searching
-  if (activeTab !== 'Premium' || searchQuery.trim() !== '') {
-    return paginatedPacks.length < filteredPacks.length ? (
-      <View style={styles.loadMoreContainer}>
-        <ActivityIndicator color="#00ff00" size="small" />
-        <Text style={styles.loadMoreText}>Loading more packs...</Text>
+        </View>
+      
+        {/* Featured Packs Section - Animated Collapsible */}
+        <Animated.View style={[styles.featuredSection, { height: featuredHeightValue }]}>
+          <TouchableOpacity 
+            style={styles.featuredHeader}
+            onPress={toggleFeaturedSection}
+            activeOpacity={0.8}
+          >
+            <Text style={styles.featuredTitle}>Featured Packs</Text>
+            <Ionicons 
+              name={featuredSectionCollapsed ? "chevron-down" : "chevron-up"} 
+              size={20} 
+              color="#FFD700" 
+            />
+          </TouchableOpacity>
+          
+          {!featuredSectionCollapsed && (
+            <ScrollView 
+              horizontal 
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.featuredScrollContent}
+            >
+              {actualFeaturedPacks.map(pack => renderCompactFeaturedPack(pack))}
+            </ScrollView>
+          )}
+        </Animated.View>
       </View>
-    ) : (filteredPacks.length === 0 ? (
-      <View style={styles.noResultsContainer}>
-        <Ionicons name="search-outline" size={40} color="#FFD700" />
-        <Text style={styles.noResultsText}>No packs found</Text>
-        <Text style={styles.noResultsSubText}>Try a different search or category</Text>
-      </View>
-    ) : (
-      <View style={styles.endOfListContainer}>
-        <Text style={styles.endOfListText}>You've seen all available packs</Text>
-      </View>
-    ));
-  }
-  
-  return (
-    <View style={styles.everythingBundleContainer}>
-      {/* First render loading indicator or end of list message if applicable */}
-      {paginatedPacks.length < filteredPacks.length && (
+    );
+  }, [
+    activeTab, 
+    premiumCategory, 
+    sortBy, 
+    featuredSectionCollapsed, 
+    featuredHeightValue, 
+    actualFeaturedPacks,
+    isSearchVisible
+  ]);
+   
+  const renderListFooter = useCallback(() => {
+    // Only show the Everything Bundle in the Premium tab and when not searching
+    if (activeTab !== 'Premium' || searchQuery.trim() !== '') {
+      return paginatedPacks.length < filteredPacks.length ? (
         <View style={styles.loadMoreContainer}>
           <ActivityIndicator color="#00ff00" size="small" />
           <Text style={styles.loadMoreText}>Loading more packs...</Text>
         </View>
-      )}
-      
-      {/* Then render the Everything Bundle button */}
-      <TouchableOpacity 
-        style={styles.everythingBundleButton}
-        onPress={() => {
-          // Show purchase confirmation alert instead of navigating
-          Alert.alert(
-            "Purchase Everything Bundle",
-            "Get unlimited access to all premium packs including future releases for just $49.99. This is a one-time purchase.",
-            [
-              {
-                text: "Cancel",
-                style: "cancel"
-              },
-              {
-                text: "Purchase",
-                onPress: () => {
-                  // Handle the purchase with your IAP system
-                  try {
-                    iapManager.purchaseProduct(PRODUCT_IDS.EVERYTHING_BUNDLE);
-                    // You may want to show a success message or refresh pack data after purchase
-                  } catch (error) {
-                    console.error('Purchase error:', error);
-                    Alert.alert('Error', 'There was a problem with your purchase. Please try again.');
+      ) : (filteredPacks.length === 0 ? (
+        <View style={styles.noResultsContainer}>
+          <Ionicons name="search-outline" size={40} color="#FFD700" />
+          <Text style={styles.noResultsText}>No packs found</Text>
+          <Text style={styles.noResultsSubText}>Try a different search or category</Text>
+        </View>
+      ) : (
+        <View style={styles.endOfListContainer}>
+          <Text style={styles.endOfListText}>You've seen all available packs</Text>
+        </View>
+      ));
+    }
+    
+    return (
+      <View style={styles.everythingBundleContainer}>
+        {/* First render loading indicator or end of list message if applicable */}
+        {paginatedPacks.length < filteredPacks.length && (
+          <View style={styles.loadMoreContainer}>
+            <ActivityIndicator color="#00ff00" size="small" />
+            <Text style={styles.loadMoreText}>Loading more packs...</Text>
+          </View>
+        )}
+        
+        {/* Then render the Everything Bundle button */}
+        <TouchableOpacity 
+          style={styles.everythingBundleButton}
+          onPress={() => {
+            // Show purchase confirmation alert
+            Alert.alert(
+              "Purchase Everything Bundle",
+              "Get unlimited access to all premium packs including future releases for just $49.99. This is a one-time purchase.",
+              [
+                {
+                  text: "Cancel",
+                  style: "cancel"
+                },
+                {
+                  text: "Purchase",
+                  onPress: async () => {
+                    try {
+                      // Show loading indicator
+                      setLoading(true);
+                      
+                      console.log('🛒 Initiating Everything Bundle purchase');
+                      await iapManager.purchaseProduct(PRODUCT_IDS.EVERYTHING_BUNDLE);
+                      // Purchase result handled by listener
+                    } catch (error) {
+                      console.error('❌ Bundle purchase error:', error);
+                      Alert.alert('Error', 'There was a problem with your purchase. Please try again.');
+                    } finally {
+                      setLoading(false);
+                    }
                   }
                 }
-              }
-            ]
-          );
-        }}
-        activeOpacity={0.8}
-      >
-        <ImageBackground 
-          source={require('../assets/gameshow.jpg')} // Using existing background image
-          style={styles.bundleBackground}
-          imageStyle={{ borderRadius: 15 }}
-        >
-          <View style={styles.bundleOverlay} />
-          <View style={styles.bundleContent}>
-            <View style={styles.bundleTitleContainer}>
-              <Text style={styles.bundleTitle}>EVERYTHING BUNDLE</Text>
-              <Text style={styles.bundleSubtitle}>All Premium Packs + Future Updates</Text>
-            </View>
-            
-            <View style={styles.bundlePriceContainer}>
-              <Text style={styles.bundlePrice}>$49.99</Text>
-              <Text style={styles.bundleSavings}>Save over 80%</Text>
-            </View>
-          </View>
-        </ImageBackground>
-      </TouchableOpacity>
-    </View>
-  );
-}, [activeTab, paginatedPacks, filteredPacks, searchQuery]);
-
-// Updated render function with improved header and space-saving features
-return (
-  <ImageBackground 
-    source={require('../assets/gameshow.jpg')} 
-    style={styles.container}
-    fadeDuration={Platform.OS === 'android' ? 300 : 0}
-  >
-    {loading || loadingImages ? (
-      <View style={styles.loadingContainer}>
-        <ActivityIndicator 
-          size="large" 
-          color="#00ff00"
-          style={Platform.OS === 'android' ? { transform: [{ scale: 1.2 }] } : undefined} 
-        />
-        <Text style={styles.loadingText}>
-          {loadingImages ? "Loading Images..." : "Loading Trivia Packs..."}
-        </Text>
-      </View>
-    ) : (
-      <Animated.View style={[styles.content, { opacity: fadeAnim }]}>
-        {/* Fixed Header with back button, title, and search/view icons */}
-        <View style={styles.header}>
-          <TouchableOpacity 
-            style={styles.backButton}
-            onPress={handleBackPress}
-            hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
-          >
-            <Ionicons name="arrow-back" size={28} color="#FFD700" />
-          </TouchableOpacity>
-          
-          {!isSearchVisible ? (
-            // Title when search is not visible
-            <View style={styles.headerTitleContainer}>
-              <TouchableOpacity 
-                onPress={handleTitlePress}
-                activeOpacity={1}
-              >
-                <Text 
-                  style={styles.headerTitle}
-                  numberOfLines={1}
-                  adjustsFontSizeToFit={true}
-                  minimumFontScale={0.8}
-                >
-                  Trivia Packs
-                </Text>
-                {betaMode && (
-                  <Text style={styles.betaBadgeText}>BETA MODE</Text>
-                )}
-              </TouchableOpacity>
-            </View>
-          ) : (
-            // Animated search input when search is visible
-            <Animated.View 
-              style={[
-                styles.searchInputAnimated,
-                { width: searchInputWidth }
-              ]}
-            >
-              <TextInput
-                ref={searchInputRef}
-                style={styles.searchInputExpanded}
-                placeholder="Search packs..."
-                placeholderTextColor="rgba(255, 255, 255, 0.5)"
-                value={searchQuery}
-                onChangeText={setSearchQuery}
-                returnKeyType="search"
-                autoFocus={true}
-              />
-              {searchQuery !== '' && (
-                <TouchableOpacity 
-                  style={styles.clearSearchButton}
-                  onPress={() => setSearchQuery('')}
-                >
-                  <Ionicons name="close-circle" size={20} color="#FFD700" />
-                </TouchableOpacity>
-              )}
-            </Animated.View>
-          )}
-          
-          {/* Header Action Buttons */}
-          <View style={styles.headerActions}>
-            {/* Search button */}
-            <TouchableOpacity 
-              style={[
-                styles.headerIconButton,
-                isSearchVisible && styles.headerIconButtonActive
-              ]}
-              onPress={toggleSearch}
-            >
-              <Ionicons 
-                name={isSearchVisible ? "close" : "search"} 
-                size={24} 
-                color="#FFD700" 
-              />
-            </TouchableOpacity>
-            
-            {/* View mode toggle (grid/list) */}
-            <TouchableOpacity 
-              style={styles.headerIconButton}
-              onPress={toggleViewMode}
-            >
-              <Ionicons 
-                name={viewMode === 'grid' ? "list" : "grid-outline"} 
-                size={24} 
-                color="#FFD700" 
-              />
-            </TouchableOpacity>
-          </View>
-        </View>
-        
-        {isDevMode && showDevMode && (
-          <View style={styles.devModeContainer}>
-            <Text style={styles.devModeContainerText}>
-              Development Mode Active
-            </Text>
-            <TouchableOpacity 
-              style={styles.devModeButton}
-              onPress={() => setDevModePacksVisible(!devModePacksVisible)}
-            >
-              <Text style={styles.devModeButtonText}>
-                {devModePacksVisible ? 'Hide Dev Packs' : 'Show Dev Packs'}
-              </Text>
-            </TouchableOpacity>
-          </View>
-        )}
-        
-        {/* Beta mode controls - shown when activated by tapping title 5 times */}
-        {showBetaControls && (
-          <View style={styles.betaControlsContainer}>
-            <View style={styles.betaControlsHeader}>
-              <Text style={styles.betaControlsTitle}>Developer Controls</Text>
-              <TouchableOpacity onPress={() => setShowBetaControls(false)}>
-                <Ionicons name="close" size={24} color="#FFD700" />
-              </TouchableOpacity>
-            </View>
-            
-            <TouchableOpacity 
-              style={[
-                styles.betaControlsButton,
-                showAdminControls && styles.betaControlsButtonActive
-              ]}
-              onPress={() => setShowAdminControls(!showAdminControls)}
-            >
-              <Text style={styles.betaControlsButtonText}>
-                {showAdminControls ? "Hide Admin Controls" : "Show Admin Controls"}
-              </Text>
-            </TouchableOpacity>
-            
-            {showAdminControls && (
-              <>
-                {/* Beta mode toggle */}
-                <View style={styles.betaModeToggleContainer}>
-                  <Text style={styles.betaModeToggleLabel}>
-                    Beta Mode (Unlock All Packs)
-                  </Text>
-                  <Switch
-                    value={betaMode}
-                    onValueChange={toggleBetaMode}
-                    trackColor={{ false: "#767577", true: "#81b0ff" }}
-                    thumbColor={betaMode ? "#00C853" : "#f4f3f4"}
-                  />
-                </View>
-                
-                {/* Featured pack controls */}
-                <View style={styles.featuredControlsContainer}>
-                  <Text style={styles.featuredControlsTitle}>
-                    Feature Pack Controls:
-                  </Text>
-                  {selectedPack ? (
-                    <Text style={styles.selectedPackText}>
-                      Selected: {selectedPack.name}
-                    </Text>
-                  ) : (
-                    <Text style={styles.noPackSelectedText}>
-                      Long press on a pack to select it
-                    </Text>
-                  )}
-                  <View style={styles.featuredControlsButtonContainer}>
-                    <TouchableOpacity 
-                      style={[
-                        styles.featuredControlButton,
-                        !selectedPack && styles.featuredControlButtonDisabled
-                      ]}
-                      onPress={handleSetFeaturedPacks}
-                      disabled={!selectedPack}
-                    >
-                      <Text style={styles.featuredControlButtonText}>
-                        Set as Featured
-                      </Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity 
-                      style={styles.featuredResetButton}
-                      onPress={handleResetFeaturedPacks}
-                    >
-                      <Text style={styles.featuredResetButtonText}>
-                        Reset to Rotation
-                      </Text>
-                    </TouchableOpacity>
-                  </View>
-                </View>
-              </>
-            )}
-          </View>
-        )}
-        
-        {/* Enhanced Tab Selection with Indicators */}
-        <View style={styles.tabContainerWrapper}>
-          <View style={styles.tabContainer}>
-            <TouchableOpacity 
-              style={[
-                styles.tabButton,
-                activeTab === 'Basic' ? styles.activeTabButton : {}
-              ]}
-              onPress={() => handleTabChange('Basic')}
-            >
-              <Text style={[
-                styles.tabText,
-                activeTab === 'Basic' ? styles.activeTabText : {}
-              ]}>Basic Packs</Text>
-              {activeTab === 'Basic' && <View style={styles.tabIndicator} />}
-            </TouchableOpacity>
-            
-            <TouchableOpacity 
-              style={[
-                styles.tabButton,
-                activeTab === 'Premium' ? styles.activeTabButton : {}
-              ]}
-              onPress={() => handleTabChange('Premium')}
-            >
-              <Text style={[
-                styles.tabText,
-                activeTab === 'Premium' ? styles.activeTabText : {}
-              ]}>Premium Packs</Text>
-              {activeTab === 'Premium' && <View style={styles.tabIndicator} />}
-              
-              {/* Add a "MORE" badge to draw attention to Premium tab */}
-              <View style={styles.newBadge}>
-                <Text style={styles.newBadgeText}>MORE</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        {/* Pack Grid/List with Infinite Scrolling */}
-        <FlatList
-          ref={flatListRef}
-          data={paginatedPacks}
-          keyExtractor={(item) => `${activeTab}-${item.id}`}
-          renderItem={renderPackItem}
-          numColumns={viewMode === 'grid' ? 2 : 1}
-          key={viewMode === 'grid' ? 'grid' : 'list'}
-          refreshControl={
-            <RefreshControl
-              refreshing={refreshing}
-              onRefresh={onRefresh}
-              tintColor="#00ff00"
-              colors={["#00ff00"]}
-              progressBackgroundColor={Platform.OS === 'android' ? '#222222' : undefined}
-            />
-          }
-          initialNumToRender={Platform.OS === 'android' ? 4 : 6}
-          maxToRenderPerBatch={Platform.OS === 'android' ? 2 : 4}
-          windowSize={Platform.OS === 'android' ? 5 : 7}
-          removeClippedSubviews={true}
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={[
-            styles.listContent,
-            searchQuery && { paddingTop: 10 } // Add padding when searching
-          ]}
-          onEndReached={() => {
-            if (paginatedPacks.length < filteredPacks.length) {
-              setCurrentPage(prev => prev + 1);
-            }
+              ]
+            );
           }}
-          onEndReachedThreshold={0.5}
-          ListHeaderComponent={renderListHeader}
-          onScroll={handleScroll}
-          scrollEventThrottle={16} // For smooth scroll handling
-          ListFooterComponent={renderListFooter}
-          ListEmptyComponent={() => (
-            <View style={styles.noResultsContainer}>
-              <Ionicons name="search-outline" size={40} color="#FFD700" />
-              <Text style={styles.noResultsText}>No packs found</Text>
-              <Text style={styles.noResultsSubText}>Try a different search or category</Text>
+          activeOpacity={0.8}
+        >
+          <ImageBackground 
+            source={require('../assets/gameshow.jpg')} // Using existing background image
+            style={styles.bundleBackground}
+            imageStyle={{ borderRadius: 15 }}
+          >
+            <View style={styles.bundleOverlay} />
+            <View style={styles.bundleContent}>
+              <View style={styles.bundleTitleContainer}>
+                <Text style={styles.bundleTitle}>EVERYTHING BUNDLE</Text>
+                <Text style={styles.bundleSubtitle}>All Premium Packs + Future Updates</Text>
+              </View>
+              
+              <View style={styles.bundlePriceContainer}>
+                <Text style={styles.bundlePrice}>$49.99</Text>
+                <Text style={styles.bundleSavings}>Save over 80%</Text>
+              </View>
+            </View>
+          </ImageBackground>
+        </TouchableOpacity>
+      </View>
+    );
+  }, [activeTab, paginatedPacks, filteredPacks, searchQuery]);
+   
+  // Updated render function with improved header and space-saving features
+  return (
+    <ImageBackground 
+      source={require('../assets/gameshow.jpg')} 
+      style={styles.container}
+      fadeDuration={Platform.OS === 'android' ? 300 : 0}
+    >
+      {loading || loadingImages ? (
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator 
+            size="large" 
+            color="#00ff00"
+            style={Platform.OS === 'android' ? { transform: [{ scale: 1.2 }] } : undefined} 
+          />
+          <Text style={styles.loadingText}>
+            {loadingImages ? "Loading Images..." : "Loading Trivia Packs..."}
+          </Text>
+        </View>
+      ) : (
+        <Animated.View style={[styles.content, { opacity: fadeAnim }]}>
+          {/* Fixed Header with back button, title, and search/view icons */}
+          <View style={styles.header}>
+            <TouchableOpacity 
+              style={styles.backButton}
+              onPress={handleBackPress}
+              hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+            >
+              <Ionicons name="arrow-back" size={28} color="#FFD700" />
+            </TouchableOpacity>
+            
+            {!isSearchVisible ? (
+              // Title when search is not visible
+              <View style={styles.headerTitleContainer}>
+                <TouchableOpacity 
+                  onPressIn={handleLongPressStart}
+                  onPressOut={handleLongPressEnd}
+                  onTouchCancel={handleLongPressEnd}
+                  activeOpacity={1}
+                >
+                  <Text 
+                    style={styles.headerTitle}
+                    numberOfLines={1}
+                    adjustsFontSizeToFit={true}
+                    minimumFontScale={0.8}
+                  >
+                    Trivia Packs
+                  </Text>
+                  {betaMode && (
+                    <Text style={styles.betaBadgeText}>BETA MODE</Text>
+                  )}
+                </TouchableOpacity>
+              </View>
+            ) : (
+              // Animated search input when search is visible
+              <Animated.View 
+                style={[
+                  styles.searchInputAnimated,
+                  { width: searchInputWidth }
+                ]}
+              >
+                <TextInput
+                  ref={searchInputRef}
+                  style={styles.searchInputExpanded}
+                  placeholder="Search packs..."
+                  placeholderTextColor="rgba(255, 255, 255, 0.5)"
+                  value={searchQuery}
+                  onChangeText={setSearchQuery}
+                  returnKeyType="search"
+                  autoFocus={true}
+                />
+                {searchQuery !== '' && (
+                  <TouchableOpacity 
+                    style={styles.clearSearchButton}
+                    onPress={() => setSearchQuery('')}
+                  >
+                    <Ionicons name="close-circle" size={20} color="#FFD700" />
+                  </TouchableOpacity>
+                )}
+              </Animated.View>
+            )}
+            
+            {/* Header Action Buttons */}
+            <View style={styles.headerActions}>
+              {/* Search button */}
+              <TouchableOpacity 
+                style={[
+                  styles.headerIconButton,
+                  isSearchVisible && styles.headerIconButtonActive
+                ]}
+                onPress={toggleSearch}
+              >
+                <Ionicons 
+                  name={isSearchVisible ? "close" : "search"} 
+                  size={24} 
+                  color="#FFD700" 
+                />
+              </TouchableOpacity>
+              
+              {/* View mode toggle (grid/list) */}
+              <TouchableOpacity 
+                style={styles.headerIconButton}
+                onPress={toggleViewMode}
+              >
+                <Ionicons 
+                  name={viewMode === 'grid' ? "list" : "grid-outline"} 
+                  size={24} 
+                  color="#FFD700" 
+                />
+              </TouchableOpacity>
+            </View>
+          </View>
+          
+          {isDevMode && showDevMode && (
+            <View style={styles.devModeContainer}>
+              <Text style={styles.devModeContainerText}>
+                Development Mode Active
+              </Text>
+              <TouchableOpacity 
+                style={styles.devModeButton}
+                onPress={() => setDevModePacksVisible(!devModePacksVisible)}
+              >
+                <Text style={styles.devModeButtonText}>
+                  {devModePacksVisible ? 'Hide Dev Packs' : 'Show Dev Packs'}
+                </Text>
+              </TouchableOpacity>
             </View>
           )}
-        />
-        
-        {/* Pack Detail Modal */}
-        <Modal
-          transparent={true}
-          visible={packDetailVisible}
-          onRequestClose={closePackDetail}
-          animationType="none"
-          hardwareAccelerated={true}
-          presentationStyle="overFullScreen"
-        >
-          <TouchableOpacity 
-            style={styles.modalBackground}
-            activeOpacity={1}
-            onPress={closePackDetail}
+          
+          {/* Enhanced Tab Selection with Indicators */}
+          <View style={styles.tabContainerWrapper}>
+            <View style={styles.tabContainer}>
+              <TouchableOpacity 
+                style={[
+                  styles.tabButton,
+                  activeTab === 'Basic' ? styles.activeTabButton : {}
+                ]}
+                onPress={() => handleTabChange('Basic')}
+              >
+                <Text style={[
+                  styles.tabText,
+                  activeTab === 'Basic' ? styles.activeTabText : {}
+                ]}>Basic Packs</Text>
+                {activeTab === 'Basic' && <View style={styles.tabIndicator} />}
+              </TouchableOpacity>
+              
+              <TouchableOpacity 
+                style={[
+                  styles.tabButton,
+                  activeTab === 'Premium' ? styles.activeTabButton : {}
+                ]}
+                onPress={() => handleTabChange('Premium')}
+              >
+                <Text style={[
+                  styles.tabText,
+                  activeTab === 'Premium' ? styles.activeTabText : {}
+                ]}>Premium Packs</Text>
+                {activeTab === 'Premium' && <View style={styles.tabIndicator} />}
+                
+                {/* Add a "MORE" badge to draw attention to Premium tab */}
+                <View style={styles.newBadge}>
+                  <Text style={styles.newBadgeText}>MORE</Text>
+                </View>
+              </TouchableOpacity>
+            </View>
+          </View>
+   
+          {/* Pack Grid/List with Infinite Scrolling */}
+          <FlatList
+            ref={flatListRef}
+            data={paginatedPacks}
+            keyExtractor={(item) => `${activeTab}-${item.id}`}
+            renderItem={renderPackItem}
+            numColumns={viewMode === 'grid' ? 2 : 1}
+            key={viewMode === 'grid' ? 'grid' : 'list'}
+            refreshControl={
+              <RefreshControl
+                refreshing={refreshing}
+                onRefresh={onRefresh}
+                tintColor="#00ff00"
+                colors={["#00ff00"]}
+                progressBackgroundColor={Platform.OS === 'android' ? '#222222' : undefined}
+              />
+            }
+            initialNumToRender={Platform.OS === 'android' ? 4 : 6}
+            maxToRenderPerBatch={Platform.OS === 'android' ? 2 : 4}
+            windowSize={Platform.OS === 'android' ? 5 : 7}
+            removeClippedSubviews={true}
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={[
+              styles.listContent,
+              searchQuery && { paddingTop: 10 } // Add padding when searching
+            ]}
+            onEndReached={() => {
+              if (paginatedPacks.length < filteredPacks.length) {
+                setCurrentPage(prev => prev + 1);
+              }
+            }}
+            onEndReachedThreshold={0.5}
+            ListHeaderComponent={renderListHeader}
+            onScroll={handleScroll}
+            scrollEventThrottle={16} // For smooth scroll handling
+            ListFooterComponent={renderListFooter}
+            ListEmptyComponent={() => (
+              <View style={styles.noResultsContainer}>
+                <Ionicons name="search-outline" size={40} color="#FFD700" />
+                <Text style={styles.noResultsText}>No packs found</Text>
+                <Text style={styles.noResultsSubText}>Try a different search or category</Text>
+              </View>
+            )}
+          />
+          
+          {/* Pack Detail Modal */}
+          <Modal
+            transparent={true}
+            visible={packDetailVisible}
+            onRequestClose={closePackDetail}
+            animationType="none"
+            hardwareAccelerated={true}
+            presentationStyle="overFullScreen"
           >
-            <TouchableWithoutFeedback>
-              <View style={styles.packDetailContainer}>
-                {selectedDetailPack && (
-                  <>
-                    {/* Modal Header with Title and Close Button */}
-                    <View style={styles.packDetailHeader}>
-                      <Text style={styles.packDetailTitle}>
-                        {selectedDetailPack.name}
-                      </Text>
-                      <TouchableOpacity onPress={closePackDetail}>
-                        <Ionicons name="close" size={24} color="#FFD700" />
-                      </TouchableOpacity>
-                    </View>
-                    
-                    {/* Pack Image */}
-                    <ImageBackground 
-                      source={selectedDetailPack.image}
-                      style={styles.packDetailImage}
-                      imageStyle={{ borderRadius: 10 }}
-                    >
-                      <View style={styles.packDetailOverlay} />
+            <TouchableOpacity 
+              style={styles.modalBackground}
+              activeOpacity={1}
+              onPress={closePackDetail}
+            >
+              <TouchableWithoutFeedback>
+                <View style={styles.packDetailContainer}>
+                  {selectedDetailPack && (
+                    <>
+                      {/* Modal Header with Title and Close Button */}
+                      <View style={styles.packDetailHeader}>
+                        <Text style={styles.packDetailTitle}>
+                          {selectedDetailPack.name}
+                        </Text>
+                        <TouchableOpacity onPress={closePackDetail}>
+                          <Ionicons name="close" size={24} color="#FFD700" />
+                        </TouchableOpacity>
+                      </View>
                       
-                      {/* Category Badge */}
-                      {selectedDetailPack.category && (
-                        <View style={styles.packDetailCategory}>
-                          <Text style={styles.packDetailCategoryText}>
-                            {selectedDetailPack.category}
-                          </Text>
-                        </View>
-                      )}
-                      
-                      {/* Price Badge for Premium Packs */}
-                      {TRIVIA_PACKS.Premium.some(p => p.id === selectedDetailPack.id) && 
-                       !packStats[selectedDetailPack.id]?.purchased && 
-                       !betaMode && 
-                       !isDevMode && (
-                        <View style={styles.packDetailPrice}>
-                          <Text style={styles.packDetailPriceText}>
-                            {selectedDetailPack.defaultPrice || '$3.99'}
-                          </Text>
-                        </View>
-                      )}
-                      
-                      {/* Featured indicator */}
-                      {featuredPackIds.includes(selectedDetailPack.id) && (
-                        <View style={styles.packDetailFeatured}>
-                          <Ionicons name="star" size={18} color="black" />
-                        </View>
-                      )}
-                    </ImageBackground>
-                    
-                    {/* Pack Description and Stats */}
-                    <View style={styles.packDetailInfo}>
-                      <Text style={styles.packDetailDescription}>
-                        {selectedDetailPack.description || 
-                          `Test your knowledge with this exciting ${selectedDetailPack.category || 'trivia'} pack! Challenge your friends or play solo.`
-                        }
-                      </Text>
-                      
-                      <View style={styles.packDetailStats}>
-                        <View style={styles.packDetailStat}>
-                          <Ionicons name="help-circle" size={20} color="#00ff00" />
-                          <Text style={styles.packDetailStatText}>
-                            {(packStats[selectedDetailPack.id]?.stats?.total || 0)} Questions
-                          </Text>
-                        </View>
+                      {/* Pack Image */}
+                      <ImageBackground 
+                        source={selectedDetailPack.image}
+                        style={styles.packDetailImage}
+                        imageStyle={{ borderRadius: 10 }}
+                      >
+                        <View style={styles.packDetailOverlay} />
                         
-                        {selectedDetailPack.difficulty && (
-                          <View style={styles.packDetailStat}>
-                            <Ionicons name="trending-up" size={20} color="#FFD700" />
-                            <Text style={styles.packDetailStatText}>
-                              {selectedDetailPack.difficulty} Difficulty
+                        {/* Category Badge */}
+                        {selectedDetailPack.category && (
+                          <View style={styles.packDetailCategory}>
+                            <Text style={styles.packDetailCategoryText}>
+                              {selectedDetailPack.category}
                             </Text>
                           </View>
                         )}
-                      </View>
-                    </View>
-                    
-                    {/* Action Buttons: Purchase or Play */}
-                    {TRIVIA_PACKS.Premium.some(p => p.id === selectedDetailPack.id) && 
-                     !packStats[selectedDetailPack.id]?.purchased && 
-                     !betaMode && 
-                     !isDevMode ? (
-                      <TouchableOpacity 
-                        style={styles.purchasePackButton}
-                        onPress={() => {
-                          closePackDetail();
-                          handleSelectPack(selectedDetailPack);
-                        }}
-                      >
-                        <Text style={styles.purchasePackButtonText}>Purchase</Text>
-                        <Ionicons name="pricetag" size={24} color="white" />
-                      </TouchableOpacity>
-                    ) : (
-                      <TouchableOpacity 
-                        style={styles.playPackButton}
-                        onPress={() => {
-                          // Make sure music plays first before closing modal
-                          if (backgroundMusicRef.current) {
-                            backgroundMusicRef.current.playAsync().catch(() => {});
+                        
+                        {/* Price Badge for Premium Packs */}
+                        {TRIVIA_PACKS.Premium.some(p => p.id === selectedDetailPack.id) && 
+                         !packStats[selectedDetailPack.id]?.purchased && 
+                         !betaMode && 
+                         !isDevMode && (
+                          <View style={styles.packDetailPrice}>
+                            <Text style={styles.packDetailPriceText}>
+                              {selectedDetailPack.defaultPrice || '$3.99'}
+                            </Text>
+                          </View>
+                        )}
+                        
+                        {/* Featured indicator */}
+                        {featuredPackIds.includes(selectedDetailPack.id) && (
+                          <View style={styles.packDetailFeatured}>
+                            <Ionicons name="star" size={18} color="black" />
+                          </View>
+                        )}
+                      </ImageBackground>
+                      
+                      {/* Pack Description and Stats */}
+                      <View style={styles.packDetailInfo}>
+                        <Text style={styles.packDetailDescription}>
+                          {selectedDetailPack.description || 
+                            `Test your knowledge with this exciting ${selectedDetailPack.category || 'trivia'} pack! Challenge your friends or play solo.`
                           }
+                        </Text>
+                        
+                        {/*<View style={styles.packDetailStats}>
+                          <View style={styles.packDetailStat}>
+                            <Ionicons name="help-circle" size={20} color="#00ff00" />
+                            <Text style={styles.packDetailStatText}>
+                              {(packStats[selectedDetailPack.id]?.stats?.total || 0)} Questions
+                            </Text>
+                          </View>
                           
-                          // Use setTimeout to ensure audio has time to resume
-                          setTimeout(() => {
+                          {selectedDetailPack.difficulty && (
+                            <View style={styles.packDetailStat}>
+                              <Ionicons name="trending-up" size={20} color="#FFD700" />
+                              <Text style={styles.packDetailStatText}>
+                                {selectedDetailPack.difficulty} Difficulty
+                              </Text>
+                            </View>
+                          )}
+                        </View> */}
+                      </View>
+                      
+                      {/* Action Buttons: Purchase or Play */}
+                      {TRIVIA_PACKS.Premium.some(p => p.id === selectedDetailPack.id) && 
+                       !packStats[selectedDetailPack.id]?.purchased && 
+                       !betaMode && 
+                       !isDevMode ? (
+                        <TouchableOpacity 
+                          style={styles.purchasePackButton}
+                          onPress={() => {
                             closePackDetail();
-                            handleSelectPack(selectedDetailPack);
-                          }, 50);
-                        }}
-                      >
-                        <Text style={styles.playPackButtonText}>Start Game</Text>
-                        <Ionicons name="play" size={24} color="black" />
-                      </TouchableOpacity>
-                    )}
-                  </>
-                )}
-              </View>
-            </TouchableWithoutFeedback>
-          </TouchableOpacity>
-        </Modal>
-      </Animated.View>
-    )}
-  </ImageBackground>
-);
+                            
+                            // Get the product ID
+                            let productId = null;
+                            if (PACK_TO_PRODUCT_MAP[selectedDetailPack.id]) {
+                              productId = PACK_TO_PRODUCT_MAP[selectedDetailPack.id];
+                            } else if (DARES_TO_PRODUCT_MAP[selectedDetailPack.id]) {
+                              productId = DARES_TO_PRODUCT_MAP[selectedDetailPack.id];
+                            }
+                            
+                            if (!productId) {
+                              console.error('❌ No product ID found for pack:', selectedDetailPack.id);
+                              Alert.alert('Error', 'Could not find product information.');
+                              return;
+                            }
+                            
+                            // Show purchase confirmation
+                            Alert.alert(
+                              `Purchase ${selectedDetailPack.name}`,
+                              `Would you like to purchase this premium pack for ${selectedDetailPack.defaultPrice || '$3.99'}?`,
+                              [
+                                { text: "Cancel", style: "cancel" },
+                                { 
+                                  text: "Purchase", 
+                                  onPress: async () => {
+                                    try {
+                                      setLoading(true);
+                                      await iapManager.purchaseProduct(productId);
+                                      // Purchase result will be handled by the listener
+                                    } catch (error) {
+                                      console.error('❌ Purchase error:', error);
+                                      Alert.alert('Error', 'There was a problem with your purchase. Please try again.');
+                                    } finally {
+                                      setLoading(false);
+                                    }
+                                  }
+                                }
+                              ]
+                            );
+                          }}
+                        >
+                          <Text style={styles.purchasePackButtonText}>Purchase</Text>
+                          <Ionicons name="pricetag" size={24} color="white" />
+                        </TouchableOpacity>
+                      ) : (
+                        <TouchableOpacity 
+                          style={styles.playPackButton}
+                          onPress={() => {
+                            // Make sure music plays first before closing modal
+                            if (backgroundMusicRef.current) {
+                              backgroundMusicRef.current.playAsync().catch(() => {});
+                            }
+                            
+                            // Use setTimeout to ensure audio has time to resume
+                            setTimeout(() => {
+                              closePackDetail();
+                              handleSelectPack(selectedDetailPack);
+                            }, 50);
+                          }}
+                        >
+                          <Text style={styles.playPackButtonText}>Start Game</Text>
+                          <Ionicons name="play" size={24} color="black" />
+                        </TouchableOpacity>
+                      )}
+                    </>
+                  )}
+                </View>
+              </TouchableWithoutFeedback>
+            </TouchableOpacity>
+          </Modal>
+        </Animated.View>
+      )}
+    </ImageBackground>
+  );
 };
 
-// Style additions with Android-specific adjustments and new UI enhancements
-const styles = StyleSheet.create({
+ 
+ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: 'rgba(0,0,0,0.5)',
-    paddingTop: Platform.OS === 'android' ? 30 : 50, // Less padding on Android
+    backgroundColor: 'rgba(0,0,0,0.4)', // Lightened from 0.5
+    paddingTop: Platform.OS === 'android' ? 30 : 50,
   },
   loadingContainer: {
     flex: 1,
@@ -1844,7 +1856,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginBottom: 15,
     position: 'relative',
-    height: 50, // Fixed height to prevent layout shifts
+    height: 50,
   },
   backButton: {
     position: 'absolute',
@@ -1859,16 +1871,16 @@ const styles = StyleSheet.create({
   headerTitleContainer: {
     flex: 1,
     alignItems: 'center',
-    paddingHorizontal: 60, // Increased from 50 to give more room
+    paddingHorizontal: 60,
   },
   headerTitle: {
-    fontSize: Platform.OS === 'android' ? 24 : 26, // Slightly smaller
+    fontSize: Platform.OS === 'android' ? 24 : 26,
     color: '#FFD700',
     fontWeight: 'bold',
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: { width: 2, height: 2 },
     textShadowRadius: 5,
-    letterSpacing: 1, // Reduced from 2
+    letterSpacing: 1,
     textAlign: 'center',
   },
   betaBadgeText: {
@@ -1929,11 +1941,11 @@ const styles = StyleSheet.create({
   tabContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    backgroundColor: 'rgba(0, 0, 0, 0.6)', // Darker for better contrast
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
     borderRadius: 25,
     padding: 5,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.3)', // More visible border
+    borderColor: 'rgba(255, 255, 255, 0.3)',
   },
   tabButton: {
     flex: 1,
@@ -1949,13 +1961,13 @@ const styles = StyleSheet.create({
     fontSize: Platform.OS === 'android' ? 18 : 20,
     color: 'white',
     fontWeight: 'bold',
-    textShadowColor: 'black', // Added for better visibility
+    textShadowColor: 'black',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 3,
   },
   activeTabText: {
     color: '#00ff00',
-    textShadowColor: 'rgba(0, 0, 0, 0.7)', // Darker shadow for active text
+    textShadowColor: 'rgba(0, 0, 0, 0.7)',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 5,
   },
@@ -1967,41 +1979,55 @@ const styles = StyleSheet.create({
     backgroundColor: '#00ff00',
     borderRadius: 1.5,
   },
+  newBadge: {
+    position: 'absolute',
+    top: -10,
+    right: 10,
+    backgroundColor: '#FF4500',
+    borderRadius: 8,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+  },
+  newBadgeText: {
+    color: 'white',
+    fontSize: 10,
+    fontWeight: 'bold',
+  },
   // Premium Controls Styles
   premiumControls: {
     marginBottom: 10,
   },
-
+ 
   // Category Chip Styles
   categoryScrollContent: {
     paddingVertical: 5,
     paddingHorizontal: 5,
   },
   categoryChip: {
-    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Darker for better visibility
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 20,
     marginRight: 10,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.4)', // More visible border
-    flexDirection: 'row', // For icon and text
+    borderColor: 'rgba(255, 255, 255, 0.4)',
+    flexDirection: 'row',
     alignItems: 'center',
   },
   categoryChipActive: {
-    backgroundColor: 'rgba(0, 180, 0, 0.7)', // Brighter green when active
+    backgroundColor: 'rgba(0, 180, 0, 0.7)',
     borderColor: 'white',
   },
   categoryChipText: {
     color: 'white',
     fontWeight: 'bold',
     fontSize: 14,
-    textShadowColor: 'black', // Text shadow for better visibility
+    textShadowColor: 'black',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
   },
   categoryChipTextActive: {
-    color: 'white', // White text on green background for active state
+    color: 'white',
   },
   
   // Sort Controls
@@ -2016,31 +2042,31 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 14,
     marginRight: 10,
-    fontWeight: 'bold', // Make label more visible
+    fontWeight: 'bold',
     textShadowColor: 'black',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
   },
   sortButtonsContainer: {
     flexDirection: 'row',
-    paddingRight: 10, // For horizontal scrolling
+    paddingRight: 10,
   },
   sortButton: {
-    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Darker background
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 15,
     marginRight: 8,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.4)', // More visible border
+    borderColor: 'rgba(255, 255, 255, 0.4)',
   },
   sortButtonActive: {
-    backgroundColor: 'rgba(0, 186, 0, 0.8)', // Brighter when active
+    backgroundColor: 'rgba(0, 186, 0, 0.8)',
     borderColor: 'white',
   },
   sortButtonText: {
     color: 'white',
-    fontSize: 13, // Slightly larger
+    fontSize: 13,
     fontWeight: 'bold',
     textShadowColor: 'black',
     textShadowOffset: { width: 1, height: 1 },
@@ -2050,7 +2076,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   
-  // Featured Packs Styles - Improved for space saving
+  // Featured Packs Styles
   featuredSection: {
     marginBottom: 5,
     overflow: 'hidden',
@@ -2077,7 +2103,7 @@ const styles = StyleSheet.create({
   },
   
   compactFeaturedPack: {
-    width: '45%', // Set to percentage instead of calculated value
+    width: '45%',
     height: 95,
     marginRight: 11,
     marginBottom: 5,
@@ -2107,7 +2133,7 @@ const styles = StyleSheet.create({
   },
   compactFeaturedPackOverlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)', // Lightened from 0.5
   },
   compactFeaturedStar: {
     position: 'absolute',
@@ -2123,7 +2149,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     padding: 2,
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    backgroundColor: 'rgba(0, 0, 0, 0.6)', // Lightened from 0.7
   },
   compactFeaturedPackName: {
     color: 'white',
@@ -2134,28 +2160,11 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
   },
-  // Pagination Indicator
-  paginationContainer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 10,
-    marginBottom: 5,
+  compactFeaturedPackQuestions: {
+    color: '#00ff00',
+    fontSize: 12,
+    fontWeight: 'bold',
   },
-  paginationDot: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    marginHorizontal: 5,
-    backgroundColor: 'rgba(255, 255, 255, 0.3)',
-  },
-  paginationDotActive: {
-    backgroundColor: '#00ff00',
-    width: 12,
-    height: 12,
-    borderRadius: 6,
-  },
-  
   // Load more section
   loadMoreContainer: {
     flexDirection: 'row',
@@ -2223,9 +2232,8 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     overflow: 'hidden',
     borderWidth: 2,
-    borderColor: 'rgba(255, 255, 255, 0.8)',
-    height: 140, // Fixed height for consistency
-    // Platform-specific shadow
+    borderColor: 'rgba(255, 255, 255, 0.9)', // Increased brightness
+    height: 160, // Increased from 140 for better text display
     ...Platform.select({
       ios: {
         shadowColor: '#fff',
@@ -2245,10 +2253,13 @@ const styles = StyleSheet.create({
     borderColor: '#ff4500',
     borderWidth: 3,
   },
-  // Featured pack item style
   featuredPackItem: {
     borderColor: '#FFD700',
     borderWidth: 3,
+  },
+  purchasedPackItem: {
+    borderColor: '#00C853',
+    borderWidth: 2,
   },
   imageBackground: {
     flex: 1,
@@ -2258,45 +2269,49 @@ const styles = StyleSheet.create({
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(0, 0, 0, 0.4)', // Lighter base overlay
+    backgroundColor: 'rgba(0, 0, 0, 0.3)', // Lightened from 0.4
   },
   textGradient: {
     position: 'absolute',
     bottom: 0,
     left: 0,
     right: 0,
-    height: 70, // Taller gradient area for text
-    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Darker at text area
+    height: 70,
+    backgroundColor: 'rgba(0, 0, 0, 0.6)', // Lightened from 0.7
   },
   packTextContainer: {
     position: 'absolute',
-    bottom: 30, // Position above question count
+    bottom: 15, // Moved up a bit more to give more room
     left: 0,
     right: 0,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 5,
+    paddingHorizontal: 6, // Reduced padding
+    minHeight: 50, // Increased minimum height
   },
   packText: {
     color: 'white',
-    fontSize: Platform.OS === 'android' ? 19 : 20, // Slightly smaller font
+    fontSize: Platform.OS === 'android' ? 16 : 18, // Keep consistent size
     fontWeight: 'bold',
     textAlign: 'center',
-    paddingHorizontal: 8,
+    paddingHorizontal: 6, // Slightly reduced padding
+    paddingVertical: 4,
     width: '100%',
     textShadowColor: 'black',
     textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 2,
-    flexWrap: 'wrap', // Allow text to wrap
-    lineHeight: 22, // Proper line height for wrapped text
+    textShadowRadius: 3,
+    flexWrap: 'wrap',
+    lineHeight: 20, // Better line height for 2 lines
+    maxHeight: 50, // Increased to accommodate 2 lines better
+    numberOfLines: 2, // Explicitly allow 2 lines
   },
   packStatsContainer: {
     position: 'absolute',
     bottom: 5,
-    alignSelf: 'center', // Center the question count
+    alignSelf: 'center',
   },
   questionCountText: {
-    color: '#00ff00', // Green for visibility
+    color: '#00ff00',
     fontSize: 14,
     fontWeight: 'bold',
     paddingHorizontal: 8,
@@ -2309,7 +2324,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 5,
     alignSelf: 'center',
-    backgroundColor: 'rgba(255, 69, 0, 0.8)', // Bright orange-red
+    backgroundColor: 'rgba(255, 69, 0, 0.8)',
     paddingHorizontal: 8,
     paddingVertical: 3,
     borderRadius: 8,
@@ -2332,7 +2347,6 @@ const styles = StyleSheet.create({
     padding: 5,
     borderRadius: 15,
   },
-  // Premium indicator for premium packs
   premiumIndicator: {
     position: 'absolute',
     top: 5,
@@ -2346,7 +2360,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'white',
   },
-  // Beta unlock indicator
   betaUnlockedIndicator: {
     position: 'absolute',
     top: 5,
@@ -2357,7 +2370,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'white',
   },
-  // Category badge for packs
   categoryBadge: {
     position: 'absolute',
     top: 5,
@@ -2377,25 +2389,42 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 1,
   },
-  // New pack badge
-  newPackBadge: {
+  featuredStarIndicator: {
     position: 'absolute',
     top: 5,
-    right: 38, // Moved to accommodate premium indicator
-    backgroundColor: '#ff4500',
+    right: 5,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    borderRadius: 12,
+    padding: 3,
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  priceTagContainer: {
+    position: 'absolute',
+    top: 5,
+    right: 5,
+    backgroundColor: '#FFD700',
     paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
     borderWidth: 1,
     borderColor: 'white',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3,
+      },
+      android: {
+        elevation: 3,
+      }
+    }),
   },
-  newPackBadgeText: {
-    color: 'white',
-    fontSize: 11,
+  priceTagText: {
+    color: '#000',
     fontWeight: 'bold',
-    textShadowColor: 'black',
-    textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 1,
+    fontSize: 14,
   },
   
   // List view styles
@@ -2426,6 +2455,10 @@ const styles = StyleSheet.create({
   },
   featuredPackItemList: {
     borderColor: '#FFD700',
+    borderWidth: 2,
+  },
+  purchasedPackItemList: {
+    borderColor: '#00C853',
     borderWidth: 2,
   },
   listThumbnail: {
@@ -2490,8 +2523,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginLeft: 10,
   },
-  purchasedIndicator: {
+  priceTagList: {
+    backgroundColor: '#FFD700',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
     marginBottom: 6,
+    borderWidth: 1,
+    borderColor: 'white',
+  },
+  priceTagTextList: {
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 14,
   },
   newIndicatorList: {
     backgroundColor: '#ff4500',
@@ -2533,132 +2577,6 @@ const styles = StyleSheet.create({
   devModeButtonText: {
     color: '#FFFFFF'
   },
-  
-  // Beta mode controls - Improved styling
-  betaControlsContainer: {
-    position: 'absolute',
-    top: 100,
-    left: 20,
-    right: 20,
-    backgroundColor: 'rgba(0, 0, 0, 0.9)',
-    borderRadius: 15,
-    padding: 15,
-    zIndex: 100,
-    borderWidth: 2,
-    borderColor: '#FFD700',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 5 },
-        shadowOpacity: 0.5,
-        shadowRadius: 10,
-      },
-      android: {
-        elevation: 10,
-      }
-    }),
-  },
-  betaControlsHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 215, 0, 0.3)',
-    paddingBottom: 10,
-  },
-  betaControlsTitle: {
-    color: '#FFD700',
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  betaControlsButton: {
-    backgroundColor: 'rgba(100, 100, 100, 0.3)',
-    padding: 10,
-    borderRadius: 8,
-    marginBottom: 15,
-    borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
-  },
-  betaControlsButtonActive: {
-    backgroundColor: 'rgba(0, 200, 83, 0.3)',
-    borderColor: 'rgba(0, 200, 83, 0.6)',
-  },
-  betaControlsButtonText: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  betaModeToggleContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 15,
-    paddingVertical: 8,
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.1)',
-  },
-  betaModeToggleLabel: {
-    color: 'white',
-    fontSize: 16,
-    flex: 1,
-    paddingRight: 10,
-  },
-  featuredControlsContainer: {
-    marginBottom: 10,
-  },
-  featuredControlsTitle: {
-    color: 'white',
-    fontSize: 16,
-    marginBottom: 10,
-  },
-  selectedPackText: {
-    color: '#00FF00',
-    fontSize: 14,
-    marginBottom: 10,
-  },
-  noPackSelectedText: {
-    color: '#FF9500',
-    fontSize: 14,
-    marginBottom: 10,
-  },
-  featuredControlsButtonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  featuredControlButton: {
-    backgroundColor: 'rgba(0, 255, 0, 0.2)',
-    padding: 10,
-    borderRadius: 5,
-    flex: 1,
-    marginRight: 5,
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: 'rgba(0, 255, 0, 0.5)',
-  },
-  featuredControlButtonDisabled: {
-    backgroundColor: 'rgba(100, 100, 100, 0.2)',
-    borderColor: 'rgba(100, 100, 100, 0.5)',
-  },
-  featuredControlButtonText: {
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  featuredResetButton: {
-    backgroundColor: 'rgba(255, 0, 0, 0.2)',
-    padding: 10,
-    borderRadius: 5,
-    flex: 1,
-    marginLeft: 5,
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: 'rgba(255, 0, 0, 0.5)',
-  },
-  featuredResetButtonText: {
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  
   // Pack detail modal styles
   modalBackground: {
     flex: 1,
@@ -2729,6 +2647,22 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: 'bold',
   },
+  packDetailPrice: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    backgroundColor: '#FFD700',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: 'white',
+  },
+  packDetailPriceText: {
+    color: '#1A237E',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
   packDetailFeatured: {
     position: 'absolute',
     top: 10,
@@ -2793,56 +2727,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginRight: 10,
   },
-  mainStoreButton: {
-    backgroundColor: '#FFD700',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 25,
-    borderRadius: 25,
-    alignSelf: 'center',
-    marginVertical: 10,
-    marginBottom: 15,
-    borderWidth: 2,
-    borderColor: 'rgba(255, 255, 255, 0.4)',
-    ...Platform.select({
-      ios: {
-        shadowColor: "#000",
-        shadowOffset: { width: 0, height: 3 },
-        shadowOpacity: 0.3,
-        shadowRadius: 5,
-      },
-      android: {
-        elevation: 5,
-      }
-    }),
-  },
-  mainStoreButtonText: {
-    color: '#000',
-    fontWeight: 'bold',
-    fontSize: 18,
-    marginLeft: 10,
-  },
-  packDetailPremium: {
-    position: 'absolute',
-    bottom: 10,
-    right: 10,
-    backgroundColor: '#FFD700',
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: 'white',
-  },
-  packDetailPremiumText: {
-    color: '#1A237E',
-    fontSize: 10,
-    fontWeight: 'bold',
-    marginLeft: 4,
-  },
   purchasePackButton: {
     flexDirection: 'row',
     backgroundColor: '#1A237E',
@@ -2871,170 +2755,85 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginRight: 10,
   },
-  // Add these to your styles object
-priceTagContainer: {
-  position: 'absolute',
-  top: 5,
-  right: 5,
-  backgroundColor: '#FFD700',
-  paddingHorizontal: 8,
-  paddingVertical: 4,
-  borderRadius: 12,
-  borderWidth: 1,
-  borderColor: 'white',
-  ...Platform.select({
-    ios: {
-      shadowColor: '#000',
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 0.25,
-      shadowRadius: 3,
-    },
-    android: {
-      elevation: 3,
-    }
-  }),
-},
-priceTagText: {
-  color: '#000',
-  fontWeight: 'bold',
-  fontSize: 14,
-},
-purchasedIndicator: {
-  position: 'absolute',
-  top: 5,
-  right: 35, // Position it to the left of other badges
-  backgroundColor: 'rgba(0, 200, 83, 0.8)',
-  borderRadius: 12,
-  padding: 3,
-  borderWidth: 1,
-  borderColor: 'white',
-},
-purchasedPackItem: {
-  borderColor: '#00C853',
-  borderWidth: 2,
-},
-purchasedPackItemList: {
-  borderColor: '#00C853',
-  borderWidth: 2,
-},
-priceTagList: {
-  backgroundColor: '#FFD700',
-  paddingHorizontal: 8,
-  paddingVertical: 4,
-  borderRadius: 12,
-  marginBottom: 6,
-  borderWidth: 1,
-  borderColor: 'white',
-},
-priceTagTextList: {
-  color: '#000',
-  fontWeight: 'bold',
-  fontSize: 14,
-},
-packDetailPrice: {
-  position: 'absolute',
-  top: 10,
-  right: 10,
-  backgroundColor: '#FFD700',
-  paddingHorizontal: 10,
-  paddingVertical: 5,
-  borderRadius: 10,
-  borderWidth: 1,
-  borderColor: 'white',
-},
-packDetailPriceText: {
-  color: '#1A237E',
-  fontSize: 16,
-  fontWeight: 'bold',
-},
-everythingBundleContainer: {
-  paddingHorizontal: 8,
-  marginBottom: 20,
-  marginTop: 15,
-},
-everythingBundleButton: {
-  width: '100%',
-  height: 120,
-  borderRadius: 15,
-  overflow: 'hidden',
-  borderWidth: 3,
-  borderColor: '#FFD700',
-  ...Platform.select({
-    ios: {
-      shadowColor: '#FFD700',
-      shadowOffset: { width: 0, height: 0 },
-      shadowOpacity: 0.6,
-      shadowRadius: 10,
-    },
-    android: {
-      elevation: 8,
-    }
-  }),
-},
-bundleBackground: {
-  width: '100%',
-  height: '100%',
-  justifyContent: 'center',
-},
-bundleOverlay: {
-  ...StyleSheet.absoluteFillObject,
-  backgroundColor: 'rgba(0, 0, 0, 0.5)',
-},
-bundleContent: {
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  padding: 15,
-},
-bundleTitleContainer: {
-  flex: 1,
-},
-bundleTitle: {
-  color: '#FFD700',
-  fontSize: 26,
-  fontWeight: 'bold',
-  textShadowColor: 'rgba(0, 0, 0, 0.8)',
-  textShadowOffset: { width: 2, height: 2 },
-  textShadowRadius: 5,
-},
-bundleSubtitle: {
-  color: 'white',
-  fontSize: 16,
-  marginTop: 5,
-  textShadowColor: 'rgba(0, 0, 0, 0.8)',
-  textShadowOffset: { width: 1, height: 1 },
-  textShadowRadius: 3,
-},
-bundlePriceContainer: {
-  backgroundColor: 'rgba(0, 0, 0, 0.7)',
-  paddingHorizontal: 15,
-  paddingVertical: 10,
-  borderRadius: 10,
-  alignItems: 'center',
-  borderWidth: 1,
-  borderColor: '#FFD700',
-},
-bundlePrice: {
-  color: '#FFD700',
-  fontSize: 24,
-  fontWeight: 'bold',
-},
-bundleSavings: {
-  color: '#00ff00',
-  fontSize: 14,
-  fontWeight: 'bold',
-  marginTop: 2,
-},
-featuredStarIndicator: {
-  position: 'absolute',
-  top: 5,
-  right: 5,
-  backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  borderRadius: 12,
-  padding: 3,
-  borderWidth: 1,
-  borderColor: '#FFD700',
-},
-});
-
-export default TriviaPackSelectionScreen;
+  // Everything Bundle styles
+  everythingBundleContainer: {
+    paddingHorizontal: 8,
+    marginBottom: 20,
+    marginTop: 15,
+  },
+  everythingBundleButton: {
+    width: '100%',
+    height: 120,
+    borderRadius: 15,
+    overflow: 'hidden',
+    borderWidth: 3,
+    borderColor: '#FFD700',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#FFD700',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.6,
+        shadowRadius: 10,
+      },
+      android: {
+        elevation: 8,
+      }
+    }),
+  },
+  bundleBackground: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+  },
+  bundleOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  bundleContent: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 15,
+  },
+  bundleTitleContainer: {
+    flex: 1,
+  },
+  bundleTitle: {
+    color: '#FFD700',
+    fontSize: 26,
+    fontWeight: 'bold',
+    textShadowColor: 'rgba(0, 0, 0, 0.8)',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 5,
+  },
+  bundleSubtitle: {
+    color: 'white',
+    fontSize: 16,
+    marginTop: 5,
+    textShadowColor: 'rgba(0, 0, 0, 0.8)',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 3,
+  },
+  bundlePriceContainer: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    borderRadius: 10,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  bundlePrice: {
+    color: '#FFD700',
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  bundleSavings: {
+    color: '#00ff00',
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginTop: 2,
+  },
+ });
+ 
+ export default TriviaPackSelectionScreen;

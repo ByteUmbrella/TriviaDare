@@ -372,7 +372,7 @@
     },
     {
       "Question ID": "SCIENCE_38",
-      "Question Text": "Which space probe landed on Mars in June 1999?",
+      "Question Text": "Which space probe landed on Mars in December 1999?",
       "Option A": "Mars Pathfinder",
       "Option B": "Spirit",
       "Option C": "Opportunity",
@@ -707,7 +707,7 @@
       "Option B": 3,
       "Option C": 4,
       "Option D": 5,
-      "Correct Answer": "Option B",
+      "Correct Answer": "Option C",
       "Difficulty": "Easy"
     },
     {

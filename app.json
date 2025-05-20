@@ -22,7 +22,7 @@
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.playsigns.triviadare",
-      "buildNumber": "3",
+      "buildNumber": "6",
       "newArchEnabled": true,
       "googleServicesFile": "./GoogleService-Info.plist",
       "podfileConfig": "./ios-podfile-config.js",

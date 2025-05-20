@@ -1304,10 +1304,24 @@ const handleAnswerConfirmation = async () => {
                   }));
 
                   console.log('Final player data:', finalPlayerData);
+                  
+                  // Enhanced navigation data with pack information
+                  console.log('Pack information being passed:', {
+                    packName: selectedPack,
+                    packStats: gameState.packStats
+                  });
 
                   navigation.navigate('WinnerTransition', {
                     playerData: finalPlayerData,
-                    packStats: gameState.packStats
+                    packStats: {
+                      ...gameState.packStats,
+                      packName: selectedPack,
+                      name: selectedPack,
+                      selectedPack: selectedPack
+                    },
+                    packName: selectedPack,
+                    selectedPack: selectedPack,
+                    isMultiplayer: false
                   });
                 } else {
                   console.log('Not last question, preparing next. Current scores:', updatedScores);
@@ -1569,20 +1583,45 @@ const navigateToResults = async () => {
 
     console.log('Final player data being sent:', playerData);
     console.log('Final scores array:', scores);
+    
+    // Enhanced pack information logging
+    console.log('Pack information being passed:', {
+      selectedPack,
+      packStats: finalStats,
+      packName: selectedPack
+    });
 
+    // Enhanced navigation with redundant pack information
     navigation.navigate('WinnerTransition', {
       playerData,
-      packStats: finalStats
+      packStats: {
+        ...finalStats,
+        packName: selectedPack,      // Include pack name in packStats
+        name: selectedPack,          // Also as name
+        selectedPack: selectedPack   // Also as selectedPack
+      },
+      packName: selectedPack,        // Also directly at top level
+      selectedPack: selectedPack,    // Also directly at top level
+      isMultiplayer: false           // FIXED: Always false for single device mode
     });
   } catch (error) {
     console.error('Error navigating to results:', error);
     console.log('Error state scores:', scores);
-    
+    console.log('QuestionScreen navigating with isMultiplayer:', false);
+    // Even in error case, include pack information
     navigation.navigate('WinnerTransition', {
       playerData: players.map((player, index) => ({
         name: player,
         score: scores[index]
-      }))
+      })),
+      packStats: {
+        packName: selectedPack,
+        name: selectedPack,
+        selectedPack: selectedPack
+      },
+      packName: selectedPack,
+      selectedPack: selectedPack,
+      isMultiplayer: false           // FIXED: Always false for single device mode
     });
   }
 };
@@ -1625,12 +1664,27 @@ const LightBar = memo(() => (
 
 const QuestionNumber = memo(() => {
   return (
-    <View style={styles.questionHeaderContainer}>
+    <View style={styles.playerNameWithQuestionNumber}>
+      {/* Question number on the left */}
       <View style={styles.questionNumberWrapper}>
         <Text style={styles.questionNumberText}>
-          Question {gameState.currentRound} of {numberOfQuestions}
+          Q: {gameState.currentRound}/{numberOfQuestions}
         </Text>
-        <View style={styles.questionNumberUnderline} />
+      </View>
+      
+      {/* Player name (centered) */}
+      <Text style={[
+        styles.currentPlayerText,
+        Platform.OS === 'android' ? styles.currentPlayerTextAndroid : {}
+      ]}>
+        {players[currentPlayerIndex]}
+      </Text>
+      
+      {/* Seconds countdown on the right */}
+      <View style={styles.timerWrapper}>
+        <Text style={styles.timerText}>
+          {gameState.timeLeft}s
+        </Text>
       </View>
     </View>
   );
@@ -1681,69 +1735,66 @@ return (
           timerConfig={TIMER_CONFIGS[timeLimit]}
         />
  
-        <View style={styles.playerInfoContainer}>
-          <Text style={[
-            styles.currentPlayerText,
-            // Android-specific text style fixes
-            Platform.OS === 'android' ? styles.currentPlayerTextAndroid : {}
-          ]}>
-            {players[currentPlayerIndex]}
-          </Text>
-        </View>
- 
+        {/* Question Number and Player Name now together */}
         <QuestionNumber />
  
         <View style={styles.contentContainer}>
-          {!uiState.showWinnerButton ? (
-            uiState.showQuestion && questions[currentQuestionIndex] ? (
-              <QuestionContainer
-                key={`question-${currentQuestionIndex}`}
-                questionText={questions[currentQuestionIndex]["Question Text"]}
-                currentQuestion={questions[currentQuestionIndex]} 
-                selectedOption={state.selectedOption}
-                onSelectOption={handleOptionSelect}
-                onConfirm={handleAnswerConfirmation}
-                isAnswerSubmitted={uiState.answerSubmitted}
-                currentScore={currentScore}
-                showScoringInfo={uiState.showScoringInfo}
-                onInfoPress={() => {
-                  setIsTimerPaused(true);
-                  setUiState(prev => ({
-                    ...prev,
-                    showScoringInfo: true
-                  }));
-                }}
-                onTimerPause={setIsTimerPaused}
-                timerConfig={TIMER_CONFIGS[timeLimit]}
-                // Pass platform info for Android-specific styling in the container
-                isAndroid={Platform.OS === 'android'}
-              />
-            ) : (
-              <View style={styles.waitingContainer}>
-                <LightBar />
-                <Text style={[
-                  styles.waitingText,
-                  // Android-specific text style fixes
-                  Platform.OS === 'android' ? styles.waitingTextAndroid : {}
-                ]}>
-                  Waiting for player to start...
-                </Text>
-                <LightBar />
-              </View>
-            )
-          ) : (
-            <TouchableOpacity 
-              style={styles.winnerButton} 
-              onPress={navigateToResults}
-              // Increase touch target size for Android 
-              hitSlop={Platform.OS === 'android' ? { top: 10, bottom: 10, left: 10, right: 10 } : undefined}
-            >
-              <Text style={styles.winnerButtonText}>
-                And the Winner Is...
-              </Text>
-            </TouchableOpacity>
-          )}
-        </View>
+  {!uiState.showWinnerButton ? (
+    uiState.showQuestion && questions[currentQuestionIndex] ? (
+      <QuestionContainer
+        key={`question-${currentQuestionIndex}`}
+        questionText={questions[currentQuestionIndex]["Question Text"]}
+        currentQuestion={{
+          ...questions[currentQuestionIndex],
+          // Add these properties for question reporting
+          id: questions[currentQuestionIndex]?.id || `question_${currentQuestionIndex + 1}`,
+          pack: selectedPack?.name || "Unknown Pack",
+          correctAnswer: questions[currentQuestionIndex]?.["Correct Answer"] || questions[currentQuestionIndex]?.correctAnswer
+        }}
+        selectedOption={state.selectedOption}
+        onSelectOption={handleOptionSelect}
+        onConfirm={handleAnswerConfirmation}
+        isAnswerSubmitted={uiState.answerSubmitted}
+        currentScore={currentScore}
+        showScoringInfo={uiState.showScoringInfo}
+        onInfoPress={() => {
+          setIsTimerPaused(true);
+          setUiState(prev => ({
+            ...prev,
+            showScoringInfo: true
+          }));
+        }}
+        onTimerPause={setIsTimerPaused}
+        timerConfig={TIMER_CONFIGS[timeLimit]}
+        // Pass platform info for Android-specific styling in the container
+        isAndroid={Platform.OS === 'android'}
+      />
+    ) : (
+      <View style={styles.waitingContainer}>
+        <LightBar />
+        <Text style={[
+          styles.waitingText,
+          // Android-specific text style fixes
+          Platform.OS === 'android' ? styles.waitingTextAndroid : {}
+        ]}>
+          Waiting for player to start...
+        </Text>
+        <LightBar />
+      </View>
+    )
+  ) : (
+    <TouchableOpacity 
+      style={styles.winnerButton} 
+      onPress={navigateToResults}
+      // Increase touch target size for Android 
+      hitSlop={Platform.OS === 'android' ? { top: 10, bottom: 10, left: 10, right: 10 } : undefined}
+    >
+      <Text style={styles.winnerButtonText}>
+        And the Winner Is...
+      </Text>
+    </TouchableOpacity>
+  )}
+</View>
  
         <DarePopup
   visible={uiState.isDareVisible}
@@ -1810,7 +1861,15 @@ return (
         
         navigation.navigate('WinnerTransition', {
           playerData: finalPlayerData,
-          packStats: gameState.packStats
+          packStats: {
+            ...gameState.packStats,
+            packName: selectedPack,     // Add pack name directly
+            selectedPack: selectedPack, // Add as selectedPack too
+            name: selectedPack          // Add as name as well
+          },
+          packName: selectedPack,       // Also at top level
+          selectedPack: selectedPack,   // Also at top level
+          isMultiplayer: false
         });
       } else {
         prepareNextQuestion();
@@ -1866,25 +1925,53 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'space-between', // Changed from 'flex-start' to 'space-between'
     alignItems: 'center',
-    backgroundColor: '#1A237E',
+    
     paddingTop: Platform.OS === 'android' ? 40 : 60,
     paddingBottom: Platform.OS === 'android' ? 20 : 10, // Added bottom padding
   },
-  playerInfoContainer: {
-    width: '100%',
-    alignItems: 'center',
+  // New styles for the Question Number and Player Name layout
+  playerNameWithQuestionNumber: {
     flexDirection: 'row',
-    justifyContent: 'center',
-    padding: 10,
-    marginTop: 5, // Reduced from 10
-    marginBottom: 5, // Reduced from 10
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%',
+    paddingHorizontal: 10,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  questionNumberWrapper: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    borderRadius: 12,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  questionNumberText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#FFD700',
+    textAlign: 'center',
+  },
+  timerWrapper: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    borderRadius: 12,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  timerText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#FFD700',
+    textAlign: 'center',
   },
   currentPlayerText: {
     fontSize: 40,
     fontWeight: 'bold',
     color: '#FFD700',
     textAlign: 'center',
-    marginLeft: 10,
     flex: 1,
     textShadowColor: '#000',
     textShadowOffset: { width: 1, height: 1 },
@@ -1902,51 +1989,6 @@ const styles = StyleSheet.create({
     paddingVertical: 3, // Reduced from 5
     marginBottom: 3, // Reduced from 5
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
-  },
-  questionNumberWrapper: {
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    borderRadius: 15,
-    paddingVertical: 6,
-    paddingHorizontal: 20,
-    borderWidth: 2,
-    borderColor: '#FFD700',
-    // Platform-specific shadow styling
-    ...Platform.select({
-      ios: {
-        shadowColor: '#FFD700',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.3,
-        shadowRadius: 4,
-      },
-      android: {
-        elevation: 5,
-      },
-    }),
-  },
-  questionNumberText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#FFD700',
-    textAlign: 'center',
-    // Platform-specific text shadow
-    ...Platform.select({
-      ios: {
-        textShadowColor: '#000',
-        textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 2,
-      },
-      android: {
-        elevation: 2,
-      },
-    }),
-  },
-  questionNumberUnderline: {
-    height: 2,
-    backgroundColor: '#FFD700',
-    width: '100%',
-    marginTop: 4,
-    opacity: 0.7,
   },
   contentContainer: {
     flex: 1,

@@ -18,6 +18,9 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 const { width, height } = Dimensions.get('window');
 
+// Transition duration
+const TRANSITION_DURATION = Platform.OS === 'android' ? 4500 : 5000;
+
 // Confetti component for more visual interest
 const Confetti = () => {
   const confettiPieces = Array(30).fill(0).map(() => ({
@@ -157,12 +160,32 @@ const Spotlight = () => {
 const WinnerTransitionScreen = () => {
   const navigation = useNavigation();
   const route = useRoute();
-  const { playerData, timestamp, isMultiplayer = false } = route.params || {};
+  const { 
+    playerData, 
+    timestamp, 
+    isMultiplayer = false, 
+    packStats, 
+    packName: directPackName, 
+    selectedPack: directSelectedPack 
+  } = route.params || {};
+  
   const [firstTextOpacity] = useState(new Animated.Value(0));
   const [secondTextOpacity] = useState(new Animated.Value(0));
   const [multiplayerIconOpacity] = useState(new Animated.Value(0));
   const [sound, setSound] = useState(null);
   const [shakeAnimation] = useState(new Animated.Value(0));
+  
+  // Log the pack information received by WinnerTransition
+  useEffect(() => {
+    console.log('WinnerTransition received pack information:', {
+      packStats,
+      directPackName,
+      directSelectedPack,
+      routeParams: route.params
+    });
+    console.log('WinnerTransition received isMultiplayer:', isMultiplayer);
+console.log('WinnerTransition navigating with isMultiplayer:', isMultiplayer);
+  }, []);
   
   // Handle Android back button
   useFocusEffect(
@@ -302,9 +325,6 @@ const WinnerTransitionScreen = () => {
       playDrumroll();
     }, drumrollDelay);
 
-    // Android-specific shorter delay for navigation
-    const navigationDelay = Platform.OS === 'android' ? 4500 : 5000;
-
     // Navigate after drumroll/animations
     const navigationTimer = setTimeout(() => {
       if (!isMounted) return;
@@ -313,13 +333,32 @@ const WinnerTransitionScreen = () => {
         ...player,
         score: Number(player.score) || 0
       }));
-
-      navigation.navigate('ResultsScreen', {
+      
+      // Extract pack name from all possible sources
+      const finalPackName = directPackName || 
+                           directSelectedPack || 
+                           packStats?.packName || 
+                           packStats?.name || 
+                           packStats?.selectedPack || 
+                           "Trivia Pack";
+      
+      console.log('WinnerTransition navigating with pack name:', finalPackName);
+      
+      // Enhanced navigation with redundant pack information
+      navigation.replace('ResultsScreen', {
         playerData: verifiedPlayerData,
-        timestamp: Date.now(),
-        isMultiplayer
+        packStats: {
+          ...packStats,
+          packName: finalPackName,
+          name: finalPackName,
+          selectedPack: finalPackName
+        },
+        packName: finalPackName,
+        selectedPack: finalPackName,
+        isMultiplayer: isMultiplayer,
+        timestamp: Date.now()
       });
-    }, navigationDelay);
+    }, TRANSITION_DURATION);
 
     return () => {
       isMounted = false;

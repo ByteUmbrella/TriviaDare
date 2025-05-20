@@ -14,11 +14,17 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 // Development and Beta mode configuration
 const isDevelopmentMode = __DEV__;
 // Beta mode flag - set to false for production release
-const isBetaMode = true;
+const isBetaMode = false;
 
-// Helper function to determine if all features should be unlocked
+// SINGLE TOGGLE FOR ALL BUILDS
+// true = Production build (normal IAP behavior)
+// false = Simulator/TestFlight/Testing build (everything unlocked)
+const IS_PRODUCTION_BUILD = true; // Change this to false for TestFlight/Simulator builds
+
+// Simplified helper function
 export const shouldUnlockAllFeatures = () => {
-  return isDevelopmentMode || isBetaMode;
+  // If not a production build, unlock everything
+  return !IS_PRODUCTION_BUILD;
 };
 
 // Helper to determine if beta indicator should be shown
@@ -56,52 +62,69 @@ export const PRODUCT_IDS = {
     // Premium packs at $3.99 each
     PACK_HARRYPOTTER: Platform.select({
       ios: 'HarryPotter1',
-      android: 'HarryPotter1'
+      android: 'harrypotter1'
     }),
     PACK_MARVELCINAMATICUNIVERSE: Platform.select({
       ios: 'MarvelCinematicUniverse1',
-      android: 'MarvelCinematicUniverse1'
+      android: 'marvelcinamaticu­niverse1'
     }),
     PACK_STARWARS: Platform.select({
       ios: 'StarWars1',
-      android: 'StarWars1'
+      android: 'starwars1'
     }),
     PACK_DISNEYANIMATEDMOVIES: Platform.select({
       ios: 'DisneyAnimatedMovies1',
-      android: 'DisneyAnimatedMovies1'
+      android: 'disneyanimatedmovies1'
     }),
     PACK_THELORDOFTHERINGS: Platform.select({
       ios: 'TheLordOfTheRings1',
-      android: 'TheLordOfTheRings1'
+      android: 'thelordoftherings1'
     }),
     PACK_PIXAR: Platform.select({
       ios: 'Pixar1',
-      android: 'Pixar1'
+      android: 'pixar1'
     }),
     PACK_FRIENDS: Platform.select({
       ios: 'Friends1',
-      android: 'Friends1'
+      android: 'friends1'
     }),
     PACK_VIDEOGAMES: Platform.select({
       ios: 'VideoGames1',
-      android: 'VideoGames1'
+      android: 'videogames1'
     }),
     PACK_HOWIMETYOURMOTHER: Platform.select({
       ios: 'HowIMetYourMother1',
-      android: 'HowIMetYourMother1'
+      android: 'howimetyourmother1'
     }),
     PACK_THEOFFICE: Platform.select({
       ios: 'TheOffice1',
-      android: 'TheOffice1'
+      android: 'theoffice1'
     }),
     PACK_THEMEPARK: Platform.select({
       ios: 'ThemePark1',
-      android: 'ThemePark1'
+      android: 'themepark1'
     }),
     // Everything bundle for $49.99
     EVERYTHING_BUNDLE: Platform.select({
       ios: 'EverythingBundle1',
-      android: 'EverythingBundle1'
+      android: 'everythingbundle1'
+    }),
+    // DaresONLY packs at $3.99 each
+    DARES_SPICY: Platform.select({
+      ios: 'DarePack3',
+      android: 'darepack2'
+    }),
+    DARES_HOUSEPARTY: Platform.select({
+      ios: 'DarePack2',
+      android: 'darepack3'
+    }),
+    DARES_COUPLES: Platform.select({
+      ios: 'DarePack1',
+      android: 'darepack1'
+    }),
+    DARES_BAR: Platform.select({
+      ios: 'DarePack4',
+      android: 'darepack4'
     })
   };
 
@@ -120,6 +143,14 @@ export const PACK_TO_PRODUCT_MAP = {
   'themepark': PRODUCT_IDS.PACK_THEMEPARK
 };
 
+// Map DaresONLY pack IDs to product IDs
+export const DARES_TO_PRODUCT_MAP = {
+  'spicy': PRODUCT_IDS.DARES_SPICY,
+  'houseparty': PRODUCT_IDS.DARES_HOUSEPARTY,
+  'couples': PRODUCT_IDS.DARES_COUPLES,
+  'bar': PRODUCT_IDS.DARES_BAR
+};
+
 // Get all product IDs for fetching
 export const getAllProductIds = () => 
   Object.values(PRODUCT_IDS);
@@ -127,7 +158,6 @@ export const getAllProductIds = () =>
 // AsyncStorage keys
 const PURCHASE_KEY = 'triviadare_purchases';
 const RECEIPT_KEY = 'triviadare_receipts';
-
 
 // Class to manage IAP functionality
 class IAPManager {
@@ -137,58 +167,145 @@ class IAPManager {
     this.purchaseErrorSubscription = null;
     this.isInitialized = false;
     this.pendingPurchases = [];
+    
+    // Add properties to access maps from the instance
+    this.PRODUCT_IDS = PRODUCT_IDS;
+    this.PACK_TO_PRODUCT_MAP = PACK_TO_PRODUCT_MAP;
+    this.DARES_TO_PRODUCT_MAP = DARES_TO_PRODUCT_MAP;
+  }
+
+  // Method to check if we're in a test environment (Simulator/Emulator)
+  isTestEnvironment() {
+    // Common ways to detect simulator/test environment
+    const isSimulator = Platform.OS === 'ios' && (
+      // Check for iOS Simulator
+      Platform.isPad === undefined || // Simulator doesn't have this prop
+      Platform.isTVOS === false ||
+      typeof navigator !== 'undefined' && navigator.product === 'ReactNative'
+    );
+    
+    const isEmulator = Platform.OS === 'android' && (
+      // Check for Android Emulator
+      global.nativeCallSyncHook || // Metro/Debug mode
+      __DEV__ === true
+    );
+    
+    // Also check for common test/debug flags
+    const isDebugMode = __DEV__ || global.__DEV__ === true;
+    
+    return isDebugMode || isSimulator || isEmulator || !global.nativeCallSyncHook;
+  }
+
+  // Log environment info for debugging
+  logEnvironmentInfo() {
+    console.log('=== IAP Environment Info ===');
+    console.log('Platform:', Platform.OS);
+    console.log('isDevelopmentMode:', isDevelopmentMode);
+    console.log('isBetaMode:', isBetaMode);
+    console.log('IS_PRODUCTION_BUILD:', IS_PRODUCTION_BUILD);
+    console.log('shouldUnlockAllFeatures():', shouldUnlockAllFeatures());
+    console.log('isTestEnvironment():', this.isTestEnvironment());
+    console.log('__DEV__:', __DEV__);
+    console.log('==========================');
   }
 
   async initialize() {
     if (this.isInitialized) return true;
     
+    // Log environment info for debugging
+    if (__DEV__) {
+      this.logEnvironmentInfo();
+    }
+    
+    // If not a production build, skip real IAP and use mock data
+    if (!IS_PRODUCTION_BUILD) {
+      console.log('🔧 Non-production build - using mock IAP data');
+      this.isInitialized = true;
+      this.products = this.getMockProducts();
+      return true;
+    }
+    
+    // In production builds, check if we're in a test environment first
+    if (this.isTestEnvironment()) {
+      console.log('🔧 Test environment detected in production build - using mock IAP data');
+      this.isInitialized = true;
+      this.products = this.getMockProducts();
+      return true;
+    }
+    
     try {
-      // Skip actual IAP initialization in development or beta mode
-      if (shouldUnlockAllFeatures()) {
-        console.log('Running in development/beta mode - using mock IAP data');
-        this.isInitialized = true;
-        // Load mock product data
-        this.products = this.getMockProducts();
-        return true;
-      }
-      
+      console.log('🛒 Initializing real IAP connection...');
       await initConnection();
       this.setupListeners();
       this.isInitialized = true;
       
       // Fetch available products
       await this.fetchProducts();
+      console.log('✅ IAP initialized successfully');
       
       return true;
     } catch (error) {
-      console.error('Failed to initialize IAP:', error);
-      // Even if initialization fails, consider it initialized in dev/beta mode
-      if (shouldUnlockAllFeatures()) {
+      // Handle specific IAP errors gracefully
+      if (error.code === 'E_IAP_NOT_AVAILABLE' || 
+          error.message?.includes('E_IAP_NOT_AVAILABLE') ||
+          error.message?.includes('not available')) {
+        console.log('ℹ️ IAP not available (likely running on simulator or device without app store capabilities)');
+        // Fall back to mock mode
         this.isInitialized = true;
         this.products = this.getMockProducts();
         return true;
       }
-      return false;
+      
+      // Handle network or other errors
+      if (error.code === 'E_SERVICE_ERROR' || error.message?.includes('network')) {
+        console.log('🌐 Network error during IAP initialization - falling back to mock mode');
+        this.isInitialized = true;
+        this.products = this.getMockProducts();
+        return true;
+      }
+      
+      // Log other types of errors but still try to continue
+      console.warn('⚠️ IAP initialization error (continuing with mock data):', error.message);
+      
+      // Always fall back to mock mode in case of errors
+      this.isInitialized = true;
+      this.products = this.getMockProducts();
+      return true;
     }
   }
   
   // Add this method to provide mock products during development
   getMockProducts() {
-    return Object.entries(PACK_TO_PRODUCT_MAP).map(([packId, productId]) => ({
+    const triviaProducts = Object.entries(PACK_TO_PRODUCT_MAP).map(([packId, productId]) => ({
       productId: productId,
       title: `Premium Pack: ${packId}`,
       description: `This is a mock description for ${packId}`,
       price: '3.99',
       localizedPrice: '$3.99',
       currency: 'USD',
-    })).concat([{
-      productId: PRODUCT_IDS.EVERYTHING_BUNDLE,
-      title: 'Everything Bundle',
-      description: 'Get all current and future packs',
-      price: '49.99',
-      localizedPrice: '$49.99',
+    }));
+
+    const daresProducts = Object.entries(DARES_TO_PRODUCT_MAP).map(([packId, productId]) => ({
+      productId: productId,
+      title: `DaresONLY Pack: ${packId}`,
+      description: `This is a mock description for DaresONLY ${packId}`,
+      price: '3.99',
+      localizedPrice: '$3.99',
       currency: 'USD',
-    }]);
+    }));
+
+    return [
+      ...triviaProducts,
+      ...daresProducts,
+      {
+        productId: PRODUCT_IDS.EVERYTHING_BUNDLE,
+        title: 'Everything Bundle',
+        description: 'Get all current and future packs',
+        price: '49.99',
+        localizedPrice: '$49.99',
+        currency: 'USD',
+      }
+    ];
   }
 
   // Set up purchase listeners
@@ -204,23 +321,24 @@ class IAPManager {
     // Set up new listeners
     this.purchaseUpdateSubscription = purchaseUpdatedListener(async (purchase) => {
       try {
+        console.log('✅ Purchase successful:', purchase.productId);
         // Process and validate the purchase
         await this.processPurchase(purchase);
         
         // Finish the transaction
         await finishTransaction(purchase);
       } catch (error) {
-        console.error('Error processing purchase:', error);
+        console.error('❌ Error processing purchase:', error);
       }
     });
 
     this.purchaseErrorSubscription = purchaseErrorListener((error) => {
-      console.error('Purchase error:', error);
+      console.error('❌ Purchase error:', error);
       
       // Handle any pending purchase errors
       if (this.pendingPurchases.length > 0) {
         const pendingProductId = this.pendingPurchases.pop();
-        // Here you could implement error callbacks
+        console.log('🔄 Removed failed purchase from pending:', pendingProductId);
       }
     });
   }
@@ -228,12 +346,21 @@ class IAPManager {
   // Fetch available products from the store
   async fetchProducts() {
     try {
+      if (!IS_PRODUCTION_BUILD || this.isTestEnvironment()) {
+        console.log('📦 Using mock products in non-production environment');
+        return this.products;
+      }
+      
       const productIds = getAllProductIds();
+      console.log('🔍 Fetching products:', productIds.length);
       this.products = await getProducts(productIds);
+      console.log('✅ Products fetched:', this.products.length);
       return this.products;
     } catch (error) {
-      console.error('Failed to fetch products:', error);
-      return [];
+      console.error('❌ Failed to fetch products:', error);
+      // Fall back to mock products
+      this.products = this.getMockProducts();
+      return this.products;
     }
   }
 
@@ -265,7 +392,7 @@ class IAPManager {
       
       return true;
     } catch (error) {
-      console.error('Error processing purchase:', error);
+      console.error('❌ Error processing purchase:', error);
       return false;
     }
   }
@@ -296,7 +423,7 @@ class IAPManager {
       
       return true;
     } catch (error) {
-      console.error('Error saving purchase:', error);
+      console.error('❌ Error saving purchase:', error);
       return false;
     }
   }
@@ -326,24 +453,35 @@ class IAPManager {
         }
       });
       
+      // Mark all DaresONLY packs as purchased through the bundle
+      Object.values(DARES_TO_PRODUCT_MAP).forEach(productId => {
+        if (!purchases[productId]) {
+          purchases[productId] = {
+            purchaseDate: new Date().toISOString(),
+            productId,
+            viaBundle: true
+          };
+        }
+      });
+      
       // Save updated purchases
       await AsyncStorage.setItem(PURCHASE_KEY, JSON.stringify(purchases));
       
       return true;
     } catch (error) {
-      console.error('Error saving everything bundle:', error);
+      console.error('❌ Error saving everything bundle:', error);
       return false;
     }
   }
 
   async isPurchased(productId) {
     try {
-      // In development or beta mode, automatically return true for all products
-      if (shouldUnlockAllFeatures()) {
+      // If not a production build, automatically return true
+      if (!IS_PRODUCTION_BUILD) {
         return true;
       }
       
-      // Original code for production
+      // Check actual purchases in production
       const purchasesJson = await AsyncStorage.getItem(PURCHASE_KEY);
       if (!purchasesJson) return false;
       
@@ -357,7 +495,7 @@ class IAPManager {
       // Check for specific product
       return !!purchases[productId];
     } catch (error) {
-      console.error('Error checking purchase status:', error);
+      console.error('❌ Error checking purchase status:', error);
       return false;
     }
   }
@@ -371,34 +509,58 @@ class IAPManager {
       // Add to pending purchases
       this.pendingPurchases.push(productId);
       
-      // For development or beta mode, simulate successful purchase immediately
-      if (shouldUnlockAllFeatures()) {
+      // If not a production build, simulate successful purchase immediately
+      if (!IS_PRODUCTION_BUILD) {
+        console.log('🧪 Simulating purchase in non-production environment:', productId);
         await this.processPurchase({ 
           productId,
-          transactionReceipt: 'mock-receipt-for-development'
+          transactionReceipt: 'mock-receipt-for-non-production'
         });
-        
         return true;
       }
       
-      // Request the purchase
-      await requestPurchase(productId);
+      // If in test environment, also simulate
+      if (this.isTestEnvironment()) {
+        console.log('🧪 Simulating purchase in test environment:', productId);
+        await this.processPurchase({ 
+          productId,
+          transactionReceipt: 'mock-receipt-for-test-environment'
+        });
+        return true;
+      }
       
+      // Request the real purchase
+      console.log('💳 Requesting purchase:', productId);
+      await requestPurchase(productId);
       return true;
     } catch (error) {
-      console.error('Error requesting purchase:', error);
+      // Handle specific IAP errors gracefully
+      if (error.code === 'E_IAP_NOT_AVAILABLE') {
+        console.log('ℹ️ Purchase not available - likely in simulator');
+        // Remove from pending purchases
+        this.pendingPurchases = this.pendingPurchases.filter(id => id !== productId);
+        return false;
+      }
+      
+      if (error.code === 'E_USER_CANCELLED') {
+        console.log('🚫 User cancelled purchase');
+        // Remove from pending purchases
+        this.pendingPurchases = this.pendingPurchases.filter(id => id !== productId);
+        return false;
+      }
+      
+      console.error('❌ Error requesting purchase:', error);
       
       // Remove from pending purchases
       this.pendingPurchases = this.pendingPurchases.filter(id => id !== productId);
-      
       return false;
     }
   }
 
   // Check if a pack is purchased
   async isPackPurchased(packId) {
-    // In development or beta mode, all packs are purchased
-    if (shouldUnlockAllFeatures()) {
+    // If not a production build, all packs are purchased
+    if (!IS_PRODUCTION_BUILD) {
       return true;
     }
     
@@ -413,11 +575,29 @@ class IAPManager {
     return await this.isPurchased(productId);
   }
 
+  // Check if a DaresONLY pack is purchased
+  async isDaresPurchased(packId) {
+    // If not a production build, all packs are purchased
+    if (!IS_PRODUCTION_BUILD) {
+      return true;
+    }
+    
+    // First check if they have the everything bundle
+    const hasBundle = await this.isPurchased(PRODUCT_IDS.EVERYTHING_BUNDLE);
+    if (hasBundle) return true;
+    
+    // If not, check for the specific DaresONLY pack
+    const productId = DARES_TO_PRODUCT_MAP[packId];
+    if (!productId) return false;
+    
+    return await this.isPurchased(productId);
+  }
+
   // Get all purchased packs
   async getPurchasedPacks() {
     try {
-      // In development or beta mode, return all packs
-      if (shouldUnlockAllFeatures()) {
+      // If not a production build, return all packs
+      if (!IS_PRODUCTION_BUILD) {
         return Object.keys(PACK_TO_PRODUCT_MAP);
       }
       
@@ -442,7 +622,41 @@ class IAPManager {
       
       return purchasedPacks;
     } catch (error) {
-      console.error('Error getting purchased packs:', error);
+      console.error('❌ Error getting purchased packs:', error);
+      return [];
+    }
+  }
+
+  // Get all purchased DaresONLY packs
+  async getPurchasedDaresPacks() {
+    try {
+      // If not a production build, return all dares packs
+      if (!IS_PRODUCTION_BUILD) {
+        return Object.keys(DARES_TO_PRODUCT_MAP);
+      }
+      
+      const purchasesJson = await AsyncStorage.getItem(PURCHASE_KEY);
+      if (!purchasesJson) return [];
+      
+      const purchases = JSON.parse(purchasesJson);
+      
+      // If the bundle is purchased, return all dares packs
+      if (purchases[PRODUCT_IDS.EVERYTHING_BUNDLE]) {
+        return Object.keys(DARES_TO_PRODUCT_MAP);
+      }
+      
+      // Otherwise, find which dares packs are purchased
+      const purchasedDaresPacks = [];
+      
+      for (const [packId, productId] of Object.entries(DARES_TO_PRODUCT_MAP)) {
+        if (purchases[productId]) {
+          purchasedDaresPacks.push(packId);
+        }
+      }
+      
+      return purchasedDaresPacks;
+    } catch (error) {
+      console.error('❌ Error getting purchased dares packs:', error);
       return [];
     }
   }
@@ -454,37 +668,46 @@ class IAPManager {
     }
     
     try {
-      // In development or beta mode, simulate all purchases restored
-      if (shouldUnlockAllFeatures()) {
+      // If not a production build, simulate all purchases restored
+      if (!IS_PRODUCTION_BUILD || this.isTestEnvironment()) {
+        console.log('🧪 Simulating purchase restoration in non-production environment');
         // Simulate everything bundle purchase
         await this.processPurchase({
           productId: PRODUCT_IDS.EVERYTHING_BUNDLE,
-          transactionReceipt: 'mock-receipt-for-development'
+          transactionReceipt: 'mock-receipt-for-restoration'
         });
         return true;
       }
       
+      console.log('🔄 Restoring purchases from store...');
       // Get available purchases from store
       const purchases = await getAvailablePurchases();
       
       if (purchases && purchases.length > 0) {
+        console.log('✅ Found purchases to restore:', purchases.length);
         // Process each purchase
         for (const purchase of purchases) {
           await this.processPurchase(purchase);
         }
-        
         return true;
       }
       
+      console.log('ℹ️ No purchases found to restore');
       return false;
     } catch (error) {
-      console.error('Error restoring purchases:', error);
+      if (error.code === 'E_IAP_NOT_AVAILABLE') {
+        console.log('ℹ️ Restore not available - likely in simulator');
+        return false;
+      }
+      
+      console.error('❌ Error restoring purchases:', error);
       return false;
     }
   }
 
   // Clean up listeners
   cleanup() {
+    console.log('🧹 Cleaning up IAP listeners');
     if (this.purchaseUpdateSubscription) {
       this.purchaseUpdateSubscription.remove();
       this.purchaseUpdateSubscription = null;

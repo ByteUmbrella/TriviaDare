@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import { 
   View, 
   Text, 
@@ -11,6 +11,7 @@ import {
   TouchableNativeFeedback
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import ReportQuestionModal from '../Context/ReportQuestionModal';
 
 const { width, height } = Dimensions.get('window');
 
@@ -78,6 +79,8 @@ const QuestionContainer = memo(({
     activePlayerName = null
   }) => {
     const scaleAnim = React.useRef(new Animated.Value(1)).current;
+    // Add state for report modal
+    const [isReportModalVisible, setIsReportModalVisible] = useState(false);
   
     const handleOptionPress = (option) => {
       // Don't allow selection if disabled or in spectator mode
@@ -108,6 +111,21 @@ const QuestionContainer = memo(({
       if (onTimerPause) onTimerPause(true);
       if (onInfoPress) onInfoPress();
     };
+    
+    // Add handler for report button
+    const handleReportQuestion = () => {
+      setIsReportModalVisible(true);
+      if (onTimerPause) onTimerPause(true);
+    };
+    
+    // Add effect to ensure timer resumes if component unmounts with modal open
+    useEffect(() => {
+      return () => {
+        if (isReportModalVisible && onTimerPause) {
+          onTimerPause(false);
+        }
+      };
+    }, [isReportModalVisible, onTimerPause]);
   
     // Render spectator banner when in spectator mode
     const renderSpectatorBanner = () => {
@@ -134,17 +152,34 @@ const QuestionContainer = memo(({
             Platform.OS === 'android' && styles.pointsValueAndroid
           ]}>{currentScore}</Text>
         </Text>
-        <TouchableOpacity
-          style={[
-            styles.infoButton,
-            Platform.OS === 'android' && { padding: 8, marginHorizontal: 3 }
-          ]}
-          onPress={handleInfoPress}
-          hitSlop={Platform.OS === 'android' ? { top: 10, bottom: 10, left: 10, right: 10 } : undefined}
-          disabled={disabled}
-        >
-          <Ionicons name="information-circle" size={20} color="#FFD700" />
-        </TouchableOpacity>
+        
+        <View style={styles.buttonsRow}>
+          {/* Report button */}
+          <TouchableOpacity
+            style={[
+              styles.iconButton,
+              Platform.OS === 'android' && { padding: 8, marginHorizontal: 3 }
+            ]}
+            onPress={handleReportQuestion}
+            hitSlop={Platform.OS === 'android' ? { top: 10, bottom: 10, left: 10, right: 10 } : undefined}
+            disabled={disabled}
+          >
+            <Ionicons name="flag-outline" size={18} color="#FFD700" />
+          </TouchableOpacity>
+          
+          {/* Info button */}
+          <TouchableOpacity
+            style={[
+              styles.iconButton,
+              Platform.OS === 'android' && { padding: 8, marginHorizontal: 3 }
+            ]}
+            onPress={handleInfoPress}
+            hitSlop={Platform.OS === 'android' ? { top: 10, bottom: 10, left: 10, right: 10 } : undefined}
+            disabled={disabled}
+          >
+            <Ionicons name="information-circle" size={20} color="#FFD700" />
+          </TouchableOpacity>
+        </View>
       </View>
     );
   
@@ -165,6 +200,22 @@ const QuestionContainer = memo(({
             </View>
           </View>
           <LightBar />
+          
+          {/* Add the report modal */}
+          <ReportQuestionModal 
+            visible={isReportModalVisible}
+            question={{
+              id: currentQuestion?.id || `question_${Math.random().toString(36).substring(2, 7)}`,
+              pack: currentQuestion?.pack || "Unknown Pack",
+              questionText: questionText,
+              correctAnswer: currentQuestion?.['Correct Answer'] || currentQuestion?.correctAnswer
+            }}
+            onClose={() => {
+              setIsReportModalVisible(false);
+              // Resume timer when the modal is closed
+              if (onTimerPause) onTimerPause(false);
+            }}
+          />
         </View>
       );
     }
@@ -328,6 +379,22 @@ const QuestionContainer = memo(({
           </View>
         </ScrollView>
         <LightBar />
+        
+        {/* Add the report modal */}
+        <ReportQuestionModal 
+          visible={isReportModalVisible}
+          question={{
+            id: currentQuestion?.id || `question_${Math.random().toString(36).substring(2, 7)}`,
+            pack: currentQuestion?.pack || "Unknown Pack",
+            questionText: questionText,
+            correctAnswer: currentQuestion?.['Correct Answer'] || currentQuestion?.correctAnswer
+          }}
+          onClose={() => {
+            setIsReportModalVisible(false);
+            // Resume timer when the modal is closed
+            if (onTimerPause) onTimerPause(false);
+          }}
+        />
       </Animated.View>
     );
   });
@@ -473,7 +540,7 @@ const styles = StyleSheet.create({
   pointsContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between', // Changed from 'center' to 'space-between'
     marginBottom: 12,
     paddingVertical: 4,
     paddingHorizontal: 12,
@@ -481,11 +548,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     borderWidth: 1,
     borderColor: '#FFD700',
+    width: '100%', // Added to ensure full width
   },
   pointsText: {
     color: '#FFFFFF',
     fontSize: 14,
-    marginRight: 8,
     textShadowColor: '#000',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
@@ -507,7 +574,12 @@ const styles = StyleSheet.create({
     textShadowOffset: null,
     textShadowRadius: null,
   },
-  infoButton: {
+  // New styles for the buttons row
+  buttonsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  iconButton: {
     padding: 5,
     marginHorizontal: 5,
   },
