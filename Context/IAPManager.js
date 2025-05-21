@@ -11,25 +11,34 @@ import {
 } from 'react-native-iap';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-// Development and Beta mode configuration
-const isDevelopmentMode = __DEV__;
-// Beta mode flag - set to false for production release
-const isBetaMode = false;
+// =====================================================
+// APPLICATION CONFIGURATION
+// =====================================================
 
-// SINGLE TOGGLE FOR ALL BUILDS
-// true = Production build (normal IAP behavior)
-// false = Simulator/TestFlight/Testing build (everything unlocked)
-const IS_PRODUCTION_BUILD = true; // Change this to false for TestFlight/Simulator builds
+// MAIN CONFIG FLAG: Controls whether real IAP is used
+// true = Production/TestFlight build (real IAP, features locked until purchased)
+// false = Development build (mock IAP, all features unlocked)
+const IS_PRODUCTION_BUILD = true; // KEEP TRUE for both TestFlight and App Store
 
-// Simplified helper function
+// VISUAL INDICATOR FLAG: Controls whether "BETA" label is shown in UI
+// Does NOT affect IAP behavior or unlocking features
+const SHOW_BETA_INDICATOR = false; // Set to false for final builds
+
+// =====================================================
+// EXPORTS
+// =====================================================
+
+// Determines if all features should be unlocked
+// This is the function used by feature/pack screens to check availability
 export const shouldUnlockAllFeatures = () => {
-  // If not a production build, unlock everything
-  return !IS_PRODUCTION_BUILD;
+  // For production-ready code, we NEVER unlock all features
+  // Features should only be available when purchased
+  return false; // Always locked in TestFlight and Production
 };
 
-// Helper to determine if beta indicator should be shown
+// Controls whether to show the BETA indicator in UI
 export const shouldShowBetaIndicator = () => {
-  return isBetaMode;
+  return SHOW_BETA_INDICATOR;
 };
 
 // Beta UI component that can be used within your app screens
@@ -56,6 +65,10 @@ export const BetaIndicator = ({ style }) => {
     </View>
   );
 };
+
+// =====================================================
+// PRODUCT DEFINITIONS
+// =====================================================
 
 // Define product IDs
 export const PRODUCT_IDS = {
@@ -159,7 +172,10 @@ export const getAllProductIds = () =>
 const PURCHASE_KEY = 'triviadare_purchases';
 const RECEIPT_KEY = 'triviadare_receipts';
 
-// Class to manage IAP functionality
+// =====================================================
+// IAP MANAGER CLASS
+// =====================================================
+
 class IAPManager {
   constructor() {
     this.products = [];
@@ -167,6 +183,7 @@ class IAPManager {
     this.purchaseErrorSubscription = null;
     this.isInitialized = false;
     this.pendingPurchases = [];
+    this.onPurchaseComplete = null; // Callback for purchase completion
     
     // Add properties to access maps from the instance
     this.PRODUCT_IDS = PRODUCT_IDS;
@@ -174,65 +191,26 @@ class IAPManager {
     this.DARES_TO_PRODUCT_MAP = DARES_TO_PRODUCT_MAP;
   }
 
-  // Method to check if we're in a test environment (Simulator/Emulator)
-  isTestEnvironment() {
-    // Common ways to detect simulator/test environment
-    const isSimulator = Platform.OS === 'ios' && (
-      // Check for iOS Simulator
-      Platform.isPad === undefined || // Simulator doesn't have this prop
-      Platform.isTVOS === false ||
-      typeof navigator !== 'undefined' && navigator.product === 'ReactNative'
-    );
-    
-    const isEmulator = Platform.OS === 'android' && (
-      // Check for Android Emulator
-      global.nativeCallSyncHook || // Metro/Debug mode
-      __DEV__ === true
-    );
-    
-    // Also check for common test/debug flags
-    const isDebugMode = __DEV__ || global.__DEV__ === true;
-    
-    return isDebugMode || isSimulator || isEmulator || !global.nativeCallSyncHook;
-  }
-
   // Log environment info for debugging
   logEnvironmentInfo() {
     console.log('=== IAP Environment Info ===');
     console.log('Platform:', Platform.OS);
-    console.log('isDevelopmentMode:', isDevelopmentMode);
-    console.log('isBetaMode:', isBetaMode);
+    console.log('isDevelopmentMode:', __DEV__);
     console.log('IS_PRODUCTION_BUILD:', IS_PRODUCTION_BUILD);
+    console.log('SHOW_BETA_INDICATOR:', SHOW_BETA_INDICATOR);
     console.log('shouldUnlockAllFeatures():', shouldUnlockAllFeatures());
-    console.log('isTestEnvironment():', this.isTestEnvironment());
-    console.log('__DEV__:', __DEV__);
+    console.log('shouldShowBetaIndicator():', shouldShowBetaIndicator());
     console.log('==========================');
   }
 
+  // Initialize IAP connection
   async initialize() {
     if (this.isInitialized) return true;
     
     // Log environment info for debugging
-    if (__DEV__) {
-      this.logEnvironmentInfo();
-    }
+    this.logEnvironmentInfo();
     
-    // If not a production build, skip real IAP and use mock data
-    if (!IS_PRODUCTION_BUILD) {
-      console.log('🔧 Non-production build - using mock IAP data');
-      this.isInitialized = true;
-      this.products = this.getMockProducts();
-      return true;
-    }
-    
-    // In production builds, check if we're in a test environment first
-    if (this.isTestEnvironment()) {
-      console.log('🔧 Test environment detected in production build - using mock IAP data');
-      this.isInitialized = true;
-      this.products = this.getMockProducts();
-      return true;
-    }
-    
+    // For production builds and TestFlight, use real IAP
     try {
       console.log('🛒 Initializing real IAP connection...');
       await initConnection();
@@ -245,36 +223,17 @@ class IAPManager {
       
       return true;
     } catch (error) {
-      // Handle specific IAP errors gracefully
-      if (error.code === 'E_IAP_NOT_AVAILABLE' || 
-          error.message?.includes('E_IAP_NOT_AVAILABLE') ||
-          error.message?.includes('not available')) {
-        console.log('ℹ️ IAP not available (likely running on simulator or device without app store capabilities)');
-        // Fall back to mock mode
-        this.isInitialized = true;
-        this.products = this.getMockProducts();
-        return true;
-      }
+      // For any errors in production builds, ensure features stay locked
+      console.error('❌ IAP initialization error:', error.message);
       
-      // Handle network or other errors
-      if (error.code === 'E_SERVICE_ERROR' || error.message?.includes('network')) {
-        console.log('🌐 Network error during IAP initialization - falling back to mock mode');
-        this.isInitialized = true;
-        this.products = this.getMockProducts();
-        return true;
-      }
-      
-      // Log other types of errors but still try to continue
-      console.warn('⚠️ IAP initialization error (continuing with mock data):', error.message);
-      
-      // Always fall back to mock mode in case of errors
       this.isInitialized = true;
-      this.products = this.getMockProducts();
+      this.products = []; // Empty products to ensure nothing can be "purchased" in error state
+      console.log('🔒 Keeping premium features locked despite initialization error');
       return true;
     }
   }
   
-  // Add this method to provide mock products during development
+  // Get mock products for development/testing
   getMockProducts() {
     const triviaProducts = Object.entries(PACK_TO_PRODUCT_MAP).map(([packId, productId]) => ({
       productId: productId,
@@ -327,6 +286,11 @@ class IAPManager {
         
         // Finish the transaction
         await finishTransaction(purchase);
+        
+        // Call purchase complete callback if it exists
+        if (this.onPurchaseComplete && typeof this.onPurchaseComplete === 'function') {
+          this.onPurchaseComplete();
+        }
       } catch (error) {
         console.error('❌ Error processing purchase:', error);
       }
@@ -345,12 +309,8 @@ class IAPManager {
 
   // Fetch available products from the store
   async fetchProducts() {
-    try {
-      if (!IS_PRODUCTION_BUILD || this.isTestEnvironment()) {
-        console.log('📦 Using mock products in non-production environment');
-        return this.products;
-      }
-      
+    try {      
+      // For production builds, fetch real products
       const productIds = getAllProductIds();
       console.log('🔍 Fetching products:', productIds.length);
       this.products = await getProducts(productIds);
@@ -358,8 +318,8 @@ class IAPManager {
       return this.products;
     } catch (error) {
       console.error('❌ Failed to fetch products:', error);
-      // Fall back to mock products
-      this.products = this.getMockProducts();
+      // For production, we don't use mock products but leave an empty array
+      this.products = [];
       return this.products;
     }
   }
@@ -474,14 +434,10 @@ class IAPManager {
     }
   }
 
+  // Check if a product is purchased
   async isPurchased(productId) {
     try {
-      // If not a production build, automatically return true
-      if (!IS_PRODUCTION_BUILD) {
-        return true;
-      }
-      
-      // Check actual purchases in production
+      // For production builds, check real purchases
       const purchasesJson = await AsyncStorage.getItem(PURCHASE_KEY);
       if (!purchasesJson) return false;
       
@@ -500,6 +456,7 @@ class IAPManager {
     }
   }
   
+  // Purchase a product
   async purchaseProduct(productId) {
     if (!this.isInitialized) {
       await this.initialize();
@@ -509,28 +466,8 @@ class IAPManager {
       // Add to pending purchases
       this.pendingPurchases.push(productId);
       
-      // If not a production build, simulate successful purchase immediately
-      if (!IS_PRODUCTION_BUILD) {
-        console.log('🧪 Simulating purchase in non-production environment:', productId);
-        await this.processPurchase({ 
-          productId,
-          transactionReceipt: 'mock-receipt-for-non-production'
-        });
-        return true;
-      }
-      
-      // If in test environment, also simulate
-      if (this.isTestEnvironment()) {
-        console.log('🧪 Simulating purchase in test environment:', productId);
-        await this.processPurchase({ 
-          productId,
-          transactionReceipt: 'mock-receipt-for-test-environment'
-        });
-        return true;
-      }
-      
-      // Request the real purchase
-      console.log('💳 Requesting purchase:', productId);
+      // For production builds, request real purchase
+      console.log('💳 Requesting real purchase:', productId);
       await requestPurchase(productId);
       return true;
     } catch (error) {
@@ -557,13 +494,8 @@ class IAPManager {
     }
   }
 
-  // Check if a pack is purchased
+  // Check if a trivia pack is purchased
   async isPackPurchased(packId) {
-    // If not a production build, all packs are purchased
-    if (!IS_PRODUCTION_BUILD) {
-      return true;
-    }
-    
     // First check if they have the everything bundle
     const hasBundle = await this.isPurchased(PRODUCT_IDS.EVERYTHING_BUNDLE);
     if (hasBundle) return true;
@@ -575,13 +507,8 @@ class IAPManager {
     return await this.isPurchased(productId);
   }
 
-  // Check if a DaresONLY pack is purchased
+  // Check if a dares pack is purchased
   async isDaresPurchased(packId) {
-    // If not a production build, all packs are purchased
-    if (!IS_PRODUCTION_BUILD) {
-      return true;
-    }
-    
     // First check if they have the everything bundle
     const hasBundle = await this.isPurchased(PRODUCT_IDS.EVERYTHING_BUNDLE);
     if (hasBundle) return true;
@@ -593,14 +520,10 @@ class IAPManager {
     return await this.isPurchased(productId);
   }
 
-  // Get all purchased packs
+  // Get all purchased trivia packs
   async getPurchasedPacks() {
     try {
-      // If not a production build, return all packs
-      if (!IS_PRODUCTION_BUILD) {
-        return Object.keys(PACK_TO_PRODUCT_MAP);
-      }
-      
+      // For production builds, check real purchases
       const purchasesJson = await AsyncStorage.getItem(PURCHASE_KEY);
       if (!purchasesJson) return [];
       
@@ -627,14 +550,10 @@ class IAPManager {
     }
   }
 
-  // Get all purchased DaresONLY packs
+  // Get all purchased dares packs
   async getPurchasedDaresPacks() {
     try {
-      // If not a production build, return all dares packs
-      if (!IS_PRODUCTION_BUILD) {
-        return Object.keys(DARES_TO_PRODUCT_MAP);
-      }
-      
+      // For production builds, check real purchases
       const purchasesJson = await AsyncStorage.getItem(PURCHASE_KEY);
       if (!purchasesJson) return [];
       
@@ -668,18 +587,8 @@ class IAPManager {
     }
     
     try {
-      // If not a production build, simulate all purchases restored
-      if (!IS_PRODUCTION_BUILD || this.isTestEnvironment()) {
-        console.log('🧪 Simulating purchase restoration in non-production environment');
-        // Simulate everything bundle purchase
-        await this.processPurchase({
-          productId: PRODUCT_IDS.EVERYTHING_BUNDLE,
-          transactionReceipt: 'mock-receipt-for-restoration'
-        });
-        return true;
-      }
-      
-      console.log('🔄 Restoring purchases from store...');
+      // For production builds, restore real purchases
+      console.log('🔄 Restoring real purchases from store...');
       // Get available purchases from store
       const purchases = await getAvailablePurchases();
       
@@ -689,6 +598,12 @@ class IAPManager {
         for (const purchase of purchases) {
           await this.processPurchase(purchase);
         }
+        
+        // Call purchase complete callback if it exists
+        if (this.onPurchaseComplete && typeof this.onPurchaseComplete === 'function') {
+          this.onPurchaseComplete();
+        }
+        
         return true;
       }
       

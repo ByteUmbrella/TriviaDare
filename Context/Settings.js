@@ -354,7 +354,7 @@ const SettingsContent = () => {
             <Text style={styles.footerText}>TriviaDare®</Text>
           </Pressable>
           <View style={styles.versionContainer}>
-            <Text style={styles.version}>Version 1.0.4</Text>
+            <Text style={styles.version}>Version 1.0.0</Text>
             {!showInflatedNumbers && (
               <Text style={styles.trueNumbersIndicator}>Showing True Numbers</Text>
             )}

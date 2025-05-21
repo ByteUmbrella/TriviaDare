@@ -25,6 +25,7 @@ import { useCustomDares } from '../Context/CustomDaresContext';
 import { debounce } from 'lodash';
 import { useFocusEffect } from '@react-navigation/native';
 import iapManager from '../Context/IAPManager'; // Add this import
+import { CommonActions } from '@react-navigation/native';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 const GRID_PADDING = SCREEN_WIDTH * 0.04; // 4% of screen width
@@ -75,7 +76,10 @@ const PackCard = memo(({ item, packCounts, customCounts, onPress, showDareCounts
   return (
     <Animated.View style={[styles.cardContainer, cardTransform]}>
       <TouchableOpacity
-        style={styles.card}
+        style={[
+          styles.card,
+          isPurchased && price && styles.purchasedCard // Add green border for purchased premium packs
+        ]}
         onPress={() => isPurchased ? onPress(item) : onPurchase(item)}
         activeOpacity={Platform.OS === 'android' ? 0.7 : 0.9}
       >
@@ -100,11 +104,15 @@ const PackCard = memo(({ item, packCounts, customCounts, onPress, showDareCounts
           )}
           
           {/* Lock Overlay for non-purchased premium packs */}
-          {!isPurchased && price && (
+          {!isPurchased && price ? (
             <View style={styles.lockOverlay}>
               <Ionicons name="lock-closed" size={40} color="#FFD700" />
             </View>
-          )}
+          ) : isPurchased && price ? (
+            <View style={styles.purchasedBadge}>
+              <Text style={styles.purchasedText}>OWNED</Text>
+            </View>
+          ) : null}
           
           <View style={styles.cardOverlay}>
             <Text 
@@ -178,6 +186,33 @@ const DarePackSelectionScreen = ({ navigation }) => {
     }, [modalVisible, showCustomDaresModal])
   );
 
+  // Set up purchase completion callback
+  useEffect(() => {
+    // Set callback for purchases
+    const setupPurchaseCallback = async () => {
+      // Initialize IAP manager 
+      await iapManager.initialize();
+      
+      // Set the purchase completion callback
+      iapManager.onPurchaseComplete = async () => {
+        console.log('Purchase callback triggered');
+        // Refresh purchase states
+        await checkPurchaseStates();
+        // Show success message
+        Alert.alert('Purchase Successful', 'Your purchase has been completed!');
+      };
+    };
+    
+    setupPurchaseCallback();
+    
+    // Cleanup on unmount
+    return () => {
+      if (iapManager) {
+        iapManager.onPurchaseComplete = null;
+      }
+    };
+  }, []);
+
   useEffect(() => {
     if (isFlipped) {
       Animated.timing(contentOpacity, {
@@ -209,147 +244,220 @@ const DarePackSelectionScreen = ({ navigation }) => {
   }, [navigation]);
 
   useEffect(() => {
-    const loadCounts = async () => {
-      setIsLoading(true);
-      const counts = {};
-      const customCounts = {};
+  const loadCounts = async () => {
+    setIsLoading(true);
+    const counts = {};
+    const customCounts = {};
+    
+    try {
+      console.log('📊 Loading pack counts and dare counts');
       
-      try {
-        // On Android, process in smaller batches to prevent ANR
-        if (Platform.OS === 'android') {
-          const batchSize = 3;
-          for (let i = 0; i < packs.length; i += batchSize) {
-            const batchPacks = packs.slice(i, i + batchSize);
-            for (const pack of batchPacks) {
-              counts[pack.name] = Array.isArray(pack.dares) ? pack.dares.length : 0;
-              customCounts[pack.name] = await getCustomDareCount(pack.name);
-            }
-          }
-        } else {
-          // Original iOS implementation
-          for (const pack of packs) {
+      // On Android, process in smaller batches to prevent ANR
+      if (Platform.OS === 'android') {
+        const batchSize = 3;
+        for (let i = 0; i < packs.length; i += batchSize) {
+          const batchPacks = packs.slice(i, i + batchSize);
+          for (const pack of batchPacks) {
             counts[pack.name] = Array.isArray(pack.dares) ? pack.dares.length : 0;
             customCounts[pack.name] = await getCustomDareCount(pack.name);
           }
         }
-      } catch (error) {
-        console.error('Error loading dare counts:', error);
-      } finally {
-        setPackCounts(counts);
-        setCustomCounts(customCounts);
-        setIsLoading(false);
-      }
-    };
- 
-    loadCounts();
-    checkPurchaseStates();
-  }, []);
-
-  const checkPurchaseStates = async () => {
-    try {
-      const states = {};
-      
-      console.log('=== DEBUG PURCHASE STATES ===');
-      
-      // Initialize IAP manager first
-      const initialized = await iapManager.initialize();
-      console.log('IAP Manager initialized:', initialized);
-      
-      // Now access the maps from the instance
-      console.log('DARES_TO_PRODUCT_MAP:', iapManager.DARES_TO_PRODUCT_MAP);
-      console.log('PRODUCT_IDS:', iapManager.PRODUCT_IDS);
-      
-      // Check each pack's purchase status
-      for (const pack of packs) {
-        console.log(`\nChecking pack: ${pack.name}`);
-        console.log(`isPremium: ${pack.isPremium}`);
-        console.log(`price: ${pack.price}`);
-        
-        if (pack.isPremium) {
-          // Map pack names to the keys used in DARES_TO_PRODUCT_MAP
-          let packKey = '';
-          switch (pack.name) {
-            case 'Spicy':
-              packKey = 'spicy';
-              break;
-            case 'House Party':
-              packKey = 'houseparty';
-              break;
-            case 'Couples':
-              packKey = 'couples';
-              break;
-            case 'Bar':
-              packKey = 'bar';
-              break;
-          }
-          
-          console.log(`Pack key: ${packKey}`);
-          console.log(`Product ID from map: ${iapManager.DARES_TO_PRODUCT_MAP[packKey]}`);
-          
-          if (packKey) {
-            try {
-              // First check what isDaresPurchased returns
-              const purchased = await iapManager.isDaresPurchased(packKey);
-              console.log(`isDaresPurchased(${packKey}): ${purchased}`);
-              states[pack.name] = purchased;
-            } catch (error) {
-              console.error(`Error checking if ${packKey} is purchased:`, error);
-              states[pack.name] = false; // Default to not purchased on error
-            }
-          }
-        } else {
-          // Free packs are always available
-          states[pack.name] = true;
-          console.log('FREE PACK - always available');
+      } else {
+        // Original iOS implementation
+        for (const pack of packs) {
+          counts[pack.name] = Array.isArray(pack.dares) ? pack.dares.length : 0;
+          customCounts[pack.name] = await getCustomDareCount(pack.name);
         }
       }
-      
-      console.log('\nFinal states:', states);
-      setPurchaseStates(states);
     } catch (error) {
-      console.error('Error checking purchase states:', error);
-      
-      // Fallback: Set all free packs as available, premium packs as locked
-      const fallbackStates = {};
-      packs.forEach(pack => {
-        fallbackStates[pack.name] = !pack.isPremium;
-      });
-      setPurchaseStates(fallbackStates);
+      console.error('Error loading dare counts:', error);
+    } finally {
+      setPackCounts(counts);
+      setCustomCounts(customCounts);
+      setIsLoading(false);
     }
   };
 
-  const handlePurchase = async (pack) => {
-    try {
-      // Map pack names to product IDs
-      let productId = '';
+  console.log('🚀 Loading counts and checking purchase states');
+  loadCounts();
+  
+  // Check IAP environment
+  console.log('🔒 Production mode active:', !__DEV__);
+  console.log('📱 Platform:', Platform.OS);
+  
+  // Add more explicit logging around IAP checks
+  console.log('💰 Checking purchase states for premium packs...');
+  checkPurchaseStates().then(() => {
+    console.log('✅ Purchase state checking complete');
+    
+    // Log premium packs status
+    const premiumPacks = packs.filter(pack => pack.isPremium);
+    premiumPacks.forEach(pack => {
+      console.log(`📦 Premium pack: ${pack.name}, purchased: ${purchaseStates[pack.name] === true}`);
+    });
+  });
+}, []);
+
+  const checkPurchaseStates = async () => {
+  try {
+    const states = {};
+    
+    console.log('=== Checking Purchase States ===');
+    
+    // Check if we are in production/TestFlight
+    const isProductionBuild = !__DEV__;
+    console.log('Is production build:', isProductionBuild);
+    
+    // Initialize IAP manager if needed
+    if (!iapManager.isInitialized) {
+      await iapManager.initialize();
+    }
+    
+    // Get the purchased dares packs
+    const purchasedDaresPacks = await iapManager.getPurchasedDaresPacks();
+    console.log('Purchased dares packs:', purchasedDaresPacks);
+    
+    // Check bundle purchase first
+    const hasBundle = await iapManager.isPurchased(iapManager.PRODUCT_IDS.EVERYTHING_BUNDLE);
+    console.log('Everything bundle purchased:', hasBundle);
+    
+    // Set purchase states for each pack
+    for (const pack of packs) {
+      // Free packs are always available
+      if (!pack.isPremium) {
+        states[pack.name] = true;
+        continue;
+      }
+      
+      // If bundle is purchased, all packs are available
+      if (hasBundle) {
+        states[pack.name] = true;
+        continue;
+      }
+      
+      // Map pack names to the keys used in DARES_TO_PRODUCT_MAP
+      let packKey = '';
       switch (pack.name) {
         case 'Spicy':
-          productId = iapManager.PRODUCT_IDS?.DARES_SPICY;
+          packKey = 'spicy';
           break;
         case 'House Party':
-          productId = iapManager.PRODUCT_IDS?.DARES_HOUSEPARTY;
+          packKey = 'houseparty';
           break;
         case 'Couples':
-          productId = iapManager.PRODUCT_IDS?.DARES_COUPLES;
+          packKey = 'couples';
           break;
         case 'Bar':
-          productId = iapManager.PRODUCT_IDS?.DARES_BAR;
+          packKey = 'bar';
           break;
       }
-
-      if (productId) {
-        const success = await iapManager.purchaseProduct(productId);
-        if (success) {
-          // Refresh purchase states after successful purchase
-          await checkPurchaseStates();
-          Alert.alert('Success', `${pack.name} pack purchased successfully!`);
-        } else {
-          Alert.alert('Purchase Failed', 'Unable to complete purchase. Please try again.');
-        }
+      
+      // Check if the specific pack is purchased
+      if (packKey && purchasedDaresPacks.includes(packKey)) {
+        states[pack.name] = true;
+      } else {
+        // Premium packs are locked by default
+        states[pack.name] = false;
       }
+    }
+    
+    // Log detailed purchase state information for debugging
+    console.log('Final purchase states:', states);
+    
+    // Extra logging for premium packs for clarity
+    const premiumPacks = packs.filter(p => p.isPremium);
+    for (const pack of premiumPacks) {
+      console.log(`Premium pack "${pack.name}" locked status: ${!states[pack.name]}`);
+    }
+    
+    setPurchaseStates(states);
+  } catch (error) {
+    console.error('Error checking purchase states:', error);
+    
+    // Fallback: Always set premium packs as locked in case of any errors
+    const fallbackStates = {};
+    packs.forEach(pack => {
+      fallbackStates[pack.name] = !pack.isPremium;
+    });
+    console.log('Using fallback purchase states due to error:', fallbackStates);
+    setPurchaseStates(fallbackStates);
+  }
+};
+
+  const handlePurchase = async (pack) => {
+    try {
+      console.log('Starting purchase flow for:', pack.name);
+      
+      // Map pack names to product IDs
+      let packKey = '';
+      switch (pack.name) {
+        case 'Spicy':
+          packKey = 'spicy';
+          break;
+        case 'House Party':
+          packKey = 'houseparty';
+          break;
+        case 'Couples':
+          packKey = 'couples';
+          break;
+        case 'Bar':
+          packKey = 'bar';
+          break;
+        default:
+          throw new Error('Unknown pack');
+      }
+
+      // First verify this pack is actually mapped to a product ID
+      if (!packKey || !iapManager.DARES_TO_PRODUCT_MAP[packKey]) {
+        console.error('No product ID found for pack:', pack.name);
+        Alert.alert('Purchase Error', 'Could not find this product. Please try again later.');
+        return;
+      }
+
+      // Get the actual product ID
+      const productId = iapManager.DARES_TO_PRODUCT_MAP[packKey];
+      console.log('Initiating purchase for product ID:', productId);
+      
+      // Show purchase confirmation dialog
+      Alert.alert(
+        `Purchase ${pack.name}`,
+        `Would you like to purchase the ${pack.name} pack for $${pack.price}?`,
+        [
+          {
+            text: "Cancel",
+            style: "cancel"
+          },
+          {
+            text: "Purchase",
+            onPress: async () => {
+              try {
+                // Show loading indicator if you have one
+                setIsLoading(true);
+                
+                console.log('Calling purchaseProduct() with ID:', productId);
+                const success = await iapManager.purchaseProduct(productId);
+                
+                if (success) {
+                  console.log('Purchase initiated successfully');
+                  // Note: Final success is handled by the purchaseUpdateListener
+                  // in the IAPManager which will trigger onPurchaseComplete callback
+                } else {
+                  console.log('Purchase not initiated');
+                  Alert.alert('Purchase Cancelled', 'The purchase was not completed.');
+                }
+              } catch (error) {
+                console.error('Purchase error:', error);
+                Alert.alert('Purchase Error', 'An error occurred during purchase. Please try again.');
+              } finally {
+                setIsLoading(false);
+              }
+            }
+          }
+        ]
+      );
     } catch (error) {
-      console.error('Purchase error:', error);
-      Alert.alert('Error', 'An error occurred during purchase. Please try again.');
+      console.error('Purchase setup error:', error);
+      Alert.alert('Error', 'There was a problem setting up the purchase. Please try again.');
     }
   };
 
@@ -590,37 +698,49 @@ const DarePackSelectionScreen = ({ navigation }) => {
   ];
 
   const renderItem = useCallback(({ item, index }) => {
-    // Calculate card entrance animation delay
-    const animationDelay = index * 100;
-    const isPurchased = purchaseStates[item.name] !== false; // Show as purchased by default if state is undefined
-    
-    return (
-      <Animated.View 
-        style={{
-          opacity: cardsAnimation,
-          transform: [
-            {
-              translateY: cardsAnimation.interpolate({
-                inputRange: [0, 1],
-                outputRange: [50, 0]
-              })
-            }
-          ]
-        }}
-      >
-        <PackCard
-          item={item}
-          packCounts={packCounts}
-          customCounts={customCounts}
-          onPress={handleSelectPack}
-          showDareCounts={showDareCounts}
-          isPurchased={isPurchased}
-          price={item.isPremium ? item.price : null}
-          onPurchase={handlePurchase}
-        />
-      </Animated.View>
-    );
-  }, [packCounts, customCounts, handleSelectPack, cardsAnimation, showDareCounts, purchaseStates, handlePurchase]);
+  // Calculate card entrance animation delay
+  const animationDelay = index * 100;
+  
+  // Add explicit logging for premium packs
+  if (item.isPremium) {
+    console.log(`Premium pack ${item.name}:`, {
+      state: purchaseStates[item.name],
+      isPremium: item.isPremium,
+      price: item.price,
+      isLocked: !(purchaseStates[item.name] === true)
+    });
+  }
+  
+  // Make sure we use precise equality check - not using default value
+  const isPurchased = purchaseStates[item.name] === true;
+  
+  return (
+    <Animated.View 
+      style={{
+        opacity: cardsAnimation,
+        transform: [
+          {
+            translateY: cardsAnimation.interpolate({
+              inputRange: [0, 1],
+              outputRange: [50, 0]
+            })
+          }
+        ]
+      }}
+    >
+      <PackCard
+        item={item}
+        packCounts={packCounts}
+        customCounts={customCounts}
+        onPress={handleSelectPack}
+        showDareCounts={showDareCounts}
+        isPurchased={isPurchased} // Use the explicit value
+        price={item.isPremium ? item.price : null}
+        onPurchase={handlePurchase}
+      />
+    </Animated.View>
+  );
+}, [packCounts, customCounts, handleSelectPack, cardsAnimation, showDareCounts, purchaseStates, handlePurchase]);
 
   return (
     <View style={styles.container}>
@@ -631,16 +751,23 @@ const DarePackSelectionScreen = ({ navigation }) => {
       >
         <View style={styles.feltOverlay} />
         <View style={styles.mainContent}>
-          {/* Header Section with enhanced casino styling */}
+          {/* Header Section with enhanced casino styling - UPDATED FOR CENTERING */}
           <View style={styles.header}>
             <TouchableOpacity
-              style={styles.backButton}
-              onPress={() => navigation.goBack()}
-              hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
-            >
-              <Ionicons name="arrow-back" size={24} color="#FFD700" />
-            </TouchableOpacity>
-            <View style={styles.titleContainer}>
+  style={styles.backButton}
+  onPress={() => {
+    // Use the CommonActions to dispatch an immediate back action
+    navigation.dispatch(CommonActions.goBack());
+  }}
+  hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
+>
+  <Ionicons name="arrow-back" size={24} color="#FFD700" />
+</TouchableOpacity>
+            
+            {/* This empty view balances the header */}
+            <View style={styles.headerSpacer} />
+            
+            <View style={styles.titleContainerCentered}>
               <Pressable
                 onLongPress={handleTitleLongPress}
                 delayLongPress={1000}
@@ -657,6 +784,9 @@ const DarePackSelectionScreen = ({ navigation }) => {
                 )}
               </Pressable>
             </View>
+            
+            {/* This empty view balances the back button */}
+            <View style={styles.headerSpacer} />
           </View>
   
           {/* Grid Section */}
@@ -1061,777 +1191,145 @@ const DarePackSelectionScreen = ({ navigation }) => {
   );
 };
 
+// Add the new styles here
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#000',
   },
   backgroundImage: {
     flex: 1,
-    width: '100%',
-    height: '100%',
     resizeMode: 'cover',
   },
-  // Enhanced casino felt overlay
   feltOverlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(28, 115, 51, 0.2)', // Green felt overlay
-    opacity: 0.8,
+    backgroundColor: 'rgba(0, 0, 0, 0.2)', // Changed from 0.65 to 0.5 for lighter background
   },
   mainContent: {
     flex: 1,
-    paddingTop: Platform.OS === 'ios' ? 60 : 40,
+    paddingTop: Platform.OS === 'ios' ? 50 : 20,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: -19,
+    justifyContent: 'space-between', // Changed to ensure proper spacing
     paddingHorizontal: 20,
+    marginBottom: 10,
+  },
+  backButton: {
+    padding: 8,
+    borderRadius: 20,
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  headerSpacer: {
+    width: 40, // Match the size of the back button for balance
+    height: 30,
+  },
+  titleContainerCentered: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+    paddingTop: 25,
   },
   titlePressable: {
     alignItems: 'center',
-    width: '100%',
-  },
-  titleContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  backButton: {
-    marginRight: -45,
-    padding: 10,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    borderRadius: 20,
-    borderWidth: 1,
-    borderColor: '#FFD700', // Gold border for casino feel
-  },
-  titleContainer: {
-    flex: 1,
-    alignItems: 'center',
   },
   title: {
-    fontSize: scaleFontSize(28),
+    fontSize: scaleFontSize(32),
     fontWeight: 'bold',
-    color: '#FFD700', // Casino gold color
-    ...Platform.select({
-      ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 10,
-      },
-      android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 5,
-      }
-    }),
-  },
-  developerModeText: {
-    fontSize: scaleFontSize(12),
-    color: '#e74c3c', // Red text to indicate developer mode is active
+    color: '#FFD700',
     textAlign: 'center',
-    marginTop: 4,
-    fontWeight: 'bold',
+    // Removed marginLeft: 20 that was causing off-center alignment
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 3,
   },
-  // Casino title decoration
   titleDecoration: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 5,
-    width: '60%',
   },
   titleLine: {
-    flex: 1,
     height: 1,
+    width: 50,
     backgroundColor: '#FFD700',
+    marginHorizontal: 8,
+  },
+  developerModeText: {
+    color: '#ff4500',
+    fontSize: 12,
+    marginTop: 3,
   },
   instruction: {
-    color: '#FFD700', // Gold text
+    color: 'white',
+    fontSize: 16,
     textAlign: 'center',
-    fontSize: scaleFontSize(18),
-    marginVertical: 15,
-    fontWeight: 'bold',
-    ...Platform.select({
-      ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 5,
-      },
-      android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 3,
-      }
-    }),
+    marginTop: 10,
+    marginBottom: 20,
+    fontWeight: '500',
   },
   gridContent: {
-    padding: GRID_PADDING,
+    paddingHorizontal: GRID_PADDING,
+    paddingBottom: 30,
   },
   row: {
     justifyContent: 'space-between',
+    marginBottom: CARD_MARGIN,
   },
-  // Enhanced card styling for casino feel
   cardContainer: {
     width: CARD_WIDTH,
     height: CARD_HEIGHT,
-    marginBottom: CARD_MARGIN * 2,
-    borderRadius: 15,
-    transform: [{ perspective: 1000 }],
-    ...Platform.select({
-      ios: {
-        shadowColor: '#FFD700', // Gold shadow for casino feel
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.8,
-        shadowRadius: 5,
-      },
-      android: {
-        elevation: 8,
-      }
-    }),
+    marginVertical: 8,
   },
   card: {
     flex: 1,
-    borderRadius: 15,
+    borderRadius: 10,
     overflow: 'hidden',
-    backgroundColor: '#1a1a1a', // Dark card background
+    backgroundColor: '#1a1a1a',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.5,
+    shadowRadius: 5,
+    elevation: 5,
+  },
+  // Add purchased card styling
+  purchasedCard: {
+    borderColor: '#00C853',
     borderWidth: 2,
-    borderColor: '#FFD700', // Gold border
+    shadowColor: '#00C853',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.5,
+    shadowRadius: 5,
+    elevation: 6,
   },
   cardImage: {
-    width: '100%',
-    height: '100%',
+    flex: 1,
+    justifyContent: 'flex-end',
+    padding: 10,
   },
   cardImageStyle: {
-    borderRadius: 15,
+    borderRadius: 10,
+    resizeMode: 'cover',
   },
   cardOverlay: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    padding: 12,
-    borderBottomLeftRadius: 15,
-    borderBottomRightRadius: 15,
-    borderTopWidth: 1,
-    borderTopColor: '#FFD700',
-    paddingBottom: 8, // Add some bottom padding to accommodate the badge
-  },
-  ageRestrictedBadge: {
-    position: 'absolute',
-    top: 8,
-    left: 8,
-    zIndex: 10, // Ensure it appears above other elements
-    backgroundColor: '#D50000',
-    borderRadius: 120,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderWidth: 2,
-    borderColor: 'white',
-    width: 55, // Increase width to accommodate horizontal text
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  ageRestrictedText: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 18,
-    textAlign: 'center',
-    flexDirection: 'row', // Ensure text flows horizontally
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    padding: 10,
+    borderRadius: 5,
   },
   packName: {
-    color: '#FFD700', // Gold text
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 16 : 18),
+    color: 'white',
+    fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 4,
-    numberOfLines: 1,
-    ellipsizeMode: 'tail',
-    ...Platform.select({
-      ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 5,
-      },
-      android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 3,
-      }
-    }),
-  },
-  packDescription: {
-    color: 'white',
-    fontSize: scaleFontSize(12),
-    textAlign: 'center',
-    marginBottom: 4,
-    ...Platform.select({
-      ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 5,
-      },
-      android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 3,
-      }
-    }),
   },
   packDareCount: {
-    color: 'white',
-    fontSize: scaleFontSize(12),
-    textAlign: 'center',
-    ...Platform.select({
-      ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 5,
-      },
-      android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 3,
-      }
-    }),
-  },
-  // Enhanced modal styling for casino feel
-  modalContainer: {
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  centeredView: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  modalView: {
-    margin: Math.min(20, SCREEN_WIDTH * 0.05), // Responsive margin
-    backgroundColor: '#1a1a1a', // Dark background for casino feel
-    borderRadius: 20,
-    padding: Platform.OS === 'android' ? 
-      Math.min(25, SCREEN_WIDTH * 0.06) : 
-      Math.min(35, SCREEN_WIDTH * 0.08),
-    alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#FFD700', // Gold border
-    ...Platform.select({
-      ios: {
-        shadowColor: '#FFD700', // Gold shadow for casino feel
-        shadowOffset: {
-          width: 0,
-          height: 3
-        },
-        shadowOpacity: 0.8,
-        shadowRadius: 8,
-      },
-      android: {
-        elevation: 10,
-      }
-    }),
-    width: SCREEN_WIDTH > 600 ? '80%' : '90%', // Adjust width for tablets
-    maxWidth: 500, // Maximum width cap
-    transform: [{ perspective: 1000 }],
-    backfaceVisibility: 'hidden',
-  },
-  modalContent: {
-    width: '100%',
-    alignItems: 'center',
-    paddingVertical: 20,
-    backgroundColor: 'transparent',
-    borderRadius: 20,
-  },
-  // Casino-style separator
-  casinoSeparator: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    width: '80%',
-    marginVertical: 10,
-  },
-  separatorLine: {
-    flex: 1,
-    height: 1,
-    backgroundColor: '#FFD700',
-  },
-  modalTitle: {
-    fontSize: scaleFontSize(24),
-    fontWeight: 'bold',
-    marginBottom: 5,
-    color: '#FFD700', // Gold text
-    textAlign: 'center',
-    ...Platform.select({
-      ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 3,
-      },
-      android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 2,
-      }
-    }),
-  },
-  priceBadge: {
-    position: 'absolute',
-    top: 8,
-    right: 8,
-    backgroundColor: '#2E7D32',
-    borderRadius: 12,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderWidth: 2,
-    borderColor: '#4CAF50',
-    zIndex: 10, // Above everything else
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.4,
-        shadowRadius: 3,
-      },
-      android: {
-        elevation: 5,
-      }
-    }),
-  },
-  priceText: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: scaleFontSize(14),
-    textAlign: 'center',
-  },
-  lockOverlay: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: [
-      { translateX: -20 },
-      { translateY: -20 }
-    ],
-    backgroundColor: 'rgba(0, 0, 0, 0.6)',
-    borderRadius: 30,
-    padding: 10,
-    zIndex: 5,
-  },
-  modalSubtitle: {
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 16 : 18),
-    color: 'white',
-    marginBottom: 10,
-    textAlign: 'center',
-  },
-  modalDescription: {
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 14 : 16),
-    marginBottom: 20,
-    textAlign: 'center',
-    color: '#e0e0e0', // Light gray
-    paddingHorizontal: 10,
-  },
-  customDareButtonsContainer: {
-    width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    marginVertical: 10,
-  },
-  // Casino-styled buttons
-  customDareButton: {
-    flex: 0.48,
-    backgroundColor: '#D4AF37', // Slightly darker gold
-    padding: 10,
-    borderRadius: 15,
-    borderWidth: 1,
-    borderColor: '#FFD700',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.25,
-        shadowRadius: 3,
-      },
-      android: {
-        elevation: 5,
-      }
-    }),
-  },
-  customDareButtonActive: {
-    backgroundColor: '#b8860b', // Darker gold when active
-  },
-  customDareButtonText: {
-    color: 'black',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 14 : 16),
-  },
-  viewCustomButton: {
-    flex: 0.48,
-    backgroundColor: '#2962FF',
-    padding: 10,
-    borderRadius: 15,
-    borderWidth: 1,
-    borderColor: '#90CAF9',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.25,
-        shadowRadius: 3,
-      },
-      android: {
-        elevation: 5,
-      }
-    }),
-  },
-  viewCustomButtonActive: {
-    backgroundColor: '#1E40AF',
-  },
-  viewCustomButtonText: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 14 : 16),
-  },
-  customDaresModalView: {
-    maxHeight: '80%',
-    width: '90%',
-    backgroundColor: '#1a1a1a', // Dark background
-    borderRadius: 20,
-    padding: 20,
-    alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#FFD700', // Gold border
-    ...Platform.select({
-      ios: {
-        shadowColor: '#FFD700',
-        shadowOffset: { width: 0, height: 4 },
-        shadowOpacity: 0.5,
-        shadowRadius: 8,
-      },
-      android: {
-        elevation: 10,
-      }
-    }),
-  },
-  daresList: {
-    width: '100%',
-    maxHeight: '80%',
-    paddingHorizontal: 10,
-    marginTop: 10,
-  },
-  dareItem: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: '#333',
-    backgroundColor: '#282828', // Dark background
-    borderRadius: 10,
-    marginBottom: 8,
-    borderWidth: 1,
-    borderColor: '#444',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#FFD700',
-        shadowOffset: { width: 0, height: 1 },
-        shadowOpacity: 0.2,
-        shadowRadius: 3,
-      },
-      android: {
-        elevation: 3,
-      }
-    }),
-  },
-  dareText: {
-    flex: 1,
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 14 : 16),
-    color: 'white',
-    paddingRight: 10,
-    lineHeight: Platform.OS === 'android' ? 20 : 22,
-  },
-  dareActions: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    borderRadius: 20,
-    padding: 4,
-  },
-  editButton: {
-    padding: 8,
-    marginRight: 6,
-    backgroundColor: 'rgba(33, 150, 243, 0.2)',
-    borderRadius: 15,
-  },
-  deleteButton: {
-    padding: 8,
-    backgroundColor: 'rgba(244, 67, 54, 0.2)',
-    borderRadius: 15,
-  },
-  saveButton: {
-    padding: 8,
-    marginRight: 6,
-    backgroundColor: 'rgba(76, 175, 80, 0.2)',
-    borderRadius: 15,
-  },
-  cancelButton: {
-    padding: 8,
-    backgroundColor: 'rgba(158, 158, 158, 0.2)',
-    borderRadius: 15,
-  },
-  editDareInput: {
-    flex: 1,
-    borderWidth: 1,
-    borderColor: '#2196F3',
-    borderRadius: 8,
-    padding: 10,
-    marginRight: 10,
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 14 : 16),
-    color: 'white',
-    backgroundColor: '#333',
-    minHeight: 40,
-  },
-  noDaresText: {
-    fontSize: scaleFontSize(16),
-    color: '#aaa',
-    textAlign: 'center',
-    marginTop: 20,
-  },
-  customDareInputContainer: {
-    width: '100%',
-    marginVertical: 10,
-    padding: 10,
-  },
-  customDareInput: {
-    borderWidth: 1,
-    borderColor: '#444',
-    borderRadius: 10,
-    padding: 10,
-    minHeight: Platform.OS === 'android' ? 60 : 80, // Smaller on Android
-    width: '100%',
-    textAlignVertical: 'top',
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 14 : 16),
-    color: 'white',
-    backgroundColor: '#333',
-  },
-  createDareButton: {
-    backgroundColor: '#4CAF50',
-    padding: Platform.OS === 'android' ? 8 : 10,
-    borderRadius: 10,
-    marginTop: 10,
-    width: '100%',
-    borderWidth: 1,
-    borderColor: '#2E7D32',
-    ...Platform.select({
-      android: {
-        elevation: 3,
-      }
-    }),
-  },
-  createDareButtonDisabled: {
-    backgroundColor: '#444',
-    borderColor: '#333',
-  },
-  createDareButtonText: {
-    color: 'white',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: scaleFontSize(14),
-  },
-  successMessage: {
-    position: 'absolute',
-    top: 10,
-    backgroundColor: '#388E3C',
-    padding: 10,
-    borderRadius: 20,
-    zIndex: 2,
-    borderWidth: 1,
-    borderColor: '#81C784',
-    ...Platform.select({
-      android: {
-        elevation: 8,
-      }
-    }),
-  },
-  successText: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: scaleFontSize(14),
-  },
-  previewButton: {
-    backgroundColor: '#388E3C',
-    padding: 10,
-    borderRadius: 15,
-    marginVertical: 15,
-    width: '80%',
-    borderWidth: 1,
-    borderColor: '#81C784',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.3,
-        shadowRadius: 4,
-      },
-      android: {
-        elevation: 5,
-      }
-    }),
-  },
-  previewButtonActive: {
-    backgroundColor: '#2E7D32',
-  },
-  previewButtonText: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 14 : 16),
-  },
-  previewContainer: {
-    backgroundColor: '#282828',
-    padding: 15,
-    borderRadius: 10,
-    marginVertical: 10,
-    width: '100%',
-    borderWidth: 1,
-    borderColor: '#444',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.2,
-        shadowRadius: 3,
-      },
-      android: {
-        elevation: 3,
-      }
-    }),
-  },
-  previewDare: {
-    fontSize: scaleFontSize(Platform.OS === 'android' ? 13 : 14),
-    marginVertical: 5,
-    color: '#e0e0e0',
-  },
-  // Enhanced counter styling like casino chips
-  counterContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginVertical: 20,
-  },
-  counterButton: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#D4AF37',
-    marginHorizontal: 15,
-    borderWidth: 2,
-    borderColor: '#FFD700',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#FFD700',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.5,
-        shadowRadius: 3,
-      },
-      android: {
-        elevation: 5,
-      }
-    }),
-  },
-  counterButtonText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: 'black',
-  },
-  counterTextContainer: {
-    width: 54,
-    height: 54,
-    borderRadius: 27,
-    backgroundColor: '#1a1a1a',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#FFD700',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#FFD700',
-        shadowOffset: { width: 0, height: 0 },
-        shadowOpacity: 0.6,
-        shadowRadius: 6,
-      },
-      android: {
-        elevation: 6,
-      }
-    }),
-  },
-  counterText: {
-    fontSize: 28,
-    fontWeight: 'bold',
     color: '#FFD700',
-    minWidth: 30,
+    fontSize: 12,
     textAlign: 'center',
-    ...Platform.select({
-      ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: 0, height: 1 },
-        textShadowRadius: 2,
-      },
-      android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: 0, height: 1 },
-        textShadowRadius: 1,
-      }
-    }),
-  },
-  confirmButton: {
-    backgroundColor: '#2196F3',
-    paddingVertical: 12,
-    paddingHorizontal: 30,
-    borderRadius: 25,
-    marginTop: 15,
-    width: '80%',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#64B5F6',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#2196F3',
-        shadowOffset: { width: 0, height: 3 },
-        shadowOpacity: 0.5,
-        shadowRadius: 5,
-      },
-      android: {
-        elevation: 6,
-      }
-    }),
-  },
-  confirmButtonText: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: scaleFontSize(18),
-  },
-  closeButton: {
-    position: 'absolute',
-    top: 10,
-    right: 10,
-    zIndex: 1,
-    padding: 5,
-  },
-  buttonClose: {
-    borderRadius: 20,
-    padding: 10,
-    ...Platform.select({
-      ios: {
-        elevation: 2,
-      },
-      android: {
-        elevation: 2,
-      }
-    }),
+    marginTop: 3,
   },
   loadingContainer: {
     flex: 1,
@@ -1839,21 +1337,353 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   loadingText: {
-    fontSize: scaleFontSize(18),
     color: '#FFD700',
+    fontSize: 18,
     textAlign: 'center',
-    ...Platform.select({
-      ios: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 5,
-      },
-      android: {
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 3,
-      }
-    }),
+  },
+  centeredView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalContainer: {
+    width: '90%',
+    maxWidth: 400,
+    padding: 10,
+    height: 'auto',
+  },
+  modalView: {
+    backgroundColor: '#1a1a1a',
+    borderRadius: 20,
+    padding: 20,
+    width: '100%',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+    borderWidth: 2,
+    borderColor: '#FFD700',
+  },
+  modalContent: {
+    width: '100%',
+    alignItems: 'center',
+  },
+  closeButton: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    padding: 8,
+    zIndex: 10,
+  },
+  modalTitle: {
+    color: '#FFD700',
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginTop: 10,
+    marginBottom: 8,
+    textAlign: 'center',
+  },
+  casinoSeparator: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '90%',
+    marginBottom: 15,
+  },
+  separatorLine: {
+    flex: 1,
+    height: 1,
+    backgroundColor: '#FFD700',
+    marginHorizontal: 10,
+  },
+  modalSubtitle: {
+    color: '#FFD700',
+    fontSize: 14,
+    marginBottom: 15,
+    textAlign: 'center',
+  },
+  modalDescription: {
+    color: 'white',
+    fontSize: 14,
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  customDareButtonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+    marginBottom: 15,
+  },
+  customDareButton: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    padding: 10,
+    borderRadius: 8,
+    flex: 1,
+    marginRight: 5,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  customDareButtonActive: {
+    backgroundColor: 'rgba(255, 215, 0, 0.2)',
+  },
+  customDareButtonText: {
+    color: '#FFD700',
+    fontWeight: '500',
+    fontSize: 12,
+  },
+  viewCustomButton: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    padding: 10,
+    borderRadius: 8,
+    flex: 1,
+    marginLeft: 5,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  viewCustomButtonActive: {
+    backgroundColor: 'rgba(255, 215, 0, 0.2)',
+  },
+  viewCustomButtonText: {
+    color: '#FFD700',
+    fontWeight: '500',
+    fontSize: 12,
+  },
+  customDareInputContainer: {
+    width: '100%',
+    marginBottom: 15,
+  },
+  customDareInput: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: 8,
+    color: 'white',
+    padding: 12,
+    minHeight: 80,
+    textAlignVertical: 'top',
+    borderWidth: 1,
+    borderColor: '#FFD700',
+    marginBottom: 10,
+  },
+  createDareButton: {
+    backgroundColor: '#FFD700',
+    padding: 10,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  createDareButtonDisabled: {
+    backgroundColor: 'rgba(255, 215, 0, 0.5)',
+  },
+  createDareButtonText: {
+    color: 'black',
+    fontWeight: 'bold',
+  },
+  successMessage: {
+    backgroundColor: 'rgba(0, 200, 0, 0.3)',
+    padding: 10,
+    borderRadius: 8,
+    marginBottom: 15,
+    width: '100%',
+    alignItems: 'center',
+  },
+  successText: {
+    color: '#4CAF50',
+    fontWeight: 'bold',
+  },
+  previewButton: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    padding: 10,
+    borderRadius: 8,
+    width: '100%',
+    alignItems: 'center',
+    marginBottom: 15,
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  previewButtonActive: {
+    backgroundColor: 'rgba(255, 215, 0, 0.2)',
+  },
+  previewButtonText: {
+    color: '#FFD700',
+    fontWeight: '500',
+  },
+  previewContainer: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    padding: 15,
+    borderRadius: 8,
+    width: '100%',
+    marginBottom: 15,
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  previewDare: {
+    color: 'white',
+    marginBottom: 8,
+    lineHeight: 20,
+  },
+  counterContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    borderRadius: 15,
+    borderWidth: 1,
+    borderColor: '#FFD700',
+    padding: 8,
+  },
+  counterButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  counterButtonText: {
+    color: '#FFD700',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  counterTextContainer: {
+    paddingHorizontal: 20,
+  },
+  counterText: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  buttonClose: {
+    borderRadius: 10,
+    padding: 12,
+    elevation: 2,
+    width: '100%',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  confirmButton: {
+    backgroundColor: '#FFD700',
+  },
+  confirmButtonText: {
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  customDaresModalView: {
+    height: '80%',
+    alignItems: 'stretch',
+  },
+  daresList: {
+    width: '100%',
+    marginTop: 10,
+    flex: 1,
+  },
+  dareItem: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: 8,
+    padding: 12,
+    marginBottom: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 215, 0, 0.5)',
+  },
+  dareText: {
+    color: 'white',
+    flex: 1,
+  },
+  editDareInput: {
+    color: 'white',
+    flex: 1,
+    borderWidth: 1,
+    borderColor: '#2196F3',
+    padding: 8,
+    borderRadius: 5,
+    marginRight: 8,
+  },
+  dareActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  editButton: {
+    padding: 5,
+    marginLeft: 8,
+  },
+  deleteButton: {
+    padding: 5,
+    marginLeft: 8,
+  },
+  saveButton: {
+    padding: 5,
+    marginLeft: 8,
+  },
+  cancelButton: {
+    padding: 5,
+    marginLeft: 8,
+  },
+  noDaresText: {
+    color: 'gray',
+    textAlign: 'center',
+    marginTop: 20,
+    fontSize: 16,
+  },
+  priceBadge: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    backgroundColor: '#FFD700',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 15,
+    zIndex: 2,
+  },
+  priceText: {
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 12,
+  },
+  ageRestrictedBadge: {
+    position: 'absolute',
+    top: 10,
+    left: 10,
+    backgroundColor: 'red',
+    paddingHorizontal: 6,
+    paddingVertical: 3,
+    borderRadius: 10,
+    zIndex: 2,
+  },
+  ageRestrictedText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 10,
+  },
+  lockOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 1,
+  },
+  purchasedBadge: {
+    position: 'absolute',
+    top: 10,
+    left: 10,
+    backgroundColor: '#00C853',
+    paddingHorizontal: 6,
+    paddingVertical: 3,
+    borderRadius: 10,
+    zIndex: 3,
+  },
+  purchasedText: {
+    color: 'white',
+    fontSize: 10,
+    fontWeight: 'bold',
   },
 });
 
