@@ -15,6 +15,7 @@ import { Audio } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
 import * as Animatable from 'react-native-animatable';
 import { LinearGradient } from 'expo-linear-gradient';
+import { achievementTracker } from '../Context/AchievementTracker';
 
 const { width, height } = Dimensions.get('window');
 
@@ -166,7 +167,10 @@ const WinnerTransitionScreen = () => {
     isMultiplayer = false, 
     packStats, 
     packName: directPackName, 
-    selectedPack: directSelectedPack 
+    selectedPack: directSelectedPack,
+    // ACHIEVEMENT TRACKING: Extract gameMode from route params
+    gameMode,
+    trackingData
   } = route.params || {};
   
   const [firstTextOpacity] = useState(new Animated.Value(0));
@@ -175,16 +179,21 @@ const WinnerTransitionScreen = () => {
   const [sound, setSound] = useState(null);
   const [shakeAnimation] = useState(new Animated.Value(0));
   
+  // ACHIEVEMENT TRACKING: Use singleton instance
+  const gameCompleteTracked = useRef(false);
+  
   // Log the pack information received by WinnerTransition
   useEffect(() => {
     console.log('WinnerTransition received pack information:', {
       packStats,
       directPackName,
       directSelectedPack,
+      gameMode,
+      trackingData,
       routeParams: route.params
     });
     console.log('WinnerTransition received isMultiplayer:', isMultiplayer);
-console.log('WinnerTransition navigating with isMultiplayer:', isMultiplayer);
+    console.log('WinnerTransition navigating with isMultiplayer:', isMultiplayer);
   }, []);
   
   // Handle Android back button
@@ -289,6 +298,30 @@ console.log('WinnerTransition navigating with isMultiplayer:', isMultiplayer);
   useEffect(() => {
     let isMounted = true;
 
+    // ACHIEVEMENT TRACKING: Track game completion early in the transition
+    const trackGameCompletion = async () => {
+      if (gameCompleteTracked.current) return;
+      
+      try {
+        // Extract gameMode from multiple sources with fallback
+        const finalGameMode = gameMode || 
+                             trackingData?.gameMode || 
+                             'TriviaDare'; // Default fallback
+        
+        console.log('WinnerTransition tracking game completion with gameMode:', finalGameMode);
+        
+        await achievementTracker.trackGameComplete(finalGameMode);
+        gameCompleteTracked.current = true;
+        
+        console.log('Game completion tracked successfully');
+      } catch (error) {
+        console.error('Error tracking game completion:', error);
+      }
+    };
+    
+    // Track game completion immediately when component mounts
+    trackGameCompletion();
+
     // Start multiplayer icon animation if in multiplayer mode
     if (isMultiplayer) {
       Animated.timing(multiplayerIconOpacity, {
@@ -340,11 +373,12 @@ console.log('WinnerTransition navigating with isMultiplayer:', isMultiplayer);
                            packStats?.packName || 
                            packStats?.name || 
                            packStats?.selectedPack || 
+                           trackingData?.packName ||
                            "Trivia Pack";
       
       console.log('WinnerTransition navigating with pack name:', finalPackName);
       
-      // Enhanced navigation with redundant pack information
+      // Enhanced navigation with redundant pack information and tracking data
       navigation.replace('ResultsScreen', {
         playerData: verifiedPlayerData,
         packStats: {
@@ -356,7 +390,14 @@ console.log('WinnerTransition navigating with isMultiplayer:', isMultiplayer);
         packName: finalPackName,
         selectedPack: finalPackName,
         isMultiplayer: isMultiplayer,
-        timestamp: Date.now()
+        timestamp: Date.now(),
+        // Pass through tracking data for consistency
+        gameMode: gameMode || trackingData?.gameMode || 'TriviaDare',
+        trackingData: {
+          ...trackingData,
+          gameMode: gameMode || trackingData?.gameMode || 'TriviaDare',
+          packName: finalPackName
+        }
       });
     }, TRANSITION_DURATION);
 

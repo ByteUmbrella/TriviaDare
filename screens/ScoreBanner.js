@@ -11,13 +11,15 @@ import {
   Vibration 
 } from 'react-native';
 
-// AnimatedScore component with Android optimizations
+// AnimatedScore component with Android optimizations and fixed undefined score display
 const AnimatedScore = memo(({ score, isLeader }) => {
   const animatedValue = React.useRef(new Animated.Value(1)).current;
-  const [prevScore, setPrevScore] = useState(score);
+  // FIX: Always default to 0 if score is undefined/null
+  const displayScore = score || 0;
+  const [prevScore, setPrevScore] = useState(displayScore);
 
   useEffect(() => {
-    if (score !== prevScore) {
+    if (displayScore !== prevScore) {
       // Platform-specific animation parameters
       const frictionValue = Platform.OS === 'android' ? 4 : 3; // Higher friction on Android for smoother animation
       const toValue = Platform.OS === 'android' ? 1.15 : 1.2; // Smaller scale change on Android
@@ -36,14 +38,14 @@ const AnimatedScore = memo(({ score, isLeader }) => {
           tension: Platform.OS === 'android' ? 40 : 50,
         }),
       ]).start();
-      setPrevScore(score);
+      setPrevScore(displayScore);
     }
     
     // Cleanup animation on unmount
     return () => {
       animatedValue.stopAnimation();
     };
-  }, [score]);
+  }, [displayScore]);
 
   return (
     <View style={styles.scoreWrapper}>
@@ -57,7 +59,7 @@ const AnimatedScore = memo(({ score, isLeader }) => {
           Platform.OS === 'android' ? styles.scoreAndroid : null
         ]}
       >
-        {score}
+        {displayScore}
       </Animated.Text>
       {isLeader && (
         <Text style={[
@@ -124,7 +126,7 @@ const LightStrip = memo(() => (
   </View>
 ));
 
-// TimerBar component with enhanced gameshow visualization
+// TimerBar component with ONLY gameshow bulbs (green progress bar removed)
 const TimerBar = memo(({ timeLeft, maxTime, isPaused }) => {
   const progress = timeLeft / maxTime;
   const scaleAnim = React.useRef(new Animated.Value(1)).current;
@@ -188,31 +190,11 @@ const TimerBar = memo(({ timeLeft, maxTime, isPaused }) => {
     };
   }, [timeLeft, isPaused]);
 
-  // Interpolate the flash animation to a color
-  const backgroundColor = flashAnim.interpolate({
-    inputRange: [0, 1],
-    outputRange: [
-      timeLeft > maxTime / 3 ? '#76FF03' : '#FF3D00', 
-      timeLeft > maxTime / 3 ? '#AEFF57' : '#FF6E40'
-    ]
-  });
-
   return (
     <View style={styles.timerContainer}>
-      <View style={styles.timerBarBackground}>
-        <Animated.View
-          style={[
-            styles.timerBarFill,
-            {
-              width: `${progress * 100}%`, // Direct width instead of transform for smoother animation
-              backgroundColor: timeLeft > maxTime / 3 ? '#76FF03' : '#FF3D00',
-              transform: [{ scale: scaleAnim }]
-            },
-          ]}
-        />
-      </View>
+      {/* GREEN PROGRESS BAR REMOVED - Only timer bulbs remain */}
       
-      {/* Add gameshow lights for timer */}
+      {/* Timer bulbs/lights that you want to keep */}
       <View style={styles.gameShowLights}>
         {Array.from({ length: 10 }).map((_, index) => {
           // Calculate if this light should be on based on time remaining
@@ -220,11 +202,15 @@ const TimerBar = memo(({ timeLeft, maxTime, isPaused }) => {
           const isLightOn = lightPosition <= progress;
           
           return (
-            <View 
+            <Animated.View 
               key={`light-${index}`} 
               style={[
                 styles.gameShowLight,
-                isLightOn && (timeLeft <= 5 ? styles.gameShowLightUrgent : styles.gameShowLightOn)
+                isLightOn && (timeLeft <= 5 ? styles.gameShowLightUrgent : styles.gameShowLightOn),
+                // Add pulsing animation to active lights when time is critical
+                isLightOn && timeLeft <= 5 && {
+                  transform: [{ scale: scaleAnim }]
+                }
               ]}
             />
           );
@@ -293,7 +279,7 @@ const FireText = memo(({ text, isHot }) => {
   );
 });
 
-// PlayerScore component with Android optimizations
+// PlayerScore component with Android optimizations and fixed score display
 const PlayerScore = memo(({ 
   playerName, 
   score, 
@@ -304,6 +290,8 @@ const PlayerScore = memo(({
 }) => {
   const scaleAnim = React.useRef(new Animated.Value(1)).current;
   const isHot = streakCount >= 3;
+  // FIX: Always default to 0 if score is undefined/null
+  const displayScore = score || 0;
 
   useEffect(() => {
     if (isHighlighted) {
@@ -351,7 +339,7 @@ const PlayerScore = memo(({
         />
         {showScores && (
           <AnimatedScore 
-            score={score} 
+            score={displayScore} 
             isLeader={isLeader}
           />
         )}
@@ -366,7 +354,7 @@ const PlayerScore = memo(({
   );
 });
 
-// Main ScoreBanner component with Android optimizations and auto-scrolling
+// Main ScoreBanner component with Android optimizations and auto-scrolling and fixed score handling
 const ScoreBanner = ({ 
   players = [], 
   scores = [], 
@@ -379,7 +367,16 @@ const ScoreBanner = ({
 }) => {
   const [streaks, setStreaks] = useState(new Array(players.length).fill(0));
   const [previousScores, setPreviousScores] = useState(new Array(players.length).fill(0));
-  const maxScore = Math.max(...scores);
+  
+  // FIX: Use useMemo to prevent infinite re-renders
+  const safeScores = React.useMemo(() => {
+    return scores.map(score => score || 0);
+  }, [scores]);
+  
+  const maxScore = React.useMemo(() => {
+    return Math.max(...safeScores);
+  }, [safeScores]);
+  
   const scrollViewRef = useRef(null);
   const scrollTimer = useRef(null);
   const scrollPosition = useRef(0);
@@ -475,12 +472,23 @@ const ScoreBanner = ({
     }, 3000); // Wait 3 seconds after user stops scrolling
   };
 
-  // Streaks calculation and update
+  // Streaks calculation and update with fixed score handling
   useEffect(() => {
-    if (currentPlayer !== null) {
+    if (currentPlayer !== null && currentPlayer < safeScores.length) {
       const newStreaks = [...streaks];
       
-      if (scores[currentPlayer] > previousScores[currentPlayer]) {
+      // FIX: Use safe scores for streak calculation
+      const currentPlayerScore = safeScores[currentPlayer];
+      const previousPlayerScore = previousScores[currentPlayer] || 0;
+      
+      console.log('🎯 Streak calculation debug:', {
+        currentPlayer,
+        currentPlayerScore,
+        previousPlayerScore,
+        willIncrement: currentPlayerScore > previousPlayerScore
+      });
+      
+      if (currentPlayerScore > previousPlayerScore) {
         newStreaks[currentPlayer]++;
         
         // Add Android vibration feedback for streak milestone
@@ -495,16 +503,26 @@ const ScoreBanner = ({
         newStreaks[currentPlayer] = 0;
       }
 
+      // Reset streaks for other players
       players.forEach((_, index) => {
         if (index !== currentPlayer) {
           newStreaks[index] = 0;
         }
       });
 
-      setStreaks(newStreaks);
-      setPreviousScores([...scores]);
+      // Only update if streaks actually changed
+      const streaksChanged = JSON.stringify(newStreaks) !== JSON.stringify(streaks);
+      const scoresChanged = JSON.stringify(safeScores) !== JSON.stringify(previousScores);
+      
+      if (streaksChanged) {
+        setStreaks(newStreaks);
+      }
+      
+      if (scoresChanged) {
+        setPreviousScores([...safeScores]);
+      }
     }
-  }, [scores, currentPlayer]);
+  }, [safeScores, currentPlayer, players.length]); // Removed streaks and previousScores from dependencies to prevent loops
 
   // Platform-specific toggle button rendering
   const renderToggleButton = () => {
@@ -568,9 +586,9 @@ const ScoreBanner = ({
               <PlayerScore
                 key={`player-${index}`}
                 playerName={playerName}
-                score={scores[index]}
+                score={safeScores[index]} // Use safe scores
                 showScores={showScores}
-                isLeader={scores[index] === maxScore && maxScore > 0}
+                isLeader={safeScores[index] === maxScore && maxScore > 0} // Use safe scores
                 streakCount={streaks[index]}
                 isHighlighted={currentPlayer === index}
               />
@@ -615,7 +633,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFD700',
     overflow: 'hidden',
   },
-  
+  lightStrip: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    height: '100%',
+  },
   light: {
     width: 6,
     height: 6,
@@ -749,51 +772,42 @@ const styles = StyleSheet.create({
     fontSize: 12, // Slightly smaller for better Android display
   },
 
-  // Timer-related styles
+  // Timer-related styles - UPDATED (green bar removed)
   timerContainer: {
     width: '100%',
     position: 'absolute',
     bottom: -2,
     alignItems: 'center',
   },
-  timerBarBackground: {
-    width: '100%',
-    height: 6, // Taller for more visibility
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    overflow: 'hidden',
-  },
-  timerBarFill: {
-    height: '100%',
-  },
-  // Android-specific timer bar fill styling
-  timerBarFillAndroid: {
-    height: '100%',
-  },
-  // Game show lights for timer
+  
+  // GREEN PROGRESS BAR STYLES REMOVED:
+  // timerBarBackground and timerBarFill styles deleted
+  
+  // Game show lights for timer - ENHANCED
   gameShowLights: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '96%',
     position: 'absolute',
-    bottom: -7, // Position lower for visibility
+    bottom: -5, // Repositioned since no background bar
     alignSelf: 'center',
   },
   gameShowLight: {
-    width: 16, // Much larger lights
+    width: 16, // Larger lights for better visibility
     height: 16,
     borderRadius: 8,
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
-    borderWidth: 1.5, // Thicker border
+    borderWidth: 1.5,
     borderColor: 'rgba(255, 255, 255, 0.5)',
     marginHorizontal: 2,
   },
   gameShowLightOn: {
-    backgroundColor: '#FFD700',
+    backgroundColor: '#FFD700', // Gold when active
     borderColor: '#FFD700',
     shadowColor: '#FFD700',
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 1,
-    shadowRadius: 8, // Larger glow
+    shadowRadius: 8,
     ...Platform.select({
       android: {
         elevation: 6,
@@ -801,12 +815,12 @@ const styles = StyleSheet.create({
     }),
   },
   gameShowLightUrgent: {
-    backgroundColor: '#FF3D00',
+    backgroundColor: '#FF3D00', // Red when time is critical
     borderColor: '#FF3D00',
     shadowColor: '#FF3D00',
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 1,
-    shadowRadius: 8, // Larger glow
+    shadowRadius: 8,
     ...Platform.select({
       android: {
         elevation: 6,

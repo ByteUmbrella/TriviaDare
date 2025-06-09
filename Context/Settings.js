@@ -1,10 +1,11 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
-import { View, Text, Switch, StyleSheet, Platform, Pressable, Alert } from 'react-native';
-import iapManager from './IAPManager'; // Adjust the import path as needed
+import { Platform, View, Text, Alert, TextInput, TouchableOpacity, Switch, StyleSheet, Pressable } from 'react-native';
+import Constants from 'expo-constants';
+import iapManager from './IAPManager';
+import PromoCodeManager from './PromoCode';
 
-// Use dynamic requires to improve performance, especially on Android
+// Keep all your existing pack loading logic...
 const getPackToJson = () => ({
-  // Generic Packs
   'Entertainment': require('../Packs/TriviaDare/GenericPacks/Entertainmenteasy.json'),
   'Science': require('../Packs/TriviaDare/GenericPacks/Scienceeasy.json'),
   'History': require('../Packs/TriviaDare/GenericPacks/Historyeasy.json'),
@@ -14,8 +15,6 @@ const getPackToJson = () => ({
   'Movies': require('../Packs/TriviaDare/GenericPacks/Movieeasy.json'),
   'Music': require('../Packs/TriviaDare/GenericPacks/Musiceasy.json'),
   'Technology': require('../Packs/TriviaDare/GenericPacks/Technologyeasy.json'),
-
-  // Premium Packs
   'Harry Potter': require('../Packs/TriviaDare/PremiumPacks/harrypottereasy.json'),
   'Friends': require('../Packs/TriviaDare/PremiumPacks/friendseasy.json'),
   'Star Wars': require('../Packs/TriviaDare/PremiumPacks/starwarseasy.json'),
@@ -29,7 +28,6 @@ const getPackToJson = () => ({
   'Marvel Cinematic Universe': require('../Packs/TriviaDare/PremiumPacks/marvelcinamaticuniverseeasy.json')
 });
 
-// DaresOnly mode packs
 const getDaresOnlyPackToJson = () => ({
   'spicy': require('../Packs/DaresOnly/spicy.json'),
   'adventureseekers': require('../Packs/DaresOnly/adventure_seekers.json'),
@@ -45,19 +43,115 @@ const getDaresOnlyPackToJson = () => ({
 
 const SettingsContext = createContext();
 
+// Compact Promo Code Section Component
+const PromoCodeSection = ({ onPromoSuccess }) => {
+  const [promoCode, setPromoCode] = useState('');
+  const [isRedeeming, setIsRedeeming] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleRedeemCode = async () => {
+    if (!promoCode.trim()) {
+      Alert.alert('Error', 'Please enter a promo code');
+      return;
+    }
+
+    setIsRedeeming(true);
+
+    try {
+      const result = await PromoCodeManager.redeemPromoCode(promoCode);
+      
+      if (result.success) {
+        const packTypeText = result.packType === 'trivia' ? 'Trivia Pack' : 
+                           result.packType === 'dares' ? 'Dares Pack' : 
+                           result.packType === 'bundle' ? 'Bundle' : 'Pack';
+        
+        Alert.alert(
+          'Success!', 
+          `${result.packName} has been unlocked!\n\n🎉 ${packTypeText} is now available to play.\n\n⚠️ Note: This unlock is tied to your device.`,
+          [
+            {
+              text: 'OK',
+              onPress: () => {
+                setPromoCode('');
+                setIsExpanded(false);
+                if (onPromoSuccess && typeof onPromoSuccess === 'function') {
+                  onPromoSuccess(result);
+                }
+              }
+            }
+          ]
+        );
+      } else {
+        Alert.alert('Error', result.error);
+      }
+    } catch (error) {
+      Alert.alert('Error', 'Failed to redeem promo code. Please try again.');
+      console.error('Promo code redemption error:', error);
+    } finally {
+      setIsRedeeming(false);
+    }
+  };
+
+  return (
+    <View style={styles.promoSection}>
+      <TouchableOpacity 
+        style={styles.promoHeader}
+        onPress={() => setIsExpanded(!isExpanded)}
+        activeOpacity={0.7}
+      >
+        <View style={styles.promoHeaderContent}>
+          <Text style={styles.promoHeaderIcon}>🎁</Text>
+          <Text style={styles.promoHeaderText}>Promo Code</Text>
+        </View>
+        <Text style={[styles.expandIcon, isExpanded && styles.expandIconRotated]}>
+          ▼
+        </Text>
+      </TouchableOpacity>
+      
+      {isExpanded && (
+        <View style={styles.promoContent}>
+          <Text style={styles.promoDisclaimer}>
+            Unlock premium content with promo codes
+          </Text>
+          
+          <TextInput
+            style={styles.promoInput}
+            placeholder="Enter promo code"
+            placeholderTextColor="#999"
+            value={promoCode}
+            onChangeText={setPromoCode}
+            autoCapitalize="characters"
+            autoCorrect={false}
+            maxLength={20}
+            editable={!isRedeeming}
+          />
+          
+          <TouchableOpacity 
+            style={[styles.redeemButton, isRedeeming && styles.redeemButtonDisabled]}
+            onPress={handleRedeemCode}
+            disabled={isRedeeming}
+            activeOpacity={0.7}
+          >
+            <Text style={styles.redeemButtonText}>
+              {isRedeeming ? 'Redeeming...' : 'Redeem Code'}
+            </Text>
+          </TouchableOpacity>
+        </View>
+      )}
+    </View>
+  );
+};
+
 const SettingsProvider = ({ children }) => {
   const [isGloballyMuted, setIsGloballyMuted] = useState(false);
   const [screenMuteStates, setScreenMuteStates] = useState({});
   const [triviaQuestions, setTriviaQuestions] = useState(0);
   const [triviaDareDares, setTriviaDareDares] = useState(0);
   const [daresOnlyDares, setDaresOnlyDares] = useState(0);
-  // Default to showing inflated numbers, with true numbers as hidden feature
   const [showInflatedNumbers, setShowInflatedNumbers] = useState(true);
-  // Android specific state for resource loading
   const [resourcesLoaded, setResourcesLoaded] = useState(false);
 
   useEffect(() => {
-    // Use requestAnimationFrame for smoother UI initialization on Android
     if (Platform.OS === 'android') {
       requestAnimationFrame(() => {
         calculateAllTotals();
@@ -67,25 +161,21 @@ const SettingsProvider = ({ children }) => {
     }
 
     return () => {
-      // Clean up resources when component unmounts
       setResourcesLoaded(false);
     };
   }, []);
 
   const calculateAllTotals = () => {
     try {
-      // Use functions to lazy load resources
       const packToJson = getPackToJson();
       const daresOnlyPackToJson = getDaresOnlyPackToJson();
       
-      // Calculate Trivia Questions - add error handling for Android
       const totalQuestions = Object.values(packToJson).reduce((sum, pack) => {
         return sum + ((pack?.Sheet1?.length) || 0);
       }, 0);
       setTriviaQuestions(totalQuestions);
     
       try {
-        // Load and calculate TriviaDare mode dares
         const triviaDareDaresData = require('../dares/dare.json');
         const triviaDareTotal = Array.isArray(triviaDareDaresData) ? triviaDareDaresData.length : 0;
         setTriviaDareDares(triviaDareTotal);
@@ -94,17 +184,14 @@ const SettingsProvider = ({ children }) => {
         setTriviaDareDares(0);
       }
     
-      // Calculate DaresOnly mode dares
       const daresOnlyTotal = Object.values(daresOnlyPackToJson).reduce((sum, pack) => {
         return sum + (Array.isArray(pack) ? pack.length : 0);
       }, 0);
       setDaresOnlyDares(daresOnlyTotal);
       
-      // Mark resources as loaded
       setResourcesLoaded(true);
     } catch (error) {
       console.error('Error calculating game content:', error);
-      // Set default values in case of failure
       setTriviaQuestions(0);
       setTriviaDareDares(0);
       setDaresOnlyDares(0);
@@ -124,7 +211,6 @@ const SettingsProvider = ({ children }) => {
     }));
   };
 
-  // Toggle function for inflated numbers
   const toggleInflatedNumbers = () => {
     setShowInflatedNumbers(prev => !prev);
   };
@@ -137,7 +223,6 @@ const SettingsProvider = ({ children }) => {
     return true;
   };
 
-  // Add getters for counts that apply the multiplier if showInflatedNumbers is true
   const getDisplayTriviaQuestions = () => {
     return showInflatedNumbers ? triviaQuestions * 5 : triviaQuestions;
   };
@@ -156,14 +241,11 @@ const SettingsProvider = ({ children }) => {
     toggleScreenMute,
     isAudioEnabled,
     screenMuteStates,
-    // Original count values
     triviaQuestions,
     triviaDareDares,
     daresOnlyDares,
-    // Add inflated numbers state and toggle
     showInflatedNumbers,
     toggleInflatedNumbers,
-    // Add getters for display values
     getDisplayTriviaQuestions,
     getDisplayTriviaDareDares,
     getDisplayDaresOnlyDares,
@@ -185,49 +267,23 @@ const useSettings = () => {
   return context;
 };
 
-const testFirebaseConnection = async () => {
-  try {
-    // Test auth
-    const { auth } = require('./config/firebaseConfig');
-    const anonymousUser = await signInAnonymously(auth);
-    console.log('Firebase auth working!', anonymousUser.user.uid);
-    
-    // Test database
-    const { database } = require('./config/firebaseConfig');
-    const testRef = ref(database, 'test');
-    await set(testRef, {
-      timestamp: serverTimestamp(),
-      message: 'Test successful'
-    });
-    console.log('Firebase database working!');
-    
-    return true;
-  } catch (error) {
-    console.error('Firebase test failed:', error);
-    return false;
-  }
-};
-
 const SettingsContent = () => {
   const { 
     isGloballyMuted, 
     toggleGlobalMute, 
-    // Use getters for display values instead of raw counts
     getDisplayTriviaQuestions,
     getDisplayTriviaDareDares,
     getDisplayDaresOnlyDares,
-    // For the hidden feature
     showInflatedNumbers,
     toggleInflatedNumbers,
-    isGameshowUI,
-    toggleGameshowUI,
     resourcesLoaded
   } = useSettings();
 
-  // Handle restore purchases
+  // Mode toggle state - true for TriviaDare, false for DaresOnly
+  const [isTriviaDareMode, setIsTriviaDareMode] = useState(true);
+
   const handleRestorePurchases = async () => {
     try {
-      // Show loading alert
       Alert.alert(
         'Restoring Purchases',
         'Please wait while we restore your purchases...',
@@ -260,7 +316,6 @@ const SettingsContent = () => {
     }
   };
 
-  // Show loading state or placeholder for Android
   if (!resourcesLoaded && Platform.OS === 'android') {
     return (
       <View style={styles.container}>
@@ -274,68 +329,115 @@ const SettingsContent = () => {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        {/* Sound Toggle */}
-        <View style={styles.soundToggle}>
-          <Text style={styles.toggleLabel}>Mute All Sounds</Text>
+        {/* Audio Settings */}
+        <View style={styles.settingRow}>
+          <View style={styles.settingInfo}>
+            <Text style={styles.settingIcon}>🔊</Text>
+            <Text style={styles.settingLabel}>Sound Effects</Text>
+          </View>
           <Switch
-            value={isGloballyMuted}
-            onValueChange={toggleGlobalMute}
-            trackColor={{ false: '#767577', true: '#00a2e8' }}
-            thumbColor={isGloballyMuted ? '#ffffff' : '#f4f3f4'}
-            ios_backgroundColor="#3e3e3e"
+            value={!isGloballyMuted}
+            onValueChange={(value) => toggleGlobalMute(!value)}
+            trackColor={{ false: '#ccc', true: '#00a2e8' }}
+            thumbColor={'#fff'}
+            ios_backgroundColor="#ccc"
           />
         </View>
         
         <View style={styles.divider} />
 
-        {/* Restore Purchases Button */}
-        <Pressable
-          style={[styles.restoreButton, styles.pressableButton]}
-          onPress={handleRestorePurchases}
-        >
-          <Text style={styles.restoreButtonText}>Restore Purchases</Text>
-        </Pressable>
-        
-        <View style={styles.divider} />
-
-        {/* Game Modes */}
-        <View>
-          {/* TriviaDare Mode */}
-          <Text style={styles.modeTitle}>TriviaDare Mode</Text>
-          <View style={styles.statCard}>
-            <View style={styles.statRow}>
-              <Text style={styles.statLabel}>Questions Available</Text>
-              <Text style={styles.statValue}>{getDisplayTriviaQuestions()}</Text>
+        {/* Game Content Stats - With Mode Toggle */}
+        <View style={styles.statsSection}>
+          <View style={styles.statsSectionHeader}>
+            <View style={styles.statsHeaderLeft}>
+              <Text style={styles.statsIcon}>📊</Text>
+              <Text style={styles.statsSectionTitle}>Game Content</Text>
+            </View>
+            <View style={styles.segmentedControl}>
+              <TouchableOpacity
+                style={[
+                  styles.segmentButton,
+                  styles.segmentButtonLeft,
+                  isTriviaDareMode && styles.segmentButtonActive
+                ]}
+                onPress={() => setIsTriviaDareMode(true)}
+                activeOpacity={0.7}
+              >
+                <Text style={[
+                  styles.segmentText,
+                  isTriviaDareMode && styles.segmentTextActive
+                ]}>
+                  Trivia{'\n'}DARE
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[
+                  styles.segmentButton,
+                  styles.segmentButtonRight,
+                  !isTriviaDareMode && styles.segmentButtonActive
+                ]}
+                onPress={() => setIsTriviaDareMode(false)}
+                activeOpacity={0.7}
+              >
+                <Text style={[
+                  styles.segmentText,
+                  !isTriviaDareMode && styles.segmentTextActive
+                ]}>
+                  Dares{'\n'}ONLY
+                </Text>
+              </TouchableOpacity>
             </View>
           </View>
-          <View style={styles.statCard}>
-            <View style={styles.statRow}>
-              <Text style={styles.statLabel}>Dares Available</Text>
-              <Text style={styles.statValue}>{getDisplayTriviaDareDares()}</Text>
-            </View>
-          </View>
-
-          {/* DaresOnly Mode */}
-          <Text style={styles.modeTitle}>DaresOnly Mode</Text>
-          <View style={styles.statCard}>
-            <View style={styles.statRow}>
-              <Text style={styles.statLabel}>Dares Available</Text>
-              <Text style={styles.statValue}>{getDisplayDaresOnlyDares()}</Text>
-            </View>
+          
+          <View style={styles.compactStatsGrid}>
+            {isTriviaDareMode ? (
+              <>
+                <View style={styles.compactStatItem}>
+                  <Text style={styles.compactStatValue}>{getDisplayTriviaQuestions()}</Text>
+                  <Text style={styles.compactStatLabel}>Trivia Questions</Text>
+                </View>
+                <View style={styles.compactStatItem}>
+                  <Text style={styles.compactStatValue}>{getDisplayTriviaDareDares()}</Text>
+                  <Text style={styles.compactStatLabel}>Dares Available</Text>
+                </View>
+              </>
+            ) : (
+              <View style={styles.compactStatItemFull}>
+                <Text style={styles.compactStatValue}>{getDisplayDaresOnlyDares()}</Text>
+                <Text style={styles.compactStatLabel}>Dares Available</Text>
+              </View>
+            )}
           </View>
         </View>
 
-        {/* Footer with long press handler */}
+        <View style={styles.divider} />
+
+        {/* Promo Code Section - Expandable */}
+        <PromoCodeSection 
+          onPromoSuccess={(result) => {
+            console.log('Promo code redeemed successfully:', result);
+          }}
+        />
+        
+        <View style={styles.divider} />
+
+        {/* Restore Purchases - Smaller */}
+        <TouchableOpacity
+          style={styles.restoreButton}
+          onPress={handleRestorePurchases}
+          activeOpacity={0.7}
+        >
+          <Text style={styles.restoreIcon}>🔄</Text>
+          <Text style={styles.restoreButtonText}>Restore Purchases</Text>
+        </TouchableOpacity>
+
+        {/* Footer */}
         <View style={styles.footer}>
           <Pressable
             onLongPress={() => {
-              // Start a timeout for 5 seconds
               const timer = setTimeout(() => {
-                // Toggle between true and inflated numbers
                 toggleInflatedNumbers();
-                // Provide haptic feedback when toggled
                 if (Platform.OS === 'ios') {
-                  // Import the entire ReactNative package to access Haptics
                   const ReactNative = require('react-native');
                   if (ReactNative.Haptics) {
                     ReactNative.Haptics.impactAsync(ReactNative.Haptics.ImpactFeedbackStyle.Medium);
@@ -346,15 +448,14 @@ const SettingsContent = () => {
                 }
               }, 5000);
               
-              // Return function to clean up timer if press is released early
               return () => clearTimeout(timer);
             }}
-            delayLongPress={1000} // Start recognizing long press after 1 second
+            delayLongPress={1000}
           >
             <Text style={styles.footerText}>TriviaDare®</Text>
           </Pressable>
           <View style={styles.versionContainer}>
-            <Text style={styles.version}>Version 1.0.0</Text>
+            <Text style={styles.version}>Version {Constants.expoConfig?.version || Constants.manifest?.version || '1.0.1'}</Text>
             {!showInflatedNumbers && (
               <Text style={styles.trueNumbersIndicator}>Showing True Numbers</Text>
             )}
@@ -375,78 +476,227 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   content: {
-    padding: 15,
-    paddingTop: 5,
+    padding: 20,
   },
-  sectionTitle: {
-    fontSize: 18,
-    fontWeight: '500',
-    color: '#1A237E',
-    marginBottom: 10,
-  },
-  soundToggle: {
+  
+  // Setting Row Style
+  settingRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: 8,
-    marginVertical: 4,
-    height: Platform.OS === 'android' ? 48 : 44,
+    paddingVertical: 12,
   },
-  toggleLabel: {
+  settingInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  settingIcon: {
+    fontSize: 20,
+    marginRight: 12,
+  },
+  settingLabel: {
     fontSize: 16,
+    fontWeight: '500',
     color: '#333',
+  },
+
+  // Compact Stats Section
+  statsSection: {
+    marginVertical: 8,
+  },
+  statsSectionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  statsHeaderLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  statsIcon: {
+    fontSize: 18,
+    marginRight: 8,
+  },
+  statsSectionTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#1A237E',
+  },
+  
+  // Segmented Control Styles (True/False style)
+  segmentedControl: {
+    flexDirection: 'row',
+    backgroundColor: '#E8D5FF', // Light purple background
+    borderRadius: 8,
+    padding: 2,
+    minWidth: 140,
+  },
+  segmentButton: {
+    flex: 1,
+    paddingVertical: 8,
+    paddingHorizontal: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: 40, // Ensure enough height for two lines
+  },
+  segmentButtonLeft: {
+    borderTopLeftRadius: 6,
+    borderBottomLeftRadius: 6,
+  },
+  segmentButtonRight: {
+    borderTopRightRadius: 6,
+    borderBottomRightRadius: 6,
+  },
+  segmentButtonActive: {
+    backgroundColor: '#7C4DFF', // Dark purple for active
+  },
+  segmentText: {
+    fontSize: 11,
+    fontWeight: '600',
+    color: '#7C4DFF', // Dark purple text for inactive
+    textAlign: 'center',
+    lineHeight: 14,
+  },
+  segmentTextActive: {
+    color: '#FFFFFF', // White text for active
+  },
+  
+  compactStatsGrid: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    backgroundColor: '#f8f9fa',
+    borderRadius: 12,
+    padding: 16,
+  },
+  compactStatItem: {
+    alignItems: 'center',
+    flex: 1,
+  },
+  compactStatItemFull: {
+    alignItems: 'center',
+    flex: 1,
+  },
+  compactStatValue: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#00a2e8',
+    marginBottom: 4,
+  },
+  compactStatLabel: {
+    fontSize: 12,
+    color: '#666',
+    textAlign: 'center',
     fontWeight: '500',
   },
+
+  // Promo Code Section - Expandable
+  promoSection: {
+    borderWidth: 1,
+    borderColor: '#e0e0e0',
+    borderRadius: 12,
+    overflow: 'hidden',
+  },
+  promoHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 16,
+    backgroundColor: '#f8f9fa',
+  },
+  promoHeaderContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  promoHeaderIcon: {
+    fontSize: 18,
+    marginRight: 8,
+  },
+  promoHeaderText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#1A237E',
+  },
+  expandIcon: {
+    fontSize: 12,
+    color: '#666',
+    transform: [{ rotate: '0deg' }],
+  },
+  expandIconRotated: {
+    transform: [{ rotate: '180deg' }],
+  },
+  promoContent: {
+    padding: 16,
+    backgroundColor: '#fff',
+    borderTopWidth: 1,
+    borderTopColor: '#f0f0f0',
+  },
+  promoDisclaimer: {
+    fontSize: 12,
+    color: '#666',
+    marginBottom: 12,
+    textAlign: 'center',
+  },
+  promoInput: {
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 8,
+    padding: 12,
+    fontSize: 16,
+    backgroundColor: '#fff',
+    marginBottom: 12,
+    color: '#333',
+    textAlign: 'center',
+  },
+  redeemButton: {
+    backgroundColor: '#00a2e8',
+    padding: 12,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  redeemButtonDisabled: {
+    backgroundColor: '#6c757d',
+  },
+  redeemButtonText: {
+    color: '#fff',
+    fontSize: 14,
+    fontWeight: '600',
+  },
+
+  // Restore Purchases - Simplified
+  restoreButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#f8f9fa',
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#e0e0e0',
+  },
+  restoreIcon: {
+    fontSize: 16,
+    marginRight: 8,
+  },
+  restoreButtonText: {
+    color: '#666',
+    fontSize: 14,
+    fontWeight: '500',
+  },
+
+  // Dividers
   divider: {
     height: 1,
     backgroundColor: '#E5E5E5',
-    marginVertical: 15,
+    marginVertical: 16,
   },
-  modeTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#1A237E',
-    marginBottom: 10,
-    marginTop: 5,
-  },
-  statCard: {
-    backgroundColor: '#f8f9fa',
-    borderRadius: 12,
-    padding: 12,
-    marginBottom: 8,
-    borderWidth: 1,
-    borderColor: '#e0e0e0',
-    ...Platform.select({
-      android: {
-        elevation: 2,
-      },
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 1 },
-        shadowOpacity: 0.1,
-        shadowRadius: 2,
-      }
-    })
-  },
-  statRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  statLabel: {
-    fontSize: Platform.OS === 'android' ? 15 : 16,
-    color: '#666',
-    fontWeight: '400',
-  },
-  statValue: {
-    fontSize: Platform.OS === 'android' ? 16 : 18,
-    color: '#00a2e8',
-    fontWeight: '600',
-  },
+
+  // Footer
   footer: {
     alignItems: 'center',
-    marginTop: 15,
-    paddingTop: 10,
+    marginTop: 20,
+    paddingTop: 16,
     borderTopWidth: 1,
     borderTopColor: '#E5E5E5',
   },
@@ -455,13 +705,13 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
   },
+  versionContainer: {
+    alignItems: 'center',
+  },
   version: {
     fontSize: 12,
     color: '#999',
     marginTop: 4,
-  },
-  versionContainer: {
-    alignItems: 'center',
   },
   trueNumbersIndicator: {
     fontSize: 11,
@@ -474,37 +724,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#666',
     padding: 20,
-  },
-  restoreButton: {
-    backgroundColor: '#00a2e8',
-    borderRadius: 10,
-    paddingVertical: 12,
-    paddingHorizontal: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-    ...Platform.select({
-      android: {
-        elevation: 3,
-      },
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.2,
-        shadowRadius: 3,
-      }
-    })
-  },
-  pressableButton: {
-    // Add press state styling
-    pressStyle: {
-      opacity: 0.7,
-    }
-  },
-  restoreButtonText: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: '600',
-    textAlign: 'center',
   },
 });
 

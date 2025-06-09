@@ -1,57 +1,335 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { 
   View, 
   Text, 
   StyleSheet, 
   TouchableOpacity, 
-  Modal, 
+  Modal,
+  Platform,
+  BackHandler,
+  Vibration,
+  TouchableNativeFeedback,
+  Animated,
+  Dimensions,
   ActivityIndicator,
-  Animated
+  ScrollView
 } from 'react-native';
+import { useFocusEffect } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
-import { useFirebase } from '../../Context/multiplayer/FirebaseContext';
 import daresData from '../../dares/dare.json';
+import { achievementTracker } from '../../Context/AchievementTracker';
+import { useFirebase } from '../../Context/multiplayer/FirebaseContext';
+
+const { width, height } = Dimensions.get('window');
+
+// Device type detection and responsive functions
+const getDeviceType = () => {
+  const aspectRatio = height / width;
+  
+  if (Platform.OS === 'ios') {
+    if ((width >= 768 && height >= 1024) || aspectRatio < 1.6) {
+      return 'tablet';
+    }
+  } else {
+    if (width >= 600 || aspectRatio < 1.6) {
+      return 'tablet';
+    }
+  }
+  
+  return 'phone';
+};
+
+const isTablet = () => getDeviceType() === 'tablet';
+
+// Responsive scaling functions
+const responsiveFont = (phoneSize) => {
+  if (isTablet()) {
+    return Math.round(phoneSize * 1.3);
+  }
+  return phoneSize;
+};
+
+const responsiveSpacing = (phoneSize) => {
+  if (isTablet()) {
+    return Math.round(phoneSize * 1.4);
+  }
+  return phoneSize;
+};
+
+const responsiveSize = (phoneSize) => {
+  if (isTablet()) {
+    return Math.round(phoneSize * 1.25);
+  }
+  return phoneSize;
+};
+
+// Multiplayer Vote Progress Component
+const VoteProgressIndicator = memo(({ 
+  votesReceived, 
+  totalPlayers, 
+  yesVotes, 
+  noVotes, 
+  isProcessing 
+}) => {
+  const progressPercentage = totalPlayers > 0 ? (votesReceived / totalPlayers) * 100 : 0;
+  
+  return (
+    <View style={styles.voteProgressContainer}>
+      <Text style={styles.voteProgressTitle}>Vote Progress</Text>
+      
+      <View style={styles.progressBarContainer}>
+        <View style={styles.progressBarBackground}>
+          <Animated.View 
+            style={[
+              styles.progressBarFill,
+              { width: `${progressPercentage}%` }
+            ]}
+          />
+        </View>
+        <Text style={styles.progressText}>
+          {votesReceived} / {totalPlayers} votes
+        </Text>
+      </View>
+      
+      <View style={styles.voteCountsRow}>
+        <View style={styles.voteCountItem}>
+          <Ionicons name="thumbs-up" size={responsiveSize(18)} color="#4CAF50" />
+          <Text style={styles.voteCountNumber}>{yesVotes}</Text>
+          <Text style={styles.voteCountLabel}>Yes</Text>
+        </View>
+        
+        <View style={styles.voteCountSeparator} />
+        
+        <View style={styles.voteCountItem}>
+          <Ionicons name="thumbs-down" size={responsiveSize(18)} color="#f44336" />
+          <Text style={styles.voteCountNumber}>{noVotes}</Text>
+          <Text style={styles.voteCountLabel}>No</Text>
+        </View>
+      </View>
+      
+      {isProcessing && (
+        <View style={styles.processingIndicator}>
+          <ActivityIndicator size="small" color="#FFD700" />
+          <Text style={styles.processingText}>Processing votes...</Text>
+        </View>
+      )}
+    </View>
+  );
+});
+
+// Real-time Player Voting Status Component
+const PlayerVotingStatus = memo(({ players, votes, currentUserId }) => {
+  if (!players || players.length <= 1) return null;
+  
+  return (
+    <View style={styles.playerVotingContainer}>
+      <Text style={styles.playerVotingTitle}>Player Votes:</Text>
+      <ScrollView 
+        horizontal 
+        showsHorizontalScrollIndicator={false}
+        style={styles.playerVotingScroll}
+      >
+        {players.map((player, index) => {
+          const playerEntry = Object.entries(player).find(
+            ([_, data]) => typeof data === 'object'
+          );
+          const playerId = playerEntry ? playerEntry[0] : `player_${index}`;
+          const playerData = playerEntry ? playerEntry[1] : player;
+          const playerName = playerData.name || `Player ${index + 1}`;
+          const hasVoted = votes[playerId] !== undefined;
+          const voteValue = votes[playerId];
+          const isCurrentUser = playerId === currentUserId;
+          
+          return (
+            <View 
+              key={`${playerId}-${index}`}
+              style={[
+                styles.playerVoteItem,
+                hasVoted && styles.playerVoteItemVoted,
+                isCurrentUser && styles.playerVoteItemSelf
+              ]}
+            >
+              <Text style={[
+                styles.playerVoteName,
+                hasVoted && styles.playerVoteNameVoted,
+                isCurrentUser && styles.playerVoteNameSelf
+              ]}>
+                {playerName}
+              </Text>
+              
+              {hasVoted ? (
+                <View style={styles.playerVoteStatus}>
+                  <Ionicons 
+                    name={voteValue ? "thumbs-up" : "thumbs-down"} 
+                    size={responsiveSize(16)} 
+                    color={voteValue ? "#4CAF50" : "#f44336"} 
+                  />
+                  <Text style={[
+                    styles.playerVoteText,
+                    { color: voteValue ? "#4CAF50" : "#f44336" }
+                  ]}>
+                    {voteValue ? "Yes" : "No"}
+                  </Text>
+                </View>
+              ) : (
+                <View style={styles.playerVoteStatus}>
+                  <Ionicons name="time" size={responsiveSize(14)} color="#FFD700" />
+                  <Text style={styles.playerVoteWaiting}>Waiting</Text>
+                </View>
+              )}
+              
+              {isCurrentUser && (
+                <View style={styles.selfIndicator}>
+                  <Text style={styles.selfIndicatorText}>You</Text>
+                </View>
+              )}
+            </View>
+          );
+        })}
+      </ScrollView>
+    </View>
+  );
+});
+
+// Vote Result Animation Component
+const VoteResultOverlay = memo(({ visible, result, darePoints, onAnimationComplete }) => {
+  const [fadeAnim] = useState(new Animated.Value(0));
+  const [scaleAnim] = useState(new Animated.Value(0.5));
+
+  useEffect(() => {
+    if (visible) {
+      Animated.parallel([
+        Animated.timing(fadeAnim, {
+          toValue: 1,
+          duration: 500,
+          useNativeDriver: true,
+        }),
+        Animated.spring(scaleAnim, {
+          toValue: 1,
+          friction: 4,
+          tension: 100,
+          useNativeDriver: true,
+        })
+      ]).start();
+      
+      // Auto-hide after 3 seconds
+      const timer = setTimeout(() => {
+        Animated.parallel([
+          Animated.timing(fadeAnim, {
+            toValue: 0,
+            duration: 300,
+            useNativeDriver: true,
+          }),
+          Animated.timing(scaleAnim, {
+            toValue: 0.5,
+            duration: 300,
+            useNativeDriver: true,
+          })
+        ]).start(() => {
+          if (onAnimationComplete) {
+            onAnimationComplete();
+          }
+        });
+      }, 3000);
+      
+      return () => clearTimeout(timer);
+    }
+  }, [visible]);
+
+  if (!visible) return null;
+
+  const isSuccess = result === 'awarded';
+
+  return (
+    <Animated.View 
+      style={[
+        styles.voteResultOverlay,
+        {
+          opacity: fadeAnim,
+          transform: [{ scale: scaleAnim }]
+        }
+      ]}
+    >
+      <View style={[
+        styles.resultContainer,
+        isSuccess ? styles.successResult : styles.failureResult
+      ]}>
+        <Ionicons 
+          name={isSuccess ? "checkmark-circle" : "close-circle"} 
+          size={responsiveSize(60)} 
+          color={isSuccess ? "#4CAF50" : "#f44336"} 
+        />
+        <Text style={styles.resultTitle}>
+          {isSuccess ? "Dare Completed!" : "Dare Failed"}
+        </Text>
+        <Text style={styles.resultSubtitle}>
+          {isSuccess ? `+${darePoints} points awarded` : "No points awarded"}
+        </Text>
+        <Text style={styles.resultDescription}>
+          {isSuccess ? "The majority voted that the dare was completed successfully!" : "The majority voted that the dare was not completed."}
+        </Text>
+      </View>
+    </Animated.View>
+  );
+});
 
 const MultiplayerDarePopup = ({ 
   visible, 
   onClose, 
-  currentPlayer,
+  currentPlayer, 
   timerConfig,
+  // Multiplayer specific props
   isMultiplayer = true,
-  showVoting = true,
+  isPerformingDare = false,
   onVote = null,
   votes = {},
-  totalPlayers = 1
+  totalPlayers = 1,
+  // Dynamic dare scoring props
+  calculatedDarePoints = null,
+  streakInfo = null,
+  showDynamicPoints = false,
+  darePointsBreakdown = null
 }) => {
-  // State variables
+  const firebase = useFirebase();
   const [randomDare, setRandomDare] = useState(null);
   const [usedDares, setUsedDares] = useState(new Set());
+  const [fadeAnim] = useState(new Animated.Value(0));
+  
+  // Multiplayer state
   const [hasVoted, setHasVoted] = useState(false);
-  const [simulationActive, setSimulationActive] = useState(false);
   const [voteResult, setVoteResult] = useState(null); // 'awarded' or 'denied'
   const [isClosing, setIsClosing] = useState(false);
-  
-  // Firebase context for players and game state
-  const firebase = useFirebase();
-  const { user, players, gameState, isHost, updatePlayerData, globalDare, dareVotes, submitDareVote, processDareVotes } = firebase || {};
-  
-  // Added a ref to track if the dare result has been processed
+  const [showVoteResult, setShowVoteResult] = useState(false);
   const dareProcessedRef = useRef(false);
   
-  // Animation values
-  const slideAnim = React.useRef(new Animated.Value(0)).current;
-  const fadeAnim = React.useRef(new Animated.Value(0)).current;
-  const resultFadeAnim = useRef(new Animated.Value(0)).current;
+  // Achievement tracking
+  const [dareStartTime, setDareStartTime] = useState(null);
 
-  // Get a random dare from local data - only used as fallback
-  const getRandomDareFromLocal = () => {
-    // Reset used dares if we've used them all
+  // Get Firebase data
+  const players = firebase?.players ? Object.values(firebase.players) : [];
+  const currentUserId = firebase?.user?.uid;
+
+  // Handle Android back button when modal is visible
+  useFocusEffect(
+    React.useCallback(() => {
+      const onBackPress = () => {
+        if (visible && Platform.OS === 'android') {
+          return true; // Prevent back button from dismissing
+        }
+        return false;
+      };
+
+      BackHandler.addEventListener('hardwareBackPress', onBackPress);
+      return () => BackHandler.removeEventListener('hardwareBackPress', onBackPress);
+    }, [visible])
+  );
+
+  const getRandomDare = () => {
     if (usedDares.size >= daresData.length) {
       setUsedDares(new Set());
     }
     
-    // Filter out used dares
     const availableDares = daresData.filter((_, index) => !usedDares.has(index));
     
     if (availableDares.length === 0) {
@@ -67,313 +345,436 @@ const MultiplayerDarePopup = ({
     return selectedDare;
   };
 
-  // When the popup becomes visible, reset states and get dare from Firebase
   useEffect(() => {
     if (visible) {
-      // Reset all state variables when the dare popup becomes visible
-      setHasVoted(false);
-      setSimulationActive(false);
-      setVoteResult(null);
-      setIsClosing(false);
-      dareProcessedRef.current = false; // Reset the processed flag
+      setRandomDare(getRandomDare());
+      setDareStartTime(Date.now());
       
-      // Use the global dare from Firebase instead of generating locally
-      if (firebase && globalDare && globalDare.text) {
-        console.log('[DarePopup] Using dare from Firebase:', globalDare.text);
-        setRandomDare(globalDare.text);
-      } else if (!randomDare) {
-        // Fallback to local generation only if needed
-        const localDare = getRandomDareFromLocal();
-        console.log('[DarePopup] Using locally generated dare:', localDare);
-        setRandomDare(localDare);
+      // Log dynamic dare scoring info
+      if (showDynamicPoints && darePointsBreakdown) {
+        console.log('🎯 Multiplayer DarePopup opened with dynamic scoring:', {
+          calculatedDarePoints,
+          darePointsBreakdown,
+          streakInfo
+        });
       }
       
-      // Run entrance animations
-      Animated.parallel([
-        Animated.timing(slideAnim, {
-          toValue: 1,
-          duration: 400,
-          useNativeDriver: true,
-        }),
-        Animated.timing(fadeAnim, {
-          toValue: 1,
-          duration: 300,
-          useNativeDriver: true,
-        }),
-      ]).start();
+      // Reset multiplayer state
+      setHasVoted(false);
+      setVoteResult(null);
+      setIsClosing(false);
+      setShowVoteResult(false);
+      dareProcessedRef.current = false;
       
-      // Reset result animation
-      resultFadeAnim.setValue(0);
+      // Start fade-in animation
+      Animated.timing(fadeAnim, {
+        toValue: 1,
+        duration: Platform.OS === 'android' ? 200 : 300,
+        useNativeDriver: true,
+      }).start();
     } else {
-      // Reset animations when hidden
-      slideAnim.setValue(0);
       fadeAnim.setValue(0);
+      setDareStartTime(null);
     }
-  }, [visible, globalDare]);
+  }, [visible, showDynamicPoints, darePointsBreakdown, calculatedDarePoints, streakInfo]);
   
-  // Update dare content whenever Firebase global dare changes
+  // Process votes when all players have voted
   useEffect(() => {
-    if (globalDare && globalDare.text) {
-      console.log('[DarePopup] Updating dare from Firebase:', globalDare.text);
-      setRandomDare(globalDare.text);
-    }
-  }, [globalDare]);
-
-  // Process votes when all players have voted - Fixed to prevent multiple point awards
-  useEffect(() => {
-    // Use Firebase dareVotes if available, otherwise use local votes
-    const activeVotes = dareVotes || votes;
+    if (!isMultiplayer || !visible) return;
     
-    // Check if all votes are in
-    const votesReceived = Object.keys(activeVotes).length;
+    // Count votes
+    const voteEntries = Object.entries(votes);
+    const votesReceived = voteEntries.length;
+    const yesVotes = voteEntries.filter(([_, vote]) => vote === true).length;
+    const noVotes = voteEntries.filter(([_, vote]) => vote === false).length;
     
-    // Only process UI updates here - NOT score updates!
-    if (visible && isMultiplayer && votesReceived >= totalPlayers && !isClosing && !dareProcessedRef.current) {
-      console.log('[DarePopup] All votes received, processing result');
-      
-      // Mark as closing and processed to prevent multiple triggers
+    // Check if all players have voted
+    if (votesReceived >= totalPlayers && !isClosing && !dareProcessedRef.current) {
       setIsClosing(true);
       dareProcessedRef.current = true;
       
-      // Count positive votes
-      const yesVotes = Object.values(activeVotes).filter(v => v === true).length;
-      const totalVotes = Object.values(activeVotes).length;
-      const majorityCompleted = yesVotes >= Math.ceil(totalVotes / 2);
-      
-      // Show result and animate it
+      // Determine result
+      const majorityCompleted = yesVotes >= Math.ceil(totalPlayers / 2);
       setVoteResult(majorityCompleted ? 'awarded' : 'denied');
       
-      // Animate result appearance
-      Animated.timing(resultFadeAnim, {
-        toValue: 1,
-        duration: 500,
-        useNativeDriver: true
-      }).start();
-      
-      // If this client is the host, process the votes in Firebase
-      if (isHost && processDareVotes) {
-        setTimeout(() => {
-          console.log('[DarePopup] Host processing dare votes in Firebase');
-          processDareVotes().catch(err => console.error('Error processing dare votes:', err));
-        }, 1000);
+      // Achievement tracking for multiplayer
+      if (majorityCompleted && dareStartTime) {
+        const completionTimeMs = Date.now() - dareStartTime;
+        achievementTracker.trackDareCompleted(completionTimeMs).catch(error => {
+          console.error('Error tracking dare completion:', error);
+        });
       }
       
-      // Close popup after showing result
-      setTimeout(() => {
-        if (onClose) {
-          onClose(majorityCompleted);
-        }
-      }, 2000);
+      // Show result overlay
+      setShowVoteResult(true);
     }
-  }, [dareVotes, votes, visible, isMultiplayer, totalPlayers, isClosing, onClose, isHost, processDareVotes]);
+  }, [votes, visible, isMultiplayer, totalPlayers, isClosing, dareStartTime]);
 
-  // Handle when a player submits their vote
-  const handleDareCompleted = (dareCompleted) => {
-    // Prevent voting multiple times
+  const handleDareAction = async (dareCompleted) => {
     if (hasVoted) return;
     
-    console.log('[DarePopup] Submitting dare vote:', dareCompleted);
+    // Android haptic feedback
+    if (Platform.OS === 'android') {
+      try {
+        Vibration.vibrate(dareCompleted ? 100 : 200);
+      } catch (e) {
+        console.log('Vibration not available');
+      }
+    }
     
-    if (isMultiplayer && firebase && submitDareVote) {
-      // Use Firebase function to submit vote
-      submitDareVote(dareCompleted)
-        .then(() => {
-          console.log('[DarePopup] Vote submitted successfully');
-          setHasVoted(true);
-        })
-        .catch(err => console.error('Error submitting dare vote:', err));
-    } else if (onVote) {
-      // Fallback to local voting
+    console.log('🎯 Multiplayer dare action:', {
+      dareCompleted,
+      isPerformingDare,
+      dynamicPoints: calculatedDarePoints,
+      staticFallback: timerConfig ? Math.floor(timerConfig.baseScore * 0.5) : 50
+    });
+    
+    // Submit vote through Firebase
+    if (onVote) {
       onVote(dareCompleted);
       setHasVoted(true);
-    } else {
-      // Single player mode - close as usual
-      onClose(dareCompleted);
     }
   };
 
-  // Calculate points for completing the dare
-  const darePoints = timerConfig ? Math.floor(timerConfig.baseScore * 0.5) : 50;
-
-  // For multiplayer vote tracking - use Firebase dareVotes if available
-  const activeVotes = dareVotes || votes;
-  const voteYesCount = isMultiplayer ? Object.values(activeVotes).filter(v => v === true).length : 0;
-  const voteNoCount = isMultiplayer ? Object.values(activeVotes).filter(v => v === false).length : 0;
-  const votesReceived = voteYesCount + voteNoCount;
-  const votingProgress = totalPlayers > 0 ? votesReceived / totalPlayers : 0;
-  
-  // Calculate whether the current player is the one performing the dare
-  // In Firebase implementation we check by userId
-  const isPerformingDare = user && gameState && gameState.currentDarePlayerId === user.uid;
+  const handleVoteResultComplete = () => {
+    setShowVoteResult(false);
+    
+    // Close the modal with the result
+    const majorityCompleted = voteResult === 'awarded';
+    
+    Animated.timing(fadeAnim, {
+      toValue: 0,
+      duration: Platform.OS === 'android' ? 150 : 200,
+      useNativeDriver: true,
+    }).start(() => {
+      if (onClose) {
+        onClose(majorityCompleted);
+      }
+    });
+  };
 
   if (!randomDare) return null;
+  
+  // Calculate points - use dynamic if available, otherwise fallback
+  const getDarePoints = () => {
+    if (showDynamicPoints && calculatedDarePoints !== null) {
+      console.log('🎯 Using dynamic dare points:', calculatedDarePoints);
+      return calculatedDarePoints;
+    }
+    
+    const staticPoints = timerConfig ? Math.floor(timerConfig.baseScore * 0.5) : 50;
+    console.log('🎯 Using static fallback dare points:', staticPoints);
+    return staticPoints;
+  };
+
+  const darePoints = getDarePoints();
+
+  // Count votes for progress display
+  const voteEntries = Object.entries(votes);
+  const voteYesCount = voteEntries.filter(([_, vote]) => vote === true).length;
+  const voteNoCount = voteEntries.filter(([_, vote]) => vote === false).length;
+  const votesReceived = voteYesCount + voteNoCount;
+  const isProcessingVotes = votesReceived >= totalPlayers && !showVoteResult;
+
+  // Render dynamic points breakdown
+  const renderPointsBreakdown = () => {
+    if (!showDynamicPoints || !darePointsBreakdown) {
+      return null;
+    }
+
+    const { 
+      baseDarePoints, 
+      questionCountMultiplier, 
+      adjustedBaseDarePoints,
+      catchUpBonus, 
+      streakMultiplier, 
+      finalDarePoints, 
+      streakInfo 
+    } = darePointsBreakdown;
+
+    return (
+      <View style={styles.pointsBreakdownContainer}>
+        <Text style={styles.pointsBreakdownTitle}>Dare Worth:</Text>
+        
+        <View style={styles.pointsBreakdownRow}>
+          <Text style={styles.pointsBreakdownLabel}>Base Points:</Text>
+          <Text style={styles.pointsBreakdownValue}>+{Math.round(baseDarePoints)}</Text>
+        </View>
+        
+        {questionCountMultiplier && questionCountMultiplier !== 1 && (
+          <View style={styles.pointsBreakdownRow}>
+            <Text style={styles.pointsBreakdownLabel}>
+              Game Length Bonus ({questionCountMultiplier.toFixed(1)}x):
+            </Text>
+            <Text style={[styles.pointsBreakdownValue, 
+              questionCountMultiplier > 1 ? styles.bonusText : styles.reductionText
+            ]}>
+              {questionCountMultiplier > 1 ? '+' : ''}{Math.round(adjustedBaseDarePoints - baseDarePoints)}
+            </Text>
+          </View>
+        )}
+        
+        {catchUpBonus > 0 && (
+          <View style={styles.pointsBreakdownRow}>
+            <Text style={styles.pointsBreakdownLabel}>Catch-up Bonus:</Text>
+            <Text style={[styles.pointsBreakdownValue, styles.bonusText]}>+{Math.round(catchUpBonus)}</Text>
+          </View>
+        )}
+        
+        {streakInfo && streakInfo.currentStreak > 0 && (
+          <View style={styles.pointsBreakdownRow}>
+            <Text style={styles.pointsBreakdownLabel}>Streak Bonus ({streakInfo.currentStreak}x):</Text>
+            <Text style={[styles.pointsBreakdownValue, styles.streakText]}>+{Math.round(streakInfo.streakBonus)}</Text>
+          </View>
+        )}
+        
+        <View style={[styles.pointsBreakdownRow, styles.totalPointsRow]}>
+          <Text style={styles.totalPointsLabel}>Total:</Text>
+          <Text style={styles.totalPointsValue}>{finalDarePoints} pts</Text>
+        </View>
+        
+        {streakInfo && (
+          <Text style={styles.streakInfoText}>
+            {streakInfo.currentStreak > 0 
+              ? `Current streak: ${streakInfo.currentStreak} dares`
+              : 'Complete this dare to start a streak!'
+            }
+          </Text>
+        )}
+      </View>
+    );
+  };
+
+  // Render voting content based on user role
+  const renderVotingContent = () => {
+    if (hasVoted || isProcessingVotes) {
+      return (
+        <View style={styles.votingStatusContainer}>
+          <VoteProgressIndicator
+            votesReceived={votesReceived}
+            totalPlayers={totalPlayers}
+            yesVotes={voteYesCount}
+            noVotes={voteNoCount}
+            isProcessing={isProcessingVotes}
+          />
+          
+          <PlayerVotingStatus 
+            players={players}
+            votes={votes}
+            currentUserId={currentUserId}
+          />
+          
+          <Text style={styles.votingStatusText}>
+            {isProcessingVotes 
+              ? "Processing results..." 
+              : `Waiting for ${totalPlayers - votesReceived} more votes...`}
+          </Text>
+        </View>
+      );
+    }
+    
+    // Show voting buttons
+    return (
+      <>
+        <Text style={styles.votingInstructionText}>
+          {isPerformingDare 
+            ? "Complete the dare then press the button below:" 
+            : `Did ${currentPlayer} complete the dare successfully?`}
+        </Text>
+
+        {renderPlatformButtons()}
+      </>
+    );
+  };
+
+  // Platform-specific button rendering
+  const renderPlatformButtons = () => {
+    const isDisabled = isClosing || hasVoted;
+    
+    if (Platform.OS === 'android') {
+      return (
+        <>
+          <View style={[styles.buttonWrapper, styles.completedButtonWrapper]}>
+            <TouchableNativeFeedback
+              background={TouchableNativeFeedback.Ripple('#FFFFFF', false)}
+              onPress={() => handleDareAction(true)}
+              disabled={isDisabled}
+            >
+              <View style={[styles.button, styles.completedButton, styles.buttonAndroid]}>
+                <Text style={[styles.buttonText, styles.buttonTextAndroid]}>
+                  {isPerformingDare 
+                    ? "I Completed It" 
+                    : "Vote: Completed"}
+                </Text>
+                <Text style={[styles.pointsText, styles.buttonTextAndroid]}>
+                  +{darePoints} pts
+                </Text>
+              </View>
+            </TouchableNativeFeedback>
+          </View>
+
+          <View style={[styles.buttonWrapper, styles.notCompletedButtonWrapper]}>
+            <TouchableNativeFeedback
+              background={TouchableNativeFeedback.Ripple('#FFFFFF', false)}
+              onPress={() => handleDareAction(false)}
+              disabled={isDisabled}
+            >
+              <View style={[styles.button, styles.notCompletedButton, styles.buttonAndroid]}>
+                <Text style={[styles.buttonText, styles.buttonTextAndroid]}>
+                  {isPerformingDare
+                    ? "I Didn't Complete It"
+                    : "Vote: Not Completed"}
+                </Text>
+                <Text style={[styles.pointsText, styles.buttonTextAndroid]}>
+                  +0 pts
+                </Text>
+              </View>
+            </TouchableNativeFeedback>
+          </View>
+        </>
+      );
+    }
+
+    return (
+      <>
+        <TouchableOpacity
+          style={[styles.button, styles.completedButton]}
+          onPress={() => handleDareAction(true)}
+          disabled={isDisabled}
+        >
+          <Text style={styles.buttonText}>
+            {isPerformingDare 
+              ? "I Completed It" 
+              : "Vote: Completed"}
+          </Text>
+          <Text style={styles.pointsText}>+{darePoints} pts</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={[styles.button, styles.notCompletedButton]}
+          onPress={() => handleDareAction(false)}
+          disabled={isDisabled}
+        >
+          <Text style={styles.buttonText}>
+            {isPerformingDare
+              ? "I Didn't Complete It"
+              : "Vote: Not Completed"}
+          </Text>
+          <Text style={styles.pointsText}>+0 pts</Text>
+        </TouchableOpacity>
+      </>
+    );
+  };
 
   return (
     <Modal
       visible={visible}
       transparent={true}
-      animationType="none" // Using custom animations
+      animationType="none"
+      onRequestClose={() => {
+        if (Platform.OS === 'android') {
+          return; // Prevent modal from closing on Android back button
+        }
+      }}
     >
-      <View style={styles.container}>
-        <Animated.View 
+      <Animated.View 
+        style={[
+          styles.container,
+          { opacity: fadeAnim }
+        ]}
+      >
+        <LinearGradient
+          colors={['#1a0f3d', '#2d1b4e']}
           style={[
-            styles.animatedContainer,
-            {
-              opacity: fadeAnim,
-              transform: [
-                {
-                  translateY: slideAnim.interpolate({
-                    inputRange: [0, 1],
-                    outputRange: [50, 0],
-                  }),
-                },
-              ],
-            },
+            styles.popupGradient,
+            Platform.OS === 'android' ? styles.popupGradientAndroid : {}
           ]}
         >
-          <LinearGradient
-            colors={['#1a0f3d', '#2d1b4e']}
-            style={styles.popupGradient}
+          {/* Top light bar */}
+          <View style={styles.lightBar}>
+            {[...Array(Platform.OS === 'android' ? 8 : 10)].map((_, i) => (
+              <View 
+                key={`top-${i}`} 
+                style={[
+                  styles.light,
+                  Platform.OS === 'android' ? styles.lightAndroid : {}
+                ]} 
+              />
+            ))}
+          </View>
+
+          <ScrollView 
+            style={styles.scrollContainer}
+            contentContainerStyle={styles.content}
+            showsVerticalScrollIndicator={false}
           >
-            {/* Top light bar */}
-            <View style={styles.lightBar}>
-              {[...Array(10)].map((_, i) => (
-                <View key={`top-${i}`} style={styles.light} />
-              ))}
+            <Text style={[
+              styles.playerName,
+              Platform.OS === 'android' ? styles.playerNameAndroid : {}
+            ]}>
+              {currentPlayer}
+            </Text>
+            
+            <View style={[
+              styles.dareCounter,
+              Platform.OS === 'android' ? styles.dareCounterAndroid : {}
+            ]}>
+              <Text style={[
+                styles.dareCounterText,
+                Platform.OS === 'android' ? styles.dareCounterTextAndroid : {}
+              ]}>
+                MULTIPLAYER DARE CHALLENGE
+              </Text>
             </View>
 
-            <View style={styles.content}>
-              <Text style={styles.playerName}>{currentPlayer}</Text>
-              
-              <View style={styles.dareCounter}>
-                <Text style={styles.dareCounterText}>
-                  {isMultiplayer ? "DARE CHALLENGE" : "DARE"}
-                </Text>
-              </View>
-
-              {isMultiplayer && (
-                <View style={styles.multiplayerIndicator}>
-                  <Ionicons name="people" size={16} color="#FFD700" />
-                  <Text style={styles.multiplayerText}>Multiplayer Mode</Text>
-                </View>
-              )}
-
-              <View style={styles.dareContainer}>
-                <Text style={styles.dareText}>
-                  {randomDare}
-                </Text>
-              </View>
-
-              {/* Vote result animation overlay */}
-              {voteResult && (
-                <Animated.View 
-                  style={[
-                    styles.voteResultContainer,
-                    { opacity: resultFadeAnim }
-                  ]}
-                >
-                  <View style={[
-                    styles.resultBadge,
-                    voteResult === 'awarded' ? styles.awardedBadge : styles.deniedBadge
-                  ]}>
-                    <Ionicons 
-                      name={voteResult === 'awarded' ? "checkmark-circle" : "close-circle"} 
-                      size={40} 
-                      color={voteResult === 'awarded' ? "#4CAF50" : "#f44336"} 
-                    />
-                    <Text style={styles.resultText}>
-                      {voteResult === 'awarded' 
-                        ? `Points Awarded: +${darePoints}` 
-                        : "No Points Awarded"}
-                    </Text>
-                  </View>
-                </Animated.View>
-              )}
-
-              {isMultiplayer && hasVoted ? (
-                // Show voting status after voting
-                <View style={styles.votingStatusContainer}>
-                  <Text style={styles.votingStatusText}>
-                    Waiting for other players to vote...
-                  </Text>
-                  <View style={styles.votingProgressContainer}>
-                    <Animated.View 
-                      style={[
-                        styles.votingProgress, 
-                        { width: `${votingProgress * 100}%` }
-                      ]} 
-                    />
-                  </View>
-                  <Text style={styles.votingCountText}>
-                    {votesReceived} of {totalPlayers} votes received
-                  </Text>
-                  <View style={styles.voteCountsContainer}>
-                    <View style={styles.voteCountItem}>
-                      <Ionicons name="thumbs-up" size={20} color="#4CAF50" />
-                      <Text style={styles.voteCountText}>{voteYesCount}</Text>
-                    </View>
-                    <View style={styles.voteCountItem}>
-                      <Ionicons name="thumbs-down" size={20} color="#f44336" />
-                      <Text style={styles.voteCountText}>{voteNoCount}</Text>
-                    </View>
-                  </View>
-                  {votingProgress < 1 && !isClosing && (
-                    <ActivityIndicator size="small" color="#FFD700" style={styles.loadingIndicator} />
-                  )}
-                </View>
-              ) : (
-                // Show voting buttons if not voted yet
-                <>
-                  {isMultiplayer && (
-                    <Text style={styles.votingInstructionText}>
-                      {isPerformingDare 
-                        ? "Complete the dare then press the button below:" 
-                        : `Did ${currentPlayer} complete the dare successfully?`}
-                    </Text>
-                  )}
-
-                  <TouchableOpacity
-                    style={[styles.button, styles.completedButton]}
-                    onPress={() => handleDareCompleted(true)}
-                    disabled={isClosing || hasVoted}
-                  >
-                    <Text style={styles.buttonText}>
-                      {isMultiplayer 
-                        ? isPerformingDare 
-                          ? "I Completed It" 
-                          : "Vote: Completed" 
-                        : "Dare Completed"}
-                    </Text>
-                    {isMultiplayer && <Text style={styles.pointsText}>+{darePoints} pts</Text>}
-                  </TouchableOpacity>
-
-                  <TouchableOpacity
-                    style={[styles.button, styles.notCompletedButton]}
-                    onPress={() => handleDareCompleted(false)}
-                    disabled={isClosing || hasVoted}
-                  >
-                    <Text style={styles.buttonText}>
-                      {isMultiplayer 
-                        ? isPerformingDare
-                          ? "I Didn't Complete It"
-                          : "Vote: Not Completed" 
-                        : "Dare Not Completed"}
-                    </Text>
-                    {isMultiplayer && <Text style={styles.pointsText}>+0 pts</Text>}
-                  </TouchableOpacity>
-                </>
-              )}
+            <View style={styles.multiplayerIndicator}>
+              <Ionicons name="people" size={responsiveSize(16)} color="#FFD700" />
+              <Text style={styles.multiplayerText}>
+                {totalPlayers} Players • {isPerformingDare ? "You're performing" : "Vote on completion"}
+              </Text>
             </View>
 
-            {/* Bottom light bar */}
-            <View style={styles.lightBar}>
-              {[...Array(10)].map((_, i) => (
-                <View key={`bottom-${i}`} style={styles.light} />
-              ))}
+            <View style={[
+              styles.dareContainer,
+              Platform.OS === 'android' ? styles.dareContainerAndroid : {}
+            ]}>
+              <Text style={[
+                styles.dareText,
+                Platform.OS === 'android' ? styles.dareTextAndroid : {}
+              ]}>
+                {randomDare}
+              </Text>
             </View>
-          </LinearGradient>
-        </Animated.View>
-      </View>
+
+            {/* Dynamic Points Breakdown */}
+            {renderPointsBreakdown()}
+
+            {/* Multiplayer voting content */}
+            {renderVotingContent()}
+          </ScrollView>
+
+          {/* Bottom light bar */}
+          <View style={styles.lightBar}>
+            {[...Array(Platform.OS === 'android' ? 8 : 10)].map((_, i) => (
+              <View 
+                key={`bottom-${i}`} 
+                style={[
+                  styles.light,
+                  Platform.OS === 'android' ? styles.lightAndroid : {}
+                ]} 
+              />
+            ))}
+          </View>
+        </LinearGradient>
+        
+        {/* Vote Result Overlay */}
+        <VoteResultOverlay
+          visible={showVoteResult}
+          result={voteResult}
+          darePoints={darePoints}
+          onAnimationComplete={handleVoteResultComplete}
+        />
+      </Animated.View>
     </Modal>
   );
 };
@@ -385,106 +786,461 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.75)',
   },
-  animatedContainer: {
-    width: '90%',
-    maxWidth: 400,
-  },
   popupGradient: {
-    width: '100%',
-    borderRadius: 15,
+    width: isTablet() ? Math.min(width * 0.8, 600) : '90%',
+    maxWidth: isTablet() ? 600 : 400,
+    maxHeight: height * 0.9,
+    borderRadius: responsiveSize(15),
     overflow: 'hidden',
-    borderWidth: 2,
+    borderWidth: responsiveSize(2),
     borderColor: '#FFD700',
     padding: 0,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 6,
+      },
+    }),
+  },
+  popupGradientAndroid: {
+    elevation: 8,
+    borderWidth: responsiveSize(1.5),
+    width: isTablet() ? Math.min(width * 0.75, 550) : width * 0.85,
+    maxWidth: isTablet() ? 550 : 380,
+  },
+  scrollContainer: {
+    flex: 1,
   },
   lightBar: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
     width: '100%',
-    paddingVertical: 10,
+    paddingVertical: responsiveSpacing(10),
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
   },
   light: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
+    width: responsiveSize(8),
+    height: responsiveSize(8),
+    borderRadius: responsiveSize(4),
     backgroundColor: '#FFD700',
     opacity: 0.8,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#FFD700',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
+      },
+    }),
+  },
+  lightAndroid: {
+    width: responsiveSize(7),
+    height: responsiveSize(7),
+    borderRadius: responsiveSize(3.5),
+    opacity: 0.7,
+    elevation: 2,
   },
   content: {
-    padding: 20,
+    padding: responsiveSpacing(20),
     alignItems: 'center',
+    flexGrow: 1,
   },
   playerName: {
-    fontSize: 32,
+    fontSize: responsiveFont(32),
     fontWeight: 'bold',
     color: '#FFD700',
     textAlign: 'center',
-    marginBottom: 10,
+    marginBottom: responsiveSpacing(10),
     textShadowColor: '#000',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
   },
+  playerNameAndroid: {
+    fontSize: responsiveFont(28),
+    fontWeight: '700',
+    textShadowColor: undefined,
+    textShadowOffset: undefined,
+    textShadowRadius: undefined,
+    elevation: 3,
+    marginBottom: responsiveSpacing(8),
+  },
   dareCounter: {
     backgroundColor: '#000000',
-    paddingHorizontal: 20,
-    paddingVertical: 5,
-    borderRadius: 15,
-    marginBottom: 10,
+    paddingHorizontal: responsiveSpacing(20),
+    paddingVertical: responsiveSpacing(5),
+    borderRadius: responsiveSize(15),
+    marginBottom: responsiveSpacing(10),
     borderWidth: 1,
     borderColor: '#FFD700',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#FFD700',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.3,
+        shadowRadius: 3,
+      },
+    }),
+  },
+  dareCounterAndroid: {
+    elevation: 4,
+    paddingHorizontal: responsiveSpacing(18),
+    marginBottom: responsiveSpacing(16),
   },
   dareCounterText: {
-    fontSize: 18,
+    fontSize: responsiveFont(16),
     color: '#FFFFFF',
     fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  dareCounterTextAndroid: {
+    fontSize: responsiveFont(14),
+    fontWeight: '700',
   },
   multiplayerIndicator: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 10,
-    marginBottom: 15,
+    paddingHorizontal: responsiveSpacing(10),
+    paddingVertical: responsiveSpacing(5),
+    borderRadius: responsiveSize(10),
+    marginBottom: responsiveSpacing(15),
   },
   multiplayerText: {
     color: '#FFD700',
-    marginLeft: 5,
+    marginLeft: responsiveSpacing(5),
     fontWeight: 'bold',
+    fontSize: responsiveFont(13),
+    textAlign: 'center',
   },
   dareContainer: {
     width: '100%',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    borderRadius: 10,
-    padding: 20,
-    marginBottom: 20,
+    borderRadius: responsiveSize(10),
+    padding: responsiveSpacing(20),
+    marginBottom: responsiveSpacing(20),
+    borderWidth: 1,
+    borderColor: '#FFD700',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+      },
+    }),
+  },
+  dareContainerAndroid: {
+    elevation: 5,
+    padding: responsiveSpacing(16),
+    marginBottom: responsiveSpacing(16),
+  },
+  dareText: {
+    fontSize: responsiveFont(18),
+    color: '#FFFFFF',
+    textAlign: 'center',
+    lineHeight: responsiveFont(24),
+  },
+  dareTextAndroid: {
+    fontSize: responsiveFont(16),
+    lineHeight: responsiveFont(22),
+  },
+  
+  // Dynamic Points Breakdown Styles
+  pointsBreakdownContainer: {
+    width: '100%',
+    backgroundColor: 'rgba(255, 215, 0, 0.1)',
+    borderRadius: responsiveSize(10),
+    padding: responsiveSpacing(15),
+    marginBottom: responsiveSpacing(15),
+    borderWidth: 1,
+    borderColor: '#FFD700',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#FFD700',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
+      },
+      android: {
+        elevation: 3,
+      },
+    }),
+  },
+  pointsBreakdownTitle: {
+    fontSize: responsiveFont(16),
+    fontWeight: 'bold',
+    color: '#FFD700',
+    textAlign: 'center',
+    marginBottom: responsiveSpacing(10),
+  },
+  pointsBreakdownRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginVertical: responsiveSpacing(2),
+  },
+  pointsBreakdownLabel: {
+    fontSize: responsiveFont(14),
+    color: '#FFFFFF',
+    flex: 1,
+  },
+  pointsBreakdownValue: {
+    fontSize: responsiveFont(14),
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+    minWidth: responsiveSize(40),
+    textAlign: 'right',
+  },
+  bonusText: {
+    color: '#4CAF50',
+  },
+  reductionText: {
+    color: '#FF5722',
+  },
+  streakText: {
+    color: '#FF9800',
+  },
+  totalPointsRow: {
+    borderTopWidth: 1,
+    borderTopColor: '#FFD700',
+    marginTop: responsiveSpacing(5),
+    paddingTop: responsiveSpacing(5),
+  },
+  totalPointsLabel: {
+    fontSize: responsiveFont(16),
+    color: '#FFD700',
+    fontWeight: 'bold',
+    flex: 1,
+  },
+  totalPointsValue: {
+    fontSize: responsiveFont(18),
+    color: '#FFD700',
+    fontWeight: 'bold',
+    minWidth: responsiveSize(60),
+    textAlign: 'right',
+  },
+  streakInfoText: {
+    fontSize: responsiveFont(12),
+    color: '#CCCCCC',
+    textAlign: 'center',
+    marginTop: responsiveSpacing(8),
+    fontStyle: 'italic',
+  },
+  
+  // Multiplayer Voting Progress Styles
+  voteProgressContainer: {
+    width: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    borderRadius: responsiveSize(10),
+    padding: responsiveSpacing(15),
+    marginBottom: responsiveSpacing(15),
     borderWidth: 1,
     borderColor: '#FFD700',
   },
-  dareText: {
-    fontSize: 18,
-    color: '#FFFFFF',
+  voteProgressTitle: {
+    color: '#FFD700',
+    fontSize: responsiveFont(16),
+    fontWeight: 'bold',
     textAlign: 'center',
-    lineHeight: 24,
+    marginBottom: responsiveSpacing(10),
   },
-  votingInstructionText: {
-    fontSize: 16,
+  progressBarContainer: {
+    marginBottom: responsiveSpacing(15),
+  },
+  progressBarBackground: {
+    width: '100%',
+    height: responsiveSize(8),
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    borderRadius: responsiveSize(4),
+    overflow: 'hidden',
+    marginBottom: responsiveSpacing(5),
+  },
+  progressBarFill: {
+    height: '100%',
+    backgroundColor: '#FFD700',
+  },
+  progressText: {
+    color: '#FFFFFF',
+    fontSize: responsiveFont(14),
+    textAlign: 'center',
+  },
+  voteCountsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
+  voteCountItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    paddingHorizontal: responsiveSpacing(12),
+    paddingVertical: responsiveSpacing(6),
+    borderRadius: responsiveSize(15),
+  },
+  voteCountNumber: {
+    color: '#FFFFFF',
+    fontSize: responsiveFont(16),
+    fontWeight: 'bold',
+    marginHorizontal: responsiveSpacing(5),
+  },
+  voteCountLabel: {
+    color: '#FFFFFF',
+    fontSize: responsiveFont(14),
+  },
+  voteCountSeparator: {
+    width: 1,
+    height: responsiveSize(20),
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+  },
+  processingIndicator: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: responsiveSpacing(10),
+  },
+  processingText: {
+    color: '#FFD700',
+    fontSize: responsiveFont(14),
+    marginLeft: responsiveSpacing(8),
+  },
+  
+  // Player Voting Status Styles
+  playerVotingContainer: {
+    width: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    borderRadius: responsiveSize(8),
+    padding: responsiveSpacing(10),
+    marginBottom: responsiveSpacing(15),
+  },
+  playerVotingTitle: {
+    color: '#FFD700',
+    fontSize: responsiveFont(14),
+    fontWeight: 'bold',
+    marginBottom: responsiveSpacing(8),
+  },
+  playerVotingScroll: {
+    maxHeight: responsiveSize(60),
+  },
+  playerVoteItem: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: responsiveSize(6),
+    paddingHorizontal: responsiveSpacing(8),
+    paddingVertical: responsiveSpacing(6),
+    marginRight: responsiveSpacing(8),
+    marginBottom: responsiveSpacing(4),
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+    position: 'relative',
+  },
+  playerVoteItemVoted: {
+    borderColor: '#4CAF50',
+  },
+  playerVoteItemSelf: {
+    borderColor: '#FFD700',
+    backgroundColor: 'rgba(255, 215, 0, 0.1)',
+  },
+  playerVoteName: {
+    color: '#FFFFFF',
+    fontSize: responsiveFont(12),
+    fontWeight: 'bold',
+    marginBottom: responsiveSpacing(2),
+  },
+  playerVoteNameVoted: {
+    color: '#4CAF50',
+  },
+  playerVoteNameSelf: {
+    color: '#FFD700',
+  },
+  playerVoteStatus: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  playerVoteText: {
+    fontSize: responsiveFont(11),
+    fontWeight: 'bold',
+    marginLeft: responsiveSpacing(3),
+  },
+  playerVoteWaiting: {
+    color: '#FFD700',
+    fontSize: responsiveFont(10),
+    marginLeft: responsiveSpacing(3),
+  },
+  selfIndicator: {
+    position: 'absolute',
+    top: -2,
+    right: -2,
+    backgroundColor: '#FFD700',
+    borderRadius: responsiveSize(6),
+    paddingHorizontal: responsiveSpacing(4),
+    paddingVertical: responsiveSpacing(1),
+  },
+  selfIndicatorText: {
+    color: '#000',
+    fontSize: responsiveFont(8),
+    fontWeight: 'bold',
+  },
+  
+  // Voting Status Container
+  votingStatusContainer: {
+    width: '100%',
+    alignItems: 'center',
+  },
+  votingStatusText: {
+    fontSize: responsiveFont(16),
     color: '#FFFFFF',
     textAlign: 'center',
-    marginBottom: 15,
+    marginTop: responsiveSpacing(10),
     fontStyle: 'italic',
+  },
+  
+  // Voting Instruction Text
+  votingInstructionText: {
+    fontSize: responsiveFont(16),
+    color: '#FFFFFF',
+    textAlign: 'center',
+    marginBottom: responsiveSpacing(15),
+    fontStyle: 'italic',
+  },
+  
+  // Button Styles
+  buttonWrapper: {
+    width: '100%',
+    borderRadius: responsiveSize(25),
+    marginVertical: responsiveSpacing(8),
+    overflow: 'hidden',
+  },
+  completedButtonWrapper: {
+    backgroundColor: '#4CAF50',
+  },
+  notCompletedButtonWrapper: {
+    backgroundColor: '#f44336',
   },
   button: {
     width: '100%',
-    paddingVertical: 15,
-    paddingHorizontal: 20,
-    borderRadius: 25,
-    marginVertical: 8,
+    paddingVertical: responsiveSpacing(15),
+    paddingHorizontal: responsiveSpacing(20),
+    borderRadius: responsiveSize(25),
+    marginVertical: responsiveSpacing(8),
     borderWidth: 1,
     borderColor: '#FFD700',
     alignItems: 'center',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 3,
+      },
+    }),
+  },
+  buttonAndroid: {
+    elevation: 5,
+    marginVertical: 0,
+    borderRadius: 0,
+    paddingVertical: responsiveSpacing(16),
   },
   completedButton: {
     backgroundColor: '#4CAF50',
@@ -494,109 +1250,75 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: 'white',
-    fontSize: 18,
+    fontSize: responsiveFont(18),
     fontWeight: 'bold',
     textAlign: 'center',
     textShadowColor: '#000',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
   },
+  buttonTextAndroid: {
+    fontSize: responsiveFont(16),
+    fontWeight: '700',
+    textShadowColor: undefined,
+    textShadowOffset: undefined,
+    textShadowRadius: undefined,
+    elevation: 2,
+  },
   pointsText: {
     color: 'white',
-    fontSize: 14,
-    marginTop: 5,
-  },
-  votingStatusContainer: {
-    width: '100%',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    borderRadius: 10,
-    padding: 15,
-    borderWidth: 1,
-    borderColor: '#FFD700',
-  },
-  votingStatusText: {
-    fontSize: 16,
-    color: '#FFFFFF',
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  votingProgressContainer: {
-    width: '100%',
-    height: 10,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
-    borderRadius: 5,
-    marginBottom: 10,
-    overflow: 'hidden',
-  },
-  votingProgress: {
-    height: '100%',
-    backgroundColor: '#FFD700',
-  },
-  votingCountText: {
-    fontSize: 14,
-    color: '#FFFFFF',
-    marginBottom: 10,
-  },
-  voteCountsContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    width: '60%',
-    marginTop: 5,
-  },
-  voteCountItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    paddingHorizontal: 15,
-    paddingVertical: 5,
-    borderRadius: 15,
-  },
-  voteCountText: {
-    color: '#FFFFFF',
-    fontSize: 16,
+    fontSize: responsiveFont(14),
+    marginTop: responsiveSpacing(5),
     fontWeight: 'bold',
-    marginLeft: 5,
   },
-  loadingIndicator: {
-    marginTop: 10,
-  },
-  voteResultContainer: {
+  
+  // Vote Result Overlay Styles
+  voteResultOverlay: {
     position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    zIndex: 10,
-    borderRadius: 10,
+    zIndex: 100,
   },
-  resultBadge: {
-    padding: 20,
-    borderRadius: 15,
+  resultContainer: {
+    backgroundColor: 'rgba(26, 35, 126, 0.95)',
+    borderRadius: responsiveSize(20),
+    padding: responsiveSpacing(30),
     alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 2,
+    borderWidth: responsiveSize(3),
+    maxWidth: width * 0.8,
   },
-  awardedBadge: {
-    backgroundColor: 'rgba(76, 175, 80, 0.2)',
+  successResult: {
     borderColor: '#4CAF50',
   },
-  deniedBadge: {
-    backgroundColor: 'rgba(244, 67, 54, 0.2)',
+  failureResult: {
     borderColor: '#f44336',
   },
-  resultText: {
-    fontSize: 22,
+  resultTitle: {
+    fontSize: responsiveFont(28),
     fontWeight: 'bold',
     color: '#FFFFFF',
-    marginTop: 10,
+    marginTop: responsiveSpacing(15),
+    marginBottom: responsiveSpacing(10),
     textAlign: 'center',
-    textShadowColor: '#000',
-    textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 2,
+  },
+  resultSubtitle: {
+    fontSize: responsiveFont(20),
+    color: '#FFD700',
+    fontWeight: 'bold',
+    marginBottom: responsiveSpacing(10),
+    textAlign: 'center',
+  },
+  resultDescription: {
+    fontSize: responsiveFont(16),
+    color: '#FFFFFF',
+    textAlign: 'center',
+    lineHeight: responsiveFont(22),
+    opacity: 0.9,
   }
 });
 

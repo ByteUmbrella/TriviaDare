@@ -24,6 +24,10 @@ import { useSettings } from '../Context/Settings';
 import { useFocusEffect } from '@react-navigation/native';
 import * as Animatable from 'react-native-animatable';
 
+// Achievement tracking imports
+import { achievementTracker } from '../Context/AchievementTracker';
+import { loadAchievements } from '../Context/AchievementModal';
+
 // Keep all your existing imports for packs
 import spicy from '../Packs/DaresOnly/spicy.json';
 import adventureseekers from '../Packs/DaresOnly/adventure_seekers.json';
@@ -38,10 +42,71 @@ import houseparty from '../Packs/DaresOnly/house_party.json'
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 
-// Function to calculate responsive font sizes
+// Device type detection and responsive functions
+const getDeviceType = () => {
+  const aspectRatio = SCREEN_HEIGHT / SCREEN_WIDTH;
+  
+  if (Platform.OS === 'ios') {
+    // iPad detection - iPads typically have lower aspect ratios
+    if ((SCREEN_WIDTH >= 768 && SCREEN_HEIGHT >= 1024) || aspectRatio < 1.6) {
+      return 'tablet';
+    }
+  } else {
+    // Android tablet detection
+    if (SCREEN_WIDTH >= 600 || aspectRatio < 1.6) {
+      return 'tablet';
+    }
+  }
+  
+  return 'phone';
+};
+
+const isTablet = () => getDeviceType() === 'tablet';
+
+// Responsive scaling functions
+const responsiveFont = (phoneSize) => {
+  if (isTablet()) {
+    return Math.round(phoneSize * 1.3); // 30% larger fonts for tablets
+  }
+  return phoneSize;
+};
+
+const responsiveSpacing = (phoneSize) => {
+  if (isTablet()) {
+    return Math.round(phoneSize * 1.4); // 40% larger spacing for tablets
+  }
+  return phoneSize;
+};
+
+const responsiveSize = (phoneSize) => {
+  if (isTablet()) {
+    return Math.round(phoneSize * 1.25); // 25% larger sizes for tablets
+  }
+  return phoneSize;
+};
+
+// Enhanced responsive font scaling function
 const scaleFontSize = (size) => {
-  const scaleFactor = Math.min(SCREEN_WIDTH / 375, SCREEN_HEIGHT / 812);
-  return Math.round(size * scaleFactor);
+  if (isTablet()) {
+    // For tablets, use both screen scaling and our responsive scaling
+    const screenScaleFactor = Math.min(SCREEN_WIDTH / 375, SCREEN_HEIGHT / 812);
+    const tabletScale = Math.max(screenScaleFactor * 1.2, 1.3); // Ensure minimum 30% increase
+    return Math.round(size * tabletScale);
+  } else {
+    // For phones, use original scaling logic
+    const scaleFactor = Math.min(SCREEN_WIDTH / 375, SCREEN_HEIGHT / 812);
+    return Math.round(size * scaleFactor);
+  }
+};
+
+// Achievement tracking helper function
+const trackAchievementSafely = async (trackingFunction, ...args) => {
+  try {
+    await trackingFunction(...args);
+  } catch (error) {
+    console.error('Achievement tracking error:', error);
+    // Don't throw - we don't want achievement tracking to break gameplay
+  }
 };
 
 const packData = {
@@ -88,7 +153,7 @@ const CasinoAlert = ({ visible, title, message, onCancel, onConfirm, cancelText 
           <Text style={styles.alertTitle}>{title}</Text>
           <View style={styles.casinoSeparator}>
             <View style={styles.separatorLine} />
-            <Ionicons name="diamond" size={16} color="#FFD700" />
+            <Ionicons name="diamond" size={responsiveSize(16)} color="#FFD700" />
             <View style={styles.separatorLine} />
           </View>
           <Text style={styles.alertMessage}>{message}</Text>
@@ -176,6 +241,20 @@ const DareOnlyScreen = ({ navigation, route }) => {
   const isGameOver = daresAsked.every(dares => dares >= dareCount);
   const { width, height } = Dimensions.get('window');
   const isLandscape = width > height;
+  
+  // ACHIEVEMENT INTEGRATION: Track game start when component mounts
+  useEffect(() => {
+    const trackGameStart = async () => {
+      if (players && players.length > 0 && !isLoading) {
+        await trackAchievementSafely(
+          achievementTracker.trackGameStart, 
+          players.map(player => player.name || player)
+        );
+      }
+    };
+    
+    trackGameStart();
+  }, [players, isLoading]);
   
   // Animation for initial card entrance (dealer style)
   useEffect(() => {
@@ -413,7 +492,14 @@ const DareOnlyScreen = ({ navigation, route }) => {
     }).start();
   };
 
-  const handleShowResults = () => {
+  // ACHIEVEMENT INTEGRATION: Modified handleShowResults to track game completion
+  const handleShowResults = async () => {
+    // Track game completion before showing results
+    await trackAchievementSafely(
+      achievementTracker.trackGameComplete, 
+      true // true = this is a dares-only game
+    );
+
     Animated.sequence([
       Animated.timing(buttonScaleAnim, {
         toValue: 0.9,
@@ -455,8 +541,14 @@ const DareOnlyScreen = ({ navigation, route }) => {
     });
   };
 
-  const handleDareCompletion = (completed) => {
+  // ACHIEVEMENT INTEGRATION: Modified handleDareCompletion to track dare completions
+  const handleDareCompletion = async (completed) => {
     setCurrentDareCompleted(completed);
+    
+    // Track dare completion for achievements
+    if (completed === true) {
+      await trackAchievementSafely(achievementTracker.trackDareCompleted);
+    }
   };
 
   const handleNeedMoreTime = () => {
@@ -574,18 +666,30 @@ const DareOnlyScreen = ({ navigation, route }) => {
     }
   };
 
-  const handleEndGame = () => {
+  // ACHIEVEMENT INTEGRATION: Modified handleEndGame to track game completion
+  const handleEndGame = async () => {
     // Use custom alert instead of standard Alert
     showCustomAlert({
       title: "Cash Out",
       message: "Are you sure you want to cash out and end the game now?",
       confirmText: "Cash Out",
       cancelText: "Continue Playing",
-      onConfirm: () => {
+      onConfirm: async () => {
+        // Track game completion when manually ending
+        await trackAchievementSafely(
+          achievementTracker.trackGameComplete, 
+          true // true = this is a dares-only game
+        );
+        
         setShowResults(true);
         startRevealAnimation();
       }
     });
+  };
+
+  // ACHIEVEMENT INTEGRATION: Function for future video recording tracking
+  const trackVideoRecording = async () => {
+    await trackAchievementSafely(achievementTracker.trackVideoRecorded);
   };
 
   const handleManagePlayers = () => {
@@ -744,7 +848,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
   const randomChips = Array.from({ length: 15 }, () => ({
     top: Math.random() * height,
     left: Math.random() * width,
-    size: 20 + Math.random() * 30,
+    size: responsiveSize(20) + Math.random() * responsiveSize(30),
     rotate: Math.random() * 360,
     delay: Math.random() * 1000,
   }));
@@ -797,7 +901,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
               duration={2000}
               style={styles.dealerIndicator}
           >
-              <Ionicons name="person" size={20} color="#FFD700" />
+              <Ionicons name="person" size={responsiveSize(20)} color="#FFD700" />
           </Animatable.View>
       </View>
       
@@ -894,7 +998,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
               <Text style={styles.title}>{playerName}</Text>
               <View style={styles.titleDecoration}>
                 <View style={styles.titleLine} />
-                <Ionicons name="diamond" size={24} color="#FFD700" />
+                <Ionicons name="diamond" size={responsiveSize(24)} color="#FFD700" />
                 <View style={styles.titleLine} />
               </View>
             </View>
@@ -968,9 +1072,9 @@ const DareOnlyScreen = ({ navigation, route }) => {
                   {/* Back of card (dare content) */}
                   <Animated.View style={[styles.card, styles.cardBack, backAnimatedStyle]}>
                     <View style={styles.cardBackHeader}>
-                      <Ionicons name="diamond" size={18} color="#FFD700" />
+                      <Ionicons name="diamond" size={responsiveSize(18)} color="#FFD700" />
                       <Text style={styles.cardPackName}>{route.params?.packName}</Text>
-                      <Ionicons name="diamond" size={18} color="#FFD700" />
+                      <Ionicons name="diamond" size={responsiveSize(18)} color="#FFD700" />
                     </View>
                     
                     <View style={styles.dareTextContainer}>
@@ -994,7 +1098,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
                         disabled={isGameOver}
                         activeOpacity={0.7}
                       >
-                        <Ionicons name="checkmark" size={28} color="white" />
+                        <Ionicons name="checkmark" size={responsiveSize(28)} color="white" />
                       </TouchableOpacity>
 
                       <TouchableOpacity
@@ -1007,7 +1111,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
                         disabled={isGameOver}
                         activeOpacity={0.7}
                       >
-                        <Ionicons name="time" size={24} color="white" style={styles.buttonIcon} />
+                        <Ionicons name="time" size={responsiveSize(24)} color="white" style={styles.buttonIcon} />
                         <Text style={styles.buttonText}>+ Time</Text>
                       </TouchableOpacity>
 
@@ -1020,7 +1124,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
                         disabled={isGameOver}
                         activeOpacity={0.7}
                       >
-                        <Ionicons name="close" size={28} color="white" />
+                        <Ionicons name="close" size={responsiveSize(28)} color="white" />
                       </TouchableOpacity>
                     </View>
                   </Animated.View>
@@ -1044,7 +1148,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
                 onPress={handleEndGame}
                 activeOpacity={0.7}
               >
-                <Ionicons name="flag" size={22} color="#fff" />
+                <Ionicons name="flag" size={responsiveSize(22)} color="#fff" />
                 <Text style={styles.buttonText}>Cash Out</Text>
               </TouchableOpacity>
               
@@ -1066,7 +1170,7 @@ const DareOnlyScreen = ({ navigation, route }) => {
                 disabled={isGameOver}
                 activeOpacity={0.7}
               >
-                <Ionicons name="people" size={22} color="#fff" />
+                <Ionicons name="people" size={responsiveSize(22)} color="#fff" />
                 <Text style={styles.buttonText}>Players</Text>
               </TouchableOpacity>
             </View>
@@ -1116,15 +1220,15 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     flexGrow: 1,
-    padding: 10,
-    paddingTop: Platform.OS === 'android' ? 40 : 50,
-    paddingBottom: 120, // Add padding at the bottom to ensure content doesn't get hidden behind buttons
+    padding: responsiveSpacing(10),
+    paddingTop: Platform.OS === 'android' ? responsiveSpacing(40) : responsiveSpacing(50),
+    paddingBottom: responsiveSpacing(120), // Add padding at the bottom to ensure content doesn't get hidden behind buttons
   },
   header: {
     width: '100%',
     alignItems: 'center',
-    marginBottom: 30,
-    marginTop: 10
+    marginBottom: responsiveSpacing(30),
+    marginTop: responsiveSpacing(10)
   },
   title: {
     fontSize: scaleFontSize(50),
@@ -1132,7 +1236,7 @@ const styles = StyleSheet.create({
     color: '#FFD700', // Gold color for casino feel
     textAlign: 'center',
     fontFamily: 'Poker',
-    marginBottom: 5,
+    marginBottom: responsiveSpacing(5),
     ...Platform.select({
       ios: {
         textShadowColor: 'rgba(0, 0, 0, 0.8)',
@@ -1151,8 +1255,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     width: '60%',
-    marginBottom: 20,
-    marginTop:-10
+    marginBottom: responsiveSpacing(20),
+    marginTop: responsiveSpacing(-10)
   },
   titleLine: {
     flex: 1,
@@ -1160,29 +1264,29 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFD700',
   },
   dareContainerWrapper: {
-    width: 350,
-    height: 450,
+    width: isTablet() ? responsiveSize(400) : responsiveSize(350),
+    height: isTablet() ? responsiveSize(500) : responsiveSize(450),
     alignSelf: 'center',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: responsiveSpacing(10),
   },
   cardShadow: {
     position: 'absolute',
-    width: 310,
-    height: 410,
-    borderRadius: 18,
+    width: isTablet() ? responsiveSize(360) : responsiveSize(310),
+    height: isTablet() ? responsiveSize(460) : responsiveSize(410),
+    borderRadius: responsiveSize(18),
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    top: 15,
-    left: 15,
+    top: responsiveSpacing(15),
+    left: responsiveSpacing(15),
     zIndex: 1,
   },
   dareContainer: {
     backgroundColor: 'transparent',
-    borderRadius: 20,
+    borderRadius: responsiveSize(20),
     padding: 0,
-    width: 310,
-    height: 420,
+    width: isTablet() ? responsiveSize(360) : responsiveSize(310),
+    height: isTablet() ? responsiveSize(470) : responsiveSize(420),
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
@@ -1190,7 +1294,7 @@ const styles = StyleSheet.create({
   },
   dareContainerLandscape: {
     flex: 1,
-    marginTop: 5,
+    marginTop: responsiveSpacing(5),
   },
   cardTouchable: {
     width: '100%',
@@ -1200,8 +1304,8 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     backfaceVisibility: 'hidden',
-    borderRadius: 16,
-    borderWidth: 2,
+    borderRadius: responsiveSize(16),
+    borderWidth: responsiveSize(2),
     borderColor: '#FFD700', // Gold border
     overflow: 'hidden',
     backgroundColor: 'white',
@@ -1222,11 +1326,11 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     backgroundColor: 'white',
-    borderRadius: 16,
+    borderRadius: responsiveSize(16),
   },
   cardShine: {
     position: 'absolute',
-    width: 40,
+    width: responsiveSize(40),
     height: '200%',
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
     transform: [{ rotate: '30deg' }],
@@ -1234,20 +1338,20 @@ const styles = StyleSheet.create({
   cardImage: {
     width: '100%',
     height: '100%',
-    borderRadius: 16,
+    borderRadius: responsiveSize(16),
     resizeMode: 'cover',
   },
   cardCorner: {
     position: 'absolute',
-    top: 8,
-    left: 8,
+    top: responsiveSpacing(8),
+    left: responsiveSpacing(8),
     zIndex: 10,
   },
   cardCornerBottom: {
     top: 'auto',
     left: 'auto',
-    bottom: 8,
-    right: 8,
+    bottom: responsiveSpacing(8),
+    right: responsiveSpacing(8),
     transform: [{ rotate: '180deg' }],
   },
   suitContainer: {
@@ -1256,17 +1360,17 @@ const styles = StyleSheet.create({
   },
   cardCornerText: {
     color: '#000',
-    fontSize: 18,
+    fontSize: responsiveFont(18),
     fontWeight: 'bold',
   },
   cardHint: {
     position: 'absolute',
-    bottom: 20,
+    bottom: responsiveSpacing(20),
     alignSelf: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    borderRadius: 10,
-    paddingVertical: 8,
-    paddingHorizontal: 15,
+    borderRadius: responsiveSize(10),
+    paddingVertical: responsiveSpacing(8),
+    paddingHorizontal: responsiveSpacing(15),
     borderWidth: 1,
     borderColor: '#FFD700',
     ...Platform.select({
@@ -1282,7 +1386,7 @@ const styles = StyleSheet.create({
     }),
   },
   cardHintText: {
-    fontSize: 16,
+    fontSize: responsiveFont(16),
     fontWeight: 'bold',
     color: '#FFD700',
   },
@@ -1290,23 +1394,23 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 15,
-    paddingBottom: 10,
+    paddingTop: responsiveSpacing(15),
+    paddingBottom: responsiveSpacing(10),
     borderBottomWidth: 1,
     borderBottomColor: '#FFD700',
   },
   cardPackName: {
     color: '#000',
     fontWeight: 'bold',
-    fontSize: 18,
-    marginHorizontal: 8,
+    fontSize: responsiveFont(18),
+    marginHorizontal: responsiveSpacing(8),
   },
   dareTextContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 20,
-    paddingVertical: 20,
+    paddingHorizontal: responsiveSpacing(20),
+    paddingVertical: responsiveSpacing(20),
     width: '100%',
   },
   dareText: {
@@ -1317,7 +1421,7 @@ const styles = StyleSheet.create({
       android: 'Montserrat-Bold', // Android system font
     }),
     fontSize: scaleFontSize(30), // Reduced from 36 for better readability with system font
-    lineHeight: Platform.OS === 'android' ? 36 : 38,
+    lineHeight: Platform.OS === 'android' ? scaleFontSize(36) : scaleFontSize(38),
     fontWeight: 'bold', // Apply bold through fontWeight instead of fontFamily
     includeFontPadding: false,
     textAlignVertical: 'top',
@@ -1329,7 +1433,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     flexWrap: 'nowrap',
     flexShrink: 1,
-    marginTop: 4,
+    marginTop: responsiveSpacing(4),
   },
   nextPlayerButtonDisabled: {
     backgroundColor: '#555',
@@ -1347,16 +1451,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    paddingHorizontal: 15,
-    paddingBottom: 20,
-    gap: 10,
+    paddingHorizontal: responsiveSpacing(15),
+    paddingBottom: responsiveSpacing(20),
+    gap: responsiveSpacing(10),
   },
   dareButton: {
     backgroundColor: '#555',
-    padding: 10,
-    borderRadius: 50, // Make it circular
-    width: 80,
-    height: 80,
+    padding: responsiveSpacing(10),
+    borderRadius: responsiveSize(50), // Make it circular
+    width: responsiveSize(80),
+    height: responsiveSize(80),
     ...Platform.select({
       ios: {
         shadowColor: '#000',
@@ -1370,7 +1474,7 @@ const styles = StyleSheet.create({
     }),
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 2,
+    borderWidth: responsiveSize(2),
     borderColor: '#fff',
   },
   moreTimeButton: {
@@ -1380,7 +1484,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F57C00',
   },
   buttonIcon: {
-    marginBottom: 5,
+    marginBottom: responsiveSpacing(5),
   },
   dareButtonComplete: {
     backgroundColor: '#4CAF50',
@@ -1391,18 +1495,18 @@ const styles = StyleSheet.create({
   bottomButtons: {
     flexDirection: 'row',
     position: 'absolute',
-    bottom: Platform.OS === 'android' ? 30 : 40,
+    bottom: Platform.OS === 'android' ? responsiveSpacing(30) : responsiveSpacing(40),
     left: 0,
     right: 0,
     alignItems: 'center',
-    paddingHorizontal: 20,
+    paddingHorizontal: responsiveSpacing(20),
     justifyContent: 'space-between',
     zIndex: 100,
   },
   endGameButton: {
     backgroundColor: '#D32F2F',
-    padding: 15,
-    borderRadius: 10,
+    padding: responsiveSpacing(15),
+    borderRadius: responsiveSize(10),
     width: '30%', // Reduced width for 3-button layout
     ...Platform.select({
       ios: {
@@ -1423,8 +1527,8 @@ const styles = StyleSheet.create({
   },
   nextPlayerButtonBottom: {
     backgroundColor: '#304FFE',
-    padding: 15,
-    borderRadius: 10,
+    padding: responsiveSpacing(15),
+    borderRadius: responsiveSize(10),
     width: '30%', // Match the width of other buttons
     ...Platform.select({
       ios: {
@@ -1445,8 +1549,8 @@ const styles = StyleSheet.create({
   },
   managePlayersButton: {
     backgroundColor: '#4CAF50',
-    padding: 15,
-    borderRadius: 10,
+    padding: responsiveSpacing(15),
+    borderRadius: responsiveSize(10),
     width: '30%', // Reduced width for 3-button layout
     ...Platform.select({
       ios: {
@@ -1467,15 +1571,15 @@ const styles = StyleSheet.create({
   },
   daresAskedContainer: {
     position: 'absolute',
-    top: Platform.OS === 'android' ? 48 : 55,
-    right: 15,
+    top: Platform.OS === 'android' ? responsiveSpacing(48) : responsiveSpacing(55),
+    right: responsiveSpacing(15),
     zIndex: 10,
   },
   daresAskedBadge: {
     backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    borderRadius: 15,
-    paddingVertical:8,
-    paddingHorizontal: 12,
+    borderRadius: responsiveSize(15),
+    paddingVertical: responsiveSpacing(8),
+    paddingHorizontal: responsiveSpacing(12),
     borderWidth: 1,
     borderColor: '#FFD700',
     ...Platform.select({
@@ -1498,39 +1602,39 @@ const styles = StyleSheet.create({
   },
   completedDaresBadge: {
     position: 'absolute',
-    top: 105,
+    top: responsiveSpacing(105),
     alignSelf: 'center',
     backgroundColor: 'transparent',
-    borderRadius: 20,
-    padding: 11,
-    marginTop: 15,
+    borderRadius: responsiveSize(20),
+    padding: responsiveSpacing(11),
+    marginTop: responsiveSpacing(15),
     alignItems: 'center',
     zIndex: 10,
   },
   completedDaresText: {
     color: '#000',
-    fontSize: 24,
+    fontSize: responsiveFont(24),
     fontWeight: 'bold',
     position: 'absolute',
     top: '45%',
     left: '55%',
   },
   pokerChip: {
-    width: 55,
-    height: 55,
+    width: responsiveSize(55),
+    height: responsiveSize(55),
     resizeMode: 'contain',
   },
   dealerPosition: {
     position: 'absolute',
-    right: 15,
-    top: SCREEN_HEIGHT / 2 - 100,
+    right: responsiveSpacing(15),
+    top: SCREEN_HEIGHT / 2 - responsiveSpacing(100),
     zIndex: 10,
   },
   dealerIndicator: {
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: responsiveSize(40),
+    height: responsiveSize(40),
+    borderRadius: responsiveSize(20),
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
@@ -1538,7 +1642,7 @@ const styles = StyleSheet.create({
   },
   resultsContainer: {
     flex: 1,
-    minHeight: Dimensions.get('window').height - 100,
+    minHeight: Dimensions.get('window').height - responsiveSpacing(100),
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -1549,8 +1653,8 @@ const styles = StyleSheet.create({
     zIndex: 10,
   },
   resultsButton: {
-    width: 200,
-    height: 200,
+    width: isTablet() ? responsiveSize(250) : responsiveSize(200),
+    height: isTablet() ? responsiveSize(250) : responsiveSize(200),
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -1570,7 +1674,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     fontFamily: 'Poker',
-    marginVertical: -8,
+    marginVertical: responsiveSpacing(-8),
     ...Platform.select({
       ios: {
         textShadowColor: 'rgba(0, 0, 0, 0.5)',
@@ -1615,13 +1719,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',  // Center horizontally
-    transform: [{ translateY: -85 }],  // Offset by half the height of cards (approximately)
+    transform: [{ translateY: responsiveSpacing(-85) }],  // Offset by half the height of cards (approximately)
   },
   spreadCard: {
     position: 'absolute',
-    width: 120,
-    height: 170,
-    borderRadius: 10,
+    width: isTablet() ? responsiveSize(140) : responsiveSize(120),
+    height: isTablet() ? responsiveSize(190) : responsiveSize(170),
+    borderRadius: responsiveSize(10),
     ...Platform.select({
       ios: {
         shadowColor: '#000',
@@ -1633,7 +1737,7 @@ const styles = StyleSheet.create({
         elevation: 5,
       }
     }),
-    borderWidth: 2,
+    borderWidth: responsiveSize(2),
     borderColor: '#FFD700',
   },
   spotlight: {
@@ -1641,12 +1745,12 @@ const styles = StyleSheet.create({
     width: '150%',
     height: '150%',
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    borderRadius: 600,
+    borderRadius: responsiveSize(600),
     top: '50%',
     left: '50%',
     transform: [
-      { translateX: -300 },
-      { translateY: -300 },
+      { translateX: responsiveSpacing(-300) },
+      { translateY: responsiveSpacing(-300) },
     ],
     zIndex: 1,
   },
@@ -1658,13 +1762,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   alertContainer: {
-    width: '80%',
-    maxWidth: 330,
+    width: isTablet() ? Math.min(500, SCREEN_WIDTH * 0.6) : '80%',
+    maxWidth: isTablet() ? 500 : 330,
     backgroundColor: 'rgba(139, 0, 0, 0.95)',
-    borderRadius: 15,
-    padding: 20,
+    borderRadius: responsiveSize(15),
+    padding: responsiveSpacing(20),
     alignItems: 'center',
-    borderWidth: 2,
+    borderWidth: responsiveSize(2),
     borderColor: '#FFD700',
     ...Platform.select({
       ios: {
@@ -1682,7 +1786,7 @@ const styles = StyleSheet.create({
     fontSize: scaleFontSize(24),
     fontWeight: 'bold',
     color: '#FFD700',
-    marginBottom: 10,
+    marginBottom: responsiveSpacing(10),
     textAlign: 'center',
     fontFamily: 'Poker',
     ...Platform.select({
@@ -1702,7 +1806,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     width: '80%',
-    marginBottom: 15,
+    marginBottom: responsiveSpacing(15),
   },
   separatorLine: {
     flex: 1,
@@ -1712,25 +1816,25 @@ const styles = StyleSheet.create({
   alertMessage: {
     fontSize: scaleFontSize(18),
     color: '#FFFFFF',
-    marginBottom: 20,
+    marginBottom: responsiveSpacing(20),
     textAlign: 'center',
-    lineHeight: 24,
+    lineHeight: responsiveFont(24),
   },
   alertButtonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    marginTop: 10,
+    marginTop: responsiveSpacing(10),
   },
   alertCancelButton: {
-    padding: 12,
+    padding: responsiveSpacing(12),
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    borderRadius: 10,
+    borderRadius: responsiveSize(10),
     width: '48%',
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#999',
-    minHeight: 50,
+    minHeight: responsiveSize(50),
     justifyContent: 'center',
     ...Platform.select({
       ios: {
@@ -1745,14 +1849,14 @@ const styles = StyleSheet.create({
     }),
   },
   alertConfirmButton: {
-    padding: 12,
+    padding: responsiveSpacing(12),
     backgroundColor: '#FF4500',
-    borderRadius: 10,
+    borderRadius: responsiveSize(10),
     width: '48%',
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#FFD700',
-    minHeight: 50,
+    minHeight: responsiveSize(50),
     justifyContent: 'center',
     ...Platform.select({
       ios: {

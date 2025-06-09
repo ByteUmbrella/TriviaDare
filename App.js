@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { GameProvider } from './Context/GameContext';
 import { SettingsProvider } from './Context/Settings';
 import { CustomDaresProvider } from './Context/CustomDaresContext';
+import { PowerUpProvider } from './Context/PowerUp'; // NEW: Add PowerUpProvider import
 import { FirebaseProvider } from './Context/multiplayer/FirebaseContext';
 import { BluetoothProvider } from './Context/multiplayer/DummyBluetoothContext'; // Import the dummy provider
 import MultiplayerGameFlow from './Context/multiplayer/MultiplayerGameFlow';
@@ -198,12 +199,15 @@ const App = () => {
         <SettingsProvider>
           <CustomDaresProvider>
               <GameProvider>
-                <NavigationContainer>
-                  <FirebaseProvider>
-                    <AppContent />
-                    <MultiplayerGameFlow />
-                  </FirebaseProvider>
-                </NavigationContainer>
+                {/* NEW: Add PowerUpProvider here */}
+                <PowerUpProvider>
+                  <NavigationContainer>
+                    <FirebaseProvider>
+                      <AppContent />
+                      <MultiplayerGameFlow />
+                    </FirebaseProvider>
+                  </NavigationContainer>
+                </PowerUpProvider>
               </GameProvider>
           </CustomDaresProvider>
         </SettingsProvider>

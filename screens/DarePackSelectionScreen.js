@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, memo } from 'react';
+import React, { useState, useEffect, useCallback, memo, useRef } from 'react';
 import { 
   Text, 
   TouchableOpacity, 
@@ -16,7 +16,9 @@ import {
   BackHandler,
   Keyboard,
   TouchableWithoutFeedback,
-  Pressable
+  Pressable,
+  ActivityIndicator,
+  Image
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import * as Animatable from 'react-native-animatable';
@@ -24,28 +26,60 @@ import { useSettings } from '../Context/Settings';
 import { useCustomDares } from '../Context/CustomDaresContext';
 import { debounce } from 'lodash';
 import { useFocusEffect } from '@react-navigation/native';
-import iapManager from '../Context/IAPManager'; // Add this import
+import iapManager, { PRODUCT_IDS, DARES_TO_PRODUCT_MAP } from '../Context/IAPManager';
 import { CommonActions } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
-const GRID_PADDING = SCREEN_WIDTH * 0.04; // 4% of screen width
-const COLUMNS = 2;
-const CARD_MARGIN = SCREEN_WIDTH * 0.02; // 2% of screen width
-const CARD_WIDTH = (SCREEN_WIDTH - (GRID_PADDING * 2) - (CARD_MARGIN * (COLUMNS + 1))) / COLUMNS;
-const CARD_HEIGHT = CARD_WIDTH * 1.4; // Maintain poker card aspect ratio
 
-// Function to calculate responsive font sizes
+// Very conservative tablet detection - BOTH dimensions must be tablet-sized
+const isTabletDevice = () => {
+  if (Platform.OS === 'ios') {
+    // iPad mini starts at 744pt width - require BOTH dimensions to be large
+    return SCREEN_WIDTH >= 744 && SCREEN_HEIGHT >= 1000;
+  } else if (Platform.OS === 'android') {
+    // Only large tablets with both dimensions 600+ dp
+    return SCREEN_WIDTH >= 600 && SCREEN_HEIGHT >= 600;
+  }
+  return false;
+};
+
+const IS_TABLET = isTabletDevice();
+
+// Keep original phone dimensions exactly the same
+const GRID_PADDING = SCREEN_WIDTH * 0.04;
+const COLUMNS = 2;
+const CARD_MARGIN = SCREEN_WIDTH * 0.02;
+const CARD_WIDTH = (SCREEN_WIDTH - (GRID_PADDING * 2) - (CARD_MARGIN * (COLUMNS + 1))) / COLUMNS;
+const CARD_HEIGHT = CARD_WIDTH * 1.4;
+
 const scaleFontSize = (size) => {
   const scaleFactor = Math.min(SCREEN_WIDTH / 375, SCREEN_HEIGHT / 812);
   return Math.round(size * scaleFactor);
 };
 
-const PackCard = memo(({ item, packCounts, customCounts, onPress, showDareCounts, isPurchased, price, onPurchase }) => {
+// Only adjust modal size for tablets
+const getModalWidth = () => {
+  if (IS_TABLET) {
+    return Math.min(SCREEN_WIDTH * 0.7, 600); // Tablet modal
+  } else {
+    return SCREEN_WIDTH * 0.9; // Original phone modal
+  }
+};
+
+const getModalMaxWidth = () => {
+  if (IS_TABLET) {
+    return 600; // Tablet max width
+  } else {
+    return 400; // Original phone max width
+  }
+};
+
+const PackCard = memo(({ item, packCounts, customCounts, onPress, showDareCounts, isPurchased, price, onPurchase, isPurchasing }) => {
   const totalCount = (packCounts[item.name] || 0) + (customCounts[item.name] || 0);
   const [cardAnim] = useState(new Animated.Value(0));
   
   useEffect(() => {
-    // Subtle card hover animation on mount
     Animated.loop(
       Animated.sequence([
         Animated.timing(cardAnim, {
@@ -78,9 +112,10 @@ const PackCard = memo(({ item, packCounts, customCounts, onPress, showDareCounts
       <TouchableOpacity
         style={[
           styles.card,
-          isPurchased && price && styles.purchasedCard // Add green border for purchased premium packs
+          isPurchased && price && styles.purchasedCard
         ]}
         onPress={() => isPurchased ? onPress(item) : onPurchase(item)}
+        disabled={isPurchasing}
         activeOpacity={Platform.OS === 'android' ? 0.7 : 0.9}
       >
         <ImageBackground 
@@ -89,22 +124,24 @@ const PackCard = memo(({ item, packCounts, customCounts, onPress, showDareCounts
           imageStyle={styles.cardImageStyle}
           fadeDuration={Platform.OS === 'android' ? 300 : 0}
         >
-          {/* Price Badge - shown if pack is not purchased and has a price */}
           {!isPurchased && price && (
             <View style={styles.priceBadge}>
               <Text style={styles.priceText}>${price}</Text>
             </View>
           )}
           
-          {/* Age Restriction Badge */}
           {item.ageRestricted && (
             <View style={styles.ageRestrictedBadge}>
               <Text style={styles.ageRestrictedText}>18+</Text>
             </View>
           )}
           
-          {/* Lock Overlay for non-purchased premium packs */}
-          {!isPurchased && price ? (
+          {isPurchasing ? (
+            <View style={styles.purchasingOverlay}>
+              <ActivityIndicator size="large" color="#FFD700" />
+              <Text style={styles.purchasingText}>Purchasing...</Text>
+            </View>
+          ) : !isPurchased && price ? (
             <View style={styles.lockOverlay}>
               <Ionicons name="lock-closed" size={40} color="#FFD700" />
             </View>
@@ -155,12 +192,45 @@ const DarePackSelectionScreen = ({ navigation }) => {
   const [contentOpacity] = useState(new Animated.Value(0));
   const [isLoading, setIsLoading] = useState(true);
   const [cardsAnimation] = useState(new Animated.Value(0));
-  // Add state for showing/hiding numbers - default to hiding
   const [showDareCounts, setShowDareCounts] = useState(false);
-  // Add state for purchase status
   const [purchaseStates, setPurchaseStates] = useState({});
 
-  // Handle Android back button
+  // NEW: Add visible packs state for promo integration
+  const [visiblePacks, setVisiblePacks] = useState([]);
+
+  // SIMPLIFIED PURCHASE STATE - Track which packs are being purchased
+  const [purchasingPacks, setPurchasingPacks] = useState(new Set());
+  const [showPurchaseDialog, setShowPurchaseDialog] = useState(false);
+  const [pendingProduct, setPendingProduct] = useState(null);
+
+  // Toast system
+  const [toastMessage, setToastMessage] = useState('');
+  const [showToast, setShowToast] = useState(false);
+
+  const showToastMessage = useCallback((message, duration = 3000) => {
+    setToastMessage(message);
+    setShowToast(true);
+    setTimeout(() => {
+      setShowToast(false);
+    }, duration);
+  }, []);
+
+  // Initialize IAP silently on mount
+  useEffect(() => {
+    const initializeIAP = async () => {
+      try {
+        console.log('🛒 Initializing IAP silently...');
+        await iapManager.initializeSilently();
+        console.log('✅ IAP manager initialized silently');
+      } catch (error) {
+        console.log('⚠️ Silent IAP initialization failed:', error.message);
+        // Don't show error - just log it
+      }
+    };
+    
+    initializeIAP();
+  }, []);
+
   useFocusEffect(
     React.useCallback(() => {
       if (Platform.OS === 'android') {
@@ -177,47 +247,24 @@ const DarePackSelectionScreen = ({ navigation }) => {
             }, 300);
             return true;
           }
+          if (showPurchaseDialog) {
+            setShowPurchaseDialog(false);
+            return true;
+          }
           return false;
         };
 
         BackHandler.addEventListener('hardwareBackPress', onBackPress);
         return () => BackHandler.removeEventListener('hardwareBackPress', onBackPress);
       }
-    }, [modalVisible, showCustomDaresModal])
+    }, [modalVisible, showCustomDaresModal, showPurchaseDialog])
   );
-
-  // Set up purchase completion callback
-  useEffect(() => {
-    // Set callback for purchases
-    const setupPurchaseCallback = async () => {
-      // Initialize IAP manager 
-      await iapManager.initialize();
-      
-      // Set the purchase completion callback
-      iapManager.onPurchaseComplete = async () => {
-        console.log('Purchase callback triggered');
-        // Refresh purchase states
-        await checkPurchaseStates();
-        // Show success message
-        Alert.alert('Purchase Successful', 'Your purchase has been completed!');
-      };
-    };
-    
-    setupPurchaseCallback();
-    
-    // Cleanup on unmount
-    return () => {
-      if (iapManager) {
-        iapManager.onPurchaseComplete = null;
-      }
-    };
-  }, []);
 
   useEffect(() => {
     if (isFlipped) {
       Animated.timing(contentOpacity, {
         toValue: 1,
-        duration: Platform.OS === 'android' ? 200 : 300, // Faster on Android
+        duration: Platform.OS === 'android' ? 200 : 300,
         delay: Platform.OS === 'android' ? 300 : 400,
         useNativeDriver: true,
       }).start();
@@ -227,7 +274,6 @@ const DarePackSelectionScreen = ({ navigation }) => {
   }, [isFlipped]);
 
   useEffect(() => {
-    // Animate cards when screen loads
     Animated.timing(cardsAnimation, {
       toValue: 1,
       duration: 1000,
@@ -236,7 +282,8 @@ const DarePackSelectionScreen = ({ navigation }) => {
     
     const unsubscribe = navigation.addListener('focus', () => {
       console.log('Screen focused');
-      // Refresh purchase states when screen is focused
+      // NEW: Reload visible packs and purchase states when screen focused
+      loadVisiblePacks();
       checkPurchaseStates();
     });
 
@@ -244,220 +291,386 @@ const DarePackSelectionScreen = ({ navigation }) => {
   }, [navigation]);
 
   useEffect(() => {
-  const loadCounts = async () => {
-    setIsLoading(true);
-    const counts = {};
-    const customCounts = {};
-    
-    try {
-      console.log('📊 Loading pack counts and dare counts');
+    const loadCounts = async () => {
+      setIsLoading(true);
+      const counts = {};
+      const customCounts = {};
       
-      // On Android, process in smaller batches to prevent ANR
-      if (Platform.OS === 'android') {
-        const batchSize = 3;
-        for (let i = 0; i < packs.length; i += batchSize) {
-          const batchPacks = packs.slice(i, i + batchSize);
-          for (const pack of batchPacks) {
+      try {
+        console.log('📊 Loading pack counts and dare counts with promo integration...');
+        
+        // NEW: Load visible packs first
+        const visiblePacksArray = await loadVisiblePacks();
+        
+        if (Platform.OS === 'android') {
+          const batchSize = 3;
+          for (let i = 0; i < visiblePacksArray.length; i += batchSize) {
+            const batchPacks = visiblePacksArray.slice(i, i + batchSize);
+            for (const pack of batchPacks) {
+              counts[pack.name] = Array.isArray(pack.dares) ? pack.dares.length : 0;
+              customCounts[pack.name] = await getCustomDareCount(pack.name);
+            }
+          }
+        } else {
+          for (const pack of visiblePacksArray) {
             counts[pack.name] = Array.isArray(pack.dares) ? pack.dares.length : 0;
             customCounts[pack.name] = await getCustomDareCount(pack.name);
           }
         }
-      } else {
-        // Original iOS implementation
-        for (const pack of packs) {
-          counts[pack.name] = Array.isArray(pack.dares) ? pack.dares.length : 0;
-          customCounts[pack.name] = await getCustomDareCount(pack.name);
+      } catch (error) {
+        console.error('Error loading dare counts:', error);
+      } finally {
+        setPackCounts(counts);
+        setCustomCounts(customCounts);
+        setIsLoading(false);
+      }
+    };
+
+    console.log('🚀 Loading counts and checking purchase states');
+    loadCounts();
+    
+    console.log('🔒 Production mode active:', !__DEV__);
+    console.log('📱 Platform:', Platform.OS);
+    console.log('📐 Screen dimensions:', SCREEN_WIDTH, 'x', SCREEN_HEIGHT);
+    console.log('📱 Is Tablet (modal only):', IS_TABLET);
+    
+    console.log('💰 Checking purchase states for premium packs...');
+    checkPurchaseStates().then(() => {
+      console.log('✅ Purchase state checking complete');
+    });
+  }, []);
+
+  // NEW: Pack visibility configuration for hidden dares packs
+  const DARES_PACK_VISIBILITY = {
+    // Example: Add any hidden dares packs here
+    // 'Secret Dares': { hide: true },     // Hidden until unlocked via promo
+    // 'VIP Premium': { hide: true },      // Hidden until unlocked via promo
+    // 'Hidden Spicy': { hide: true },     // Hidden until unlocked via promo
+    
+    // To make existing packs hidden, add them here:
+    // 'Spicy': { hide: true },           // Would hide Spicy pack until unlocked
+    // 'Couples': { hide: true },         // Would hide Couples pack until unlocked
+  };
+
+  // NEW: Function to check if a dares pack should be visible
+  const shouldShowDaresPack = async (pack) => {
+    try {
+      // Check if pack has visibility configuration
+      const packConfig = DARES_PACK_VISIBILITY[pack.name];
+      
+      // If no config or not hidden, always show
+      if (!packConfig || !packConfig.hide) {
+        return true;
+      }
+      
+      // If hidden, only show if unlocked via promo or IAP
+      if (pack.isPremium) {
+        // Map pack names to product keys for promo integration
+        let packKey = '';
+        switch (pack.name) {
+          case 'Spicy':
+            packKey = 'spicy';
+            break;
+          case 'House Party':
+            packKey = 'houseparty';
+            break;
+          case 'Couples':
+            packKey = 'couples';
+            break;
+          case 'Bar':
+            packKey = 'bar';
+            break;
+          // Add any hidden premium packs here
+          default:
+            return false; // Unknown hidden pack
+        }
+        
+        if (packKey) {
+          // Use enhanced promo-integrated method
+          const isUnlocked = await iapManager.isDaresPurchased(packKey);
+          return isUnlocked;
         }
       }
+      
+      // For non-premium hidden packs, you could add other unlock logic here
+      return false;
     } catch (error) {
-      console.error('Error loading dare counts:', error);
-    } finally {
-      setPackCounts(counts);
-      setCustomCounts(customCounts);
-      setIsLoading(false);
+      console.error(`Error checking visibility for dares pack ${pack.name}:`, error);
+      return true; // Default to visible on error
     }
   };
 
-  console.log('🚀 Loading counts and checking purchase states');
-  loadCounts();
-  
-  // Check IAP environment
-  console.log('🔒 Production mode active:', !__DEV__);
-  console.log('📱 Platform:', Platform.OS);
-  
-  // Add more explicit logging around IAP checks
-  console.log('💰 Checking purchase states for premium packs...');
-  checkPurchaseStates().then(() => {
-    console.log('✅ Purchase state checking complete');
-    
-    // Log premium packs status
-    const premiumPacks = packs.filter(pack => pack.isPremium);
-    premiumPacks.forEach(pack => {
-      console.log(`📦 Premium pack: ${pack.name}, purchased: ${purchaseStates[pack.name] === true}`);
-    });
-  });
-}, []);
-
+  // NEW: Updated checkPurchaseStates with promo integration
+  // NEW: Updated checkPurchaseStates with promo integration
   const checkPurchaseStates = async () => {
-  try {
-    const states = {};
-    
-    console.log('=== Checking Purchase States ===');
-    
-    // Check if we are in production/TestFlight
-    const isProductionBuild = !__DEV__;
-    console.log('Is production build:', isProductionBuild);
-    
-    // Initialize IAP manager if needed
-    if (!iapManager.isInitialized) {
-      await iapManager.initialize();
-    }
-    
-    // Get the purchased dares packs
-    const purchasedDaresPacks = await iapManager.getPurchasedDaresPacks();
-    console.log('Purchased dares packs:', purchasedDaresPacks);
-    
-    // Check bundle purchase first
-    const hasBundle = await iapManager.isPurchased(iapManager.PRODUCT_IDS.EVERYTHING_BUNDLE);
-    console.log('Everything bundle purchased:', hasBundle);
-    
-    // Set purchase states for each pack
-    for (const pack of packs) {
-      // Free packs are always available
-      if (!pack.isPremium) {
-        states[pack.name] = true;
-        continue;
-      }
-      
-      // If bundle is purchased, all packs are available
-      if (hasBundle) {
-        states[pack.name] = true;
-        continue;
-      }
-      
-      // Map pack names to the keys used in DARES_TO_PRODUCT_MAP
-      let packKey = '';
-      switch (pack.name) {
-        case 'Spicy':
-          packKey = 'spicy';
-          break;
-        case 'House Party':
-          packKey = 'houseparty';
-          break;
-        case 'Couples':
-          packKey = 'couples';
-          break;
-        case 'Bar':
-          packKey = 'bar';
-          break;
-      }
-      
-      // Check if the specific pack is purchased
-      if (packKey && purchasedDaresPacks.includes(packKey)) {
-        states[pack.name] = true;
-      } else {
-        // Premium packs are locked by default
-        states[pack.name] = false;
-      }
-    }
-    
-    // Log detailed purchase state information for debugging
-    console.log('Final purchase states:', states);
-    
-    // Extra logging for premium packs for clarity
-    const premiumPacks = packs.filter(p => p.isPremium);
-    for (const pack of premiumPacks) {
-      console.log(`Premium pack "${pack.name}" locked status: ${!states[pack.name]}`);
-    }
-    
-    setPurchaseStates(states);
-  } catch (error) {
-    console.error('Error checking purchase states:', error);
-    
-    // Fallback: Always set premium packs as locked in case of any errors
-    const fallbackStates = {};
-    packs.forEach(pack => {
-      fallbackStates[pack.name] = !pack.isPremium;
-    });
-    console.log('Using fallback purchase states due to error:', fallbackStates);
-    setPurchaseStates(fallbackStates);
-  }
-};
-
-  const handlePurchase = async (pack) => {
     try {
-      console.log('Starting purchase flow for:', pack.name);
+      const states = {};
       
-      // Map pack names to product IDs
-      let packKey = '';
-      switch (pack.name) {
-        case 'Spicy':
-          packKey = 'spicy';
-          break;
-        case 'House Party':
-          packKey = 'houseparty';
-          break;
-        case 'Couples':
-          packKey = 'couples';
-          break;
-        case 'Bar':
-          packKey = 'bar';
-          break;
-        default:
-          throw new Error('Unknown pack');
+      console.log('📊 Checking dare pack purchase states with promo integration...');
+      
+      if (!iapManager.isInitialized) {
+        await iapManager.initializeSilently();
       }
+      
+      // Check everything bundle first
+      const hasBundle = await iapManager.isPurchased(PRODUCT_IDS.EVERYTHING_BUNDLE);
+      console.log('✅ Everything bundle purchased:', hasBundle);
+      
+      // Check each visible pack individually using enhanced promo-integrated methods
+      const packsToCheck = visiblePacks.length > 0 ? visiblePacks : packs;
+      
+      for (const pack of packsToCheck) {
+        if (!pack.isPremium) {
+          states[pack.name] = true;
+          continue;
+        }
+        
+        if (hasBundle) {
+          states[pack.name] = true;
+          continue;
+        }
+        
+        // Map pack names to product keys for promo integration
+        let packKey = '';
+        switch (pack.name) {
+          case 'Spicy':
+            packKey = 'spicy';
+            break;
+          case 'House Party':
+            packKey = 'houseparty';
+            break;
+          case 'Couples':
+            packKey = 'couples';
+            break;
+          case 'Bar':
+            packKey = 'bar';
+            break;
+        }
+        
+        // NEW: Use enhanced promo-integrated method
+        if (packKey) {
+          const isUnlocked = await iapManager.isDaresPurchased(packKey);
+          states[pack.name] = isUnlocked;
+          
+          // Only log detailed info in dev mode
+          if (__DEV__) {
+            console.log(`🔍 Promo-integrated check for ${pack.name} (${packKey}):`, isUnlocked);
+          }
+        } else {
+          states[pack.name] = false;
+        }
+      }
+      
+      // Add Everything Bundle to purchase states
+      states[PRODUCT_IDS.EVERYTHING_BUNDLE] = hasBundle;
+      
+      console.log('✅ Dare pack purchase states updated with promo integration');
+      
+      setPurchaseStates(states);
+    } catch (error) {
+      console.error('❌ Error checking purchase states:', error);
+      
+      const fallbackStates = {};
+      const packsToCheck = visiblePacks.length > 0 ? visiblePacks : packs;
+      packsToCheck.forEach(pack => {
+        fallbackStates[pack.name] = !pack.isPremium;
+      });
+      console.log('⚠️ Using fallback purchase states due to error');
+      setPurchaseStates(fallbackStates);
+    }
+  };
 
-      // First verify this pack is actually mapped to a product ID
-      if (!packKey || !iapManager.DARES_TO_PRODUCT_MAP[packKey]) {
-        console.error('No product ID found for pack:', pack.name);
-        Alert.alert('Purchase Error', 'Could not find this product. Please try again later.');
+  // NEW: Function to load visible packs (separated for reuse)
+  const loadVisiblePacks = async () => {
+    try {
+      console.log('👀 Loading visible dares packs...');
+      
+      const allPacks = packs;
+      const visiblePacksArray = [];
+      
+      for (const pack of allPacks) {
+        const shouldShow = await shouldShowDaresPack(pack);
+        if (shouldShow) {
+          visiblePacksArray.push(pack);
+        }
+      }
+      
+      console.log('👀 Visible dares packs after promo filtering:', visiblePacksArray.map(p => p.name));
+      setVisiblePacks(visiblePacksArray);
+      
+      return visiblePacksArray;
+    } catch (error) {
+      console.error('Error loading visible packs:', error);
+      return packs; // Fallback to all packs
+    }
+  };
+
+  // SIMPLIFIED PURCHASE HANDLING
+  const handlePurchase = async (pack) => {
+    console.log('🛒 Starting purchase for pack:', pack.name);
+    
+    let packKey = '';
+    switch (pack.name) {
+      case 'Spicy':
+        packKey = 'spicy';
+        break;
+      case 'House Party':
+        packKey = 'houseparty';
+        break;
+      case 'Couples':
+        packKey = 'couples';
+        break;
+      case 'Bar':
+        packKey = 'bar';
+        break;
+      default:
+        console.error('❌ Unknown pack:', pack.name);
+        Alert.alert('Error', 'Unknown pack type.');
         return;
-      }
+    }
 
-      // Get the actual product ID
-      const productId = iapManager.DARES_TO_PRODUCT_MAP[packKey];
-      console.log('Initiating purchase for product ID:', productId);
+    if (!packKey || !DARES_TO_PRODUCT_MAP[packKey]) {
+      console.error('❌ No product ID found for pack:', pack.name);
+      Alert.alert('Purchase Error', 'Could not find product information for this pack.');
+      return;
+    }
+
+    const productId = DARES_TO_PRODUCT_MAP[packKey];
+    console.log('✅ Product ID resolved:', productId);
+    
+    const product = iapManager.getProductById(productId);
+    if (!product) {
+      console.error('❌ Product not found in store:', productId);
+      Alert.alert('Product Unavailable', 'This pack is temporarily unavailable. Please try again later.');
+      return;
+    }
+    
+    // Set up purchase flow
+    setPendingProduct({
+      ...pack,
+      productId,
+      price: product.localizedPrice,
+      storeTitle: product.title
+    });
+    setShowPurchaseDialog(true);
+  };
+
+  const confirmPurchase = async () => {
+    if (!pendingProduct) return;
+    
+    setShowPurchaseDialog(false);
+    
+    // Add pack to purchasing set
+    setPurchasingPacks(prev => new Set(prev).add(pendingProduct.name));
+    showToastMessage(`Starting purchase for ${pendingProduct.name}...`);
+    
+    try {
+      // Use the new callback-based purchase method
+      await iapManager.purchaseProductWithCallback(pendingProduct.productId, (result) => {
+        console.log('Purchase completed:', result);
+        
+        // Remove from purchasing set
+        setPurchasingPacks(prev => {
+          const newSet = new Set(prev);
+          newSet.delete(pendingProduct.name);
+          return newSet;
+        });
+
+        if (result.success) {
+          console.log('✅ Purchase successful, refreshing pack states...');
+          showToastMessage('🎉 Purchase successful!');
+          
+          // NEW: Refresh both visible packs and purchase states
+          setTimeout(async () => {
+            await loadVisiblePacks();
+            checkPurchaseStates();
+          }, 1000);
+          
+        } else if (!result.cancelled) {
+          console.error('❌ Purchase failed:', result.error);
+          showToastMessage(`Purchase failed: ${result.error}`);
+        }
+        // If cancelled, do nothing - user cancelled intentionally
+      });
+
+    } catch (error) {
+      console.error('❌ Purchase initiation failed:', error);
       
-      // Show purchase confirmation dialog
+      // Remove from purchasing set on error
+      setPurchasingPacks(prev => {
+        const newSet = new Set(prev);
+        newSet.delete(pendingProduct.name);
+        return newSet;
+      });
+      
+      showToastMessage('Failed to start purchase. Please try again.');
+    } finally {
+      setPendingProduct(null);
+    }
+  };
+
+  const isPurchasing = (packName) => {
+    return purchasingPacks.has(packName);
+  };
+
+  // Everything Bundle purchase
+  const handleEverythingBundlePurchase = () => {
+    console.log('💎 Everything Bundle purchase initiated');
+    
+    const bundleProduct = iapManager.getProductById(PRODUCT_IDS.EVERYTHING_BUNDLE);
+    if (bundleProduct) {
+      setPendingProduct({
+        name: 'Everything Bundle',
+        productId: PRODUCT_IDS.EVERYTHING_BUNDLE,
+        price: bundleProduct.localizedPrice,
+        storeTitle: bundleProduct.title,
+        description: 'All Premium Packs + Future Updates',
+        image: require('../assets/DaresOnly/spicy.jpg') // Use a representative image
+      });
+      setShowPurchaseDialog(true);
+    } else {
       Alert.alert(
-        `Purchase ${pack.name}`,
-        `Would you like to purchase the ${pack.name} pack for $${pack.price}?`,
+        "Purchase Everything Bundle",
+        "Get unlimited access to all premium dare packs including future releases for just $49.99. This is a one-time purchase.",
         [
-          {
-            text: "Cancel",
-            style: "cancel"
-          },
+          { text: "Cancel", style: "cancel" },
           {
             text: "Purchase",
             onPress: async () => {
+              setPurchasingPacks(prev => new Set(prev).add('everything_bundle'));
+              showToastMessage("Starting Everything Bundle purchase...");
+              
               try {
-                // Show loading indicator if you have one
-                setIsLoading(true);
-                
-                console.log('Calling purchaseProduct() with ID:', productId);
-                const success = await iapManager.purchaseProduct(productId);
-                
-                if (success) {
-                  console.log('Purchase initiated successfully');
-                  // Note: Final success is handled by the purchaseUpdateListener
-                  // in the IAPManager which will trigger onPurchaseComplete callback
-                } else {
-                  console.log('Purchase not initiated');
-                  Alert.alert('Purchase Cancelled', 'The purchase was not completed.');
-                }
+                await iapManager.purchaseProductWithCallback(PRODUCT_IDS.EVERYTHING_BUNDLE, (result) => {
+                  setPurchasingPacks(prev => {
+                    const newSet = new Set(prev);
+                    newSet.delete('everything_bundle');
+                    return newSet;
+                  });
+
+                  if (result.success) {
+                    showToastMessage('🎉 Everything Bundle purchased successfully!');
+                    setTimeout(async () => {
+                      await loadVisiblePacks();
+                      checkPurchaseStates();
+                    }, 1000);
+                  } else if (!result.cancelled) {
+                    showToastMessage(`Bundle purchase failed: ${result.error}`);
+                  }
+                });
               } catch (error) {
-                console.error('Purchase error:', error);
-                Alert.alert('Purchase Error', 'An error occurred during purchase. Please try again.');
-              } finally {
-                setIsLoading(false);
+                console.error('❌ Bundle purchase error:', error);
+                setPurchasingPacks(prev => {
+                  const newSet = new Set(prev);
+                  newSet.delete('everything_bundle');
+                  return newSet;
+                });
+                showToastMessage('Bundle purchase failed. Please try again.');
               }
             }
           }
         ]
       );
-    } catch (error) {
-      console.error('Purchase setup error:', error);
-      Alert.alert('Error', 'There was a problem setting up the purchase. Please try again.');
     }
   };
 
@@ -478,7 +691,6 @@ const DarePackSelectionScreen = ({ navigation }) => {
   const handleCreateCustomDare = async () => {
     if (!customDareText.trim() || !selectedPack) return;
     
-    // Dismiss keyboard on Android
     if (Platform.OS === 'android') {
       Keyboard.dismiss();
     }
@@ -535,12 +747,10 @@ const DarePackSelectionScreen = ({ navigation }) => {
         setSelectedPack(pack);
         setDareCount(5);
         setModalVisible(true);
-        // Slight delay before flip animation - shorter on Android
         setTimeout(() => {
           setIsFlipped(true);
         }, Platform.OS === 'android' ? 50 : 100);
         
-        // Load preview dares
         try {
           const dares = await getPreviewDares(pack);
           setPreviewDares(dares);
@@ -554,16 +764,13 @@ const DarePackSelectionScreen = ({ navigation }) => {
     [modalVisible, lastTap, getPreviewDares]
   );
   
-  // Enhanced deal cards animation
   const handleConfirmDares = useCallback(() => {
     setShowDealAnimation(true);
     
-    // Card dealing animation and delay settings are already in place
     setTimeout(() => {
       navigation.navigate('DareOnlyScreen', { 
         packName: selectedPack.name, 
         dareCount,
-        // Add platform-specific navigation options
         ...(Platform.OS === 'android' ? {
           animation: 'slide_from_right'
         } : {})
@@ -573,7 +780,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
       setShowDealAnimation(false);
       setShowCustomDareInput(false);
       setCustomDareText('');
-    }, Platform.OS === 'android' ? 800 : 1000); // Slightly faster on Android
+    }, Platform.OS === 'android' ? 800 : 1000);
   }, [selectedPack, dareCount, navigation]);
   
   const handleBack = useCallback(() => {
@@ -587,17 +794,13 @@ const DarePackSelectionScreen = ({ navigation }) => {
       setShowPreview(false);
       setShowCustomDareInput(false);
       setCustomDareText('');
-    }, Platform.OS === 'android' ? 600 : 800); // Slightly faster on Android
+    }, Platform.OS === 'android' ? 600 : 800);
   }, []);
 
-  // Function to handle long press on the title to toggle showing numbers
   const handleTitleLongPress = () => {
-    // Start a timeout for 5 seconds
     const timer = setTimeout(() => {
-      // Toggle showing numbers
       setShowDareCounts(prev => !prev);
       
-      // Provide haptic feedback when toggled
       try {
         if (Platform.OS === 'ios') {
           const ReactNative = require('react-native');
@@ -698,49 +901,164 @@ const DarePackSelectionScreen = ({ navigation }) => {
   ];
 
   const renderItem = useCallback(({ item, index }) => {
-  // Calculate card entrance animation delay
-  const animationDelay = index * 100;
-  
-  // Add explicit logging for premium packs
-  if (item.isPremium) {
-    console.log(`Premium pack ${item.name}:`, {
-      state: purchaseStates[item.name],
-      isPremium: item.isPremium,
-      price: item.price,
-      isLocked: !(purchaseStates[item.name] === true)
-    });
-  }
-  
-  // Make sure we use precise equality check - not using default value
-  const isPurchased = purchaseStates[item.name] === true;
-  
-  return (
-    <Animated.View 
-      style={{
-        opacity: cardsAnimation,
-        transform: [
-          {
-            translateY: cardsAnimation.interpolate({
-              inputRange: [0, 1],
-              outputRange: [50, 0]
-            })
-          }
-        ]
-      }}
-    >
-      <PackCard
-        item={item}
-        packCounts={packCounts}
-        customCounts={customCounts}
-        onPress={handleSelectPack}
-        showDareCounts={showDareCounts}
-        isPurchased={isPurchased} // Use the explicit value
-        price={item.isPremium ? item.price : null}
-        onPurchase={handlePurchase}
-      />
-    </Animated.View>
-  );
-}, [packCounts, customCounts, handleSelectPack, cardsAnimation, showDareCounts, purchaseStates, handlePurchase]);
+    const animationDelay = index * 100;
+    
+    const isPurchased = purchaseStates[item.name] === true;
+    const isCurrentlyPurchasing = isPurchasing(item.name);
+    
+    return (
+      <Animated.View 
+        style={{
+          opacity: cardsAnimation,
+          transform: [
+            {
+              translateY: cardsAnimation.interpolate({
+                inputRange: [0, 1],
+                outputRange: [50, 0]
+              })
+            }
+          ]
+        }}
+      >
+        <PackCard
+          item={item}
+          packCounts={packCounts}
+          customCounts={customCounts}
+          onPress={handleSelectPack}
+          showDareCounts={showDareCounts}
+          isPurchased={isPurchased}
+          price={item.isPremium ? item.price : null}
+          onPurchase={handlePurchase}
+          isPurchasing={isCurrentlyPurchasing}
+        />
+      </Animated.View>
+    );
+  }, [packCounts, customCounts, handleSelectPack, cardsAnimation, showDareCounts, purchaseStates, handlePurchase, isPurchasing]);
+
+  const renderEverythingBundle = () => {
+    const isEverythingBundlePurchased = purchaseStates[PRODUCT_IDS.EVERYTHING_BUNDLE] === true;
+    const isBundlePurchasing = isPurchasing('everything_bundle');
+    
+    if (isEverythingBundlePurchased) {
+      return (
+        <View style={styles.everythingBundlePurchasedBar}>
+          <Text style={styles.bundlePurchasedBarText}>Everything Bundle Was Purchased</Text>
+        </View>
+      );
+    }
+    
+    return (
+      <TouchableOpacity 
+        style={styles.everythingBundleButton}
+        onPress={handleEverythingBundlePurchase}
+        disabled={isBundlePurchasing}
+        activeOpacity={0.8}
+      >
+        <ImageBackground 
+          source={require('../assets/DaresOnly/spicy.jpg')}
+          style={styles.bundleBackground}
+          imageStyle={{ borderRadius: 15 }}
+        >
+          <View style={styles.bundleOverlay} />
+          
+          {isBundlePurchasing && (
+            <View style={styles.bundlePurchasingOverlay}>
+              <ActivityIndicator size="large" color="#FFD700" />
+              <Text style={styles.bundlePurchasingText}>Purchasing Bundle...</Text>
+            </View>
+          )}
+          
+          <View style={styles.bundleContent}>
+            <View style={styles.bundleTitleContainer}>
+              <Text style={styles.bundleTitle}>EVERYTHING BUNDLE</Text>
+              <Text style={styles.bundleSubtitle}>All Premium Dare Packs + Future Updates</Text>
+            </View>
+            
+            <View style={styles.bundlePriceContainer}>
+              <Text style={styles.bundlePrice}>$49.99</Text>
+              <Text style={styles.bundleSavings}>Save over 80%</Text>
+            </View>
+          </View>
+        </ImageBackground>
+      </TouchableOpacity>
+    );
+  };
+
+  // Purchase Confirmation Dialog
+  const PurchaseDialog = () => {
+    if (!showPurchaseDialog || !pendingProduct) return null;
+    
+    return (
+      <Modal
+        visible={showPurchaseDialog}
+        transparent={true}
+        animationType="fade"
+      >
+        <View style={styles.dialogOverlay}>
+          <View style={styles.purchaseDialog}>
+            <View style={styles.dialogHeader}>
+              <Text style={styles.dialogTitle}>Confirm Purchase</Text>
+              <TouchableOpacity onPress={() => setShowPurchaseDialog(false)}>
+                <Ionicons name="close" size={24} color="#666" />
+              </TouchableOpacity>
+            </View>
+            
+            <View style={styles.productPreview}>
+              <Image source={pendingProduct.image} style={styles.previewImage} />
+              <View style={styles.previewInfo}>
+                <Text style={styles.previewName}>{pendingProduct.name}</Text>
+                <Text style={styles.previewPrice}>{pendingProduct.price}</Text>
+              </View>
+            </View>
+            
+            <View style={styles.purchaseDetails}>
+              <Text style={styles.detailsTitle}>What you'll get:</Text>
+              <View style={styles.benefitsList}>
+                <View style={styles.benefit}>
+                  <Ionicons name="checkmark-circle" size={16} color="#00C853" />
+                  <Text style={styles.benefitText}>Permanent access to all dares</Text>
+                </View>
+                <View style={styles.benefit}>
+                  <Ionicons name="checkmark-circle" size={16} color="#00C853" />
+                  <Text style={styles.benefitText}>Available on all your devices</Text>
+                </View>
+                <View style={styles.benefit}>
+                  <Ionicons name="checkmark-circle" size={16} color="#00C853" />
+                  <Text style={styles.benefitText}>Create custom dares</Text>
+                </View>
+                {pendingProduct.name === 'Everything Bundle' && (
+                  <View style={styles.benefit}>
+                    <Ionicons name="checkmark-circle" size={16} color="#00C853" />
+                    <Text style={styles.benefitText}>All future packs included</Text>
+                  </View>
+                )}
+              </View>
+            </View>
+            
+            <View style={styles.dialogActions}>
+              <TouchableOpacity 
+                style={styles.cancelDialogButton}
+                onPress={() => setShowPurchaseDialog(false)}
+              >
+                <Text style={styles.cancelDialogText}>Cancel</Text>
+              </TouchableOpacity>
+              
+              <TouchableOpacity 
+                style={styles.confirmButton}
+                onPress={confirmPurchase}
+              >
+                <Text style={styles.confirmButtonText}>Purchase {pendingProduct.price}</Text>
+              </TouchableOpacity>
+            </View>
+            
+            <Text style={styles.securityNote}>
+              🔒 Secure payment processed by Apple
+            </Text>
+          </View>
+        </View>
+      </Modal>
+    );
+  };
 
   return (
     <View style={styles.container}>
@@ -751,20 +1069,17 @@ const DarePackSelectionScreen = ({ navigation }) => {
       >
         <View style={styles.feltOverlay} />
         <View style={styles.mainContent}>
-          {/* Header Section with enhanced casino styling - UPDATED FOR CENTERING */}
           <View style={styles.header}>
             <TouchableOpacity
-  style={styles.backButton}
-  onPress={() => {
-    // Use the CommonActions to dispatch an immediate back action
-    navigation.dispatch(CommonActions.goBack());
-  }}
-  hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
->
-  <Ionicons name="arrow-back" size={24} color="#FFD700" />
-</TouchableOpacity>
+              style={styles.backButton}
+              onPress={() => {
+                navigation.dispatch(CommonActions.goBack());
+              }}
+              hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
+            >
+              <Ionicons name="arrow-back" size={24} color="#FFD700" />
+            </TouchableOpacity>
             
-            {/* This empty view balances the header */}
             <View style={styles.headerSpacer} />
             
             <View style={styles.titleContainerCentered}>
@@ -785,13 +1100,12 @@ const DarePackSelectionScreen = ({ navigation }) => {
               </Pressable>
             </View>
             
-            {/* This empty view balances the back button */}
             <View style={styles.headerSpacer} />
           </View>
-  
-          {/* Grid Section */}
+
           {isLoading ? (
             <View style={styles.loadingContainer}>
+              <ActivityIndicator size="large" color="#FFD700" />
               <Animatable.Text 
                 animation="pulse" 
                 iterationCount="infinite" 
@@ -802,10 +1116,10 @@ const DarePackSelectionScreen = ({ navigation }) => {
             </View>
           ) : (
             <FlatList
-              data={packs}
+              data={visiblePacks} // NEW: Use visible packs instead of all packs
               renderItem={renderItem}
               keyExtractor={item => item.name}
-              numColumns={2}
+              numColumns={COLUMNS}
               contentContainerStyle={styles.gridContent}
               showsVerticalScrollIndicator={false}
               columnWrapperStyle={styles.row}
@@ -820,7 +1134,12 @@ const DarePackSelectionScreen = ({ navigation }) => {
                   </Text>
                 </Animatable.View>
               }
-              ListFooterComponent={<View style={{ height: 20 }} />}
+              ListFooterComponent={
+                <View style={styles.footerContainer}>
+                  {renderEverythingBundle()}
+                  <View style={{ height: 20 }} />
+                </View>
+              }
               initialNumToRender={Platform.OS === 'android' ? 4 : 6}
               maxToRenderPerBatch={Platform.OS === 'android' ? 2 : 4}
               windowSize={Platform.OS === 'android' ? 3 : 5}
@@ -828,8 +1147,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
             />
           )}
         </View>
-  
-        {/* Enhanced Casino-style Modal */}
+
         <Modal
           animationType={Platform.OS === 'android' ? "fade" : "fade"}
           transparent={true}
@@ -849,7 +1167,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
               <Animatable.View
                 animation={isFlipped ? 'fadeIn' : 'fadeOut'}
                 duration={Platform.OS === 'android' ? 200 : 300}
-                style={[styles.modalContainer]}
+                style={[styles.modalContainer, { width: getModalWidth(), maxWidth: getModalMaxWidth() }]}
                 useNativeDriver
               >
                 <Animatable.View
@@ -879,7 +1197,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                     >
                       <Ionicons name="close-circle" size={24} color="#FFD700" />
                     </TouchableOpacity>
-  
+
                     <Text style={styles.modalTitle}>{selectedPack?.name}</Text>
                     <View style={styles.casinoSeparator}>
                       <View style={styles.separatorLine} />
@@ -893,8 +1211,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                       </Text>
                     )}
                     <Text style={styles.modalDescription}>{selectedPack?.description}</Text>
-  
-                    {/* Casino-styled Custom Dare Buttons */}
+
                     <View style={styles.customDareButtonsContainer}>
                       <TouchableOpacity
                         style={[styles.customDareButton, showCustomDareInput && styles.customDareButtonActive]}
@@ -911,7 +1228,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                           {showCustomDareInput ? 'Cancel Custom Dare' : 'Create Custom Dare'}
                         </Text>
                       </TouchableOpacity>
-  
+
                       <TouchableOpacity
                         style={[styles.viewCustomButton, showCustomDaresModal && styles.viewCustomButtonActive]}
                         onPress={async () => {
@@ -935,8 +1252,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                         <Text style={styles.viewCustomButtonText}>View Custom Dares</Text>
                       </TouchableOpacity>
                     </View>
-  
-                    {/* Custom Dare Input */}
+
                     {showCustomDareInput && (
                       <Animatable.View
                         animation="fadeIn"
@@ -950,7 +1266,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                           placeholder="Type your custom dare here..."
                           multiline
                           maxLength={200}
-                          autoFocus={!Platform.OS === 'android'} // Avoid autofocus on Android
+                          autoFocus={!Platform.OS === 'android'}
                           blurOnSubmit={Platform.OS === 'android'}
                           returnKeyType="done"
                         />
@@ -967,8 +1283,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                         </TouchableOpacity>
                       </Animatable.View>
                     )}
-  
-                    {/* Success Message */}
+
                     {customDareSuccess && (
                       <Animatable.View
                         animation="fadeIn"
@@ -978,8 +1293,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                         <Text style={styles.successText}>✓ Custom Dare Added!</Text>
                       </Animatable.View>
                     )}
-  
-                    {/* Preview Section */}
+
                     <TouchableOpacity
                       style={[styles.previewButton, showPreview && styles.previewButtonActive]}
                       onPress={() => setShowPreview(!showPreview)}
@@ -989,7 +1303,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                         {showPreview ? 'Hide Preview' : 'Show Preview'}
                       </Text>
                     </TouchableOpacity>
-  
+
                     {showPreview && (
                       <Animatable.View
                         animation="fadeIn"
@@ -1001,8 +1315,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                         ))}
                       </Animatable.View>
                     )}
-  
-                    {/* Enhanced Counter Section styled like a casino chips counter */}
+
                     <View style={styles.counterContainer}>
                       <TouchableOpacity
                         style={styles.counterButton}
@@ -1022,13 +1335,13 @@ const DarePackSelectionScreen = ({ navigation }) => {
                         <Text style={styles.counterButtonText}>+</Text>
                       </TouchableOpacity>
                     </View>
-  
+
                     <TouchableOpacity
-                      style={[styles.buttonClose, styles.confirmButton]}
+                      style={[styles.buttonClose, styles.dealDaresButton]}
                       onPress={handleConfirmDares}
                       activeOpacity={0.7}
                     >
-                      <Text style={styles.confirmButtonText}>Deal Cards</Text>
+                      <Text style={styles.dealDaresButtonText}>Deal Dares</Text>
                       <Ionicons name="card" size={20} color="white" style={{ marginLeft: 8 }} />
                     </TouchableOpacity>
                   </Animated.View>
@@ -1037,8 +1350,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
             </Animated.View>
           </TouchableWithoutFeedback>
         </Modal>
-  
-        {/* Custom Dares Management Modal - Casino styled */}
+
         <Modal
           visible={showCustomDaresModal}
           transparent={true}
@@ -1065,7 +1377,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
               <Animatable.View
                 animation="slideInUp"
                 duration={Platform.OS === 'android' ? 200 : 300}
-                style={[styles.modalView, styles.customDaresModalView]}
+                style={[styles.modalView, styles.customDaresModalView, { width: getModalWidth(), maxWidth: getModalMaxWidth() }]}
               >
                 <TouchableOpacity
                   style={styles.closeButton}
@@ -1083,7 +1395,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                 >
                   <Ionicons name="close-circle" size={24} color="#FFD700" />
                 </TouchableOpacity>
-  
+
                 <Text style={styles.modalTitle}>Custom Dares</Text>
                 <View style={styles.casinoSeparator}>
                   <View style={styles.separatorLine} />
@@ -1108,7 +1420,7 @@ const DarePackSelectionScreen = ({ navigation }) => {
                             value={editingDare.text}
                             onChangeText={(text) => setEditingDare({...editingDare, text})}
                             multiline
-                            autoFocus={!Platform.OS === 'android'} // Avoid autofocus on Android
+                            autoFocus={!Platform.OS === 'android'}
                             returnKeyType="done"
                             blurOnSubmit={Platform.OS === 'android'}
                           />
@@ -1186,12 +1498,19 @@ const DarePackSelectionScreen = ({ navigation }) => {
             </TouchableOpacity>
           </TouchableWithoutFeedback>
         </Modal>
+
+        <PurchaseDialog />
+
+        {showToast && (
+          <Animated.View style={styles.toastContainer}>
+            <Text style={styles.toastText}>{toastMessage}</Text>
+          </Animated.View>
+        )}
       </ImageBackground>
     </View>
   );
 };
 
-// Add the new styles here
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -1203,7 +1522,7 @@ const styles = StyleSheet.create({
   },
   feltOverlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(0, 0, 0, 0.2)', // Changed from 0.65 to 0.5 for lighter background
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
   },
   mainContent: {
     flex: 1,
@@ -1212,7 +1531,7 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between', // Changed to ensure proper spacing
+    justifyContent: 'space-between',
     paddingHorizontal: 20,
     marginBottom: 10,
   },
@@ -1224,7 +1543,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFD700',
   },
   headerSpacer: {
-    width: 40, // Match the size of the back button for balance
+    width: 40,
     height: 30,
   },
   titleContainerCentered: {
@@ -1242,7 +1561,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#FFD700',
     textAlign: 'center',
-    // Removed marginLeft: 20 that was causing off-center alignment
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 3,
@@ -1295,7 +1613,6 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     elevation: 5,
   },
-  // Add purchased card styling
   purchasedCard: {
     borderColor: '#00C853',
     borderWidth: 2,
@@ -1340,6 +1657,7 @@ const styles = StyleSheet.create({
     color: '#FFD700',
     fontSize: 18,
     textAlign: 'center',
+    marginTop: 10,
   },
   centeredView: {
     flex: 1,
@@ -1347,15 +1665,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modalContainer: {
-    width: '90%',
-    maxWidth: 400,
     padding: 10,
     height: 'auto',
   },
   modalView: {
     backgroundColor: '#1a1a1a',
-    borderRadius: 20,
-    padding: 20,
+    borderRadius: IS_TABLET ? 25 : 20,
+    padding: IS_TABLET ? 30 : 20,
     width: '100%',
     alignItems: 'center',
     shadowColor: '#000',
@@ -1567,10 +1883,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
   },
-  confirmButton: {
+  dealDaresButton: {
     backgroundColor: '#FFD700',
   },
-  confirmButtonText: {
+  dealDaresButtonText: {
     color: 'black',
     fontWeight: 'bold',
     fontSize: 16,
@@ -1684,6 +2000,274 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 10,
     fontWeight: 'bold',
+  },
+  
+  // NEW: Purchasing overlay styles
+  purchasingOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 5,
+  },
+  purchasingText: {
+    color: '#FFD700',
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginTop: 10,
+    textAlign: 'center',
+  },
+
+  // Toast styles
+  toastContainer: {
+    position: 'absolute',
+    top: 100,
+    left: 20,
+    right: 20,
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#FFD700',
+    zIndex: 10000,
+  },
+  toastText: {
+    color: '#FFD700',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+
+  // Footer container for Everything Bundle
+  footerContainer: {
+    paddingHorizontal: 8,
+    marginTop: 15,
+  },
+
+  // Everything Bundle styles
+  everythingBundleButton: {
+    width: '100%',
+    height: 120,
+    borderRadius: 15,
+    overflow: 'hidden',
+    borderWidth: 3,
+    borderColor: '#FFD700',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#FFD700',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.6,
+        shadowRadius: 10,
+      },
+      android: {
+        elevation: 8,
+      }
+    }),
+  },
+  bundleBackground: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+  },
+  bundleOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  bundlePurchasingOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 5,
+    borderRadius: 15,
+  },
+  bundlePurchasingText: {
+    color: '#FFD700',
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginTop: 15,
+    textAlign: 'center',
+  },
+  bundleContent: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 15,
+  },
+  bundleTitleContainer: {
+    flex: 1,
+  },
+  bundleTitle: {
+    color: '#FFD700',
+    fontSize: 26,
+    fontWeight: 'bold',
+    textShadowColor: 'rgba(0, 0, 0, 0.8)',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 5,
+  },
+  bundleSubtitle: {
+    color: 'white',
+    fontSize: 16,
+    marginTop: 5,
+    textShadowColor: 'rgba(0, 0, 0, 0.8)',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 3,
+  },
+  bundlePriceContainer: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    borderRadius: 10,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD700',
+  },
+  bundlePrice: {
+    color: '#FFD700',
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  bundleSavings: {
+    color: '#00ff00',
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginTop: 2,
+  },
+
+  // Simple Everything Bundle Purchased Bar
+  everythingBundlePurchasedBar: {
+    marginTop: 10,
+    marginBottom: 20,
+    backgroundColor: '#00C853',
+    paddingVertical: 15,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    alignItems: 'center',
+    shadowColor: '#00C853',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  bundlePurchasedBarText: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+
+  // Purchase Dialog Styles
+  dialogOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  purchaseDialog: {
+    backgroundColor: 'white',
+    borderRadius: 15,
+    padding: 20,
+    width: '90%',
+    maxWidth: 400,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.3,
+    shadowRadius: 20,
+    elevation: 10,
+  },
+  dialogHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  dialogTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  productPreview: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+    padding: 15,
+    backgroundColor: '#F5F5F5',
+    borderRadius: 10,
+  },
+  previewImage: {
+    width: 60,
+    height: 60,
+    borderRadius: 10,
+    marginRight: 15,
+  },
+  previewInfo: {
+    flex: 1,
+  },
+  previewName: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 5,
+  },
+  previewPrice: {
+    fontSize: 16,
+    color: '#FFD700',
+    fontWeight: 'bold',
+  },
+  purchaseDetails: {
+    marginBottom: 20,
+  },
+  detailsTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 10,
+  },
+  benefitsList: {
+    gap: 8,
+  },
+  benefit: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  benefitText: {
+    fontSize: 14,
+    color: '#666',
+    flex: 1,
+  },
+  dialogActions: {
+    flexDirection: 'row',
+    gap: 10,
+    marginBottom: 15,
+  },
+  cancelDialogButton: {
+    flex: 1,
+    padding: 15,
+    borderRadius: 10,
+    backgroundColor: '#E0E0E0',
+    alignItems: 'center',
+  },
+  cancelDialogText: {
+    fontWeight: 'bold',
+    color: '#666',
+  },
+  confirmButton: {
+    flex: 2,
+    padding: 15,
+    borderRadius: 10,
+    backgroundColor: '#FFD700',
+    alignItems: 'center',
+  },
+  confirmButtonText: {
+    fontWeight: 'bold',
+    color: '#000',
+  },
+  securityNote: {
+    fontSize: 12,
+    color: '#666',
+    textAlign: 'center', 
   },
 });
 

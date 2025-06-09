@@ -21,11 +21,15 @@ import { useGame } from '../Context/GameContext';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { TRIVIA_PACKS } from '../Context/triviaPacks';
 import { Audio } from 'expo-av';
+import { achievementTracker } from '../Context/AchievementTracker';
 
 const GameConfirmationScreen = () => {
   const navigation = useNavigation();
   const route = useRoute();
-  const { selectedPack } = route.params || {};
+  
+  // NEW: Extract gameMode and players from route params
+  const { selectedPack, gameMode, players: routePlayers } = route.params || {};
+  
   const { 
     players, 
     setPlayers,
@@ -36,7 +40,8 @@ const GameConfirmationScreen = () => {
     setNumberOfQuestions
   } = useGame();
   
-  const [localPlayers, setLocalPlayers] = useState(players);
+  // NEW: Use players from route params if available, otherwise fall back to context
+  const [localPlayers, setLocalPlayers] = useState(routePlayers || players);
   
   // Background music state
   const [backgroundMusic, setBackgroundMusic] = useState(null);
@@ -45,6 +50,42 @@ const GameConfirmationScreen = () => {
   // Get pack description from TRIVIA_PACKS
   const packDetails = [...TRIVIA_PACKS.Basic, ...TRIVIA_PACKS.Premium]
     .find(pack => pack.name === selectedPack);
+
+  // NEW: Get game mode display info
+  const getGameModeInfo = () => {
+    switch(gameMode) {
+      case 'TriviaONLY':
+        return {
+          title: 'TriviaONLY Mode',
+          description: 'Pure trivia questions - no dares!',
+          icon: '📚',
+          color: '#4CAF50'
+        };
+      case 'TriviaDare':
+        return {
+          title: 'TriviaDare Mode', 
+          description: 'Answer correctly or face a dare!',
+          icon: '🎯',
+          color: '#FF4500'
+        };
+      case 'DaresONLY':
+        return {
+          title: 'DaresONLY Mode',
+          description: 'Skip trivia - just complete dares!',
+          icon: '🎲',
+          color: '#FF6B35'
+        };
+      default:
+        return {
+          title: 'Trivia Game',
+          description: 'Test your knowledge!',
+          icon: '🧠',
+          color: '#FFD700'
+        };
+    }
+  };
+
+  const gameModeInfo = getGameModeInfo();
 
   // Handle background music from previous screen
   useEffect(() => {
@@ -90,7 +131,7 @@ const GameConfirmationScreen = () => {
     setLocalPlayers(updatedPlayers);
   };
 
-  const handleStartGame = () => {
+  const handleStartGame = async () => {
     // Dismiss keyboard on Android before navigation
     if (Platform.OS === 'android') {
       Keyboard.dismiss();
@@ -117,12 +158,45 @@ const GameConfirmationScreen = () => {
       stopAndUnloadMusic();
     }
     
-    // Original single-player flow with Android optimizations
+    // ACHIEVEMENT TRACKING: Track game start with all required parameters
+    try {
+      // Filter out empty player names and ensure we have valid player names
+      const validPlayers = localPlayers.filter(player => player && player.trim() !== '');
+      
+      if (validPlayers.length === 0) {
+        console.error('No valid players found');
+        return;
+      }
+      
+      // Track game start with gameMode and pack name
+      await achievementTracker.trackGameStart(
+        validPlayers,
+        gameMode || 'TriviaDare', // Default to TriviaDare if no mode specified
+        selectedPack || 'General Knowledge' // Default pack name if none specified
+      );
+      
+      console.log('Game start tracked successfully:', {
+        players: validPlayers,
+        gameMode: gameMode || 'TriviaDare',
+        packName: selectedPack || 'General Knowledge'
+      });
+    } catch (error) {
+      console.error('Error tracking game start:', error);
+    }
+    
+    // Updated to pass gameMode to QuestionScreen
     setPlayers(localPlayers);
     navigation.navigate('QuestionScreen', {
       selectedPack,
+      gameMode, // NEW: Pass gameMode to QuestionScreen
       numberOfQuestions,
       currentQuestionIndex: 0,
+      // Pass tracking data to ensure consistency
+      trackingData: {
+        gameMode: gameMode || 'TriviaDare',
+        packName: selectedPack || 'General Knowledge',
+        players: localPlayers.filter(player => player && player.trim() !== '')
+      },
       // Android-specific navigation options
       ...(Platform.OS === 'android' ? {
         animation: 'slide_from_right'
@@ -231,6 +305,21 @@ const GameConfirmationScreen = () => {
                 <Text style={styles.mainTitle}>{selectedPack}</Text>
                 <Text style={styles.packDescription}>{packDetails?.description}</Text>
 
+                {/* NEW: Game Mode Display */}
+                {gameMode && (
+                  <View style={[styles.gameModeCard, { borderColor: gameModeInfo.color }]}>
+                    <Text style={styles.gameModeIcon}>{gameModeInfo.icon}</Text>
+                    <View style={styles.gameModeInfo}>
+                      <Text style={[styles.gameModeTitle, { color: gameModeInfo.color }]}>
+                        {gameModeInfo.title}
+                      </Text>
+                      <Text style={styles.gameModeDescription}>
+                        {gameModeInfo.description}
+                      </Text>
+                    </View>
+                  </View>
+                )}
+
                 <View style={styles.sliderSection}>
                   <Text style={styles.sliderTitle}>QUESTIONS PER PLAYER</Text>
                   <Slider
@@ -275,7 +364,7 @@ const GameConfirmationScreen = () => {
               </View>
 
               <TouchableOpacity 
-                style={styles.startButton}
+                style={[styles.startButton, { backgroundColor: gameModeInfo.color }]}
                 onPress={handleStartGame}
                 activeOpacity={0.7}
               >
@@ -357,6 +446,45 @@ const styles = StyleSheet.create({
         textShadowRadius: 1,
       }
     }),
+  },
+  // NEW: Game Mode Card Styles
+  gameModeCard: {
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    borderRadius: 12,
+    padding: 12,
+    marginBottom: 15,
+    borderWidth: 2,
+    flexDirection: 'row',
+    alignItems: 'center',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 3,
+      },
+      android: {
+        elevation: 4,
+      }
+    }),
+  },
+  gameModeIcon: {
+    fontSize: 32,
+    marginRight: 12,
+  },
+  gameModeInfo: {
+    flex: 1,
+  },
+  gameModeTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 2,
+    letterSpacing: 1,
+  },
+  gameModeDescription: {
+    fontSize: 14,
+    color: '#FFFFFF',
+    opacity: 0.9,
   },
   sliderSection: {
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
@@ -466,7 +594,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFD700',
   },
   startButton: {
-    backgroundColor: '#FF4500',
+    backgroundColor: '#FF4500', // Will be overridden by gameMode color
     padding: Platform.OS === 'android' ? 10 : 15, // Reduced padding for Android
     borderRadius: 12,
     alignItems: 'center',

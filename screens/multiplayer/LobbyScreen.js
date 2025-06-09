@@ -18,17 +18,29 @@ import {
 import { LinearGradient } from 'expo-linear-gradient';
 import { AntDesign, MaterialCommunityIcons, FontAwesome, Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { useFirebase } from '../../Context/multiplayer/FirebaseContext';
-import { useGame } from '../../Context/GameContext';
+import { useGame, TIMER_CONFIGS } from '../../Context/GameContext'; // 👈 Import TIMER_CONFIGS
+import { loadPackQuestions } from '../../Context/triviaPacks'; // Add this import
 import * as Haptics from 'expo-haptics';
 
 // Get screen dimensions
 const { width, height } = Dimensions.get('window');
 
-// Timer configurations
-const TIMER_CONFIGS = {
-  10: { baseScore: 250, label: "10s" },
-  20: { baseScore: 500, label: "20s" },
-  30: { baseScore: 750, label: "30s" }
+// 👈 REMOVED the duplicate TIMER_CONFIGS definition - it's now imported from GameContext
+
+// Game mode configurations
+const GAME_MODES = {
+  TriviaDARE: { 
+    label: "TriviaDARE", 
+    description: "Trivia + Dares (Local Players)",
+    icon: "emoticon-devil",
+    color: "#FF6B35"
+  },
+  TriviaONLY: { 
+    label: "TriviaONLY", 
+    description: "Pure Trivia (Remote OK)",
+    icon: "head-question",
+    color: "#4CAF50"
+  }
 };
 
 // Maximum number of players allowed
@@ -58,6 +70,14 @@ const LobbyScreen = ({ navigation, route }) => {
   
   // Access game context
   const gameContext = useGame();
+  
+  // 👈 ADD DEBUG CHECK for timer configs
+  useEffect(() => {
+    console.log('🔧 LobbyScreen TIMER_CONFIGS check:');
+    console.log('🔧 Imported TIMER_CONFIGS:', TIMER_CONFIGS);
+    console.log('🔧 Timer config keys:', Object.keys(TIMER_CONFIGS));
+    console.log('🔧 Timer config values:', Object.values(TIMER_CONFIGS));
+  }, []);
   
   // Use ref to track if sync has been performed
   const syncPerformedRef = useRef(false);
@@ -163,12 +183,13 @@ const LobbyScreen = ({ navigation, route }) => {
   // Check if maximum number of players has been reached
   const isPlayerLimitReached = playerArray.length >= MAX_PLAYERS;
 
-  // Get current game settings from Firebase
+  // Get current game settings from Firebase - UPDATE default timeLimit
   const gameSettings = React.useMemo(() => {
     console.log('[LobbyScreen] Game settings from Firebase:', gameState?.gameSettings);
     return gameState?.gameSettings || {
-      timeLimit: 20,
-      rounds: 5
+      timeLimit: 30, // 👈 This matches GameContext default (30 seconds = Standard)
+      rounds: 5,
+      gameMode: 'TriviaDARE' // Default to TriviaDARE mode
     };
   }, [gameState?.gameSettings]);
 
@@ -280,7 +301,8 @@ const LobbyScreen = ({ navigation, route }) => {
           selectedPack: gameState.gameData?.packName,
           packName: gameState.gameData?.packDisplayName || gameState.gameData?.packName,
           numberOfQuestions: gameState.gameSettings?.rounds || 5,
-          timeLimit: gameState.gameSettings?.timeLimit || 20
+          timeLimit: gameState.gameSettings?.timeLimit || 30,
+          gameMode: gameState.gameSettings?.gameMode || 'TriviaDARE'
         });
       }, 500);
     }
@@ -599,7 +621,8 @@ const navigateToGame = () => {
         selectedPack: selectedPack,
         packName: selectedPackName,
         numberOfQuestions: gameSettings.rounds || 5,
-        timeLimit: gameSettings.timeLimit || 20
+        timeLimit: gameSettings.timeLimit || 30,
+        gameMode: gameSettings.gameMode || 'TriviaDARE'
       });
     }).catch(error => {
       setIsGameStarting(false);
@@ -610,11 +633,12 @@ const navigateToGame = () => {
   } else {
     // Non-host clients also navigate
     navigation.navigate('MultiplayerQuestionScreen', {
-      selectedPack: selectedPack,
-      packName: selectedPackName,
-      numberOfQuestions: gameSettings.rounds || 5,
-      timeLimit: gameSettings.timeLimit || 20
-    });
+  selectedPack: selectedPack,
+  packName: selectedPackName,
+  numberOfQuestions: gameSettings.rounds || 5,
+  timeLimit: gameSettings.timeLimit || 30,
+  gameMode: gameSettings.gameMode || 'TriviaDARE'
+});
   }
 };
 
@@ -660,6 +684,56 @@ const handleToggleReady = async () => {
   } catch (error) {
     console.error('Error toggling ready status:', error);
     Alert.alert('Error', 'Failed to update ready status');
+  }
+};
+
+// Function to handle game mode changes (Host only)
+const handleGameModeChange = async (newGameMode) => {
+  if (!currentUserIsHost) return;
+  
+  try {
+    console.log('Game mode change button pressed. Current:', gameSettings.gameMode, 'New:', newGameMode);
+    
+    // Show warning for TriviaDARE mode
+    if (newGameMode === 'TriviaDARE') {
+      Alert.alert(
+        'TriviaDARE Mode',
+        'This mode includes dares and is designed for players in the same room. All players will vote on dare completion.',
+        [
+          { text: 'Cancel', style: 'cancel' },
+          { 
+            text: 'Continue', 
+            onPress: async () => {
+              await updateGameMode(newGameMode);
+            }
+          }
+        ]
+      );
+    } else {
+      await updateGameMode(newGameMode);
+    }
+  } catch (error) {
+    console.error('Error updating game mode:', error);
+    Alert.alert('Error', 'Failed to update game mode');
+  }
+};
+
+// Helper function to update game mode in Firebase
+const updateGameMode = async (newGameMode) => {
+  try {
+    await firebase.updateGameState({
+      gameSettings: {
+        ...gameSettings,
+        gameMode: newGameMode
+      }
+    });
+    
+    // Show success feedback
+    if (Platform.OS === 'android') {
+      ToastAndroid.show(`Mode changed to ${GAME_MODES[newGameMode].label}`, ToastAndroid.SHORT);
+    }
+  } catch (error) {
+    throw error;
   }
 };
 
@@ -746,7 +820,7 @@ const handleRemovePlayer = (playerId, playerName) => {
   );
 };
 
-const handleStartGame = () => {
+const handleStartGame = async () => {
   if (!currentUserIsHost) return;
   
   // Need a selected pack - check first!
@@ -768,42 +842,64 @@ const handleStartGame = () => {
     return;
   }
   
-  // Choose the first player (typically the first player in the array who isn't the host)
-  let firstPlayerId = null;
-  for (const player of playerArray) {
-    if (!player.isHost) {
-      firstPlayerId = player.id;
-      break;
+  try {
+    // Show loading state with a game show feel
+    setIsGameStarting(true);
+    
+    // 🚀 STEP 1: Load questions from the selected pack
+    console.log('[LobbyScreen] 📚 Loading questions for pack:', selectedPackName);
+    const questionResult = await loadPackQuestions(selectedPackName, 'easy');
+    
+    if (!questionResult.success) {
+      throw new Error(questionResult.error || 'Failed to load questions');
     }
-  }
-  
-  // If no non-host player found, use the first player in the array
-  if (!firstPlayerId && playerArray.length > 0) {
-    firstPlayerId = playerArray[0].id;
-  }
-  
-  // Update Firebase with the first player
-  if (firebase && typeof firebase.updateGameState === 'function') {
-    try {
-      firebase.updateGameState({
-        currentPlayerId: firstPlayerId,
-        currentQuestionIndex: 0,  // Start at the first question
-      });
-      
-      // Show loading state with a game show feel
-      setIsGameStarting(true);
-      
-      // Start the synchronized countdown
-      startCountdown();
-    } catch (error) {
-      console.error("Error updating game state:", error);
-      Alert.alert('Error', 'Failed to start the game. Please try again.');
+    
+    console.log('[LobbyScreen] ✅ Loaded', questionResult.data.length, 'questions');
+    
+    // 🚀 STEP 2: Shuffle questions and limit to number of rounds
+    const shuffledQuestions = [...questionResult.data]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, gameSettings.rounds);
+    
+    console.log('[LobbyScreen] ✅ Prepared', shuffledQuestions.length, 'shuffled questions for game');
+    
+    // Choose the first player (typically the first player in the array who isn't the host)
+    let firstPlayerId = null;
+    for (const player of playerArray) {
+      if (!player.isHost) {
+        firstPlayerId = player.id;
+        break;
+      }
     }
-  } else {
-    // Debug information
-    console.error("updateGameState not available:", 
-      firebase ? "Firebase exists but function missing" : "Firebase object missing");
-    Alert.alert('Error', 'Connection issue. Please try again or restart the app.');
+    
+    // If no non-host player found, use the first player in the array
+    if (!firstPlayerId && playerArray.length > 0) {
+      firstPlayerId = playerArray[0].id;
+    }
+    
+    // 🚀 STEP 3: Start game with questions using enhanced Firebase startGame
+    await firebase.startGame(
+      gameSettings.gameMode,
+      selectedPackName, 
+      shuffledQuestions,
+      gameSettings.timeLimit,
+      gameSettings.rounds
+    );
+    
+    // 🚀 STEP 4: Set the first player
+    await firebase.updateGameState({
+      currentPlayerId: firstPlayerId,
+    });
+    
+    console.log('[LobbyScreen] ✅ Game started successfully with questions loaded');
+    
+    // Start the synchronized countdown
+    startCountdown();
+    
+  } catch (error) {
+    console.error('[LobbyScreen] ❌ Error starting game:', error);
+    setIsGameStarting(false);
+    Alert.alert('Error', `Failed to start game: ${error.message}`);
   }
 };
 
@@ -1017,13 +1113,33 @@ const renderPlayerItem = ({ item, index }) => {
   );
 };
 
-// Render game settings for non-host players with game show styling
+// UPDATE: Non-host display to show timer labels correctly
 const renderNonHostGameSettings = () => (
   <LinearGradient
     colors={['rgba(0,0,0,0.7)', 'rgba(25,25,112,0.9)']}
     style={styles.bottomContainer}
   >
     <View style={styles.gameInfoContainer}>
+      {/* Game Mode Info Section - Read Only */}
+      <View style={styles.settingRow}>
+        <View style={styles.settingLabelContainer}>
+          <MaterialCommunityIcons 
+            name={GAME_MODES[gameSettings.gameMode]?.icon || "help-circle"} 
+            size={20} 
+            color={GAME_MODES[gameSettings.gameMode]?.color || "#FFD700"} 
+          />
+          <Text style={styles.settingLabel}>Mode:</Text>
+        </View>
+        <View style={styles.gameInfoValue}>
+          <Text style={styles.gameInfoValueText} numberOfLines={1}>
+            {GAME_MODES[gameSettings.gameMode]?.label || 'TriviaDARE'}
+          </Text>
+          <Text style={styles.gameModeDescription} numberOfLines={1}>
+            {GAME_MODES[gameSettings.gameMode]?.description || ''}
+          </Text>
+        </View>
+      </View>
+
       {/* Pack Info Section - Read Only */}
       <View style={styles.settingRow}>
         <View style={styles.settingLabelContainer}>
@@ -1050,14 +1166,16 @@ const renderNonHostGameSettings = () => (
           </View>
         </View>
 
-        {/* Timer display */}
+        {/* Timer display - UPDATE to show timer label */}
         <View style={styles.settingItem}>
           <View style={styles.settingLabelContainer}>
             <MaterialCommunityIcons name="timer" size={20} color="#FFD700" />
             <Text style={styles.settingLabel}>Timer:</Text>
           </View>
           <View style={styles.gameInfoSmallValue}>
-            <Text style={styles.gameInfoValueText}>{gameSettings.timeLimit}s</Text>
+            <Text style={styles.gameInfoValueText}>
+              {TIMER_CONFIGS[gameSettings.timeLimit]?.label || `${gameSettings.timeLimit}s`}
+            </Text>
           </View>
         </View>
       </View>
@@ -1091,12 +1209,47 @@ const renderNonHostGameSettings = () => (
   </LinearGradient>
 );
 
-// Render host controls with improved touch handling
+// UPDATE: Timer controls to use GameContext timer values
 const renderHostControls = () => (
   <LinearGradient
     colors={['rgba(0,0,0,0.7)', 'rgba(25,25,112,0.9)']}
     style={styles.bottomContainer}
   >
+    {/* Game Mode Selection */}
+    <View style={styles.gameModeContainer}>
+      <View style={styles.settingLabelContainer}>
+        <MaterialCommunityIcons name="gamepad-variant" size={20} color="#FFD700" />
+        <Text style={styles.settingLabel}>Game Mode</Text>
+      </View>
+      <View style={styles.gameModeButtons}>
+        {Object.keys(GAME_MODES).map(mode => (
+          <TouchableOpacity
+            key={mode}
+            style={[
+              styles.gameModeButton,
+              gameSettings.gameMode === mode && styles.gameModeButtonSelected,
+              { borderColor: GAME_MODES[mode].color }
+            ]}
+            onPress={() => handleGameModeChange(mode)}
+            activeOpacity={0.7}
+            onTouchStart={(evt) => DEBUG_MODE && handleDebugTouch(evt, `Game Mode ${mode}`)}
+          >
+            <MaterialCommunityIcons 
+              name={GAME_MODES[mode].icon} 
+              size={18} 
+              color={gameSettings.gameMode === mode ? '#FFF' : GAME_MODES[mode].color} 
+            />
+            <Text style={[
+              styles.gameModeButtonText,
+              { color: gameSettings.gameMode === mode ? '#FFF' : GAME_MODES[mode].color }
+            ]}>
+              {GAME_MODES[mode].label}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </View>
+    </View>
+
     {/* Pack Selection */}
     <TouchableOpacity 
       style={styles.packSelectionButton} 
@@ -1159,7 +1312,7 @@ const renderHostControls = () => (
         </View>
       </View>
 
-      {/* Timer controls */}
+      {/* Timer controls - UPDATE to use GameContext timer values */}
       <View style={styles.hostSettingItem}>
         <View style={styles.settingLabelContainer}>
           <MaterialCommunityIcons name="timer" size={20} color="#FFD700" />
@@ -1177,7 +1330,12 @@ const renderHostControls = () => (
               activeOpacity={0.7}
               onTouchStart={(evt) => DEBUG_MODE && handleDebugTouch(evt, `Timer ${seconds}s`)}
             >
-              <Text style={styles.timerButtonText}>{seconds}s</Text>
+              <Text style={styles.timerButtonText}>
+                {TIMER_CONFIGS[seconds].label}
+              </Text>
+              <Text style={[styles.timerButtonText, { fontSize: 10, opacity: 0.8 }]}>
+                {seconds}s
+              </Text>
             </TouchableOpacity>
           ))}
         </View>
@@ -1239,6 +1397,7 @@ const renderDebugOverlay = () => {
         <Text style={styles.debugText}>Game Starting: {isGameStarting ? 'YES' : 'NO'}</Text>
         <Text style={styles.debugText}>Is Host: {currentUserIsHost ? 'YES' : 'NO'}</Text>
         <Text style={styles.debugText}>Pack: {selectedPack || 'None'}</Text>
+        <Text style={styles.debugText}>Mode: {gameSettings.gameMode}</Text>
         <TouchableOpacity 
           style={styles.debugButton}
           onPress={handleDebugReset}
@@ -1718,6 +1877,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
+  gameModeDescription: {
+    color: 'rgba(255, 255, 255, 0.7)',
+    fontSize: 12,
+    fontStyle: 'italic',
+    marginTop: 2,
+  },
   waitingContainer: {
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     borderRadius: 10,
@@ -1755,6 +1920,35 @@ const styles = StyleSheet.create({
   },
 
   // Host control styles
+  gameModeContainer: {
+    marginBottom: 15,
+  },
+  gameModeButtons: {
+    flexDirection: 'row',
+    marginTop: 5,
+  },
+  gameModeButton: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 8,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    borderRadius: 10,
+    marginHorizontal: 5,
+    borderWidth: 2,
+    borderColor: 'rgba(255, 215, 0, 0.3)',
+  },
+  gameModeButtonSelected: {
+    backgroundColor: 'rgba(255, 215, 0, 0.2)',
+    borderColor: '#FFD700',
+  },
+  gameModeButtonText: {
+    fontWeight: 'bold',
+    fontSize: 12,
+    marginLeft: 5,
+  },
   packSelectionButton: {
     borderRadius: 10,
     overflow: 'hidden',

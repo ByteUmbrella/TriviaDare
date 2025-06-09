@@ -81,7 +81,7 @@ export const FirebaseProvider = ({ children }) => {
       console.log('[Firebase] Creating room with player:', playerName, 'on platform:', Platform.OS);
       
       // Generate a room code (6 alphanumeric characters) and ensure uppercase
-      const roomCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+      const roomCode = Math.random().toString(36).substring(2, 6).toUpperCase();
       console.log('[Firebase] Generated room code:', roomCode);
       
       const roomRef = ref(database, `rooms/${roomCode}`);
@@ -277,28 +277,57 @@ export const FirebaseProvider = ({ children }) => {
     }
   };
 
-  // Start the game
-  const startGame = async (gameData) => {
+  // 🚀 ENHANCED startGame method that accepts and stores questions
+  const startGame = async (gameMode, packName, questions, timeLimit, rounds = 5) => {
     if (!currentRoom || !user) {
       console.error('[Firebase] Cannot start game: No room or user');
-      return;
+      throw new Error('No active room or user not authenticated');
+    }
+    
+    // Validate required parameters
+    if (!gameMode || !packName || !Array.isArray(questions) || questions.length === 0) {
+      console.error('[Firebase] Invalid game parameters:', { gameMode, packName, questionsLength: questions?.length });
+      throw new Error('Invalid game parameters: missing gameMode, packName, or questions');
     }
     
     try {
       console.log('[Firebase] Starting game in room:', currentRoom);
+      console.log('[Firebase] Game settings:', { gameMode, packName, timeLimit, rounds, questionsCount: questions.length });
+      
+      // Limit questions to the specified number of rounds
+      const gameQuestions = questions.slice(0, rounds);
+      
+      // Prepare game data with questions
+      const gameData = {
+        gameMode,
+        packName,
+        packId: packName, // Using packName as ID for compatibility
+        packDisplayName: packName,
+        questions: gameQuestions, // 🎯 Store questions in Firebase
+        timeLimit,
+        rounds,
+        totalQuestions: gameQuestions.length,
+        createdAt: new Date().toISOString()
+      };
+      
       const roomRef = ref(database, `rooms/${currentRoom}`);
       
+      // Update room with game data and start the game
       await update(roomRef, {
         gameStatus: 'playing',
         currentQuestionIndex: 0,
-        gameData,
+        gameData, // 🎯 This now includes questions array
         startedAt: serverTimestamp()
       });
       
-      console.log('[Firebase] Game started successfully');
+      console.log('[Firebase] ✅ Game started successfully with', gameQuestions.length, 'questions');
+      console.log('[Firebase] ✅ Questions stored in Firebase at: rooms/' + currentRoom + '/gameData/questions');
+      
+      return true;
     } catch (error) {
-      console.error('[Firebase] Error starting game:', error);
+      console.error('[Firebase] ❌ Error starting game:', error);
       setError(`Failed to start game: ${error.message}`);
+      throw error;
     }
   };
 
@@ -317,6 +346,11 @@ export const FirebaseProvider = ({ children }) => {
         const data = snapshot.val();
         if (data) {
           console.log(`[Firebase] Room update received: status=${data.gameStatus}, player=${user?.uid === data.hostId ? 'HOST' : 'CLIENT'}`);
+          
+          // 🎯 Log questions sync info
+          if (data.gameData?.questions) {
+            console.log(`[Firebase] ✅ Questions synced: ${data.gameData.questions.length} questions available`);
+          }
           
           // Log countdown state if available
           if (data.countdown) {
@@ -631,7 +665,7 @@ export const FirebaseProvider = ({ children }) => {
     createRoom,
     joinRoom,
     leaveRoom,
-    startGame,
+    startGame, // 🚀 Enhanced to handle questions
     updateGameState,
     updatePlayerData,
     submitAnswer,

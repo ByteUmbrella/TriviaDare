@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, memo } from 'react';
+import React, { useState, useEffect, useCallback, memo, useRef } from 'react';
 import {
   View,
   Text,
@@ -22,6 +22,7 @@ import QuestionContainer from './QuestionContainer';
 import ScoreBanner from './ScoreBanner';
 import ScoringInfoModal from '../Context/ScoringInfoModal';
 import DarePopup from './DarePopup.js';
+import CorrectAnswerPopUp from './CorrectAnswerPopUp.js';
 import { 
   loadPackQuestions, 
   markQuestionAsUsed, 
@@ -29,6 +30,10 @@ import {
   getPackStatistics,
   checkPackAvailability 
 } from '../Context/triviaPacks';
+
+// Achievement tracking imports
+import { achievementTracker } from '../Context/AchievementTracker';
+import { loadAchievements } from '../Context/AchievementModal';
 
 // Custom Gameshow-style Alert Component
 const GameshowAlert = ({ visible, title, message, onCancel, onConfirm, cancelText = "Cancel", confirmText = "OK", showCancel = true }) => {
@@ -84,6 +89,18 @@ const log = (...args) => {
     } else {
       console.log(...args);
     }
+  }
+};
+
+// UPDATED: Enhanced achievement tracking helper function with comprehensive error handling
+const trackAchievementSafely = async (methodName, ...args) => {
+  try {
+    console.log(`🏆 Tracking achievement: ${methodName}`, args);
+    await achievementTracker[methodName](...args);
+    console.log(`✅ Achievement tracking successful: ${methodName}`);
+  } catch (error) {
+    console.error(`❌ Achievement tracking error for ${methodName}:`, error);
+    // Don't throw - we don't want achievement tracking to break gameplay
   }
 };
 
@@ -170,7 +187,6 @@ const validateQuestion = (question) => {
 const MAX_PLAYERS = 8;
 const MAX_RETRIES = 3;
 
-
 // Sound playback functions with platform-specific optimizations
 const playWrongAnswerSound = async (soundObject, isMuted) => {
   if (!isMuted && soundObject) {
@@ -199,7 +215,14 @@ const QuestionScreen = () => {
   const {
     numberOfQuestions,
     selectedPack: routeSelectedPack,
+    gameMode, // Extract gameMode from route params
+    players: routePlayers, // NEW: Also get players from route
+    packName, // NEW: Extract pack name for achievement tracking
   } = route.params || {};
+
+  // NEW: Log the gameMode for debugging
+  console.log('🎮 QuestionScreen initialized with gameMode:', gameMode);
+  console.log('📦 QuestionScreen pack info:', { selectedPack: routeSelectedPack, packName });
 
   const {
     players,
@@ -221,7 +244,12 @@ const QuestionScreen = () => {
     questions = [],
     setQuestions,
     currentQuestion,
-    setCurrentQuestion
+    setCurrentQuestion,
+    // NEW: Import dynamic dare scoring functions
+    calculateDarePoints,
+    updateDareStreak,
+    resetDareStreak,
+    getDareStreakInfo
   } = useGame();
 
   // Enhanced state with error tracking
@@ -242,6 +270,8 @@ const QuestionScreen = () => {
     showQuestion: false,
     answerSubmitted: false,
     showScoringInfo: false,
+    // NEW: Add CorrectAnswerPopUp state
+    isCorrectAnswerVisible: false,
   });
 
   // Game State
@@ -255,6 +285,20 @@ const QuestionScreen = () => {
     isLowTimeWarningPlaying: false,
     packStats: null,
     currentRound: 1
+  });
+
+  // NEW: Achievement tracking state
+  const [achievementState, setAchievementState] = useState({
+    questionStartTime: null,
+    currentGameWrongAnswers: 0,
+    gameStartTracked: false
+  });
+
+  // NEW: Dynamic dare scoring state
+  const [dareState, setDareState] = useState({
+    calculatedDarePoints: null,
+    dareStreakInfo: null,
+    showDynamicPoints: false
   });
 
   // Sound State
@@ -295,8 +339,56 @@ const QuestionScreen = () => {
 
   // Timer pause state
   const [isTimerPaused, setIsTimerPaused] = useState(false);
+  // Add ref to track timer pause state for closure fix
+  const isTimerPausedRef = useRef(false);
+  
+  // Add report modal state tracking
+  const [isReportModalOpen, setIsReportModalOpen] = useState(false);
 
   const selectedPack = routeSelectedPack;
+
+  // Helper function to check if dares should be shown
+  const shouldShowDares = () => {
+    return gameMode !== 'TriviaONLY';
+  };
+
+  // NEW: Enhanced game start tracking with comprehensive data
+  useEffect(() => {
+    const trackGameStart = async () => {
+      if (players && players.length > 0 && !achievementState.gameStartTracked && !gameState.isLoadingQuestions) {
+        try {
+          console.log('🏆 Tracking enhanced game start with full context');
+          
+          // Use route players if available, otherwise fall back to context players
+          const playersToTrack = routePlayers || players;
+          const packForTracking = packName || selectedPack || 'Unknown Pack';
+          const modeForTracking = gameMode || 'TriviaDare';
+
+          console.log('🎮 Game start tracking data:', {
+            players: playersToTrack,
+            gameMode: modeForTracking,
+            packName: packForTracking
+          });
+
+          // Track with all available parameters
+          await trackAchievementSafely(
+            'trackGameStart', 
+            playersToTrack.map(player => typeof player === 'string' ? player : player.name || player),
+            modeForTracking,
+            packForTracking
+          );
+
+          // Mark as tracked to prevent duplicate tracking
+          setAchievementState(prev => ({ ...prev, gameStartTracked: true }));
+          
+        } catch (error) {
+          console.error('❌ Error in enhanced game start tracking:', error);
+        }
+      }
+    };
+    
+    trackGameStart();
+  }, [players, routePlayers, gameState.isLoadingQuestions, gameMode, packName, selectedPack, achievementState.gameStartTracked]);
 
   // Android back button handler
   useFocusEffect(
@@ -381,7 +473,8 @@ const QuestionScreen = () => {
             showScores: true,
             showQuestion: false,
             answerSubmitted: false,
-            showScoringInfo: false
+            showScoringInfo: false,
+            isCorrectAnswerVisible: false,
           }));
 
           setState(prev => ({
@@ -401,22 +494,38 @@ const QuestionScreen = () => {
     };
   }, []);
 
-  // Timer pause effect
+  // Enhanced timer pause effect to handle both scoring info and report modal
   useEffect(() => {
     let isMounted = true;
     if (isMounted) {
-      if (uiState.showScoringInfo) {
+      // Pause timer for scoring info OR when report modal is open
+      if (uiState.showScoringInfo || isReportModalOpen) {
         setIsTimerPaused(true);
+        isTimerPausedRef.current = true; // Update ref for closure fix
+        console.log('🛑 Timer paused - Scoring info:', uiState.showScoringInfo, 'Report modal:', isReportModalOpen);
       } else {
         setIsTimerPaused(false);
+        isTimerPausedRef.current = false; // Update ref for closure fix
+        console.log('▶️ Timer resumed - Both modals closed');
       }
     }
     return () => {
       isMounted = false;
     };
-  }, [uiState.showScoringInfo]);
+  }, [uiState.showScoringInfo, isReportModalOpen]); // Added isReportModalOpen to dependencies
 
-  // NEW: Background music control based on question visibility
+  // Add callback functions for report modal state management
+  const handleReportModalOpen = useCallback(() => {
+    console.log('📝 Report modal opening - pausing timer');
+    setIsReportModalOpen(true);
+  }, []);
+
+  const handleReportModalClose = useCallback(() => {
+    console.log('📝 Report modal closing - will resume timer if no other modals open');
+    setIsReportModalOpen(false);
+  }, []);
+
+  // Background music control based on question visibility
   useEffect(() => {
     if (!uiState.showQuestion && soundState.backgroundMusic) {
       stopBackgroundMusic();
@@ -537,7 +646,8 @@ const QuestionScreen = () => {
           ...prev,
           isGameStarted: false,
           showQuestion: false,
-          answerSubmitted: false
+          answerSubmitted: false,
+          isCorrectAnswerVisible: false,
         }));
         
         resetTimerAndScore();
@@ -626,121 +736,6 @@ useEffect(() => {
 const [audioIsReady, setAudioIsReady] = useState(false);
 const [firstPlayAttempted, setFirstPlayAttempted] = useState(false);
 
-// Then, replace your existing sound loading useEffect with this enhanced version
-useEffect(() => {
-  let isMounted = true;
-  let warningSound = null;
-  let wrongAnswerSound = null;
-  let backgroundMusicSound = null;
-  let correctAnswerSound = null;
-
-  const loadSounds = async () => {
-    try {
-     // In your loadSounds function, update this section:
-      await Audio.setAudioModeAsync({
-        allowsRecordingIOS: false,
-         // Use the constant from Audio API instead of a string
-        interruptionModeIOS: Audio.INTERRUPTION_MODE_IOS_DO_NOT_MIX,
-        playsInSilentModeIOS: true,
-        shouldDuckAndroid: true,
-        interruptionModeAndroid: Audio.INTERRUPTION_MODE_ANDROID_DO_NOT_MIX,
-        playThroughEarpieceAndroid: false,
-     });
-      
-      console.log('Audio mode configured');
-      
-      // Create all sound objects
-      warningSound = new Audio.Sound();
-      wrongAnswerSound = new Audio.Sound();
-      correctAnswerSound = new Audio.Sound();
-      backgroundMusicSound = new Audio.Sound();
-      
-      // Load all sounds sequentially to avoid race conditions
-      await warningSound.loadAsync(require('../assets/Sounds/warningsound.mp3'));
-      await wrongAnswerSound.loadAsync(require('../assets/Sounds/wronganswer.mp3'));
-      await correctAnswerSound.loadAsync(require('../assets/Sounds/correctanswer.mp3'));
-      
-      // Load background music last with explicit listener for load status
-      backgroundMusicSound.setOnPlaybackStatusUpdate(status => {
-        if (status.isLoaded && !audioIsReady && isMounted) {
-          console.log('Background music is now fully loaded and ready');
-          setAudioIsReady(true);
-        }
-      });
-      
-      await backgroundMusicSound.loadAsync(require('../assets/Sounds/questionbackground.mp3'));
-      
-      // Configure background music properties
-      await backgroundMusicSound.setIsLoopingAsync(true);
-      await backgroundMusicSound.setVolumeAsync(0.5);
-      
-      if (isMounted) {
-        setSoundState({
-          lowTimeSound: warningSound,
-          tickSound: wrongAnswerSound,
-          correctSound: correctAnswerSound,
-          backgroundMusic: backgroundMusicSound
-        });
-        
-        // Prime the audio system by doing a quick play and stop 
-        // This helps on some devices with first-play issues
-        try {
-          await backgroundMusicSound.playAsync();
-          await new Promise(resolve => setTimeout(resolve, 100));
-          await backgroundMusicSound.stopAsync();
-          await backgroundMusicSound.setPositionAsync(0);
-          console.log('Background music primed successfully');
-          
-          if (isMounted) {
-            setAudioIsReady(true);
-          }
-        } catch (e) {
-          console.error('Error priming background music:', e);
-          // Still mark as ready even if priming fails
-          if (isMounted) {
-            setAudioIsReady(true);
-          }
-        }
-      }
-    } catch (error) {
-      
-      // Mark audio as ready even if there's an error to prevent blocking the game
-      if (isMounted) {
-        setAudioIsReady(true);
-      }
-    }
-  };
-
-  loadSounds();
-
-  return () => {
-    isMounted = false;
-    const cleanup = async () => {
-      try {
-        if (warningSound) {
-          await warningSound.stopAsync().catch(() => {});
-          await warningSound.unloadAsync();
-        }
-        if (wrongAnswerSound) {
-          await wrongAnswerSound.stopAsync().catch(() => {});
-          await wrongAnswerSound.unloadAsync();
-        }
-        if (correctAnswerSound) {
-          await correctAnswerSound.stopAsync().catch(() => {});
-          await correctAnswerSound.unloadAsync();
-        }
-        if (backgroundMusicSound) {
-          await backgroundMusicSound.stopAsync().catch(() => {});
-          await backgroundMusicSound.unloadAsync();
-        }
-      } catch (error) {
-        console.error('Error in sound cleanup:', error);
-      }
-    };
-    cleanup();
-  };
-}, []);
-
 // Now replace your existing playBackgroundMusic function
 const playBackgroundMusic = async () => {
   // Skip if muted or no sound object
@@ -794,19 +789,30 @@ const playBackgroundMusic = async () => {
   }
 };
 
-
 // Update your stopBackgroundMusic function:
 const stopBackgroundMusic = async () => {
   if (soundState.backgroundMusic) {
     try {
       // Check if it's loaded first
       const status = await soundState.backgroundMusic.getStatusAsync().catch(() => ({ isLoaded: false }));
-      if (status.isLoaded) {
-        await soundState.backgroundMusic.stopAsync();
-        console.log('Background music stopped');
+      if (status.isLoaded && status.isPlaying) {
+        await soundState.backgroundMusic.stopAsync().catch((error) => {
+          // Handle specific seeking interrupted error silently
+          if (error.message && error.message.includes('Seeking interrupted')) {
+            console.log('🎵 Background music stop interrupted (normal during transitions)');
+          } else {
+            console.error('Error stopping background music:', error);
+          }
+        });
+        console.log('🎵 Background music stopped successfully');
       }
     } catch (error) {
-      console.error('Error stopping background music:', error);
+      // Handle any other errors
+      if (error.message && error.message.includes('Seeking interrupted')) {
+        console.log('🎵 Background music stop interrupted (normal during transitions)');
+      } else {
+        console.error('Error stopping background music:', error);
+      }
     }
   }
 };
@@ -1040,6 +1046,12 @@ const promptNextPlayer = useCallback(async (index) => {
         showCancel: false,
         onConfirm: async () => {
           if (isMounted) {
+            // NEW: Set question start time for achievement timing
+            setAchievementState(prev => ({
+              ...prev,
+              questionStartTime: Date.now()
+            }));
+            
             // Start the timer first
             startTimer(index);
             
@@ -1157,6 +1169,117 @@ const isGameComplete = (currentGlobalIndex, questionsPerPlayer, playerCount) => 
   return isComplete;
 };
 
+// NEW: Enhanced helper function to handle incorrect answers based on game mode
+const handleIncorrectAnswer = async () => {
+  let isMounted = true;
+  
+  // ACHIEVEMENT INTEGRATION: Track incorrect answer (resets streak) + update wrong answers count
+  await trackAchievementSafely('trackIncorrectAnswer');
+  
+  // NEW: Track wrong answers for perfect game detection
+  setAchievementState(prev => ({
+    ...prev,
+    currentGameWrongAnswers: prev.currentGameWrongAnswers + 1
+  }));
+  
+  console.log('🏆 Wrong answer tracked, total wrong answers this game:', achievementState.currentGameWrongAnswers + 1);
+  
+  // Android haptic feedback for wrong answer
+  if (Platform.OS === 'android') {
+    try {
+      const Vibration = require('react-native').Vibration;
+      // Pattern for failure - one long vibration
+      Vibration.vibrate(300);
+    } catch (e) {
+      console.log('Vibration not available');
+    }
+  }
+  
+  await playWrongAnswerSound(soundState.tickSound, isGloballyMuted);
+
+  if (isMounted) {
+    // NEW: Show CorrectAnswerPopUp instead of immediately proceeding
+    setTimeout(() => {
+      if (isMounted) {
+        console.log('Showing correct answer popup');
+        setUiState(prev => ({ 
+          ...prev, 
+          isCorrectAnswerVisible: true,
+          answerSubmitted: false,
+          showQuestion: false
+        }));
+        // Make sure background music is stopped when showing correct answer
+        stopBackgroundMusic();
+      }
+    }, 1000);
+  }
+
+  return () => {
+    isMounted = false;
+  };
+};
+
+// NEW: Handle continue from CorrectAnswerPopUp
+const handleCorrectAnswerContinue = () => {
+  let isMounted = true;
+  
+  // Hide the correct answer popup
+  setUiState(prev => ({ ...prev, isCorrectAnswerVisible: false }));
+  
+  if (shouldShowDares()) {
+    // TriviaDare mode - calculate dynamic dare points and show dare popup
+    console.log('🎯 TriviaDare mode - calculating dynamic dare points');
+    
+    // Calculate dynamic dare points for current player (include numberOfQuestions)
+    const darePointsCalculation = calculateDarePoints(currentPlayerIndex, scores, numberOfQuestions);
+    const streakInfo = getDareStreakInfo(currentPlayerIndex);
+    
+    console.log('🎯 Dynamic dare calculation with question count:', darePointsCalculation);
+    console.log('🎯 Streak info:', streakInfo);
+    
+    // Store calculated points for DarePopup
+    setDareState({
+      calculatedDarePoints: darePointsCalculation,
+      dareStreakInfo: streakInfo,
+      showDynamicPoints: true
+    });
+    
+    setTimeout(() => {
+      if (isMounted) {
+        console.log('Showing dare popup (TriviaDare mode) with dynamic points:', darePointsCalculation.finalDarePoints);
+        setPerformingDare(true);
+        setUiState(prev => ({ ...prev, isDareVisible: true }));
+      }
+    }, 500);
+  } else {
+    // TriviaONLY mode - skip dare, proceed to next question
+    setTimeout(() => {
+      if (isMounted) {
+        console.log('Skipping dare (TriviaONLY mode), proceeding to next question');
+
+        const nextGlobalIndex = gameState.globalQuestionIndex + 1;
+        const nextRound = players.length === 1 
+          ? nextGlobalIndex 
+          : Math.ceil(nextGlobalIndex / players.length);
+        const isLastQuestion = nextRound > numberOfQuestions;
+
+        if (isLastQuestion) {
+          // Game is complete - navigate to results
+          navigateToResults();
+        } else {
+          // Continue to next question
+          prepareNextQuestion();
+        }
+      }
+    }, 500);
+  }
+
+  return () => {
+    isMounted = false;
+  };
+};
+
+// ACHIEVEMENT INTEGRATION: Enhanced handleAnswerConfirmation with comprehensive tracking
 const handleAnswerConfirmation = async () => {
   let isMounted = true;
   const currentQuestion = questions[currentQuestionIndex];
@@ -1183,7 +1306,8 @@ const handleAnswerConfirmation = async () => {
       selectedOption: state.selectedOption, 
       correctAnswer,
       playerCount: players.length,
-      isSinglePlayer: players.length === 1
+      isSinglePlayer: players.length === 1,
+      gameMode // Log game mode
     });
 
     await StatsTracker.updatePackStats(
@@ -1195,6 +1319,21 @@ const handleAnswerConfirmation = async () => {
     if (!isMounted) return;
 
     if (isCorrect) {
+      // ACHIEVEMENT INTEGRATION: Enhanced correct answer tracking with precise timing
+      const answerEndTime = Date.now();
+      const questionStartTime = achievementState.questionStartTime || answerEndTime;
+      const answerTimeMs = answerEndTime - questionStartTime;
+      
+      console.log('🏆 Correct answer timing:', {
+        questionStartTime,
+        answerEndTime,
+        answerTimeMs,
+        timeLimitMs: timeLimit * 1000,
+        timeLeft: gameState.timeLeft
+      });
+      
+      await trackAchievementSafely('trackCorrectAnswer', answerTimeMs);
+
       // Android haptic feedback for correct answer
       if (Platform.OS === 'android') {
         try {
@@ -1297,32 +1436,7 @@ const handleAnswerConfirmation = async () => {
 
                 if (isLastQuestion) {
                   console.log('Last question detected, scores being used:', updatedScores);
-                  
-                  const finalPlayerData = players.map((player, index) => ({
-                    name: player,
-                    score: updatedScores[index]
-                  }));
-
-                  console.log('Final player data:', finalPlayerData);
-                  
-                  // Enhanced navigation data with pack information
-                  console.log('Pack information being passed:', {
-                    packName: selectedPack,
-                    packStats: gameState.packStats
-                  });
-
-                  navigation.navigate('WinnerTransition', {
-                    playerData: finalPlayerData,
-                    packStats: {
-                      ...gameState.packStats,
-                      packName: selectedPack,
-                      name: selectedPack,
-                      selectedPack: selectedPack
-                    },
-                    packName: selectedPack,
-                    selectedPack: selectedPack,
-                    isMultiplayer: false
-                  });
+                  navigateToResults();
                 } else {
                   console.log('Not last question, preparing next. Current scores:', updatedScores);
                   prepareNextQuestion();
@@ -1334,31 +1448,8 @@ const handleAnswerConfirmation = async () => {
       }, 1000);
     } else {
       console.log('Incorrect answer, current scores:', scores);
-      
-      // Android haptic feedback for wrong answer
-      if (Platform.OS === 'android') {
-        try {
-          const Vibration = require('react-native').Vibration;
-          // Pattern for failure - one long vibration
-          Vibration.vibrate(300);
-        } catch (e) {
-          console.log('Vibration not available');
-        }
-      }
-      
-      await playWrongAnswerSound(soundState.tickSound, isGloballyMuted);
-
-      if (isMounted) {
-        setTimeout(() => {
-          if (isMounted) {
-            console.log('Showing dare popup, current scores:', scores);
-            setPerformingDare(true);
-            setUiState(prev => ({ ...prev, isDareVisible: true }));
-            // Make sure background music is stopped when showing dare
-            stopBackgroundMusic();
-          }
-        }, 1000);
-      }
+      // Use helper function that handles game mode
+      await handleIncorrectAnswer();
     }
 
     if (isMounted) {
@@ -1390,7 +1481,9 @@ const startTimer = async (playerIndex) => {
 
   // Use more efficient timer implementation for Android
   const interval = setInterval(() => {
-    if (!isTimerPaused) {
+    // Use ref instead of state to get current pause status
+    if (!isTimerPausedRef.current) {
+      console.log('⏱️ Timer tick - not paused, decrementing time');
       setGameState(prev => {
         const newTime = prev.timeLeft - 1;
         
@@ -1436,6 +1529,8 @@ const startTimer = async (playerIndex) => {
           timeLeft: 0
         };
       });
+    } else {
+      console.log('⏸️ Timer tick - paused, skipping decrement');
     }
   }, 1000);
 
@@ -1446,10 +1541,22 @@ const startTimer = async (playerIndex) => {
   }));
 };
 
+// ACHIEVEMENT INTEGRATION: Enhanced handleTimesUp with wrong answer tracking
 const handleTimesUp = async (playerIndex) => {
   clearInterval(gameState.intervalId);
 
   stopBackgroundMusic();
+  
+  // ACHIEVEMENT INTEGRATION: Track incorrect answer when time runs out + update wrong answers count
+  await trackAchievementSafely('trackIncorrectAnswer');
+  
+  // NEW: Track wrong answers for perfect game detection
+  setAchievementState(prev => ({
+    ...prev,
+    currentGameWrongAnswers: prev.currentGameWrongAnswers + 1
+  }));
+  
+  console.log('🏆 Time out tracked as wrong answer, total wrong answers this game:', achievementState.currentGameWrongAnswers + 1);
   
   // Android-specific timeout feedback
   if (Platform.OS === 'android') {
@@ -1469,12 +1576,13 @@ const handleTimesUp = async (playerIndex) => {
   
   await playWrongAnswerSound(soundState.tickSound, isGloballyMuted);
 
+  // NEW: Show CorrectAnswerPopUp instead of immediately proceeding to dare/next question
   setUiState(prev => ({
     ...prev,
     isGameStarted: false,
-    isDareVisible: true
+    showQuestion: false,
+    isCorrectAnswerVisible: true // Show correct answer popup
   }));
-  setPerformingDare(true);
 
   if (gameState.currentQuestion) {
     await StatsTracker.updatePackStats(
@@ -1537,7 +1645,8 @@ const prepareNextQuestion = useCallback(() => {
           setUiState(prev => ({
               ...prev,
               showQuestion: false,
-              answerSubmitted: false
+              answerSubmitted: false,
+              isCorrectAnswerVisible: false,
           }));
           resolve();
       })
@@ -1554,6 +1663,7 @@ const prepareNextQuestion = useCallback(() => {
 
 }, [players, questions, timeLimit, currentPlayerIndex, gameState.globalQuestionIndex, currentQuestionIndex]);
 
+// ACHIEVEMENT INTEGRATION: Enhanced navigateToResults with comprehensive game completion tracking
 const navigateToResults = async () => {
   try {
     if (gameState.isNavigatingToResults) {
@@ -1565,6 +1675,31 @@ const navigateToResults = async () => {
     console.log('Initial scores:', scores);
 
     setGameState(prev => ({ ...prev, isNavigatingToResults: true }));
+
+    // ACHIEVEMENT INTEGRATION: Enhanced game completion tracking with full context
+    try {
+      console.log('🏆 Tracking game completion with comprehensive data:', {
+        gameMode: gameMode || 'TriviaDare',
+        wrongAnswersThisGame: achievementState.currentGameWrongAnswers,
+        isPerfectGame: achievementState.currentGameWrongAnswers === 0
+      });
+
+      // Track the game completion with proper mode
+      await trackAchievementSafely(
+        'trackGameComplete', 
+        gameMode || 'TriviaDare' // Pass the actual game mode
+      );
+
+      // Check if this was a perfect game (no wrong answers)
+      if (achievementState.currentGameWrongAnswers === 0) {
+        console.log('🏆 Perfect game detected! No wrong answers this game.');
+        // The achievement tracker will detect this perfect game automatically
+      }
+
+    } catch (achievementError) {
+      console.error('❌ Error in game completion achievement tracking:', achievementError);
+      // Don't block navigation due to achievement errors
+    }
 
     // Wait for any pending score updates
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -1602,7 +1737,7 @@ const navigateToResults = async () => {
       },
       packName: selectedPack,        // Also directly at top level
       selectedPack: selectedPack,    // Also directly at top level
-      isMultiplayer: false           // FIXED: Always false for single device mode
+      isMultiplayer: false           // Always false for single device mode
     });
   } catch (error) {
     console.error('Error navigating to results:', error);
@@ -1621,7 +1756,7 @@ const navigateToResults = async () => {
       },
       packName: selectedPack,
       selectedPack: selectedPack,
-      isMultiplayer: false           // FIXED: Always false for single device mode
+      isMultiplayer: false           // Always false for single device mode
     });
   }
 };
@@ -1696,6 +1831,11 @@ console.log('Rendering question:', {
   totalQuestions: questions.length
 });
 
+// ACHIEVEMENT INTEGRATION: Function for future video recording tracking
+const trackVideoRecording = async () => {
+  await trackAchievementSafely('trackVideoRecorded');
+};
+
 // Return the component with platform-specific styling
 return (
   <ImageBackground 
@@ -1768,6 +1908,9 @@ return (
         timerConfig={TIMER_CONFIGS[timeLimit]}
         // Pass platform info for Android-specific styling in the container
         isAndroid={Platform.OS === 'android'}
+        // Add report modal callbacks
+        onReportModalOpen={handleReportModalOpen}
+        onReportModalClose={handleReportModalClose}
       />
     ) : (
       <View style={styles.waitingContainer}>
@@ -1795,93 +1938,145 @@ return (
     </TouchableOpacity>
   )}
 </View>
+
+        {/* NEW: CorrectAnswerPopUp Component */}
+        <CorrectAnswerPopUp
+          visible={uiState.isCorrectAnswerVisible}
+          onContinue={handleCorrectAnswerContinue}
+          currentPlayer={players[currentPlayerIndex]}
+          question={questions[currentQuestionIndex]}
+          gameMode={gameMode}
+          onReportModalOpen={handleReportModalOpen}
+          onReportModalClose={handleReportModalClose}
+        />
  
-        <DarePopup
-  visible={uiState.isDareVisible}
-  onClose={async (dareCompleted) => {
-    try {
-      let updatedScores;
-      if (dareCompleted) {
-        const baseScore = TIMER_CONFIGS[timeLimit].baseScore;
-        const darePoints = Math.floor(baseScore * 0.75);
-        
-        await new Promise(resolve => {
-          setScores(prevScores => {
-            const newScores = [...prevScores];
-            newScores[currentPlayerIndex] = (
-              Number(newScores[currentPlayerIndex]) || 0
-            ) + darePoints;
-            updatedScores = [...newScores];
-            resolve();
-            return newScores;
-          });
-        });
-        await new Promise(resolve => setTimeout(resolve, 500));
-        
-        // Android-specific toast for dare completion
-        if (Platform.OS === 'android') {
-          ToastAndroid.showWithGravity(
-            `Dare completed! +${darePoints} points`,
-            ToastAndroid.SHORT,
-            ToastAndroid.CENTER
-          );
-        }
-      }
+        {/* Conditionally render DarePopup based on game mode with DYNAMIC SCORING */}
+        {shouldShowDares() && (
+          <DarePopup
+            visible={uiState.isDareVisible}
+            onClose={async (dareCompleted) => {
+              try {
+                let updatedScores;
+                if (dareCompleted) {
+                  // ACHIEVEMENT INTEGRATION: Track dare completion with enhanced timing
+                  console.log('🏆 Dare completed, tracking achievement...');
+                  
+                  // For now, we're tracking without timing - DarePopup will handle detailed timing
+                  await trackAchievementSafely('trackDareCompleted');
+                  
+                  // NEW: Use dynamic dare scoring instead of fixed calculation
+                  const darePointsCalculation = dareState.calculatedDarePoints;
+                  const darePoints = darePointsCalculation ? darePointsCalculation.finalDarePoints : Math.floor(TIMER_CONFIGS[timeLimit].baseScore * 0.75);
+                  
+                  console.log('🎯 Using dynamic dare points:', darePoints, 'from calculation:', darePointsCalculation);
+                  
+                  await new Promise(resolve => {
+                    setScores(prevScores => {
+                      const newScores = [...prevScores];
+                      newScores[currentPlayerIndex] = (
+                        Number(newScores[currentPlayerIndex]) || 0
+                      ) + darePoints;
+                      updatedScores = [...newScores];
+                      resolve();
+                      return newScores;
+                    });
+                  });
+                  
+                  // NEW: Update dare streak for successful completion
+                  updateDareStreak(currentPlayerIndex, true);
+                  console.log('🎯 Dare streak updated for successful completion');
+                  
+                  await new Promise(resolve => setTimeout(resolve, 500));
+                  
+                  // Android-specific toast for dare completion with dynamic points
+                  if (Platform.OS === 'android') {
+                    ToastAndroid.showWithGravity(
+                      `Dare completed! +${darePoints} points`,
+                      ToastAndroid.SHORT,
+                      ToastAndroid.CENTER
+                    );
+                  }
+                } else {
+                  // NEW: Update dare streak for failed completion and track wrong answers
+                  updateDareStreak(currentPlayerIndex, false);
+                  console.log('🎯 Dare streak reset for failed completion');
+                  
+                  // NEW: Track wrong answers for failed dares too (for perfect game detection)
+                  setAchievementState(prev => ({
+                    ...prev,
+                    currentGameWrongAnswers: prev.currentGameWrongAnswers + 1
+                  }));
+                  
+                  console.log('🏆 Dare failed, total wrong answers this game:', achievementState.currentGameWrongAnswers + 1);
+                }
 
-      if (questions[currentQuestionIndex]) {
-        await StatsTracker.updatePackStats(
-          selectedPack,
-          questions[currentQuestionIndex]['Question ID'],
-          dareCompleted
-        );
-      }
+                if (questions[currentQuestionIndex]) {
+                  await StatsTracker.updatePackStats(
+                    selectedPack,
+                    questions[currentQuestionIndex]['Question ID'],
+                    dareCompleted
+                  );
+                }
 
-      const nextGlobalIndex = gameState.globalQuestionIndex + 1;
-      
-      // Fix for single player mode - adjust round calculation
-      const nextRound = players.length === 1 
-        ? nextGlobalIndex 
-        : Math.ceil(nextGlobalIndex / players.length);
-        
-      const isLastQuestion = nextRound > numberOfQuestions;
+                const nextGlobalIndex = gameState.globalQuestionIndex + 1;
+                
+                // Fix for single player mode - adjust round calculation
+                const nextRound = players.length === 1 
+                  ? nextGlobalIndex 
+                  : Math.ceil(nextGlobalIndex / players.length);
+                  
+                const isLastQuestion = nextRound > numberOfQuestions;
 
-      setUiState(prev => ({
-        ...prev,
-        isDareVisible: false,
-        answerSubmitted: false,
-        showQuestion: false
-      }));
-      setPerformingDare(false);
+                setUiState(prev => ({
+                  ...prev,
+                  isDareVisible: false,
+                  answerSubmitted: false,
+                  showQuestion: false
+                }));
+                setPerformingDare(false);
+                
+                // NEW: Reset dare state
+                setDareState({
+                  calculatedDarePoints: null,
+                  dareStreakInfo: null,
+                  showDynamicPoints: false
+                });
 
-      if (isLastQuestion) {
-        const finalPlayerData = players.map((player, index) => ({
-          name: player,
-          score: updatedScores ? updatedScores[index] : scores[index]
-        }));
-        
-        navigation.navigate('WinnerTransition', {
-          playerData: finalPlayerData,
-          packStats: {
-            ...gameState.packStats,
-            packName: selectedPack,     // Add pack name directly
-            selectedPack: selectedPack, // Add as selectedPack too
-            name: selectedPack          // Add as name as well
-          },
-          packName: selectedPack,       // Also at top level
-          selectedPack: selectedPack,   // Also at top level
-          isMultiplayer: false
-        });
-      } else {
-        prepareNextQuestion();
-      }
-    } catch (error) {
-      console.error('Error handling dare completion:', error);
-    }
-  }}
-  currentPlayer={players[currentPlayerIndex]}
-  timerConfig={TIMER_CONFIGS[timeLimit]}
-  isAndroid={Platform.OS === 'android'} // Pass platform info
-/>
+                if (isLastQuestion) {
+                  const finalPlayerData = players.map((player, index) => ({
+                    name: player,
+                    score: updatedScores ? updatedScores[index] : scores[index]
+                  }));
+                  
+                  navigation.navigate('WinnerTransition', {
+                    playerData: finalPlayerData,
+                    packStats: {
+                      ...gameState.packStats,
+                      packName: selectedPack,     // Add pack name directly
+                      selectedPack: selectedPack, // Add as selectedPack too
+                      name: selectedPack          // Add as name as well
+                    },
+                    packName: selectedPack,       // Also at top level
+                    selectedPack: selectedPack,   // Also at top level
+                    isMultiplayer: false
+                  });
+                } else {
+                  prepareNextQuestion();
+                }
+              } catch (error) {
+                console.error('Error handling dare completion:', error);
+              }
+            }}
+            currentPlayer={players[currentPlayerIndex]}
+            timerConfig={TIMER_CONFIGS[timeLimit]}
+            isAndroid={Platform.OS === 'android'} // Pass platform info
+            // NEW: Pass dynamic dare scoring props
+            calculatedDarePoints={dareState.calculatedDarePoints?.finalDarePoints}
+            streakInfo={dareState.dareStreakInfo}
+            showDynamicPoints={dareState.showDynamicPoints}
+            darePointsBreakdown={dareState.calculatedDarePoints}
+          />
+        )}
  
         <ScoringInfoModal
           visible={uiState.showScoringInfo}

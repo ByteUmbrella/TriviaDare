@@ -39,6 +39,9 @@ export const GameProvider = ({ children }) => {
   const [timeLeft, setTimeLeft] = useState(30);
   const [pendingDares, setPendingDares] = useState([]);
   
+  // NEW: Dynamic dare scoring state
+  const [dareStreaks, setDareStreaks] = useState([]);
+  
   // Questions state - PRESERVED
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -54,6 +57,140 @@ export const GameProvider = ({ children }) => {
   // Use refs to track processed dares
   const lastProcessedDareRef = useRef(null);
   const turnTransitionInProgressRef = useRef(false);
+
+  // NEW: Initialize dare streaks when players change
+  useEffect(() => {
+    if (players.length > 0 && (dareStreaks.length !== players.length)) {
+      console.log('🎯 Initializing dare streaks for players:', players.length);
+      const newStreaks = new Array(players.length).fill(0);
+      setDareStreaks(newStreaks);
+      console.log('🎯 Dare streaks initialized:', newStreaks);
+    }
+  }, [players.length]);
+
+  // NEW: Calculate dynamic dare points based on current game state
+  const calculateDarePoints = useCallback((playerIndex, currentScores, totalQuestions = numberOfQuestions) => {
+    console.log('🎯 Calculating dare points for player', playerIndex);
+    console.log('🎯 Current scores:', currentScores);
+    console.log('🎯 Current dare streaks:', dareStreaks);
+    console.log('🎯 Total questions in game:', totalQuestions);
+    
+    // Get base dare points (75% of timer config base score)
+    const timerConfig = TIMER_CONFIGS[timeLimit];
+    const baseDarePoints = timerConfig.baseScore * 0.75;
+    console.log('🎯 Base dare points:', baseDarePoints, 'from timer config:', timerConfig);
+    
+    // Calculate question count multiplier (shorter games = higher value dares)
+    // Formula: fewer questions = higher multiplier, more questions = lower multiplier
+    const questionCountMultiplier = Math.max(0.8, Math.min(1.5, 5 / totalQuestions));
+    console.log('🎯 Question count multiplier calculation:', {
+      totalQuestions,
+      questionCountMultiplier: questionCountMultiplier.toFixed(2)
+    });
+    
+    // Apply question count multiplier to base points
+    const adjustedBaseDarePoints = baseDarePoints * questionCountMultiplier;
+    console.log('🎯 Adjusted base dare points after question multiplier:', adjustedBaseDarePoints);
+    
+    // Calculate catch-up bonus
+    let catchUpBonus = 0;
+    if (currentScores.length > 1) {
+      const averageScore = currentScores.reduce((a, b) => a + b, 0) / currentScores.length;
+      const currentPlayerScore = currentScores[playerIndex] || 0;
+      catchUpBonus = Math.max(0, (averageScore - currentPlayerScore) * 0.2);
+      console.log('🎯 Catch-up calculation:', {
+        averageScore,
+        currentPlayerScore,
+        catchUpBonus
+      });
+    } else {
+      console.log('🎯 Single player mode - no catch-up bonus');
+    }
+    
+    // Calculate streak multiplier
+    const playerStreak = dareStreaks[playerIndex] || 0;
+    const streakMultiplier = 1 + (playerStreak * 0.25);
+    console.log('🎯 Streak calculation:', {
+      playerStreak,
+      streakMultiplier
+    });
+    
+    // Calculate final points
+    const finalDarePoints = Math.round((adjustedBaseDarePoints + catchUpBonus) * streakMultiplier);
+    
+    console.log('🎯 Final dare points calculation:', {
+      baseDarePoints,
+      questionCountMultiplier,
+      adjustedBaseDarePoints,
+      catchUpBonus,
+      streakMultiplier,
+      finalDarePoints
+    });
+    
+    return {
+      baseDarePoints,
+      questionCountMultiplier,
+      adjustedBaseDarePoints,
+      catchUpBonus,
+      streakMultiplier,
+      finalDarePoints,
+      streakInfo: {
+        currentStreak: playerStreak,
+        streakBonus: Math.round((adjustedBaseDarePoints + catchUpBonus) * (streakMultiplier - 1))
+      }
+    };
+  }, [timeLimit, dareStreaks, numberOfQuestions]);
+
+  // NEW: Update dare streak for a player
+  const updateDareStreak = useCallback((playerIndex, dareCompleted) => {
+    console.log('🎯 Updating dare streak for player', playerIndex, 'completed:', dareCompleted);
+    
+    setDareStreaks(prevStreaks => {
+      const newStreaks = [...prevStreaks];
+      
+      if (dareCompleted) {
+        // Increment streak for successful dare
+        newStreaks[playerIndex] = (newStreaks[playerIndex] || 0) + 1;
+        console.log('🎯 Streak incremented to:', newStreaks[playerIndex]);
+      } else {
+        // Reset streak for failed dare
+        const previousStreak = newStreaks[playerIndex] || 0;
+        newStreaks[playerIndex] = 0;
+        console.log('🎯 Streak reset from', previousStreak, 'to 0');
+      }
+      
+      console.log('🎯 Updated dare streaks:', newStreaks);
+      return newStreaks;
+    });
+  }, []);
+
+  // NEW: Reset dare streak for a specific player
+  const resetDareStreak = useCallback((playerIndex) => {
+    console.log('🎯 Resetting dare streak for player', playerIndex);
+    
+    setDareStreaks(prevStreaks => {
+      const newStreaks = [...prevStreaks];
+      const previousStreak = newStreaks[playerIndex] || 0;
+      newStreaks[playerIndex] = 0;
+      console.log('🎯 Dare streak reset from', previousStreak, 'to 0');
+      return newStreaks;
+    });
+  }, []);
+
+  // NEW: Get dare streak info for a player
+  const getDareStreakInfo = useCallback((playerIndex) => {
+    const currentStreak = dareStreaks[playerIndex] || 0;
+    const nextStreakBonus = (currentStreak + 1) * 0.25; // What the multiplier would be with one more
+    
+    const info = {
+      currentStreak,
+      nextStreakBonus,
+      hasStreak: currentStreak > 0
+    };
+    
+    console.log('🎯 Dare streak info for player', playerIndex, ':', info);
+    return info;
+  }, [dareStreaks]);
 
   // Monitor Firebase state for changes
   useEffect(() => {
@@ -134,7 +271,7 @@ export const GameProvider = ({ children }) => {
     }
   }, [isMultiplayer, firebase]);
   
-  // Process pending dare votes using Firebase
+  // Process pending dare votes using Firebase with DYNAMIC SCORING
   const processPendingDareVotes = useCallback(() => {
     // Skip if not doing a dare or already processing or already complete
     if (!performingDare || isProcessingDareVotes || dareProcessingComplete || !firebase || !isMultiplayer) {
@@ -173,6 +310,12 @@ export const GameProvider = ({ children }) => {
         const totalVotes = Object.values(votes).length;
         const majorityCompleted = yesVotes >= Math.ceil(totalVotes / 2);
         
+        console.log('🎯 Processing dare votes in multiplayer:', {
+          yesVotes,
+          totalVotes,
+          majorityCompleted
+        });
+        
         // Generate unique ID for this processing
         const timestamp = Date.now();
         const darePlayerId = firebase.gameState?.currentDarePlayerId;
@@ -191,8 +334,15 @@ export const GameProvider = ({ children }) => {
           const playerData = firebase.players[darePlayerId];
           
           if (playerData) {
-            // Calculate dare points
-            const darePoints = Math.floor(baseScore * 0.5);
+            // NEW: Use dynamic dare scoring instead of fixed calculation
+            const currentScores = Object.values(firebase.players).map(p => p.score || 0);
+            const playerIndex = Object.keys(firebase.players).indexOf(darePlayerId);
+            
+            const darePointsCalculation = calculateDarePoints(playerIndex, currentScores, numberOfQuestions);
+            const darePoints = darePointsCalculation.finalDarePoints;
+            
+            console.log('🎯 Multiplayer dare completion - using dynamic scoring with question count:', darePointsCalculation);
+            
             const currentScore = playerData.score || 0;
             
             // Update player score
@@ -200,7 +350,14 @@ export const GameProvider = ({ children }) => {
               id: darePlayerId,
               score: currentScore + darePoints
             });
+            
+            // Update dare streak
+            updateDareStreak(playerIndex, true);
           }
+        } else if (darePlayerId) {
+          // Failed dare - reset streak
+          const playerIndex = Object.keys(firebase.players).indexOf(darePlayerId);
+          updateDareStreak(playerIndex, false);
         }
         
         // Move to next question
@@ -234,7 +391,9 @@ export const GameProvider = ({ children }) => {
     dareProcessingComplete, 
     firebase, 
     isMultiplayer,
-    baseScore
+    baseScore,
+    calculateDarePoints,
+    updateDareStreak
   ]);
   
   // Move to next player's turn in multiplayer
@@ -396,6 +555,10 @@ export const GameProvider = ({ children }) => {
     setGameInProgress(false);
     setUsedQuestions({});
     
+    // NEW: Reset dare streaks
+    setDareStreaks([]);
+    console.log('🎯 Dare streaks reset in hardReset');
+    
     // Memory optimization - explicitly empty arrays and objects
     setPendingDares([]);
     setQuestions([]);
@@ -416,6 +579,13 @@ export const GameProvider = ({ children }) => {
     setCurrentPlayerIndex(0);
     setCurrentQuestionIndex(0);
     setScores(new Array(players.length).fill(0));
+    
+    // NEW: Reset dare streaks but keep players
+    if (players.length > 0) {
+      setDareStreaks(new Array(players.length).fill(0));
+      console.log('🎯 Dare streaks reset in softReset for', players.length, 'players');
+    }
+    
     resetTimerAndScore();
     setPerformingDare(false);
     setGameInProgress(false);
@@ -552,6 +722,14 @@ export const GameProvider = ({ children }) => {
     setCurrentQuestion,
     pendingDares,
     setPendingDares,
+    
+    // NEW: Dynamic dare scoring state and functions
+    dareStreaks,
+    setDareStreaks,
+    calculateDarePoints,
+    updateDareStreak,
+    resetDareStreak,
+    getDareStreakInfo,
     
     // Multiplayer specific
     isMultiplayer,

@@ -381,9 +381,9 @@ const handleRoomCodeSubmit = async () => {
       return;
     }
     
-    // Validate that we have a complete 6-character code
-    if (cleanedRoomCode.length !== 6) {
-      Alert.alert('Invalid Code', 'Room code must be 6 characters.');
+    // Validate that we have a complete 4-character code
+    if (cleanedRoomCode.length !== 4) {
+      Alert.alert('Invalid Code', 'Room code must be 4 characters.');
       return;
     }
 
@@ -790,24 +790,24 @@ const renderRoomCodeEntryModal = () => (
         <View style={styles.pinModalContainer}>
           <Text style={styles.pinModalTitle}>Enter Room Code</Text>
           <Text style={styles.pinModalSubtitle}>
-            Enter the 6-character room code to join the game
+            Enter the 4-character room code to join the game
           </Text>
           
           <TextInput
             style={styles.pinInput}
             value={roomCode}
             onChangeText={text => {
-              // Only allow alphanumeric and limit to 6 characters
-              if (/^[A-Za-z0-9]*$/.test(text) && text.length <= 6) {
+              // Only allow alphanumeric and limit to 4 characters
+              if (/^[A-Za-z0-9]*$/.test(text) && text.length <= 4) {
                 setRoomCode(text.toUpperCase());
                 console.log("Room code updated:", text.toUpperCase(), "Length:", text.toUpperCase().length);
               }
               // Remove auto-submission to prevent truncation issues
             }}
-            placeholder="Enter 6-character code"
+            placeholder="Enter 4-character code"
             placeholderTextColor="rgba(255, 215, 0, 0.5)"
             autoCapitalize="characters"
-            maxLength={6}
+            maxLength={4}
             autoFocus={true}
             returnKeyType="done"
             // Remove auto-submission on input completion
@@ -827,10 +827,10 @@ const renderRoomCodeEntryModal = () => (
                 
                 <TouchableNativeFeedback
                   onPress={handleRoomCodeSubmit}
-                  background={roomCode.length !== 6 ? null : TouchableNativeFeedback.Ripple('#FFD700', false)}
-                  disabled={roomCode.length !== 6}
+                  background={roomCode.length !== 4 ? null : TouchableNativeFeedback.Ripple('#FFD700', false)}
+                  disabled={roomCode.length !== 4}
                 >
-                  <View style={[styles.modalButton, styles.submitButton, roomCode.length !== 6 && styles.disabledButton]}>
+                  <View style={[styles.modalButton, styles.submitButton, roomCode.length !== 4 && styles.disabledButton]}>
                     <Text style={styles.modalButtonText}>Join Game</Text>
                   </View>
                 </TouchableNativeFeedback>
@@ -845,9 +845,9 @@ const renderRoomCodeEntryModal = () => (
                 </TouchableOpacity>
                 
                 <TouchableOpacity
-                  style={[styles.modalButton, styles.submitButton, roomCode.length !== 6 && styles.disabledButton]}
+                  style={[styles.modalButton, styles.submitButton, roomCode.length !== 4 && styles.disabledButton]}
                   onPress={handleRoomCodeSubmit}
-                  disabled={roomCode.length !== 6}
+                  disabled={roomCode.length !== 4}
                 >
                   <Text style={styles.modalButtonText}>Join Game</Text>
                 </TouchableOpacity>

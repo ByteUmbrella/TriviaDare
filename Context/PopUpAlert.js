@@ -6,10 +6,57 @@ import {
   TouchableOpacity, 
   StyleSheet, 
   Dimensions, 
-  SafeAreaView
+  SafeAreaView,
+  Platform
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+
+// Add responsive functions at the top of the file
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
+
+// Device type detection
+const getDeviceType = () => {
+  const aspectRatio = SCREEN_HEIGHT / SCREEN_WIDTH;
+  
+  if (Platform.OS === 'ios') {
+    // iPad detection - iPads typically have lower aspect ratios
+    if ((SCREEN_WIDTH >= 768 && SCREEN_HEIGHT >= 1024) || aspectRatio < 1.6) {
+      return 'tablet';
+    }
+  } else {
+    // Android tablet detection
+    if (SCREEN_WIDTH >= 600 || aspectRatio < 1.6) {
+      return 'tablet';
+    }
+  }
+  
+  return 'phone';
+};
+
+const isTablet = () => getDeviceType() === 'tablet';
+
+// Responsive scaling functions
+const responsiveFont = (phoneSize) => {
+  if (isTablet()) {
+    return Math.round(phoneSize * 1.3); // 30% larger fonts for tablets
+  }
+  return phoneSize;
+};
+
+const responsiveSpacing = (phoneSize) => {
+  if (isTablet()) {
+    return Math.round(phoneSize * 1.4); // 40% larger spacing for tablets
+  }
+  return phoneSize;
+};
+
+const responsiveSize = (phoneSize) => {
+  if (isTablet()) {
+    return Math.round(phoneSize * 1.25); // 25% larger sizes for tablets
+  }
+  return phoneSize;
+};
 
 // Gameshow style colors
 const COLORS = {
@@ -21,7 +68,7 @@ const COLORS = {
   shadow: 'rgba(0,0,0,0.5)',
 };
 
-const STORAGE_KEY = 'HAS_LAUNCHED_V1.0.7'; // Update this when you want to show the popup again
+const STORAGE_KEY = 'HAS_LAUNCHED_V1.0.9'; // Update this when you want to show the popup again
 
 const PopUpAlert = ({ 
   title = "Welcome to TriviaDare!", 
@@ -110,8 +157,7 @@ const PopUpAlert = ({
   );
 };
 
-const { width, height } = Dimensions.get('window');
-
+// Updated responsive styles
 const styles = StyleSheet.create({
   centeredView: {
     flex: 1,
@@ -129,9 +175,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modalView: {
-    width: width * 0.85,
-    maxHeight: height * 0.7,
-    borderRadius: 20,
+    width: isTablet() ? Math.min(600, SCREEN_WIDTH * 0.7) : SCREEN_WIDTH * 0.85,
+    maxHeight: SCREEN_HEIGHT * 0.7,
+    borderRadius: responsiveSize(20),
     overflow: 'hidden',
     elevation: 5,
     shadowColor: '#000',
@@ -143,29 +189,29 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
   },
   gradientBackground: {
-    padding: 20,
+    padding: responsiveSpacing(20),
     alignItems: 'center',
-    borderRadius: 20,
+    borderRadius: responsiveSize(20),
   },
   decorativeDots: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     width: '100%',
-    marginBottom: 15,
+    marginBottom: responsiveSpacing(15),
   },
   dot: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
+    width: responsiveSize(10),
+    height: responsiveSize(10),
+    borderRadius: responsiveSize(5),
     backgroundColor: COLORS.highlight,
-    marginHorizontal: 3,
+    marginHorizontal: responsiveSpacing(3),
   },
   titleContainer: {
     backgroundColor: COLORS.accent,
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 15,
-    marginBottom: 15,
+    paddingVertical: responsiveSpacing(10),
+    paddingHorizontal: responsiveSpacing(20),
+    borderRadius: responsiveSize(15),
+    marginBottom: responsiveSpacing(15),
     alignSelf: 'stretch',
     alignItems: 'center',
     shadowColor: '#000',
@@ -179,7 +225,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: COLORS.text,
-    fontSize: 22,
+    fontSize: responsiveFont(22),
     fontWeight: 'bold',
     textAlign: 'center',
     textShadowColor: 'rgba(0, 0, 0, 0.5)',
@@ -188,21 +234,21 @@ const styles = StyleSheet.create({
   },
   messageContainer: {
     backgroundColor: 'rgba(255, 255, 255, 0.9)',
-    borderRadius: 10,
-    padding: 15,
-    marginBottom: 20,
+    borderRadius: responsiveSize(10),
+    padding: responsiveSpacing(15),
+    marginBottom: responsiveSpacing(20),
     alignSelf: 'stretch',
   },
   message: {
     color: '#333',
-    fontSize: 16,
+    fontSize: responsiveFont(16),
     textAlign: 'center',
-    lineHeight: 22,
+    lineHeight: responsiveFont(22),
   },
   button: {
-    borderRadius: 25,
+    borderRadius: responsiveSize(25),
     overflow: 'hidden',
-    marginTop: 10,
+    marginTop: responsiveSpacing(10),
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -213,14 +259,14 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   buttonGradient: {
-    paddingVertical: 12,
-    paddingHorizontal: 30,
-    borderRadius: 25,
+    paddingVertical: responsiveSpacing(12),
+    paddingHorizontal: responsiveSpacing(30),
+    borderRadius: responsiveSize(25),
   },
   buttonText: {
     color: COLORS.text,
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: responsiveFont(18),
     textAlign: 'center',
     textShadowColor: 'rgba(0, 0, 0, 0.25)',
     textShadowOffset: { width: 0.5, height: 0.5 },

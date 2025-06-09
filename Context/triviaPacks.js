@@ -2,6 +2,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Platform } from 'react-native';
 import iapManager, { PACK_TO_PRODUCT_MAP } from './IAPManager';
 
+// PROMO CODE INTEGRATION: Import promo code system (FIXED IMPORT)
+import PromoCodeManager from './PromoCode';
+
 // Define lazy loading functions for packs to improve startup time on Android
 const getGenericPacks = () => ({
   entertainment: {
@@ -65,6 +68,35 @@ const getPremiumPacks = () => ({
     easy: require('../Packs/TriviaDare/PremiumPacks/marvelcinamaticuniverseeasy.json'),
   }
 });
+
+// PROMO CODE INTEGRATION: Pack visibility configuration
+const PACK_VISIBILITY_CONFIG = {
+  // Basic packs - always visible (everything should be shown right now)
+  'entertainment': { hide: false },
+  'science': { hide: false },
+  'history': { hide: false },
+  'sports': { hide: false },
+  'art': { hide: false },
+  'geography': { hide: false },
+  'music': { hide: false },
+  'technology': { hide: false },
+  
+  // Premium packs - all visible by default (everything should be shown right now)
+  'harrypotter': { hide: false },
+  'marvelcinamaticuniverse': { hide: false },
+  'starwars': { hide: false },
+  'disneyanimatedmovies': { hide: false },
+  'thelordoftherings': { hide: false },
+  'pixar': { hide: false },
+  'friends': { hide: false },
+  'videogames': { hide: false },
+  'howimetyourmother': { hide: false },
+  'theoffice': { hide: false },
+  'themepark': { hide: true }, // Example: hidden until unlocked with promo
+  
+  // Add special hidden packs here in the future:
+  // 'specialpack': { hide: true },
+};
 
 // Modified to only include 'easy' for now, but keeps expandability
 export const DIFFICULTIES = ['easy'];
@@ -192,7 +224,7 @@ const FEATURED_ROTATION = {
   }
 };
 
-// Beta mode management system
+// PROMO CODE INTEGRATION: Enhanced Beta system with promo code support
 const BetaSystem = {
   // Set beta mode flag
   async setBetaMode(enabled) {
@@ -219,7 +251,7 @@ const BetaSystem = {
     }
   },
   
-  // Get a list of packs that should be unlocked in beta mode or purchased
+  // PROMO CODE INTEGRATION: Enhanced to include promo unlocks
   async getUnlockedPacks() {
     const isBeta = await this.isBetaMode();
     
@@ -228,7 +260,9 @@ const BetaSystem = {
       return TRIVIA_PACKS.Premium.map(pack => pack.id);
     }
     
-    // Get purchased packs from IAP Manager
+    let unlockedPacks = [];
+    
+    // Get purchased/unlocked packs from IAP Manager (now includes promo unlocks)
     try {
       // Initialize IAP if not initialized
       if (!iapManager.isInitialized) {
@@ -236,14 +270,15 @@ const BetaSystem = {
       }
       
       const purchasedPacks = await iapManager.getPurchasedPacks();
-      return purchasedPacks;
+      unlockedPacks = [...purchasedPacks];
     } catch (error) {
       console.warn('Error getting purchased packs:', error);
-      return [];
     }
+    
+    return unlockedPacks;
   },
   
-  // Check if a specific pack is unlocked
+  // PROMO CODE INTEGRATION: Enhanced to check both IAP and promo unlocks
   async isPackUnlocked(packId) {
     const isBeta = await this.isBetaMode();
     
@@ -258,18 +293,41 @@ const BetaSystem = {
       return true;
     }
     
-    // Otherwise, check if it's been purchased
+    // Use the enhanced method from IAPManager that checks both IAP and promo
     try {
       // Initialize IAP if not initialized
       if (!iapManager.isInitialized) {
         await iapManager.initialize();
       }
       
-      return await iapManager.isPackPurchased(packId);
+      const isPurchased = await iapManager.isPackPurchased(packId);
+      if (isPurchased) {
+        return true;
+      }
     } catch (error) {
-      console.warn(`Error checking if pack ${packId} is unlocked:`, error);
-      return false;
+      console.warn(`Error checking purchase for pack ${packId}:`, error);
     }
+    
+    return false;
+  },
+  
+  // PROMO CODE INTEGRATION: New function to check if pack should be visible
+  async shouldShowPack(packId) {
+    // Get pack visibility configuration
+    const config = PACK_VISIBILITY_CONFIG[packId];
+    
+    // If no configuration exists, show by default
+    if (!config) {
+      return true;
+    }
+    
+    // If pack is not configured to be hidden, always show
+    if (!config.hide) {
+      return true;
+    }
+    
+    // Pack is configured to be hidden, only show if unlocked
+    return await this.isPackUnlocked(packId);
   }
 };
 
@@ -648,9 +706,14 @@ const getPackFile = (packId, difficulty = 'easy', isBasic) => {
   }
 };
 
-// Check if a premium pack should be enabled based on beta status or purchase
+// PROMO CODE INTEGRATION: Enhanced to check both IAP and promo unlocks
 export const checkPremiumPackAvailability = async (packId) => {
   return await BetaSystem.isPackUnlocked(packId);
+};
+
+// PROMO CODE INTEGRATION: New function to check if pack should be shown
+export const shouldShowPack = async (packId) => {
+  return await BetaSystem.shouldShowPack(packId);
 };
 
 // Pack statistics function with Android optimizations
@@ -725,7 +788,7 @@ export const getPackStatistics = async (packId) => {
   }
 };
 
-// Pack availability function with caching
+// PROMO CODE INTEGRATION: Enhanced pack availability function
 export const checkPackAvailability = async (pack) => {
   try {
     // Try to get from cache first to improve Android performance
@@ -735,13 +798,17 @@ export const checkPackAvailability = async (pack) => {
     if (cachedAvailability && Platform.OS === 'android') {
       const stats = await getPackStatistics(pack.id);
       
-      // Check if pack is unlocked in beta mode or purchased
+      // PROMO CODE INTEGRATION: Check if pack is unlocked via IAP or promo
       const isUnlocked = await BetaSystem.isPackUnlocked(pack.id);
+      
+      // PROMO CODE INTEGRATION: Check if pack should be visible
+      const shouldShow = await BetaSystem.shouldShowPack(pack.id);
       
       return {
         ...cachedAvailability,
         stats,
         purchased: isUnlocked,
+        shouldShow,
         price: isUnlocked ? null : pack.defaultPrice || DEFAULT_PRICES[pack.id]
       };
     }
@@ -750,8 +817,11 @@ export const checkPackAvailability = async (pack) => {
     const result = getPackFile(pack.id, 'easy', isBasic);
     const stats = await getPackStatistics(pack.id);
     
-    // Check if pack is unlocked in beta mode or purchased
+    // PROMO CODE INTEGRATION: Check if pack is unlocked via IAP or promo
     const isUnlocked = await BetaSystem.isPackUnlocked(pack.id);
+    
+    // PROMO CODE INTEGRATION: Check if pack should be visible
+    const shouldShow = await BetaSystem.shouldShowPack(pack.id);
 
     const availability = {
       isAvailable: result.success,
@@ -764,10 +834,11 @@ export const checkPackAvailability = async (pack) => {
       },
       validationErrors: result.success ? [] : [result.error],
       purchased: isUnlocked,
+      shouldShow,
       price: isUnlocked ? null : pack.defaultPrice || DEFAULT_PRICES[pack.id]
     };
     
-    // Cache availability info (excluding purchased info which could change)
+    // Cache availability info (excluding purchased/shouldShow info which could change)
     const cacheData = {
       isAvailable: availability.isAvailable,
       availableDifficulties: availability.availableDifficulties,
@@ -789,6 +860,7 @@ export const checkPackAvailability = async (pack) => {
       validationErrors: [error.message || 'Unknown error checking availability'],
       stats: { total: 0, byDifficulty: {}, usedQuestions: {} },
       purchased: false,
+      shouldShow: !PACK_VISIBILITY_CONFIG[pack.id]?.hide, // Default visibility if error
       price: pack.defaultPrice || DEFAULT_PRICES[pack.id]
     };
   }
@@ -815,16 +887,16 @@ export const loadPackQuestions = async (packName, difficulty = 'easy') => {
       // Check if beta mode is enabled
       const isBetaMode = await BetaSystem.isBetaMode();
       
-      // If not in beta mode, verify purchase
+      // If not in beta mode, verify unlock status (IAP or promo)
       if (!isBetaMode) {
-        const isPurchased = await iapManager.isPackPurchased(pack.id);
+        const isUnlocked = await BetaSystem.isPackUnlocked(pack.id);
         
-        // If not purchased, return an error
-        if (!isPurchased) {
+        // If not unlocked, return an error
+        if (!isUnlocked) {
           return {
             success: false,
             data: [],
-            error: 'This premium pack requires purchase',
+            error: 'This premium pack requires purchase or unlock code',
             source: null,
             requiresPurchase: true
           };
@@ -928,14 +1000,9 @@ export const getUnlockedPacks = async () => {
   return await BetaSystem.getUnlockedPacks();
 };
 
-// Check if a specific pack has been purchased
+// PROMO CODE INTEGRATION: Enhanced isPackPurchased to include promo unlocks
 export const isPackPurchased = async (packId) => {
-  // Initialize IAP if not initialized
-  if (!iapManager.isInitialized) {
-    await iapManager.initialize();
-  }
-  
-  return await iapManager.isPackPurchased(packId);
+  return await BetaSystem.isPackUnlocked(packId);
 };
 
 // Purchase a pack
@@ -996,6 +1063,7 @@ export default {
   TRIVIA_PACKS,
   checkPackAvailability,
   checkPremiumPackAvailability,
+  shouldShowPack, // PROMO CODE INTEGRATION: New export
   getPackStatistics,
   loadPackQuestions,
   markQuestionAsUsed,
